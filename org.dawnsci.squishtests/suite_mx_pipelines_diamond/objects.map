@@ -1,0 +1,158 @@
+:Alpha numeric sort for everything._ToolItem	{caption='Alpha numeric sort for everything.' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
+:Application error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Application error_Shell'}
+:Application error_Shell	{caption='Application error' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Browse..._Button	{caption='Browse...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
+:Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Controls.Run Data Processing On Selected Sweep_Button	{caption='Run Data Processing On Selected Sweep' container=':MX Data Processing.Controls_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Controls.Run Data Processing On Selected Sweep_Button_2	{caption='Run Data Processing On Selected Sweep' container=':MX Data Processing.Controls_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Controls.xia2 3d_Button	{caption='xia2 3d' container=':MX Data Processing.Controls_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Data Browsing - Dawn.Welcome_CTabItem	{caption='Welcome' type='org.eclipse.swt.custom.CTabItem' window=':Data Browsing - Dawn_Shell'}
+:Data Browsing - Dawn_Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Data Browsing - Dawn_Shell'}
+:Data Browsing - Dawn_Shell	{caption='Data Browsing - Dawn' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Data Browsing - Dawn_ToolBar	{isvisible='true' occurrence='12' type='org.eclipse.swt.widgets.ToolBar' window=':Data Browsing - Dawn_Shell'}
+:Data Browsing - Dawn_ToolBar_2	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Data Browsing - Dawn_Shell'}
+:Dimple Input Parameters...._Button	{caption='...' container=':Dimple.Dimple Input Parameters_Group' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Button'}
+:Dimple Input Parameters...._Button_2	{caption='...' container=':Dimple.Dimple Input Parameters_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Dimple Input Parameters.Get MTZ column headers_Button	{caption='Get MTZ column headers' container=':Dimple.Dimple Input Parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Dimple Input Parameters.Get MTZ column headers_Button_2	{caption='Get MTZ column headers' container=':Dimple.Dimple Input Parameters_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Dimple Input Parameters.MTZ file_Label	{caption='MTZ file' container=':Dimple.Dimple Input Parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Dimple Input Parameters.MTZ file_Label_2	{caption='MTZ file' container=':Dimple.Dimple Input Parameters_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Dimple Input Parameters.MTZ file_Text	{container=':Dimple.Dimple Input Parameters_Group' isvisible='true' leftWidget=':Dimple Input Parameters.MTZ file_Label' type='org.eclipse.swt.widgets.Text'}
+:Dimple Input Parameters.MTZ file_Text_2	{container=':Dimple.Dimple Input Parameters_Group_2' isvisible='true' leftWidget=':Dimple Input Parameters.MTZ file_Label_2' type='org.eclipse.swt.widgets.Text'}
+:Dimple Input Parameters.PDB file_Label	{caption='PDB file' container=':Dimple.Dimple Input Parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Dimple Input Parameters.PDB file_Label_2	{caption='PDB file' container=':Dimple.Dimple Input Parameters_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Dimple Input Parameters.PDB file_Text	{container=':Dimple.Dimple Input Parameters_Group' isvisible='true' leftWidget=':Dimple Input Parameters.PDB file_Label' type='org.eclipse.swt.widgets.Text'}
+:Dimple Input Parameters.PDB file_Text_2	{container=':Dimple.Dimple Input Parameters_Group_2' isvisible='true' leftWidget=':Dimple Input Parameters.PDB file_Label_2' type='org.eclipse.swt.widgets.Text'}
+:Dimple Output Files.MTZ file_Label	{caption='MTZ file' container=':Dimple.Dimple Output Files_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Dimple Output Files.MTZ file_Text	{container=':Dimple.Dimple Output Files_Group' isvisible='true' leftWidget=':Dimple Output Files.MTZ file_Label' type='org.eclipse.swt.widgets.Text'}
+:Dimple Output Files.PDB file_Label	{caption='PDB file' container=':Dimple.Dimple Output Files_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Dimple Output Files.PDB file_Text	{container=':Dimple.Dimple Output Files_Group' isvisible='true' leftWidget=':Dimple Output Files.PDB file_Label' type='org.eclipse.swt.widgets.Text'}
+:Dimple.Dimple Input Parameters_Group	{caption='Dimple Input Parameters' container=':MX Pipelines - Dawn.Dimple_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Dimple.Dimple Input Parameters_Group_2	{caption='Dimple Input Parameters' container=':Dimple_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Dimple.Dimple Output Files_Group	{caption='Dimple Output Files' container=':MX Pipelines - Dawn.Dimple_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Dimple.Run pipeline_Group	{caption='Run pipeline' container=':MX Pipelines - Dawn.Dimple_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Dimple.Run pipeline_Group_2	{caption='Run pipeline' container=':Dimple_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Dimple_CTabItem	{caption='Dimple' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Directory:_Label	{caption='Directory:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
+:Directory:_Text	{isvisible='true' leftWidget=':Directory:_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
+:EDApplicationDimplev0_20130104-154543.log_CTabCloseBox	{container=':EDApplicationDimplev0_20130104-154543.log_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:EDApplicationDimplev0_20130104-154543.log_CTabItem	{caption='EDApplicationDimplev0_20130104-154543.log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:EDApplicationDimplev0_20130104-154543.log_StyledText	{container=':EDApplicationDimplev0_20130104-154543.log_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
+:Feedback.Comment_Label	{caption='Comment' container=':MX Pipelines - Dawn.Feedback_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Feedback.Comment_Label_2	{caption='Comment' container=':Feedback_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Feedback.Comment_Text	{aboveWidget=':Feedback.Comment_Label' container=':MX Pipelines - Dawn.Feedback_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
+:Feedback.Comment_Text_2	{aboveWidget=':Feedback.Comment_Label_2' container=':Feedback_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
+:Feedback_CTabItem	{caption='Feedback' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:File Navigator_Label	{caption='' container=':MX Pipelines - Dawn.File Navigator_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:File Navigator_Text	{container=':MX Pipelines - Dawn.File Navigator_CTabItem' isvisible='true' leftWidget=':File Navigator_Label' type='org.eclipse.swt.widgets.Text'}
+:File Navigator_Tree	{container=':MX Pipelines - Dawn.File Navigator_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:File_Menu	{caption='File' container=':MX Pipelines - Dawn_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:File_Menu_2	{caption='File' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Folder:_Label	{caption='Folder:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
+:Folder:_Text	{isvisible='true' leftWidget=':Folder:_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
+:Help_CCombo	{container=':MX Pipelines - Dawn.Help_CTabItem' isvisible='true' type='org.eclipse.swt.custom.CCombo'}
+:Help_ImageHyperlink	{container=':MX Pipelines - Dawn.Help_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.ui.forms.widgets.ImageHyperlink'}
+:Help_Menu	{caption='Help' container=':MX Pipelines - Dawn_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Help_MenuItem	{caption='Help' container=':_Menu' type='org.eclipse.swt.widgets.MenuItem'}
+:Help_Menu_2	{caption='Help' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Help_Text	{container=':MX Pipelines - Dawn.Help_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
+:Localhost web service directories.Result directory_Label	{caption='Result directory' container=':MX Directories.Localhost web service directories_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Localhost web service directories.Result directory_Label_2	{caption='Result directory' container=':MX Directories.Localhost web service directories_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Localhost web service directories.Result directory_Text	{container=':MX Directories.Localhost web service directories_Group' isvisible='true' leftWidget=':Localhost web service directories.Result directory_Label' type='org.eclipse.swt.widgets.Text'}
+:Localhost web service directories.Result directory_Text_2	{container=':MX Directories.Localhost web service directories_Group_2' isvisible='true' leftWidget=':Localhost web service directories.Result directory_Label_2' type='org.eclipse.swt.widgets.Text'}
+:Localhost web service directories.Working directory_Label	{caption='Working directory' container=':MX Directories.Localhost web service directories_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Localhost web service directories.Working directory_Label_2	{caption='Working directory' container=':MX Directories.Localhost web service directories_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Localhost web service directories.Working directory_Text	{container=':MX Directories.Localhost web service directories_Group' isvisible='true' leftWidget=':Localhost web service directories.Working directory_Label' type='org.eclipse.swt.widgets.Text'}
+:Localhost web service directories.Working directory_Text_2	{container=':MX Directories.Localhost web service directories_Group_2' isvisible='true' leftWidget=':Localhost web service directories.Working directory_Label_2' type='org.eclipse.swt.widgets.Text'}
+:Localhost web service ports range (only one port will be used)_Spinner	{container=':Preferences.Localhost web service ports range (only one port will be used)_Group' isvisible='true' type='org.eclipse.swt.widgets.Spinner'}
+:MX Data Processing.Controls_Group	{caption='Controls' container=':MX Pipelines - Dawn.MX Data Processing_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:MX Data Processing.Controls_Group_2	{caption='Controls' container=':MX Data Processing_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:MX Data Processing_CTabItem	{caption='MX Data Processing' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:MX Directories.Localhost web service directories_Group	{caption='Localhost web service directories' container=':MX Pipelines - Dawn.MX Directories_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:MX Directories.Localhost web service directories_Group_2	{caption='Localhost web service directories' container=':MX Directories_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:MX Directories_CTabItem	{caption='MX Directories' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:MX Pipelines - Dawn.Dimple_CTabItem	{caption='Dimple' type='org.eclipse.swt.custom.CTabItem' window=':MX Pipelines - Dawn_Shell'}
+:MX Pipelines - Dawn.Feedback_CTabItem	{caption='Feedback' type='org.eclipse.swt.custom.CTabItem' window=':MX Pipelines - Dawn_Shell'}
+:MX Pipelines - Dawn.File Navigator_CTabItem	{caption='File Navigator' type='org.eclipse.swt.custom.CTabItem' window=':MX Pipelines - Dawn_Shell'}
+:MX Pipelines - Dawn.Help_CTabItem	{caption='Help' type='org.eclipse.swt.custom.CTabItem' window=':MX Pipelines - Dawn_Shell'}
+:MX Pipelines - Dawn.MX Data Processing_CTabItem	{caption='MX Data Processing' type='org.eclipse.swt.custom.CTabItem' window=':MX Pipelines - Dawn_Shell'}
+:MX Pipelines - Dawn.MX Directories_CTabItem	{caption='MX Directories' type='org.eclipse.swt.custom.CTabItem' window=':MX Pipelines - Dawn_Shell'}
+:MX Pipelines - Dawn.Project Explorer_CTabItem	{caption='Project Explorer' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':MX Pipelines - Dawn_Shell'}
+:MX Pipelines - Dawn.Project Explorer_CTabItem_2	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':MX Pipelines - Dawn_Shell'}
+:MX Pipelines - Dawn.Strategies_CTabItem	{caption='Strategies' type='org.eclipse.swt.custom.CTabItem' window=':MX Pipelines - Dawn_Shell'}
+:MX Pipelines - Dawn_CTabFolder	{firstTabCaption='File Navigator' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':MX Pipelines - Dawn_Shell'}
+:MX Pipelines - Dawn_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':MX Pipelines - Dawn_Shell'}
+:MX Pipelines - Dawn_Sash	{isvisible='true' type='org.eclipse.swt.widgets.Sash' window=':MX Pipelines - Dawn_Shell'}
+:MX Pipelines - Dawn_Shell	{caption='MX Pipelines - Dawn' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:New Project.Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':New Project_Shell'}
+:New Project_Shell	{caption='New Project' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:New Project_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':New Project_Shell'}
+:New.Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':New_Shell'}
+:New_Menu	{caption='New' container=':MX Pipelines - Dawn_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:New_Menu_2	{caption='New' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:New_Shell	{caption='New' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:New_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':New_Shell'}
+:Open Perspective.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Open Perspective_Shell'}
+:Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
+:Open Perspective_ToolItem	{caption='Open Perspective' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Open Perspective_ToolItem_2	{caption='Open Perspective' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
+:Password Required.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Password Required_Shell'}
+:Password Required_Shell	{caption='Password Required' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Preferences.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
+:Preferences.Localhost web service ports range (only one port will be used)_Group	{caption='Localhost web service ports range (only one port will be used)' isvisible='true' type='org.eclipse.swt.widgets.Group' window=':Preferences_Shell'}
+:Preferences.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
+:Preferences_Shell	{caption='Preferences' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Preferences_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
+:Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Project Explorer_CTabItem_2	{caption='Project Explorer' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Project Explorer_Tree	{container=':MX Pipelines - Dawn.Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Project Explorer_Tree_2	{container=':MX Pipelines - Dawn.Project Explorer_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Project Explorer_Tree_3	{container=':Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Project Explorer_Tree_4	{container=':Project Explorer_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Project:_Label	{caption='Project:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
+:Project:_Text	{isvisible='true' leftWidget=':Project:_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
+:Run EDNA.Run EDNA with selected images_Button	{caption='Run EDNA with selected images' container=':Strategies.Run EDNA_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Run EDNA.Run EDNA with selected images_Button_2	{caption='Run EDNA with selected images' container=':Strategies.Run EDNA_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Run pipeline.Run pipeline with given parameters_Button	{caption='Run pipeline with given parameters' container=':Dimple.Run pipeline_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Run pipeline.Run pipeline with given parameters_Button_2	{caption='Run pipeline with given parameters' container=':Dimple.Run pipeline_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:SWT	SWT
+:Show View.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Show View_Shell'}
+:Show View_Menu	{caption='Show View' container=':MX Pipelines - Dawn_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Show View_Shell	{caption='Show View' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
+:Sort alpha numeric, directories at top._ToolItem	{caption='Sort alpha numeric, directories at top.' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
+:Strategies.Run EDNA_Group	{caption='Run EDNA' container=':MX Pipelines - Dawn.Strategies_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Strategies.Run EDNA_Group_2	{caption='Run EDNA' container=':Strategies_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Strategies_CTabItem	{caption='Strategies' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Welcome_CTabCloseBox	{container=':Welcome_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:Welcome_CTabItem	{caption='Welcome' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Window_Menu	{caption='Window' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Window_Menu_2	{caption='Window' container=':MX Pipelines - Dawn_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Workbench Window	{data?='org.eclipse.ui.internal.WorkbenchWindow*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Workspace Launcher.Browse..._Button	{caption='Browse...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Workspace Launcher_Shell'}
+:Workspace Launcher.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Workspace Launcher_Shell'}
+:Workspace Launcher_Composite	{isvisible='true' occurrence='6' type='org.eclipse.swt.widgets.Composite' window=':Workspace Launcher_Shell'}
+:Workspace Launcher_Shell	{caption='Workspace Launcher' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:_CTabFolder	{firstTabCaption='Console' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder_2	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder_3	{firstTabCaption='Project Explorer' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder_4	{firstTabCaption='Dataset Plot' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:_Menu_2	{container=':Project Explorer_Tree' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
+:_Sash	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
+:_Sash_2	{isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
+:_Sash_3	{isvisible='true' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
+:_Shell	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:_ToolBar	{container=':_CTabFolder' firstItemText~='(Pin Console|Terminate current console|Clear Console)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_4	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_5	{container=':_CTabFolder_4' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_6	{firstItemText='DExplore' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_7	{container=':MX Pipelines - Dawn_CTabFolder' firstItemText='Sort alpha numeric, directories at top.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolItem	{container=':Data Browsing - Dawn_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
