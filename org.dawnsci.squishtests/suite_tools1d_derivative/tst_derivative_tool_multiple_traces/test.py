@@ -1,10 +1,13 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "dawn_constants.py"))
 
 def main():
     
     #Start using clean workspace
     startOrAttachToDAWN()
+    
+    vals = dawn_constants
     
     # Open data browsing perspective 
     openPerspective("Data Browsing (default)")
@@ -30,30 +33,30 @@ def main():
     #check plot
     conOb = waitForObject(":Configure Settings..._ToolItem")
     
-    check_plotted_trace_name_yval(conOb,"Column_1","800.0","0.0")
+    check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_1_MAX,vals.METALMIX_1_MIN)
     nameList = ["Column_1","Column_2","Column_3","Column_4",
                 "Column_1'","Column_2'","Column_3'","Column_4'",
                 "Column_1''","Column_2''","Column_3''","Column_4''"]
     check_plotted_traces_names(conOb, nameList[0:4])
     
     #Change to derivative and check again
-    mouseClick(waitForObject(":XY plotting tools_ToolItem"), 25, 8, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Derivative"))
     
-    check_plotted_trace_name_yval(conOb,"Column_1'","400.0","-400.0")
+    check_plotted_trace_name_yval(conOb,"Column_1'",vals.METALMIX_1_DMAX,vals.METALMIX_1_DMIN)
     check_plotted_traces_names(conOb, nameList[4:8])
     
     #add data and check again
     mouseClick(waitForObject(":Derivative.Display Data_Button"), 25, 8, 0, Button.Button1)
     
-    check_plotted_trace_name_yval(conOb,"Column_1","800.0","-400.0")
+    check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_1_MAX,vals.METALMIX_1_DMIN)
     check_plotted_traces_names(conOb, nameList[0:8])
     
     
     #add 2nd der and check again
     clickButton(waitForObject(":Derivative.Display f''(Data)_Button"))
     
-    check_plotted_trace_name_yval(conOb,"Column_1","800.0","-400.0")
+    check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_1_MAX,vals.METALMIX_1_DMIN)
     check_plotted_traces_names(conOb, nameList)
     
     closeOrDetachFromDAWN()
