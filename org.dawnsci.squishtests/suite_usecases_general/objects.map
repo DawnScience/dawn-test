@@ -8,6 +8,7 @@
 :9758_Box_Profile_reduction.h5.Plot_CTabItem	{caption='Plot' container=':9758_Box_Profile_reduction.h5_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :9758_Box_Profile_reduction.h5_CTabItem	{caption='9758_Box_Profile_reduction.h5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :9758_Peak_Fitting_reduction.h5_CTabItem	{caption='9758_Peak_Fitting_reduction.h5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Adds an expression which can be plotted. Must be function of other data sets._ToolItem	{caption='Adds an expression which can be plotted. Must be function of other data sets.' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Algorithm Controls.Smoothing_Label	{caption='Smoothing' container=':Preferences.Algorithm Controls_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Algorithm Controls.Smoothing_Spinner	{container=':Preferences.Algorithm Controls_Group' isvisible='true' leftWidget=':Algorithm Controls.Smoothing_Label' type='org.eclipse.swt.widgets.Spinner'}
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
@@ -39,6 +40,7 @@
 :Data_Table_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_3	{container=':Data_CTabItem_2' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_4	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Table'}
+:Data_Text	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Text'}
 :Data_ToolBar	{container=':Data_CTabItem_2' firstItemText='Slice as line plots' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Data_ToolBar_2	{container=':Data_CTabItem' firstItemText='Slice as line plots' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Data_Tree	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
@@ -177,6 +179,7 @@
 :_CTabFolder_5	{firstTabCaption='Value' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :_Menu_2	{container=':Project Explorer_Tree_2' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
+:_Menu_3	{container=':Data_Table' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Sash	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Sash_2	{isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Shell	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -186,6 +189,7 @@
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{container=':_CTabFolder_4' firstItemText='Create new profile.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_5	{container=':_CTabFolder_5' firstItemText='New fit selection.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_6	{container=':_CTabFolder_2' firstItemText='Changes the plot to use selected data set as the x-axis.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
 :command_example.moml.Edit_CTabItem	{caption='Edit' container=':command_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :command_example.moml_CTabCloseBox	{container=':command_example.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
