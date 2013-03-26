@@ -57,9 +57,12 @@
 :Image Gallery_Gallery	{container=':Image Gallery_CTabItem' isvisible='true' type='org.eclipse.nebula.widgets.gallery.Gallery'}
 :Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Image tools used to profile and inspect images._ToolItem_2	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
+:Image tools used to profile and inspect images._ToolItem_3	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :Image_Composite	{container=':ref-testscale_1_001.img.Image_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
+:Image_Composite_2	{container=':pow_M99S5_1_0001.cbf.Image_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
 :Image_ToolBar	{container=':ref-testscale_1_001.img.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Image_ToolBar_2	{container=':ref-screentest-crystal1_1_001.mccd.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Image_ToolBar_3	{container=':pow_M99S5_1_0001.cbf.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Import metadata from file_ToolItem	{caption='Import metadata from file' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Import...._Button	{caption='...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
 :Import.Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
@@ -118,6 +121,8 @@
 :_ToolBar_3	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{container=':_CTabFolder' firstItemText='Export metadata to file' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_ErrorLog	{firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:pow_M99S5_1_0001.cbf.Image_CTabItem	{caption='Image' container=':pow_M99S5_1_0001.cbf_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:pow_M99S5_1_0001.cbf_CTabItem	{caption='pow_M99S5_1_0001.cbf' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :ref-screentest-crystal1_1_001.mccd.Image_CTabItem	{caption='Image' container=':ref-screentest-crystal1_1_001.mccd_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :ref-screentest-crystal1_1_001.mccd_CTabCloseBox	{container=':ref-screentest-crystal1_1_001.mccd_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :ref-screentest-crystal1_1_001.mccd_CTabItem	{caption='ref-screentest-crystal1_1_001.mccd' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}

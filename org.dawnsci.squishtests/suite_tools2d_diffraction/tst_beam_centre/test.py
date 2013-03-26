@@ -53,7 +53,7 @@ def testExperimentalInfoNode(node,meta):
             
         if ("Distance" in node.getText()):
             child = object.children(node)
-            test.verify(str(meta["distance"])[:4] in child[2].getText()[:4])
+            test.verify(str(meta["distance"])[:3] in child[2].getText()[:4])
             dist = True
         
         if ("Wavelength" in node.getText()):
@@ -81,11 +81,14 @@ def main():
     # Open data browsing perspective 
     openPerspective("Data Browsing (default)")
     
-    openExample("001.img")
+    openExample("pow_M99S5_1_0001.cbf")
     
-    system = getPlottingSystem("ref-testscale_1_001.img")
+    system = getPlottingSystem("pow_M99S5_1_0001.cbf")
     
-    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
+    #getScreenPosition(plottingSystem,x,y)
+
+    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_3"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
+
     activateItem(waitForObjectItem(":Pop Up Menu", "Diffraction"))
     mouseClick(waitForObject(":Calibrants_ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Cr2O3"))
@@ -96,7 +99,7 @@ def main():
     
     testRegionsAdded(regions, "calibrant")
     
-    c = waitForObject(":Image_Composite")
+    c = waitForObject(":Image_Composite_2")
     b = c.bounds
     
     ob = waitForObject(":Diffraction_Tree")
@@ -111,7 +114,9 @@ def main():
 
     mouseClick(waitForObject(":One-click beam centre_ToolItem"), 7, 17, 0, Button.Button1)
     
-    mouseClick(c, b.x+b.width/8, b.y+b.height/8, 0, Button.Button1);
+    cx,cy = getScreenPosition(system,100,100)
+    
+    mouseClick(c, cx, cy, 0, Button.Button1);
     
     xnew,ynew = getBeamCentreFromTable(ob)
     test.verify(not xnew in x, "Beam X changed")
@@ -123,13 +128,17 @@ def main():
     activateItem(waitForObjectItem(":Pop Up Menu", "Calibrant"))
     
     mouseClick(waitForObject(":Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse_ToolItem"), 6, 24, 0, Button.Button1)
-
-    mouseClick(c, b.x+b.width/3.32, b.y+b.height/4.39, 0, Button.Button1);
-    mouseClick(c, b.x+b.width/2.61, b.y+b.height/3.25, 0, Button.Button1);
-    mouseClick(c, b.x+b.width/2.28, b.y+b.height/1.89, 0, Button.Button1);
-    mouseClick(c, b.x+b.width/3.35, b.y+b.height/1.31, 0, Button.Button1);
     
-    doubleClick(c, b.x+b.width/7.7, b.y+b.height/1.88, 0, Button.Button1);
+    rx1,ry1 = getScreenPosition(system,1242,255)
+    rx2,ry2 = getScreenPosition(system,2024,1771)
+    rx3,ry3 = getScreenPosition(system,423,1778)
+    
+    mouseClick(c,rx1,ry1, 0, Button.Button1)
+    mouseClick(c,rx2,ry2, 0, Button.Button1)
+    
+    doubleClick(c,rx3,ry3, 0, Button.Button1)
+
+
     regions=system.getRegions()
     testRegionsAdded(regions, "RingPicker")
 

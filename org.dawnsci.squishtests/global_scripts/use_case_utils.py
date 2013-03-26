@@ -83,5 +83,19 @@ def getPlottingSystem(name):
     snooze(1)
 
     return system
+
+def getScreenPosition(plottingSystem,x,y):
+    outX = None
+    outY = None
     
+    axes = plottingSystem.getAxes()
+    
+    if axes.get(0).isYAxis():
+        outY = axes.get(0).getValuePosition(y)
+        outX = axes.get(1).getValuePosition(x)
+    elif axes.get(1).isYAxis():
+        outY = axes.get(1).getValuePosition(y)
+        outX = axes.get(0).getValuePosition(x)
+        
+    return outX,outY
     
