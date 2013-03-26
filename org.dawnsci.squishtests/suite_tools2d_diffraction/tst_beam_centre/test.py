@@ -142,7 +142,7 @@ def main():
     regions=system.getRegions()
     testRegionsAdded(regions, "RingPicker")
 
-    mouseClick(waitForObject(":Refine beam centre_ToolItem"), 18, 17, 0, Button.Button1)
+    mouseClick(waitForObject(":Refine beam centre_ToolItem"))
     
     snooze(1)
     
