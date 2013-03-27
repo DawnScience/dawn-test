@@ -168,6 +168,7 @@
 :Set Values_Combo	{isvisible='true' type='org.eclipse.swt.widgets.Combo' window=':Set Values_Shell'}
 :Set Values_Shell	{caption='Set Values' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Set Values_Spinner	{isvisible='true' type='org.eclipse.swt.widgets.Spinner' window=':Set Values_Shell'}
+:Set Values_StyledText	{isvisible='true' type='org.eclipse.swt.custom.StyledText' window=':Set Values_Shell'}
 :Set Values_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Set Values_Shell'}
 :Set Values_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Set Values_Shell'}
 :Show Plot View_Menu	{caption='Show Plot View' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}

@@ -49,7 +49,7 @@ def main():
     activateItem(waitForObjectItem(":Pop Up Menu", "Open New Plot Scripting"))
     clickButton(waitForObject(":Python console_Button"))
     clickButton(waitForObject(":OK_Button"))
-    snooze(5.0)
+    snooze(10.0)
     #get the databean from the dataset plot to check that some data has been plotted in surface mode
     typeInConsole("bean=dnp.plot.getbean('Dataset Plot')")
     snooze(2.0)

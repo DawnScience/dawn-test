@@ -21,15 +21,17 @@ def main():
     mouseClick(waitForObject(":_ImageFigure_3"), 17, 40, 0, Button.Button1)
     mouseClick(waitForObject(":_ImageFigure"), 17, 43, 0, Button.Button1)
 
-    mouseClick(waitForObjectItem(":Actor Attributes_Table", "4/1"), 191, 16, 0, Button.Button1)
-    doubleClick(waitForObjectItem(":Actor Attributes_Table", "4/1"), 191, 16, 0, Button.Button1)
-    type(waitForObject(":Actor Attributes_Table"), "<Shift+Right>")
-    mouseClick(waitForObject(":Actor Attributes_StyledText"), 141, 10, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Actor Attributes_Table", "5/1"), 191, 16, 0, Button.Button1)
+    doubleClick(waitForObjectItem(":Actor Attributes_Table", "5/1"), 191, 16, 0, Button.Button1)
+
+    mouseClick(waitForObject(":Actor Attributes_StyledText"), 440, 6, 0, Button.Button1)
     type(waitForObject(":Actor Attributes_StyledText"), "<Shift+Left>")
     type(waitForObject(":Actor Attributes_StyledText"), "<Shift+Left>")
     type(waitForObject(":Actor Attributes_StyledText"), "<Shift+Left>")
     type(waitForObject(":Actor Attributes_StyledText"), "<Shift+Left>")
     type(waitForObject(":Actor Attributes_StyledText"), "1")
+    mouseClick(waitForObjectItem(":Actor Attributes_Table", "4/1"), 431, 15, 0, Button.Button1)
+
     mouseClick(waitForObjectItem(":Actor Attributes_Table", "3/1"), 146, 13, 0, Button.Button1)
     mouseClick(waitForObject(":_FigureCanvas"), 181, 203, 0, Button.Button1)
     mouseClick(waitForObject(":_ImageFigure"), 21, 26, 0, Button.Button1)

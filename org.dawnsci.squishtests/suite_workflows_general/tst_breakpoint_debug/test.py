@@ -23,10 +23,13 @@ def main():
     mouseClick(waitForObject(":Run the workflow from start to end until finished._ToolItem"))
     clickButton(waitForObject(":Save Resource.Yes_Button"))
    
-    snooze(60)
+    snooze(10)
     
     clickTab(waitForObject(":Debug Actor_CTabItem", 120000), 66, 7, 0, Button.Button1)
-
+    
+    snooze(30)
+    
+    clickTab(waitForObject(":Debug Actor_CTabItem"), 66, 7, 0, Button.Button1)
     
     snooze(10)
     
