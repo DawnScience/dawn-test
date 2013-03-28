@@ -40,7 +40,9 @@ def startOrAttachToDAWNOnly(clean_workspace=True):
         cwd = os.getcwd()
         parent_path, test_name = os.path.split(cwd)
         suite_name = os.path.basename(parent_path)
-        workspace = "%s/%s/%s" % (DAWN_WORKSPACE_ROOT, suite_name, test_name)
+        workspace = "%s/%s/%s/workspace" % (DAWN_WORKSPACE_ROOT, suite_name, test_name)
+        osgi_user_area = "%s/%s/%s/osgi_user_area" % (DAWN_WORKSPACE_ROOT, suite_name, test_name)
+        osgi_configuration_area = "%s/%s/%s/osgi_configuration_area" % (DAWN_WORKSPACE_ROOT, suite_name)
         if clean_workspace:
             try:
                 shutil.rmtree(workspace)
@@ -51,7 +53,7 @@ def startOrAttachToDAWNOnly(clean_workspace=True):
             snooze(1)
             test.verify(not os.path.exists(workspace), "startOrAttachToDAWNOnly: Workspace is clean")
 
-        startApplication("dawn -consoleLog -data %s" % workspace, "", -1, 60)
+        startApplication("dawn -consoleLog -showLocation -data %s -user %s -configuration %s -name %s" % (workspace, osgi_user_area, osgi_configuration_area, ), "", -1, 60)
     window = waitForObject(":Workbench Window")
     window.setMaximized(True)
     # Let any setup items continue (e.g. Jython interpreter setup)
