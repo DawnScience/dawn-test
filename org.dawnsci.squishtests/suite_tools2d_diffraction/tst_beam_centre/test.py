@@ -128,6 +128,12 @@ def main():
     activateItem(waitForObjectItem(":Pop Up Menu", "Calibrant"))
     
     snooze(1)
+    
+    mouseClick(waitForObject(":Resolution rings_ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
+    activateItem(waitForObjectItem(":Pop Up Menu", "Beam centre"))
+    
+    snooze(1)
+    
     clickTab(waitForObject(":Diffraction_CTabItem"), 50, 10, 0, Button.Button1)
     mouseClick(waitForObject(":Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse_ToolItem"), 6, 24, 0, Button.Button1)
     
