@@ -124,14 +124,6 @@ def main():
     x = xnew
     y = ynew
     
-    mouseClick(waitForObject(":Resolution rings_ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Calibrant"))
-    
-    snooze(1)
-    
-    mouseClick(waitForObject(":Resolution rings_ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Beam centre"))
-    
     snooze(1)
     
     clickTab(waitForObject(":Diffraction_CTabItem"), 50, 10, 0, Button.Button1)
