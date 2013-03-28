@@ -42,7 +42,7 @@ def startOrAttachToDAWNOnly(clean_workspace=True):
         suite_name = os.path.basename(parent_path)
         workspace = "%s/%s/%s/workspace" % (DAWN_WORKSPACE_ROOT, suite_name, test_name)
         osgi_user_area = "%s/%s/%s/osgi_user_area" % (DAWN_WORKSPACE_ROOT, suite_name, test_name)
-        osgi_configuration_area = "%s/%s/%s/osgi_configuration_area" % (DAWN_WORKSPACE_ROOT, suite_name)
+        osgi_configuration_area = "%s/%s/%s/osgi_configuration_area" % (DAWN_WORKSPACE_ROOT, suite_name, test_name)
         if clean_workspace:
             try:
                 shutil.rmtree(workspace)
