@@ -53,7 +53,8 @@ def startOrAttachToDAWNOnly(clean_workspace=True):
             snooze(1)
             test.verify(not os.path.exists(workspace), "startOrAttachToDAWNOnly: Workspace is clean")
 
-        startApplication("dawn -consoleLog -showLocation -data %s -user %s -configuration %s -name %s" % (workspace, osgi_user_area, osgi_configuration_area, ), "", -1, 60)
+        startApplication("dawn -consoleLog -showLocation -data %s -user %s -configuration %s -name %s-%s" %
+                         (workspace, osgi_user_area, osgi_configuration_area, suite_name, test_name), "", -1, 60)
     window = waitForObject(":Workbench Window")
     window.setMaximized(True)
     # Let any setup items continue (e.g. Jython interpreter setup)
