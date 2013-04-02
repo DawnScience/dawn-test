@@ -53,7 +53,7 @@ def startOrAttachToDAWNOnly(clean_workspace=True):
             snooze(1)
             test.verify(not os.path.exists(workspace), "startOrAttachToDAWNOnly: Workspace is clean")
 
-        startApplication("dawn -consoleLog -showLocation -data %s -user %s -configuration %s -name %s-%s" %
+        startApplication("dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s" %
                          (workspace, osgi_user_area, osgi_configuration_area, suite_name, test_name), "", -1, 60)
     window = waitForObject(":Workbench Window")
     window.setMaximized(True)
