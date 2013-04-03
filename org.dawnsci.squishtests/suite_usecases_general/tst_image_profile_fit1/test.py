@@ -36,7 +36,7 @@ def main():
     widget = proxy.control
     b = widget.bounds
     mouseDrag(widget, 100, 300, 100, 10, 0, Button.Button1)
-    snooze(2) # While fit...
+    snooze(3) # While fit...
 
     # Check number of peaks
     clickTab(waitForObject(":Peak Fitting_CTabItem"), 51, 5, 0, Button.Button1)
@@ -45,7 +45,7 @@ def main():
     
     mouseClick(waitForObject(":Number peaks to fit_ToolItem"), 30, 5, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Fit 3 Peaks"))
-    snooze(2) # While fit...
+    snooze(3) # While fit...
     table   = waitForObject(":Peak Fitting_Table");
     test.verify(table.items.length == 3)
     
