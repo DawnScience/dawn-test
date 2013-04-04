@@ -1,6 +1,7 @@
 
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "dawn_constants.py"))
 
 def main():
     
@@ -11,7 +12,7 @@ def main():
     openPerspective("Data Browsing (default)")
     
     snooze(5)
-    
+    vals = dawn_constants
     #
     openAndClearErrorLog()
     
@@ -25,7 +26,7 @@ def main():
             doubleClick(child, 5, 5, 0, Button.Button1)
             break
         
-    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), 26, 6, 0, Button.Button1)
+    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     
     activateItem(waitForObjectItem(":Pop Up Menu", "Azimuthal Profile"))
     

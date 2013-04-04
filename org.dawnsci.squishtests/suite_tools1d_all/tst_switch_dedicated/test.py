@@ -1,11 +1,12 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "dawn_constants.py"))
 
 def the_actual_test():
-    
+    vals = dawn_constants
     #Open each tool then make dedicated
     #Peak fitting
-    mouseClick(waitForObject(":XY plotting tools_ToolItem"), 25, 8, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Peak Fitting"))
     
     #fit peak
@@ -24,7 +25,7 @@ def the_actual_test():
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Peak Fitting' in dedicated view"))
     
     #activate derivative tool, which should deactivate the peak fitting
-    mouseClick(waitForObject(":XY plotting tools_ToolItem"), 25, 8, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Derivative"))
     names = ["Column_3'","Peak 1"]
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
@@ -33,7 +34,7 @@ def the_actual_test():
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 4, 5, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Derivative' in dedicated view"))
     
-    mouseClick(waitForObject(":XY plotting tools_ToolItem"), 25, 8, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Measurement"))
     #Check derivative tool has not reset
     
@@ -54,7 +55,7 @@ def the_actual_test():
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 3, 7, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Measurement' in dedicated view"))
     
-    mouseClick(waitForObject(":XY plotting tools_ToolItem"), 25, 8, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Line Fitting"))
     
     #do fit

@@ -1,10 +1,11 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
-
+source(findFile("scripts", "dawn_constants.py"))
 
 # This test makes sure we can start and stop DAWN
 def main():
+    vals = dawn_constants
     # Start or attach runs (or attaches) to DAWN and then 
     # makes sure the workbench window exists and finally
     # will close the Welcome screen 
@@ -20,7 +21,7 @@ def main():
     
     snooze(15)
     
-    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), 25, 10, 0, Button.Button1)
+    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Cross Hair Profile"))
     
     c = waitForObject("{container=':ref-testscale_1_001.img.Image_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}")

@@ -1,8 +1,10 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "use_case_utils.py"))
+source(findFile("scripts", "dawn_constants.py"))
 
 # This test makes sure we can start and stop DAWN
 def main():
+    vals = dawn_constants
     # Start or attach runs (or attaches) to DAWN and then 
     # makes sure the workbench window exists and finally
     # will close the Welcome screen 
@@ -18,7 +20,7 @@ def main():
     openExample("001.img")
  
     # Now use profile tool
-    doubleClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), 31, 5, 0, Button.Button1)
+    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Line Profile"))
     snooze(1)
     
@@ -28,7 +30,7 @@ def main():
     b = widget.bounds
     mouseDrag(widget, b.x+100, b.y+100, 300, 300, 0, Button.Button1)
     
-    mouseClick(waitForObject(":XY plotting tools_ToolItem"), 29, 7, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Peak Fitting"))
     mouseClick(waitForObject(":Create new profile._ToolItem"), 8, 5, 0, Button.Button1)    
 

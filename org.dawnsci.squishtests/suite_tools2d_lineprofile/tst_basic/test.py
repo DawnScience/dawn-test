@@ -1,8 +1,10 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "use_case_utils.py"))
+source(findFile("scripts", "dawn_constants.py"))
 
 # This test makes sure we can start and stop DAWN
 def main():
+    vals = dawn_constants
     # Start or attach runs (or attaches) to DAWN and then 
     # makes sure the workbench window exists and finally
     # will close the Welcome screen 
@@ -13,7 +15,7 @@ def main():
     openPerspective("Data Browsing (default)") 
     openExample("001.img")
     snooze(1) 
-    doubleClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), 25, 10, 0, Button.Button1)
+    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Line Profile"))
     clickTab(waitForObject(":Line Profile_CTabItem"), 64, 11, 0, Button.Button1)
     

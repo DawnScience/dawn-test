@@ -1,6 +1,7 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_slider_utils.py"))
 
+
 def main():
     startOrAttachToDAWN()
     

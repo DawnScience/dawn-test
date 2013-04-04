@@ -1,5 +1,6 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "dawn_constants.py"))
 
 def main():
     
@@ -8,7 +9,7 @@ def main():
     
     # Open data browsing perspective 
     openPerspective("Data Browsing (default)")
-    
+    vals = dawn_constants
     expand(waitForObjectItem(":Project Explorer_Tree", "data"))
     expand(waitForObjectItem(":Project Explorer_Tree", "examples"))
     children = object.children(waitForObjectItem(":Project Explorer_Tree", "examples"))
@@ -25,7 +26,7 @@ def main():
     mouseClick(waitForObjectItem(":Data_Table", "1/0"), 7, 6, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table", "2/0"), 11, 10, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table", "3/0"), 9, 3, 0, Button.Button1)
-    mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), 28, 15, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "History"))
     mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem"), 16, 12, 0, Button.Button1)
     clickTab(waitForObject(":Data_CTabItem"), 32, 11, 0, Button.Button1)
@@ -34,7 +35,7 @@ def main():
     mouseClick(waitForObjectItem(":Data_Table", "1/0"), 10, 12, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table", "0/0"), 12, 9, 0, Button.Button1)
     clickTab(waitForObject(":History_CTabItem"), 30, 18, 0, Button.Button1)
-    mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), 28, 12, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Peak Fitting"))
     
     

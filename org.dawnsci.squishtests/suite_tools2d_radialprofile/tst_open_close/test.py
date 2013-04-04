@@ -1,8 +1,9 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "dawn_constants.py"))
 
 def main():
-    
+    vals = dawn_constants
     #Start using clean workspace
     startOrAttachToDAWN()
     
@@ -24,7 +25,7 @@ def main():
             break
         
     
-    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), 26, 6, 0, Button.Button1)
+    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"),vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Radial Profile"))
     
     c = waitForObject(":Image_Composite")

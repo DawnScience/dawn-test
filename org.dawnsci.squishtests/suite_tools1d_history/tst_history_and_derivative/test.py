@@ -1,5 +1,6 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "dawn_constants.py"))
 
 def main():
     
@@ -8,7 +9,7 @@ def main():
     
     # Open data browsing perspective 
     openPerspective("Data Browsing (default)")
-    
+    vals = dawn_constants
     #expand data tree and open metal mix
     expand(waitForObjectItem(":Project Explorer_Tree", "data"))
     expand(waitForObjectItem(":Project Explorer_Tree", "examples"))
@@ -23,12 +24,12 @@ def main():
     
     mouseClick(waitForObjectItem(":Data_Table", "0/0"), 8, 12, 0, Button.Button1)
     
-    mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), 28, 16, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "History"))
     
     mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem"), 21, 21, 0, Button.Button1)
     mouseClick(waitForObjectItem(":History_Table", "0/0"), 9, 14, 0, Button.Button1)
-    mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), 25, 18, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Derivative"))
     
     conOb = waitForObject(":Configure Settings..._ToolItem_2")

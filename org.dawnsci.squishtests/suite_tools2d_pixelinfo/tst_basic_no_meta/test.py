@@ -1,6 +1,7 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "dawn_constants.py"))
 
 def testIsNumeric(value):
     try:
@@ -11,6 +12,7 @@ def testIsNumeric(value):
 
 # This test makes sure we can start and stop DAWN
 def main():
+    vals = dawn_constants
     # Start or attach runs (or attaches) to DAWN and then 
     # makes sure the workbench window exists and finally
     # will close the Welcome screen 
@@ -24,7 +26,7 @@ def main():
     
     openExample("0001.pgm")
     
-    doubleClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), 26, 5, 0, Button.Button1)
+    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Pixel Information"))
     
     tab = waitForObject(":Pixel Information_Table")

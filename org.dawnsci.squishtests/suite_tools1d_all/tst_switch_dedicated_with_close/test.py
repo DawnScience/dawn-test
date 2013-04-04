@@ -1,11 +1,12 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "dawn_constants.py"))
 
 def the_actual_test():
-    
+    vals = dawn_constants
     #Open each tool then make dedicated
     #Peak fitting
-    mouseClick(waitForObject(":XY plotting tools_ToolItem"), 25, 8, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Peak Fitting"))
     
     #fit peak
@@ -28,7 +29,7 @@ def the_actual_test():
     mouseClick(waitForObject(":Peak Fitting_CTabCloseBox"), 12, 14, 0, Button.Button1)
     
     #activate derivative tool, which should deactivate the peak fitting
-    mouseClick(waitForObject(":XY plotting tools_ToolItem"), 25, 8, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Derivative"))
     names = ["Column_3'"]
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
@@ -41,7 +42,7 @@ def the_actual_test():
     
     mouseClick(waitForObject(":Derivative_CTabCloseBox"), 8, 6, 0, Button.Button1)
     
-    mouseClick(waitForObject(":XY plotting tools_ToolItem"), 25, 8, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Measurement"))
     #Check derivative tool has not reset
     names = ["Column_3"]
@@ -66,7 +67,7 @@ def the_actual_test():
     
     mouseClick(waitForObject(":Measurement_CTabCloseBox"), 10, 4, 0, Button.Button1)
     
-    mouseClick(waitForObject(":XY plotting tools_ToolItem"), 25, 8, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Line Fitting"))
     
     #do fit

@@ -1,6 +1,7 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "dawn_constants.py"))
 
 # This test makes sure we can start and stop DAWN
 def main():
@@ -12,7 +13,7 @@ def main():
     # On a test you may add test code here 
     #Open data browsing perspective
     openPerspective("Data Browsing (default)")
-    
+    vals = dawn_constants
     snooze(5)
     openAndClearErrorLog()
     
@@ -20,7 +21,7 @@ def main():
     snooze(1)
     
 
-    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), 25, 10, 0, Button.Button1)
+    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Box Profile"))
     
     c = waitForObject(":Image_Composite")
