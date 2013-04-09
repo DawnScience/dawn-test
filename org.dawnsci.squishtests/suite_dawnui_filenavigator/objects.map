@@ -2,9 +2,14 @@
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
 :76003.dat.Info_CTabItem	{caption='Info' container=':76003.dat_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :76003.dat_CTabItem	{caption='76003.dat' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Available Customizations.Content_CTabItem	{caption='Content' type='org.eclipse.swt.custom.CTabItem' window=':Available Customizations_Shell'}
+:Available Customizations.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Available Customizations_Shell'}
+:Available Customizations_Shell	{caption='Available Customizations' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Available label decorations:.DAT file Scan Command Decorator_TableCell	{caption='DAT file Scan Command Decorator' column='0' container=':Preferences.Available label decorations:_Table' type='com.froglogic.squish.swt.TableCell'}
+:Available label decorations:.DAT file Scan Command Decorator_TableCell_2	{caption='DAT file Scan Command Decorator' column='0' container=':Preferences.Available label decorations:_Table' type='com.froglogic.squish.swt.TableCell'}
 :Available label decorations:.File Meta Data Decorator_TableCell	{caption='File Meta Data Decorator' column='0' container=':Preferences.Available label decorations:_Table' type='com.froglogic.squish.swt.TableCell'}
 :Available label decorations:.File Meta Data Decorator_TableCell_2	{caption='File Meta Data Decorator' column='0' container=':Preferences.Available label decorations:_Table' row='4' type='com.froglogic.squish.swt.TableCell'}
+:Available label decorations:.File Meta Data Decorator_TableCell_3	{caption='File Meta Data Decorator' column='0' container=':Preferences.Available label decorations:_Table' row='5' type='com.froglogic.squish.swt.TableCell'}
 :Available label decorations:.HDF5 tree element Decorator_TableCell	{caption='HDF5 tree element Decorator' column='0' container=':Preferences.Available label decorations:_Table' type='com.froglogic.squish.swt.TableCell'}
 :Available label decorations:.Nexus Scan Command and Title Decorator_TableCell	{caption='Nexus Scan Command and Title Decorator' column='0' container=':Preferences.Available label decorations:_Table' row='11' type='com.froglogic.squish.swt.TableCell'}
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
@@ -28,7 +33,10 @@
 :Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Content.Select the available extensions to show (unchecked extensions will not display content):_Label	{caption='Select the available extensions to show (unchecked extensions will not display content):' container=':Available Customizations.Content_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Content.Select the available extensions to show (unchecked extensions will not display content):_Table	{aboveWidget=':Content.Select the available extensions to show (unchecked extensions will not display content):_Label' container=':Available Customizations.Content_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :DAT file Scan Command Decorator_ItemCheckbox	{container=':Available label decorations:.DAT file Scan Command Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
+:DAT file Scan Command Decorator_ItemCheckbox_2	{container=':Available label decorations:.DAT file Scan Command Decorator_TableCell_2' type='com.froglogic.squish.swt.ItemCheckbox'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Tree	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
@@ -41,8 +49,10 @@
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :File Meta Data Decorator_ItemCheckbox	{container=':Available label decorations:.File Meta Data Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
 :File Meta Data Decorator_ItemCheckbox_2	{container=':Available label decorations:.File Meta Data Decorator_TableCell_2' type='com.froglogic.squish.swt.ItemCheckbox'}
+:File Meta Data Decorator_ItemCheckbox_3	{container=':Available label decorations:.File Meta Data Decorator_TableCell_3' type='com.froglogic.squish.swt.ItemCheckbox'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Finish_Button_2	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:HDF5 File Contents_ItemCheckbox	{container=':Select the available extensions to show (unchecked extensions will not display content):.HDF5 File Contents_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
 :HDF5 tree element Decorator_ItemCheckbox	{container=':Available label decorations:.HDF5 tree element Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
 :I accept the terms of the license agreement_Button	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Info_Table	{container=':76003.dat.Info_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
@@ -117,6 +127,7 @@
 :Select interpreter.Interpreter Name: _Text	{isvisible='true' leftWidget=':Select interpreter.Interpreter Name: _Label' type='org.eclipse.swt.widgets.Text' window=':Select interpreter_Shell'}
 :Select interpreter.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Select interpreter_Shell'}
 :Select interpreter_Shell	{caption='Select interpreter' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Select the available extensions to show (unchecked extensions will not display content):.HDF5 File Contents_TableCell	{caption='HDF5 File Contents' column='0' container=':Content.Select the available extensions to show (unchecked extensions will not display content):_Table' row='10' type='com.froglogic.squish.swt.TableCell'}
 :Selection needed.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Selection needed_Shell'}
 :Selection needed_Shell	{caption='Selection needed' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Show Plot View_Menu	{caption='Show Plot View' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
