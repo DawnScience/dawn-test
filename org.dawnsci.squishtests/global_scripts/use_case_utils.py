@@ -100,4 +100,19 @@ def getScreenPosition(plottingSystem,x,y):
         outX = axes.get(0).getValuePosition(x)
         
     return outX,outY
+
+def dragSash(sash, dx, dy):
+    screenPoint = sash.toDisplay(sash.getBounds().width/2,sash.getBounds().height/2)
+    startDrag(sash, sash.getBounds().width/2, sash.getBounds().height/2);
+#    mousePress(waitForObject(":_Sash"), 5, 316, Button.Button1);
+    mouseMove(screenPoint.x - dx, screenPoint.y -dy)
+    snooze(1)
+    dropOn(sash, sash.getBounds().width/2, sash.getBounds().height/2,DnD.DropDefault);
+
+def dragToolToConstWidth(toolTab,sash):
+    current_width = toolTab.getControl().getBounds().width
+    
+    if (current_width < dawn_constants.TOOL_MIN_WIDTH):
+        dx = dawn_constants.TOOL_MIN_WIDTH - current_width
+        dragSash(sash, dx, 0)
     

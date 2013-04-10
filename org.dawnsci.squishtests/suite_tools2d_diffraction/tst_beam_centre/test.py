@@ -89,8 +89,10 @@ def main():
 
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_3"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
 
-
     activateItem(waitForObjectItem(":Pop Up Menu", "Diffraction"))
+    
+    #dragSash(waitForObject(":_Sash"),200,0)
+    dragToolToConstWidth(waitForObject(":Diffraction_CTabItem"),waitForObject(":_Sash"))
     
     c = waitForObject(":Image_Composite_2")
     b = c.bounds
@@ -146,16 +148,25 @@ def main():
     xnew,ynew = getBeamCentreFromTable(ob)
     test.verify(not xnew in x, "Beam X changed")
     test.verify(not ynew in y, "Beam Y changed")
-
-    snooze(1)
     
     mouseClick(waitForObject(":Calibrants_ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Cr2O3"))
     mouseClick(waitForObject(":Resolution rings_ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Calibrant"))
+    regions=system.getRegions()
+    testRegionsAdded(regions, "calibrant")
+    
+    mouseClick(waitForObject(":Find outer rings_ToolItem"), 12, 13, 0, Button.Button1)
+    
+    snooze(3)
     
     regions=system.getRegions()
     
-    testRegionsAdded(regions, "calibrant")
+    mouseClick(waitForObject(":Calibrate detector using rings_ToolItem"), 16, 10, 0, Button.Button1)
+    
+    snooze(3)
+    
+    testRegionsAdded(regions, "Ring")
+    
     
     closeOrDetachFromDAWN()
