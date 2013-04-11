@@ -11,12 +11,12 @@ def main():
 
     openExample("pow_M99S5_1_0001.cbf")
         
-    mouseClick(waitForObject(":Configure Settings..._ToolItem_3"), 9, 5, 0, Button.Button1)
+    mouseClick(waitForObject(":Configure Settings..._ToolItem_3"))
     clickTab(waitForObject(":Configure Graph Settings.Image Traces_TabItem"))
-    mouseClick(waitForObject(":Histogramming.Histogram Type_CCombo"), 311, 13, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":_List", "Median"), 302, 14, 0, Button.Button1)
-    mouseClick(waitForObject(":Histogramming.Histogram Type_CCombo"), 293, 18, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":_List", "Outlier Values"), 288, 12, 0, Button.Button1)
+    mouseClick(waitForObject(":Histogramming.Histogram Type_CCombo"))
+    mouseClick(waitForObjectItem(":_List", "Median"))
+    mouseClick(waitForObject(":Histogramming.Histogram Type_CCombo"))
+    mouseClick(waitForObjectItem(":_List", "Outlier Values"))
 
     low = waitForObject(":Histogramming_StyledText")
     high = waitForObject(":Histogramming_StyledText_2")
