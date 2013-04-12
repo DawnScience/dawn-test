@@ -4,7 +4,7 @@ class dawn_constants:
     
     TOOL_X = 30
     TOOL_Y = 8
-    TOOL_MIN_WIDTH = 460
+    TOOL_MIN_WIDTH = 500
     
     METALMIX_0_MIN = "0.0"
     METALMIX_0_MAX ="600.0"

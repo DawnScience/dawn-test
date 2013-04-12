@@ -158,15 +158,8 @@ def main():
     
     mouseClick(waitForObject(":Find outer rings_ToolItem"), 12, 13, 0, Button.Button1)
     
-    snooze(3)
-    
+    snooze(20)
     regions=system.getRegions()
-    
-    mouseClick(waitForObject(":Calibrate detector using rings_ToolItem"), 16, 10, 0, Button.Button1)
-    
-    snooze(3)
-    
     testRegionsAdded(regions, "Ring")
-    
-    
+
     closeOrDetachFromDAWN()

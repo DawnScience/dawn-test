@@ -3,6 +3,7 @@
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Beam Centre_TreeItem	{caption='Beam Centre' parentitem=':Detector_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :Calibrants_ToolItem	{caption='Calibrants' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Calibrate detector using rings - this is an experimental feature and does not work robustly_ToolItem	{caption='Calibrate detector using rings - this is an experimental feature and does not work robustly' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Calibrate detector using rings_ToolItem	{caption='Calibrate detector using rings' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Change Settings.Maximum_Label	{caption='Maximum' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Maximum_Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Maximum_Label' type='org.eclipse.swt.widgets.Text'}
@@ -23,6 +24,8 @@
 :Confirm Delete_Shell	{caption='Confirm Delete' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Data_CTabItem	{caption='Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_ErrorLog' type='org.eclipse.swt.widgets.ToolItem'}
 :Detector_TreeItem	{caption='Detector' container=':Diffraction_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Diffraction_CTabItem	{caption='Diffraction' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -58,6 +61,7 @@
 :Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Image tools used to profile and inspect images._ToolItem_2	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :Image tools used to profile and inspect images._ToolItem_3	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
+:Image tools used to profile and inspect images._ToolItem_4	{caption='Image tools used to profile and inspect images.' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Image_Composite	{container=':ref-testscale_1_001.img.Image_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
 :Image_Composite_2	{container=':pow_M99S5_1_0001.cbf.Image_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
 :Image_ToolBar	{container=':ref-testscale_1_001.img.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
@@ -74,6 +78,8 @@
 :Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
+:Plot_Composite	{container=':i22-104754.nxs.Plot_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
+:Plot_ToolBar	{container=':i22-104754.nxs.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Preferences.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Available label decorations:_Label	{caption='Available label decorations:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Preferences_Shell'}
@@ -81,8 +87,12 @@
 :Preferences.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences_Shell	{caption='Preferences' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Preferences_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
+:Problem Occurred.Details >>_Button	{caption='Details >>' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Problem Occurred_Shell'}
+:Problem Occurred.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Problem Occurred_Shell'}
+:Problem Occurred_Shell	{caption='Problem Occurred' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Refine beam centre_ToolItem	{caption='Refine beam centre' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Refine beam centre_ToolItem_2	{caption='Refine beam centre' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :Regions.Region Location_Label	{caption='Region Location' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Regions.Region Location_Table	{aboveWidget=':Regions.Region Location_Label' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Regions_Spinner	{container=':Configure Graph Settings.Regions_TabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Spinner'}
@@ -93,6 +103,7 @@
 :SaveMetaData.nxs_CTabCloseBox	{container=':SaveMetaData.nxs_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :SaveMetaData.nxs_CTabItem	{caption='SaveMetaData.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse_ToolItem	{caption='Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse_ToolItem_2	{caption='Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :Select Trace_Combo	{container=':Traces.Select Trace_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
 :Show View.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Show View_Shell'}
 :Show View_Menu	{caption='Show View' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
@@ -112,6 +123,7 @@
 :Y.1000.58 *_TreeSubItem	{caption='1000.58 *' column='2' container=':Y_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
 :Y_TreeItem	{caption='Y' parentitem=':Beam Centre_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :_CTabFolder	{firstTabCaption='Meta Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder_2	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Composite	{container=':_CTabFolder' isvisible='false' type='org.eclipse.swt.widgets.Composite'}
 :_FigureCanvas	{isvisible='true' type='org.eclipse.draw2d.FigureCanvas' window=':Workbench Window'}
 :_Label	{caption='' container=':_CTabFolder' isvisible='false' type='org.eclipse.swt.widgets.Label'}
@@ -121,7 +133,10 @@
 :_ToolBar_2	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' leftWidget=':_Label' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{container=':_CTabFolder' firstItemText='Export metadata to file' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_5	{container=':_CTabFolder_2' firstItemText='Export metadata to file' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_ErrorLog	{firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:i22-104754.nxs.Plot_CTabItem	{caption='Plot' container=':i22-104754.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:i22-104754.nxs_CTabItem	{caption='i22-104754.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :pow_M99S5_1_0001.cbf.Image_CTabItem	{caption='Image' container=':pow_M99S5_1_0001.cbf_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :pow_M99S5_1_0001.cbf_CTabItem	{caption='pow_M99S5_1_0001.cbf' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :ref-screentest-crystal1_1_001.mccd.Image_CTabItem	{caption='Image' container=':ref-screentest-crystal1_1_001.mccd_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
