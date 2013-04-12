@@ -99,7 +99,6 @@ def main():
     
     mouseClick(waitForObjectItem(":Data_Table", "2/0"), 9, 5, 0, Button.Button1)
     
-    
     snooze(1)
 
     the_actual_test()

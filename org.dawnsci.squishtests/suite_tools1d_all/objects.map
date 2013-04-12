@@ -42,6 +42,8 @@
 :History_CTabCloseBox	{container=':History_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :History_CTabItem	{caption='History' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :I accept the terms of the license agreement_Button	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
+:Image Gallery_CTabItem	{caption='Image Gallery' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Image Gallery_Gallery	{container=':Image Gallery_CTabItem' isvisible='true' type='org.eclipse.nebula.widgets.gallery.Gallery'}
 :Install to:_Label	{caption='Install to:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Install to:_Text	{isvisible='true' leftWidget=':Install to:_Label' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
 :Internal Error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Internal Error_Shell'}

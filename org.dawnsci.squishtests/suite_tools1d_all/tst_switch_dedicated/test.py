@@ -47,7 +47,7 @@ def the_actual_test():
 
     test.log("Image at (%d, %d) is %d x %d" % (b.x,b.y, b.width, b.height))
     mouseDrag(c, b.x+b.width/2.35, b.y+b.height/4, int(b.width/7.5),0, 0, Button.Button1)
-    snooze(1)
+    snooze(2)
     
     clickTab(waitForObject(":Measurement_CTabItem"), 61, 12, 0, Button.Button1)
     #test.verify(waitForObjectItem(":Measurement_Table", "0/0").text == "Measurement 1", "Verify measurement text");
@@ -100,12 +100,11 @@ def main():
     
     mouseClick(waitForObjectItem(":Data_Table", "2/0"), 9, 5, 0, Button.Button1)
     
-    
-    snooze(1)
+    snooze(2)
 
     the_actual_test()
     #repeat
-    snooze(1)
+    snooze(2)
     the_actual_test()
 
     closeOrDetachFromDAWN()

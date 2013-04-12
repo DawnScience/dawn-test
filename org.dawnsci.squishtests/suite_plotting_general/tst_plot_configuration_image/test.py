@@ -10,7 +10,9 @@ def main():
     openPerspective("Data Browsing (default)")
 
     openExample("pow_M99S5_1_0001.cbf")
-        
+    
+    snooze(1)
+    
     mouseClick(waitForObject(":Configure Settings..._ToolItem_3"))
     clickTab(waitForObject(":Configure Graph Settings.Image Traces_TabItem"))
     mouseClick(waitForObject(":Histogramming.Histogram Type_CCombo"))
@@ -57,11 +59,15 @@ def main():
     type(waitForObject(":Histogramming_StyledText"), "<Ctrl+a>")
     type(waitForObject(":Histogramming_StyledText"), "10")
     type(waitForObject(":Histogramming_StyledText"), "<Right>")
-    type(waitForObject(":Histogramming_StyledText"), "<Right>")
-    type(waitForObject(":Histogramming_StyledText"), "<Right>")
-    type(waitForObject(":Histogramming_StyledText"), "5789")
-    
-    test.verify(low.getText() in "10.008 %","Text is correct")
+    type(waitForObject(":Histogramming_StyledText"), "567")
+    type(waitForObject(":Histogramming_StyledText"), "<Left>")
+    type(waitForObject(":Histogramming_StyledText"), "<Left>")
+    type(waitForObject(":Histogramming_StyledText"), "<Left>")
+    type(waitForObject(":Histogramming_StyledText"), "78")
+    type(waitForObject(":Histogramming_StyledText"), "<Delete>")
+    type(waitForObject(":Histogramming_StyledText"), "9")
+
+    test.verify(low.getText() in "10.789 %","Text is correct")
     
     
     clickButton(waitForObject(":Configure Graph Settings.Apply_Button"))
