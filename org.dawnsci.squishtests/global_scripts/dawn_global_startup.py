@@ -6,6 +6,7 @@ testSettings.logScreenshotOnFail = True
 testSettings.logScreenshotOnError = True
 
 import os, shutil
+from datetime import datetime
 
 def startDAWNSuiteWorkspace():
 
@@ -14,8 +15,13 @@ def startDAWNSuiteWorkspace():
     parent_path, test_name = os.path.split(cwd)
     suite_name = os.path.basename(parent_path)
     workspace = "%s/%s/%s" % (DAWN_WORKSPACE_ROOT, suite_name, DAWN_SUITE_WORKSPACE)
-
+    
+    start = datetime.now()
     startApplication("dawn -consoleLog -data %s" % workspace, "", -1, 60)
+    end = datetime.now()
+    
+    test.log("Application took " + str(end-start) + " to start")
+    
     window = waitForObject(":Workbench Window")
     window.setMaximized(True)
     # Let any setup items continue (e.g. Jython interpreter setup)
@@ -52,9 +58,13 @@ def startOrAttachToDAWNOnly(clean_workspace=True):
                 pass
             snooze(1)
             test.verify(not os.path.exists(workspace), "startOrAttachToDAWNOnly: Workspace is clean")
-
+        
+        start = datetime.now()
         startApplication("dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s" %
                          (workspace, osgi_user_area, osgi_configuration_area, suite_name, test_name), "", -1, 60)
+        end = datetime.now()
+        test.log("Application took " + str(end-start) + " to start")
+        
     window = waitForObject(":Workbench Window")
     window.setMaximized(True)
     # Let any setup items continue (e.g. Jython interpreter setup)
