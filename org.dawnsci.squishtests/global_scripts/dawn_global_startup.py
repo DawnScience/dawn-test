@@ -17,7 +17,7 @@ def startDAWNSuiteWorkspace():
     workspace = "%s/%s/%s" % (DAWN_WORKSPACE_ROOT, suite_name, DAWN_SUITE_WORKSPACE)
     
     start = datetime.now()
-    startApplication("dawn -consoleLog -data %s" % workspace, "", -1, 60)
+    startApplication("dawn -consoleLog -data %s" % workspace, "", -1, 90)
     end = datetime.now()
     
     test.log("Application took " + str(end-start) + " to start")
@@ -61,7 +61,7 @@ def startOrAttachToDAWNOnly(clean_workspace=True):
         
         start = datetime.now()
         startApplication("dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s" %
-                         (workspace, osgi_user_area, osgi_configuration_area, suite_name, test_name), "", -1, 60)
+                         (workspace, osgi_user_area, osgi_configuration_area, suite_name, test_name), "", -1, 90)
         end = datetime.now()
         test.log("Application took " + str(end-start) + " to start")
         
