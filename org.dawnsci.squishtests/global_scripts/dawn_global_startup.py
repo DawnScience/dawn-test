@@ -46,18 +46,19 @@ def startOrAttachToDAWNOnly(clean_workspace=True):
         cwd = os.getcwd()
         parent_path, test_name = os.path.split(cwd)
         suite_name = os.path.basename(parent_path)
-        workspace = "%s/%s/%s/workspace" % (DAWN_WORKSPACE_ROOT, suite_name, test_name)
-        osgi_user_area = "%s/%s/%s/osgi_user_area" % (DAWN_WORKSPACE_ROOT, suite_name, test_name)
-        osgi_configuration_area = "%s/%s/%s/osgi_configuration_area" % (DAWN_WORKSPACE_ROOT, suite_name, test_name)
+        workparent = os.path.join(DAWN_WORKSPACE_ROOT, suite_name, test_name)
+        workspace = os.path.join(workparent, 'workspace')
+        osgi_user_area = os.path.join(workparent, 'osgi_user_area')
+        osgi_configuration_area = os.path.join(workparent, 'osgi_configuration_area')
         if clean_workspace:
             try:
-                shutil.rmtree(workspace)
+                shutil.rmtree(workparent)
             except OSError:
                 # Ignore error here, check below
                 # that directory is gone
                 pass
             snooze(1)
-            test.verify(not os.path.exists(workspace), "startOrAttachToDAWNOnly: Workspace is clean")
+            test.verify(not os.path.exists(workparent), "startOrAttachToDAWNOnly: Workspace is clean")
         
         start = datetime.now()
         startApplication("dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s" %
