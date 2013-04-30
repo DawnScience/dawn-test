@@ -35,7 +35,7 @@
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Continue_ToolItem	{caption='Continue' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
-:Create new profile._ToolItem	{caption='Create new profile.' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Create new profile._ToolItem	{caption='Create new profile' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Data reduction..._ToolItem	{caption='Data reduction...' container=':Data_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -250,7 +250,7 @@
 :_ToolBar	{container=':_CTabFolder' firstItemText~='(Pin Console|Terminate current console|Clear Console)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:_ToolBar_4	{container=':_CTabFolder_4' firstItemText='Create new profile.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_4	{container=':_CTabFolder_4' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_5	{container=':_CTabFolder_5' firstItemText='New fit selection.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_6	{firstItemText='Run the workflow from start to end until finished.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_7	{container=':_CTabFolder_6' firstItemText='Continue' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}

@@ -61,7 +61,7 @@
 :_CTabFolder	{firstTabCaption='Meta Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Label	{caption='' container=':_CTabFolder' isvisible='false' type='org.eclipse.swt.widgets.Label'}
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
-:_ToolBar	{container=':_CTabFolder' firstItemText='Create new profile.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar	{container=':_CTabFolder' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_ErrorLog	{firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :ref-testscale_1_001.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_001.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
