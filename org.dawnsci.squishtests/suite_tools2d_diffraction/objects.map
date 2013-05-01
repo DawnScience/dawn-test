@@ -49,9 +49,12 @@
 :File Meta Data Decorator_ItemCheckbox	{container=':Available label decorations:.File Meta Data Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
 :File location.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':File location_Shell'}
 :File location.Please choose a location to import from._Label	{caption='Please choose a location to import from.' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':File location_Shell'}
-:File location.Please choose a location to import from._Label_2	{caption='Please choose a location to import from.' isvisible='false' type='org.eclipse.swt.widgets.Label' window=':File location_Shell_2'}
+:File location.Please choose a location to import from._Label_2	{caption='Please choose a location.' isvisible='false' type='org.eclipse.swt.widgets.Label' window=':File location_Shell_2'}
 :File location.Please choose a location to import from._Tree	{aboveWidget=':File location.Please choose a location to import from._Label' isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':File location_Shell'}
 :File location.Please choose a location to import from._Tree_2	{aboveWidget=':File location.Please choose a location to import from._Label_2' isvisible='false' type='org.eclipse.swt.widgets.Tree' window=':File location_Shell_2'}
+:File location.Please choose a location._Label	{caption='Please choose a location.' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':File location_Shell'}
+:File location.Please choose a location._Tree	{aboveWidget=':File location.Please choose a location._Label' isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':File location_Shell'}
+:File location_Composite	{isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite' window=':File location_Shell'}
 :File location_Shell	{caption='File location' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :File location_Shell_2	{caption='File location' isvisible='false' type='org.eclipse.swt.widgets.Shell'}
 :Find outer rings_ToolItem	{caption='Find outer rings' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}

@@ -51,9 +51,9 @@ def main():
     
     mouseClick(waitForObject(":Import metadata from file_ToolItem"), 17, 7, 0, Button.Button1)
     clickButton(waitForObject(":Import...._Button"))
-    expand(waitForObjectItem(":File location.Please choose a location to import from._Tree", "data"))
-    expand(waitForObjectItem(":File location.Please choose a location to import from._Tree", "examples"))
-    mouseClick(waitForObjectItem(":File location.Please choose a location to import from._Tree", "SaveMetaData.nxs"), 98, 9, 0, Button.Button1)
+    expand(waitForObjectItem(":File location.Please choose a location._Tree", "data"))
+    expand(waitForObjectItem(":File location.Please choose a location._Tree", "examples"))
+    mouseClick(waitForObjectItem(":File location.Please choose a location._Tree", "SaveMetaData.nxs"), 69, 14, 0, Button.Button1)
     clickButton(waitForObject(":File location.OK_Button"))
     clickButton(waitForObject(":Import.Next >_Button"))
     clickButton(waitForObject(":Import.Finish_Button"))
