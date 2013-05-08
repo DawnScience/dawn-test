@@ -113,6 +113,7 @@
 :Show View_Shell	{caption='Show View' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Show View_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Show View_Shell'}
 :Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
+:Shows background operations in Progress view_ToolItem	{caption='Shows background operations in Progress view' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Tree_Tree	{container=':SaveMetaData.nxs.Tree_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :View Menu_ToolItem	{caption='View Menu' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
@@ -127,7 +128,9 @@
 :Y_TreeItem	{caption='Y' parentitem=':Beam Centre_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :_CTabFolder	{firstTabCaption='Meta Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_2	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_Canvas	{isvisible='true' type='org.eclipse.swt.widgets.Canvas' window=':Workbench Window'}
 :_Composite	{container=':_CTabFolder' isvisible='false' type='org.eclipse.swt.widgets.Composite'}
+:_Composite_2	{isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite' window=':Workbench Window'}
 :_FigureCanvas	{isvisible='true' type='org.eclipse.draw2d.FigureCanvas' window=':Workbench Window'}
 :_Label	{caption='' container=':_CTabFolder' isvisible='false' type='org.eclipse.swt.widgets.Label'}
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
@@ -137,6 +140,7 @@
 :_ToolBar_3	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{container=':_CTabFolder' firstItemText='Export metadata to file' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_5	{container=':_CTabFolder_2' firstItemText='Export metadata to file' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_6	{firstItemText='Shows background operations in Progress view' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_ErrorLog	{firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :i22-104754.nxs.Plot_CTabItem	{caption='Plot' container=':i22-104754.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :i22-104754.nxs_CTabItem	{caption='i22-104754.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}

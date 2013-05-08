@@ -17,6 +17,7 @@ def testColormap():
     clickButton(waitForObject(":Colour mapping.Log Scale_Button"))
 
 def checkHisto(low,high):
+    snooze(1)
     mouseClick(waitForObject(":Configure Settings..._ToolItem"), 20, 5, 0, Button.Button1)
     clickTab(waitForObject(":Configure Graph Settings.Image Traces_TabItem"))
     
@@ -43,7 +44,9 @@ def main():
         if "pilatus300k.edf" in child.text:
             doubleClick(child, 5, 5, 0, Button.Button1)
             break
-
+    
+    snooze(2)
+    type(waitForObject(":_FigureCanvas"), "h")
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Colour mapping"))    
     

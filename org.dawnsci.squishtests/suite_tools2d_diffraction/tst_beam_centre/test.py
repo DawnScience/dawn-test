@@ -158,7 +158,11 @@ def main():
     
     mouseClick(waitForObject(":Find outer rings_ToolItem"), 12, 13, 0, Button.Button1)
     
-    snooze(20)
+    i = 0
+    while object.exists(":Shows background operations in Progress view_ToolItem") and i < 100:
+        snooze(5)
+        i=i+1
+    
     regions=system.getRegions()
     testRegionsAdded(regions, "Ring")
 
