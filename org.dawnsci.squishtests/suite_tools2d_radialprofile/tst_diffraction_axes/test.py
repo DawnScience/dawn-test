@@ -49,10 +49,10 @@ def main():
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 8, 6, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Lock To Metadata"))
     
-    mouseClick(waitForObject(":Configure Settings..._ToolItem_2"), 19, 18, 0, Button.Button1)
-    clickTab(waitForObject(":Configure Graph Settings.Regions_TabItem"))
-    test.verify(waitForObject(":Regions.   Mobile   _Button").selection == False)
-    clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
+#    mouseClick(waitForObject(":Configure Settings..._ToolItem_2"), 19, 18, 0, Button.Button1)
+#    clickTab(waitForObject(":Configure Graph Settings.Regions_TabItem"))
+#    test.verify(waitForObject(":Regions.   Mobile   _Button").selection == False)
+#    clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     
     check_plotted_traces_names(conOb, ['Radial Profile Profile 1'])
 
