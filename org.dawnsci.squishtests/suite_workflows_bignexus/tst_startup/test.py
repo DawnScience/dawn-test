@@ -59,14 +59,14 @@ def runTestBrowser():
     mouseClick(waitForObject(":Edit the slice with different editors._ToolItem"), 29, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Slice index (only)"))
     mouseClick(waitForObjectItem(":Data_Table_2", "0/2"), 89, 18, 0, Button.Button1)
-    
+    snooze(1)
     for i in range(0,100,10):
         setValue(waitForObject(":Data_Spinner"), i)
         snooze(0.01)
 
     mouseClick(waitForObject(":Slice as line plots_ToolItem"), 13, 10, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table_2", "1/2"), 91, 23, 0, Button.Button1)
-    
+    snooze(1)
     for i in range(0,2000,100):
         setValue(waitForObject(":Data_Spinner"), i)
         snooze(0.01)
@@ -76,6 +76,7 @@ def runTestBrowser():
     mouseClick(waitForObject(":Slice as image_ToolItem"), 10, 13, 0, Button.Button1)
     mouseClick(waitForObject(":Keep aspect ratio_ToolItem"), 7, 6, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table_2", "1/2"), 84, 16, 0, Button.Button1)
+    snooze(1)
 
     for i in range(0,2000,100):
         setValue(waitForObject(":Data_Spinner"), i)

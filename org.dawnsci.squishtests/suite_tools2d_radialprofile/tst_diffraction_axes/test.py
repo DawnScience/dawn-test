@@ -62,21 +62,21 @@ def main():
     activateItem(waitForObjectItem(":Pop Up Menu", "Px"))
     activateItem(waitForObjectItem(":Px_Menu", "d "))
     clickTab(waitForObject(":Radial Profile_CTabItem"), 49, 11, 0, Button.Button1)
-
+    snooze(2)
     check_axis(conOb,"d-spacing (Å)(X-Axis)")
     
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 15, 20, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "d "))
     activateItem(waitForObjectItem(":Px_Menu", "2θ"))
     clickTab(waitForObject(":Radial Profile_CTabItem"), 49, 11, 0, Button.Button1)
-    
+    snooze(2)
     check_axis(conOb,"2θ (°)(X-Axis)")
     
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 15, 20, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "2θ"))
     activateItem(waitForObjectItem(":Px_Menu", "q "))
     clickTab(waitForObject(":Radial Profile_CTabItem"), 49, 11, 0, Button.Button1)
-
+    snooze(2)
     check_axis(conOb,"q (1/Å)(X-Axis)")
     
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 8, 18, 0, Button.Button1)
@@ -91,7 +91,7 @@ def main():
     
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 8, 18, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Lock To Metadata"))
-    
+    snooze(2)
     check_axis(conOb,"q (1/Å)(X-Axis)")
     
     verifyAndClearErrorLog()

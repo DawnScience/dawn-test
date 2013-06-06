@@ -138,8 +138,8 @@
 :_ToolBar	{container=':_CTabFolder' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' leftWidget=':_Label' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:_ToolBar_4	{container=':_CTabFolder' firstItemText='Export metadata to file' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:_ToolBar_5	{container=':_CTabFolder_2' firstItemText='Export metadata to file' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_4	{container=':_CTabFolder' firstItemText='Import metadata from file' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_5	{container=':_CTabFolder_2' firstItemText='Import metadata from file' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_6	{firstItemText='Shows background operations in Progress view' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_ErrorLog	{firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :i22-104754.nxs.Plot_CTabItem	{caption='Plot' container=':i22-104754.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}

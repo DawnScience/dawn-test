@@ -152,7 +152,7 @@
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{container=':_CTabFolder_4' firstItemText='Create new measurement.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_5	{container=':_CTabFolder_4' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:_ToolBar_6	{container=':_CTabFolder_5' firstItemText='Export region to file' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_6	{container=':_CTabFolder_5' firstItemText='Import region from file' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_7	{container=':_CTabFolder_5' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ViewForm	{container=':_CTabFolder_2' isvisible='true' type='org.eclipse.swt.custom.ViewForm'}
 :dx_TableColumn	{caption='dx' container=':Measurement_Table' type='org.eclipse.swt.widgets.TableColumn'}
