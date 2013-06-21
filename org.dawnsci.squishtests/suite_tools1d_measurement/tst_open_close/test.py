@@ -35,7 +35,7 @@ def main():
     
     wid = waitForObject(":_ToolBar_6")
     
-    test.verify(wid.getItem(3).getToolTipText() == "Create new measurement.", "Expected: " + "Create new measurement." + " Actual: " + wid.getItem(3).getToolTipText())
+    test.verify(wid.getItem(0).getToolTipText() == "Create new measurement.", "Expected: " + "Create new measurement." + " Actual: " + wid.getItem(3).getToolTipText())
     test.verify(wid.getItem(5).getToolTipText() == "Copies the region values as text to clipboard which can then be pasted externally.",  "Expected: " + "Copies the region values as text to clipboard which can then be pasted externally." + " Actual: " + wid.getItem(5).getToolTipText())
     test.verify(wid.getItem(6).getToolTipText() == "Delete selected region, if there is one.",  "Expected: " + "Delete selected region, if there is one." + " Actual: " + wid.getItem(6).getToolTipText())
     

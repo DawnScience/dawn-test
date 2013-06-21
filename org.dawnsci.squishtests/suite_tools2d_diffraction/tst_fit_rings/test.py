@@ -21,6 +21,16 @@ def main():
     # Open data browsing perspective 
     openPerspective("Data Browsing (default)")
     
+    clickTab(waitForObject(":Data_CTabItem"), 42, 14, 0, Button.Button3)
+    activateItem(waitForObjectItem(":Pop Up Menu", "Size"))
+    activateItem(waitForObjectItem(":Size_Menu", "Left"))
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    
      #expand data tree and open metal mix
     expand(waitForObjectItem(":Project Explorer_Tree", "data"))
     expand(waitForObjectItem(":Project Explorer_Tree", "examples"))
@@ -40,8 +50,6 @@ def main():
     #getScreenPosition(plottingSystem,x,y)
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_4"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Diffraction"))
-    
-    dragToolToConstWidth(waitForObject(":Diffraction_CTabItem"),waitForObject(":_Sash"))
     
     c = waitForObject(":Plot_Composite")
     b = c.bounds

@@ -61,7 +61,7 @@ def main():
     
     test.verify(tab.getItemCount()==4,"4 rows in table")
     
-    mouseClick(waitForObject(":Remove Region..._ToolItem_2"), 26, 10, 0, Button.Button1)
+    mouseClick(waitForObject(":Remove Region..._ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Remove all regions..."))
     clickButton(waitForObject(":Please Confirm Delete All.OK_Button"))
     

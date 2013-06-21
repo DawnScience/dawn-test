@@ -6,7 +6,8 @@ import os
 
 def runTestBrowserDE():
     
-    startOrAttachToDAWNOnly(clean_workspace=False)
+    startDAWNSuiteWorkspace()
+    #startOrAttachToDAWNOnly(clean_workspace=False)
     # Open data browsing perspective 
     openPerspective("DExplore")
     #Open data browsing perspective 
@@ -88,7 +89,7 @@ def runTestBrowser():
 def main():
     
     #Start using clean workspace
-    startOrAttachToDAWN()
+    startDAWNSuiteWorkspace()
     name = "bigData.moml"
     path = findFile("testdata", name)
     path = os.path.abspath(path)
@@ -143,11 +144,11 @@ def main():
     openPerspective("Data Browsing (default)")
 
     closeOrDetachFromDAWN()
-    
-    snooze(10)
-    
-    runTestBrowser()
-    
-    snooze(10)
-    
-    runTestBrowserDE()
+#    
+#    snooze(10)
+#    
+#    runTestBrowser()
+#    
+#    snooze(10)
+#    
+#    runTestBrowserDE()

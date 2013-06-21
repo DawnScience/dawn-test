@@ -15,6 +15,17 @@ def main():
     # On a test you may add test code here 
     #Open data browsing perspective
     openPerspective("Data Browsing (default)")
+    
+    clickTab(waitForObject(":Data_CTabItem_2"), 45, 14, 0, Button.Button3)
+    activateItem(waitForObjectItem(":Pop Up Menu", "Size"))
+    activateItem(waitForObjectItem(":Size_Menu", "Left"))
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    
     openExternalFile("9758.nxs")
 
     # Select image and zoom
@@ -38,9 +49,8 @@ def main():
     clickTab(waitForObject(":Data_CTabItem_2"), 28, 4, 0, Button.Button1)
     mouseClick(waitForObject(":Data reduction..._ToolItem"), 9, 11, 0, Button.Button1)
     
-    clickButton(waitForObject(":Overwrite file if it exists._Button"))
     snooze(1) 
-    clickButton(waitForObject(":Finish_Button", 10000))
+    clickButton(waitForObject(":Finish_Button"))
     
     # Show plotted image
     snooze(1) 

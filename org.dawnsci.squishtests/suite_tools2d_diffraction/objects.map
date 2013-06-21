@@ -114,6 +114,7 @@
 :Show View_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Show View_Shell'}
 :Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
 :Shows background operations in Progress view_ToolItem	{caption='Shows background operations in Progress view' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
+:Size_Menu	{caption='Size' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Tree_Tree	{container=':SaveMetaData.nxs.Tree_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :View Menu_ToolItem	{caption='View Menu' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
@@ -126,7 +127,7 @@
 :X_TreeItem	{caption='X' parentitem=':Beam Centre_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :Y.1000.58 *_TreeSubItem	{caption='1000.58 *' column='2' container=':Y_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
 :Y_TreeItem	{caption='Y' parentitem=':Beam Centre_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
-:_CTabFolder	{firstTabCaption='Meta Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder	{firstTabCaption='Metadata' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_2	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Canvas	{isvisible='true' type='org.eclipse.swt.widgets.Canvas' window=':Workbench Window'}
 :_Composite	{container=':_CTabFolder' isvisible='false' type='org.eclipse.swt.widgets.Composite'}

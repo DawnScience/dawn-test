@@ -81,7 +81,18 @@ def main():
     # Open data browsing perspective 
     openPerspective("Data Browsing (default)")
     
+    clickTab(waitForObject(":Data_CTabItem"), 42, 14, 0, Button.Button3)
+    activateItem(waitForObjectItem(":Pop Up Menu", "Size"))
+    activateItem(waitForObjectItem(":Size_Menu", "Left"))
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    
     openExample("pow_M99S5_1_0001.cbf")
+
     
     system = getPlottingSystem("pow_M99S5_1_0001.cbf")
     
@@ -92,7 +103,7 @@ def main():
     activateItem(waitForObjectItem(":Pop Up Menu", "Diffraction"))
     
     #dragSash(waitForObject(":_Sash"),200,0)
-    dragToolToConstWidth(waitForObject(":Diffraction_CTabItem"),waitForObject(":_Sash"))
+    #dragToolToConstWidth(waitForObject(":Diffraction_CTabItem"),waitForObject(":_Sash"))
     
     c = waitForObject(":Image_Composite_2")
     b = c.bounds
