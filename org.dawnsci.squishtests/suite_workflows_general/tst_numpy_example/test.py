@@ -26,7 +26,7 @@ def main():
     clickTab(widget)
 
     mouseClick(waitForObject(":_ImageFigure_5"), 24, 5, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Actor Attributes_Table", "8/1"), 272, 5, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Actor Attributes_Table", "6/1"), 272, 5, 0, Button.Button1)
 
     type(waitForObject(":Actor Attributes_Text"), getPythonLocation())
     type(waitForObject(":Actor Attributes_Text"), "<Return>")
