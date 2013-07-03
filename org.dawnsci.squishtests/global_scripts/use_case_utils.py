@@ -55,8 +55,8 @@ def getPlottingSystem(name):
     
     gallery = None
     try:
-        mouseClick(waitForObjectItem(":Show View_Tree", "Image Gallery"), 79, 7, 0, Button.Button1)
-        gallery = waitForObject(":Image Gallery_Gallery", 1000)
+        mouseClick(waitForObjectItem(":Show View_Tree", "Plotting Systems"), 79, 7, 0, Button.Button1)
+        gallery = waitForObject(":Plotting Systems_Table", 1000)
 
     except:
         # Open a widget with the same class loader as the plotting factory
@@ -64,22 +64,21 @@ def getPlottingSystem(name):
         activateItem(waitForObjectItem(":_Menu", "Window"))
         activateItem(waitForObjectItem(":Window_Menu", "Show View"))
         activateItem(waitForObjectItem(":Show View_Menu", "Other..."))
-        type(waitForObject(":Show View_Text"), "Gallery")
-        mouseClick(waitForObjectItem(":Show View_Tree", "Image Gallery"))
+        type(waitForObject(":Show View_Text"), "Plotting Systems")
+        mouseClick(waitForObjectItem(":Show View_Tree", "Plotting Systems"))
         clickButton(waitForObject(":Show View.OK_Button"))
-        gallery = waitForObject(":Image Gallery_Gallery")
+        gallery = waitForObject(":Plotting Systems_Table")
    
-    factoryClass = gallery.getClass().getClassLoader().loadClass("org.dawb.common.ui.plot.PlottingFactory")
+    factoryClass = gallery.getClass().getClassLoader().loadClass("org.dawnsci.plotting.api.PlottingFactory")
     factory = factoryClass.newInstance()
     system  = factory.getPlottingSystem(name)
     
     # Close gallery
     snooze(1)
     try:
-        clickTab(waitForObject(":Image Gallery_CTabItem"), 18, 11, 0, Button.Button1)
-        mouseClick(waitForObject(":Image Gallery_CTabCloseBox", 1000))
+        clickTab(waitForObject(":Plotting Systems_CTabItem"), 18, 11, 0, Button.Button1)
+        mouseClick(waitForObject(":Plotting Systems_CTabCloseBox", 1000))
     except:
-
         print "Could not close gallery"
         
     snooze(1)

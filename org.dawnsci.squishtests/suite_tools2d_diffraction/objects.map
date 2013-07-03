@@ -5,6 +5,8 @@
 :Calibrants_ToolItem	{caption='Calibrants' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Calibrate detector using rings - this is an experimental feature and does not work robustly_ToolItem	{caption='Calibrate detector using rings - this is an experimental feature and does not work robustly' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Calibrate detector using rings_ToolItem	{caption='Calibrate detector using rings' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Change Settings.Maximum_Label	{caption='Maximum' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Maximum_Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Maximum_Label' type='org.eclipse.swt.widgets.Text'}
 :Change Settings.Minimum: _Label	{caption='Minimum: ' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
