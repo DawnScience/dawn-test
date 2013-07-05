@@ -50,26 +50,19 @@ def getPlottingSystem(name):
     
     global factory    
     if factory is not None:
-        system  = factory.getPlottingSystem(name)
-        return system
+        return factory.getPlottingSystem(name)
+        
+    activateItem(waitForObjectItem(":_Menu", "Window"))
+    activateItem(waitForObjectItem(":Window_Menu", "Show View"))
+    activateItem(waitForObjectItem(":Show View_Menu", "Other..."))
+    type(waitForObject(":Show View_Text"), "Plotting Systems")
+    mouseClick(waitForObjectItem(":Show View_Tree", "Plotting Systems"))
+    clickButton(waitForObject(":Show View.OK_Button"))
+    waitForObject(":Plotting Systems_CTabItem")
+    plotButton = waitForObject(":Plotting Systems.Refresh_RefreshButton")
     
-    gallery = None
-    try:
-        mouseClick(waitForObjectItem(":Show View_Tree", "Plotting Systems"), 79, 7, 0, Button.Button1)
-        gallery = waitForObject(":Plotting Systems_Table", 1000)
+    factoryClass = plotButton.getClass().getClassLoader().loadClass("org.dawnsci.plotting.api.PlottingFactory")
 
-    except:
-        # Open a widget with the same class loader as the plotting factory
-        mouseClick(waitForObject(":_Sash"), 1, 8, 0, Button.Button1)
-        activateItem(waitForObjectItem(":_Menu", "Window"))
-        activateItem(waitForObjectItem(":Window_Menu", "Show View"))
-        activateItem(waitForObjectItem(":Show View_Menu", "Other..."))
-        type(waitForObject(":Show View_Text"), "Plotting Systems")
-        mouseClick(waitForObjectItem(":Show View_Tree", "Plotting Systems"))
-        clickButton(waitForObject(":Show View.OK_Button"))
-        gallery = waitForObject(":Plotting Systems_Table")
-   
-    factoryClass = gallery.getClass().getClassLoader().loadClass("org.dawnsci.plotting.api.PlottingFactory")
     factory = factoryClass.newInstance()
     system  = factory.getPlottingSystem(name)
     

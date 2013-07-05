@@ -12,6 +12,7 @@
 :Clear Console_ToolItem	{caption='Clear Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Close wizard automatically on successful installation._Button	{caption='Close wizard automatically on successful installation.' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Colour mapping.Alpha_CCombo	{container=':Colour mapping_CTabItem' isvisible='true' leftWidget=':Colour mapping.Alpha_Label' type='org.eclipse.swt.custom.CCombo'}
 :Colour mapping.Alpha_Label	{caption='Alpha' container=':Colour mapping_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
