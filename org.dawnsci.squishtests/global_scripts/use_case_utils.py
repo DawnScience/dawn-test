@@ -36,20 +36,21 @@ def openExample(frag, project="data", folder="examples", subfolder=None, subsubf
         if frag in child.text:
             doubleClick(child, 5, 5, 0, Button.Button1)
             
-            
+'''
+Checks if file can be selected from example data.
+Tries to select each directory as the locations are processed.
+'''            
 def checkExample(frag, project="data", folder="examples", subfolder=None, subsubfolder=None):
     
     expand(waitForObjectItem(":Project Explorer_Tree", project))
-    expand(waitForObjectItem(":Project Explorer_Tree", folder))
-    children = object.children(waitForObjectItem(":Project Explorer_Tree", folder))
+    
+    children = select(folder) 
     
     if (subfolder is not None):
-        expand(waitForObjectItem(":Project Explorer_Tree", subfolder))
-        children = object.children(waitForObjectItem(":Project Explorer_Tree", subfolder))
+        children = select(subfolder) 
         
     if (subsubfolder is not None):
-        expand(waitForObjectItem(":Project Explorer_Tree", subsubfolder))
-        children = object.children(waitForObjectItem(":Project Explorer_Tree", subsubfolder))
+        children = select(subsubfolder) 
     
     for child in children:
         if frag in child.text:
@@ -57,6 +58,11 @@ def checkExample(frag, project="data", folder="examples", subfolder=None, subsub
         
     return False
 
+def select(name):
+    selection = waitForObjectItem(":Project Explorer_Tree", name)
+    expand(selection)
+    mouseClick(selection, 5, 5, 0, Button.Button1)
+    return object.children(waitForObjectItem(":Project Explorer_Tree", name))
 
 def openExternalFile(name):
     
