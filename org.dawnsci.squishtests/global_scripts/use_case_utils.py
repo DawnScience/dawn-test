@@ -35,6 +35,27 @@ def openExample(frag, project="data", folder="examples", subfolder=None, subsubf
     for child in children:
         if frag in child.text:
             doubleClick(child, 5, 5, 0, Button.Button1)
+            
+            
+def checkExample(frag, project="data", folder="examples", subfolder=None, subsubfolder=None):
+    
+    expand(waitForObjectItem(":Project Explorer_Tree", project))
+    expand(waitForObjectItem(":Project Explorer_Tree", folder))
+    children = object.children(waitForObjectItem(":Project Explorer_Tree", folder))
+    
+    if (subfolder is not None):
+        expand(waitForObjectItem(":Project Explorer_Tree", subfolder))
+        children = object.children(waitForObjectItem(":Project Explorer_Tree", subfolder))
+        
+    if (subsubfolder is not None):
+        expand(waitForObjectItem(":Project Explorer_Tree", subsubfolder))
+        children = object.children(waitForObjectItem(":Project Explorer_Tree", subsubfolder))
+    
+    for child in children:
+        if frag in child.text:
+            return True
+        
+    return False
 
 
 def openExternalFile(name):
