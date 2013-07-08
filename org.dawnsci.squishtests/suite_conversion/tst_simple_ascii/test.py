@@ -39,3 +39,6 @@ def main():
 
     test.verify(system.getTraces().iterator().next().getData().getRank()==1, "Check 1d plotted")
 
+    # Exit (or disconnect) DAWN
+    closeOrDetachFromDAWN()
+

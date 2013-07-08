@@ -19,8 +19,10 @@
 :5.tif_CTabCloseBox	{container=':5.tif_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :5.tif_CTabItem	{caption='5.tif' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :8918.nxs_CTabItem	{caption='8918.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:< Back_Button	{caption='< Back' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Change Settings.Log_Button	{caption='Log' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Change Settings.Title: _Label	{caption='Title: ' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Title: _Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Title: _Label' type='org.eclipse.swt.widgets.Text'}
@@ -38,6 +40,8 @@
 :Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Conversion Type_Combo	{isvisible='true' leftWidget=':Conversion Type_Label' type='org.eclipse.swt.widgets.Combo' window=':WizardDialog_Shell'}
+:Conversion Type_Label	{caption='Conversion Type' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Convert_Menu	{caption='Convert' container=':Project Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -54,6 +58,10 @@
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Export to_Label	{caption='Export to' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
+:Export to_Text	{isvisible='true' leftWidget=':Export to_Label' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
+:File Operation.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':File Operation_Shell'}
+:File Operation_Shell	{caption='File Operation' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :File_Menu	{caption='File' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :I accept the terms of the license agreement_Button	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
@@ -81,6 +89,7 @@
 :New Environment Variable.Variables..._Button	{caption='Variables...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':New Environment Variable_Shell'}
 :New Environment Variable_Shell	{caption='New Environment Variable' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :New Environment Variable_Text	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Text' window=':New Environment Variable_Shell'}
+:New_Menu	{caption='New' container=':Project Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Open Console_ToolItem	{caption='Open Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
@@ -165,6 +174,7 @@
 :_CTabFolder	{firstTabCaption='Console' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_2	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_3	{firstTabCaption='Project Explorer' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_Composite	{isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite' window=':WizardDialog_Shell'}
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :_Menu_2	{container=':Project Explorer_Tree' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Sash	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
@@ -174,6 +184,7 @@
 :_ToolBar	{container=':_CTabFolder' firstItemText~='(Pin Console|Terminate current console|Clear Console)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
 :metalmix.mca.Plot_CTabItem	{caption='Plot' container=':metalmix.mca_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :metalmix.mca_CTabItem	{caption='metalmix.mca' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}

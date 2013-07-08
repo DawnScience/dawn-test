@@ -1,6 +1,7 @@
 source(findFile("scripts", "dawn_constants.py"))
 
 import os
+import shutil
 
 
 def createProject(projectName, projectType="Workflow Project"):
@@ -16,12 +17,21 @@ def createProject(projectName, projectType="Workflow Project"):
     clickButton(waitForObject(":Finish_Button_2"))
     snooze(1)
 
-
-def openExample(frag, project="data", folder="examples"):
+# All these arguments = bad but not sure how to do his as not python expert.
+def openExample(frag, project="data", folder="examples", subfolder=None, subsubfolder=None):
     
     expand(waitForObjectItem(":Project Explorer_Tree", project))
     expand(waitForObjectItem(":Project Explorer_Tree", folder))
     children = object.children(waitForObjectItem(":Project Explorer_Tree", folder))
+    
+    if (subfolder is not None):
+        expand(waitForObjectItem(":Project Explorer_Tree", subfolder))
+        children = object.children(waitForObjectItem(":Project Explorer_Tree", subfolder))
+        
+    if (subsubfolder is not None):
+        expand(waitForObjectItem(":Project Explorer_Tree", subsubfolder))
+        children = object.children(waitForObjectItem(":Project Explorer_Tree", subsubfolder))
+    
     for child in children:
         if frag in child.text:
             doubleClick(child, 5, 5, 0, Button.Button1)
@@ -35,10 +45,28 @@ def openExternalFile(name):
     activateItem(waitForObjectItem(":File_Menu", "Open File..."))
     chooseFile(waitForObject(":SWT"), path)
 
+''' 
+Adds an external file to the project.
+'''
+def addExternalFile(fileName, suiteName, testName, project, subdir):
+    
+    path = findFile("testdata", fileName)
+    path = os.path.abspath(path)
+    
+    # Path to workspace is something like:
+    # /scratch/workspace/suite_conversion/tst_image_stack_tiffs/workspace/data
+    # or
+    # C:\scratch\workspace\suite_conversion\tst_image_stack_tiffs\workspace\data
+    shutil.copyfile(path, "/scratch/workspace/"+suiteName+"/"+testName+"/workspace/"+project+"/"+subdir+"/"+fileName)
+    mouseClick(waitForObjectItem(":Project Explorer_Tree", project))
+    type(waitForObject(":Project Explorer_Tree"), "<F5>")
+
 
 def chooseSlice():
+
     vals = dawn_constants
     mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 8, 12, 0, Button.Button1)
+
     mouseClick(waitForObject(":Slice as line plots_ToolItem"), 12, 14, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table_3", "0/2"), 13, 24, 0, Button.Button1)
     mouseDrag(waitForObject(":Data_Scale"), 18, 22, 20, 0, Modifier.None, Button.Button1)
