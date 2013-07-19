@@ -38,7 +38,7 @@ def startDAWNSuiteWorkspace():
         pass
     
 
-def startOrAttachToDAWNOnly(clean_workspace=True):
+def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=False):
     if USE_ATTACH:
         attachToApplication("attachable_dawn")
     else:
@@ -58,8 +58,17 @@ def startOrAttachToDAWNOnly(clean_workspace=True):
                 # that directory is gone
                 pass
             snooze(1)
+
             test.verify(not os.path.exists(workparent), "startOrAttachToDAWNOnly: Workspace is clean")
-        
+
+            if copy_configuration_and_p2:
+                # We need the AUT directory, see squishrun_guest.{bat,sh} for when that is setup
+                DAWN_ROOT = os.environ['AUT_DIR']
+                # Copy in p2 and configuration data
+                os.makedirs(workparent)
+                shutil.copytree(os.path.join(DAWN_ROOT, 'configuration'), osgi_configuration_area)
+                shutil.copytree(os.path.join(DAWN_ROOT, 'p2'), os.path.join(workparent, 'p2'))
+
         start = datetime.now()
         startApplication("dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s" %
                          (workspace, osgi_user_area, osgi_configuration_area, suite_name, test_name), "", -1, 90)
@@ -79,8 +88,8 @@ def dismissWelcomScreen():
     activateItem(waitForObjectItem(":Pop Up Menu", "Close"))
     test.passes("dismissWelcomScreen: Success")
 
-def startOrAttachToDAWN():
-    startOrAttachToDAWNOnly()
+def startOrAttachToDAWN(copy_configuration_and_p2=False):
+    startOrAttachToDAWNOnly(copy_configuration_and_p2=copy_configuration_and_p2)
     dismissWelcomScreen()
     test.passes("startOrAttachToDAWN: Success")
     
