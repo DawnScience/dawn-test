@@ -4,8 +4,15 @@ def check_plotted_trace_name_yval(configObj,name,ymax,ymin):
     snooze(1)
     mouseClick(configObj, 11, 14, 0, Button.Button1)
     clickTab(waitForObject(":Configure Graph Settings.Axes_TabItem"))
+    
+    wid = waitForObject(":Select Axis_Combo")
+    
+    for child in object.children(wid):
+        if "(Y-Axis)" in child.text:
+            mouseClick(child, 0, 0, 0, Button.NoButton)
+            break
+        
 
-    mouseClick(waitForObjectItem(":Select Axis_Combo", "(Y-Axis)"), 0, 0, 0, Button.NoButton)
     snooze(1)#added snooze since these boxes may be disabled so need to use find rather than wait for
     widget = findObject(":Change Settings.Maximum_Text")
     test.verify(widget.text == ymax,"Check Y Axis Maximum Expected: " + ymax + " Actual: "+ widget.text)

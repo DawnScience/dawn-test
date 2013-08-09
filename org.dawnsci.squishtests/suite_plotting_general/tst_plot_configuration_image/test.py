@@ -20,10 +20,11 @@ def main():
     mouseClick(waitForObject(":Histogramming.Histogram Type_CCombo"))
     mouseClick(waitForObjectItem(":_List", "Outlier Values"))
 
-    low = waitForObject(":Histogramming_StyledText")
-    high = waitForObject(":Histogramming_StyledText_2")
+    low = waitForObject(":Histogramming.Outlier low_Text")
+    high = waitForObject(":Histogramming.Outlier high_Text")
+
     
-    mouseClick(waitForObject(":Histogramming_StyledText"), 5, 8, 0, Button.Button1)
+    mouseClick(low, 5, 8, 0, Button.Button1)
     type(low, "1")
     type(low, "<Ctrl+a>")
     type(low, "<Delete>")
@@ -37,7 +38,7 @@ def main():
     mouseClick(low, 21, 8, 0, Button.Button1)
     test.verify(high.getForeground().getRed()== 0, "Text is black")
     
-    mouseClick(waitForObject(":Histogramming_StyledText"), 5, 8, 0, Button.Button1)
+    mouseClick(low, 5, 8, 0, Button.Button1)
     type(low, "1")
     type(low, "<Ctrl+a>")
     type(low, "<Delete>")
@@ -46,7 +47,7 @@ def main():
     test.verify(low.getForeground().getRed()== 255, "Text is Red")
     test.verify(high.getForeground().getRed()== 255, "Text is Red")
     
-    mouseClick(waitForObject(":Histogramming_StyledText"), 5, 8, 0, Button.Button1)
+    mouseClick(low, 5, 8, 0, Button.Button1)
     type(low, "1")
     type(low, "<Ctrl+a>")
     type(low, "<Delete>")
@@ -56,16 +57,16 @@ def main():
     test.verify(high.getForeground().getRed()== 0, "Text is black")
     
     
-    type(waitForObject(":Histogramming_StyledText"), "<Ctrl+a>")
-    type(waitForObject(":Histogramming_StyledText"), "10")
-    type(waitForObject(":Histogramming_StyledText"), "<Right>")
-    type(waitForObject(":Histogramming_StyledText"), "567")
-    type(waitForObject(":Histogramming_StyledText"), "<Left>")
-    type(waitForObject(":Histogramming_StyledText"), "<Left>")
-    type(waitForObject(":Histogramming_StyledText"), "<Left>")
-    type(waitForObject(":Histogramming_StyledText"), "78")
-    type(waitForObject(":Histogramming_StyledText"), "<Delete>")
-    type(waitForObject(":Histogramming_StyledText"), "9")
+    type(low, "<Ctrl+a>")
+    type(low, "10")
+    type(low, "<Right>")
+    type(low, "567")
+    type(low, "<Left>")
+    type(low, "<Left>")
+    type(low, "<Left>")
+    type(low, "78")
+    type(low, "<Delete>")
+    type(low, "9")
 
     #Removing until 
     #test.verify(low.getText() in "10.789 %","Text is correct")

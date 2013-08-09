@@ -44,6 +44,8 @@ def main():
 
     mouseClick(waitForObjectItem(":Data_Table", "0/0"))
     
+    snooze(1)
+    
     system = getPlottingSystem("i22-104754.nxs")
     
 

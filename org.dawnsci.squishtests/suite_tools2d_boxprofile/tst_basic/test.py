@@ -43,7 +43,7 @@ def main():
     
     tList = system.getTraces()
     
-    test.verify(len(tList) == 2, "2 traces in plot")
+    test.verify(tList.size() == 2, "2 traces in plot")
     
     tArray = tList.toArray()
     test.verify(tArray.at(0).getName() == "X Profile 1", "verify trace name")

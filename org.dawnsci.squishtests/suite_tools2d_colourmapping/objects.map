@@ -11,9 +11,6 @@
 :Cheat Sheet Selection_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Cheat Sheet Selection_Shell'}
 :Clear Console_ToolItem	{caption='Clear Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Close wizard automatically on successful installation._Button	{caption='Close wizard automatically on successful installation.' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
-:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
-:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Colour mapping.Alpha_CCombo	{container=':Colour mapping_CTabItem' isvisible='true' leftWidget=':Colour mapping.Alpha_Label' type='org.eclipse.swt.custom.CCombo'}
 :Colour mapping.Alpha_Label	{caption='Alpha' container=':Colour mapping_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Colour mapping.Blue_CCombo	{container=':Colour mapping_CTabItem' isvisible='true' leftWidget=':Colour mapping.Blue_Label' type='org.eclipse.swt.custom.CCombo'}
@@ -84,6 +81,10 @@
 :Help_Menu	{caption='Help' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Histogramming.Histogram Type_CCombo	{container=':Image Traces.Histogramming_Group' isvisible='true' leftWidget=':Histogramming.Histogram Type_Label' type='org.eclipse.swt.custom.CCombo'}
 :Histogramming.Histogram Type_Label	{caption='Histogram Type' container=':Image Traces.Histogramming_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Histogramming.Maximum Intensity_Label	{caption='Maximum Intensity' container=':Image Traces.Histogramming_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Histogramming.Maximum Intensity_Text	{container=':Image Traces.Histogramming_Group' isvisible='true' leftWidget=':Histogramming.Maximum Intensity_Label' type='org.eclipse.swt.widgets.Text'}
+:Histogramming.Minimum Intensity_Label	{caption='Minimum Intensity' container=':Image Traces.Histogramming_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Histogramming.Minimum Intensity_Text	{container=':Image Traces.Histogramming_Group' isvisible='true' leftWidget=':Histogramming.Minimum Intensity_Label' type='org.eclipse.swt.widgets.Text'}
 :Histogramming_StyledText	{container=':Image Traces.Histogramming_Group' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
 :Histogramming_StyledText_2	{container=':Image Traces.Histogramming_Group' isvisible='true' occurrence='1' type='org.eclipse.swt.custom.StyledText'}
 :I accept the terms of the license agreement_Button	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
@@ -116,6 +117,9 @@
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
 :Open Perspective_ToolItem	{caption='Open Perspective' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Preferences.Auto Config_Button	{caption='Auto Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}

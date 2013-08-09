@@ -5,8 +5,10 @@ def testColormap():
     mouseClick(waitForObject(":Configure Settings..._ToolItem"), 20, 5, 0, Button.Button1)
     clickTab(waitForObject(":Configure Graph Settings.Image Traces_TabItem"))
     
-    low = waitForObject(":Histogramming_StyledText").text
-    high = waitForObject(":Histogramming_StyledText_2").text
+
+    low = waitForObject(":Histogramming.Minimum Intensity_Text").text
+    high = waitForObject(":Histogramming.Maximum Intensity_Text").text
+
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     clickButton(waitForObject(":Colour mapping.Log Scale_Button"))
     checkHisto(low,high)
@@ -21,8 +23,8 @@ def checkHisto(low,high):
     mouseClick(waitForObject(":Configure Settings..._ToolItem"), 20, 5, 0, Button.Button1)
     clickTab(waitForObject(":Configure Graph Settings.Image Traces_TabItem"))
     
-    actualLow = waitForObject(":Histogramming_StyledText").text
-    actualHigh = waitForObject(":Histogramming_StyledText_2").text
+    actualLow = waitForObject(":Histogramming.Minimum Intensity_Text").text
+    actualHigh = waitForObject(":Histogramming.Maximum Intensity_Text").text
     
     test.verify(low == actualLow, "Test: " + low + " equals actual value of:" + actualLow)
     test.verify(high == actualHigh, "Test: " + high + " equals actual value of:" + actualHigh)
