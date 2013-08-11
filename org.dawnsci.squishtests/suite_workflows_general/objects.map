@@ -296,8 +296,10 @@
 :python_numjy_example1.moml_CTabCloseBox	{container=':python_numjy_example1.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :python_numjy_example1.moml_CTabItem	{caption='python_numjy_example1.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :python_numpy_example1.moml.Edit_CTabItem	{caption='Edit' container=':python_numpy_example1.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:python_pydev_numpy_example1.moml.Edit_CTabItem	{caption='Edit' container=':python_pydev_numpy_example1.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :python_numpy_example1.moml_CTabCloseBox	{container=':python_numpy_example1.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :python_numpy_example1.moml_CTabItem	{caption='python_numpy_example1.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:python_pydev_numpy_example1.moml_CTabItem	{caption='python_pydev_numpy_example1.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :ref-testscale_1_001.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_001.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :ref-testscale_1_001.img_CTabItem	{caption='ref-testscale_1_001.img' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :ref-testscale_1_0011.h5_CTabItem	{caption='ref-testscale_1_0011.h5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
