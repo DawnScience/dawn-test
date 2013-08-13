@@ -1,21 +1,23 @@
 :*Untitled 1_CTabItem	{caption='*Untitled 1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
 :/entry1/FFI0/Energy_ItemCheckbox	{container=':/entry1/FFI0/Energy_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
-:/entry1/FFI0/Energy_TableCell	{caption='/entry1/FFI0/Energy' column='0' container=':_Table' row='0' type='com.froglogic.squish.swt.TableCell'}
+:/entry1/FFI0/Energy_TableCell	{caption='/entry1/FFI0/Energy' column='0' container=':_Table' type='com.froglogic.squish.swt.TableCell'}
+:/entry1/FFI0/FFI0_ItemCheckbox	{container=':/entry1/FFI0/FFI0_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
+:/entry1/FFI0/FFI0_TableCell	{caption='/entry1/FFI0/FFI0' column='0' container=':_Table' type='com.froglogic.squish.swt.TableCell'}
 :/entry1/FFI0/Time_ItemCheckbox	{container=':/entry1/FFI0/Time_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
-:/entry1/FFI0/Time_TableCell	{caption='/entry1/FFI0/Time' column='0' container=':_Table' row='2' type='com.froglogic.squish.swt.TableCell'}
+:/entry1/FFI0/Time_TableCell	{caption='/entry1/FFI0/Time' column='0' container=':_Table' type='com.froglogic.squish.swt.TableCell'}
 :/entry1/counterTimer01/Energy_ItemCheckbox	{container=':/entry1/counterTimer01/Energy_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
-:/entry1/counterTimer01/Energy_TableCell	{caption='/entry1/counterTimer01/Energy' column='0' container=':_Table' row='3' type='com.froglogic.squish.swt.TableCell'}
+:/entry1/counterTimer01/Energy_TableCell	{caption='/entry1/counterTimer01/Energy' column='0' container=':_Table' type='com.froglogic.squish.swt.TableCell'}
 :/entry1/counterTimer01/I0_ItemCheckbox	{container=':/entry1/counterTimer01/I0_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
-:/entry1/counterTimer01/I0_TableCell	{caption='/entry1/counterTimer01/I0' column='0' container=':_Table' row='4' type='com.froglogic.squish.swt.TableCell'}
+:/entry1/counterTimer01/I0_TableCell	{caption='/entry1/counterTimer01/I0' column='0' container=':_Table' type='com.froglogic.squish.swt.TableCell'}
 :/entry1/counterTimer01/Iref_ItemCheckbox	{container=':/entry1/counterTimer01/Iref_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
-:/entry1/counterTimer01/Iref_TableCell	{caption='/entry1/counterTimer01/Iref' column='0' container=':_Table' row='5' type='com.froglogic.squish.swt.TableCell'}
+:/entry1/counterTimer01/Iref_TableCell	{caption='/entry1/counterTimer01/Iref' column='0' container=':_Table' type='com.froglogic.squish.swt.TableCell'}
 :/entry1/counterTimer01/It_ItemCheckbox	{container=':/entry1/counterTimer01/It_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
-:/entry1/counterTimer01/It_TableCell	{caption='/entry1/counterTimer01/It' column='0' container=':_Table' row='6' type='com.froglogic.squish.swt.TableCell'}
+:/entry1/counterTimer01/It_TableCell	{caption='/entry1/counterTimer01/It' column='0' container=':_Table' type='com.froglogic.squish.swt.TableCell'}
 :/entry1/counterTimer01/Time_ItemCheckbox	{container=':/entry1/counterTimer01/Time_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
-:/entry1/counterTimer01/Time_TableCell	{caption='/entry1/counterTimer01/Time' column='0' container=':_Table' row='7' type='com.froglogic.squish.swt.TableCell'}
+:/entry1/counterTimer01/Time_TableCell	{caption='/entry1/counterTimer01/Time' column='0' container=':_Table' type='com.froglogic.squish.swt.TableCell'}
 :/entry1/counterTimer01/lnI0It_ItemCheckbox	{container=':/entry1/counterTimer01/lnI0It_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
-:/entry1/counterTimer01/lnI0It_TableCell	{caption='/entry1/counterTimer01/lnI0It' column='0' container=':_Table' row='8' type='com.froglogic.squish.swt.TableCell'}
+:/entry1/counterTimer01/lnI0It_TableCell	{caption='/entry1/counterTimer01/lnI0It' column='0' container=':_Table' type='com.froglogic.squish.swt.TableCell'}
 :5.tif_CTabCloseBox	{container=':5.tif_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :5.tif_CTabItem	{caption='5.tif' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :8918.nxs_CTabItem	{caption='8918.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}

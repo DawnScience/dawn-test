@@ -18,7 +18,7 @@ def main():
     openExample("MoKedge_1_15.nxs")
 
     # Open wizard
-    doubleClick(waitForObject(":View Menu_ToolItem"), 5, 4, 0, Button.Button1)
+    mouseClick(waitForObject(":View Menu_ToolItem"))
     activateItem(waitForObjectItem(":Pop Up Menu", "Convert..."))
 
     # Use wizard

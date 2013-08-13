@@ -55,14 +55,20 @@ def main():
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "History"))
     
+    if (not object.exists(":Add currently plotted plot(s) to history_ToolItem")):
+        test.fail("History tool not active")
+        snooze(1)
+        clickTab(waitForObject(":MoKedge_1_15.dat_CTabItem"), 51, 12, 0, Button.Button1)
+    
     mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem"))
+
     clickTab(waitForObject(":metalmix.mca_CTabItem"))
     mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem"))
     clickTab(waitForObject(":96356.dat_CTabItem"))
     
     conOb = waitForObject(":Configure Settings..._ToolItem")
     check_plotted_trace_name_yval(conOb,"sum","3.0E7","0.0")
-    nameList = ['sum', 'ln(I0/It) (MoKedge_1_15.dat)', "Column_1 (metalmix.mca)", "Column_4 (metalmix.mca)"]
+    nameList = ['sum', 'ln(I0/It) (MoKedge_1_15.dat)', "Column_4 (metalmix.mca)", "Column_1 (metalmix.mca)"]
     check_plotted_traces_names(conOb, nameList)
     
     snooze(2)

@@ -73,7 +73,7 @@ def main():
     expand(waitForObjectItem(":Tree_Tree", "data"))
     expand(waitForObjectItem(":Tree_Tree", "diffraction_metadata"))
     
-    text = tree.getItems().at(0).getItems().at(1).getItems().at(0).getText()
+    text = tree.getItems().at(0).getItems().at(3).getItems().at(0).getText()
     
     test.verify("beam_centre" in text, "tree contains beam centre")
     
