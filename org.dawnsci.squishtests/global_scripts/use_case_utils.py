@@ -124,8 +124,8 @@ def getPlottingSystem(name):
     # Close gallery
     snooze(1)
     try:
-        clickTab(waitForObject(":Plotting Systems_CTabItem"), 18, 11, 0, Button.Button1)
-        mouseClick(waitForObject(":Plotting Systems_CTabCloseBox", 1000))
+        clickTab(waitForObject(":Plotting Systems_CTabItem"), 69, 11, 0, Button.Button1)
+        mouseClick(waitForObject(":Plotting Systems_CTabCloseBox"), 14, 7, 0, Button.Button1)
     except:
         print "Could not close gallery"
         

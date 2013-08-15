@@ -1,0 +1,146 @@
+:2D image.y-axis_Combo	{container=':2D image_CTabItem' isvisible='true' leftWidget=':2D image.y-axis_Label' type='org.eclipse.swt.widgets.Combo'}
+:2D image.y-axis_Label	{caption='y-axis' container=':2D image_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:2D image_CTabItem	{caption='2D image' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Browse..._Button	{caption='Browse...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Calibration Controls.Calibrate_Button	{caption='Calibrate' container=':Saxs Q-axis Calibration.Calibration Controls_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Calibration Controls.Standard_Combo	{container=':Saxs Q-axis Calibration.Calibration Controls_Group' isvisible='true' leftWidget=':Calibration Controls.Standard_Label' type='org.eclipse.swt.widgets.Combo'}
+:Calibration Controls.Standard_Label	{caption='Standard' container=':Saxs Q-axis Calibration.Calibration Controls_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Calibration Function.(5.874 ± 0.0042) m_Label	{caption='(5.874 ± 0.0042) m' container=':Saxs Q-axis Calibration.Calibration Function_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Calibration Function.Gradient_Label	{caption='Gradient' container=':Saxs Q-axis Calibration.Calibration Function_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Calibration Function.Gradient_Text	{container=':Saxs Q-axis Calibration.Calibration Function_Group' isvisible='true' leftWidget=':Calibration Function.Gradient_Label' type='org.eclipse.swt.widgets.Text'}
+:Change Settings.Maximum_Label	{caption='Maximum' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Change Settings.Maximum_Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Maximum_Label' type='org.eclipse.swt.widgets.Text'}
+:Change Settings.Minimum: _Label	{caption='Minimum: ' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Change Settings.Minimum: _Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Minimum: _Label' type='org.eclipse.swt.widgets.Text'}
+:Configure Graph Settings.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Axes_TabItem	{caption='Axes' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Graph_TabItem	{caption='Graph' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Image Traces_TabItem	{caption='Image Traces' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Regions_TabItem	{caption='Regions' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Traces_TabItem	{caption='Traces' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings_Composite	{isvisible='true' occurrence='5' type='org.eclipse.swt.widgets.Composite' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings_Shell	{caption='Configure Graph Settings' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Configure Settings..._ToolItem	{caption='Configure Settings...' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Configure Settings..._ToolItem_2	{caption='Configure Settings...' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Confirm Delete.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Delete_Shell'}
+:Confirm Delete_Shell	{caption='Confirm Delete' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
+:Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Current downsample.4x4 pixels_Label	{caption='4x4 pixels' container=':Image Traces.Current downsample_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Current downsample.[184, 251]_Label	{caption='[184, 251]' container=':Image Traces.Current downsample_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Data axes selection_CTabFolder	{firstTabCaption='1D plot' isvisible='true' leftWidget=':Data axes selection_Group' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:Data axes selection_CTabFolderChevron	{container=':Data axes selection_CTabFolder' type='com.froglogic.squish.swt.CTabFolderChevron'}
+:Data axes selection_Group	{caption='Data axes selection' isvisible='true' type='org.eclipse.swt.widgets.Group' window=':Workbench Window'}
+:Data reduction pipeline.2. Sector integration_Button	{caption='2. Sector integration' container=':NCD Data Reduction Parameters.Data reduction pipeline_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Dataset Plot_CTabItem	{caption='Dataset Plot' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Dataset Plot_Composite	{container=':Dataset Plot_CTabItem' isvisible='true' occurrence='3' type='org.eclipse.swt.widgets.Composite'}
+:Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_ErrorLog' type='org.eclipse.swt.widgets.ToolItem'}
+:Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
+:Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:File_Menu	{caption='File' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Image Gallery_CTabCloseBox	{container=':Image Gallery_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:Image Gallery_CTabItem	{caption='Image Gallery' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Image Gallery_Gallery	{container=':Image Gallery_CTabItem' isvisible='true' type='org.eclipse.nebula.widgets.gallery.Gallery'}
+:Image Traces.Current downsample_Group	{caption='Current downsample' container=':Configure Graph Settings.Image Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Image Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Image Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Image Traces_ImageTraceComposite	{container=':Configure Graph Settings.Image Traces_TabItem' isvisible='true' type='org.dawb.workbench.plotting.system.dialog.ImageTraceComposite'}
+:Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Image tools used to profile and inspect images._ToolItem_2	{caption='Image tools used to profile and inspect images.' container=':_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
+:Image_ToolBar	{container=':ref-testscale_1_001.img.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Masking 'data'.Apply_Button	{caption='Apply' container=':Masking.Masking \\'data\\'_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Masking 'data'.Enable lower mask    _Button	{caption='Enable lower mask    ' container=':Masking.Masking \\'data\\'_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Masking 'data'.Enable lower mask    _Spinner	{container=':Masking.Masking \\'data\\'_Group' isvisible='true' leftWidget=':Masking \\'data\\'.Enable lower mask    _Button' type='org.eclipse.swt.widgets.Spinner'}
+:Masking.Masking 'data'_Group	{caption='Masking \\'data\\'' container=':Masking_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Masking_CTabItem	{caption='Masking' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:NCD Data Reduction Parameters.Data reduction pipeline_Group	{caption='Data reduction pipeline' container=':NCD Data Reduction Parameters_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:NCD Data Reduction Parameters.Radial Profile_Button	{caption='Radial Profile' container=':NCD Data Reduction Parameters_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:NCD Data Reduction Parameters.Results directory_Group	{caption='Results directory' container=':NCD Data Reduction Parameters_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:NCD Data Reduction Parameters_CTabItem	{caption='NCD Data Reduction Parameters' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:NCD Detector Parameters.SAXS_Button	{caption='SAXS' container=':NCD Detector Parameters_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:NCD Detector Parameters.SAXS_Combo	{container=':NCD Detector Parameters_CTabItem' isvisible='true' leftWidget=':NCD Detector Parameters.SAXS_Button' type='org.eclipse.swt.widgets.Combo'}
+:NCD Detector Parameters_CTabItem	{caption='NCD Detector Parameters' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:NCD_Menu	{caption='NCD' container=':Project Explorer_Tree_2' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:NCD_Menu_2	{caption='NCD' container=':Project Explorer_Tree_3' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:New.Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':New_Shell'}
+:New_Shell	{caption='New' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:New_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':New_Shell'}
+:New_ToolItem	{caption='New' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
+:New_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':New_Shell'}
+:None_ToolItem	{caption='None' container=':_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
+:Number peaks to fit_ToolItem	{caption='Number peaks to fit' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
+:Open Perspective.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Open Perspective_Shell'}
+:Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems_CTabCloseBox	{container=':Plotting Systems_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Project Explorer_CTabItem	{caption='Project Explorer' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Project Explorer_CTabItem_2	{caption='Project Explorer' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Project Explorer_Tree_2	{container=':Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Project Explorer_Tree_3	{container=':Project Explorer_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Regions.Region Location_Label	{caption='Region Location' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Regions.Region Location_Table	{aboveWidget=':Regions.Region Location_Label' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Regions_Spinner	{container=':Configure Graph Settings.Regions_TabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Spinner'}
+:Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Results directory...._Button	{caption='...' container=':NCD Data Reduction Parameters.Results directory_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Results directory.Directory:_Label	{caption='Directory:' container=':NCD Data Reduction Parameters.Results directory_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Results directory.Directory:_Text	{container=':NCD Data Reduction Parameters.Results directory_Group' isvisible='true' leftWidget=':Results directory.Directory:_Label' type='org.eclipse.swt.widgets.Text'}
+:SWT	SWT
+:Saxs Q-axis Calibration.Calibration Controls_Group	{caption='Calibration Controls' container=':Saxs Q-axis Calibration_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Saxs Q-axis Calibration.Calibration Function_Group	{caption='Calibration Function' container=':Saxs Q-axis Calibration_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Saxs Q-axis Calibration_CTabItem	{caption='Saxs Q-axis Calibration' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Select Axis_Combo	{container=':Axes.Select Axis_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
+:Select Trace_Combo	{container=':Traces.Select Trace_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
+:Select Trace_Combo_2	{container=':Image Traces.Select Trace_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
+:Show View.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Show View_Shell'}
+:Show View_Menu	{caption='Show View' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Show View_Shell	{caption='Show View' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Show View_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Show View_Shell'}
+:Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
+:Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Tree_Tree	{container=':results_i22-104749_Pilatus2M_150813_135605.nxs.Tree_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Tree_Tree_2	{container=':results_i22-107001_Pilatus2M_120713_183001.nxs.Tree_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:View Menu_ToolItem	{caption='View Menu' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
+:Welcome_CTabCloseBox	{container=':Welcome_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:Welcome_CTabItem	{caption='Welcome' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Window_Menu	{caption='Window' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Workbench Window	{data?='org.eclipse.ui.internal.WorkbenchWindow*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:XY plotting tools_ToolItem	{caption='XY plotting tools' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:_CTabFolder	{firstTabCaption='Metadata' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder_2	{firstTabCaption='Dataset Plot' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder_3	{firstTabCaption='Radial Profile' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder_4	{firstTabCaption='Peak Fitting' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_FigureCanvas	{isvisible='true' occurrence='2' type='org.eclipse.draw2d.FigureCanvas' window=':Workbench Window'}
+:_Label	{caption='' container=':_CTabFolder' isvisible='false' type='org.eclipse.swt.widgets.Label'}
+:_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:_Menu_2	{container=':Project Explorer_Tree_2' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
+:_Menu_3	{container=':Project Explorer_Tree_3' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
+:_Sash	{isvisible='true' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
+:_Sash_2	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
+:_Shell	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:_Slider	{isvisible='true' type='org.eclipse.swt.widgets.Slider' window=':Workbench Window'}
+:_Slider_2	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Slider' window=':Workbench Window'}
+:_ToolBar	{container=':_CTabFolder' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_2	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_3	{container=':_CTabFolder_2' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_4	{container=':_CTabFolder_3' firstItemText='Px' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_5	{container=':_CTabFolder_4' firstItemText='New fit selection.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_6	{firstItemText='New' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_ErrorLog	{firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_Twistie	{isvisible='true' type='org.eclipse.ui.forms.widgets.Twistie' window=':Workbench Window'}
+:ref-testscale_1_001.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_001.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:ref-testscale_1_001.img_CTabItem	{caption='ref-testscale_1_001.img' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:results_i22-104749_Pilatus2M_150813_135605.nxs.Tree_CTabItem	{caption='Tree' container=':results_i22-104749_Pilatus2M_150813_135605.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:results_i22-104749_Pilatus2M_150813_135605.nxs_CTabItem	{caption='results_i22-104749_Pilatus2M_150813_135605.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:results_i22-107001_Pilatus2M_120713_183001.nxs.Tree_CTabItem	{caption='Tree' container=':results_i22-107001_Pilatus2M_120713_183001.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:results_i22-107001_Pilatus2M_120713_183001.nxs_CTabItem	{caption='results_i22-107001_Pilatus2M_120713_183001.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
