@@ -14,7 +14,9 @@ def main():
     system = getPlottingSystem("Dataset Plot")
 
     expand(waitForObjectItem(":Tree_Tree_2", "entry1"))
+    snooze(2)
     expand(waitForObjectItem(":Tree_Tree_2", "Pilatus2M"))
+    snooze(2)
     doubleClick(waitForObjectItem(":Tree_Tree_2", "data"), 17, 8, 0, Button.Button1)
     
     snooze(1)
