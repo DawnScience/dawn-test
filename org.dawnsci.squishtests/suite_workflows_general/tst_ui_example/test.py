@@ -65,5 +65,5 @@ def checkItem(item, value):
     widget = waitForObject(":Value_StyledText")
     text  = widget.text
     lines = text.split("\n")
-    test.verify(lines[0] == value,"Expected: " + value + " Actual: " + lines[0])
+    test.verify(lines[1].strip() == value,"Expected: " + value + " Actual: " + lines[1].strip())
 
