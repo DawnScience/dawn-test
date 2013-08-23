@@ -4,9 +4,6 @@
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Center sector 'Profile 1'_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
-:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
-:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Change Settings.Maximum_Label	{caption='Maximum' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Maximum_Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Maximum_Label' type='org.eclipse.swt.widgets.Text'}
 :Change Settings.Minimum: _Label	{caption='Minimum: ' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
@@ -18,6 +15,7 @@
 :Close wizard automatically on successful installation._Button	{caption='Close wizard automatically on successful installation.' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Configure Graph Settings.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Axes_TabItem	{caption='Axes' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Graph_TabItem	{caption='Graph' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Regions_TabItem	{caption='Regions' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
@@ -27,6 +25,7 @@
 :Configure Settings..._ToolItem_2	{caption='Configure Settings...' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Configure Settings..._ToolItem_3	{caption='Configure Settings...' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Configure Settings..._ToolItem_4	{caption='Configure Settings...' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
+:Configure Settings..._ToolItem_5	{caption='Configure Settings...' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Confirm Delete.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Delete_Shell'}
 :Confirm Delete_Shell	{caption='Confirm Delete' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
@@ -72,6 +71,9 @@
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
 :Perform Auto Scale_ToolItem	{caption='Perform Auto Scale' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Preferences.Auto Config_Button	{caption='Auto Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
@@ -149,10 +151,11 @@
 :_ToolBar	{container=':_CTabFolder' firstItemText~='(Pin Console|Terminate current console|Clear Console)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:_ToolBar_4	{container=':_CTabFolder_4' firstItemText='Px' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_4	{container=':_CTabFolder_4' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_5	{container=':_CTabFolder_4' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_6	{container=':_CTabFolder_4' firstItemText='d ' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_7	{container=':_CTabFolder_4' firstItemText='2θ' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_8	{container=':_CTabFolder_4' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :d _Menu	{caption='d ' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :q _Menu	{caption='q ' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}

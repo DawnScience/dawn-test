@@ -133,7 +133,7 @@
 :_ToolBar	{container=':_CTabFolder' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_2' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:_ToolBar_4	{container=':_CTabFolder_3' firstItemText='Px' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_4	{container=':_CTabFolder_3' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_5	{container=':_CTabFolder_4' firstItemText='New fit selection.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_6	{firstItemText='New' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_ErrorLog	{firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
