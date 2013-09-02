@@ -29,12 +29,12 @@ def main():
     mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "History"))
     
-    if (not object.exists(":Add currently plotted plot(s) to history_ToolItem")):
+    if (not object.exists(":Add currently plotted plot(s) to history_ToolItem_2")):
         test.fail("History tool not active")
         clickTab(waitForObject(":metalmix.mca_CTabItem"), 83, 3, 0, Button.Button1)
         snooze(1)
     
-    mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem"), 16, 12, 0, Button.Button1)
+    mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem_2"), 16, 12, 0, Button.Button1)
 
     clickTab(waitForObject(":Data_CTabItem"), 32, 11, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table", "3/0"), 10, 14, 0, Button.Button1)
