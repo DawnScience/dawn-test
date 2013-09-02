@@ -37,7 +37,8 @@ def main():
     snooze(1)
     
     
-    nameList = ["Y Profile Static 1","X Profile Static 1",
+    nameList = ["Y Profile 1",       "X Profile 1", 
+                "Y Profile Static 1","X Profile Static 1",
                 "Y Profile Static 2","X Profile Static 2",
                 "Y Profile Static 3","X Profile Static 3",
                 "Y Profile Static 4","X Profile Static 4"]
@@ -53,7 +54,7 @@ def main():
     mouseClick(c, b.x+b.width/6, b.y+b.height/5, 0, Button.Button1)
     snooze(1)
     
-    nameList = ["Y Profile Static 1","X Profile Static 1"]
+    nameList = ["X Profile 1",  "Y Profile 1",  "Y Profile Static 1","X Profile Static 1"]
     
     try:
         check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), nameList)
