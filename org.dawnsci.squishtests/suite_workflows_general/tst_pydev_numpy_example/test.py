@@ -25,12 +25,17 @@ def main():
     widget = waitForObject(":python_pydev_numpy_example1.moml.Edit_CTabItem", 3000)
     clickTab(widget)
 
-    mouseClick(waitForObject(":_ImageFigure_5"), 24, 5, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Actor Attributes_Table", "6/1"), 272, 5, 0, Button.Button1)
-
-    type(waitForObject(":Actor Attributes_Text"), getPythonLocation())
-    type(waitForObject(":Actor Attributes_Text"), "<Return>")
-    mouseClick(waitForObject(":Save (Ctrl+S)_ToolItem"), 12, 4, 0, Button.Button1)
+#    mouseClick(waitForObject(":_ImageFigure_6"), 24, 5, 0, Button.Button1)
+#    mouseClick(waitForObjectItem(":Actor Attributes_Table", "6/1"), 272, 5, 0, Button.Button1)
+#
+#
+#    mouseClick(waitForObjectItem(":Actor Attributes_Table", "3/1"), 633, 11, 0, Button.Button1)
+#    mouseClick(waitForObject(":Actor Attributes_CCombo"), 685, 7, 0, Button.Button1)
+#    freeLocation = "EPD Free Python - " + getPythonLocation();
+#    mouseClick(waitForObjectItem(":_List", freeLocation), 178, 12, 0, Button.Button1)
+# 
+#
+#    mouseClick(waitForObject(":Save (Ctrl+S)_ToolItem"), 12, 4, 0, Button.Button1)
     mouseClick(waitForObject(":Run the workflow from start to end until finished._ToolItem"))
     snooze(120)
 

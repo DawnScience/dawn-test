@@ -36,7 +36,7 @@ def main():
     text  = widget.text
     lines = text.split("\n")
 
-    test.verify(lines[0] == "10.0", "Checking if first line is 10.0")
+    test.verify(lines[1] == "10.0", "Checking if first line is 10.0")
 
 
     # Exit (or disconnect) DAWN
