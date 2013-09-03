@@ -29,15 +29,8 @@ def main():
     openExternalFile("9758.nxs")
 
     # Select image and zoom
-    
-    wid = waitForObjectItem(":Data_Table_2", "0/1")
-    
-    if ("EDXD_Element_14/data" in wid.getText()):
-         mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 6, 10, 0, Button.Button1)
-    else:
-        test.fail("Different dataset at table 0 position")
-        closeOrDetachFromDAWN()
-        return
+    type(waitForObject(":Data_Text_2"), "14/dat")
+    mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 6, 13, 0, Button.Button1)
         
 
     mouseClick(waitForObject(":Keep aspect ratio_ToolItem"), 12, 13, 0, Button.Button1)

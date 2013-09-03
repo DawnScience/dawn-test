@@ -43,6 +43,7 @@
 :Data_Table_3	{container=':Data_CTabItem_2' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_4	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Table'}
 :Data_Text	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Text'}
+:Data_Text_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Data_ToolBar	{container=':Data_CTabItem_2' firstItemText='Slice as line plots' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Data_ToolBar_2	{container=':Data_CTabItem' firstItemText='Slice as line plots' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Data_Tree	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
