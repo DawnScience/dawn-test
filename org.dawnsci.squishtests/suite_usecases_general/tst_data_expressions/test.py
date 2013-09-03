@@ -18,7 +18,7 @@ def main():
     openExternalFile("315029.dat")
     mouseDrag(waitForObject(":_Sash"), 2, 313, 0, -16, Modifier.None, Button.Button1)
     mouseClick(waitForObject(":Data_Table"), 70, 293, 0, Button.Button3)
-    activateItem(waitForObjectItem(":_Menu_3", "Add expression"))
+    mouseClick(waitForObject(":Adds an expression which can be plotted. Must be function of other data sets._ToolItem_2"), 18, 6, 0, Button.Button1)
     type(waitForObject(":Data_Text"), "dat:mean(Pilatus,0)")
     type(waitForObject(":Data_Text"), "<Return>")
     
