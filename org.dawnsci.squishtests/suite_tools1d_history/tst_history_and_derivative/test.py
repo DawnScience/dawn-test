@@ -27,12 +27,12 @@ def main():
     mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "History"))
     
-    if (not object.exists(":Add currently plotted plot(s) to history_ToolItem")):
+    if (not object.exists(":Add currently plotted plot(s) to history_ToolItem_2")):
         test.fail("History tool not active")
         clickTab(waitForObject(":metalmix.mca_CTabItem"), 83, 3, 0, Button.Button1)
         snooze(1)
     
-    mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem"), 21, 21, 0, Button.Button1)
+    mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem_2"), 21, 21, 0, Button.Button1)
     mouseClick(waitForObjectItem(":History_Table", "0/0"), 9, 14, 0, Button.Button1)
     mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Derivative"))
@@ -47,13 +47,13 @@ def main():
     #check_plotted_traces_names(conOb, nameList)
     check_plotted_trace_name_yval(conOb,"Column_1'","600.0","-400.0")
     
-    mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem"), 16, 14, 0, Button.Button1)
+    mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem_2"), 16, 14, 0, Button.Button1)
     
     clickButton(waitForObject(":Derivative.Display f'(Data)_Button"))
     
     clickButton(waitForObject(":Derivative.Display f''(Data)_Button"))
     
-    mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem"), 21, 21, 0, Button.Button1)
+    mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem_2"), 21, 21, 0, Button.Button1)
 
 
     mouseClick(waitForObject(":Derivative_CTabCloseBox"), 8, 5, 0, Button.Button1)
