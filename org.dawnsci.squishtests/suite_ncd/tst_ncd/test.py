@@ -99,14 +99,24 @@ def main():
     snooze(5)
     
     openPerspective("NCD Data Reduction")
+    snooze(2)
+    
+    clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 14, 0, Button.Button1)
+    doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
     
     clickButton(waitForObject(":Data reduction pipeline.2. Sector integration_Button"))
+
     snooze(1)
     clickButton(waitForObject(":Results directory...._Button"))
     chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/testoutput")
     snooze(1)
     clickButton(waitForObject(":NCD Data Reduction Parameters.Radial Profile_Button"))
     snooze(1)
+    
+    clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 14, 0, Button.Button1)
+    doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
+    snooze(1)
+    
     mouseClick(child, 5, 5, 0, Button.Button3)
     activateItem(waitForObjectItem(":_Menu_2", "NCD"))
     activateItem(waitForObjectItem(":NCD_Menu_2", "Run Data Reduction"))
