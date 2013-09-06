@@ -71,8 +71,8 @@ def main():
     snooze(5)
     text_widget = waitForObject(":Calibration Function.Gradient_Text")
     test.verify(text_widget.text == "--")
-    mouseClick(waitForObject(":Saxs Q-axis Calibration.Calibration Controls_Group"))
-    mouseClick(waitForObjectItem(":Calibration Controls.Standard_Combo", "Collagen Dry"), 0, 0, 0, Button.NoButton)
+    #mouseClick(waitForObject(":Saxs Q-axis Calibration.Calibration Controls_Group"))
+    mouseClick(waitForObjectItem(":Calibration Controls.Standard_Combo", "Collagen Dry"))
     clickButton(waitForObject(":Calibration Controls.Calibrate_Button"))
     
 
@@ -102,19 +102,30 @@ def main():
     snooze(2)
     
     clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 14, 0, Button.Button1)
-    doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
-    
+    #doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
     clickButton(waitForObject(":Data reduction pipeline.2. Sector integration_Button"))
 
+    mouseClick(waitForObject(":Results directory.Directory:_Text"))
+    #mouseDrag(waitForObject(":Results directory.Directory:_Text"), 229, 15, -319, -4, Modifier.None, Button.Button1)
+    type(waitForObject(":Results directory.Directory:_Text"), "<Ctrl+a>")
+    type(waitForObject(":Results directory.Directory:_Text"), "<Delete>")
+    type(waitForObject(":Results directory.Directory:_Text"), "/workspace/testoutput")
+    type(waitForObject(":Results directory.Directory:_Text"), "<Ctrl+a>")
+    type(waitForObject(":Results directory.Directory:_Text"), "<Ctrl+Left>")
+    type(waitForObject(":Results directory.Directory:_Text"), "/scratch")
+
+
+    clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 181, 28, 0, Button.Button1)
     snooze(1)
-    clickButton(waitForObject(":Results directory...._Button"))
-    chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/testoutput")
+    #clickButton(waitForObject(":Results directory...._Button"))
+
+    #chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/testoutput")
     snooze(1)
     clickButton(waitForObject(":NCD Data Reduction Parameters.Radial Profile_Button"))
     snooze(1)
     
     clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 14, 0, Button.Button1)
-    doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
+    #doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
     snooze(1)
     
     mouseClick(child, 5, 5, 0, Button.Button3)
