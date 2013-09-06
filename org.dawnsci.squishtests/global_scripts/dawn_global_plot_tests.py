@@ -39,3 +39,17 @@ def check_plotted_traces_names(configObj, nameList):
     
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     
+def check_plotted_traces_names_contains(configObj, nameList):
+    
+    mouseClick(configObj)
+    clickTab(waitForObject(":Configure Graph Settings.Traces_TabItem"))
+    wid = waitForObject(":Select Trace_Combo")
+    chil = object.children(wid)
+    
+    test.verify(len(chil)==len(nameList), "Combo List length Expected: " +str(len(nameList)) +"Actual: "+ str(len(chil)))
+    
+    for i in range(len(chil)):
+        test.verify(nameList[i] in chil[i].text, "Trace names Expected: " + nameList[i] + " Actual: "+ chil[i].text)
+    
+    clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
+    

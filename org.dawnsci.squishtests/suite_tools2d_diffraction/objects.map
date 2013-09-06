@@ -5,9 +5,6 @@
 :Calibrants_ToolItem	{caption='Calibrants' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Calibrate detector using rings - this is an experimental feature and does not work robustly_ToolItem	{caption='Calibrate detector using rings - this is an experimental feature and does not work robustly' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Calibrate detector using rings_ToolItem	{caption='Calibrate detector using rings' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
-:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
-:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Change Settings.Maximum_Label	{caption='Maximum' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Maximum_Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Maximum_Label' type='org.eclipse.swt.widgets.Text'}
 :Change Settings.Minimum: _Label	{caption='Minimum: ' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
@@ -78,7 +75,7 @@
 :Import.Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
 :Import.Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
 :Import_Shell	{caption='Import' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
-:Lock the diffraction data and apply it to newly opened files._ToolItem	{caption='Lock the diffraction data and apply it to newly opened files.' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Lock the diffraction data and apply it to newly opened files._ToolItem	{caption?='Lock the diffraction data and apply it to newly opened file*' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :One-click beam centre_ToolItem	{caption='One-click beam centre' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Open Perspective_Shell'}
 :Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
@@ -86,6 +83,9 @@
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
 :Plot_Composite	{container=':i22-104754.nxs.Plot_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
 :Plot_ToolBar	{container=':i22-104754.nxs.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Preferences.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Available label decorations:_Label	{caption='Available label decorations:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Preferences_Shell'}

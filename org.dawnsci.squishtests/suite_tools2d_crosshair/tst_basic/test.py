@@ -37,27 +37,32 @@ def main():
     snooze(1)
     
     
-    nameList = ["Y Profile 1",       "X Profile 1", 
-                "Y Profile Static 1","X Profile Static 1",
-                "Y Profile Static 2","X Profile Static 2",
-                "Y Profile Static 3","X Profile Static 3",
-                "Y Profile Static 4","X Profile Static 4"]
+    nameList = ["Profile 1",       "Profile 1", 
+                "Profile Static 1","Profile Static 1",
+                "Profile Static 2","Profile Static 2",
+                "Profile Static 3","Profile Static 3",
+                "Profile Static 4","Profile Static 4"]
     
-    check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), nameList)
+    check_plotted_traces_names_contains(waitForObject(":Configure Settings..._ToolItem"), nameList)
     
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 12, 7, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Clear cross hair profiles"))
     
-    mouseMove(c, b.x+b.width/6, b.y+b.height/5)
+    clickTab(waitForObject(":ref-testscale_1_001.img_CTabItem"), 103, 7, 0, Button.Button1)
     snooze(1)
-    
-    mouseClick(c, b.x+b.width/6, b.y+b.height/5, 0, Button.Button1)
+    mouseMove(c, b.x+b.width/6, b.y+b.height/4)
     snooze(1)
+    mouseMove(c, b.x+b.width/5, b.y+b.height/2)
+    clickTab(waitForObject(":ref-testscale_1_001.img_CTabItem"), 103, 7, 0, Button.Button1)
+    snooze(1)
+    mouseClick(c, b.x + b.width / 8, b.y + b.height / 3, 0, Button.Button1)
+    snooze(1)
+
     
-    nameList = ["X Profile 1",  "Y Profile 1",  "Y Profile Static 1","X Profile Static 1"]
+    nameList = ["Profile 1",  "Profile 1",  "Profile Static 1","Profile Static 1"]
     
     try:
-        check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), nameList)
+        check_plotted_traces_names_contains(waitForObject(":Configure Settings..._ToolItem"), nameList)
     except:
         test.fail("Cross hair profile plot showing no traces")
 
