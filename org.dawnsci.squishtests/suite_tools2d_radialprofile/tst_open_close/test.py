@@ -37,6 +37,8 @@ def main():
     
     mouseClick(c, b.x+b.width/3, b.y+b.height/1.8, 0, Button.Button1);
     
+    snooze(2)
+    
     conOb = waitForObject(":Configure Settings..._ToolItem")
     
     check_plotted_traces_names(conOb, ['Radial Profile Profile 1'])

@@ -121,8 +121,7 @@ def main():
     type(waitForObject(":Results directory.Directory:_Text"), "<Ctrl+a>")
     type(waitForObject(":Results directory.Directory:_Text"), "<Delete>")
     type(waitForObject(":Results directory.Directory:_Text"), location[1:])
-    type(waitForObject(":Results directory.Directory:_Text"), "<Ctrl+a>")
-    type(waitForObject(":Results directory.Directory:_Text"), "<Ctrl+Left>")
+    type(waitForObject(":Results directory.Directory:_Text"), "<Home>")
     type(waitForObject(":Results directory.Directory:_Text"), location[0])
 
 
