@@ -107,6 +107,7 @@
 :Show View_Shell	{caption='Show View' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Show View_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Show View_Shell'}
 :Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
+:Switch Workspace_Menu	{caption='Switch Workspace' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Tree_Tree	{container=':results_i22-104749_Pilatus2M_150813_135605.nxs.Tree_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Tree_Tree_2	{container=':results_i22-107001_Pilatus2M_120713_183001.nxs.Tree_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
@@ -115,6 +116,10 @@
 :Welcome_CTabItem	{caption='Welcome' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Window_Menu	{caption='Window' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Workbench Window	{data?='org.eclipse.ui.internal.WorkbenchWindow*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Workspace Launcher.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Workspace Launcher_Shell'}
+:Workspace Launcher.Workspace:_Combo	{isvisible='true' leftWidget=':Workspace Launcher.Workspace:_Label' type='org.eclipse.swt.widgets.Combo' window=':Workspace Launcher_Shell'}
+:Workspace Launcher.Workspace:_Label	{caption='Workspace:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Workspace Launcher_Shell'}
+:Workspace Launcher_Shell	{caption='Workspace Launcher' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :XY plotting tools_ToolItem	{caption='XY plotting tools' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :_CTabFolder	{firstTabCaption='Metadata' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_2	{firstTabCaption='Dataset Plot' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}

@@ -2,12 +2,15 @@ source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 
+import os
+
 def main():
     
     startOrAttachToDAWN()
     openPerspective("NCD Calibration")
     
     system = getPlottingSystem("Dataset Plot")
+
     
     expand(waitForObjectItem(":Project Explorer_Tree_2", "data"))
     expand(waitForObjectItem(":Project Explorer_Tree_2", "examples"))
@@ -101,6 +104,14 @@ def main():
     openPerspective("NCD Data Reduction")
     snooze(2)
     
+    activateItem(waitForObjectItem(":_Menu", "File"))
+    activateItem(waitForObjectItem(":File_Menu", "Switch Workspace"))
+    activateItem(waitForObjectItem(":Switch Workspace_Menu", "Other..."))
+    workspaceName = waitForObject(":Workspace Launcher.Workspace:_Combo").text
+    clickButton(waitForObject(":Workspace Launcher.Cancel_Button"))
+
+    location = os.path.join(workspaceName, "data","examples");
+    
     clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 14, 0, Button.Button1)
     #doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
     clickButton(waitForObject(":Data reduction pipeline.2. Sector integration_Button"))
@@ -109,10 +120,10 @@ def main():
     #mouseDrag(waitForObject(":Results directory.Directory:_Text"), 229, 15, -319, -4, Modifier.None, Button.Button1)
     type(waitForObject(":Results directory.Directory:_Text"), "<Ctrl+a>")
     type(waitForObject(":Results directory.Directory:_Text"), "<Delete>")
-    type(waitForObject(":Results directory.Directory:_Text"), "/workspace/testoutput")
+    type(waitForObject(":Results directory.Directory:_Text"), location[1:])
     type(waitForObject(":Results directory.Directory:_Text"), "<Ctrl+a>")
     type(waitForObject(":Results directory.Directory:_Text"), "<Ctrl+Left>")
-    type(waitForObject(":Results directory.Directory:_Text"), "/scratch")
+    type(waitForObject(":Results directory.Directory:_Text"), location[0])
 
 
     clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 181, 28, 0, Button.Button1)
@@ -132,18 +143,11 @@ def main():
     activateItem(waitForObjectItem(":_Menu_2", "NCD"))
     activateItem(waitForObjectItem(":NCD_Menu_2", "Run Data Reduction"))
 
+    mouseClick(waitForObjectItem(":Project Explorer_Tree_3", "examples"), 49, 5, 0, Button.Button1)
+    type(waitForObject(":Project Explorer_Tree_3"), "<F5>")
     snooze(5)
-    mouseClick(waitForObject(":New_ToolItem"), 15, 5, 0, Button.Button1)
-    type(waitForObject(":New_Text"), "data")
-    mouseClick(waitForObjectItem(":New_Tree", "Data Project"), 44, 9, 0, Button.Button1)
-    clickButton(waitForObject(":New.Next >_Button"))
-    clickButton(waitForObject(":Browse..._Button"))
-    chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/testoutput")
-    clickButton(waitForObject(":Finish_Button"))
-    expand(waitForObjectItem(":Project Explorer_Tree_3", "Data"))
-    expand(waitForObjectItem(":Project Explorer_Tree_3", "data_1"))
     
-    children = object.children(waitForObjectItem(":Project Explorer_Tree_3", "data_1"))
+    children = object.children(waitForObjectItem(":Project Explorer_Tree_2", "examples"))
     
     found = False
     for child in children:
