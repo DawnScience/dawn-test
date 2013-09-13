@@ -24,7 +24,7 @@ def main():
     
     snooze(1)
     
-    mouseClick(waitForObjectItem(":Data_Table", "4/0"))
+    mouseClick(waitForObjectItem(":Data_Table", "3/0"))
     
     snooze(1)
     
@@ -36,7 +36,7 @@ def main():
     snooze(1)
     
     mouseClick(waitForObjectItem(":Data_Table_2", "0/0"))
-    mouseClick(waitForObjectItem(":Data_Table_2", "2/0"))
+    mouseClick(waitForObjectItem(":Data_Table_2", "3/0"))
     mouseClick(waitForObject(":Plot data as separate plots_ToolItem"))
     
     snooze(1)
