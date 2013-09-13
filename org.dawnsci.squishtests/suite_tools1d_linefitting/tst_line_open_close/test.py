@@ -20,7 +20,7 @@ def main():
             doubleClick(child, 5, 5, 0, Button.Button1)
             continue
     
-    mouseClick(waitForObjectItem(":Data_Table", "3/0"), 9, 7, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table", "2/0"), 9, 7, 0, Button.Button1)
     
     snooze(5)
     
