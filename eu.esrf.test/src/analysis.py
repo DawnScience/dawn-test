@@ -1,17 +1,49 @@
-#!/usr/bin/python2.6
-import os,re,sys
-f = open(os.environ['WORKSPACE']  +'/squishlog')
-strData = f.read()
-f.close()
-listLines = strData.split("\n")
-for line in listLines:
-	if re.compile('Number of Errors:').search(line):
-		var_nb = re.findall('\d+', line)[0]
-if int(var_nb) == 0:
-	print "Test passed "
-	sys.exit(0)
-else:
-	print "Test failed"
-	print "Number of error ="+ var_nb
-	sys.exit(1)
-	
+ #!/usr/bin/python2.6 
+import os,sys,re,time 
+ 
+listing = os.listdir('/scisoft/jenkins/ub1004_jonathan/workspace/Dawn_squish_tests/log')    
+ 
+time= time.strftime('%d_%m_%y(%H:%M)',time.localtime())   
+#logfile = open("/scisoft/jenkins/ub1004_jonathan/workspace/Dawn_squish_tests/squish_tst_"+time+".txt", "a") 
+        
+for infile in sorted(listing): 
+    #f = open('/scisoft/jenkins/ub1004_jonathan/workspace/Dawn_squish_tests/log/'+infile) 
+    f = open(os.environ['WORKSPACE']  +'/log/'+infile) 
+    strData = f.read() 
+    f.close() 
+    listLines = strData.split("\n") 
+    total_error=False 
+    error=False 
+    log_error = "" 
+    for line in listLines: 
+        var_nb=0 
+        nb_error_tst=0       
+        test_error=0 
+        if re.compile('START_TEST_CASE').search(line):          
+            var =(re.findall('\(\w+\)', line)[0]) 
+            tst=(re.findall('\w+', var)[0]) 
+           
+        if re.compile('Number of Errors:').search(line): 
+            #logfile.write(infile) 
+            #logfile.write("\n")                  
+            nb_error_tst =int(re.findall('\d+', line)[0]) 
+            if nb_error_tst>0:             
+                log_error=log_error+"** "+tst+ " // number of error(s) = " + str(nb_error_tst)+"\n"   
+                error=True 
+        test_error=test_error+nb_error_tst 
+ 
+        
+if error == False: 
+    print "************************" 
+    print "** Squish Test passed **" 
+    print "************************" 
+    sys.exit(0) 
+else: 
+    print "************************" 
+    print "** Squish Test failed **" 
+    #print str(var_nb) + " Error(s)" 
+    print log_error 
+    print "************************" 
+    sys.exit(1) 
+ 
+ 
