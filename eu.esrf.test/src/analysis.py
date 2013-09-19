@@ -1,7 +1,8 @@
  #!/usr/bin/python2.6 
 import os,sys,re,time 
  
-listing = os.listdir('/scisoft/jenkins/ub1004_jonathan/workspace/Dawn_squish_tests/log')    
+
+listing = os.listdir(os.environ['WORKSPACE']  +'/log/')    
  
 time= time.strftime('%d_%m_%y(%H:%M)',time.localtime())   
 #logfile = open("/scisoft/jenkins/ub1004_jonathan/workspace/Dawn_squish_tests/squish_tst_"+time+".txt", "a") 
