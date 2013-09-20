@@ -121,7 +121,7 @@
 :Workspace Launcher.Workspace:_Label	{caption='Workspace:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Workspace Launcher_Shell'}
 :Workspace Launcher_Shell	{caption='Workspace Launcher' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :XY plotting tools_ToolItem	{caption='XY plotting tools' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
-:_CTabFolder	{firstTabCaption='Metadata' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_2	{firstTabCaption='Dataset Plot' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_3	{firstTabCaption='Radial Profile' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_4	{firstTabCaption='Peak Fitting' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}

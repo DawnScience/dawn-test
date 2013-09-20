@@ -130,7 +130,7 @@
 :X_TreeItem	{caption='X' parentitem=':Beam Centre_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :Y.1000.58 *_TreeSubItem	{caption='1000.58 *' column='2' container=':Y_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
 :Y_TreeItem	{caption='Y' parentitem=':Beam Centre_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
-:_CTabFolder	{firstTabCaption='Metadata' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_2	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Canvas	{isvisible='true' type='org.eclipse.swt.widgets.Canvas' window=':Workbench Window'}
 :_Composite	{container=':_CTabFolder' isvisible='false' type='org.eclipse.swt.widgets.Composite'}

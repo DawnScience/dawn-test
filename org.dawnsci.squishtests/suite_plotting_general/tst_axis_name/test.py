@@ -21,7 +21,10 @@ def main():
     for child in children:
         if "2.img" in child.text:
             doubleClick(child, 5, 5, 0, Button.Button1)
-        
+            continue
+    
+    snooze(3)#while the file opens
+    
     mouseClick(waitForObject(":Configure Settings..._ToolItem"))
     clickTab(waitForObject(":Configure Graph Settings.Axes_TabItem"))
     mouseClick(waitForObject(":Change Settings.Title: _Text"), 64, 8, 0, Button.Button1)

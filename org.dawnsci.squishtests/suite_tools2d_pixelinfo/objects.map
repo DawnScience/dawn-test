@@ -62,7 +62,7 @@
 :Workbench Window	{data?='org.eclipse.ui.internal.WorkbenchWindow*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :X position_TableColumn	{caption='X position' container=':Pixel Information_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :Y position_TableColumn	{caption='Y position' container=':Pixel Information_Table' type='org.eclipse.swt.widgets.TableColumn'}
-:_CTabFolder	{firstTabCaption='Metadata' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :_ToolBar	{container=':_CTabFolder' firstItemText='Copies the region values as text to clipboard which can then be pasted externally.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
