@@ -1,10 +1,8 @@
 #!/usr/bin/env python 
 import os,sys,re,time 
-print '*********************************** test ***********************'
-print os.environ['WORKSPACE']
-print '*********************************** test ***********************'
+
 logpath= os.path.join(os.environ['WORKSPACE'],'log/')
-print logpath
+
 
 listing = os.listdir(logpath)    
  
