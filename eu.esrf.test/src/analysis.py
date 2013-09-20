@@ -1,4 +1,4 @@
- #!/usr/bin/python2.6 
+#!/usr/bin/env python 
 import os,sys,re,time 
 print '*********************************** test ***********************'
 print os.environ['WORKSPACE']
