@@ -1,8 +1,14 @@
+:2013_TreeItem	{caption='2013' parentitem=':data_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:2013_TreeItem_2	{caption='2013' parentitem=':data_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
 :2D image.y-axis_Combo	{container=':2D image_CTabItem' isvisible='true' leftWidget=':2D image.y-axis_Label' type='org.eclipse.swt.widgets.Combo'}
 :2D image.y-axis_Label	{caption='y-axis' container=':2D image_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :2D image_CTabItem	{caption='2D image' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Application error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Application error_Shell'}
+:Application error_Shell	{caption='Application error' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:BioSAXS Model Builder.Data parameters_Group	{caption='Data parameters' container=':BioSAXS Model Builder_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:BioSAXS Model Builder_CTabItem	{caption='BioSAXS Model Builder' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Browse..._Button	{caption='Browse...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Calibration Controls.Calibrate_Button	{caption='Calibrate' container=':Saxs Q-axis Calibration.Calibration Controls_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Calibration Controls.Standard_Combo	{container=':Saxs Q-axis Calibration.Calibration Controls_Group' isvisible='true' leftWidget=':Calibration Controls.Standard_Label' type='org.eclipse.swt.widgets.Combo'}
@@ -35,6 +41,13 @@
 :Data axes selection_CTabFolder	{firstTabCaption='1D plot' isvisible='true' leftWidget=':Data axes selection_Group' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :Data axes selection_CTabFolderChevron	{container=':Data axes selection_CTabFolder' type='com.froglogic.squish.swt.CTabFolderChevron'}
 :Data axes selection_Group	{caption='Data axes selection' isvisible='true' type='org.eclipse.swt.widgets.Group' window=':Workbench Window'}
+:Data parameters...._Button	{caption='...' container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Data parameters.Data file_Label	{caption='Data file' container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Data parameters.Data file_Text	{container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' leftWidget=':Data parameters.Data file_Label' type='org.eclipse.swt.widgets.Text'}
+:Data parameters.Number of threads_Label	{caption='Number of threads' container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Data parameters.Number of threads_Text	{container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' leftWidget=':Data parameters.Number of threads_Label' type='org.eclipse.swt.widgets.Text'}
+:Data parameters.Points_Group	{caption='Points' container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Data parameters.Run NCD model building_Button	{caption='Run NCD model building' container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Data reduction pipeline.2. Sector integration_Button	{caption='2. Sector integration' container=':NCD Data Reduction Parameters.Data reduction pipeline_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Dataset Plot_CTabItem	{caption='Dataset Plot' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Dataset Plot_Composite	{container=':Dataset Plot_CTabItem' isvisible='true' occurrence='3' type='org.eclipse.swt.widgets.Composite'}
@@ -42,6 +55,10 @@
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:File Navigator_CTabItem	{caption='File Navigator' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:File Navigator_CTabItem_2	{caption='File Navigator' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:File Navigator_Tree	{container=':File Navigator_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:File Navigator_Tree_2	{container=':File Navigator_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :File_Menu	{caption='File' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Image Gallery_CTabCloseBox	{container=':Image Gallery_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
@@ -82,6 +99,8 @@
 :Plotting Systems_CTabCloseBox	{container=':Plotting Systems_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Points.First point_Label	{caption='First point' container=':Data parameters.Points_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Points.First point_Text	{container=':Data parameters.Points_Group' isvisible='true' leftWidget=':Points.First point_Label' type='org.eclipse.swt.widgets.Text'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Project Explorer_CTabItem	{caption='Project Explorer' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Project Explorer_CTabItem_2	{caption='Project Explorer' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -143,8 +162,21 @@
 :_ToolBar_6	{firstItemText='New' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_ErrorLog	{firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_Twistie	{isvisible='true' type='org.eclipse.ui.forms.widgets.Twistie' window=':Workbench Window'}
+:b21_TreeItem	{caption='b21' parentitem=':dls_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:b21_TreeItem_2	{caption='b21' parentitem=':dls_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
+:cm5947-3_TreeItem	{caption='cm5947-3' parentitem=':2013_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:cm5947-3_TreeItem_2	{caption='cm5947-3' parentitem=':2013_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
+:data_TreeItem	{caption='data' parentitem=':b21_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:data_TreeItem_2	{caption='data' parentitem=':b21_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
+:dls_TreeItem	{caption='dls' container=':File Navigator_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:dls_TreeItem_2	{caption='dls' container=':File Navigator_Tree_2' type='org.eclipse.swt.widgets.TreeItem'}
+:processing_TreeItem	{caption='processing' parentitem=':cm5947-3_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:processing_TreeItem_2	{caption='processing' parentitem=':cm5947-3_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
 :ref-testscale_1_001.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_001.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :ref-testscale_1_001.img_CTabItem	{caption='ref-testscale_1_001.img' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:results_b21-2672_detector_040713_102411.nxs.04/07/2013 10:24_TreeSubItem	{caption='04/07/2013 10:24' column='1' container=':results_b21-2672_detector_040713_102411.nxs_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
+:results_b21-2672_detector_040713_102411.nxs_TreeItem	{caption='results_b21-2672_detector_040713_102411.nxs' parentitem=':processing_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:results_b21-2672_detector_040713_102411.nxs_TreeItem_2	{caption='results_b21-2672_detector_040713_102411.nxs' parentitem=':processing_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
 :results_i22-104749_Pilatus2M_150813_135605.nxs.Tree_CTabItem	{caption='Tree' container=':results_i22-104749_Pilatus2M_150813_135605.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :results_i22-104749_Pilatus2M_150813_135605.nxs_CTabItem	{caption='results_i22-104749_Pilatus2M_150813_135605.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :results_i22-107001_Pilatus2M_120713_183001.nxs.Tree_CTabItem	{caption='Tree' container=':results_i22-107001_Pilatus2M_120713_183001.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
