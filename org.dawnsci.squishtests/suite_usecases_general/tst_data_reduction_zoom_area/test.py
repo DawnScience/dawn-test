@@ -25,6 +25,10 @@ def main():
     type(waitForObject(":_Sash"), "<Left>")
     type(waitForObject(":_Sash"), "<Left>")
     type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
     
     openExternalFile("9758.nxs")
     

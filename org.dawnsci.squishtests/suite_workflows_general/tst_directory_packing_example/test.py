@@ -18,9 +18,20 @@ def main():
     clickTab(widget)
 
     mouseClick(waitForObject(":Run the workflow from start to end until finished._ToolItem"))
-    snooze(120)
+    
+    i = 0;
+    while (not object.exists(":export.h5_CTabItem") and i < 120):
+        snooze(1)
+        i += 1
+     
+    if (not object.exists(":export.h5_CTabItem")):
+        test.fail("Tab has not appeared")
+        closeOrDetachFromDAWN()
+        return
+    
+    
     clickTab(waitForObject(":export.h5_CTabItem"), 53, 10, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table_5", "0/0"), 10, 9, 0, Button.Button1)
+    #mouseClick(waitForObjectItem(":Data_Table_5", "0/0"), 10, 9, 0, Button.Button1)
     snooze(1)
     
     system = getPlottingSystem("export.h5")

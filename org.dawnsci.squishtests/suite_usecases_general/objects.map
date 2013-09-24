@@ -205,7 +205,7 @@
 :_ToolBar_5	{container=':_CTabFolder_5' firstItemText='New fit selection.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_6	{container=':_CTabFolder_2' firstItemText='Changes the plot to use selected data set as the x-axis.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_7	{container=':_CTabFolder_2' firstItemText='Refresh' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:_ToolBar_8	{container=':_CTabFolder_2' firstItemText='Data reduction...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_8	{container=':_CTabFolder_2' firstItemText?='Copy*' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
 :_ViewForm	{container=':_CTabFolder_6' isvisible='true' type='org.eclipse.swt.custom.ViewForm'}
 :_ViewForm_2	{container=':_CTabFolder_2' isvisible='true' type='org.eclipse.swt.custom.ViewForm'}
