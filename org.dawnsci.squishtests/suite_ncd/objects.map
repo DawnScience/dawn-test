@@ -44,10 +44,14 @@
 :Data parameters...._Button	{caption='...' container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Data parameters.Data file_Label	{caption='Data file' container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Data parameters.Data file_Text	{container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' leftWidget=':Data parameters.Data file_Label' type='org.eclipse.swt.widgets.Text'}
+:Data parameters.HTML results directory_Label	{caption='HTML results directory' container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Data parameters.HTML results directory_Text	{container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' leftWidget=':Data parameters.HTML results directory_Label' type='org.eclipse.swt.widgets.Text'}
 :Data parameters.Number of threads_Label	{caption='Number of threads' container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Data parameters.Number of threads_Text	{container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' leftWidget=':Data parameters.Number of threads_Label' type='org.eclipse.swt.widgets.Text'}
 :Data parameters.Points_Group	{caption='Points' container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Data parameters.Run NCD model building_Button	{caption='Run NCD model building' container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Data parameters.Working directory_Label	{caption='Working directory' container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Data parameters.Working directory_Text	{container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' leftWidget=':Data parameters.Working directory_Label' type='org.eclipse.swt.widgets.Text'}
 :Data reduction pipeline.2. Sector integration_Button	{caption='2. Sector integration' container=':NCD Data Reduction Parameters.Data reduction pipeline_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Dataset Plot_CTabItem	{caption='Dataset Plot' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Dataset Plot_Composite	{container=':Dataset Plot_CTabItem' isvisible='true' occurrence='3' type='org.eclipse.swt.widgets.Composite'}
