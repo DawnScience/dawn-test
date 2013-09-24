@@ -22,3 +22,12 @@ def findLogFile(mask, maxiter):
         if os.path.isfile(f):
             return f
     return None
+
+def createAndChangeToSquishtestsTempDirectory():
+    # Create, set and change to the working directory
+    wdir = "/dls/tmp/squishtests"
+    try:
+        os.makedirs(wdir, 0777)
+    except:
+        pass
+    os.chdir(wdir)
