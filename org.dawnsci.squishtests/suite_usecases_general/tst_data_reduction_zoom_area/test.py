@@ -57,8 +57,6 @@ def main():
     clickButton(waitForObject(":Finish_Button"))
     
     # Show plotted image
-    snooze(1) 
-    mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 7, 11, 0, Button.Button1)
     snooze(3) 
     system = getPlottingSystem("9758_Zoom_Profile.h5")
     test.verify(system.getRegions().size()==0)

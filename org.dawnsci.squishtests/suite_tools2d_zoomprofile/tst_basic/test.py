@@ -60,7 +60,7 @@ def main():
     
     test.verify(abs(maxX-minX) == 500,"Test Zoom trace dimensions")
     
-    mouseClick(waitForObjectItem(":Select Axis_Combo", "(Y-Axis)"), 0, 0, 0, Button.NoButton)
+    mouseClick(waitForObjectItem(":Select Axis_Combo", "[500:1000](Y-Axis)"), 0, 0, 0, Button.NoButton)
     
     maxY = float(findObject(":Change Settings.Maximum_Text").text)
     minY = float(findObject(":Change Settings.Minimum: _Text").text)

@@ -15,26 +15,31 @@ def main():
     openPerspective("Data Browsing (default)")
     
     # Copy external to example.
-    checkExample("", "data", "examples", "results")
+    addExternalFile("two_images.h5", "suite_conversion", "tst_video_1d", "data", "examples")
+    openExample("two_images.h5")
 
     # Open wizard
     doubleClick(waitForObject(":View Menu_ToolItem"), 5, 4, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Convert..."))
 
     # Use wizard
-    mouseClick(waitForObjectItem(":Conversion Type_Combo", " nexus stack from directory of images"), 0, 0, 0, Button.NoButton)    
+    mouseClick(waitForObjectItem(":Conversion Type_Combo", " video from image stack"), 0, 0, 0, Button.NoButton)    
     clickButton(waitForObject(":Next >_Button"))
+    mouseClick(waitForObject(":Slice as line plots_ToolItem_2"), 13, 11, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":_Table", "1/1"), 52, 15, 0, Button.Button1)
+    mouseClick(waitForObject(":_CCombo"), 100, 15, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":_List", "(Slice)"), 29, 8, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":_Table", "2/1"), 45, 25, 0, Button.Button1)
+    mouseClick(waitForObject(":_CCombo"), 91, 14, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":_List", "X"), 18, 7, 0, Button.Button1)
     clickButton(waitForObject(":Finish_Button"))
     mouseClick(waitForObjectItem(":Project Explorer_Tree", "data"))
+
     type(waitForObject(":Project Explorer_Tree"), "<F5>")
     
     # Open result
-    openExample("ConvertedImageStack.nxs", "data", "examples", "results")
-   
-    # Data set is only one, so it will be plotted automatically.    
-    system = getPlottingSystem("ConvertedImageStack.nxs")
-
-    test.verify(system.getTraces().iterator().next().getData().getRank() == 2, "Something 2D was plotted")
+    isExample = checkExample("two_images.avi")
+    test.verify(isExample is True, "Checking video file written")
 
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()

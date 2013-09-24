@@ -155,6 +155,7 @@
 :Show View_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Show View_Shell'}
 :Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
 :Slice as line plots_ToolItem	{caption='Slice as line plots' container=':Data_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Slice as line plots_ToolItem_2	{caption='Slice as line plots' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Square brush_ToolItem	{caption='Square brush' container=':Masking \\'ref-testscale_1_001.img\\'_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :TomographyDataSet.hdf5_CTabItem	{caption='TomographyDataSet.hdf5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Variables_CTabItem	{caption='Variables' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -173,10 +174,12 @@
 :Workspace Launcher_Shell	{caption='Workspace Launcher' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :XY plotting tools_ToolItem	{caption='XY plotting tools' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :_CBanner	{isvisible='true' type='org.eclipse.swt.custom.CBanner' window=':Workbench Window'}
+:_CCombo	{isvisible='true' occurrence='1' type='org.eclipse.swt.custom.CCombo' window=':WizardDialog_Shell'}
 :_CTabFolder	{firstTabCaption='Console' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_2	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_3	{firstTabCaption='Project Explorer' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Composite	{isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite' window=':WizardDialog_Shell'}
+:_List	{isvisible='true' type='org.eclipse.swt.widgets.List' window=':_Shell'}
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :_Menu_2	{container=':Project Explorer_Tree' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Sash	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
@@ -186,6 +189,7 @@
 :_ToolBar	{container=':_CTabFolder' firstItemText~='(Pin Console|Terminate current console|Clear Console)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_4	{firstItemText='Slice as line plots' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':WizardDialog_Shell'}
 :_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
 :metalmix.mca.Plot_CTabItem	{caption='Plot' container=':metalmix.mca_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :metalmix.mca_CTabItem	{caption='metalmix.mca' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
