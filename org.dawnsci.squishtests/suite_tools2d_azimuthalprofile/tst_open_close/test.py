@@ -58,9 +58,14 @@ def main():
     
     snooze(1)
 
-    test.verify(waitForObjectItem(":Regions.Region Location_Table", "0/0").text == "Centre (x,y)", "Table shows centre")
-    test.verify(waitForObjectItem(":Regions.Region Location_Table", "0/1").text == "1,022.832*", "centre x test")
-    test.verify(waitForObjectItem(":Regions.Region Location_Table", "0/2").text == "1,000.576*","centre y test")
+    value = waitForObjectItem(":Regions.Region Location_Table", "0/0").text
+    test.verify(value == "Centre (x,y)", "Table shows centre value incorrect was "+value)
+    
+    value = waitForObjectItem(":Regions.Region Location_Table", "0/1").text
+    test.verify(value == "1,022.832*", "centre x test, was "+value+" not 1,022.832*")
+    
+    value = waitForObjectItem(":Regions.Region Location_Table", "0/2").text
+    test.verify(value == "1,000.576*","centre y test, was "+value+" not 1,000.576*")
     
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     
