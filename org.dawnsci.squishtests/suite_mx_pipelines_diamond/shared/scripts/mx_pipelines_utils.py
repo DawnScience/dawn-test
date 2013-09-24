@@ -29,20 +29,6 @@ def setDirectories(wdir):
     type(waitForObject(":Localhost web service directories.Result directory_Text_2"), "<Ctrl+a>")
     type(waitForObject(":Localhost web service directories.Result directory_Text_2"), "<Ctrl+v>")
 
-def findLogFile(mask, maxiter):
-    logfiles = []
-    i = 0
-    while len(logfiles)==0 and i < maxiter:
-        snooze(1.0)
-        logfiles = glob.glob(mask)
-        i += 1
-        print i
-        
-    for f in logfiles:
-        if os.path.isfile(f):
-            return f
-    return None
-
 # Check the log file first for "EDNA Bottle status" line which indicates the pipeline has finished. 
 # Then search for the success message
 def checkLogFile(filename, success, maxiter=1000):
