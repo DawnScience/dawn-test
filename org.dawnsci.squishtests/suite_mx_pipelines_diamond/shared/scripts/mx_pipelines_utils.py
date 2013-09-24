@@ -29,14 +29,6 @@ def setDirectories(wdir):
     type(waitForObject(":Localhost web service directories.Result directory_Text_2"), "<Ctrl+a>")
     type(waitForObject(":Localhost web service directories.Result directory_Text_2"), "<Ctrl+v>")
 
-def deleteOldLogFiles(mask):
-    logfiles = glob.glob(mask)
-    for f in logfiles:
-        if os.path.isdir(f):
-            shutil.rmtree(f)
-        else:
-            os.remove(f)
-
 def findLogFile(mask, maxiter):
     logfiles = []
     i = 0

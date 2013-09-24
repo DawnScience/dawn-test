@@ -1,4 +1,5 @@
 source(findFile("scripts", "mx_pipelines_utils.py"))
+source(findFile("scripts", "file_utils.py"))
     
 def main():
     # This test should only run on Linux x86_64
