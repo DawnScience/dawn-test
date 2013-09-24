@@ -170,6 +170,7 @@
 :Show View_Shell	{caption='Show View' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Show View_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Show View_Shell'}
 :Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
+:Size_Menu	{caption='Size' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Surface Profile: Dataset Plot_CTabItem	{caption='Surface Profile: Dataset Plot' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Tree_Tree	{container=':2495.h5.Tree_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}

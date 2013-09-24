@@ -17,6 +17,23 @@ def main():
     
     openPerspective("Python")
 
+    clickTab(waitForObject(":Console_CTabItem_2"), 58, 4, 0, Button.Button3)
+    activateItem(waitForObjectItem(":Pop Up Menu", "Size"))
+    activateItem(waitForObjectItem(":Size_Menu", "Top"))
+    type(waitForObject(":_Sash_2"), "<Up>")
+    type(waitForObject(":_Sash_2"), "<Up>")
+    type(waitForObject(":_Sash_2"), "<Up>")
+    type(waitForObject(":_Sash_2"), "<Up>")
+    type(waitForObject(":_Sash_2"), "<Up>")
+    type(waitForObject(":_Sash_2"), "<Up>")
+    type(waitForObject(":_Sash_2"), "<Up>")
+    type(waitForObject(":_Sash_2"), "<Up>")
+    type(waitForObject(":_Sash_2"), "<Up>")
+    type(waitForObject(":_Sash_2"), "<Up>")
+    type(waitForObject(":_Sash_2"), "<Up>")
+    type(waitForObject(":_Sash_2"), "<Up>")
+    clickTab(waitForObject(":Console_CTabItem_2"), 27, 12, 0, Button.Button1)
+
     setupEPDPython()
     
     system = getPlottingSystem("Plot 1")
