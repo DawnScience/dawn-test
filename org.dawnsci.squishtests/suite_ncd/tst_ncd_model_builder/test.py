@@ -1,10 +1,15 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
+source(findFile("scripts", "file_utils.py"))
 
 def main():
     startOrAttachToDAWN()
     openPerspective("NCD Model Builder Perspective")
+
+    createAndChangeToSquishtestsTempDirectory()
+    sasDirectoryPrefixPattern = "EDApplicationSASPipeline*"
+    deleteOldLogFiles(sasDirectoryPrefixPattern)
 
     clickTab(waitForObject(":File Navigator_CTabItem"), 57, 14, 0, Button.Button1)
     expand(waitForObjectItem(":File Navigator_Tree", "dls"))
@@ -24,4 +29,8 @@ def main():
     type(waitForObject(":Data parameters.HTML results directory_Text"), "<Ctrl+v>")
     clickButton(waitForObject(":Data parameters.Run NCD model building_Button"))
     snooze(130)
+
+    logfile = findLogFile(sasDirectoryPrefixPattern, 100)
+    test.verify(logfile != None, "Existence of log file")
+
     closeOrDetachFromDAWN()
