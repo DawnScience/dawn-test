@@ -36,6 +36,7 @@
 :Data reduction..._ToolItem	{caption='Data reduction...' container=':Data_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data_CTabItem_3	{caption='Data' occurrence='4' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Label	{caption='' container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Data_Scale	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Scale'}
 :Data_Scale_2	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Scale'}
@@ -43,6 +44,7 @@
 :Data_Table_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_3	{container=':Data_CTabItem_2' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_4	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Table'}
+:Data_Table_5	{container=':Data_CTabItem_3' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Text	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Text'}
 :Data_Text_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Data_ToolBar	{container=':Data_CTabItem_2' firstItemText='Slice as line plots' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
@@ -194,6 +196,7 @@
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :_Menu_2	{container=':Project Explorer_Tree_2' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Menu_3	{container=':Data_Table' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
+:_Menu_4	{container=':Data_Table_5' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Sash	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Sash_2	{isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Shell	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
