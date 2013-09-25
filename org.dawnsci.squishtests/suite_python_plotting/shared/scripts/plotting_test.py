@@ -1,3 +1,12 @@
+def getFirstDataset(system):
+    trcs = system.getTraces()
+    
+    if (trcs.size() == 0): return None
+    
+    tarray = trcs.toArray()
+    
+    return tarray.at(0).getData()
+
 
 def plotting_script_test(system):
     
@@ -9,8 +18,13 @@ def plotting_script_test(system):
     test.verify(trcs.size() == 1, "test image")
     
     data = getFirstDataset(system)
-    test.verify(data.getShape().at(0) == 100, "test shape")
-    test.verify(data.getShape().at(1) == 200, "test shape")
+    
+    if (data != None):
+        test.verify(data.getShape().at(0) == 100, "test shape")
+        test.verify(data.getShape().at(1) == 200, "test shape")
+    else:
+        test.fail("data is none")
+    
     
     type(waitForObject(":Console_ScriptConsoleViewer$ScriptConsoleStyledText"), "dnp.plot.clear()")
     type(waitForObject(":Console_ScriptConsoleViewer$ScriptConsoleStyledText"), "<Return>")
@@ -25,7 +39,11 @@ def plotting_script_test(system):
     trcs = system.getTraces()
     test.verify(trcs.size() == 1, "test trace")
     data = getFirstDataset(system)
-    test.verify(data.getShape().at(0) == 100, "test shape")
+    if (data != None):
+        test.verify(data.getShape().at(0) == 100, "test shape")
+    else:
+        test.fail("data is none")
+    
     
     type(waitForObject(":Console_ScriptConsoleViewer$ScriptConsoleStyledText"), "dnp.plot.clear()")
     type(waitForObject(":Console_ScriptConsoleViewer$ScriptConsoleStyledText"), "<Return>")
@@ -37,7 +55,11 @@ def plotting_script_test(system):
     trcs = system.getTraces()
     test.verify(trcs.size() == 2, "test traces")
     data = getFirstDataset(system)
-    test.verify(data.getShape().at(0) == 100, "test shape")
+    if (data != None):
+        test.verify(data.getShape().at(0) == 100, "test shape")
+    else:
+        test.fail("data is none")
+    
     
     type(waitForObject(":Console_ScriptConsoleViewer$ScriptConsoleStyledText"), "dnp.plot.clear()")
     type(waitForObject(":Console_ScriptConsoleViewer$ScriptConsoleStyledText"), "<Return>")

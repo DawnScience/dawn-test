@@ -22,7 +22,7 @@ def main():
             break
     
     snooze(2)
-    mouseClick(waitForObjectItem(":Data_Table", "0/0"), 8, 5, 0, Button.Button1)
+    #mouseClick(waitForObjectItem(":Data_Table", "0/0"), 8, 5, 0, Button.Button1)
     snooze(5)
     mouseClick(waitForObject(":Edit the slice with different editors._ToolItem"), 29, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Slice index (only)"))
