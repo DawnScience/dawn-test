@@ -43,7 +43,20 @@ def main():
     activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
     clickButton(waitForObject(":Python console_Button"))
     clickButton(waitForObject(":OK_Button"))
-    snooze(20)
+    
+    got = waitForObject(":PyDev Console").text
+    ready = False
+    counter = 0
+    
+    while (not got.endswith("\n>>> ") or not ready):
+        ready = got.endswith("\n>>> ")
+        snooze(2)
+        got = waitForObject(":PyDev Console").text
+        if (counter > 50):
+            test.fatal("Console did not initialize")
+            closeOrDetachFromDAWN()
+            return
+        counter +=1
     
     plotting_script_test(system)
     
