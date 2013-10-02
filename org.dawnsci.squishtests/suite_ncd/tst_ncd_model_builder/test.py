@@ -4,6 +4,12 @@ source(findFile("scripts", "dawn_constants.py"))
 source(findFile("scripts", "file_utils.py"))
 
 def main():
+    # This test should only run on Linux x86_64
+    # use platform instead of os since os fails on windows
+    import platform, sys
+    if platform.uname()[0] != 'Linux' or platform.uname()[4] != 'x86_64':
+        return
+
     startOrAttachToDAWN()
 
     addExternalFile("results_b21-2672_detector_040713_102411.nxs", "suite_ncd", "tst_ncd_model_builder", "data", "examples")
