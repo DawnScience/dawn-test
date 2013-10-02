@@ -172,12 +172,15 @@
 :cm5947-3_TreeItem_2	{caption='cm5947-3' parentitem=':2013_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
 :data_TreeItem	{caption='data' parentitem=':b21_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :data_TreeItem_2	{caption='data' parentitem=':b21_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
+:data_TreeItem_3	{caption='data' container=':Project Explorer_Tree_2' type='org.eclipse.swt.widgets.TreeItem'}
 :dls_TreeItem	{caption='dls' container=':File Navigator_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :dls_TreeItem_2	{caption='dls' container=':File Navigator_Tree_2' type='org.eclipse.swt.widgets.TreeItem'}
+:examples_TreeItem	{caption='examples' parentitem=':data_TreeItem_3' type='org.eclipse.swt.widgets.TreeItem'}
 :processing_TreeItem	{caption='processing' parentitem=':cm5947-3_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :processing_TreeItem_2	{caption='processing' parentitem=':cm5947-3_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
 :ref-testscale_1_001.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_001.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :ref-testscale_1_001.img_CTabItem	{caption='ref-testscale_1_001.img' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:results_b21-2672_detector_040713_102411.nxs  4.5 MB  25/09/13 02:48 PM_TreeItem	{caption?='results_b21-2672_detector_040713_102411.nxs*' parentitem=':examples_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :results_b21-2672_detector_040713_102411.nxs.04/07/2013 10:24_TreeSubItem	{caption='04/07/2013 10:24' column='1' container=':results_b21-2672_detector_040713_102411.nxs_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
 :results_b21-2672_detector_040713_102411.nxs_TreeItem	{caption='results_b21-2672_detector_040713_102411.nxs' parentitem=':processing_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :results_b21-2672_detector_040713_102411.nxs_TreeItem_2	{caption='results_b21-2672_detector_040713_102411.nxs' parentitem=':processing_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
