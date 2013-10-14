@@ -31,3 +31,11 @@ def createAndChangeToSquishtestsTempDirectory():
     except:
         pass
     os.chdir(wdir)
+
+def createDirectory(parentdir, namedir):
+    # Create, set and change to the working directory
+    wdir = parentdir+"/"+namedir
+    try:
+        os.makedirs(wdir, 0777)
+    except:
+        pass
