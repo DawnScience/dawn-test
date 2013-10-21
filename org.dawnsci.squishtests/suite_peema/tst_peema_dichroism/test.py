@@ -48,7 +48,8 @@ def main():
     #Run the align process after having created a region of interest
     vals = dawn_constants
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Box Profile"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
+    activateItem(waitForObjectItem(":Profile_Menu", "Box Profile"))
     system = getPlottingSystem("Live Plot")
     c = system.getPlotComposite()
     b = c.bounds

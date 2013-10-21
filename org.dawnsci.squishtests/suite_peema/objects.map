@@ -151,6 +151,7 @@
 :Problem Occurred.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Problem Occurred_Shell'}
 :Problem Occurred.Unable to read workbench state. Workbench UI layout will be reset._Label	{caption='Unable to read workbench state. Workbench UI layout will be reset.' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Problem Occurred_Shell'}
 :Problem Occurred_Shell	{caption='Problem Occurred' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Profile_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Project Explorer_CTabItem	{caption='Project Explorer' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Project Explorer_Tree_2	{container=':Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
@@ -201,6 +202,7 @@
 :View.+_Button	{caption='+' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :View.-_Button	{caption='-' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :View.Abs_Button	{caption='Abs' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:View.CD_Button	{caption='CD' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :View.Diff_Button	{caption='Diff' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Virtual_TreeItem	{caption='Virtual' container=':Project Explorer_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Welcome_CTabCloseBox	{container=':Welcome_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
