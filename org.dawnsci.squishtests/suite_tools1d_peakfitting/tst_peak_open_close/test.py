@@ -24,7 +24,8 @@ def main():
     snooze(1)
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), 31, 7, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Peak Fitting"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
     
     test.verify(object.exists(":Peak Fitting_CTabItem"), "peak fitting there")
     
