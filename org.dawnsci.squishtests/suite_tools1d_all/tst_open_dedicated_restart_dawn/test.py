@@ -9,7 +9,8 @@ def the_actual_test():
     activateItem(waitForObjectItem(":Pop Up Menu", "History"))
     #Peak fitting
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Peak Fitting"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
     
     #fit peak
     c = waitForObject(":Plot_Composite")
@@ -28,7 +29,8 @@ def the_actual_test():
     
     #activate derivative tool, which should deactivate the peak fitting
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Derivative"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative"))
     names = ["Column_3'","Peak 1"]
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
     #check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"), "Column_3'", "400.0", "-400.0")
@@ -58,7 +60,8 @@ def the_actual_test():
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Measurement' in dedicated view"))
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Line Fitting"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Line Fitting"))
     
     #do fit
     c = waitForObject(":Plot_Composite")
@@ -115,13 +118,15 @@ def main():
     mouseClick(waitForObject(":Derivative_CTabCloseBox"), 7, 10, 0, Button.Button1)
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"),vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Line Fitting"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Line Fitting"))
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 8, 8, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Line Fitting' in dedicated view"))
     test.verify(object.exists(":Line Fitting_CTabItem"), "Line fitting there")
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"),vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Peak Fitting"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
     mouseClick(waitForObject(":View Menu_ToolItem_3"), 3, 6, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Peak Fitting' in dedicated view"))
     test.verify(object.exists(":Peak Fitting_CTabItem"), "Peak fitting there")

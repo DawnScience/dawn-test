@@ -7,7 +7,8 @@ def the_actual_test():
     #Open each tool and check it closes ok when the next tool opens
     #Peak fitting
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Peak Fitting"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
     
     #fit peak
     c = waitForObject(":Plot_Composite")
@@ -25,7 +26,8 @@ def the_actual_test():
     
     #activate derivative tool, which should deactivate the peak fitting
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Derivative"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative"))
     names = ["Column_3'"]
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
     check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"), "Column_3'", "400.0", "-400.0")
@@ -54,7 +56,8 @@ def the_actual_test():
     mouseClick(waitForObject(":Measurement_CTabCloseBox"), 10, 4, 0, Button.Button1)
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Line Fitting"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Line Fitting"))
     
     #do fit
     c = waitForObject(":Plot_Composite")
