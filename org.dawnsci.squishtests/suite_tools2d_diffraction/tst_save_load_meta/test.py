@@ -18,7 +18,8 @@ def main():
     
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
 
-    activateItem(waitForObjectItem(":Pop Up Menu", "Diffraction"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Science"))
+    activateItem(waitForObjectItem(":Science_Menu", "Diffraction"))
     mouseClick(waitForObject(":Calibrants_ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Cr2O3"))
     mouseClick(waitForObject(":Resolution rings_ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)

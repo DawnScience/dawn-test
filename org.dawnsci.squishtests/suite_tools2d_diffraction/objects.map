@@ -108,6 +108,7 @@
 :SaveMetaData.nxs.Tree_CTabItem	{caption='Tree' container=':SaveMetaData.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :SaveMetaData.nxs_CTabCloseBox	{container=':SaveMetaData.nxs_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :SaveMetaData.nxs_CTabItem	{caption='SaveMetaData.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Science_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse_ToolItem	{caption='Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse_ToolItem_2	{caption='Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :Select Trace_Combo	{container=':Traces.Select Trace_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}

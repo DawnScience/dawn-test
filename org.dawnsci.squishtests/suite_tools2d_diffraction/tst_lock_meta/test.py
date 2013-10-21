@@ -15,7 +15,8 @@ def main():
     openExample("001.img")
     
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Diffraction"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Science"))
+    activateItem(waitForObjectItem(":Science_Menu", "Diffraction"))
     
     ob = waitForObject(":Diffraction_Tree")
     x,y = getBeamCentreFromTable(ob)
@@ -23,7 +24,8 @@ def main():
     openExample("ref-screentest")
     
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Diffraction"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Science"))
+    activateItem(waitForObjectItem(":Science_Menu", "Diffraction"))
     
     ob = waitForObject(":Diffraction_Tree")
     xnew,ynew = getBeamCentreFromTable(ob)
@@ -38,7 +40,8 @@ def main():
     openExample("ref-screentest")
     
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Diffraction"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Science"))
+    activateItem(waitForObjectItem(":Science_Menu", "Diffraction"))
     
     ob = waitForObject(":Diffraction_Tree")
     xnew,ynew = getBeamCentreFromTable(ob)
@@ -52,7 +55,8 @@ def main():
     openExample("ref-screentest")
     
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Diffraction"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Science"))
+    activateItem(waitForObjectItem(":Science_Menu", "Diffraction"))
     
     ob = waitForObject(":Diffraction_Tree")
     xnew,ynew = getBeamCentreFromTable(ob)

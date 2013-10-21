@@ -100,7 +100,8 @@ def main():
 
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_3"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
 
-    activateItem(waitForObjectItem(":Pop Up Menu", "Diffraction"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Science"))
+    activateItem(waitForObjectItem(":Science_Menu", "Diffraction"))
     
     #dragSash(waitForObject(":_Sash"),200,0)
     #dragToolToConstWidth(waitForObject(":Diffraction_CTabItem"),waitForObject(":_Sash"))
