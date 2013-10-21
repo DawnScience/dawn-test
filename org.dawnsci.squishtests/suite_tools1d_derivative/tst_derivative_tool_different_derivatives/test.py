@@ -45,7 +45,8 @@ def main():
     
     #Change to derivative and check again
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Derivative"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative"))
     
     check_plotted_trace_name_yval(conOb,"Column_1'",vals.METALMIX_1_DMAX,vals.METALMIX_1_DMIN)
     

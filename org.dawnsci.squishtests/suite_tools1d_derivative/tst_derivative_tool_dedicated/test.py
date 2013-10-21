@@ -30,7 +30,8 @@ def main():
     
     #Change to derivative and check again
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Derivative"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative"))
     
     widget = waitForObject(":Derivative.Display f'(Data)_Button")
     test.verify(widget.getSelection(), "Check Default Selection")
@@ -43,7 +44,8 @@ def main():
     check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_0_MAX,vals.METALMIX_0_MIN)
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Derivative"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative"))
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 10, 4, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Derivative' in dedicated view"))
     

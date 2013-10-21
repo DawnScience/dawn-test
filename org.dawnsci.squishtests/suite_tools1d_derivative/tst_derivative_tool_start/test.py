@@ -30,7 +30,8 @@ def main():
     
     #Change to derivative and check again
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Derivative"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative"))
     
     #Verify all is correct on the first open of the tool
     
