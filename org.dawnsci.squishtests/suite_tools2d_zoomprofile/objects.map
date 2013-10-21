@@ -23,6 +23,7 @@
 :Current downsample.4x4 pixels_Label	{caption='4x4 pixels' container=':Image Traces.Current downsample_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Current downsample.[184, 251]_Label	{caption='[184, 251]' container=':Image Traces.Current downsample_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_ErrorLog' type='org.eclipse.swt.widgets.ToolItem'}
+:Profile_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}

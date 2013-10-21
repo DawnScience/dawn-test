@@ -23,7 +23,8 @@ def main():
     
 
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Zoom Profile"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
+    activateItem(waitForObjectItem(":Profile_Menu", "Zoom Profile"))
     
     c = waitForObject("{container=':ref-testscale_1_001.img.Image_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}")
     b = c.bounds
