@@ -47,6 +47,7 @@
 :Line Fitting_Composite	{container=':Line Fitting_CTabItem' isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Composite'}
 :Line Fitting_Table	{container=':Line Fitting_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Name_TableColumn	{caption='Name' container=':Line Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :New Environment Variable.Name:_Label	{caption='Name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':New Environment Variable_Shell'}
 :New Environment Variable.Name:_Text	{isvisible='true' leftWidget=':New Environment Variable.Name:_Label' type='org.eclipse.swt.widgets.Text' window=':New Environment Variable_Shell'}

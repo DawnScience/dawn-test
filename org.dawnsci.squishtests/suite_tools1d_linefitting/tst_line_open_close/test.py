@@ -25,7 +25,8 @@ def main():
     snooze(5)
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Line Fitting"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Line Fitting"))
     
     test.verify(waitForObject(":Line Fitting_CTabItem"), "peak fitting there")
     

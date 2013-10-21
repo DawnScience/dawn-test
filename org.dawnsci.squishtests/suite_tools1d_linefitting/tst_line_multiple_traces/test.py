@@ -26,7 +26,8 @@ def main():
         mouseClick(waitForObjectItem(":Data_Table", str(i) + "/0"), 9, 7, 0, Button.Button1)
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Line Fitting"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Line Fitting"))
     
     c = waitForObject(":Plot_Composite_2")
     b = c.bounds
