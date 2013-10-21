@@ -34,6 +34,7 @@
 :Data_Tree	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Debug_TableCell	{caption='Debug' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
+:Profile_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Enthought EPD Free Installer_Label	{caption='Enthought EPD Free Installer' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Environment.New..._Button	{caption='New...' container=':Preferences.Environment_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}

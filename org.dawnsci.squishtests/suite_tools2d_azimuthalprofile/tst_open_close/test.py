@@ -28,7 +28,8 @@ def main():
         
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     
-    activateItem(waitForObjectItem(":Pop Up Menu", "Azimuthal Profile"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
+    activateItem(waitForObjectItem(":Profile_Menu", "Azimuthal Profile"))
     
     c = waitForObject(":Image_Composite")
     b = c.bounds
