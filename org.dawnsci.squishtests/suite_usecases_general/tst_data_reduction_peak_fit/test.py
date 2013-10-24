@@ -23,12 +23,26 @@ def main():
     type(waitForObject(":_Sash"), "<Left>")
     type(waitForObject(":_Sash"), "<Left>")
     type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
     openExternalFile("9758.nxs")
 
 
     chooseSlice()    
 
-    activateItem(waitForObjectItem(":Pop Up Menu", "Peak Fitting"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
     
     proxy  = waitForObject(":9758.nxs_CTabItem")
     widget = proxy.control

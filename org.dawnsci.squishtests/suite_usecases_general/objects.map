@@ -47,8 +47,8 @@
 :Data_Table_5	{container=':Data_CTabItem_3' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Text	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Text'}
 :Data_Text_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Text'}
-:Data_ToolBar	{container=':Data_CTabItem_2' firstItemText='Slice as line plots' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:Data_ToolBar_2	{container=':Data_CTabItem' firstItemText='Slice as line plots' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Data_ToolBar	{container=':Data_CTabItem_2' firstItemText?='Advanced*' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Data_ToolBar_2	{container=':Data_CTabItem' firstItemText?='Advanced*' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Data_Tree	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Debug_TableCell	{caption='Debug' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
@@ -78,6 +78,7 @@
 :Keep aspect ratio_ToolItem	{caption='Keep aspect ratio' container=':Plot_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :Line Profile_CTabItem	{caption='Line Profile' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Meta Data_CTabItem	{caption='Meta Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :MoKedge_1_15.dat_CTabItem	{caption='MoKedge_1_15.dat' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :New Environment Variable.Name:_Label	{caption='Name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':New Environment Variable_Shell'}
@@ -129,6 +130,7 @@
 :Preferences_Shell_2	{caption='Preferences' isvisible='false' type='org.eclipse.swt.widgets.Shell'}
 :Preferences_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
 :Preferences_Tree_2	{isvisible='false' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell_2'}
+:Profile_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Project Explorer_CTabItem	{caption='Project Explorer' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Project Explorer_Tree_2	{container=':Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}

@@ -16,7 +16,8 @@ def main():
     openExample("001.img")
     snooze(1) 
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Line Profile"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
+    activateItem(waitForObjectItem(":Profile_Menu", "Line Profile"))
     clickTab(waitForObject(":Line Profile_CTabItem"), 64, 11, 0, Button.Button1)
     
     proxy = waitForObject(":ref-testscale_1_001.img_CTabItem")

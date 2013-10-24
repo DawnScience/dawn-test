@@ -29,6 +29,15 @@ def main():
     type(waitForObject(":_Sash"), "<Left>")
     type(waitForObject(":_Sash"), "<Left>")
     type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
     
     openExternalFile("9758.nxs")
     
@@ -38,7 +47,8 @@ def main():
     # Select image and zoom
     mouseClick(waitForObject(":Keep aspect ratio_ToolItem"), 12, 13, 0, Button.Button1)
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Zoom Profile"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
+    activateItem(waitForObjectItem(":Profile_Menu", "Zoom Profile"))
     
     snooze(1)
     proxy  = waitForObject(":9758.nxs_CTabItem")

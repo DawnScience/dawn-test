@@ -43,7 +43,8 @@ def main():
     mouseClick(waitForObjectItem(":Data_Table", "0/0"), 12, 9, 0, Button.Button1)
     clickTab(waitForObject(":History_CTabItem"), 30, 18, 0, Button.Button1)
     mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Peak Fitting"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
     
     
     c = waitForObject(":Plot_Composite")

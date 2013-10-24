@@ -35,7 +35,8 @@ def main():
     mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem_2"), 21, 21, 0, Button.Button1)
     mouseClick(waitForObjectItem(":History_Table", "0/0"), 9, 14, 0, Button.Button1)
     mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Derivative"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative"))
     
     conOb = waitForObject(":Configure Settings..._ToolItem_2")
 

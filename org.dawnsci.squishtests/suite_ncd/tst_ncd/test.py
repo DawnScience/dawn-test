@@ -42,7 +42,8 @@ def main():
     clickButton(waitForObject(":Masking 'data'.Apply_Button"))
     
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Radial Profile"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
+    activateItem(waitForObjectItem(":Profile_Menu", "Radial Profile"))
     
     c = waitForObject(":Dataset Plot_Composite")
     b = c.bounds
@@ -60,7 +61,8 @@ def main():
     b = c.bounds
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Peak Fitting"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
     
     mouseClick(waitForObject(":Number peaks to fit_ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Fit 10 Peaks"))

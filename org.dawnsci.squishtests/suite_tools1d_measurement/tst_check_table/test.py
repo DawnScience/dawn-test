@@ -53,9 +53,9 @@ def main():
     test.verify(testIsNumeric(waitForObjectItem(":Measurement_Table", "0/3").text),"Test cell 3")
     test.verify(testIsNumeric(waitForObjectItem(":Measurement_Table", "0/4").text),"Test cell 4")
     val = waitForObjectItem(":Measurement_Table", "0/5").text
-    test.verify("Start" in val, "Test cell 5/0")
-    test.verify("Length" in val, "Test cell 5/1")
-    test.verify("Angle" in val, "Test cell 5/2")
+    test.verify("point" in val, "Test cell 5/0")
+    test.verify("length" in val, "Test cell 5/1")
+    test.verify("angle" in val, "Test cell 5/2")
     
 
     closeOrDetachFromDAWN()

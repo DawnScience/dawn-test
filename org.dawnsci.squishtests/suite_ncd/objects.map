@@ -79,6 +79,7 @@
 :Masking 'data'.Enable lower mask    _Spinner	{container=':Masking.Masking \\'data\\'_Group' isvisible='true' leftWidget=':Masking \\'data\\'.Enable lower mask    _Button' type='org.eclipse.swt.widgets.Spinner'}
 :Masking.Masking 'data'_Group	{caption='Masking \\'data\\'' container=':Masking_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Masking_CTabItem	{caption='Masking' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :NCD Data Reduction Parameters.Data reduction pipeline_Group	{caption='Data reduction pipeline' container=':NCD Data Reduction Parameters_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :NCD Data Reduction Parameters.Radial Profile_Button	{caption='Radial Profile' container=':NCD Data Reduction Parameters_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :NCD Data Reduction Parameters.Results directory_Group	{caption='Results directory' container=':NCD Data Reduction Parameters_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
@@ -106,6 +107,7 @@
 :Points.First point_Label	{caption='First point' container=':Data parameters.Points_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Points.First point_Text	{container=':Data parameters.Points_Group' isvisible='true' leftWidget=':Points.First point_Label' type='org.eclipse.swt.widgets.Text'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Profile_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Project Explorer_CTabItem	{caption='Project Explorer' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Project Explorer_CTabItem_2	{caption='Project Explorer' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}

@@ -21,7 +21,8 @@ def main():
  
     # Now use profile tool
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Line Profile"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
+    activateItem(waitForObjectItem(":Profile_Menu", "Line Profile"))
     snooze(1)
     
     proxy = waitForObject(":ref-testscale_1_001.img_CTabItem")
@@ -31,7 +32,8 @@ def main():
     mouseDrag(widget, b.x+100, b.y+100, 300, 300, 0, Button.Button1)
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Peak Fitting"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
     mouseClick(waitForObject(":Create new profile._ToolItem"), 8, 5, 0, Button.Button1)    
 
     proxy  = waitForObject(":Line Profile_CTabItem")
