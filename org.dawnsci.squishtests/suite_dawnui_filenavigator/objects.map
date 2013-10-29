@@ -41,7 +41,9 @@
 :DAT file Scan Command Decorator_ItemCheckbox	{container=':Available label decorations:.DAT file Scan Command Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
 :DAT file Scan Command Decorator_ItemCheckbox_2	{container=':Available label decorations:.DAT file Scan Command Decorator_TableCell_2' type='com.froglogic.squish.swt.ItemCheckbox'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data_CTabItem_2	{caption='Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Data_Table_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Tree	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Debug_TableCell	{caption='Debug' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
@@ -65,6 +67,8 @@
 :Internal Error_Shell	{caption='Internal Error' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Jython console_Button	{caption='Jython console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Metadata_CTabItem	{caption='Metadata' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Metadata_Text	{container=':Metadata_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Multiple problems have occurred.Details >>_Button	{caption='Details >>' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Multiple problems have occurred_Shell'}
 :Multiple problems have occurred.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Multiple problems have occurred_Shell'}
 :Multiple problems have occurred_Shell	{caption='Multiple problems have occurred' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -85,6 +89,8 @@
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
 :Open Perspective_ToolItem	{caption='Open Perspective' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective_ToolItem_2	{caption='Open Perspective' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
+:Open With_Menu	{caption='Open With' container=':Project Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Open With_Menu_2	{caption='Open With' container=':Project Explorer_Tree_2' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Preferences.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
@@ -168,4 +174,10 @@
 :_ToolBar_5	{container=':_CTabFolder_4' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_6	{firstItemText='DExplore' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
+:i22-4996.nxs_CTabItem	{caption='i22-4996.nxs' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:i22-4996.nxs_CTabItem_2	{caption='i22-4996.nxs' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:i22-4996.nxs_CTabItem_3	{caption='i22-4996.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:i22-4996.nxs_Tree	{container=':i22-4996.nxs_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:i22-4996.nxs_Tree_2	{container=':i22-4996.nxs_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:i22-4996.nxs_Tree_3	{container=':i22-4996.nxs_CTabItem_3' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}
