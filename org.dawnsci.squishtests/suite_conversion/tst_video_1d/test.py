@@ -25,7 +25,7 @@ def main():
     # Use wizard
     mouseClick(waitForObjectItem(":Conversion Type_Combo", " video from image stack"), 0, 0, 0, Button.NoButton)    
     clickButton(waitForObject(":Next >_Button"))
-    mouseClick(waitForObject(":Slice as line plots_ToolItem_2"))
+    mouseClick(waitForObject(":Slice as line plots_ToolItem_3"))
     mouseClick(waitForObjectItem(":_Table", "1/1"))
     mouseClick(waitForObject(":_CCombo"))
     mouseClick(waitForObjectItem(":_List", "(Slice)"))
