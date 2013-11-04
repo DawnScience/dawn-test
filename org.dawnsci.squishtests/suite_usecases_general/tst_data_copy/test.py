@@ -21,6 +21,7 @@ def main():
     type(waitForObject(":Data_Text"), "dat:mean(Pilatus,0)")
     type(waitForObject(":Data_Text"), "<Return>")
     
+    sleep(5)
     system = getPlottingSystem("315029.dat")
     test.verify(system.getTraces().size()==1)
     test.verify(system.getTraces().iterator().next().getData().getRank()==2)
