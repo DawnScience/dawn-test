@@ -114,29 +114,32 @@ def main():
 
     location = os.path.join(workspaceName, "data","examples");
     
-    clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 14, 0, Button.Button1)
+    clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem_2"))
+
     #doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
-    clickButton(waitForObject(":Data reduction pipeline.2. Sector integration_Button"))
+    clickButton(waitForObject(":Data reduction pipeline.2. Sector integration_Button_2"))
+ 
+    mouseClick(waitForObject(":Results directory.Directory:_Text_2"))
 
-    mouseClick(waitForObject(":Results directory.Directory:_Text"))
     #mouseDrag(waitForObject(":Results directory.Directory:_Text"), 229, 15, -319, -4, Modifier.None, Button.Button1)
-    type(waitForObject(":Results directory.Directory:_Text"), "<Ctrl+a>")
-    type(waitForObject(":Results directory.Directory:_Text"), "<Delete>")
-    type(waitForObject(":Results directory.Directory:_Text"), location[1:])
-    type(waitForObject(":Results directory.Directory:_Text"), "<Home>")
-    type(waitForObject(":Results directory.Directory:_Text"), location[0])
+    type(waitForObject(":Results directory.Directory:_Text_2"), "<Ctrl+a>")
+    type(waitForObject(":Results directory.Directory:_Text_2"), "<Delete>")
+    type(waitForObject(":Results directory.Directory:_Text_2"), location[1:])
+    type(waitForObject(":Results directory.Directory:_Text_2"), "<Home>")
+    type(waitForObject(":Results directory.Directory:_Text_2"), location[0])
 
 
-    clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 181, 28, 0, Button.Button1)
+    clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem_2"), 181, 28, 0, Button.Button1)
     snooze(1)
     #clickButton(waitForObject(":Results directory...._Button"))
 
     #chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/testoutput")
     snooze(1)
-    clickButton(waitForObject(":NCD Data Reduction Parameters.Radial Profile_Button"))
+    clickButton(waitForObject(":NCD Data Reduction Parameters.Radial Profile_Button_2"))
+
     snooze(1)
     
-    clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 14, 0, Button.Button1)
+    clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem_2"), 128, 14, 0, Button.Button1)
     #doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
     snooze(1)
     

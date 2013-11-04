@@ -53,6 +53,7 @@
 :Data parameters.Working directory_Label	{caption='Working directory' container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Data parameters.Working directory_Text	{container=':BioSAXS Model Builder.Data parameters_Group' isvisible='true' leftWidget=':Data parameters.Working directory_Label' type='org.eclipse.swt.widgets.Text'}
 :Data reduction pipeline.2. Sector integration_Button	{caption='2. Sector integration' container=':NCD Data Reduction Parameters.Data reduction pipeline_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Data reduction pipeline.2. Sector integration_Button_2	{caption='2. Sector integration' container=':NCD Data Reduction Parameters.Data reduction pipeline_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Dataset Plot_CTabItem	{caption='Dataset Plot' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Dataset Plot_Composite	{container=':Dataset Plot_CTabItem' isvisible='true' occurrence='3' type='org.eclipse.swt.widgets.Composite'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_ErrorLog' type='org.eclipse.swt.widgets.ToolItem'}
@@ -81,9 +82,13 @@
 :Masking_CTabItem	{caption='Masking' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :NCD Data Reduction Parameters.Data reduction pipeline_Group	{caption='Data reduction pipeline' container=':NCD Data Reduction Parameters_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:NCD Data Reduction Parameters.Data reduction pipeline_Group_2	{caption='Data reduction pipeline' container=':NCD Data Reduction Parameters_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :NCD Data Reduction Parameters.Radial Profile_Button	{caption='Radial Profile' container=':NCD Data Reduction Parameters_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:NCD Data Reduction Parameters.Radial Profile_Button_2	{caption='Radial Profile' container=':NCD Data Reduction Parameters_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :NCD Data Reduction Parameters.Results directory_Group	{caption='Results directory' container=':NCD Data Reduction Parameters_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:NCD Data Reduction Parameters.Results directory_Group_2	{caption='Results directory' container=':NCD Data Reduction Parameters_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :NCD Data Reduction Parameters_CTabItem	{caption='NCD Data Reduction Parameters' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:NCD Data Reduction Parameters_CTabItem_2	{caption='NCD Data Reduction Parameters' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :NCD Detector Parameters.SAXS_Button	{caption='SAXS' container=':NCD Detector Parameters_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :NCD Detector Parameters.SAXS_Combo	{container=':NCD Detector Parameters_CTabItem' isvisible='true' leftWidget=':NCD Detector Parameters.SAXS_Button' type='org.eclipse.swt.widgets.Combo'}
 :NCD Detector Parameters_CTabItem	{caption='NCD Detector Parameters' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -119,7 +124,9 @@
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Results directory...._Button	{caption='...' container=':NCD Data Reduction Parameters.Results directory_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Results directory.Directory:_Label	{caption='Directory:' container=':NCD Data Reduction Parameters.Results directory_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Results directory.Directory:_Label_2	{caption='Directory:' container=':NCD Data Reduction Parameters.Results directory_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Results directory.Directory:_Text	{container=':NCD Data Reduction Parameters.Results directory_Group' isvisible='true' leftWidget=':Results directory.Directory:_Label' type='org.eclipse.swt.widgets.Text'}
+:Results directory.Directory:_Text_2	{container=':NCD Data Reduction Parameters.Results directory_Group_2' isvisible='true' leftWidget=':Results directory.Directory:_Label_2' type='org.eclipse.swt.widgets.Text'}
 :SWT	SWT
 :Saxs Q-axis Calibration.Calibration Controls_Group	{caption='Calibration Controls' container=':Saxs Q-axis Calibration_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Saxs Q-axis Calibration.Calibration Function_Group	{caption='Calibration Function' container=':Saxs Q-axis Calibration_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
