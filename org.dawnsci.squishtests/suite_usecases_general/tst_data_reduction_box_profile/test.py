@@ -45,8 +45,8 @@ def main():
     type(waitForObject(":Data_Text_2"), "14/dat")
     mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 6, 13, 0, Button.Button1)
         
-
-    mouseClick(waitForObject(":Keep aspect ratio_ToolItem"), 12, 13, 0, Button.Button1)
+    snooze(5)
+    mouseClick(waitForObject(":Keep aspect ratio_ToolItem"), 6, 9, 0, Button.Button1)
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
     activateItem(waitForObjectItem(":Profile_Menu", "Box Profile"))
@@ -71,7 +71,7 @@ def main():
     
     # Show plotted image
     snooze(1) 
-    mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 7, 11, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 6, 12, 0, Button.Button1)
     snooze(3) 
     system = getPlottingSystem("9758_Box_Profile.h5")
     test.verify(system.getRegions().size()==0)
