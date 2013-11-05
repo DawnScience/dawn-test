@@ -66,7 +66,8 @@ def setupEPDPython():
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
     expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
-    mouseClick(waitForObjectItem(":Preferences_Tree", "Interpreter - Python"))
+    expand(waitForObjectItem(":Preferences_Tree", "Interpreters"))
+    mouseClick(waitForObjectItem(":Preferences_Tree", "Python Interpreter"))
     mouseClick(waitForObject(":Preferences.New..._Button"))
     type(waitForObject(":Select interpreter.Interpreter Name: _Text"), "Enthought EPD Free")
     found = False
@@ -96,7 +97,8 @@ def setupPython(allowInstallEPD=False, installEPD=False, installEPDPath=None):
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
     expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
-    mouseClick(waitForObjectItem(":Preferences_Tree", "Interpreter - Python"))
+    expand(waitForObjectItem(":Preferences_Tree", "Interpreters"))
+    mouseClick(waitForObjectItem(":Preferences_Tree", "Python Interpreter"))
     clickButton(waitForObject(":Preferences.Auto Config_Button"))
     
     # Wait for auto config list to come up
