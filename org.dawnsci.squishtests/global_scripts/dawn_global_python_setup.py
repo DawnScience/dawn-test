@@ -66,9 +66,10 @@ def setupEPDPython():
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
     expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
-    mouseClick(waitForObjectItem(":Preferences_Tree", "Interpreter - Python"))
+    expand(waitForObjectItem(":Preferences_Tree", "Interpreters"))
+    mouseClick(waitForObjectItem(":Preferences_Tree", "Python Interpreter"))
     mouseClick(waitForObject(":Preferences.New..._Button"))
-    type(waitForObject(":Select interpreter.Interpreter Name: _Text"), "EPD Free Python")
+    type(waitForObject(":Select interpreter.Interpreter Name: _Text"), "Enthought EPD Free")
     found = False
     for loc in EPD_FREE_LOCATIONS:
         if os.path.exists(loc):
@@ -76,7 +77,7 @@ def setupEPDPython():
             type(waitForObject(":Select interpreter.Interpreter Executable: _Text"), loc)
             if len(waitForObject(":Select interpreter Error Message_Text").text) == 0:
                 # found a good one
-                test.verify(True, "setupEPDPython: Using %s as EPD Free Python" % loc)
+                test.verify(True, "setupEPDPython: Using %s as Enthought EPD Free" % loc)
                 found = True
                 break
     if found:
@@ -96,21 +97,10 @@ def setupPython(allowInstallEPD=False, installEPD=False, installEPDPath=None):
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
     expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
-    mouseClick(waitForObjectItem(":Preferences_Tree", "Interpreter - Python"))
+    expand(waitForObjectItem(":Preferences_Tree", "Interpreters"))
+    mouseClick(waitForObjectItem(":Preferences_Tree", "Python Interpreter"))
     clickButton(waitForObject(":Preferences.Auto Config_Button"))
     
-    # Wait for auto config list to come up
-    autoError = waitForObject(":Unable to auto-configure..OK_Button", 100)
-    if (autoError!=None):
-        clickButton(autoError)
-        clickButton(waitForObject(":Preferences.New..._Button"))
-        type(waitForObject(":Select interpreter.Interpreter Name: _Text"), "EPD Free Python")
-        type(waitForObject(":Select interpreter.Interpreter Executable: _Text"), "C:\\Python26\\python.exe")
-        clickButton(waitForObject(":Select interpreter.OK_Button"))
-        clickButton(waitForObject(":Selection needed.OK_Button"))
-        clickButton(waitForObject(":Preferences.OK_Button", 120000))
-        return
-
     # Wait for auto config list to come up
     multiOptions = waitFor('object.exists(":ListDialog_Shell")', 20000)
     multiOptions = multiOptions and object.exists(":Select Interpreter Available_Caption")

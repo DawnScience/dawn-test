@@ -1,4 +1,5 @@
-source(findFile("scripts", "utilities.py"))
+source(findFile("scripts", "dawn_global_startup.py"))
+source(findFile("scripts", "dawn_global_python_setup.py"))
 
 def main():
     startOrAttachToDAWN()
@@ -8,7 +9,7 @@ def main():
     activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
     expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
     mouseClick(waitForObjectItem(":Preferences_Tree", "Interactive Console"))
-    connectDebug = waitForObject(":Preferences.Connect console to Variables Debug View?_Button")
+    connectDebug = waitForObject(":Preferences.Connect console to a Debug Session?_Button")
     if not connectDebug.getSelection():
         clickButton(connectDebug)
     clickButton(waitForObject(":Preferences.OK_Button"))

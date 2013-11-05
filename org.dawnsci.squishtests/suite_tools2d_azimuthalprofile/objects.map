@@ -67,10 +67,10 @@
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
-:Preferences.Auto Config_Button	{caption='Auto Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
+:Preferences.Auto Config_Button	{caption='Advanced Auto-Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
-:Preferences.Connect console to Variables Debug View?_Button	{caption='' isvisible='true' leftWidget=':Preferences.Connect console to Variables Debug View?_Label' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
-:Preferences.Connect console to Variables Debug View?_Label	{caption='Connect console to Variables Debug View?' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Preferences_Shell'}
+:Preferences.Connect console to a Debug Session?_Button	{caption='' isvisible='true' leftWidget=':Preferences.Connect console to a Debug Session?_Label' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
+:Preferences.Connect console to a Debug Session?_Label	{caption='Connect console to a Debug Session?' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Preferences_Shell'}
 :Preferences.Environment_TabItem	{caption='Environment' type='org.eclipse.swt.widgets.TabItem' window=':Preferences_Shell'}
 :Preferences.New..._Button	{caption='New...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
@@ -80,9 +80,9 @@
 :Preferences_Shell	{caption='Preferences' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Preferences_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
-:PyDev Console	{container=':Console_CTabItem' isvisible='true' type='org.python.pydev.dltk.console.ui.internal.ScriptConsoleViewer$ScriptConsoleStyledText'}
+:PyDev Console	{container=':Console_CTabItem' isvisible='true' type='org.python.pydev.shared_interactive_console.console.ui.internal.ScriptConsoleViewer$ScriptConsoleStyledText'}
 :Python console_Button	{caption='Python console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
-:Python interpreters (e.g.: python.exe).EPD Free Python_TreeItem	{caption='EPD Free Python' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem	{caption='Enthought EPD Free' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Regions.   Mobile   _Button	{caption='   Mobile   ' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Regions.Region Location_Label	{caption='Region Location' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}

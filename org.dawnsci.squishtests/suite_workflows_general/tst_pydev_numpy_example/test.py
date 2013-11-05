@@ -31,7 +31,7 @@ def main():
 #
 #    mouseClick(waitForObjectItem(":Actor Attributes_Table", "3/1"), 633, 11, 0, Button.Button1)
 #    mouseClick(waitForObject(":Actor Attributes_CCombo"), 685, 7, 0, Button.Button1)
-#    freeLocation = "EPD Free Python - " + getPythonLocation();
+#    freeLocation = "Enthought EPD Free - " + getPythonLocation();
 #    mouseClick(waitForObjectItem(":_List", freeLocation), 178, 12, 0, Button.Button1)
 # 
 #

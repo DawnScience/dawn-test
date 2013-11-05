@@ -1,4 +1,4 @@
-source(findFile("scripts", "utilities.py"))
+source(findFile("scripts", "dawn_global_startup.py"))
 
 # This test makes sure we can start and stop DAWN
 def main():

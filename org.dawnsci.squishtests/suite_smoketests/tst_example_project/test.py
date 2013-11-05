@@ -1,4 +1,4 @@
-source(findFile("scripts", "utilities.py"))
+source(findFile("scripts", "dawn_global_startup.py"))
 
 def testNode(node):
     ''' Run whatever custom tests on the node you want here. Return True to iterate children '''
@@ -39,8 +39,8 @@ def main():
     #make sure all start up error produced
     snooze(2.0)
     # Clear the list of errors in the error log at startup    
-    verifyAndClearErrorLog(False)
-    
+    openAndClearErrorLog()
+
     # iterate over all the examples
     iterateTestNode(waitForObjectItem(":Project Explorer_Tree", "data"))
 

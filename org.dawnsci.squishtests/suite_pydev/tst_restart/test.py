@@ -1,4 +1,6 @@
-source(findFile("scripts", "utilities.py"))
+source(findFile("scripts", "dawn_global_startup.py"))
+source(findFile("scripts", "dawn_global_python_setup.py"))
+
 def main():
     startOrAttachToDAWN()
     setupEPDPython()
@@ -15,9 +17,10 @@ def main():
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
     expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
-    mouseClick(waitForObjectItem(":Preferences_Tree", "Interpreter - Python"))
-    waitFor("object.exists(':Python interpreters (e.g.: python.exe).EPD Free Python_TreeItem')", 20000)
-    test.compare(findObject(":Python interpreters (e.g.: python.exe).EPD Free Python_TreeItem").text, "EPD Free Python")
+    expand(waitForObjectItem(":Preferences_Tree", "Interpreters"))
+    mouseClick(waitForObjectItem(":Preferences_Tree", "Python Interpreter"))
+    waitFor("object.exists(':Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem')", 20000)
+    test.compare(findObject(":Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem").text, "Enthought EPD Free")
     clickButton(waitForObject(":Preferences.OK_Button"))
     snooze(1.0)
     closeWindow(":Workbench Window")
