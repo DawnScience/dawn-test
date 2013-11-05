@@ -100,18 +100,6 @@ def setupPython(allowInstallEPD=False, installEPD=False, installEPDPath=None):
     clickButton(waitForObject(":Preferences.Auto Config_Button"))
     
     # Wait for auto config list to come up
-    autoError = waitForObject(":Unable to auto-configure..OK_Button", 100)
-    if (autoError!=None):
-        clickButton(autoError)
-        clickButton(waitForObject(":Preferences.New..._Button"))
-        type(waitForObject(":Select interpreter.Interpreter Name: _Text"), "Enthought EPD Free")
-        type(waitForObject(":Select interpreter.Interpreter Executable: _Text"), "C:\\Python26\\python.exe")
-        clickButton(waitForObject(":Select interpreter.OK_Button"))
-        clickButton(waitForObject(":Selection needed.OK_Button"))
-        clickButton(waitForObject(":Preferences.OK_Button", 120000))
-        return
-
-    # Wait for auto config list to come up
     multiOptions = waitFor('object.exists(":ListDialog_Shell")', 20000)
     multiOptions = multiOptions and object.exists(":Select Interpreter Available_Caption")
     multiOptions = multiOptions and object.exists(":Select Interpreter Available_Table")

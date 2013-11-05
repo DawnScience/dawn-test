@@ -1,7 +1,7 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
 source(findFile("scripts", "use_case_utils.py"))
-source(findFile("scripts", "utilities.py"))
+source(findFile("scripts", "dawn_global_python_setup.py"))
 
 # UI test to check that an hdf5 file can be opened and its tree can be expanded 
 def main():

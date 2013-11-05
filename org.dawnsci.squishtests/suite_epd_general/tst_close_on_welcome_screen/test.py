@@ -1,4 +1,4 @@
-source(findFile("scripts", "utilities.py"))
+source(findFile("scripts", "dawn_global_startup.py"))
 
 # This test makes sure we can close the DAWN even while the
 # welcome screen is open.

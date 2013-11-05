@@ -1,4 +1,5 @@
-source(findFile("scripts", "utilities.py"))
+source(findFile("scripts", "dawn_global_startup.py"))
+source(findFile("scripts", "dawn_global_python_setup.py"))
 
 def main():
     startOrAttachToDAWN()
