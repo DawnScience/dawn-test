@@ -68,7 +68,7 @@ def setupEPDPython():
     expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
     mouseClick(waitForObjectItem(":Preferences_Tree", "Interpreter - Python"))
     mouseClick(waitForObject(":Preferences.New..._Button"))
-    type(waitForObject(":Select interpreter.Interpreter Name: _Text"), "EPD Free Python")
+    type(waitForObject(":Select interpreter.Interpreter Name: _Text"), "Enthought EPD Free")
     found = False
     for loc in EPD_FREE_LOCATIONS:
         if os.path.exists(loc):
@@ -76,7 +76,7 @@ def setupEPDPython():
             type(waitForObject(":Select interpreter.Interpreter Executable: _Text"), loc)
             if len(waitForObject(":Select interpreter Error Message_Text").text) == 0:
                 # found a good one
-                test.verify(True, "setupEPDPython: Using %s as EPD Free Python" % loc)
+                test.verify(True, "setupEPDPython: Using %s as Enthought EPD Free" % loc)
                 found = True
                 break
     if found:
@@ -104,7 +104,7 @@ def setupPython(allowInstallEPD=False, installEPD=False, installEPDPath=None):
     if (autoError!=None):
         clickButton(autoError)
         clickButton(waitForObject(":Preferences.New..._Button"))
-        type(waitForObject(":Select interpreter.Interpreter Name: _Text"), "EPD Free Python")
+        type(waitForObject(":Select interpreter.Interpreter Name: _Text"), "Enthought EPD Free")
         type(waitForObject(":Select interpreter.Interpreter Executable: _Text"), "C:\\Python26\\python.exe")
         clickButton(waitForObject(":Select interpreter.OK_Button"))
         clickButton(waitForObject(":Selection needed.OK_Button"))

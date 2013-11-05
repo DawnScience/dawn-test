@@ -92,7 +92,7 @@
 :Px_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :PyDev Console	{container=':Console_CTabItem' isvisible='true' type='org.python.pydev.dltk.console.ui.internal.ScriptConsoleViewer$ScriptConsoleStyledText'}
 :Python console_Button	{caption='Python console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
-:Python interpreters (e.g.: python.exe).EPD Free Python_TreeItem	{caption='EPD Free Python' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem	{caption='Enthought EPD Free' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Radial Profile_CTabItem	{caption='Radial Profile' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Region Location.1,022.832*_TableCell	{caption='1,022.832*' column='1' container=':Regions.Region Location_Table' row='0' type='com.froglogic.squish.swt.TableCell'}
