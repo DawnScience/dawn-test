@@ -158,3 +158,29 @@ def setPyDevPref_ConnectToDebugSession(connect=True):
     if current != connect:
         clickButton(connectDebug)
     clickButton(waitForObject(":Preferences.OK_Button"))
+
+
+def toggleBreakpointAtLine(line):
+    ''' Toggle the breakpoint at the given line number of the active file.
+        Note this requires <Ctrl+Shift+b> to respond which does not work
+        in all perspectives. e.g. Debug is a good one '''
+    type(waitForObject(":Workbench Window"), "<Ctrl+l>")
+    type(waitForObject(":Go to Line.Enter line number ...:_Text"), str(line))
+    clickButton(waitForObject(":Go to Line.OK_Button"))
+    type(waitForObject(":Workbench Window"), "<Ctrl+Shift+b>")
+
+def getVariableNames():
+    ''' Return a set of all the variable names visible in the Variables view
+        Doing something like
+          waitFor("getVariableNames() == set(['a', 'b', 'v'])")
+        to test exact list of variables, or:
+          waitFor("getVariableNames() >= set(['a', 'b'])")
+        to check that at least the list of variables exists
+     '''
+    variableTree = waitForObject(":Variables_Tree")
+    vNames = set()
+    for row_i in range(variableTree.getItemCount()):
+        vName = variableTree.getItem(row_i).getText(0)
+        vNames.add(vName)
+        test.log("%s" % (vName))
+    return vNames
