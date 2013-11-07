@@ -145,3 +145,14 @@ def getPythonLocation():
         if os.path.exists(loc):
             return loc
     return None
+
+def setPyDevPref_ConnectToDebugSession(connect=True):
+    activateItem(waitForObjectItem(":_Menu", "Window"))
+    activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
+    expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
+    mouseClick(waitForObjectItem(":Preferences_Tree", "Interactive Console"))
+    connectDebug = waitForObject(":Preferences.Connect console to a Debug Session?_Button")
+    current = connectDebug.getSelection()
+    if current != connect:
+        clickButton(connectDebug)
+    clickButton(waitForObject(":Preferences.OK_Button"))
