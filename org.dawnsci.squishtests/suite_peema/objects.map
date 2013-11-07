@@ -160,9 +160,9 @@
 :Properties for Peema.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Properties for Peema_Shell'}
 :Properties for Peema_Shell	{caption='Properties for Peema' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Properties for Peema_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Properties for Peema_Shell'}
-:PyDev Console	{container=':Console_CTabItem' isvisible='true' type='org.python.pydev.dltk.console.ui.internal.ScriptConsoleViewer$ScriptConsoleStyledText'}
+:PyDev Console	{container=':Console_CTabItem' isvisible='true' type='org.python.pydev.shared_interactive_console.console.ui.internal.ScriptConsoleViewer$ScriptConsoleStyledText'}
 :Python console_Button	{caption='Python console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
-:Python interpreters (e.g.: python.exe).EPD Free Python_TreeItem	{caption='EPD Free Python' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem	{caption='Enthought EPD Free' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Reset Perspective.Yes_Button	{caption='Yes' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Reset Perspective_Shell'}
 :Reset Perspective_Shell	{caption='Reset Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
