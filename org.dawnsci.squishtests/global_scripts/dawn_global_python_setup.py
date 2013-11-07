@@ -1,3 +1,4 @@
+source(findFile("scripts", "swt_toolitems.py"))
 EPD_FREE_LOCATIONS=[
   'C:\\Python27\\python.exe', 
   'C:\\Python26\\python.exe',
@@ -19,18 +20,19 @@ def openPyDevConsole(type="Python"):
     ''' Open a PyDev console waiting for the console to be fully open.
         WARNING: This code probably does not cope with opening two consoles
         at the same time and may not wait long enough for the second console'''
+    openView("Console")
     # Explanation of the warning. The wait depends on certain events in the console. But
     # we don't have a great way to detect that those events we are waiting on aren't in
     # the previously launched console. What is probably needed is additional code
     # to detect the names of the existing consoles so that the new one can be detected  
-    mouseClick(waitForObject(":Open Console_ToolItem"))
+    mouseClick(waitForFirstSwtToolItem('Open Console'))
     activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
     clickButton(waitForObject(":%s console_Button" % type))
     clickButton(waitForObject(":OK_Button"))
     
     # This is a bit difficult to know when we are fully ready, so we wait
     # for these two events to happen. 
-    waitForObject(":Clear Console_ToolItem")
+    waitForFirstSwtToolItem('Clear Console')
     waitForPrompt()
     
     # Finally activate the console so text can be sent to it
@@ -145,3 +147,14 @@ def getPythonLocation():
         if os.path.exists(loc):
             return loc
     return None
+
+def setPyDevPref_ConnectToDebugSession(connect=True):
+    activateItem(waitForObjectItem(":_Menu", "Window"))
+    activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
+    expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
+    mouseClick(waitForObjectItem(":Preferences_Tree", "Interactive Console"))
+    connectDebug = waitForObject(":Preferences.Connect console to a Debug Session?_Button")
+    current = connectDebug.getSelection()
+    if current != connect:
+        clickButton(connectDebug)
+    clickButton(waitForObject(":Preferences.OK_Button"))
