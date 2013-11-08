@@ -3,8 +3,7 @@ import time
 
 def waitForFirstSwtToolItem(item_tooltiptext=None, item_text=None, timeoutMSec=20000):
     if item_text is None and item_tooltiptext is None:
-        test.fatal("ERROR: Must specify item_text or item_tooltiptext!")
-        return None
+        raise LookupError("ERROR: Must specify item_text or item_tooltiptext!")
  
     # Keep searching until we timeout
     end = time.time() + timeoutMSec / 1000.0
@@ -28,5 +27,4 @@ def waitForFirstSwtToolItem(item_tooltiptext=None, item_text=None, timeoutMSec=2
                     continue
                 return c
             i += 1
-    test.fatal('ERROR: Could not find ToolItem with text "' + str(item_text) + '" and tooltiptext "' + str(item_tooltiptext) + '"')
-    return None
+    raise LookupError('ERROR: Could not find ToolItem with text "' + str(item_text) + '" and tooltiptext "' + str(item_tooltiptext) + '"')
