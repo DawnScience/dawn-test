@@ -32,6 +32,7 @@ def openPyDevConsole(type="Python"):
     
     # This is a bit difficult to know when we are fully ready, so we wait
     # for these two events to happen. 
+    snooze(5)
     waitForFirstSwtToolItem('Clear Console')
     waitForPrompt()
     
