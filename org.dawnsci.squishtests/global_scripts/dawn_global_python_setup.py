@@ -182,5 +182,4 @@ def getVariableNames():
     for row_i in range(variableTree.getItemCount()):
         vName = variableTree.getItem(row_i).getText(0)
         vNames.add(vName)
-        test.log("%s" % (vName))
     return vNames
