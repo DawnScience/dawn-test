@@ -38,14 +38,18 @@ def openPyDevConsole(type="Python"):
     # Finally activate the console so text can be sent to it
     # we do that by clicking in it 
     mouseClick(waitForObject(":PyDev Console"), 252, 66, 0, Button.Button1)
+    # We type return so that the cursor ends up in the right place
+    # see https://sw-brainwy.rhcloud.com/tracker/PyDev/237
+    typeReturnAndWaitForPrompt()
 
-def typeInConsole(text, object_name=":PyDev Console", prompt=">>> ", timeout=20000):
+def typeInConsole(text, object_name=":PyDev Console", prompt=">>> ", timeout=20000, wait=True):
     type(waitForObject(object_name), text)
-    typeReturnAndWaitForPrompt(object_name=object_name, prompt=prompt, timeout=timeout)
+    typeReturnAndWaitForPrompt(object_name=object_name, prompt=prompt, timeout=timeout, wait=wait)
 
-def typeReturnAndWaitForPrompt(object_name=":PyDev Console", prompt=">>> ", timeout=20000):
+def typeReturnAndWaitForPrompt(object_name=":PyDev Console", prompt=">>> ", timeout=20000, wait=True):
     type(waitForObject(object_name), "<Return>")
-    waitForPrompt(object_name=object_name, prompt=prompt, timeout=timeout)
+    if wait:
+        waitForPrompt(object_name=object_name, prompt=prompt, timeout=timeout)
 
 def waitForPrompt(object_name=":PyDev Console", prompt=">>> ", timeout=20000):
     '''Wait for the prompt on the interactive console'''

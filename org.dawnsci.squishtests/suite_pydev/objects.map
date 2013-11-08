@@ -1,5 +1,7 @@
 :*Untitled 1_CTabItem	{caption='*Untitled 1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
+:*ipython_edit_2Y2FHA_CTabItem	{caption='*ipython_edit_2Y2FHA' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:*ipython_edit_2Y2FHA_StyledTextWithoutVerticalBar	{container=':*ipython_edit_2Y2FHA_CTabItem' isvisible='true' type='org.python.pydev.overview_ruler.StyledTextWithoutVerticalBar'}
 :5.tif_CTabCloseBox	{container=':5.tif_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :5.tif_CTabItem	{caption='5.tif' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :8918.nxs_CTabItem	{caption='8918.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -300,6 +302,8 @@
 :if_example.moml.Edit_CTabItem	{caption='Edit' container=':if_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :if_example.moml_CTabCloseBox	{container=':if_example.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :if_example.moml_CTabItem	{caption='if_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:ipython_edit_2Y2FHA_CTabItem	{caption='ipython_edit_2Y2FHA' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:ipython_edit_2Y2FHA_StyledTextWithoutVerticalBar	{container=':ipython_edit_2Y2FHA_CTabItem' isvisible='true' type='org.python.pydev.overview_ruler.StyledTextWithoutVerticalBar'}
 :loop_example.moml.Edit_CTabItem	{caption='Edit' container=':loop_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :loop_example.moml_CTabCloseBox	{container=':loop_example.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :loop_example.moml_CTabItem	{caption='loop_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
