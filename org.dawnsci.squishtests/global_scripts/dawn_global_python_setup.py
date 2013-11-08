@@ -183,3 +183,13 @@ def getVariableNames():
         vName = variableTree.getItem(row_i).getText(0)
         vNames.add(vName)
     return vNames
+
+def getVariable(name):
+    ''' Return the value of the named variable, or None if not found
+     '''
+    variableTree = waitForObject(":Variables_Tree")
+    for row_i in range(variableTree.getItemCount()):
+        vName = variableTree.getItem(row_i).getText(0)
+        if vName == name:
+            return variableTree.getItem(row_i).getText(1)
+    return None

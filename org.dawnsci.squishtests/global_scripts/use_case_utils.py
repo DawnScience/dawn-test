@@ -65,12 +65,13 @@ def select(name):
     return object.children(waitForObjectItem(":Project Explorer_Tree", name))
 
 def openExternalFile(name):
-    
+    ''' Open the given testdata file in DAWN and return the full path to the file '''
     path = findFile("testdata", name)
     path = os.path.abspath(path)
     activateItem(waitForObjectItem(":_Menu", "File"))
     activateItem(waitForObjectItem(":File_Menu", "Open File..."))
     chooseFile(waitForObject(":SWT"), path)
+    return path
 
 ''' 
 Adds an external file to the project.
