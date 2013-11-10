@@ -24,20 +24,15 @@ def openPyDevConsole(type="Python"):
     # Explanation of the warning. The wait depends on certain events in the console. But
     # we don't have a great way to detect that those events we are waiting on aren't in
     # the previously launched console. What is probably needed is additional code
-    # to detect the names of the existing consoles so that the new one can be detected
+    # to detect the names of the existing consoles so that the new one can be detected  
     mouseClick(waitForFirstSwtToolItem('Open Console'))
-    test.log("mouseClick 'Open Console"'');  
     activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
-    test.log("activateItem '5 PyDev Console'");  
     clickButton(waitForObject(":%s console_Button" % type))
-    test.log("clickButton ':%s console_Button'" % type);  
     clickButton(waitForObject(":OK_Button"))
-    test.log("clickButton ':OK_Button'");
     
     # This is a bit difficult to know when we are fully ready, so we wait
     # for these two events to happen. 
     snooze(5)
-    test.log("snoozed 5 seconds");
     waitForFirstSwtToolItem('Clear Console')
     waitForPrompt()
     
