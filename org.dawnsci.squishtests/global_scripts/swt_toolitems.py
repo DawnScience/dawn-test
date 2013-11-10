@@ -1,7 +1,7 @@
 import time
 # Adapted from http://kb.froglogic.com/display/KB/Article+-+Avoiding+problems+with+ToolItems+in+RCP+and+SWT+applications
 
-def waitForFirstSwtToolItem(item_tooltiptext=None, item_text=None, timeoutMSec=20000):
+def waitForFirstSwtToolItem(item_tooltiptext=None, item_text=None, timeoutMSec=120000):
     if item_text is None and item_tooltiptext is None:
         raise LookupError("ERROR: Must specify item_text or item_tooltiptext!")
  
@@ -14,6 +14,7 @@ def waitForFirstSwtToolItem(item_tooltiptext=None, item_text=None, timeoutMSec=2
         # At least wait for any ToolBar instance; you still may
         # need to snooze() before calling this function
         snooze(3)
+        test.fail("Force a screenshot")
         waitForObject("{isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}")
      
         i = 0
