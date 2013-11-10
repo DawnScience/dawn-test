@@ -13,7 +13,6 @@ def waitForFirstSwtToolItem(item_tooltiptext=None, item_text=None, timeoutMSec=2
     while time.time() < end:
         # At least wait for any ToolBar instance; you still may
         # need to snooze() before calling this function
-        snooze(3)
         waitForObject("{isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}")
      
         i = 0
