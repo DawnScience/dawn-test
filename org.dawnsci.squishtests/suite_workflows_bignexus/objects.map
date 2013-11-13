@@ -109,6 +109,7 @@
 :Show View_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Show View_Shell'}
 :Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
 :Show Welcome Screen_ToolItem	{caption='Show Welcome Screen' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Size_Menu	{caption='Size' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Slice as image_ToolItem	{caption='Slice as image' container=':Data_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Slice as line plots_ToolItem	{caption='Slice as line plots' container=':Data_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Start value_Label	{caption='Start value' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Workbench Window'}
@@ -122,6 +123,7 @@
 :Workbench Window	{data?='org.eclipse.ui.internal.WorkbenchWindow*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :XML_StyledText	{container=':bigData.moml.XML_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
 :XML_StyledText_2	{container=':empty_workflow.moml.XML_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
+:_CTabFolder	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Composite	{isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite' window=':_Shell'}
 :_Composite_2	{isvisible='true' occurrence='6' type='org.eclipse.swt.widgets.Composite' window=':_Shell'}
 :_List	{isvisible='true' type='org.eclipse.swt.widgets.List' window=':_Shell'}
@@ -137,6 +139,7 @@
 :_ToolBar_4	{firstItemText='Show Welcome Screen' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_ErrorLog	{firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_Twistie	{isvisible='true' type='org.eclipse.ui.forms.widgets.Twistie' window=':Workbench Window'}
+:_ViewForm	{container=':_CTabFolder' isvisible='true' type='org.eclipse.swt.custom.ViewForm'}
 :bigData.moml.Edit_CTabItem	{caption='Edit' container=':bigData.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :bigData.moml.Run_CTabItem	{caption='Run' container=':bigData.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :bigData.moml.XML_CTabItem	{caption='XML' container=':bigData.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}

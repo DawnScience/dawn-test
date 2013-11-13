@@ -24,6 +24,22 @@ def main():
     snooze(2)
     #mouseClick(waitForObjectItem(":Data_Table", "0/0"), 8, 5, 0, Button.Button1)
     snooze(5)
+    
+
+    clickTab(waitForObject(":Data_CTabItem"), 39, 19, 0, Button.Button1)
+    clickTab(waitForObject(":Data_CTabItem"), 39, 19, 0, Button.Button3)
+    activateItem(waitForObjectItem(":Pop Up Menu", "Size"))
+    activateItem(waitForObjectItem(":Size_Menu", "Left"))
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    clickTab(waitForObject(":Data_CTabItem"), 33, 27, 0, Button.Button1)
+
     mouseClick(waitForObject(":Edit the slice with different editors._ToolItem"), 29, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Slice index (only)"))
     mouseClick(waitForObjectItem(":Data_Table_2", "0/2"), 89, 18, 0, Button.Button1)

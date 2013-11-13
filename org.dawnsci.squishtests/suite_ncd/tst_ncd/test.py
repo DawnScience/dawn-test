@@ -41,6 +41,8 @@ def main():
     type(waitForObject(":Masking 'data'.Enable lower mask    _Spinner"), "<Numpad 1>")
     clickButton(waitForObject(":Masking 'data'.Apply_Button"))
     
+    snooze(1)
+    
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
     activateItem(waitForObjectItem(":Profile_Menu", "Radial Profile"))
