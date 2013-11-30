@@ -21,8 +21,11 @@ def createProject(projectName, projectType="Workflow Project"):
 def openExample(frag, project="data", folder="examples", subfolder=None, subsubfolder=None):
     
     expand(waitForObjectItem(":Project Explorer_Tree", project))
-    expand(waitForObjectItem(":Project Explorer_Tree", folder))
-    children = object.children(waitForObjectItem(":Project Explorer_Tree", folder))
+    children = object.children(waitForObjectItem(":Project Explorer_Tree", project))
+
+    if (folder is not None):
+        expand(waitForObjectItem(":Project Explorer_Tree", folder))
+        children = object.children(waitForObjectItem(":Project Explorer_Tree", folder))
     
     if (subfolder is not None):
         expand(waitForObjectItem(":Project Explorer_Tree", subfolder))
