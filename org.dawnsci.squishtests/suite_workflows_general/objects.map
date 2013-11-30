@@ -36,6 +36,7 @@
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Continue_ToolItem	{caption='Continue' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
+:Copy projects into workspace_Button	{caption='Copy projects into workspace' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Create new profile._ToolItem	{caption='Create new profile' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Data reduction..._ToolItem	{caption='Data reduction...' container=':Data_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -119,6 +120,7 @@
 :Plot_ToolBar_3	{container=':9758_Peak_Fitting_reduction.h5.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Plot_ToolBar_4	{container=':9758_Box_Profile_reduction.h5.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems_CTabCloseBox	{container=':Plotting Systems_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Polynomial order to fit_ToolItem	{caption='Polynomial order to fit' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
@@ -148,6 +150,8 @@
 :Pydev_Menu	{caption='Pydev' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Python console_Button	{caption='Python console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem	{caption='Enthought EPD Free' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:Python not configured.Don't ask again_Button	{caption='Don\\'t ask again' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Python not configured_Shell'}
+:Python not configured_Shell	{caption='Python not configured' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Resu&me (F8)_ToolItem	{caption='Resu&me (F8)' container=':_ToolBar_11' type='org.eclipse.swt.widgets.ToolItem'}
@@ -174,6 +178,7 @@
 :Select interpreter.Interpreter Name: _Text	{isvisible='true' leftWidget=':Select interpreter.Interpreter Name: _Label' type='org.eclipse.swt.widgets.Text' window=':Select interpreter_Shell'}
 :Select interpreter.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Select interpreter_Shell'}
 :Select interpreter_Shell	{caption='Select interpreter' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Select root directory:_Button	{caption='Select root directory:' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Selection needed.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Selection needed_Shell'}
 :Selection needed_Shell	{caption='Selection needed' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Set Values.Continue_Button	{caption='Continue' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Set Values_Shell'}
@@ -233,6 +238,7 @@
 :_CTabFolder_5	{firstTabCaption='Value' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_6	{firstTabCaption='Actor Attributes' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_7	{firstTabCaption='Variables' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder_8	{firstTabCaption='python_import.moml' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Ellipse	{backgroundcolor='Color {255, 255, 255}' basetype='org.eclipse.draw2d.Ellipse' enabled='true' linewidth='1' parentitem=':_Figure' visible='true'}
 :_EllipseActorFigure	{backgroundcolor='Color {255, 255, 255}' enabled='true' parentitem=':_FreeformLayer_2' tooltip='Scalar' type='com.isencia.passerelle.workbench.model.editor.ui.figure.EllipseActorFigure' visible='true'}
 :_EllipseActorFigure$Body	{backgroundcolor='Color {255, 255, 255}' enabled='true' linewidth='1' parentitem=':_ActorFigure$CompositeFigure' type='com.isencia.passerelle.workbench.model.editor.ui.figure.EllipseActorFigure$Body' visible='true'}
@@ -313,6 +319,7 @@
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :new_data_file1.h5.Tree_CTabItem	{caption='Tree' container=':new_data_file1.h5_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :new_data_file1.h5_CTabItem	{caption='new_data_file1.h5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:python_import.moml_CTabItem	{caption='python_import.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :python_numjy_example1.moml.Edit_CTabItem	{caption='Edit' container=':python_numjy_example1.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :python_numjy_example1.moml_CTabCloseBox	{container=':python_numjy_example1.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :python_numjy_example1.moml_CTabItem	{caption='python_numjy_example1.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -336,4 +343,3 @@
 :user_interface_example.moml.Edit_CTabItem	{caption='Edit' container=':user_interface_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :user_interface_example.moml_CTabCloseBox	{container=':user_interface_example.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :user_interface_example.moml_CTabItem	{caption='user_interface_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Plotting Systems_CTabCloseBox	{container=':Plotting Systems_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}

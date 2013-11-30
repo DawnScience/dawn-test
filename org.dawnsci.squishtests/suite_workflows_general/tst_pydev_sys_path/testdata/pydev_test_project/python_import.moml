@@ -1,0 +1,317 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE entity PUBLIC "-//UC Berkeley//DTD MoML 1//EN"
+    "http://ptolemy.eecs.berkeley.edu/xml/dtd/MoML_1.dtd">
+<entity name="python_import1" class="ptolemy.actor.TypedCompositeActor" source="/tmp/uk.ac.diamond.dawn.site/products/DawnDiamond-1.4.0.v20131129-1055-linux64/test_data/pydev_test_project/python_import.moml">
+    <property name="_createdBy" class="ptolemy.kernel.attributes.VersionAttribute" value="7.0.1">
+    </property>
+    <property name="_workbenchVersion" class="ptolemy.kernel.attributes.VersionAttribute" value="8.4.0.qualifier">
+    </property>
+    <property name="Director" class="com.isencia.passerelle.domain.cap.Director">
+        <property name="_location" class="ptolemy.kernel.util.Location" value="{20, 20}">
+        </property>
+    </property>
+    <entity name="PyDev1" class="org.dawb.passerelle.actors.scripts.PythonPydevScript">
+        <property name="Receiver Q Capacity (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Receiver Q warning size (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Expression Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Evaluate on every data input">
+        </property>
+        <property name="Memory Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Create copy of data leaving original data intact.">
+        </property>
+        <property name="Name Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Attempt to use image name if there is one.">
+        </property>
+        <property name="_break_point" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="Python Script" class="com.isencia.passerelle.util.ptolemy.ResourceParameter" value="/${project_name}/src1/python_script1.py">
+        </property>
+        <property name="Interpreter" class="org.dawb.passerelle.actors.scripts.PythonPydevScript$1" value="project's PyDev interpreter settings - /usr/bin/python2.7">
+        </property>
+        <property name="Pass Inputs On" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+        <property name="Dataset Outputs" class="ptolemy.data.expr.StringParameter" value="a">
+        </property>
+        <property name="Run Script in Debug Mode (requires running PyDev Debug server)" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="{122.0, 179.0}">
+        </property>
+    </entity>
+    <entity name="Open File" class="org.dawb.passerelle.actors.file.OpenFileSink">
+        <property name="Receiver Q Capacity (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Receiver Q warning size (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="PassThrough" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="Expression Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Evaluate on every data input">
+        </property>
+        <property name="Memory Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Create copy of data leaving original data intact.">
+        </property>
+        <property name="File Path" class="ptolemy.data.expr.StringParameter" value="${file_path}">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="{580.0, 272.0}">
+        </property>
+    </entity>
+    <entity name="Scalar" class="org.dawb.passerelle.actors.data.Scalar">
+        <property name="Receiver Q Capacity (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Receiver Q warning size (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="_break_point" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="Name" class="ptolemy.data.expr.StringParameter" value="x">
+        </property>
+        <property name="Value" class="org.dawb.passerelle.actors.data.Scalar$RangeParameter" value="1">
+        </property>
+        <property name="Decimal Format" class="ptolemy.data.expr.StringParameter" value="">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="{11.0, 201.0}">
+        </property>
+    </entity>
+    <entity name="PyDev2" class="org.dawb.passerelle.actors.scripts.PythonPydevScript">
+        <property name="Receiver Q Capacity (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Receiver Q warning size (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Expression Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Evaluate on every data input">
+        </property>
+        <property name="Memory Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Create copy of data leaving original data intact.">
+        </property>
+        <property name="Name Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Attempt to use image name if there is one.">
+        </property>
+        <property name="_break_point" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="Python Script" class="com.isencia.passerelle.util.ptolemy.ResourceParameter" value="/${project_name}/src2/python_script2.py">
+        </property>
+        <property name="Interpreter" class="org.dawb.passerelle.actors.scripts.PythonPydevScript$1" value="project's PyDev interpreter settings - /usr/bin/python2.7">
+        </property>
+        <property name="Pass Inputs On" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+        <property name="Dataset Outputs" class="ptolemy.data.expr.StringParameter" value="b">
+        </property>
+        <property name="Run Script in Debug Mode (requires running PyDev Debug server)" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="{116.0, 284.0}">
+        </property>
+    </entity>
+    <entity name="Combiner" class="org.dawb.passerelle.common.actors.DataMessageCombiner">
+        <property name="Receiver Q Capacity (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Receiver Q warning size (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="_break_point" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="{469.0, 264.0}">
+        </property>
+    </entity>
+    <entity name="PyDev3" class="org.dawb.passerelle.actors.scripts.PythonPydevScript">
+        <property name="Receiver Q Capacity (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Receiver Q warning size (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Expression Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Evaluate on every data input">
+        </property>
+        <property name="Memory Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Create copy of data leaving original data intact.">
+        </property>
+        <property name="Name Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Attempt to use image name if there is one.">
+        </property>
+        <property name="_break_point" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="Python Script" class="com.isencia.passerelle.util.ptolemy.ResourceParameter" value="/${project_name}/src3/python_script3.py">
+        </property>
+        <property name="Interpreter" class="org.dawb.passerelle.actors.scripts.PythonPydevScript$1" value="project's PyDev interpreter settings - /usr/bin/python2.7">
+        </property>
+        <property name="Pass Inputs On" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+        <property name="Dataset Outputs" class="ptolemy.data.expr.StringParameter" value="c">
+        </property>
+        <property name="Run Script in Debug Mode (requires running PyDev Debug server)" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="{123.0, 390.0}">
+        </property>
+    </entity>
+    <entity name="PyDev4" class="org.dawb.passerelle.actors.scripts.PythonPydevScript">
+        <property name="Receiver Q Capacity (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Receiver Q warning size (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Expression Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Evaluate on every data input">
+        </property>
+        <property name="Memory Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Create copy of data leaving original data intact.">
+        </property>
+        <property name="Name Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Attempt to use image name if there is one.">
+        </property>
+        <property name="_break_point" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="Python Script" class="com.isencia.passerelle.util.ptolemy.ResourceParameter" value="/${project_name}/src4/python_script4.py">
+        </property>
+        <property name="Interpreter" class="org.dawb.passerelle.actors.scripts.PythonPydevScript$1" value="project's PyDev interpreter settings - /usr/bin/python2.7">
+        </property>
+        <property name="Pass Inputs On" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+        <property name="Dataset Outputs" class="ptolemy.data.expr.StringParameter" value="d">
+        </property>
+        <property name="Run Script in Debug Mode (requires running PyDev Debug server)" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="{117.0, 491.0}">
+        </property>
+    </entity>
+    <entity name="PyDev5" class="org.dawb.passerelle.actors.scripts.PythonPydevScript">
+        <property name="Receiver Q Capacity (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Receiver Q warning size (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Expression Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Evaluate on every data input">
+        </property>
+        <property name="Memory Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Create copy of data leaving original data intact.">
+        </property>
+        <property name="Name Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Attempt to use image name if there is one.">
+        </property>
+        <property name="_break_point" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="Python Script" class="com.isencia.passerelle.util.ptolemy.ResourceParameter" value="/${project_name}/src5/python_script5.py">
+        </property>
+        <property name="Interpreter" class="org.dawb.passerelle.actors.scripts.PythonPydevScript$1" value="project's PyDev interpreter settings - /usr/bin/python2.7">
+        </property>
+        <property name="Pass Inputs On" class="ptolemy.data.expr.Parameter" value="true">
+        </property>
+        <property name="Dataset Outputs" class="ptolemy.data.expr.StringParameter" value="e">
+        </property>
+        <property name="Run Script in Debug Mode (requires running PyDev Debug server)" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="{116.0, 588.0}">
+        </property>
+    </entity>
+    <entity name="Data Export" class="org.dawb.passerelle.actors.data.DataExportTransformer">
+        <property name="Receiver Q Capacity (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="Receiver Q warning size (-1)" class="ptolemy.data.expr.Parameter" value="-1">
+        </property>
+        <property name="_icon" class="com.isencia.passerelle.actor.gui.EditorIcon">
+        </property>
+        <property name="Expression Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Evaluate on every data input">
+        </property>
+        <property name="Memory Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Create copy of data leaving original data intact.">
+        </property>
+        <property name="Name Mode" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Attempt to use image name if there is one.">
+        </property>
+        <property name="_break_point" class="ptolemy.data.expr.Parameter" value="false">
+        </property>
+        <property name="File Format" class="org.dawb.passerelle.actors.data.DataExportTransformer$1" value="hdf5">
+        </property>
+        <property name="Writing Type" class="com.isencia.passerelle.util.ptolemy.StringChoiceParameter" value="Create new file using ${file_name} then use that for everything">
+        </property>
+        <property name="Output" class="com.isencia.passerelle.util.ptolemy.ResourceParameter" value="/${project_name}/output/">
+        </property>
+        <property name="Calibration" class="org.dawb.passerelle.actors.data.DataExportTransformer$2" value="None">
+        </property>
+        <property name="Dataset Name" class="ptolemy.data.expr.StringParameter" value="">
+        </property>
+        <property name="_location" class="ptolemy.kernel.util.Location" value="{370.0, 311.0}">
+        </property>
+        <port name="requestFinish" class="com.isencia.passerelle.core.ControlPort">
+            <property name="input"/>
+            <property name="multiport"/>
+            <property name="control" class="ptolemy.kernel.util.StringAttribute">
+            </property>
+        </port>
+        <port name="error" class="com.isencia.passerelle.core.ErrorPort">
+            <property name="output"/>
+            <property name="multiport"/>
+            <property name="error" class="ptolemy.kernel.util.StringAttribute">
+            </property>
+        </port>
+        <port name="hasFired" class="com.isencia.passerelle.core.ControlPort">
+            <property name="output"/>
+            <property name="multiport"/>
+            <property name="control" class="ptolemy.kernel.util.StringAttribute">
+            </property>
+        </port>
+        <port name="hasFinished" class="com.isencia.passerelle.core.ControlPort">
+            <property name="output"/>
+            <property name="multiport"/>
+            <property name="control" class="ptolemy.kernel.util.StringAttribute">
+            </property>
+        </port>
+        <port name="input" class="com.isencia.passerelle.core.Port">
+            <property name="input"/>
+            <property name="multiport"/>
+        </port>
+        <port name="output" class="com.isencia.passerelle.core.Port">
+            <property name="output"/>
+            <property name="multiport"/>
+        </port>
+    </entity>
+    <relation name="_R" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="_R_3" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="_R_6" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="_R_7" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="_R_9" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="_R_11" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="_R_2" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="_R_4" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="_R_5" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="_R_8" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="_R_10" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <relation name="_R_12" class="ptolemy.actor.TypedIORelation">
+        <property name="width" class="ptolemy.data.expr.Parameter" value="1">
+        </property>
+    </relation>
+    <link port="PyDev1.input" relation="_R"/>
+    <link port="PyDev1.output" relation="_R_2"/>
+    <link port="Open File.input" relation="_R_6"/>
+    <link port="Scalar.output" relation="_R"/>
+    <link port="Scalar.output" relation="_R_3"/>
+    <link port="Scalar.output" relation="_R_7"/>
+    <link port="Scalar.output" relation="_R_9"/>
+    <link port="Scalar.output" relation="_R_11"/>
+    <link port="PyDev2.input" relation="_R_3"/>
+    <link port="PyDev2.output" relation="_R_4"/>
+    <link port="Combiner.input" relation="_R_12"/>
+    <link port="Combiner.output" relation="_R_6"/>
+    <link port="PyDev3.input" relation="_R_7"/>
+    <link port="PyDev3.output" relation="_R_5"/>
+    <link port="PyDev4.input" relation="_R_9"/>
+    <link port="PyDev4.output" relation="_R_8"/>
+    <link port="PyDev5.input" relation="_R_11"/>
+    <link port="PyDev5.output" relation="_R_10"/>
+    <link port="Data Export.input" relation="_R_2"/>
+    <link port="Data Export.input" relation="_R_4"/>
+    <link port="Data Export.input" relation="_R_5"/>
+    <link port="Data Export.input" relation="_R_8"/>
+    <link port="Data Export.input" relation="_R_10"/>
+    <link port="Data Export.output" relation="_R_12"/>
+</entity>
