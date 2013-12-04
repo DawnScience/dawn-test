@@ -7,10 +7,10 @@ logpath= os.path.join(os.environ['WORKSPACE'],'log/')
 listing = os.listdir(logpath)    
  
 time= time.strftime('%d_%m_%y(%H:%M)',time.localtime())   
-#logfile = open("/scisoft/jenkins/ub1004_jonathan/workspace/Dawn_squish_tests/squish_tst_"+time+".txt", "a") 
+
         
 for infile in sorted(listing): 
-    #f = open('/scisoft/jenkins/ub1004_jonathan/workspace/Dawn_squish_tests/log/'+infile) 
+
     f = open(os.path.join(logpath,infile)) 
     strData = f.read() 
     f.close() 

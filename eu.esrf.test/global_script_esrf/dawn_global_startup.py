@@ -1,12 +1,13 @@
-DAWN_WORKSPACE_ROOT="/scisoft/jenkins/ub1004_jonathan/workspace"
+import os, shutil
+from datetime import datetime
+DAWN_WORKSPACE_ROOT=os.path.join(os.environ['WORKSPACE'],"eu.esrf.test/dawn_workspace")
 DAWN_SUITE_WORKSPACE="suite_test_single_workspace"
 USE_ATTACH=False
 
 testSettings.logScreenshotOnFail = True
 testSettings.logScreenshotOnError = True
 
-import os, shutil
-from datetime import datetime
+
 
 def startDAWNSuiteWorkspace():
 

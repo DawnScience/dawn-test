@@ -1,13 +1,20 @@
-#!/bin/sh
-Xvfb :2 &
-export DISPLAY=:2
-export PATH=/sware/isdd/soft/java/v7u17/linux_x64/jdk1.7.0_17/bin:$PATH
-cd /scisoft/jenkins/ub1004_jonathan/squish-4.2.3-java-linux64/bin/
-./squishserver &>/$WORKSPACE/serverlog
+#!/usr/bin/env bash
+
+source scriptFunction
+var=$(findDisplayNumber /tmp/) #the argument is the path to yours temp files.
+
+
+Xvfb :$var -screen 0 1024x768x16 & #create a display 
+export DISPLAY=:$var
+export PATH=/sware/isdd/soft/java/v7u17/linux_x64/jdk1.7.0_40/bin:$PATH
+cd /$WORKSPACE/squish/bin/
+./squishserver & >/$WORKSPACE/serverlog
 sleep 1
-/scisoft/jenkins/ub1004_jonathan/squish-4.2.3-java-linux64/bin/squishrunner --testsuite /scisoft/jenkins/ub1004_jonathan/workspace/Dawn_squish_tests/org.dawnsci.squishtests/$1/ --testcase $2/ --useWaitFor>>/$WORKSPACE/log/$1_squishlog 
+#run the test (with $1 corresponding at the testsuite and $2 corresponding at the testcase)
+/$WORKSPACE/squish/bin/squishrunner --testsuite $WORKSPACE/org.dawnsci.squishtests/$1/ --testcase $2/ --useWaitFor>>/$WORKSPACE/log/#$1_squishlog 
 var1=$(ps -aef |grep squishserver | grep -v grep | awk '{ print $2; }' |  head -1)
 kill -9 $var1
 var2=$(ps -aef |grep Xvfb | grep -v grep | awk '{ print $2; }' |  head -1)
 kill -9 $var2
+
 

@@ -1,0 +1,38 @@
+ #! /usr/bin/env sh
+
+### unitTest.sh ###
+
+source ../script_jenkins
+
+
+function testTmpinFolder () {
+	val=$(findTmpFile tmpFile/.X*-lock)
+	assertEquals '0' $val
+}
+
+function testdisplaynumber () {
+	#val1=$(findFreeDisplayNumber)
+	assertEquals '0' '0'
+}
+
+
+setUp(){
+mkdir 'tmpFile'
+chmod -R 775 tmpFile
+cd tmpFile
+touch .X0-lock
+touch .X1-lock
+touch .X4-lock
+cd ..
+ssh -X opid23@ub1204
+
+}
+
+tearDown(){
+rm -rf tmpFile
+
+}
+. "../shunit2-2.1.6/src/shunit2"
+
+
+

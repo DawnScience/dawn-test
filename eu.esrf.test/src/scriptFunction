@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+xvfbFound=false 
+i=0
+x=0
+typeFile=".X*-lock" #pattern to only select Xvfb tmp file
+path=/tmp/.X*-lock
+findDisplayNumber(){
+if [ -f "$1/.X0-lock" ]; #if no display root
+then
+for inode in $(ls $1/$typeFile)
+	do
+		owner=$(ls -al $inode | grep -v grep |  awk '{ print $3; }')
+		array[$i]=$(echo "$inode" | tr -d [:alpha:] | tr -d [:punct:]) #make a list of all the display number for, in another case find a free number
+		if [ "$USER" = "$owner" ];then
+			xvfbFound=true
+			var=$(echo "$inode" | tr -d [:alpha:] | tr -d [:punct:]) 
+			echo $var  #return the availaible display for the logged user
+	 		break;
+		fi
+		let i++
+	done
+
+if   ! $xvfbFound ; then #if no display found
+	var1=${#array[@]}
+	for (( c=0; c<var1; c++ ))
+	do
+		if [ $x -ne ${array[$c]} ];then
+			var=$x			
+			xvfbFound=true
+			echo $var #if no display is already created, this function will return a free number display
+			break;
+		fi
+		let x++
+	done		
+fi
+if   ! $xvfbFound ; 
+	then
+	var=$x
+	echo $var
+	fi
+
+
+
+else
+var=0
+echo $var
+fi
+}
