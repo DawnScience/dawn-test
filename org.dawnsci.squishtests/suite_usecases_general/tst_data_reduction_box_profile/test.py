@@ -46,11 +46,14 @@ def main():
     openExternalFile("9758.nxs")
 
     # Select image and zoom
+    clickTab(waitForObject(":Data_CTabItem_2"), 30, 6, 0, Button.Button1)
+    mouseClick(waitForObject(":Data_Text_2"), 47, 8, 0, Button.Button1)
     type(waitForObject(":Data_Text_2"), "14/dat")
     mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 6, 13, 0, Button.Button1)
+
         
     snooze(5)
-    mouseClick(waitForObject(":Keep aspect ratio_ToolItem"), 6, 9, 0, Button.Button1)
+    mouseClick(waitForObject(":Keep aspect ratio_ToolItem"), 11, 9, 0, Button.Button1)
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
     activateItem(waitForObjectItem(":Profile_Menu", "Box Profile"))
