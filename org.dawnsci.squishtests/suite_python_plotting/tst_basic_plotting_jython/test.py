@@ -36,6 +36,16 @@ def main():
     clickButton(waitForObject(":Jython console_Button"))
     clickButton(waitForObject(":OK_Button"))
     
+    counter = 0
+    while (not object.exists(":PyDev Console")):
+        if (counter < 50):
+            snooze(2)
+            counter +=1
+        else:
+            test.fatal("time out waiting for console")
+            closeOrDetachFromDAWN()
+            return
+    
     got = waitForObject(":PyDev Console").text
     ready = False
     counter = 0

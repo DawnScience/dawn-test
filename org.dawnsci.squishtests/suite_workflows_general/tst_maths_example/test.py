@@ -19,8 +19,8 @@ def main():
 
     mouseClick(waitForObject(":Run the workflow from start to end until finished._ToolItem"))
     snooze(120)
-    clickTab(waitForObject(":ref-testscale_1_0011.h5_CTabItem"), 128, 9, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table_5", "0/0"), 11, 9, 0, Button.Button1)
+    clickTab(waitForObject(":ref-testscale_1_0011.h5_CTabItem"), 114, 9, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_5", "2/0"), 12, 11, 0, Button.Button1)
     snooze(1)
     
     system = getPlottingSystem("ref-testscale_1_0011.h5")
