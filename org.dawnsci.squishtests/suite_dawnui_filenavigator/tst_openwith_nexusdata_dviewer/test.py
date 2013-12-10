@@ -38,7 +38,7 @@ def main():
     mouseClick(waitForObjectItem(":Project Explorer_Tree", "pow_M99S5_1_0001.cbf"), 10, 16, 0, Button.Button3)
     activateItem(waitForObjectItem(":_Menu_2", "Open With"))
     activateItem(waitForObjectItem(":Open With_Menu", "dViewer Image Editor"))
-    snooze(1)
+    snooze(3)
     #we get the plotting system
     system = getPlottingSystem("pow_M99S5_1_0001.cbf")
     test.verify(system.getTraces().iterator().next().getData().getRank()==2, "Image plotted: Success")

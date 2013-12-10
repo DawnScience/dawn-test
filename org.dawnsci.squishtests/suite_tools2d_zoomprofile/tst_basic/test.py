@@ -60,14 +60,14 @@ def main():
     minX = float(findObject(":Change Settings.Minimum: _Text").text)
     
     size = abs(maxX-minX)
-    test.verify(abs(maxX-minX) == 500,"Test Zoom trace dimensions")
+    test.verify(abs(maxX-minX) == 1000,"Test Zoom trace dimensions")
     
     mouseClick(waitForObjectItem(":Select Axis_Combo", "[500:1500](Y-Axis)"), 18, 20, 0, Button.Button1)
     
     maxY = float(findObject(":Change Settings.Maximum_Text").text)
     minY = float(findObject(":Change Settings.Minimum: _Text").text)
     
-    test.verify(abs(maxY-minY) == 500,"Test Zoom trace dimensions")
+    test.verify(abs(maxY-minY) == 1000,"Test Zoom trace dimensions")
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     
     mouseClick(waitForObject(":View Menu_ToolItem"), 13, 6, 0, Button.Button1)
