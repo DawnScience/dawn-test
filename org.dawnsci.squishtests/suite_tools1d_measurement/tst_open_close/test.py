@@ -33,11 +33,11 @@ def main():
     #Check tool tab has opened correctly
     test.verify(waitForObject(":Measurement_CTabItem"), "measurement tab there")
     
-    wid = waitForObject(":_ToolBar_6")
+    #wid = waitForObject(":_ToolBar_6")
     
-    test.verify(wid.getItem(0).getToolTipText() == "Create new measurement.", "Expected: " + "Create new measurement." + " Actual: " + wid.getItem(3).getToolTipText())
-    test.verify(wid.getItem(5).getToolTipText() == "Copies the region values as text to clipboard which can then be pasted externally.",  "Expected: " + "Copies the region values as text to clipboard which can then be pasted externally." + " Actual: " + wid.getItem(5).getToolTipText())
-    test.verify(wid.getItem(6).getToolTipText() == "Delete selected region, if there is one.",  "Expected: " + "Delete selected region, if there is one." + " Actual: " + wid.getItem(6).getToolTipText())
+    #test.verify(wid.getItem(0).getToolTipText() == "Create new measurement.", "Expected: " + "Create new measurement." + " Actual: " + wid.getItem(3).getToolTipText())
+    #test.verify(wid.getItem(5).getToolTipText() == "Copies the region values as text to clipboard which can then be pasted externally.",  "Expected: " + "Copies the region values as text to clipboard which can then be pasted externally." + " Actual: " + wid.getItem(5).getToolTipText())
+    #test.verify(wid.getItem(6).getToolTipText() == "Delete selected region, if there is one.",  "Expected: " + "Delete selected region, if there is one." + " Actual: " + wid.getItem(6).getToolTipText())
     
     test.verify(object.exists(":Name_TableColumn"), "name column there")
     test.verify(object.exists(":Region Type_TableColumn"), "region column there")
@@ -54,7 +54,7 @@ def main():
     
     test.verify(tab.getItemCount()==1,"one line in table")
     
-    mouseClick(waitForObject(":Create new measurement._ToolItem_2"), 16, 8, 0, Button.Button1)
+    mouseClick(waitForObject(":Create new measurement_ToolItem"), 16, 8, 0, Button.Button1)
     
     c = waitForObject(":Plot_Composite")
     b = c.bounds

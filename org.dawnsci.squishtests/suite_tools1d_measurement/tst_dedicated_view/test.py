@@ -73,7 +73,7 @@ def main():
     test.verify("length" in val, "Test cell 5/1")
     test.verify("angle" in val, "Test cell 5/2")
     #draw region
-    mouseClick(waitForObject(":Create new measurement._ToolItem_3"), 19, 14, 0, Button.Button1)
+    mouseClick(waitForObject(":Create new measurement_ToolItem_3"), 19, 14, 0, Button.Button1)
 
     c = waitForObject(":Plot_Composite")
     b = c.bounds

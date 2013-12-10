@@ -46,7 +46,7 @@ def main():
     #draw lots of lines
     for i in range(1,30):
         #DRAW
-        mouseClick(waitForObject(":Create new measurement._ToolItem_2"), 16, 8, 0, Button.Button1)
+        mouseClick(waitForObject(":Create new measurement_ToolItem"), 16, 8, 0, Button.Button1)
     
         c = waitForObject(":Plot_Composite")
         b = c.bounds
