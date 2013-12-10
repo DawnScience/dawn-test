@@ -38,12 +38,16 @@ def main():
     type(waitForObject(":_Sash"), "<Left>")
     type(waitForObject(":_Sash"), "<Left>")
     type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
     
     openExternalFile("9758.nxs")
 
     # Select image and zoom
     type(waitForObject(":Data_Text_2"), "14/dat")
-    mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 6, 13, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 6, 13, 0, Button.Button1)
         
     snooze(5)
     mouseClick(waitForObject(":Keep aspect ratio_ToolItem"), 6, 9, 0, Button.Button1)

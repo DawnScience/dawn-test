@@ -16,8 +16,8 @@ rl = dnp.plot.roi.line_list()
 n = 2
 da = math.pi/n
 for a in range(n):
-    l = dnp.plot.roi.line(50, a*da)
-    l.setPoint(50,50.)
+    l = dnp.plot.roi.line(length = 50, angle = a*da)
+    l.point = 50.,50.
     l.name = 'Line %d' % a
     rl.add(l)
 

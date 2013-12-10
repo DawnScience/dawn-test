@@ -12,21 +12,31 @@ def main():
     #Open data browsing perspective
     openPerspective("Data Browsing (default)") 
     openExternalFile("XPDSi7x7_2010-07-08_23-00-50.nxs")
-    snooze(60) 
-
+    
+    counter = 0;
+    
+    while (not object.exists(":Data_Table_2")):
+        if counter < 50:
+            snooze(2)
+            counter += 1
+        else:
+            test.fatal("file open timed out")
+            closeOrDetachFromDAWN()
+            return
+        
+    snooze(5)
     mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 9, 15, 0, Button.Button1)
-    snooze(1) 
+    snooze(5) 
     mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 10, 15, 0, Button.Button1)
-    snooze(1) 
+    snooze(5) 
     mouseClick(waitForObjectItem(":Data_Table_2", "2/0"), 7, 11, 0, Button.Button1)
-    snooze(1) 
+    snooze(5) 
     mouseClick(waitForObjectItem(":Data_Table_2", "3/0"), 8, 10, 0, Button.Button1)
-    snooze(1) 
+    snooze(5) 
     mouseClick(waitForObjectItem(":Data_Table_2", "9/0"), 6, 13, 0, Button.Button1)
-    snooze(1) 
+    snooze(5) 
     mouseClick(waitForObjectItem(":Data_Table_2", "81/0"), 5, 13, 0, Button.Button1)
-    snooze(1) 
-
+    snooze(5) 
 
     system = getPlottingSystem("XPDSi7x7_2010-07-08_23-00-50.nxs")
     test.verify(system.getTraces().iterator().next().getData().getRank()==2, "Check image plotted")
