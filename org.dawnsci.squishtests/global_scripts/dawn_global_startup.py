@@ -1,4 +1,4 @@
-import os, shutil
+import glob, os, shutil
 from datetime import datetime
 
 DAWN_WORKSPACE_ROOT = os.environ.get('DAWN_WORKSPACE_ROOT',  "/scratch/workspace")
@@ -63,7 +63,10 @@ def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=Fals
 
             if copy_configuration_and_p2:
                 # We need the AUT directory, see squishrun_guest.{bat,sh} for when that is setup
-                DAWN_ROOT = os.environ['AUT_DIR']
+                DAWN_ROOTS = glob.glob(os.environ['AUT_DIR'])
+                if len(DAWN_ROOTS) != 1:
+                    test.fail('Could not find exactly one DAWN_ROOT, "*%s" expands to %s' % (os.environ['AUT_DIR'], DAWN_ROOTS))
+                DAWN_ROOT = DAWN_ROOTS[0]
                 # Copy in p2 and configuration data
                 os.makedirs(workparent)
                 shutil.copytree(os.path.join(DAWN_ROOT, 'configuration'), osgi_configuration_area)
