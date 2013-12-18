@@ -1,4 +1,5 @@
 source(findFile("scripts", "dawn_global_startup.py"))
+source(findFile("scripts", "dawn_global_python_setup.py"))
 
 def testNode(node):
     ''' Run whatever custom tests on the node you want here. Return True to iterate children '''
