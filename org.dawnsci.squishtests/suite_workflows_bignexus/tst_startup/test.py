@@ -121,7 +121,7 @@ def main():
     
     type(waitForObject(":Import.From directory:_Combo"), "<Return>")
     clickButton(waitForObject(":Import.Browse..._Button"))
-    chooseDirectory(waitForObject(":SWT"), "C:\\SquishTestWorkspaces\\sda\\squishtests\\suite_big_nexus\\shared\\testdata")
+    chooseDirectory(waitForObject(":SWT"), os.path.split(path)[0])
     mouseClick(waitForObject(":bigData.moml_ItemCheckbox"), 6, 12, 0, Button.Button1)
     clickButton(waitForObject(":Import.Finish_Button"))
     expand(waitForObjectItem(":Project Explorer_Tree", "Workflow"))
