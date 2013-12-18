@@ -18,7 +18,7 @@ def main():
     checkExample("", "data", "examples", "results")
 
     # Open wizard
-    doubleClick(waitForObject(":View Menu_ToolItem"))
+    mouseClick(waitForObject(":View Menu_ToolItem"))
     activateItem(waitForObjectItem(":Pop Up Menu", "Convert..."))
 
     # Use wizard
