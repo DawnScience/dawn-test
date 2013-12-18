@@ -37,6 +37,9 @@ def iterateTestNode(node):
 def main():
     startOrAttachToDAWN()
     #make sure all start up error produced
+
+    setupEPDPython()
+
     snooze(2.0)
     # Clear the list of errors in the error log at startup    
     openAndClearErrorLog()
