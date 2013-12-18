@@ -23,9 +23,15 @@ def main():
     #Open Peema perspective
     openPerspective("PEEMA")
 
-    # load the peema file folder    
+    # load the peema file folder
     type(waitForObject(":Images location_Text"), "/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema")
     type(waitForObject(":Images location_Text"), "<Return>")
+    if platform.uname()[0] == 'Linux':
+        # On linux, the hard-coded path above auto-completes, so you need to press return twice
+        #    the first selects the (only) matching auto-complete option, the second activates it
+        # On windows, the auto-complete never matches (since the path does not start with C:\), so only one return is required
+        snooze(1)
+        type(waitForObject(":Images location_Text"), "<Return>")
 
     #Play with slider...
     setValue(waitForObject(":Image Playback_Slider"), 19)
