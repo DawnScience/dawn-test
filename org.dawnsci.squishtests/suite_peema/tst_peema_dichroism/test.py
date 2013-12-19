@@ -4,6 +4,8 @@ source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "file_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 
+import platform
+
 # UI test to check that an hdf5 file can be opened and its tree can be expanded 
 def main():
     # Start or attach runs (or attaches) to DAWN and then 
