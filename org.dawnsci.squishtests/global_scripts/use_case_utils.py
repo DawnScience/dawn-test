@@ -69,8 +69,10 @@ def select(name):
 
 def openExternalFile(name):
     ''' Open the given testdata file in DAWN and return the full path to the file '''
-    path = findFile("testdata", name)
-    path = os.path.abspath(path)
+    pathfound = findFile("testdata", name)
+    path = os.path.abspath(pathfound)
+    # logging added since it appears that path separators might not be handled correctly on Windows
+    test.log('openExternalFile called with "%s". findFile returned "%s". abspath returned "%s"' % (name, pathfound, path))
     activateItem(waitForObjectItem(":_Menu", "File"))
     activateItem(waitForObjectItem(":File_Menu", "Open File..."))
     chooseFile(waitForObject(":SWT"), path)
