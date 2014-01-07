@@ -32,6 +32,7 @@ def main():
     # Open result
     openExample("data000.tiff", "data", "examples", "output", "two_images")
    
+    snooze(3)
     system = getPlottingSystem("data000.tiff")
 
     test.verify(system.getTraces().iterator().next().getData().getRank()==2, "Check image plotted")
