@@ -43,7 +43,7 @@ def main():
 
     snooze(2.0)
     # Clear the list of errors in the error log at startup    
-    openAndClearErrorLog()
+    openAndClearErrorLog(True)
 
     # iterate over all the examples
     iterateTestNode(waitForObjectItem(":Project Explorer_Tree", "data"))

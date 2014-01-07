@@ -25,6 +25,7 @@ def main():
     type(waitForObject(":_Text"), "Existing Projects into Workspace")
     mouseClick(waitForObjectItem(":_Tree", "Existing Projects into Workspace"))
     clickButton(waitForObject(":Next >_Button"))
+    snooze(3)
     clickButton(waitForObject(":Select root directory:_Button"))
 
     path = findFile("testdata", "pydev_test_lib")

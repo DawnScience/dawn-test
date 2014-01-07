@@ -153,13 +153,24 @@ def getErrorItems():
     errorTree = waitForObject(":Error Log_Tree")
     return errorTree.getItems()
     
-def openAndClearErrorLog():
+def openAndClearErrorLog(errorsOnly=False):
     ''' Open and clear the Eclipse Error Log. Use getErrorItems() first to find out if there is
         anything in them '''
+  
     if getErrorItems().length > 0:
         snooze(2)
         mouseClick(waitForObject(":Delete Log_ToolItem"))
         clickButton(waitForObject(":Confirm Delete.OK_Button"))
+        
+    if errorsOnly:
+        mouseClick(waitForObject(":Workspace Log.View Menu_ToolItem"), 14, 14, 0, Button.Button1)
+        activateItem(waitForObjectItem(":Pop Up Menu", "Filters..."))
+        clickButton(waitForObject(":Event Types.OK_Button"))
+        clickButton(waitForObject(":Event Types.Information_Button"))
+        clickButton(waitForObject(":Event Types.Warning_Button"))
+        clickButton(waitForObject(":Log Filters.OK_Button"))
+
+  
 
 def verifyAndClearErrorLog():
     ''' Verifies that the error log is empty and clears it if not '''
