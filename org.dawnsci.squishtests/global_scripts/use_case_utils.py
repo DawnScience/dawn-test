@@ -38,6 +38,11 @@ def openExample(frag, project="data", folder="examples", subfolder=None, subsubf
     for child in children:
         if frag in child.text:
             doubleClick(child, 5, 5, 0, Button.Button1)
+    
+    # We wait for a few seconds for the part to open
+    snooze(3)
+    return;
+
             
 '''
 Checks if file can be selected from example data.
@@ -116,6 +121,7 @@ def getPlottingSystem(name):
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Show View"))
     activateItem(waitForObjectItem(":Show View_Menu", "Other..."))
+    snooze(3)
     type(waitForObject(":Show View_Text"), "Plotting Systems")
     mouseClick(waitForObjectItem(":Show View_Tree", "Plotting Systems"))
     clickButton(waitForObject(":Show View.OK_Button"))
