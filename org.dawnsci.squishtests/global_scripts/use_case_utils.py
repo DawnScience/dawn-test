@@ -118,10 +118,11 @@ def getPlottingSystem(name):
     if factory is not None:
         return factory.getPlottingSystem(name)
         
+    snooze(5)
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Show View"))
     activateItem(waitForObjectItem(":Show View_Menu", "Other..."))
-    snooze(3)
+    snooze(5)
     type(waitForObject(":Show View_Text"), "Plotting Systems")
     mouseClick(waitForObjectItem(":Show View_Tree", "Plotting Systems"))
     clickButton(waitForObject(":Show View.OK_Button"))
