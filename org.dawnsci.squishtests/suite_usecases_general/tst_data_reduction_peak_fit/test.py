@@ -49,9 +49,8 @@ def main():
     b = widget.bounds
     mouseDrag(widget, b.x+100, b.y+100, 300, 300, 0, Button.Button1)
     snooze(10) # While fit...
-    
-    mouseClick(waitForObject(":Data reduction..._ToolItem"), 6, 11, 0, Button.Button1)
-    
+
+    mouseClick(waitForObject(":Data reduction..._ToolItem_2"), 12, 22, 0, Button.Button1)
     # Do some reduction
     #clickButton(waitForObject(":Overwrite file if it exists._Button"))
     snooze(20) 
