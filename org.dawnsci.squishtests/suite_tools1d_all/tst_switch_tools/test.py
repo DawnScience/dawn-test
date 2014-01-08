@@ -51,8 +51,7 @@ def the_actual_test(system):
     snooze(2)
     
     clickTab(waitForObject(":Measurement_CTabItem"), 61, 12, 0, Button.Button1)
-    test.verify(waitForObjectItem(":Measurement_Table", "0/0").text == "Measurement 1", "Verify measurement text");
-    
+     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
     activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Line Fitting"))
