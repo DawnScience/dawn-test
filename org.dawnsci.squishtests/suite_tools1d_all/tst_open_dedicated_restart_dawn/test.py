@@ -113,7 +113,6 @@ def main():
     mouseClick(waitForObject(":Line Fitting_CTabCloseBox"), 8, 11, 0, Button.Button1)
     mouseClick(waitForObject(":Data_CTabCloseBox"), 11, 9, 0, Button.Button1)
     mouseClick(waitForObject(":No tool_CTabCloseBox"), 5, 9, 0, Button.Button1)
-    mouseClick(waitForObject(":History_CTabCloseBox"), 1, 7, 0, Button.Button1)
     mouseClick(waitForObject(":Peak Fitting_CTabCloseBox"), 6, 7, 0, Button.Button1)
     mouseClick(waitForObject(":Derivative_CTabCloseBox"), 7, 10, 0, Button.Button1)
     
