@@ -26,7 +26,6 @@ def main():
     type(waitForObject(":Data parameters.Working directory_Text"), "<Ctrl+a>")
     type(waitForObject(":Data parameters.Working directory_Text"), "<Ctrl+c>")
 
-    type(waitForObject(":Data parameters.HTML results directory_Text"), "<Ctrl+v>")
     clickButton(waitForObject(":Data parameters.Run NCD model building_Button"))
     snooze(130)
 
