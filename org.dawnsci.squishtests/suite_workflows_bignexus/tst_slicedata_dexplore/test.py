@@ -5,7 +5,7 @@ source(findFile("scripts", "use_case_utils.py"))
 
 def main():
 
-    startOrAttachToDAWN()
+    startDAWNSuiteWorkspace()
     openPerspective("DExplore")
     #Open data browsing perspective 
     

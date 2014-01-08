@@ -89,7 +89,7 @@ def runTestBrowser():
 def main():
     
     #Start using clean workspace
-    startOrAttachToDAWN()
+    startDAWNSuiteWorkspace()
     name = "bigData.moml"
     path = findFile("testdata", name)
     path = os.path.abspath(path)
