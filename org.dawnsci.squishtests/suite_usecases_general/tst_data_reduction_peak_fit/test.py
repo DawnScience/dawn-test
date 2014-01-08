@@ -54,7 +54,7 @@ def main():
     
     # Do some reduction
     #clickButton(waitForObject(":Overwrite file if it exists._Button"))
-    snooze(10) 
+    snooze(20) 
     clickButton(waitForObject(":Finish_Button"))
     
     # Plot some reduction
