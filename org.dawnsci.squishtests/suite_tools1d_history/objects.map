@@ -4,6 +4,7 @@
 :96356.dat_CTabItem	{caption='96356.dat' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Add currently plotted plot(s) to history_ToolItem	{caption='Add currently plotted plot(s) to history' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Add currently plotted plot(s) to history_ToolItem_2	{caption='Add currently plotted plot(s) to history' container=':_ToolBar_10' type='org.eclipse.swt.widgets.ToolItem'}
+:Add currently plotted plot(s) to history_ToolItem_3	{caption='Add currently plotted plot(s) to history' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
 :Adds an expression which can be plotted. Must be function of other data sets._ToolItem	{caption='Adds an expression which can be plotted. Must be function of other data sets.' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
@@ -158,6 +159,7 @@
 :Variables_Tree	{container=':Variables_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :View Menu_ToolItem	{caption='View Menu' container=':_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :View Menu_ToolItem_2	{caption='View Menu' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
+:View Menu_ToolItem_3	{caption='View Menu' container=':_ToolBar_11' type='org.eclipse.swt.widgets.ToolItem'}
 :Virtual_TreeItem	{caption='Virtual' container=':Project Explorer_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Welcome_CTabCloseBox	{container=':Welcome_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Welcome_CTabItem	{caption='Welcome' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -179,6 +181,7 @@
 :_Shell	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :_ToolBar	{container=':_CTabFolder' firstItemText~='(Pin Console|Terminate current console|Clear Console)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_10	{container=':_CTabFolder_4' firstItemText='Add currently plotted plot(s) to history' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_11	{container=':_CTabFolder_4' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{container=':_CTabFolder_2' firstItemText='Automatically add any new plots to history' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}

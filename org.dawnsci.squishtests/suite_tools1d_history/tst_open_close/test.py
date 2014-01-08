@@ -53,17 +53,19 @@ def main():
     snooze(1)
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "History"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "History"))  
+    mouseClick(waitForObject(":View Menu_ToolItem_3"), 9, 11, 0, Button.Button1)
+    activateItem(waitForObjectItem(":Pop Up Menu", "Open 'History' in dedicated view"))
     
-    if (not object.exists(":Add currently plotted plot(s) to history_ToolItem_2")):
+    if (not object.exists(":Add currently plotted plot(s) to history_ToolItem_3")):
         test.fail("History tool not active")
         snooze(1)
         clickTab(waitForObject(":MoKedge_1_15.dat_CTabItem"), 51, 12, 0, Button.Button1)
     
-    mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem_2"))
+    mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem_3"))
 
     clickTab(waitForObject(":metalmix.mca_CTabItem"))
-    mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem_2"))
+    mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem_3"))
     clickTab(waitForObject(":96356.dat_CTabItem"))
     
     conOb = waitForObject(":Configure Settings..._ToolItem")
@@ -89,6 +91,6 @@ def main():
 
     mouseClick(waitForObject(":Clear history_ToolItem_2"))
     
-    check_plotted_trace_name_yval(conOb,"sum","3.0E7","0.0")
+    check_plotted_trace_name_yval(conOb, "sum", "3.0E7", "0.0")
     
     closeOrDetachFromDAWN()
