@@ -30,7 +30,7 @@ def main():
     activateItem(waitForObjectItem(":_Menu_3", "Copy 'dat:mean(Pilatus,0)' (can be paste to other data)."))
   
     openExternalFile("9758.nxs")
-
+    snooze(10)
     mouseClick(waitForObjectItem(":Data_Table", "24/1"), 5, 5, 0, Button.Button3)
     activateItem(waitForObjectItem(":_Menu_3", "Paste 'dat:mean(Pilatus,0)' (from file 315029.dat) into this data."))
    
