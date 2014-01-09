@@ -35,7 +35,8 @@ def main():
     activateItem(waitForObjectItem(":_Menu_3", "Paste 'dat:mean(Pilatus,0)' (from file 315029.dat) into this data."))
    
     system = getPlottingSystem("9758.nxs")
-    test.verify(system.getTraces().size()==1)
+    snooze(5)
+    test.verify(system.getTraces().size()==1, "Size should be 1 and is "+str(system.getTraces().size()))
     test.verify(system.getTraces().iterator().next().getData().getRank()==2)
 
     closeOrDetachFromDAWN()
