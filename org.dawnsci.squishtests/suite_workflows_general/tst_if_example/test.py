@@ -17,9 +17,7 @@ def main():
     widget = waitForObject(":if_example.moml.Edit_CTabItem", 3000)
     clickTab(widget)
 
-    mouseClick(waitForObject(":_ImageFigure_2"), 21, 43, 0, Button.Button1)
-    mouseClick(waitForObject(":_ImageFigure_3"), 17, 40, 0, Button.Button1)
-    mouseClick(waitForObject(":_ImageFigure"), 17, 43, 0, Button.Button1)
+    mouseClick(waitForObject(":_ImageFigure_8"), 23, 36, 0, Button.Button1)
 
 #    mouseClick(waitForObjectItem(":Actor Attributes_Table", "3/1"), 191, 16, 0, Button.Button1)
     doubleClick(waitForObjectItem(":Actor Attributes_Table", "3/1"), 191, 16, 0, Button.Button1)

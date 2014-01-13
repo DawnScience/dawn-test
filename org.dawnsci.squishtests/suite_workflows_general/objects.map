@@ -250,8 +250,10 @@
 :_EllipseActorFigure_3	{backgroundcolor='Color {255, 255, 255}' enabled='true' parentitem=':_FreeformLayer_2' tooltip='Multiply' type='com.isencia.passerelle.workbench.model.editor.ui.figure.EllipseActorFigure' visible='true'}
 :_EllipseActorFigure_4	{backgroundcolor='Color {255, 255, 255}' enabled='true' parentitem=':_FreeformLayer_2' tooltip='numpy' type='com.isencia.passerelle.workbench.model.editor.ui.figure.EllipseActorFigure' visible='true'}
 :_EllipseActorFigure_5	{backgroundcolor='Color {255, 255, 255}' enabled='true' parentitem=':_FreeformLayer_2' tooltip='Python PyDev' type='com.isencia.passerelle.workbench.model.editor.ui.figure.EllipseActorFigure' visible='true'}
+:_Ellipse_2	{backgroundcolor='Color {138, 226, 52}' basetype='org.eclipse.draw2d.Ellipse' enabled='true' linewidth='1' parentitem=':_ActorFigure$CompositeFigure' visible='true'}
 :_Figure	{backgroundcolor='Color {255, 255, 255}' basetype='org.eclipse.draw2d.Figure' enabled='true' occurrence='1' parentitem=':_EllipseActorFigure_5' visible='true'}
 :_FigureCanvas	{isvisible='true' occurrence='1' type='org.eclipse.draw2d.FigureCanvas' window=':Workbench Window'}
+:_Figure_2	{backgroundcolor='Color {255, 255, 255}' basetype='org.eclipse.draw2d.Figure' enabled='true' occurrence='1' parentitem=':_RectangularActorFigure_2' visible='true'}
 :_FreeformLayer	{backgroundcolor='Color {255, 255, 255}' enabled='true' parentitem=':_FreeformLayeredPane_2' type='org.eclipse.draw2d.FreeformLayer' visible='true'}
 :_FreeformLayer_2	{backgroundcolor='Color {255, 255, 255}' border='MarginBorder' enabled='true' parentitem=':_FreeformLayer' type='org.eclipse.draw2d.FreeformLayer' visible='true'}
 :_FreeformLayeredPane	{backgroundcolor='Color {255, 255, 255}' enabled='true' parentitem=':_FreeformViewport' type='org.eclipse.draw2d.FreeformLayeredPane' visible='true'}
@@ -263,6 +265,8 @@
 :_ImageFigure_4	{backgroundcolor='Color {255, 255, 255}' enabled='true' parentitem=':_EllipseActorFigure$Body_3' type='org.eclipse.draw2d.ImageFigure' visible='true'}
 :_ImageFigure_5	{backgroundcolor='Color {255, 255, 255}' enabled='true' parentitem=':_EllipseActorFigure$Body_4' type='org.eclipse.draw2d.ImageFigure' visible='true'}
 :_ImageFigure_6	{backgroundcolor='Color {255, 255, 255}' enabled='true' parentitem=':_Ellipse' type='org.eclipse.draw2d.ImageFigure' visible='true'}
+:_ImageFigure_7	{backgroundcolor='Color {192, 192, 192}' enabled='true' parentitem=':_RoundedRectangle' type='org.eclipse.draw2d.ImageFigure' visible='true'}
+:_ImageFigure_8	{backgroundcolor='Color {138, 226, 52}' enabled='true' parentitem=':_Ellipse_2' type='org.eclipse.draw2d.ImageFigure' visible='true'}
 :_LightweightSystem$RootFigure	{backgroundcolor='Color {255, 255, 255}' container=':_FigureCanvas' enabled='true' type='org.eclipse.draw2d.LightweightSystem$RootFigure' visible='true'}
 :_List	{isvisible='true' type='org.eclipse.swt.widgets.List' window=':_Shell'}
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
@@ -270,6 +274,8 @@
 :_Menu_3	{container=':_FigureCanvas' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_RectangularActorFigure	{backgroundcolor='Color {255, 255, 255}' enabled='true' parentitem=':_FreeformLayer_2' tooltip='If' type='com.isencia.passerelle.workbench.model.editor.ui.figure.RectangularActorFigure' visible='true'}
 :_RectangularActorFigure$Body	{backgroundcolor='Color {192, 192, 192}' enabled='true' linewidth='1' parentitem=':_ActorFigure$CompositeFigure_3' type='com.isencia.passerelle.workbench.model.editor.ui.figure.RectangularActorFigure$Body' visible='true'}
+:_RectangularActorFigure_2	{backgroundcolor='Color {255, 255, 255}' enabled='true' parentitem=':_FreeformLayer_2' tooltip='Data Export' type='com.isencia.passerelle.workbench.model.editor.ui.figure.RectangularActorFigure' visible='true'}
+:_RoundedRectangle	{backgroundcolor='Color {192, 192, 192}' basetype='org.eclipse.draw2d.RoundedRectangle' enabled='true' linewidth='1' parentitem=':_Figure_2' visible='true'}
 :_Sash	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Sash_2	{isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_ScalableFreeformLayeredPane	{backgroundcolor='Color {255, 255, 255}' enabled='true' parentitem=':_FreeformLayeredPane' type='org.eclipse.draw2d.ScalableFreeformLayeredPane' visible='true'}
