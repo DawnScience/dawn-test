@@ -21,7 +21,7 @@ import org.junit.runners.Suite.SuiteClasses;
 @SuiteClasses({ 
 	
 	org.dawb.workbench.ui.editors.test.Suite.class,
-	fable.imageviewer.tests.gui.Suite.class,
+	//fable.imageviewer.tests.gui.Suite.class,
     org.dawb.passerelle.actors.test.ui.Suite.class
 
 })
