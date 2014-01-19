@@ -26,24 +26,29 @@ def main():
     openPerspective("PEEMA")
 
     # load the peema file folder
-    type(waitForObject(":Images location_Text"), "/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema")
-    type(waitForObject(":Images location_Text"), "<Return>")
-    if platform.uname()[0] == 'Linux':
+#    type(waitForObject(":Images location_Text"), "/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema")
+#    type(waitForObject(":Images location_Text"), "<Return>")
+#    if platform.uname()[0] == 'Linux':
         # On linux, the hard-coded path above auto-completes, so you need to press return twice
         #    the first selects the (only) matching auto-complete option, the second activates it
         # On windows, the auto-complete never matches (since the path does not start with C:\), so only one return is required
-        snooze(1)
-        type(waitForObject(":Images location_Text"), "<Return>")
+#        snooze(1)
+#        type(waitForObject(":Images location_Text"), "<Return>")
+
+    clickButton(waitForObject(":Images location...._Button"))
+    chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema")
 
     #Play with slider...
-    setValue(waitForObject(":Image Playback_Slider"), 19)
+    setValue(waitForObject(":Live Plot Control.Aligned Data_Slider"), 1)
     snooze(1)
-    setValue(waitForObject(":Image Playback_Slider"), 15)
+    setValue(waitForObject(":Live Plot Control.Aligned Data_Slider"), 17)
+    snooze(1)
+    setValue(waitForObject(":Live Plot Control.Aligned Data_Slider"), 8)
     snooze(1)
 
     #run the dichroism process
     clickButton(waitForObject(":Peem Analysis View.Dichroism_Button"))
-    
+
     snooze(4)
     clickButton(waitForObject(":View.Diff_Button"))
     clickButton(waitForObject(":View.Abs_Button"))

@@ -83,6 +83,7 @@
 :Image Playback_Button_5	{caption='' container=':Image Explorer.Image Playback_Group' isvisible='true' leftWidget=':Image Playback_Button_4' type='org.eclipse.swt.widgets.Button'}
 :Image Playback_Slider	{container=':Image Explorer.Image Playback_Group' isvisible='true' leftWidget=':Image Playback_Button_5' type='org.eclipse.swt.widgets.Slider'}
 :Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':_ToolBar_12' type='org.eclipse.swt.widgets.ToolItem'}
+:Images location...._Button	{caption='...' container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Images location_Label	{caption='' container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Images location_Text	{container=':Peem Analysis View.Images location_Group' isvisible='true' leftWidget=':Images location_Label' type='org.eclipse.swt.widgets.Text'}
 :Info_Table	{container=':76003.dat.Info_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
@@ -93,6 +94,8 @@
 :Jython console_Button	{caption='Jython console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Keep aspect ratio_ToolItem	{caption='Keep aspect ratio' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Live Plot Control.Aligned Data_Button	{caption='Aligned Data' container=':Peem Analysis View.Live Plot Control_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Live Plot Control.Aligned Data_Slider	{aboveWidget=':Live Plot Control.Aligned Data_Button' container=':Peem Analysis View.Live Plot Control_Group' isvisible='true' type='org.eclipse.swt.widgets.Slider'}
 :Live Plot_CTabItem	{caption='Live Plot' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Multiple problems have occurred.Details >>_Button	{caption='Details >>' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Multiple problems have occurred_Shell'}
 :Multiple problems have occurred.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Multiple problems have occurred_Shell'}
@@ -120,7 +123,9 @@
 :Peem Analysis View.Align_Button	{caption='Align' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View.Dichroism_Button	{caption='Dichroism' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View.Images location_Group	{caption='Images location' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Peem Analysis View.Live Plot Control_Group	{caption='Live Plot Control' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Peem Analysis View.View_Group	{caption='View' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Peem Analysis View_Button	{caption='' container=':Peem Analysis View_CTabItem' isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View_CTabItem	{caption='Peem Analysis View' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
@@ -204,6 +209,7 @@
 :View.Abs_Button	{caption='Abs' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :View.CD_Button	{caption='CD' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :View.Diff_Button	{caption='Diff' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:View.Shifts_Button	{caption='Shifts' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Virtual_TreeItem	{caption='Virtual' container=':Project Explorer_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Welcome_CTabCloseBox	{container=':Welcome_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Welcome_CTabItem	{caption='Welcome' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
