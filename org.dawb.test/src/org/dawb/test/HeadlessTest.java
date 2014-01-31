@@ -21,7 +21,6 @@ import org.junit.runners.Suite.SuiteClasses;
 @SuiteClasses({ 
 	
     
-	org.dawb.hdf5.Suite.class,
     org.dawb.passerelle.actors.test.Suite.class,
     
     // Run last as has memory leak
