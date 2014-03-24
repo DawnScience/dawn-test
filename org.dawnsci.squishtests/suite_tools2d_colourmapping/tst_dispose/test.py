@@ -12,7 +12,7 @@ def open_and_close_tool():
     
     snooze(1.0)
     
-    verifyAndClearErrorLog()
+    #verifyAndClearErrorLog()
 
 def main():
     startOrAttachToDAWN()
@@ -20,7 +20,7 @@ def main():
     
     snooze(5.0)
     
-    openAndClearErrorLog()
+    #openAndClearErrorLog()
     
     expand(waitForObjectItem(":Project Explorer_Tree", "data"))
     expand(waitForObjectItem(":Project Explorer_Tree", "examples"))

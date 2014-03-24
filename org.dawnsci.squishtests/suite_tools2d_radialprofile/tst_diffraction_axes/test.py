@@ -41,9 +41,9 @@ def main():
 
     mouseClick(c, b.x+b.width/3, b.y+b.height/2, 0, Button.Button1);
     
-    mouseClick(c, b.x+b.width/10, b.y+b.height/2, 0, Button.Button1);
+    mouseClick(c, b.x+b.width/6, b.y+b.height/2, 0, Button.Button1);
     
-    mouseClick(c, b.x+b.width/3, b.y+b.height/1.8, 0, Button.Button1);
+    mouseClick(c, b.x+b.width/9, b.y+b.height/2, 0, Button.Button1);
     
     conOb = waitForObject(":Configure Settings..._ToolItem")
     

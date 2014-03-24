@@ -36,9 +36,10 @@ def main():
     clickButton(waitForObject(":Masking 'data'.Enable lower mask    _Button"))
 
     clickButton(waitForObject(":Masking 'data'.Apply_Button"))
-    mouseClick(waitForObject(":Masking 'data'.Enable lower mask    _Spinner"), 35, 14, 0, Button.Button1)
-    type(waitForObject(":Masking 'data'.Enable lower mask    _Spinner"), "<Backspace>")
-    type(waitForObject(":Masking 'data'.Enable lower mask    _Spinner"), "<Numpad 1>")
+    mouseClick(waitForObject(":Masking 'data'_Spinner"))
+
+    type(waitForObject(":Masking 'data'_Spinner"), "<Backspace>")
+    type(waitForObject(":Masking 'data'_Spinner"), "<Numpad 1>")
     clickButton(waitForObject(":Masking 'data'.Apply_Button"))
     
     snooze(1)

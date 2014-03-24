@@ -12,7 +12,7 @@ def main():
     
     snooze(5)
     
-    openAndClearErrorLog()
+    #openAndClearErrorLog()
     
     #expand data tree and open metal mix
     expand(waitForObjectItem(":Project Explorer_Tree", "data"))
@@ -34,9 +34,9 @@ def main():
 
     mouseClick(c, b.x+b.width/3, b.y+b.height/2, 0, Button.Button1);
     
-    mouseClick(c, b.x+b.width/10, b.y+b.height/2, 0, Button.Button1);
+    mouseClick(c, b.x+b.width/6, b.y+b.height/2, 0, Button.Button1);
     
-    mouseClick(c, b.x+b.width/3, b.y+b.height/1.8, 0, Button.Button1);
+    mouseClick(c, b.x+b.width/9, b.y+b.height/2, 0, Button.Button1);
     
     snooze(2)
     
@@ -92,6 +92,6 @@ def main():
     activateItem(waitForObjectItem(":Pop Up Menu", "Open cheat sheet for 'Radial Profile'"))
 
     snooze(5)
-    verifyAndClearErrorLog()
+    #verifyAndClearErrorLog()
 
     closeOrDetachFromDAWN()

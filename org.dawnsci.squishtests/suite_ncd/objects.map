@@ -78,6 +78,7 @@
 :Masking 'data'.Apply_Button	{caption='Apply' container=':Masking.Masking \\'data\\'_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Masking 'data'.Enable lower mask    _Button	{caption='Enable lower mask    ' container=':Masking.Masking \\'data\\'_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Masking 'data'.Enable lower mask    _Spinner	{container=':Masking.Masking \\'data\\'_Group' isvisible='true' leftWidget=':Masking \\'data\\'.Enable lower mask    _Button' type='org.eclipse.swt.widgets.Spinner'}
+:Masking 'data'_Spinner	{container=':Masking.Masking \\'data\\'_Group' isvisible='true' type='org.eclipse.swt.widgets.Spinner'}
 :Masking.Masking 'data'_Group	{caption='Masking \\'data\\'' container=':Masking_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Masking_CTabItem	{caption='Masking' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}

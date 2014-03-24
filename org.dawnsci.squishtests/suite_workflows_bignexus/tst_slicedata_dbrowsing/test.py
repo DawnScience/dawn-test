@@ -53,16 +53,16 @@ def main():
     mouseClick(waitForObjectItem(":Data_Table_2", "0/2"), 27, 24, 0, Button.Button1)
 
     snooze(1)
-    for i in range(0,100,10):
-        setValue(waitForObject(":Data_Spinner"), i)
-        snooze(0.01)
+    for i in range(0):
+        clickButton(waitForObject(":Data_Button"))
+        snooze(0.5)
 
     mouseClick(waitForObject(":Slice as line plots_ToolItem"), 13, 10, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table_2", "1/2"), 27, 24, 0, Button.Button1)
     snooze(1)
-    for i in range(0,2000,100):
-        setValue(waitForObject(":Data_Spinner"), i)
-        snooze(0.01)
+    for i in range(20):
+        clickButton(waitForObject(":Data_Button"))
+        snooze(0.5)
 
 
         
@@ -80,10 +80,9 @@ def main():
     mouseClick(waitForObjectItem(":Data_Table_2", "1/3"), 27, 24, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table_2", "1/2"), 27, 24, 0, Button.Button1)
 
-    for i in range(0, 2000, 100):
-        setValue(waitForObject(":Data_Spinner"), i)
-
-        snooze(0.01)
+    for i in range(20):
+        clickButton(waitForObject(":Data_Button"))
+        snooze(0.5)
     
     mouseClick(waitForObject(":Export.h5_CTabCloseBox"), 7, 4, 0, Button.Button1)
     openPerspective("Data Browsing (default)")

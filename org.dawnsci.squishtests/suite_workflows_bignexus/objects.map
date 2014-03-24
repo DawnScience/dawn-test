@@ -23,11 +23,13 @@
 :DExplore_ToolItem	{caption='DExplore' container=':_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :Data Brow..._ToolItem	{caption='Data Brow...' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :Data Browsing_ToolItem	{caption='Data Browsing' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Data_Button	{arrowDirection='SWT.UP' caption='' container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Data_CCombo	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.custom.CCombo'}
 :Data_CTabItem	{caption='Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Spinner	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Spinner'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_2	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Table'}
+:Data_Text	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Text'}
 :Data_ToolBar	{container=':Data_CTabItem' firstItemText?='Advanced*' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_ErrorLog' type='org.eclipse.swt.widgets.ToolItem'}
 :Directory:_Label	{caption='Directory:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}

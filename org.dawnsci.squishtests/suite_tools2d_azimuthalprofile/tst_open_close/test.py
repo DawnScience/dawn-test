@@ -14,7 +14,7 @@ def main():
     snooze(5)
     vals = dawn_constants
     #
-    openAndClearErrorLog()
+    #openAndClearErrorLog()
     
     #expand data tree and open metal mix
     expand(waitForObjectItem(":Project Explorer_Tree", "data"))
@@ -36,9 +36,9 @@ def main():
 
     mouseClick(c, b.x+b.width/3, b.y+b.height/2, 0, Button.Button1);
     
-    mouseClick(c, b.x+b.width/10, b.y+b.height/2, 0, Button.Button1);
+    mouseClick(c, b.x+b.width/6, b.y+b.height/2, 0, Button.Button1);
     
-    mouseClick(c, b.x+b.width/3, b.y+b.height/1.8, 0, Button.Button1);
+    mouseClick(c, b.x+b.width/9, b.y+b.height/2, 0, Button.Button1);
     
     snooze(1)
     
@@ -98,6 +98,6 @@ def main():
     
     snooze(1)
 
-    verifyAndClearErrorLog()
+    #verifyAndClearErrorLog()
 
     closeOrDetachFromDAWN()
