@@ -29,18 +29,18 @@ def the_actual_test(system):
     #activate derivative tool, which should deactivate the peak fitting
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
-    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative"))
-    names = ["Peak 1","Column_3'"]
-    #check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
-    check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"), "Peak 1", "400.0", "-400.0")
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative View"))
+#    names = ["Peak 1","Column_3'"]
+#    #check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
+#    check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"), "Peak 1", "400.0", "-400.0")
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Measurement"))
     #Check derivative tool has reset
     
-    names = ["Peak 1","Column_3"]
+    names = ["Column_3","Peak 1"]
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
-    check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"),"Peak 1", "800.0","0.0")
+    check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"),"Column_3", "800.0","0.0")
     
     #do measurement
     c = waitForObject(":Plot_Composite")
@@ -64,7 +64,7 @@ def the_actual_test(system):
     mouseDrag(c, rx1,ry1,rx2-rx1,ry2-ry1,0, Button.Button1)
     snooze(2)
     
-    names = ["Peak 1","Column_3", "Fit 1"]
+    names = ["Column_3","Peak 1", "Fit 1"]
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
     
     test.verify(waitForObjectItem(":Line Fitting_Table", "0/0").text == "Column_3", "Verify measurement text");

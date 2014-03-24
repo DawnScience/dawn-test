@@ -30,20 +30,20 @@ def the_actual_test():
     #activate derivative tool, which should deactivate the peak fitting
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
-    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative"))
-    names = ["Column_3'","Peak 1"]
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative View"))
+    names = ["Column_3","Peak 1"]
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
     #check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"), "Column_3'", "400.0", "-400.0")
     
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 4, 5, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Derivative' in dedicated view"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Derivative View' in dedicated view"))
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Measurement"))
     #Check derivative tool has not reset
     
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
-    check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"),"Column_3'", "400.0","-400.0")
+    check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"),"Column_3", "800.0","0.0")
     
     #do measurement
     c = waitForObject(":Plot_Composite")
@@ -71,10 +71,10 @@ def the_actual_test():
     mouseDrag(c, b.x+b.width/2.35, b.y+b.height/4, int(b.width/7.5),0, 0, Button.Button1)
     snooze(1)
     
-    names = ["Column_3'","Peak 1", "Fit 1"]
+    names = ["Column_3","Peak 1", "Fit 1"]
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
     
-    test.verify(waitForObjectItem(":Line Fitting_Table", "0/0").text == "Column_3'", "Verify measurement text");
+    test.verify(waitForObjectItem(":Line Fitting_Table", "0/0").text == "Column_3", "Verify measurement text");
     
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 12, 14, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Line Fitting' in dedicated view"))
@@ -114,7 +114,7 @@ def main():
     mouseClick(waitForObject(":Data_CTabCloseBox"), 11, 9, 0, Button.Button1)
     mouseClick(waitForObject(":No tool_CTabCloseBox"), 5, 9, 0, Button.Button1)
     mouseClick(waitForObject(":Peak Fitting_CTabCloseBox"), 6, 7, 0, Button.Button1)
-    mouseClick(waitForObject(":Derivative_CTabCloseBox"), 7, 10, 0, Button.Button1)
+    mouseClick(waitForObject(":Derivative View_CTabCloseBox"))
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"),vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))

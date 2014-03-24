@@ -10,9 +10,6 @@
 :Clear Console_ToolItem	{caption='Clear Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Clear Log Viewer_ToolItem	{caption='Clear Log Viewer' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :Close wizard automatically on successful installation._Button	{caption='Close wizard automatically on successful installation.' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
-:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
-:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Configure Graph Settings.Annotations_TabItem	{caption='Annotations' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Axes_TabItem	{caption='Axes' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Graph_TabItem	{caption='Graph' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
@@ -26,7 +23,6 @@
 :Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Data_CTabCloseBox	{container=':Data_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
@@ -34,6 +30,8 @@
 :Debug_TableCell	{caption='Debug' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :Delete selected region, if there is one._ToolItem	{caption='Delete selected region, if there is one.' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Derivative View_CTabCloseBox	{container=':Derivative View_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:Derivative View_CTabItem	{caption='Derivative View' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Derivative_CTabCloseBox	{container=':Derivative_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Derivative_CTabItem	{caption='Derivative' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Enthought EPD Free Installer_Label	{caption='Enthought EPD Free Installer' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
@@ -57,6 +55,7 @@
 :Line Fitting_CTabItem	{caption='Line Fitting' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Line Fitting_Table	{container=':Line Fitting_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Measurement_CTabCloseBox	{container=':Measurement_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Measurement_CTabItem	{caption='Measurement' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Measurement_Table	{container=':Measurement_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
@@ -85,6 +84,9 @@
 :Please Confirm Delete All_Shell	{caption='Please Confirm Delete All' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Plot_Composite	{container=':metalmix.mca.Plot_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
 :Plot_ToolBar	{container=':metalmix.mca.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Preferences.Auto Config_Button	{caption='Advanced Auto-Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}

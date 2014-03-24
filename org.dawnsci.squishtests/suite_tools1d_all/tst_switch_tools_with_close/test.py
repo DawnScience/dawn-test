@@ -27,12 +27,13 @@ def the_actual_test():
     #activate derivative tool, which should deactivate the peak fitting
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
-    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative"))
-    names = ["Column_3'"]
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative View"))
+    names = ["Column_3"]
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
-    check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"), "Column_3'", "400.0", "-400.0")
+    check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"), "Column_3", "800.0", "0.0")
     
-    mouseClick(waitForObject(":Derivative_CTabCloseBox"), 8, 6, 0, Button.Button1)
+    mouseClick(waitForObject(":Derivative View_CTabCloseBox"))
+
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Measurement"))
