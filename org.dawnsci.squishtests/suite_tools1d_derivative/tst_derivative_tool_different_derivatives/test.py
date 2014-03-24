@@ -46,43 +46,49 @@ def main():
     #Change to derivative and check again
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
-    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative View"))
+    
+    conOb = waitForObject(":Configure Settings..._ToolItem_3")
+    
+    doubleClick(waitForObject(":Derivative View_CTabItem"), 82, 5, 0, Button.Button1)
     
     check_plotted_trace_name_yval(conOb,"Column_1'",vals.METALMIX_1_DMAX,vals.METALMIX_1_DMIN)
     
     nameListDer = ["Column_1'","Column_2'","Column_3'","Column_4'"]
     check_plotted_traces_names(conOb, nameListDer)
     #uncheck, test no traces
-    clickButton(waitForObject(":Derivative.Display f'(Data)_Button"))
+    mouseClick(waitForObject(":First_ToolItem"))
     check_no_traces(conOb)
     
     #check data
-    clickButton(waitForObject(":Derivative.Display Data_Button"))
+    mouseClick(waitForObject(":Original_ToolItem"))
     check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_1_MAX,vals.METALMIX_1_MIN)
     check_plotted_traces_names(conOb, nameList)
     
     #uncheck, test no traces
-    clickButton(waitForObject(":Derivative.Display Data_Button"))
+    mouseClick(waitForObject(":Original_ToolItem"))
     check_no_traces(conOb)
     
     #check 1st der
-    clickButton(waitForObject(":Derivative.Display f'(Data)_Button"))
+    mouseClick(waitForObject(":First_ToolItem"))
     check_plotted_trace_name_yval(conOb,"Column_1'",vals.METALMIX_1_DMAX,vals.METALMIX_1_DMIN)
     check_plotted_traces_names(conOb, nameListDer)
     
     #uncheck, test no traces
-    clickButton(waitForObject(":Derivative.Display f'(Data)_Button"))
+    mouseClick(waitForObject(":First_ToolItem"))
     check_no_traces(conOb)
     
     #check 2nd der
-    clickButton(waitForObject(":Derivative.Display f''(Data)_Button"))
+    mouseClick(waitForObject(":Second_ToolItem"))
     nameListDer2 = ["Column_1''","Column_2''","Column_3''","Column_4''"]
     check_plotted_trace_name_yval(conOb,"Column_1''","200.0",vals.METALMIX_0_DMIN)
     check_plotted_traces_names(conOb, nameListDer2)
     
     #uncheck, test no traces
-    clickButton(waitForObject(":Derivative.Display f''(Data)_Button"))
+    mouseClick(waitForObject(":Second_ToolItem"))
     check_no_traces(conOb)
+    
+    doubleClick(waitForObject(":Derivative View_CTabItem"), 82, 5, 0, Button.Button1)
     
     closeOrDetachFromDAWN()
 

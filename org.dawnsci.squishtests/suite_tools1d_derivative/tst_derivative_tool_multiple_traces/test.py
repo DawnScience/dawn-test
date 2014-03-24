@@ -42,23 +42,27 @@ def main():
     #Change to derivative and check again
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
-    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative View"))
     
+    conOb = waitForObject(":Configure Settings..._ToolItem_3")
+    doubleClick(waitForObject(":Derivative View_CTabItem"), 82, 5, 0, Button.Button1)
     check_plotted_trace_name_yval(conOb,"Column_1'",vals.METALMIX_1_DMAX,vals.METALMIX_1_DMIN)
-    check_plotted_traces_names(conOb, nameList[4:8])
+    #check_plotted_traces_names(conOb, nameList[4:8])
     
     #add data and check again
-    mouseClick(waitForObject(":Derivative.Display Data_Button"), 25, 8, 0, Button.Button1)
+    mouseClick(waitForObject(":Original_ToolItem"))
+    #mouseClick(waitForObject(":Derivative.Display Data_Button"), 25, 8, 0, Button.Button1)
     
     check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_1_MAX,vals.METALMIX_1_DMIN)
-    check_plotted_traces_names(conOb, nameList[0:8])
+    #check_plotted_traces_names(conOb, nameList[0:8])
     
     
     #add 2nd der and check again
-    clickButton(waitForObject(":Derivative.Display f''(Data)_Button"))
+    mouseClick(waitForObject(":Second_ToolItem"))
+    #clickButton(waitForObject(":Derivative.Display f''(Data)_Button"))
     
     check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_1_MAX,vals.METALMIX_1_DMIN)
-    check_plotted_traces_names(conOb, nameList)
+    #check_plotted_traces_names(conOb, nameList)
     
     closeOrDetachFromDAWN()
     

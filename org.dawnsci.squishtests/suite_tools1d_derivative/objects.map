@@ -8,9 +8,6 @@
 :Change Settings.Minimum: _Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Minimum: _Label' type='org.eclipse.swt.widgets.Text'}
 :Change Settings.Name: _Label	{caption='Name: ' container=':Traces.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Name: _Text	{container=':Traces.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Name: _Label' type='org.eclipse.swt.widgets.Text'}
-:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
-:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Cheat Sheets.Derivative tool_Label	{caption='Derivative tool' container=':Cheat Sheets_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Cheat Sheets.Derivatives of other traces_Label	{caption='Derivatives of other traces' container=':Cheat Sheets_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Cheat Sheets.Introduction_Label	{caption='Introduction' container=':Cheat Sheets_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
@@ -31,12 +28,13 @@
 :Configure Graph Settings_Shell	{caption='Configure Graph Settings' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Configure Settings..._ToolItem	{caption='Configure Settings...' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Configure Settings..._ToolItem_2	{caption='Configure Settings...' container=':Plot_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
+:Configure Settings..._ToolItem_3	{caption='Configure Settings...' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
+:Configure Settings..._ToolItem_4	{caption='Configure Settings...' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
 :Confirm Delete.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Delete_Shell'}
 :Confirm Delete_Shell	{caption='Confirm Delete' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' occurrence='4' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
@@ -44,6 +42,7 @@
 :Data_Tree	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Debug_TableCell	{caption='Debug' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
+:Derivative View_CTabItem	{caption='Derivative View' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Derivative.Display Data_Button	{caption='Display Data' container=':Derivative_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Derivative.Display f''(Data)_Button	{caption='Display f\\'\\'(Data)' container=':Derivative_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Derivative.Display f'(Data)_Button	{caption='Display f\\'(Data)' container=':Derivative_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
@@ -57,6 +56,8 @@
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Expand to Previous Expansion States_ToolItem	{caption='Expand to Previous Expansion States' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
+:First_ToolItem	{caption='First' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
+:First_ToolItem_2	{caption='First' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
 :I accept the terms of the license agreement_Button	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Image_ToolBar	{container=':ref-screentest-crystal1_1_001.mccd.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
@@ -66,6 +67,7 @@
 :Internal Error_Shell	{caption='Internal Error' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Jython console_Button	{caption='Jython console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :MoKedge_1_15.dat.Plot_CTabItem	{caption='Plot' container=':MoKedge_1_15.dat_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :MoKedge_1_15.dat_CTabItem	{caption='MoKedge_1_15.dat' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :New Environment Variable.Name:_Label	{caption='Name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':New Environment Variable_Shell'}
@@ -82,10 +84,15 @@
 :Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
+:Original_ToolItem	{caption='Original' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
+:Original_ToolItem_2	{caption='Original' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plot data as separate plots_ToolItem	{caption='Plot data as separate plots' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plot_ToolBar	{container=':metalmix.mca.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Plot_ToolBar_2	{container=':MoKedge_1_15.dat.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Preferences.Auto Config_Button	{caption='Advanced Auto-Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
@@ -107,6 +114,7 @@
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :SWT	SWT
+:Second_ToolItem	{caption='Second' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Select Axis_Combo	{container=':Axes.Select Axis_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
 :Select Interpreter Available_Caption	{caption?='Multiple possible interpreters are available*' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':ListDialog_Shell'}
 :Select Interpreter Available_OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':ListDialog_Shell'}
@@ -164,6 +172,8 @@
 :_ToolBar_5	{container=':_CTabFolder_5' firstItemText='Collapse All Items but Current' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_6	{container=':_CTabFolder_5' firstItemText='Expand to Previous Expansion States' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_7	{container=':_CTabFolder_5' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_8	{container=':_CTabFolder_4' firstItemText='Original' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_9	{container=':_CTabFolder_2' firstItemText='Original' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :metalmix.mca.Plot_CTabItem	{caption='Plot' container=':metalmix.mca_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :metalmix.mca_CTabFolder	{container=':metalmix.mca_CTabItem' firstTabCaption='Plot' isvisible='true' type='org.eclipse.swt.custom.CTabFolder'}
 :metalmix.mca_CTabItem	{caption='metalmix.mca' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
