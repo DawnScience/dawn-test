@@ -36,7 +36,7 @@ def main():
     tab = waitForObject(":Peak Fitting_Table")
     test.verify(tab.getItemCount()==1,"Expected: 1 Actual: " + str(tab.getItemCount()))
     
-    test.verify(waitForObjectItem(":Peak Fitting_Table", "0/1").text == "Peak 1","peak 1 present")
+    test.verify(waitForObjectItem(":Peak Fitting_Table", "0/1").text == "Peak 01","peak 1 present")
     
     mouseClick(waitForObject(":Number peaks to fit_ToolItem"), 29, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Fit 4 Peaks"))
@@ -45,7 +45,7 @@ def main():
     
     for i in range(4):
         txt = waitForObjectItem(":Peak Fitting_Table",  str(i) + "/1").text
-        test.verify(txt == "Peak " + str(i+1),"peak present")
+        test.verify(txt == "Peak 0" + str(i+1),"peak present")
     
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 11, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Peak Fitting' in dedicated view"))
@@ -54,7 +54,7 @@ def main():
     
     for i in range(4):
         txt = waitForObjectItem(":Peak Fitting_Table",  str(i) + "/1").text
-        test.verify(txt == "Peak " + str(i+1),"peak present")
+        test.verify(txt == "Peak 0" + str(i+1),"peak present")
 
 
     closeOrDetachFromDAWN()

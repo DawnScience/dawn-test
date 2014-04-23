@@ -30,7 +30,9 @@ def main():
     test.verify(object.exists(":Peak Fitting_CTabItem"), "peak fitting there")
     
     wid = waitForObject(":_ToolBar_4")
-    
+ 
+    for x in range(0, 5):
+        print wid.getItem(x).getToolTipeText()
     test.verify(wid.getItem(0).getToolTipText() == "New fit selection.", "Test tooltips")
     test.verify(wid.getItem(2).getToolTipText() == "Show annotations at the peak position.", "Test tooltips")
     test.verify(wid.getItem(3).getToolTipText() == "Show fitting traces.", "Test tooltips")
@@ -50,15 +52,14 @@ def main():
 
     conOb = waitForObject(":Configure Settings..._ToolItem_2")
 
-    nameList = ["sum","Peak 1"]
+    nameList = ["sum","Peak 01"]
     check_plotted_traces_names(conOb, nameList)
     mouseClick(conOb)
-    clickTab(waitForObject(":Configure Graph Settings.Traces_TabItem"))
     widget = waitForObject(":Select Trace_Combo")
     test.verify(widget.text == 'sum', "Check Trace Name")
     clickTab(waitForObject(":Configure Graph Settings.Annotations_TabItem"))
     widget = waitForObject(":Select Annotation_Combo")
-    test.verify(widget.text == 'Peak 1', "Check Trace Name")
+    test.verify(widget.text == 'Peak 01', "Check Trace Name")
     clickTab(waitForObject(":Configure Graph Settings.Regions_TabItem"))
     widget = waitForObject(":Selection Region_Combo")
     test.verify(widget.text == 'Peak Area 1', "Check Trace Name")
