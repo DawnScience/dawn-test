@@ -31,12 +31,10 @@ def main():
     
     wid = waitForObject(":_ToolBar_4")
  
-    for x in range(0, 5):
-        print wid.getItem(x).getToolTipeText()
     test.verify(wid.getItem(0).getToolTipText() == "New fit selection.", "Test tooltips")
-    test.verify(wid.getItem(2).getToolTipText() == "Show annotations at the peak position.", "Test tooltips")
-    test.verify(wid.getItem(3).getToolTipText() == "Show fitting traces.", "Test tooltips")
-    test.verify(wid.getItem(4).getToolTipText() == "Show peak lines.", "Test tooltips")
+    test.verify(wid.getItem(3).getToolTipText() == "Show annotations at the peak position.", "Test tooltips")
+    test.verify(wid.getItem(4).getToolTipText() == "Show fitting traces.", "Test tooltips")
+    test.verify(wid.getItem(5).getToolTipText() == "Show peak lines.", "Test tooltips")
     
     test.verify(object.exists(":Trace_TableColumn"), "trace column there")
     test.verify(object.exists(":FWHM_TableColumn"), "FWHM column there")
