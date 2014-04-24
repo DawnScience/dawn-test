@@ -49,7 +49,6 @@ def main():
     for i in range(4):
         txt = waitForObjectItem(":Peak Fitting_Table",  str(i) + "/1").text
         test.verify(txt == "Peak " + str(i+1),"peak present")
-        print txt + "|" + "Peak "+str(i+1)
     
     mouseClick(waitForObject(":Choose trace for fit._ToolItem"), 29, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Select all"))
@@ -61,6 +60,5 @@ def main():
     for i in range(16):
         txt = waitForObjectItem(":Peak Fitting_Table",  str(i) + "/1").text
         test.verify(txt == "Peak " + str(i+1),"peak present")
-        print txt + "|" + "Peak "+str(i+1)
     
     closeOrDetachFromDAWN()
