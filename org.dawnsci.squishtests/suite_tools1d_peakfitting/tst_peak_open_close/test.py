@@ -53,6 +53,7 @@ def main():
     nameList = ["sum","Peak 01"]
     check_plotted_traces_names(conOb, nameList)
     mouseClick(conOb)
+    clickTab(waitForObject(":Configure Graph Settings.Traces_TabItem"))
     widget = waitForObject(":Select Trace_Combo")
     test.verify(widget.text == 'sum', "Check Trace Name")
     clickTab(waitForObject(":Configure Graph Settings.Annotations_TabItem"))

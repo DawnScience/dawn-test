@@ -5,9 +5,6 @@
 :Algorithm_TableColumn	{caption='Algorithm' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :Annotations.Select Annotation_Group	{caption='Select Annotation' container=':Configure Graph Settings.Annotations_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Area_TableColumn	{caption='Area' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
-:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
-:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Change Settings.Name: _Label	{caption='Name: ' container=':Traces.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Name: _Text	{container=':Traces.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Name: _Label' type='org.eclipse.swt.widgets.Text'}
 :Change Settings_Composite	{container=':Traces.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Composite'}
@@ -16,6 +13,7 @@
 :Clear Console_ToolItem	{caption='Clear Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Close wizard automatically on successful installation._Button	{caption='Close wizard automatically on successful installation.' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Configure Graph Settings.Annotations_TabItem	{caption='Annotations' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Axes_TabItem	{caption='Axes' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Graph_TabItem	{caption='Graph' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
@@ -54,6 +52,7 @@
 :Jython console_Button	{caption='Jython console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Maths and Fitting_Menu_2	{caption='Maths and Fitting' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Name_TableColumn	{caption='Name' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :New Environment Variable.Name:_Label	{caption='Name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':New Environment Variable_Shell'}
 :New Environment Variable.Name:_Text	{isvisible='true' leftWidget=':New Environment Variable.Name:_Label' type='org.eclipse.swt.widgets.Text' window=':New Environment Variable_Shell'}
@@ -70,6 +69,7 @@
 :Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
+:Open Perspective_ToolItem	{caption='Open Perspective' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Peak Fitting_CTabItem	{caption='Peak Fitting' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Peak Fitting_Composite	{container=':Peak Fitting_CTabItem' isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Composite'}
 :Peak Fitting_Link	{container=':Peak Fitting_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Link'}
@@ -81,6 +81,9 @@
 :Plot_Composite_2	{container=':metalmix.mca.Plot_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
 :Plot_ToolBar	{container=':96356.dat.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Plot_ToolBar_2	{container=':metalmix.mca.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Position_TableColumn	{caption='Position' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :Preferences.Auto Config_Button	{caption='Advanced Auto-Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
@@ -165,6 +168,7 @@
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{container=':_CTabFolder_4' firstItemText='New fit selection.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_5	{container=':_CTabFolder_4' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_6	{firstItemText='PEEMA' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :image0001.pgm.Image_CTabItem	{caption='Image' container=':image0001.pgm_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :image0001.pgm_CTabItem	{caption='image0001.pgm' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :metalmix.mca.Plot_CTabItem	{caption='Plot' container=':metalmix.mca_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
