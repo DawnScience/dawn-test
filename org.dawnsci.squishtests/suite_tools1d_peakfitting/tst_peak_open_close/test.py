@@ -50,7 +50,7 @@ def main():
 
     conOb = waitForObject(":Configure Settings..._ToolItem_2")
 
-    nameList = ["sum","Peak 01"]
+    nameList = ["sum","Peak 1"]
     check_plotted_traces_names(conOb, nameList)
     mouseClick(conOb)
     clickTab(waitForObject(":Configure Graph Settings.Traces_TabItem"))
@@ -58,7 +58,7 @@ def main():
     test.verify(widget.text == 'sum', "Check Trace Name")
     clickTab(waitForObject(":Configure Graph Settings.Annotations_TabItem"))
     widget = waitForObject(":Select Annotation_Combo")
-    test.verify(widget.text == 'Peak 01', "Check Trace Name")
+    test.verify(widget.text == 'Peak 1', "Check Trace Name")
     clickTab(waitForObject(":Configure Graph Settings.Regions_TabItem"))
     widget = waitForObject(":Selection Region_Combo")
     test.verify(widget.text == 'Peak Area 1', "Check Trace Name")
