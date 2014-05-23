@@ -2,7 +2,7 @@ source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
 source(findFile("scripts", "dawn_constants.py"))
-
+import sys
 # This test makes sure we can start and stop DAWN
 def main():
     # Start or attach runs (or attaches) to DAWN and then 
@@ -55,7 +55,11 @@ def main():
     
     mouseClick(waitForObject(":Expand All_ToolItem"), 16, 15, 0, Button.Button1)
     mouseClick(waitForObject(":Region 1 *_TreeSubItem"), 68, 13, 0, Button.Button1)
-    mouseClick(waitForObject(":X Start.352 *_TreeSubItem"), 91, 9, 0, Button.Button1)
+    
+    if sys.platform.startswith('win'):
+        mouseClick(waitForObject(":X Start.352 *_TreeSubItem"), 91, 9, 0, Button.Button1)
+    else:
+        mouseClick(waitForObject(":X Start.338 *_TreeSubItem"), 91, 9, 0, Button.Button1)
     type(waitForObject(":Region Tree Editor_Spinner"), "<Numpad 5>")
     type(waitForObject(":Region Tree Editor_Spinner"), "<Numpad 0>")
     type(waitForObject(":Region Tree Editor_Spinner"), "<Numpad 0>")
