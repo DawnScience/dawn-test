@@ -96,9 +96,16 @@
 :Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem	{caption='Enthought EPD Free' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Region 1 *_TreeItem	{caption='Region 1 *' container=':Region Tree Editor_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:Region 1 *_TreeItem_2	{caption='Region 1 *' container=':Region Editor_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Region 1 *_TreeSubItem	{caption='' column='1' container=':Region 1 *_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
+:Region 1 *_TreeSubItem_2	{caption='' column='1' container=':Region 1 *_TreeItem_2' type='com.froglogic.squish.swt.TreeSubItem'}
 :Region 2 *_TreeItem	{caption='Region 2 *' container=':Region Tree Editor_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:Region 2 *_TreeItem_2	{caption='Region 2 *' container=':Region Editor_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Region 2 *_TreeSubItem	{caption='' column='1' container=':Region 2 *_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
+:Region 2 *_TreeSubItem_2	{caption='' column='1' container=':Region 2 *_TreeItem_2' type='com.froglogic.squish.swt.TreeSubItem'}
+:Region Editor_CTabItem	{caption='Region Editor' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Region Editor_Spinner	{container=':Region Editor_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Spinner'}
+:Region Editor_Tree	{container=':Region Editor_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Region Tree Editor_CTabItem	{caption='Region Tree Editor' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Region Tree Editor_Spinner	{container=':Region Tree Editor_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Spinner'}
 :Region Tree Editor_Text	{container=':Region Tree Editor_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
@@ -143,8 +150,15 @@
 :Workbench Window	{data?='org.eclipse.ui.internal.WorkbenchWindow*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :X Start.1051 *_TreeSubItem	{caption='1051 *' column='1' container=':X Start_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
 :X Start.1060 *_TreeSubItem	{caption='1060 *' column='1' container=':X Start_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
+:X Start.1882 *_TreeSubItem	{caption='1882 *' column='1' container=':X Start_TreeItem_2' type='com.froglogic.squish.swt.TreeSubItem'}
+:X Start.2261 *_TreeSubItem	{caption='2261 *' column='1' container=':X Start_TreeItem_2' type='com.froglogic.squish.swt.TreeSubItem'}
+:X Start.338 *_TreeSubItem	{caption='338 *' column='1' container=':X Start_TreeItem_2' type='com.froglogic.squish.swt.TreeSubItem'}
 :X Start.352 *_TreeSubItem	{caption='352 *' column='1' container=':X Start_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
+:X Start.352 *_TreeSubItem_2	{caption='352 *' column='1' container=':X Start_TreeItem_2' type='com.froglogic.squish.swt.TreeSubItem'}
+:X Start.500 *_TreeSubItem	{caption='500 *' column='1' container=':X Start_TreeItem_2' type='com.froglogic.squish.swt.TreeSubItem'}
 :X Start_TreeItem	{caption='X Start' parentitem=':Region 1 *_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:X Start_TreeItem_2	{caption='X Start' parentitem=':Region 1 *_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
+:_CLabel	{isvisible='true' type='org.eclipse.swt.custom.CLabel' window=':_Shell'}
 :_CTabFolder	{firstTabCaption='Console' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_2	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_3	{firstTabCaption='Project Explorer' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}

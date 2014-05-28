@@ -20,7 +20,7 @@ def main():
     snooze(1)
 
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), 30, 9, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Region Tree Editor"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Region Editor"))
     
     c = waitForObject(":Image_Composite")
     b = c.bounds
@@ -44,26 +44,26 @@ def main():
     system = getPlottingSystem("ref-testscale_1_001.img")
     test.verify(system.getRegions().size()==3, "3 Regions created : Success")
     snooze(1)
-    clickTab(waitForObject(":Region Tree Editor_CTabItem"), 89, 13, 0, Button.Button1)
+    clickTab(waitForObject(":Region Editor_CTabItem"), 75, 15, 0, Button.Button1)
     snooze(0.5)
-    mouseClick(waitForObject(":Region 2 *_TreeSubItem"), 42, 11, 0, Button.Button1)
+    mouseClick(waitForObject(":Region 2 *_TreeSubItem_2"), 37, 12, 0, Button.Button1)
     snooze(0.5)
-    type(waitForObject(":Region Tree Editor_Tree"), "<Delete>")
+    type(waitForObject(":Region Editor_Tree"), "<Delete>")
     snooze(0.5)
     #test if the region has been deleted from the plotting system
     test.verify(system.getRegions().size()==2, "1 Region deleted: Success")
     
     mouseClick(waitForObject(":Expand All_ToolItem"), 16, 15, 0, Button.Button1)
-    mouseClick(waitForObject(":Region 1 *_TreeSubItem"), 68, 13, 0, Button.Button1)
+    mouseClick(waitForObject(":Region 1 *_TreeSubItem_2"), 47, 15, 0, Button.Button1)
     
     if sys.platform.startswith('win'):
-        mouseClick(waitForObject(":X Start.352 *_TreeSubItem"), 91, 9, 0, Button.Button1)
+        mouseClick(waitForObject(":X Start.352 *_TreeSubItem_2"), 32, 11, 0, Button.Button1)
     else:
-        mouseClick(waitForObject(":X Start.338 *_TreeSubItem"), 91, 9, 0, Button.Button1)
-    type(waitForObject(":Region Tree Editor_Spinner"), "<Numpad 5>")
-    type(waitForObject(":Region Tree Editor_Spinner"), "<Numpad 0>")
-    type(waitForObject(":Region Tree Editor_Spinner"), "<Numpad 0>")
-    type(waitForObject(":Region Tree Editor_Spinner"), "<Return>")
+        mouseClick(waitForObject(":X Start.338 *_TreeSubItem_2"), 45, 9, 0, Button.Button1)
+    type(waitForObject(":Region Editor_Spinner"), "<Numpad 5>")
+    type(waitForObject(":Region Editor_Spinner"), "<Numpad 0>")
+    type(waitForObject(":Region Editor_Spinner"), "<Numpad 0>")
+    type(waitForObject(":Region Editor_Spinner"), "<Return>")
 
     #test if the region one xstart is 500
     test.verify(system.getRegion("Region 1").getROI().getPointX()==500, "Region 1 X Start has been updated to 500: Success")
