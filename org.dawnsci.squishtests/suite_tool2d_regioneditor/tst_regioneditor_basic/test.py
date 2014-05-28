@@ -60,10 +60,7 @@ def main():
         mouseClick(waitForObject(":X Start.352 *_TreeSubItem_2"), 32, 11, 0, Button.Button1)
     else:
         mouseClick(waitForObject(":X Start.338 *_TreeSubItem"), 12, 17, 0, Button.Button1)
-    type(waitForObject(":Region Editor_Spinner"), "<Numpad 5>")
-    type(waitForObject(":Region Editor_Spinner"), "<Numpad 0>")
-    type(waitForObject(":Region Editor_Spinner"), "<Numpad 0>")
-    type(waitForObject(":Region Editor_Spinner"), "<Return>")
+    type(waitForObject(":Region Editor_Spinner"), "500")
 
     #test if the region one xstart is 500
     test.verify(system.getRegion("Region 1").getROI().getPointX()==500, "Region 1 X Start has been updated to 500: Success")
