@@ -59,7 +59,7 @@ def main():
     if sys.platform.startswith('win'):
         mouseClick(waitForObject(":X Start.352 *_TreeSubItem_2"), 32, 11, 0, Button.Button1)
     else:
-        mouseClick(waitForObject(":X Start.338 *_TreeSubItem_2"), 45, 9, 0, Button.Button1)
+        mouseClick(waitForObject(":X Start.338 *_TreeSubItem"), 45, 9, 0, Button.Button1)
     type(waitForObject(":Region Editor_Spinner"), "<Numpad 5>")
     type(waitForObject(":Region Editor_Spinner"), "<Numpad 0>")
     type(waitForObject(":Region Editor_Spinner"), "<Numpad 0>")
