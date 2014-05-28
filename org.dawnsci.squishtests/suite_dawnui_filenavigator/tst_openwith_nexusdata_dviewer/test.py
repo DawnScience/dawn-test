@@ -40,7 +40,8 @@ def main():
     activateItem(waitForObjectItem(":Open With_Menu", "dViewer Image Editor"))
     snooze(3)
     #we get the plotting system
-    system = getPlottingSystem("pow_M99S5_1_0001.cbf")
+    #oddly something has changed with DViewer so the plotting system has somehow no name...
+    system = getPlottingSystem("")
     test.verify(system.getTraces().iterator().next().getData().getRank()==2, "Image plotted: Success")
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()
