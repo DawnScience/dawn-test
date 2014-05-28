@@ -57,8 +57,14 @@ def main():
     
     test.verify(tab.getItemCount()==64,"16 peaks in table")
     
-    for i in range(16):
-        txt = waitForObjectItem(":Peak Fitting_Table",  str(i) + "/1").text
+    mouseClick(waitForObject(":Name_TableColumn"), 82, 18, 0, Button.Button1)
+    snooze(1)
+    mouseClick(waitForObject(":Name_TableColumn"), 82, 18, 0, Button.Button1)
+    snooze(1)
+    
+    for i in range(8):
+        txt = waitForObjectItem(":Peak Fitting_Table", str(i) + "/1").text
+
         test.verify(txt == "Peak " + str(i+1),"peak present")
     
     closeOrDetachFromDAWN()

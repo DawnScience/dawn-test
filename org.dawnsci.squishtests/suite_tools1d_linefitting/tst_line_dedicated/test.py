@@ -47,7 +47,12 @@ def main():
     
     test.verify(tab.getItemCount()==16,"16 line in table")
     
-    for i in range(16):
+    mouseClick(waitForObject(":Name_TableColumn"), 76, 17, 0, Button.Button1)
+    snooze(1)
+    mouseClick(waitForObject(":Name_TableColumn"), 76, 17, 0, Button.Button1)
+    snooze(1)
+    
+    for i in range(8):
         wid =  waitForObjectItem(":Line Fitting_Table",  str(i) + "/1")
         test.verify(wid.text == "Fit " + str(i+1),"line present")
 
@@ -59,7 +64,12 @@ def main():
     
     test.verify(tab.getItemCount()==16,"16 line in table")
     
-    for i in range(16):
+    mouseClick(waitForObject(":Name_TableColumn"), 76, 17, 0, Button.Button1)
+    snooze(1)
+    mouseClick(waitForObject(":Name_TableColumn"), 76, 17, 0, Button.Button1)
+    snooze(1)
+    
+    for i in range(8):
         wid =  waitForObjectItem(":Line Fitting_Table",  str(i) + "/1")
         test.verify(wid.text == "Fit " + str(i+1),"line present")
     
