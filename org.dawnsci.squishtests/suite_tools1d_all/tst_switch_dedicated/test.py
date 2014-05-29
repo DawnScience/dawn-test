@@ -41,7 +41,7 @@ def the_actual_test():
     #Check derivative tool has not reset
     
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
-    check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"),"Column_3", "800.0","0.0")
+    #check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"),"Column_3", "800.0","0.0")
     
     #do measurement
     c = waitForObject(":Plot_Composite")
