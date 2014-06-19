@@ -2,6 +2,7 @@
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
 :76003.dat.Info_CTabItem	{caption='Info' container=':76003.dat_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :76003.dat_CTabItem	{caption='76003.dat' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Alphanumeric sort for everything._ToolItem	{caption='Alphanumeric sort for everything.' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Available Customizations.Content_CTabItem	{caption='Content' type='org.eclipse.swt.custom.CTabItem' window=':Available Customizations_Shell'}
 :Available Customizations.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Available Customizations_Shell'}
 :Available Customizations_Shell	{caption='Available Customizations' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -12,9 +13,6 @@
 :Available label decorations:.File Meta Data Decorator_TableCell_3	{caption='File Meta Data Decorator' column='0' container=':Preferences.Available label decorations:_Table' row='5' type='com.froglogic.squish.swt.TableCell'}
 :Available label decorations:.HDF5 tree element Decorator_TableCell	{caption='HDF5 tree element Decorator' column='0' container=':Preferences.Available label decorations:_Table' type='com.froglogic.squish.swt.TableCell'}
 :Available label decorations:.Nexus Scan Command and Title Decorator_TableCell	{caption='Nexus Scan Command and Title Decorator' column='0' container=':Preferences.Available label decorations:_Table' row='11' type='com.froglogic.squish.swt.TableCell'}
-:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
-:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Browse..._Button	{caption='Browse...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
@@ -24,6 +22,7 @@
 :Change Settings.Minimum: _Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Minimum: _Label' type='org.eclipse.swt.widgets.Text'}
 :Clear Console_ToolItem	{caption='Clear Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Close wizard automatically on successful installation._Button	{caption='Close wizard automatically on successful installation.' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
+:Collapse All_ToolItem	{caption='Collapse All' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Configure Graph Settings.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Axes_TabItem	{caption='Axes' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
@@ -40,6 +39,7 @@
 :Content.Select the available extensions to show (unchecked extensions will not display content):_Table	{aboveWidget=':Content.Select the available extensions to show (unchecked extensions will not display content):_Label' container=':Available Customizations.Content_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :DAT file Scan Command Decorator_ItemCheckbox	{container=':Available label decorations:.DAT file Scan Command Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
 :DAT file Scan Command Decorator_ItemCheckbox_2	{container=':Available label decorations:.DAT file Scan Command Decorator_TableCell_2' type='com.froglogic.squish.swt.ItemCheckbox'}
+:Data Brow..._ToolItem	{caption='Data Brow...' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
@@ -55,6 +55,8 @@
 :File Meta Data Decorator_ItemCheckbox	{container=':Available label decorations:.File Meta Data Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
 :File Meta Data Decorator_ItemCheckbox_2	{container=':Available label decorations:.File Meta Data Decorator_TableCell_2' type='com.froglogic.squish.swt.ItemCheckbox'}
 :File Meta Data Decorator_ItemCheckbox_3	{container=':Available label decorations:.File Meta Data Decorator_TableCell_3' type='com.froglogic.squish.swt.ItemCheckbox'}
+:File Navigator_CTabItem	{caption='File Navigator' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:File Navigator_Tree	{container=':File Navigator_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Finish_Button_2	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :HDF5 File Contents_ItemCheckbox	{container=':Select the available extensions to show (unchecked extensions will not display content):.HDF5 File Contents_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
@@ -92,6 +94,9 @@
 :Open With_Menu	{caption='Open With' container=':Project Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Open With_Menu_2	{caption='Open With' container=':Project Explorer_Tree_2' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Preferences.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Auto Config_Button	{caption='Advanced Auto-Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
@@ -119,6 +124,9 @@
 :Python console_Button	{caption='Python console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem	{caption='Enthought EPD Free' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
+:Refresh file tree_ToolItem	{caption='Refresh file tree' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
+:Reset Perspective.Yes_Button	{caption='Yes' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Reset Perspective_Shell'}
+:Reset Perspective_Shell	{caption='Reset Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :SWT	SWT
 :Select Axis_Combo	{container=':Axes.Select Axis_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
@@ -145,6 +153,7 @@
 :Show View_Shell	{caption='Show View' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Show View_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Show View_Shell'}
 :Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
+:Sort alphanumeric, directories at top._ToolItem	{caption='Sort alphanumeric, directories at top.' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Variables_CTabItem	{caption='Variables' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Variables_Tree	{container=':Variables_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
@@ -173,6 +182,8 @@
 :_ToolBar_4	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_5	{container=':_CTabFolder_4' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_6	{firstItemText='DExplore' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_7	{firstItemText='PEEMA' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_8	{container=':_CTabFolder_3' firstItemText='Sort alphanumeric, directories at top.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
 :i22-4996.nxs_CTabItem	{caption='i22-4996.nxs' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :i22-4996.nxs_CTabItem_2	{caption='i22-4996.nxs' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
