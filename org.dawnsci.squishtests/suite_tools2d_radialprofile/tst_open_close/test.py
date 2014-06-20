@@ -63,6 +63,7 @@ def main():
     
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     
+    snooze(1)
     check_plotted_traces_names(conOb, ['Radial Profile Profile 1'])
     #check centred
     

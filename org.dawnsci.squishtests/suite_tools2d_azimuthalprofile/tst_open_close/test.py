@@ -72,6 +72,7 @@ def main():
     
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     
+    snooze(2)
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), ["Azimuthal Profile Profile 1"])
     
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 16, 11, 0, Button.Button1)
