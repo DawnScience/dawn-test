@@ -41,7 +41,7 @@ def main():
     snooze(3)
     #we get the plotting system
     #oddly something has changed with DViewer so the plotting system has somehow no name...
-    system = getPlottingSystem("")
+    system = getPlottingSystem("pow_M99S5_1_0001.cbf")
     test.verify(system.getTraces().iterator().next().getData().getRank()==2, "Image plotted: Success")
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()
