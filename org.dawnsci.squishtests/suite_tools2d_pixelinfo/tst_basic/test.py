@@ -56,7 +56,8 @@ def main():
     test.verify(testIsNumeric(waitForObjectItem(":Pixel Information_Table", "1/8").text))
     
     mouseClick(waitForObjectItem(":Pixel Information_Table", "1/1"), 73, 5, 0, Button.Button1)
-    mouseClick(waitForObject(":Delete selected region, if there is one._ToolItem"), 8, 14, 0, Button.Button1)
+    mouseClick(waitForObject(":Delete selected point, if there is one._ToolItem"), 8, 14, 0, Button.Button1)
+
     
     test.verify(tab.getItemCount()==4,"4 rows in table")
     

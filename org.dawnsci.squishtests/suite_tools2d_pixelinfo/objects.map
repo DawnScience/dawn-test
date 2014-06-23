@@ -4,9 +4,6 @@
 :Change Settings.Minimum: _Label	{caption='Minimum: ' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Minimum: _Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Minimum: _Label' type='org.eclipse.swt.widgets.Text'}
 :Clear all vertices shown in the plotting_ToolItem	{caption='Clear all vertices shown in the plotting' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
-:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
-:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Configure Graph Settings.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Axes_TabItem	{caption='Axes' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
@@ -22,6 +19,7 @@
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Copies the region values as text to clipboard which can then be pasted externally._ToolItem	{caption='Copies the region values as text to clipboard which can then be pasted externally.' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_ErrorLog' type='org.eclipse.swt.widgets.ToolItem'}
+:Delete selected point, if there is one._ToolItem	{caption='Delete selected point, if there is one.' container=':_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :Delete selected region, if there is one._ToolItem	{caption='Delete selected region, if there is one.' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
@@ -41,6 +39,9 @@
 :Pixel Information_Table	{container=':Pixel Information_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Please Confirm Delete All.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Please Confirm Delete All_Shell'}
 :Please Confirm Delete All_Shell	{caption='Please Confirm Delete All' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Point ID_TableColumn	{caption='Point ID' container=':Pixel Information_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
@@ -66,6 +67,7 @@
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :_ToolBar	{container=':_CTabFolder' firstItemText='Copies the region values as text to clipboard which can then be pasted externally.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_3	{container=':_CTabFolder' firstItemText='Copies the point values as text to clipboard which can then be pasted externally.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_ErrorLog	{firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :image0001.pgm.Image_CTabItem	{caption='Image' container=':image0001.pgm_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :image0001.pgm_CTabItem	{caption='image0001.pgm' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
