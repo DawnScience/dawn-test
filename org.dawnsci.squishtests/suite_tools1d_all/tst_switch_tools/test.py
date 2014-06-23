@@ -38,7 +38,7 @@ def the_actual_test(system):
     activateItem(waitForObjectItem(":Pop Up Menu", "Measurement"))
     #Check derivative tool has reset
     
-    names = ["Column_3"]
+    names = ["Column_3", "Peak 1"]
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
     check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"),"Column_3", "800.0","0.0")
     
@@ -64,7 +64,7 @@ def the_actual_test(system):
     mouseDrag(c, rx1,ry1,rx2-rx1,ry2-ry1,0, Button.Button1)
     snooze(2)
     
-    names = ["Column_3", "Fit 1"]
+    names = ["Column_3", "Peak 1", "Fit 1"]
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
     
     test.verify(waitForObjectItem(":Line Fitting_Table", "0/0").text == "Column_3", "Verify measurement text");
