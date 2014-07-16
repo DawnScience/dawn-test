@@ -129,7 +129,7 @@ def getPlottingSystem(name):
     waitForObject(":Plotting Systems_CTabItem")
     plotButton = waitForObject(":Plotting Systems.Refresh_RefreshButton")
     
-    factoryClass = plotButton.getClass().getClassLoader().loadClass("org.dawnsci.plotting.api.PlottingFactory")
+    factoryClass = plotButton.getClass().getClassLoader().loadClass("org.eclipse.dawnsci.plotting.api.PlottingFactory")
 
     factory = factoryClass.newInstance()
     system  = factory.getPlottingSystem(name)
