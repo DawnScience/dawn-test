@@ -39,7 +39,7 @@
 :Pixel Information_Table	{container=':Pixel Information_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Please Confirm Delete All.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Please Confirm Delete All_Shell'}
 :Please Confirm Delete All_Shell	{caption='Please Confirm Delete All' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
-:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Point ID_TableColumn	{caption='Point ID' container=':Pixel Information_Table' type='org.eclipse.swt.widgets.TableColumn'}

@@ -108,7 +108,7 @@
 :Please tick data to export:_Label	{caption='Please tick data to export:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Please tick data to export:_ToolBar	{firstItemText='Select None' isvisible='true' leftWidget=':Please tick data to export:_Label' type='org.eclipse.swt.widgets.ToolBar' window=':WizardDialog_Shell'}
 :Plot_ToolBar	{container=':metalmix.mca.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}

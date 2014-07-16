@@ -5,7 +5,7 @@
 :Azimuthal Profile_CTabItem	{caption='Azimuthal Profile' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Center sector 'Profile 1'_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Change Settings.Maximum_Label	{caption='Maximum' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Maximum_Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Maximum_Label' type='org.eclipse.swt.widgets.Text'}

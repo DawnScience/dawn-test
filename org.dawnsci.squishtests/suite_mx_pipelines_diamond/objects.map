@@ -13,7 +13,7 @@
 :Data Browsing - Dawn_ToolBar	{isvisible='true' occurrence='12' type='org.eclipse.swt.widgets.ToolBar' window=':Data Browsing - Dawn_Shell'}
 :Data Browsing - Dawn_ToolBar_2	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Data Browsing - Dawn_Shell'}
 :Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Dimple Input Parameters...._Button	{caption='...' container=':Dimple.Dimple Input Parameters_Group' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Button'}
 :Dimple Input Parameters...._Button_2	{caption='...' container=':Dimple.Dimple Input Parameters_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Button'}
