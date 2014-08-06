@@ -32,7 +32,7 @@ def main():
     activateItem(waitForObjectItem(":File_Menu_2", "New"))
     activateItem(waitForObjectItem(":New_Menu_2", "Other..."))
     expand(waitForObjectItem(":New_Tree", "Data"))
-    mouseClick(waitForObjectItem(":New_Tree", "Data Project"), 23, 7, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":New_Tree", "Data Project (linked to existing directory)"), 23, 7, 0, Button.Button1)
     clickButton(waitForObject(":New.Next >_Button"))
     mouseClick(waitForObject(":Directory:_Text"), 68, 14, 0, Button.Button1)
     type(waitForObject(":Directory:_Text"), "/dls/sci-scratch/ExampleData/MXPipelines")
