@@ -5,6 +5,7 @@ source(findFile("scripts", "file_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 
 import platform
+import os.path
 
 # UI test to check that an hdf5 file can be opened and its tree can be expanded 
 def main():
@@ -76,6 +77,18 @@ def main():
     test.verify(system.getTraces().size()==1)
     
     snooze(1)
+    
+    #test saving
+    clickButton(waitForObject(":Peem Analysis View.Use default save directory_Button"))
+    clickButton(waitForObject(":Output location.Save_Button"))
+    clickButton(waitForObject(":File saved.OK_Button"))
+    #check if file exist
+    exist = os.path.isfile("/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema/processing/d_peema.jpg")
+    test.verify(exist == True)
+    exist = os.path.isfile("/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema/processing/d_peema.tif")
+    test.verify(exist == True)
+
+    snooze(2.1)
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()
 

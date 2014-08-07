@@ -65,8 +65,12 @@
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Error_Shell'}
+:Error_Shell	{caption='Error' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :File Meta Data Decorator_ItemCheckbox	{container=':Available label decorations:.File Meta Data Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
 :File Meta Data Decorator_ItemCheckbox_2	{container=':Available label decorations:.File Meta Data Decorator_TableCell_2' type='com.froglogic.squish.swt.ItemCheckbox'}
+:File saved.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':File saved_Shell'}
+:File saved_Shell	{caption='File saved' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Finish_Button_2	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :HDF5 tree element Decorator_ItemCheckbox	{container=':Available label decorations:.HDF5 tree element Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
@@ -91,12 +95,15 @@
 :Install to:_Text	{isvisible='true' leftWidget=':Install to:_Label' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
 :Internal Error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Internal Error_Shell'}
 :Internal Error_Shell	{caption='Internal Error' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Job error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Job error_Shell'}
+:Job error_Shell	{caption='Job error' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Jython console_Button	{caption='Jython console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Keep aspect ratio_ToolItem	{caption='Keep aspect ratio' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Live Plot Control.Aligned Data_Button	{caption='Aligned Data' container=':Peem Analysis View.Live Plot Control_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Live Plot Control.Aligned Data_Slider	{aboveWidget=':Live Plot Control.Aligned Data_Button' container=':Peem Analysis View.Live Plot Control_Group' isvisible='true' type='org.eclipse.swt.widgets.Slider'}
 :Live Plot_CTabItem	{caption='Live Plot' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Mode.2_Button	{caption='2' container=':Peem Analysis View.Mode_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Multiple problems have occurred.Details >>_Button	{caption='Details >>' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Multiple problems have occurred_Shell'}
 :Multiple problems have occurred.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Multiple problems have occurred_Shell'}
 :Multiple problems have occurred_Shell	{caption='Multiple problems have occurred' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -120,10 +127,16 @@
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
 :Open Perspective_ToolItem	{caption='Open Perspective' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective_ToolItem_2	{caption='Open Perspective' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
+:Output location.Save_Button	{caption='Save' container=':Peem Analysis View.Output location_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:PEEMA_ToolItem	{caption='PEEMA' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
+:Peem Analysis View.Add Region_Button	{caption='Add Region' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View.Align_Button	{caption='Align' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View.Dichroism_Button	{caption='Dichroism' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View.Images location_Group	{caption='Images location' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Peem Analysis View.Live Plot Control_Group	{caption='Live Plot Control' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Peem Analysis View.Mode_Group	{caption='Mode' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Peem Analysis View.Output location_Group	{caption='Output location' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Peem Analysis View.Use default save directory_Button	{caption='Use default save directory' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View.View_Group	{caption='View' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Peem Analysis View_Button	{caption='' container=':Peem Analysis View_CTabItem' isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View_CTabItem	{caption='Peem Analysis View' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -245,6 +258,7 @@
 :_ToolBar_10	{container=':_CTabFolder_2' firstItemText='Terminate current console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_11	{container=':_CTabFolder_7' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_12	{container=':_CTabFolder_8' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_13	{firstItemText='PEEMA' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
