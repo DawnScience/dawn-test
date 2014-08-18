@@ -45,6 +45,7 @@
 :Conversion Type_Combo	{isvisible='true' leftWidget=':Conversion Type_Label' type='org.eclipse.swt.widgets.Combo' window=':WizardDialog_Shell'}
 :Conversion Type_Label	{caption='Conversion Type' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Convert_Menu	{caption='Convert' container=':Project Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Data Brow..._ToolItem	{caption='Data Brow...' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Scale	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Scale'}
@@ -157,6 +158,7 @@
 :Slice as line plots_ToolItem	{caption='Slice as line plots' container=':Data_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Slice as line plots_ToolItem_2	{caption='Slice as line plots' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Slice as line plots_ToolItem_3	{caption='Slice as line plots' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
+:Slice as line plots_ToolItem_4	{caption='Slice as line plots' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
 :Square brush_ToolItem	{caption='Square brush' container=':Masking \\'ref-testscale_1_001.img\\'_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :TomographyDataSet.hdf5_CTabItem	{caption='TomographyDataSet.hdf5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Variables_CTabItem	{caption='Variables' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -192,6 +194,8 @@
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{firstItemText='Slice as line plots' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':WizardDialog_Shell'}
 :_ToolBar_5	{firstItemText='Advanced slicing.\nFor instance, shows extra options for \\'Type\\' including mean and median.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':WizardDialog_Shell'}
+:_ToolBar_6	{firstItemText='PEEMA' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_7	{firstItemText='Show tooltips while editing the slice setup' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':WizardDialog_Shell'}
 :_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
 :metalmix.mca.Plot_CTabItem	{caption='Plot' container=':metalmix.mca_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :metalmix.mca_CTabItem	{caption='metalmix.mca' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
