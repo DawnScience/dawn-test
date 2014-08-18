@@ -31,10 +31,12 @@
 :Data_Table_2	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Table'}
 :Data_Text	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Text'}
 :Data_ToolBar	{container=':Data_CTabItem' firstItemText?='Advanced*' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Data_ToolBar_2	{container=':Data_CTabItem' firstItemText='Show tooltips while editing the slice setup' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_ErrorLog' type='org.eclipse.swt.widgets.ToolItem'}
 :Directory:_Label	{caption='Directory:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
 :Directory:_Text	{isvisible='true' leftWidget=':Directory:_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
 :Edit the slice with different editors._ToolItem	{caption='Edit the slice with different editors.' container=':Data_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Edit the slice with different editors._ToolItem_2	{caption='Edit the slice with different editors.' container=':Data_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
@@ -59,6 +61,7 @@
 :Image Traces.Name_Text	{aboveWidget=':Image Traces.Name_Label' container=':Configure Graph Settings.Image Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Image Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Image Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Image Traces_Composite	{container=':Configure Graph Settings.Image Traces_TabItem' isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Composite'}
+:Image_ToolBar	{container=':ref-testscale_1_001.img.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Import.Browse..._Button	{caption='Browse...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
 :Import.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
 :Import.Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
@@ -71,6 +74,7 @@
 :Import_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Import_Shell'}
 :Import_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Import_Shell'}
 :Keep aspect ratio_ToolItem	{caption='Keep aspect ratio' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Keep aspect ratio_ToolItem_2	{caption='Keep aspect ratio' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :New Project.Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':New Project_Shell'}
 :New Project_Shell	{caption='New Project' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :New Project_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':New Project_Shell'}
@@ -113,7 +117,9 @@
 :Show Welcome Screen_ToolItem	{caption='Show Welcome Screen' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Size_Menu	{caption='Size' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Slice as image_ToolItem	{caption='Slice as image' container=':Data_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Slice as image_ToolItem_2	{caption='Slice as image' container=':Data_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :Slice as line plots_ToolItem	{caption='Slice as line plots' container=':Data_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Slice as line plots_ToolItem_2	{caption='Slice as line plots' container=':Data_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :Start value_Label	{caption='Start value' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Workbench Window'}
 :Start value_Text	{aboveWidget=':Start value_Label' isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Workbench Window'}
 :Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
@@ -156,3 +162,5 @@
 :i22-4996.nxs.Plot_CTabItem	{caption='Plot' container=':i22-4996.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :i22-4996.nxs.Tree_CTabItem	{caption='Tree' container=':i22-4996.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :i22-4996.nxs_CTabItem	{caption='i22-4996.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:ref-testscale_1_001.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_001.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:ref-testscale_1_001.img_CTabItem	{caption='ref-testscale_1_001.img' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}

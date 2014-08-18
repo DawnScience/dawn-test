@@ -48,7 +48,7 @@ def main():
     type(waitForObject(":_Sash"), "<Left>")
     clickTab(waitForObject(":Data_CTabItem"), 33, 27, 0, Button.Button1)
 
-    mouseClick(waitForObject(":Edit the slice with different editors._ToolItem"), 29, 10, 0, Button.Button1)
+    mouseClick(waitForObject(":Edit the slice with different editors._ToolItem_2"), 29, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Slice index (only)"))
     mouseClick(waitForObjectItem(":Data_Table_2", "0/2"), 27, 24, 0, Button.Button1)
 
@@ -57,7 +57,7 @@ def main():
         clickButton(waitForObject(":Data_Button"))
         snooze(0.5)
 
-    mouseClick(waitForObject(":Slice as line plots_ToolItem"), 13, 10, 0, Button.Button1)
+    mouseClick(waitForObject(":Slice as line plots_ToolItem_2"), 13, 10, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table_2", "1/2"), 27, 24, 0, Button.Button1)
     snooze(1)
     for i in range(20):
@@ -66,8 +66,8 @@ def main():
 
 
         
-    mouseClick(waitForObject(":Slice as image_ToolItem"), 10, 13, 0, Button.Button1)
-    mouseClick(waitForObject(":Keep aspect ratio_ToolItem"), 7, 6, 0, Button.Button1)
+    mouseClick(waitForObject(":Slice as image_ToolItem_2"), 10, 13, 0, Button.Button1)
+    #mouseClick(waitForObject(":Keep aspect ratio_ToolItem_2"), 5, 6, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table_2", "1/2"), 27, 24, 0, Button.Button1)
     snooze(1)
 
