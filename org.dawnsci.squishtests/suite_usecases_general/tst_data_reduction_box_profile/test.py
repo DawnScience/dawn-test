@@ -71,13 +71,16 @@ def main():
     test.passes("One trace plotted") 
     
     clickTab(waitForObject(":Data_CTabItem_2"), 28, 4, 0, Button.Button1)
-    mouseClick(waitForObject(":Data reduction..._ToolItem"), 9, 11, 0, Button.Button1)
+    mouseClick(waitForObject(":Data reduction..._ToolItem_2"), 8, 11, 0, Button.Button1)
+    snooze(1)
+    mouseClick(waitForObject(":Dataset Name_CCombo"), 467, 9, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":_List", "/entry1/EDXD_Element_01/data"), 214, 11, 0, Button.Button1)
     
     snooze(1) 
     clickButton(waitForObject(":Finish_Button"))
     
     # Show plotted image
-    snooze(1) 
+    snooze(2) 
     mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 6, 12, 0, Button.Button1)
     snooze(3) 
     system = getPlottingSystem("9758_Box_Profile.h5")

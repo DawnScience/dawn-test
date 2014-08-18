@@ -50,14 +50,17 @@ def main():
     mouseDrag(widget, b.x+100, b.y+100, 300, 300, 0, Button.Button1)
     snooze(10) # While fit...
 
-    mouseClick(waitForObject(":Data reduction..._ToolItem_2"), 12, 22, 0, Button.Button1)
+    mouseClick(waitForObject(":Data reduction..._ToolItem_2"), 2, 10, 0, Button.Button1)
+    snooze(1)
+    mouseClick(waitForObject(":Dataset Name_CCombo"), 467, 9, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":_List", "/entry1/EDXD_Element_01/data"), 214, 11, 0, Button.Button1)
+    snooze(5)
     # Do some reduction
     #clickButton(waitForObject(":Overwrite file if it exists._Button"))
-    snooze(20) 
     clickButton(waitForObject(":Finish_Button"))
     
     # Plot some reduction
-    snooze(10) # While open file...
+    snooze(20) # While open file...
     
     clickTab(waitForObject(":9758_Peak_Fitting.h5_CTabItem",180000), 77, 14, 0, Button.Button1)
 

@@ -66,12 +66,14 @@ def main():
     test.passes("One trace plotted") 
     
     clickTab(waitForObject(":Data_CTabItem_2"), 28, 4, 0, Button.Button1)
-    mouseClick(waitForObject(":Data reduction..._ToolItem"), 9, 11, 0, Button.Button1)
-    
+    mouseClick(waitForObject(":Data reduction..._ToolItem_2"), 8, 11, 0, Button.Button1)
+    snooze(1)
+    mouseClick(waitForObject(":Dataset Name_CCombo"), 467, 9, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":_List", "/entry1/EDXD_Element_01/data"), 214, 11, 0, Button.Button1)
     clickButton(waitForObject(":Finish_Button"))
     
     # Show plotted image
-    snooze(3) 
+    snooze(2) 
     system = getPlottingSystem("9758_Zoom_Profile.h5")
     test.verify(system.getRegions().size()==0)
     test.verify(system.getTraces().size()==1)

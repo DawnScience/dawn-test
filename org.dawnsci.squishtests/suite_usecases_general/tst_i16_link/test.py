@@ -26,7 +26,7 @@ def main():
 
      
     clickTab(waitForObject(":Data_CTabItem"), 25, 10, 0, Button.Button1)
-    mouseClick(waitForObject(":Slice as line plots_ToolItem_2"), 17, 14, 0, Button.Button1)
+    mouseClick(waitForObject(":Slice as line plots_ToolItem_4"), 17, 14, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table_4", "1/2"), 30, 36, 0, Button.Button1)
     mouseDrag(waitForObject(":Data_Scale_2"), 19, 22, 45, 1, Modifier.None, Button.Button1)
     # Check 1D plotted

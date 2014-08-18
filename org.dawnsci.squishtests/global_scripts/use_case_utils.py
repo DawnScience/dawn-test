@@ -105,7 +105,7 @@ def chooseSlice():
     vals = dawn_constants
     mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 8, 12, 0, Button.Button1)
 
-    mouseClick(waitForObject(":Slice as line plots_ToolItem"), 12, 14, 0, Button.Button1)
+    mouseClick(waitForObject(":Slice as line plots_ToolItem_3"), 12, 14, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table_3", "0/2"), 13, 24, 0, Button.Button1)
     mouseDrag(waitForObject(":Data_Scale"), 18, 22, 20, 0, Modifier.None, Button.Button1)
     mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
