@@ -88,8 +88,10 @@
 :Image Playback_Slider	{container=':Image Explorer.Image Playback_Group' isvisible='true' leftWidget=':Image Playback_Button_5' type='org.eclipse.swt.widgets.Slider'}
 :Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':_ToolBar_12' type='org.eclipse.swt.widgets.ToolItem'}
 :Images location...._Button	{caption='...' container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Images location_Button	{caption='' container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Images location_Label	{caption='' container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Images location_Text	{container=':Peem Analysis View.Images location_Group' isvisible='true' leftWidget=':Images location_Label' type='org.eclipse.swt.widgets.Text'}
+:Images location_Text_2	{container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Info_Table	{container=':76003.dat.Info_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Install to:_Label	{caption='Install to:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Install to:_Text	{isvisible='true' leftWidget=':Install to:_Label' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}

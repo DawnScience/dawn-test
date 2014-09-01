@@ -36,7 +36,7 @@ def main():
 #        snooze(1)
 #        type(waitForObject(":Images location_Text"), "<Return>")
 
-    clickButton(waitForObject(":Images location...._Button"))
+    clickButton(waitForObject(":Images location_Button"))
     chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema")
 
     #Play with slider...
