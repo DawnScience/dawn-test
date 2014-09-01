@@ -30,10 +30,10 @@ def main():
     type(waitForObject(":Project Explorer_Tree"), "<F5>")
     
     # Open result
-    openExample("data000.tiff", "data", "examples", "output", "two_images")
+    openExample("data000.tif", "data", "examples", "output", "two_images")
    
     snooze(3)
-    system = getPlottingSystem("data000.tiff")
+    system = getPlottingSystem("data000.tif")
 
     test.verify(system.getTraces().iterator().next().getData().getRank()==2, "Check image plotted")
 
