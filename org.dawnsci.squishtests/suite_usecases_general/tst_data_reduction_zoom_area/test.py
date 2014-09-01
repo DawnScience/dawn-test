@@ -74,7 +74,7 @@ def main():
     
     # Show plotted image
     snooze(2) 
-    system = getPlottingSystem("9758_Zoom_Profile.h5")
+    system = getPlottingSystem("9758_Zoom_Profile.nxs")
     test.verify(system.getRegions().size()==0)
     test.verify(system.getTraces().size()==1)
     test.passes("Something plotted from data reduction") 

@@ -83,7 +83,7 @@ def main():
     snooze(2) 
     mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 6, 12, 0, Button.Button1)
     snooze(3) 
-    system = getPlottingSystem("9758_Box_Profile.h5")
+    system = getPlottingSystem("9758_Box_Profile.nxs")
     test.verify(system.getRegions().size()==0)
     test.verify(system.getTraces().size()==1)
     test.passes("Something plotted from data reduction") 
