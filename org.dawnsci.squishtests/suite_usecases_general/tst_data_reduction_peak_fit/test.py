@@ -62,7 +62,7 @@ def main():
     # Plot some reduction
     snooze(20) # While open file...
     
-    clickTab(waitForObject(":9758_Peak_Fitting.h5_CTabItem",180000), 77, 14, 0, Button.Button1)
+#    clickTab(waitForObject(":Data_CTabItem_2",180000), 77, 14, 0, Button.Button1)
 
     mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 5, 13, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 7, 9, 0, Button.Button1)
