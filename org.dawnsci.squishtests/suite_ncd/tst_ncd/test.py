@@ -122,14 +122,14 @@ def main():
     #doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
     clickButton(waitForObject(":Data reduction pipeline.2. Sector integration_Button_2"))
  
-    mouseClick(waitForObject(":Results directory.Directory:_Text_2"))
+    mouseClick(waitForObject(":Results directory_Text"))
 
     #mouseDrag(waitForObject(":Results directory.Directory:_Text"), 229, 15, -319, -4, Modifier.None, Button.Button1)
-    type(waitForObject(":Results directory.Directory:_Text_2"), "<Ctrl+a>")
-    type(waitForObject(":Results directory.Directory:_Text_2"), "<Delete>")
-    type(waitForObject(":Results directory.Directory:_Text_2"), location[1:])
-    type(waitForObject(":Results directory.Directory:_Text_2"), "<Home>")
-    type(waitForObject(":Results directory.Directory:_Text_2"), location[0])
+    type(waitForObject(":Results directory_Text"), "<Ctrl+a>")
+    type(waitForObject(":Results directory_Text"), "<Delete>")
+    type(waitForObject(":Results directory_Text"), location[1:])
+    type(waitForObject(":Results directory_Text"), "<Home>")
+    type(waitForObject(":Results directory_Text"), location[0])
 
 
     clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem_2"), 181, 28, 0, Button.Button1)
