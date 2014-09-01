@@ -24,7 +24,7 @@ def main():
     expand(waitForObjectItem(":Project Explorer_Tree", "examples"))
     mouseClick(waitForObjectItem(":Project Explorer_Tree", "i22-4996.nxs"), 10, 16, 0, Button.Button3)
     activateItem(waitForObjectItem(":_Menu_2", "Open With"))
-    activateItem(waitForObjectItem(":Open With_Menu", "HDF5 Editor"))
+    activateItem(waitForObjectItem(":Open With_Menu", "Nexus/HDF5 Editor"))
     mouseClick(waitForObjectItem(":Data_Table_2", "2/0"), 6, 10, 0, Button.Button1)
 
     #we get the plotting system
@@ -39,7 +39,7 @@ def main():
     # Open HDF5 file with HDF5 Tree Editor
     mouseClick(waitForObjectItem(":Project Explorer_Tree", "i22-4996.nxs"), 10, 16, 0, Button.Button3)
     activateItem(waitForObjectItem(":_Menu_2", "Open With"))
-    activateItem(waitForObjectItem(":Open With_Menu", "HDF5 Tree Editor"))
+    activateItem(waitForObjectItem(":Open With_Menu", "Big Tree Editor"))
     expand(waitForObjectItem(":i22-4996.nxs_Tree", "entry1"))
     expand(waitForObjectItem(":i22-4996.nxs_Tree", "Rapid2D"))
     doubleClick(waitForObjectItem(":i22-4996.nxs_Tree", "data"), 25, 11, 0, Button.Button1)
