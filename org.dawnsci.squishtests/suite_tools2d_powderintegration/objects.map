@@ -1,0 +1,214 @@
+":Diffraction_Tree"	{}
+:2θ_Menu	{caption='2θ' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Available label decorations:.File Meta Data Decorator_TableCell	{caption='File Meta Data Decorator' column='0' container=':Preferences.Available label decorations:_Table' row='5' type='com.froglogic.squish.swt.TableCell'}
+:Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Beam Centre_TreeItem	{caption='Beam Centre' parentitem=':Detector_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:Calibrants_ToolItem	{caption='Calibrants' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Calibrate detector using rings - this is an experimental feature and does not work robustly_ToolItem	{caption='Calibrate detector using rings - this is an experimental feature and does not work robustly' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Calibrate detector using rings_ToolItem	{caption='Calibrate detector using rings' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Change Settings.Maximum_Label	{caption='Maximum' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Change Settings.Maximum_Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Maximum_Label' type='org.eclipse.swt.widgets.Text'}
+:Change Settings.Minimum: _Label	{caption='Minimum: ' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Change Settings.Minimum: _Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Minimum: _Label' type='org.eclipse.swt.widgets.Text'}
+:Configure Graph Settings.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Axes_TabItem	{caption='Axes' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Graph_TabItem	{caption='Graph' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Regions_TabItem	{caption='Regions' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Traces_TabItem	{caption='Traces' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings_Composite	{isvisible='true' occurrence='5' type='org.eclipse.swt.widgets.Composite' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings_Shell	{caption='Configure Graph Settings' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Configure Settings..._ToolItem	{caption='Configure Settings...' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Configure Settings..._ToolItem_2	{caption='Configure Settings...' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Confirm Delete.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Delete_Shell'}
+:Confirm Delete_Shell	{caption='Confirm Delete' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
+:Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Correction Options.Apply Detector Transmission Correction_Button	{caption='Apply Detector Transmission Correction' container=':Powder Integration.Correction Options_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Correction Options.Apply Polarisation Correction_Button	{caption='Apply Polarisation Correction' container=':Powder Integration.Correction Options_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Correction Options.Apply Solid Angle Correction_Button	{caption='Apply Solid Angle Correction' container=':Powder Integration.Correction Options_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Correction Options.Tranmission Factor:_Label	{caption='Tranmission Factor:' container=':Powder Integration.Correction Options_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Correction Options.Tranmission Factor:_Text	{container=':Powder Integration.Correction Options_CTabItem' isvisible='true' leftWidget=':Correction Options.Tranmission Factor:_Label' type='org.eclipse.swt.widgets.Text'}
+:Data_CTabItem	{caption='Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data_Composite	{container=':Data_CTabItem' isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Composite'}
+:Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_ErrorLog' type='org.eclipse.swt.widgets.ToolItem'}
+:Detector_TreeItem	{caption='Detector' container=':Diffraction_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:Diffraction_CTabItem	{caption='Diffraction' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Diffraction_Spinner	{container=':Diffraction_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Spinner'}
+:Diffraction_Tree	{container=':Diffraction_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
+:Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Experimental metadata_ToolItem	{caption='Experimental metadata' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
+:Export failure.Details >>_Button	{caption='Details >>' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Export failure_Shell'}
+:Export failure.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Export failure_Shell'}
+:Export failure_Shell	{caption='Export failure' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Export metadata to file_ToolItem	{caption='Export metadata to file' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Export.File name:_Label	{caption='File name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Export_Shell'}
+:Export.File name:_Text	{isvisible='true' leftWidget=':Export.File name:_Label' type='org.eclipse.swt.widgets.Text' window=':Export_Shell'}
+:Export.Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Export_Shell'}
+:Export.Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Export_Shell'}
+:Export_Shell	{caption='Export' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Export_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Export_Shell'}
+:File Header_CTabItem	{caption='File Header' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:File Header_Table	{container=':File Header_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:File Meta Data Decorator_ItemCheckbox	{container=':Available label decorations:.File Meta Data Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
+:File location.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':File location_Shell'}
+:File location.Please choose a location to import from._Label	{caption='Please choose a location to import from.' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':File location_Shell'}
+:File location.Please choose a location to import from._Label_2	{caption='Please choose a location.' isvisible='false' type='org.eclipse.swt.widgets.Label' window=':File location_Shell_2'}
+:File location.Please choose a location to import from._Tree	{aboveWidget=':File location.Please choose a location to import from._Label' isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':File location_Shell'}
+:File location.Please choose a location to import from._Tree_2	{aboveWidget=':File location.Please choose a location to import from._Label_2' isvisible='false' type='org.eclipse.swt.widgets.Tree' window=':File location_Shell_2'}
+:File location.Please choose a location._Label	{caption='Please choose a location.' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':File location_Shell'}
+:File location.Please choose a location._Tree	{aboveWidget=':File location.Please choose a location._Label' isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':File location_Shell'}
+:File location_Composite	{isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite' window=':File location_Shell'}
+:File location_Shell	{caption='File location' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:File location_Shell_2	{caption='File location' isvisible='false' type='org.eclipse.swt.widgets.Shell'}
+:Find outer rings_ToolItem	{caption='Find outer rings' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Image Gallery_CTabCloseBox	{container=':Image Gallery_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:Image Gallery_CTabItem	{caption='Image Gallery' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Image Gallery_Gallery	{container=':Image Gallery_CTabItem' isvisible='true' type='org.eclipse.nebula.widgets.gallery.Gallery'}
+:Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Image tools used to profile and inspect images._ToolItem_2	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
+:Image tools used to profile and inspect images._ToolItem_3	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
+:Image tools used to profile and inspect images._ToolItem_4	{caption='Image tools used to profile and inspect images.' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Image_Composite	{container=':ref-testscale_1_001.img.Image_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
+:Image_Composite_2	{container=':pow_M99S5_1_0001.cbf.Image_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
+:Image_ToolBar	{container=':ref-testscale_1_001.img.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Image_ToolBar_2	{container=':ref-screentest-crystal1_1_001.mccd.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Image_ToolBar_3	{container=':pow_M99S5_1_0001.cbf.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Import metadata from file_ToolItem	{caption='Import metadata from file' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Import metadata from file_ToolItem_2	{caption='Import metadata from file' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
+:Import...._Button	{caption='...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
+:Import.Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
+:Import.Image History_Button	{caption='Image History' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
+:Import.Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
+:Import.Original Data_Button	{caption='Original Data' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
+:Import_Button	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
+:Import_Shell	{caption='Import' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Integration Options.Azimuthal Integration_Button	{caption='Azimuthal Integration' container=':Integration Options.Integration Options_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Integration Options.Integration Options_Group	{caption='Integration Options' container=':Powder Integration.Integration Options_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Integration Options.Max:_Label	{caption='Max:' container=':Powder Integration.Integration Options_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Integration Options.Max:_Text	{container=':Powder Integration.Integration Options_CTabItem' isvisible='true' leftWidget=':Integration Options.Max:_Label' type='org.eclipse.swt.widgets.Text'}
+:Integration Options.Min:_Label	{caption='Min:' container=':Powder Integration.Integration Options_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Integration Options.Min:_Label_2	{caption='Min:' container=':Powder Integration.Integration Options_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Label'}
+:Integration Options.Min:_Text	{container=':Powder Integration.Integration Options_CTabItem' isvisible='true' leftWidget=':Integration Options.Min:_Label' type='org.eclipse.swt.widgets.Text'}
+:Integration Options.Min:_Text_2	{container=':Powder Integration.Integration Options_CTabItem' isvisible='true' leftWidget=':Integration Options.Min:_Label_2' type='org.eclipse.swt.widgets.Text'}
+:Integration Options.Number of Bins X:_Label	{caption='Number of Bins X:' container=':Integration Options.Integration Options_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Integration Options.Number of Bins X:_Text	{container=':Integration Options.Integration Options_Group' isvisible='true' leftWidget=':Integration Options.Number of Bins X:_Label' type='org.eclipse.swt.widgets.Text'}
+:Integration Options.Number of Bins Y:_Label	{caption='Number of Bins Y:' container=':Integration Options.Integration Options_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Integration Options.Number of Bins Y:_Text	{container=':Integration Options.Integration Options_Group' isvisible='true' leftWidget=':Integration Options.Number of Bins Y:_Label' type='org.eclipse.swt.widgets.Text'}
+:Integration Options.Radial Integration_Button	{caption='Radial Integration' container=':Integration Options.Integration Options_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Integration Options.Reset_Button	{caption='Reset' container=':Integration Options.Integration Options_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Integration Options.Set Azimuthal Range_Button	{caption='Set Azimuthal Range' container=':Powder Integration.Integration Options_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Integration Options.Set Radial Range_Button	{caption='Set Radial Range' container=':Powder Integration.Integration Options_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Integration Options.Set Radial Range_Composite	{aboveWidget=':Integration Options.Set Radial Range_Button' container=':Powder Integration.Integration Options_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Composite'}
+:Lock the diffraction data and apply it to newly opened files._ToolItem	{caption?='Lock the diffraction data and apply it to newly opened file*' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Non pixel splitting 2D_Menu	{caption='Non pixel splitting 2D' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Non pixel splitting 2D_ToolItem	{caption='Non pixel splitting 2D' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
+:Non pixel splitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Non pixel splitting_ToolItem	{caption='Non pixel splitting' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
+:One-click beam centre_ToolItem	{caption='One-click beam centre' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Open Perspective.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Open Perspective_Shell'}
+:Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
+:Perform Auto Scale_ToolItem	{caption='Perform Auto Scale' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
+:Pixel splitting 2D_Menu	{caption='Pixel splitting 2D' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Pixel splitting_Menu	{caption='Pixel splitting' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Plot_Composite	{container=':i22-104754.nxs.Plot_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
+:Plot_ToolBar	{container=':i22-104754.nxs.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
+:Plotting Systems_CTabCloseBox	{container=':Plotting Systems_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Powder Integration.Correction Options_CTabItem	{caption='Correction Options' container=':Powder Integration_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:Powder Integration.Integration Options_CTabItem	{caption='Integration Options' container=':Powder Integration_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:Powder Integration_CTabItem	{caption='Powder Integration' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Preferences.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
+:Preferences.Available label decorations:_Label	{caption='Available label decorations:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Preferences_Shell'}
+:Preferences.Available label decorations:_Table	{aboveWidget=':Preferences.Available label decorations:_Label' isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Preferences_Shell'}
+:Preferences.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
+:Preferences_Shell	{caption='Preferences' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Preferences_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
+:Problem Occurred.Details >>_Button	{caption='Details >>' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Problem Occurred_Shell'}
+:Problem Occurred.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Problem Occurred_Shell'}
+:Problem Occurred_Shell	{caption='Problem Occurred' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Q_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Refine beam centre_ToolItem	{caption='Refine beam centre' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Refine beam centre_ToolItem_2	{caption='Refine beam centre' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
+:Regions.Region Location_Label	{caption='Region Location' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Regions.Region Location_Table	{aboveWidget=':Regions.Region Location_Label' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Regions_Spinner	{container=':Configure Graph Settings.Regions_TabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Spinner'}
+:Resolution rings_ToolItem	{caption='Resolution rings' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Rubberband Zoom_ToolItem	{caption='Rubberband Zoom' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
+:SaveMetaData.nxs.Plot_CTabItem	{caption='Plot' container=':SaveMetaData.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:SaveMetaData.nxs.Tree_CTabItem	{caption='Tree' container=':SaveMetaData.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:SaveMetaData.nxs_CTabCloseBox	{container=':SaveMetaData.nxs_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:SaveMetaData.nxs_CTabItem	{caption='SaveMetaData.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Science_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Science_Menu_2	{caption='Science' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse_ToolItem	{caption='Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse_ToolItem_2	{caption='Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
+:Select Trace_Combo	{container=':Traces.Select Trace_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
+:Show Advanced Options_ToolItem	{caption='Show Advanced Options' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
+:Show View.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Show View_Shell'}
+:Show View_Menu	{caption='Show View' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Show View_Shell	{caption='Show View' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Show View_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Show View_Shell'}
+:Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
+:Shows background operations in Progress view_ToolItem	{caption='Shows background operations in Progress view' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
+:Size_Menu	{caption='Size' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Tree_Tree	{container=':SaveMetaData.nxs.Tree_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:View Menu_ToolItem	{caption='View Menu' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
+:View Menu_ToolItem_2	{caption='View Menu' container=':_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
+:View Menu_ToolItem_3	{caption='View Menu' container=':_ToolBar_10' type='org.eclipse.swt.widgets.ToolItem'}
+:Welcome_CTabCloseBox	{container=':Welcome_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:Welcome_CTabItem	{caption='Welcome' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Window_Menu	{caption='Window' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Workbench Window	{data?='org.eclipse.ui.internal.WorkbenchWindow*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:X.1022.83 *_TreeSubItem	{caption='1022.83 *' column='2' container=':X_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
+:X_TreeItem	{caption='X' parentitem=':Beam Centre_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:Y.1000.58 *_TreeSubItem	{caption='1000.58 *' column='2' container=':Y_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
+:Y_TreeItem	{caption='Y' parentitem=':Beam Centre_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:_CTabFolder	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder_2	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_Canvas	{isvisible='true' type='org.eclipse.swt.widgets.Canvas' window=':Workbench Window'}
+:_Composite	{container=':_CTabFolder' isvisible='false' type='org.eclipse.swt.widgets.Composite'}
+:_Composite_2	{isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite' window=':Workbench Window'}
+:_FigureCanvas	{isvisible='true' type='org.eclipse.draw2d.FigureCanvas' window=':Workbench Window'}
+:_Label	{caption='' container=':_CTabFolder' isvisible='false' type='org.eclipse.swt.widgets.Label'}
+:_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:_ProgressBar	{isvisible='true' type='org.eclipse.swt.widgets.ProgressBar' window=':Workbench Window'}
+:_ProgressRegion$1	{isvisible='true' type='org.eclipse.ui.internal.progress.ProgressRegion$1' window=':Workbench Window'}
+:_Sash	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
+:_Sash_2	{isvisible='true' occurrence='3' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
+:_ToolBar	{container=':_CTabFolder' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_10	{container=':_CTabFolder_2' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_2	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' leftWidget=':_Label' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_3	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_4	{container=':_CTabFolder' firstItemText='Import metadata from file' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_5	{container=':_CTabFolder_2' firstItemText='Import metadata from file' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_6	{firstItemText='Shows background operations in Progress view' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_7	{container=':_CTabFolder_2' firstItemText='Q' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_8	{container=':_CTabFolder_2' firstItemText='d' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_9	{container=':_CTabFolder_2' firstItemText='pixel' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_ErrorLog	{firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:d_Menu	{caption='d' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:i22-104754.nxs.Plot_CTabItem	{caption='Plot' container=':i22-104754.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:i22-104754.nxs_CTabItem	{caption='i22-104754.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:pixel_Menu	{caption='pixel' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:pixel_ToolItem	{caption='pixel' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
+:pow_M99S5_1_0001.cbf.Image_CTabItem	{caption='Image' container=':pow_M99S5_1_0001.cbf_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:pow_M99S5_1_0001.cbf_CTabItem	{caption='pow_M99S5_1_0001.cbf' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:ref-screentest-crystal1_1_001.mccd.Image_CTabItem	{caption='Image' container=':ref-screentest-crystal1_1_001.mccd_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:ref-screentest-crystal1_1_001.mccd_CTabCloseBox	{container=':ref-screentest-crystal1_1_001.mccd_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:ref-screentest-crystal1_1_001.mccd_CTabItem	{caption='ref-screentest-crystal1_1_001.mccd' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:ref-testscale_1_001.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_001.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:ref-testscale_1_001.img_CTabItem	{caption='ref-testscale_1_001.img' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+iem{Detector}	{}
