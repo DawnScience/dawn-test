@@ -1,38 +1,6 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_constants.py"))
 
-def testColormap():
-    mouseClick(waitForObject(":Configure Settings..._ToolItem"), 20, 5, 0, Button.Button1)
-    clickTab(waitForObject(":Configure Graph Settings.Image Traces_TabItem"))
-    
-
-    low = waitForObject(":Histogramming.Minimum Intensity_Text").text
-    high = waitForObject(":Histogramming.Maximum Intensity_Text").text
-
-    clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
-    clickButton(waitForObject(":Colour mapping.Log Scale_Button"))
-    checkHisto(low,high)
-    clickButton(waitForObject(":Colour mapping.Log Scale_Button"))
-    checkHisto(low,high)
-    clickButton(waitForObject(":Colour mapping.Log Scale_Button"))
-    checkHisto(low,high)
-    clickButton(waitForObject(":Colour mapping.Log Scale_Button"))
-
-def checkHisto(low,high):
-    snooze(1)
-    mouseClick(waitForObject(":Configure Settings..._ToolItem"), 20, 5, 0, Button.Button1)
-    clickTab(waitForObject(":Configure Graph Settings.Image Traces_TabItem"))
-    
-    actualLow = waitForObject(":Histogramming.Minimum Intensity_Text").text
-    actualHigh = waitForObject(":Histogramming.Maximum Intensity_Text").text
-    
-    test.verify(low == actualLow, "Test: " + low + " equals actual value of:" + actualLow)
-    test.verify(high == actualHigh, "Test: " + high + " equals actual value of:" + actualHigh)
-
-    clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
-    
-
-
 def main():
     vals = dawn_constants
     startOrAttachToDAWN()
@@ -51,9 +19,7 @@ def main():
     type(waitForObject(":_FigureCanvas"), "h")
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Colour mapping"))    
-    
-    testColormap()
-    
+        
     snooze(1.0)
     mouseClick(waitForObject(":Configure Settings..._ToolItem"))
     clickTab(waitForObject(":Configure Graph Settings.Image Traces_TabItem"))
@@ -62,9 +28,7 @@ def main():
     clickButton(waitForObject(":Configure Graph Settings.Apply_Button"))
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     type(waitForObject(":_FigureCanvas"), "h")
-    
-    testColormap()
-    
+        
     snooze(1.0)
     mouseClick(waitForObject(":Configure Settings..._ToolItem"))
     clickTab(waitForObject(":Configure Graph Settings.Image Traces_TabItem"))
@@ -73,7 +37,5 @@ def main():
     clickButton(waitForObject(":Configure Graph Settings.Apply_Button"))
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     type(waitForObject(":_FigureCanvas"), "h")
-    
-    testColormap()
-    
+       
     closeOrDetachFromDAWN()
