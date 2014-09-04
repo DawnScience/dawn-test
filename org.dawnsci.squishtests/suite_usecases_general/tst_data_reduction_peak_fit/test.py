@@ -43,6 +43,7 @@ def main():
 
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
     activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
+
     
     proxy  = waitForObject(":9758.nxs_CTabItem")
     widget = proxy.control
@@ -60,15 +61,16 @@ def main():
     clickButton(waitForObject(":Finish_Button"))
     
     # Plot some reduction
-    snooze(20) # While open file...
+    snooze(60) # While open file...
     
 #    clickTab(waitForObject(":Data_CTabItem_2",180000), 77, 14, 0, Button.Button1)
 
-    mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 5, 13, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 7, 9, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table_2", "3/0"), 6, 5, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table_2", "4/0"), 6, 8, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table_2", "2/0"), 5, 10, 0, Button.Button1)
+    clickTab(waitForObject(":9758_Peak_Fitting.nxs_CTabItem"))
+    mouseClick(waitForObjectItem(":Data_Table_2", "0/0"))
+    mouseClick(waitForObjectItem(":Data_Table_2", "1/0"))
+    mouseClick(waitForObjectItem(":Data_Table_2", "3/0"))
+    mouseClick(waitForObjectItem(":Data_Table_2", "4/0"))
+    mouseClick(waitForObjectItem(":Data_Table_2", "2/0"))
     
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()

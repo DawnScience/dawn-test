@@ -20,6 +20,7 @@
 :9758_Box_Profile_reduction.h5_CTabItem	{caption='9758_Box_Profile.h5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :9758_Peak_Fitting.h5_CTabCloseBox	{container=':9758_Peak_Fitting.h5_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :9758_Peak_Fitting.h5_CTabItem	{caption='9758_Peak_Fitting.h5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:9758_Peak_Fitting.nxs_CTabItem	{caption='9758_Peak_Fitting.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :9758_Peak_Fitting_reduction.h5_CTabItem	{caption='9758_Peak_Fitting_reduction.h5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Adds an expression which can be plotted. Must be function of other data sets._ToolItem	{caption='Adds an expression which can be plotted. Must be function of other data sets.' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Adds an expression which can be plotted. Must be function of other data sets._ToolItem_2	{caption='Adds an expression which can be plotted. Must be function of other data sets.' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
