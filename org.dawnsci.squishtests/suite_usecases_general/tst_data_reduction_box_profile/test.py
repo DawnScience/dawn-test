@@ -90,12 +90,11 @@ def main():
 
 
     # Do a line fit on it just for fun
-    
-    mouseClick(waitForObject(":XY plotting tools_ToolItem_3"), 31, 6, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem_7"), 31, 6, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
     activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Line Fitting"))
     
-    proxy  = waitForObject(":9758_Box_Profile_reduction.h5_CTabItem")
+    proxy  = waitForObject(":9758_Box_Profile.nxs_CTabItem")
     widget = proxy.control
     b = widget.bounds
     mouseDrag(widget, b.x+100, b.y+100, 600, 300, 0, Button.Button1)
