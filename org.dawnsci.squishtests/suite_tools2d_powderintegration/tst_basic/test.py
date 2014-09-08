@@ -19,7 +19,7 @@ def getTraceShape(system):
     return t.data.getShape()
 
 def waitOnProgress():
-    snooze(1)
+    snooze(3)
     i = 0;
     while i < 20 and object.exists(":_ProgressBar"):
         snooze(1)
@@ -52,19 +52,21 @@ def main():
     ptp =getTracePeakToPeak(system)
     x0 = getXTraceFirst(system)
     
-    test.verify( abs((ptp) - 1500) < 100 , "Peak to peak acceptable")
-    test.verify( abs(x0 - 0.01) < 0.01 , "x0 acceptable")
+    test.verify( abs((ptp) - 1500) < 100 , "Peak to peak acceptable - non 1d")
+    test.verify( abs(x0 - 0.01) < 0.01 , "x0 acceptable - non 1d")
     
     mouseClick(waitForObject(":Show Advanced Options_ToolItem"), 5, 5, 0, Button.Button1)
     
 
     clickButton(waitForObject(":Integration Options.Set Radial Range_Button"))
     mouseClick(waitForObject(":Integration Options.Min:_Text"), 25, 4, 0, Button.Button1)
+    type(waitForObject(":Integration Options.Number of Bins X:_Text"), "<Ctrl+a>")
     type(waitForObject(":Integration Options.Min:_Text"), "<Numpad 1>")
     type(waitForObject(":Integration Options.Min:_Text"), "<Numpad Decimal>")
     type(waitForObject(":Integration Options.Min:_Text"), "<Numpad 6>")
     
     mouseClick(waitForObject(":Integration Options.Max:_Text"), 51, 6, 0, Button.Button1)
+    type(waitForObject(":Integration Options.Number of Bins X:_Text"), "<Ctrl+a>")
     type(waitForObject(":Integration Options.Max:_Text"), "<Numpad 1>")
     type(waitForObject(":Integration Options.Max:_Text"), "<Numpad Decimal>")
     type(waitForObject(":Integration Options.Max:_Text"), "<Numpad 8>")
@@ -81,8 +83,8 @@ def main():
     ptp =getTracePeakToPeak(system)
     x0 = getXTraceFirst(system)
     
-    test.verify( ptp < 40 , "Peak to peak acceptable")
-    test.verify( x0 == 1.6, "x0 acceptable")
+    test.verify( ptp < 40 , "Peak to peak acceptable - non 1d range")
+    test.verify( x0 == 1.6, "x0 acceptable- non 1d range")
     
     mouseClick(waitForObject(":View Menu_ToolItem_3"), 14, 5, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Non pixel splitting"))
@@ -93,8 +95,8 @@ def main():
     ptp1 = getTracePeakToPeak(system)
     x0 = getXTraceFirst(system)
     
-    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable")
-    test.verify( x0 == 1.6, "x0 acceptable")
+    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable - split 1d range")
+    test.verify( x0 == 1.6, "x0 acceptable -  split 1d range")
     
     clickButton(waitForObject(":Integration Options.Set Radial Range_Button"))
     clickButton(waitForObject(":Integration Options.Reset_Button"))
@@ -104,8 +106,8 @@ def main():
     ptp = getTracePeakToPeak(system)
     x0 = getXTraceFirst(system)
     
-    test.verify( abs(x0 - 0.01) < 0.01 , "x0 acceptable")
-    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable")
+    test.verify( abs(x0 - 0.01) < 0.01 , "x0 acceptable - split 1d")
+    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable- split 1d")
     
     mouseClick(waitForObject(":View Menu_ToolItem_3"), 8, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Pixel splitting"))
@@ -114,8 +116,8 @@ def main():
     waitOnProgress()
     
     sh = getTraceShape(system)
-    test.verify( sh.at(0) == 1797 , "x acceptable")
-    test.verify( sh.at(1) == 1797 , "y acceptable")
+    test.verify( sh.at(0) == 1797 , "x acceptable - non 2d")
+    test.verify( sh.at(1) == 1797 , "y acceptable - non 2d")
     
     mouseClick(waitForObject(":Integration Options.Number of Bins Y:_Text"), 156, 11, 0, Button.Button1)
     type(waitForObject(":Integration Options.Number of Bins X:_Text"), "<Ctrl+a>")
@@ -123,17 +125,14 @@ def main():
     type(waitForObject(":Integration Options.Number of Bins Y:_Text"), "<Numpad 6>")
     type(waitForObject(":Integration Options.Number of Bins Y:_Text"), "<Numpad 0>")
     type(waitForObject(":Integration Options.Number of Bins Y:_Text"), "<Numpad Return>")
-    
-
-    mouseClick(waitForObject(":_ProgressBar"), 7, 6, 0, Button.Button1)
 
     waitOnProgress()
     
     ptp = getTracePeakToPeak(system)
     sh = getTraceShape(system)
 
-    test.verify( sh.at(0) == 360 , "x acceptable")
-    test.verify( sh.at(1) == 1797 , "y acceptable")
+    test.verify( sh.at(0) == 360 , "x acceptable - non 2d 360")
+    test.verify( sh.at(1) == 1797 , "y acceptable - non 2d 360")
     
     mouseClick(waitForObject(":View Menu_ToolItem_3"), 8, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Non pixel splitting 2D"))
@@ -142,7 +141,7 @@ def main():
     waitOnProgress()
     
     ptp1 = getTracePeakToPeak(system)
-    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable")
+    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable - split 2d 360")
     
     mouseClick(waitForObject(":View Menu_ToolItem_3"), 14, 5, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Pixel splitting 2D"))
@@ -156,7 +155,7 @@ def main():
     activateItem(waitForObjectItem(":Q_Menu", "2θ"))
     snooze(2)
     x1 = getXTraceFirst(system)
-    test.verify( not (x0 == x1) , "x0 value acceptable")
+    test.verify( not (x0 == x1) , "x0 value acceptable - tth")
     
     ptp = getTracePeakToPeak(system)
     
@@ -165,13 +164,13 @@ def main():
     waitOnProgress()
     ptp1 = getTracePeakToPeak(system)
     
-    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable")
+    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable - solid angle")
     ptp = ptp1
     
     clickButton(waitForObject(":Correction Options.Apply Polarisation Correction_Button"))
     waitOnProgress()
     ptp1 = getTracePeakToPeak(system)
-    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable")
+    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable - pol")
     ptp = ptp1
     
     clickButton(waitForObject(":Correction Options.Apply Detector Transmission Correction_Button"))
@@ -183,7 +182,7 @@ def main():
     type(waitForObject(":Correction Options.Tranmission Factor:_Text"), "<Numpad Return>")
     waitOnProgress()
     ptp1 = getTracePeakToPeak(system)
-    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable")
+    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable- trans")
     snooze(1)
     
 
