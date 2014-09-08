@@ -17,8 +17,9 @@ def main():
     # Exit (or disconnect) DAWN
     openExternalFile("315029.dat")
     mouseClick(waitForObject(":Data_Table"), 70, 293, 0, Button.Button1)
-    mouseClick(waitForObject(":Adds an expression which can be plotted. Must be function of other data sets._ToolItem_2"))
+    mouseClick(waitForObject(":Adds an expression which can be plotted. Must be function of other data sets._ToolItem_3"))
     type(waitForObject(":Data_Text"), "dat:mean(Pilatus,0)")
+
     type(waitForObject(":Data_Text"), "<Return>")
     
     system = getPlottingSystem("315029.dat")
