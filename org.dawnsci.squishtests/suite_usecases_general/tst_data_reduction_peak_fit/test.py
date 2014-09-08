@@ -53,7 +53,7 @@ def main():
 
     mouseClick(waitForObject(":Data reduction..._ToolItem_2"), 2, 10, 0, Button.Button1)
     snooze(1)
-    mouseClick(waitForObject(":Dataset Name_CCombo"), 467, 9, 0, Button.Button1)
+    mouseClick(waitForObject(":Dataset Name_CCombo"))
     mouseClick(waitForObjectItem(":_List", "/entry1/EDXD_Element_01/data"), 214, 11, 0, Button.Button1)
     snooze(5)
     # Do some reduction
