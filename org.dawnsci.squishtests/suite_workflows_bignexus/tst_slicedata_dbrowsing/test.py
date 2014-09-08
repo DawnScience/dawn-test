@@ -52,6 +52,7 @@ def main():
     activateItem(waitForObjectItem(":Pop Up Menu", "Slice index (only)"))
     mouseClick(waitForObjectItem(":Data_Table_2", "0/2"), 27, 24, 0, Button.Button1)
 
+
     snooze(1)
     for i in range(0):
         clickButton(waitForObject(":Data_Button"))
@@ -67,14 +68,11 @@ def main():
 
         
     mouseClick(waitForObject(":Slice as image_ToolItem_2"), 10, 13, 0, Button.Button1)
-    #mouseClick(waitForObject(":Keep aspect ratio_ToolItem_2"), 5, 6, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table_2", "1/2"), 27, 24, 0, Button.Button1)
     snooze(1)
 
     mouseClick(waitForObjectItem(":Data_Table_2", "0/1"), 5, 5, 0, Button.Button1)
     mouseClick(waitForObjectItem(":_List", "Y"), 10, 11, 0, Button.Button1)
-#    mouseClick(waitForObject(":Data_CCombo"), 48, 27, 0, Button.Button1)
-    #mouseClick(waitForObjectItem(":_List", "Y"), 22, 11, 0, Button.Button1)
 
     mouseClick(waitForObjectItem(":Data_Table_2", "1/2"), 27, 24, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table_2", "1/3"), 27, 24, 0, Button.Button1)
