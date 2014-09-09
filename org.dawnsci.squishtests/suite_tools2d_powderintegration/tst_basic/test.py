@@ -61,27 +61,23 @@ def main():
     clickButton(waitForObject(":Integration Options.Set Radial Range_Button"))
     mouseClick(waitForObject(":Integration Options.Min:_Text"), 25, 4, 0, Button.Button1)
     type(waitForObject(":Integration Options.Number of Bins X:_Text"), "<Ctrl+a>")
-    type(waitForObject(":Integration Options.Min:_Text"), "<Numpad 1>")
-    type(waitForObject(":Integration Options.Min:_Text"), "<Numpad Decimal>")
-    type(waitForObject(":Integration Options.Min:_Text"), "<Numpad 6>")
+
+    type(waitForObject(":Integration Options.Min:_Text"), "1.6")
     
     mouseClick(waitForObject(":Integration Options.Max:_Text"), 51, 6, 0, Button.Button1)
     type(waitForObject(":Integration Options.Number of Bins X:_Text"), "<Ctrl+a>")
-    type(waitForObject(":Integration Options.Max:_Text"), "<Numpad 1>")
-    type(waitForObject(":Integration Options.Max:_Text"), "<Numpad Decimal>")
-    type(waitForObject(":Integration Options.Max:_Text"), "<Numpad 8>")
+    type(waitForObject(":Integration Options.Max:_Text"), "1.8")
     
     mouseDrag(waitForObject(":Integration Options.Number of Bins X:_Text"), 74, 12, 45, 2, Modifier.None, Button.Button1)
     type(waitForObject(":Integration Options.Number of Bins X:_Text"), "<Ctrl+a>")
-    type(waitForObject(":Integration Options.Number of Bins X:_Text"), "<Numpad 1>")
-    type(waitForObject(":Integration Options.Number of Bins X:_Text"), "<Numpad 0>")
-    type(waitForObject(":Integration Options.Number of Bins X:_Text"), "<Numpad 0>")
-    type(waitForObject(":Integration Options.Number of Bins X:_Text"), "<Numpad Return>")
-    
+    type(waitForObject(":Integration Options.Number of Bins X:_Text"), "100")
+    type(waitForObject(":Integration Options.Number of Bins X:_Text"), "<Return>")
+
     waitOnProgress()
     
-    ptp =getTracePeakToPeak(system)
+    ptp = getTracePeakToPeak(system)
     x0 = getXTraceFirst(system)
+
     
     test.verify( ptp < 40 , "Peak to peak acceptable - non 1d range")
     test.verify( x0 == 1.6, "x0 acceptable- non 1d range")
@@ -121,10 +117,8 @@ def main():
     
     mouseClick(waitForObject(":Integration Options.Number of Bins Y:_Text"), 156, 11, 0, Button.Button1)
     type(waitForObject(":Integration Options.Number of Bins X:_Text"), "<Ctrl+a>")
-    type(waitForObject(":Integration Options.Number of Bins Y:_Text"), "<Numpad 3>")
-    type(waitForObject(":Integration Options.Number of Bins Y:_Text"), "<Numpad 6>")
-    type(waitForObject(":Integration Options.Number of Bins Y:_Text"), "<Numpad 0>")
-    type(waitForObject(":Integration Options.Number of Bins Y:_Text"), "<Numpad Return>")
+    type(waitForObject(":Integration Options.Number of Bins Y:_Text"), "360")
+    type(waitForObject(":Integration Options.Number of Bins Y:_Text"), "<Return>")
 
     waitOnProgress()
     
@@ -176,10 +170,8 @@ def main():
     clickButton(waitForObject(":Correction Options.Apply Detector Transmission Correction_Button"))
     mouseClick(waitForObject(":Correction Options.Tranmission Factor:_Text"), 101, 19, 0, Button.Button1)
     type(waitForObject(":Correction Options.Tranmission Factor:_Text"), "<Ctrl+a>")
-    type(waitForObject(":Correction Options.Tranmission Factor:_Text"), "<Numpad 0>")
-    type(waitForObject(":Correction Options.Tranmission Factor:_Text"), "<Numpad Decimal>")
-    type(waitForObject(":Correction Options.Tranmission Factor:_Text"), "<Numpad 5>")
-    type(waitForObject(":Correction Options.Tranmission Factor:_Text"), "<Numpad Return>")
+    type(waitForObject(":Correction Options.Tranmission Factor:_Text"), "0.5")
+    type(waitForObject(":Correction Options.Tranmission Factor:_Text"), "<Return>")
     waitOnProgress()
     ptp1 = getTracePeakToPeak(system)
     test.verify( not (ptp1 == ptp) , "Peak to peak acceptable- trans")
