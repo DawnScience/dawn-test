@@ -15,7 +15,6 @@ def main():
     # will close the Welcome screen 
     startOrAttachToDAWN()
 
-    setupEPDPython()
     #create i12 folder in data/examples
     createDirectory("/scratch/workspace/suite_python_scripts/tst_i12_auto_peakfitting/workspace/data/examples", "i12")
     #Add peema test files to data project
@@ -24,7 +23,7 @@ def main():
     #Open Python perspective
     openPerspective("Python") 
     
-    snooze(15)
+    snooze(5)
     mouseClick(waitForObject(":Open Console_ToolItem"), 33, 11, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
     clickButton(waitForObject(":Jython console_Button"))
@@ -41,11 +40,11 @@ def main():
         if "i12_edxd_q_calibrator_v3_ceria.py" in child.text:
             doubleClick(child, 5, 5, 0, Button.Button1)
             continue
-    
+    snooze(1)
+    clickButton(waitForObject(":Python not configured.Don't ask again_Button"))
+    snooze(0.5)
     clickTab(waitForObject(":i12_edxd_q_calibrator_v3_ceria_CTabItem"), 131, 15, 0, Button.Button1)
-    mouseClick(waitForObject(":Activates the interactive console. (Ctrl+Alt+Enter)_ToolItem"), 12, 8, 0, Button.Button1)
     snooze(2)
-    clickTab(waitForObject(":i12_edxd_q_calibrator_v3_ceria_CTabItem"), 131, 15, 0, Button.Button1)
     mouseClick(waitForObject(":Activates the interactive console. (Ctrl+Alt+Enter)_ToolItem"), 12, 8, 0, Button.Button1)
     snooze(2)
     

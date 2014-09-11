@@ -103,6 +103,7 @@
 :Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Position_TableColumn	{caption='Position' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
+:Preferences.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Auto Config_Button	{caption='Advanced Auto-Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Connect console to a Debug Session?_Button	{caption='' isvisible='true' leftWidget=':Preferences.Connect console to a Debug Session?_Label' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
@@ -112,6 +113,7 @@
 :Preferences.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Python interpreters (e.g.: python.exe)_Label	{caption='Python interpreters (e.g.: python.exe)' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Preferences_Shell'}
 :Preferences.Python interpreters (e.g.: python.exe)_Tree	{aboveWidget=':Preferences.Python interpreters (e.g.: python.exe)_Label' isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
+:Preferences.Remove_Button	{caption='Remove' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences_CLabel	{isvisible='true' type='org.eclipse.swt.custom.CLabel' window=':Preferences_Shell'}
 :Preferences_Composite	{isvisible='true' occurrence='17' type='org.eclipse.swt.widgets.Composite' window=':Preferences_Shell'}
 :Preferences_Shell	{caption='Preferences' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -124,6 +126,8 @@
 :PyDev Package Explorer_Tree	{container=':PyDev Package Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Python console_Button	{caption='Python console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem	{caption='Enthought EPD Free' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:Python not configured.Don't ask again_Button	{caption='Don\\'t ask again' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Python not configured_Shell'}
+:Python not configured_Shell	{caption='Python not configured' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Regions.Selection Region_Group	{caption='Selection Region' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Remove Annotation.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Remove Annotation_Shell'}
@@ -206,6 +210,7 @@
 :_ToolBar_7	{firstItemText='Activates the interactive console. (Ctrl+Alt+Enter)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_8	{container=':_CTabFolder_5' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_9	{container=':_CTabFolder_5' firstItemText='New fit selection.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:i12_edxd_q_calibrator_v3_ceria_CTabCloseBox	{container=':i12_edxd_q_calibrator_v3_ceria_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :i12_edxd_q_calibrator_v3_ceria_CTabItem	{caption='i12_edxd_q_calibrator_v3_ceria' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :i12_edxd_q_calibrator_v3_ceria_StyledTextWithoutVerticalBar	{container=':i12_edxd_q_calibrator_v3_ceria_CTabItem' isvisible='true' type='org.python.pydev.overview_ruler.StyledTextWithoutVerticalBar'}
 :image0001.pgm.Image_CTabItem	{caption='Image' container=':image0001.pgm_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
