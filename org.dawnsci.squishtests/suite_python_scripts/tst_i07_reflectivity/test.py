@@ -27,7 +27,7 @@ def main():
     type(waitForObject(":Project name:_Text"), "reflectivity")
     clickButton(waitForObject(":Next >_Button_2"))
     clickButton(waitForObject(":Finish_Button_2"))
-    clickButton(waitForObject(":Finish_Button_2"))
+    snooze(1)
     clickButton(waitForObject(":Open Associated Perspective?.No_Button"))
     mouseClick(waitForObjectItem(":Project Explorer_Tree", "reflectivity"), 21, 5, 0, Button.Button3)
     activateItem(waitForObjectItem(":_Menu_4", "New"))
