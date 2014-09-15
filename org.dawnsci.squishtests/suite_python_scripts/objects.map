@@ -1,5 +1,10 @@
 :*Untitled 1_CTabItem	{caption='*Untitled 1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
+:*re-reflect_CTabItem	{caption='*re-reflect' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:*re-reflect_StyledTextWithoutVerticalBar	{container=':*re-reflect_CTabItem' isvisible='true' type='org.python.pydev.overview_ruler.StyledTextWithoutVerticalBar'}
+:*reflectivity_CTabItem	{caption='*reflectivity' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:*reflectivity_StyledTextWithoutVerticalBar	{container=':*reflectivity_CTabItem' isvisible='true' type='org.python.pydev.overview_ruler.StyledTextWithoutVerticalBar'}
+:184476_rerefl_bkg1.dat_CTabItem	{caption='184476_rerefl_bkg1.dat' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :36153_TESTING_2014-04-23_calib_CeO2.txt_CTabCloseBox	{container=':36153_TESTING_2014-04-23_calib_CeO2.txt_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :36153_TESTING_2014-04-23_calib_CeO2.txt_CTabItem	{caption='36153_TESTING_2014-04-23_calib_CeO2.txt' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :96356.dat.Plot_CTabItem	{caption='Plot' container=':96356.dat_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
@@ -10,15 +15,19 @@
 :Area_TableColumn	{caption='Area' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Browse..._Button	{caption='Browse...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
+:Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Change Settings.Log_Button	{caption='Log' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Change Settings.Name: _Label	{caption='Name: ' container=':Traces.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Name: _Text	{container=':Traces.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Name: _Label' type='org.eclipse.swt.widgets.Text'}
 :Change Settings_Composite	{container=':Traces.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Composite'}
 :Cheat Sheets_CTabItem	{caption='Cheat Sheets' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Choose the project type_Group	{caption='Choose the project type' isvisible='true' type='org.eclipse.swt.widgets.Group' window=':_Shell'}
 :Choose trace for fit._ToolItem	{caption='Choose trace for fit.' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Clear Console_ToolItem	{caption='Clear Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Clear all regions found in the fitting_ToolItem	{caption='Clear all regions found in the fitting' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
 :Close wizard automatically on successful installation._Button	{caption='Close wizard automatically on successful installation.' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
+:Collapse All  (Ctrl+Shift+Numpad_Divide)_ToolItem	{caption='Collapse All  (Ctrl+Shift+Numpad_Divide)' container=':_ToolBar_12' type='org.eclipse.swt.widgets.ToolItem'}
 :Configure Graph Settings.Annotations_TabItem	{caption='Annotations' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Axes_TabItem	{caption='Axes' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
@@ -36,12 +45,21 @@
 :Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Console_CTabItem_2	{caption='Console' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Console_StyledText	{basetype='org.eclipse.swt.custom.StyledText' container=':Console_CTabItem_2' isvisible='true'}
 :Data Analysis_TreeItem	{caption='Data Analysis' container=':Preferences_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Tree	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Data_TreeItem	{caption='Data' container=':PyDev Package Explorer_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Debug_TableCell	{caption='Debug' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
+:Debug_ToolItem	{caption='Debug' container=':_ToolBar_15' type='org.eclipse.swt.widgets.ToolItem'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
+:Delete Resources.Delete project contents on disk (cannot be undone)_Button	{caption='Delete project contents on disk (cannot be undone)' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Delete Resources_Shell'}
+:Delete Resources.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Delete Resources_Shell'}
+:Delete Resources_Shell	{caption='Delete Resources' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:EP_errorPropagation.ipf  4.5 KB  15/09/14 09:49 AM_TreeItem	{caption='EP_errorPropagation.ipf  4.5 KB  15/09/14 09:49 AM' parentitem=':src_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:EP_errorPropagation.ipf  4.5 KB  15/09/14 09:49 AM_TreeItem_2	{caption='EP_errorPropagation.ipf  4.5 KB  15/09/14 09:49 AM' parentitem=':reflectivity_TreeItem_4' type='org.eclipse.swt.widgets.TreeItem'}
 :Enthought EPD Free Installer_Label	{caption='Enthought EPD Free Installer' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Environment.New..._Button	{caption='New...' container=':Preferences.Environment_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -49,19 +67,24 @@
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :FWHM_TableColumn	{caption='FWHM' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
+:Finish_Button_2	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Fit_TableColumn	{caption='Fit' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :Fitting Preferences_TreeItem	{caption='Fitting Preferences' parentitem=':Data Analysis_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :I accept the terms of the license agreement_Button	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
+:Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Image_ToolBar	{container=':image0001.pgm.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Install to:_Label	{caption='Install to:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Install to:_Text	{isvisible='true' leftWidget=':Install to:_Label' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
 :Internal Error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Internal Error_Shell'}
 :Internal Error_Shell	{caption='Internal Error' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Jython console_Button	{caption='Jython console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Keep aspect ratio_ToolItem	{caption='Keep aspect ratio' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Maths and Fitting_Menu_2	{caption='Maths and Fitting' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Name_Label	{caption='Name' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
 :Name_TableColumn	{caption='Name' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
+:Name_Text	{isvisible='true' leftWidget=':Name_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
 :New Environment Variable.Name:_Label	{caption='Name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':New Environment Variable_Shell'}
 :New Environment Variable.Name:_Text	{isvisible='true' leftWidget=':New Environment Variable.Name:_Label' type='org.eclipse.swt.widgets.Text' window=':New Environment Variable_Shell'}
 :New Environment Variable.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':New Environment Variable_Shell'}
@@ -70,18 +93,26 @@
 :New Environment Variable_Text	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Text' window=':New Environment Variable_Shell'}
 :New fit selection._ToolItem	{caption='New fit selection.' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :New fit selection._ToolItem_2	{caption='New fit selection.' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
+:New_Menu	{caption='New' container=':PyDev Package Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:New_Menu_2	{caption='New' container=':PyDev Package Explorer_Tree_2' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:New_Menu_3	{caption='New' container=':Project Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
+:Next >_Button_2	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :No tool_CTabItem	{caption='No tool' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :None_ToolItem	{caption='None' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Number peaks to fit_ToolItem	{caption='Number peaks to fit' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Number peaks to fit_ToolItem_2	{caption='Number peaks to fit' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
 :OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Open Associated Perspective?.No_Button	{caption='No' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Open Associated Perspective?_Shell'}
+:Open Associated Perspective?.Yes_Button	{caption='Yes' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Open Associated Perspective?_Shell'}
+:Open Associated Perspective?_Shell	{caption='Open Associated Perspective?' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Open Console_ToolItem	{caption='Open Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Open Perspective_Shell'}
 :Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
 :Open Perspective_ToolItem	{caption='Open Perspective' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
+:Open Perspective_ToolItem_2	{caption='Open Perspective' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
 :Peak Fitting_CTabItem	{caption='Peak Fitting' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Peak Fitting_Composite	{container=':Peak Fitting_CTabItem' isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Composite'}
 :Peak Fitting_Link	{container=':Peak Fitting_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Link'}
@@ -120,15 +151,28 @@
 :Preferences_Shell_2	{caption='Preferences' isvisible='false' type='org.eclipse.swt.widgets.Shell'}
 :Preferences_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
 :Preferences_Tree_2	{isvisible='false' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell_2'}
+:Problems occurred while moving resources..OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Problems occurred while moving resources._Shell'}
+:Problems occurred while moving resources._Shell	{caption='Problems occurred while moving resources.' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Profile_Menu	{caption='Profile' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Project name:_Label	{caption='Project name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
+:Project name:_Text	{isvisible='true' leftWidget=':Project name:_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
+:Project:_Label	{caption='Project:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
+:Project:_Text	{isvisible='true' leftWidget=':Project:_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
+:Properties for Data.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Properties for Data_Shell'}
+:Properties for Data_Shell	{caption='Properties for Data' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :PyDev Console	{container=':Console_CTabItem' isvisible='true' type='org.python.pydev.shared_interactive_console.console.ui.internal.ScriptConsoleViewer$ScriptConsoleStyledText'}
 :PyDev Package Explorer_CTabItem	{caption='PyDev Package Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:PyDev Package Explorer_CTabItem_2	{caption='PyDev Package Explorer' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :PyDev Package Explorer_Tree	{container=':PyDev Package Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:PyDev Package Explorer_Tree_2	{container=':PyDev Package Explorer_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:PyDev_Menu	{caption='PyDev' container=':PyDev Package Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Python console_Button	{caption='Python console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem	{caption='Enthought EPD Free' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Python not configured.Don't ask again_Button	{caption='Don\\'t ask again' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Python not configured_Shell'}
 :Python not configured_Shell	{caption='Python not configured' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
+:Python_ToolItem	{caption='Python' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
 :Regions.Selection Region_Group	{caption='Selection Region' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Remove Annotation.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Remove Annotation_Shell'}
 :Remove Annotation_Shell	{caption='Remove Annotation' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -138,6 +182,7 @@
 :Rename Resource.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Rename Resource_Shell'}
 :Rename Resource_Shell	{caption='Rename Resource' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Run_ToolItem	{caption='Run' container=':_ToolBar_15' type='org.eclipse.swt.widgets.ToolItem'}
 :SWT	SWT
 :Select Annotation_Combo	{container=':Annotations.Select Annotation_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
 :Select Axis_Combo	{container=':Axes.Select Axis_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
@@ -158,6 +203,7 @@
 :Selection Region_Combo	{container=':Regions.Selection Region_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
 :Selection needed.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Selection needed_Shell'}
 :Selection needed_Shell	{caption='Selection needed' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Selection region_Menu	{caption='Selection region' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Show Plot View_Menu	{caption='Show Plot View' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Show View.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Show View_Shell'}
 :Show View_Menu	{caption='Show View' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
@@ -169,6 +215,10 @@
 :Show fitting traces._ToolItem	{caption='Show fitting traces.' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Show peak lines._ToolItem	{caption='Show peak lines.' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Show selection regions for full width, half max._ToolItem	{caption='Show selection regions for full width, half max.' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Source Folder_Label	{caption='Source Folder' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
+:Source Folder_Text	{isvisible='true' leftWidget=':Source Folder_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
+:Terminate current console_ToolItem	{caption='Terminate current console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Terminate current console_ToolItem_2	{caption='Terminate current console' container=':_ToolBar_14' type='org.eclipse.swt.widgets.ToolItem'}
 :Trace_TableColumn	{caption='Trace' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :Traces.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
@@ -186,22 +236,40 @@
 :Workbench Window	{data?='org.eclipse.ui.internal.WorkbenchWindow*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Workspace Launcher.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Workspace Launcher_Shell'}
 :Workspace Launcher_Shell	{caption='Workspace Launcher' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:XY Tools_CTabItem	{caption='XY Tools' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :XY plotting tools_ToolItem	{caption='XY plotting tools' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :XY plotting tools_ToolItem_2	{caption='XY plotting tools' container=':Plot_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :XY plotting tools_ToolItem_3	{caption='XY plotting tools' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
+:_Button	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:_CBanner	{isvisible='true' type='org.eclipse.swt.custom.CBanner' window=':Workbench Window'}
 :_CTabFolder	{firstTabCaption='Console' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_2	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_3	{firstTabCaption='Project Explorer' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_4	{firstTabCaption='Value' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_5	{firstTabCaption='Plot 1' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder_6	{firstTabCaption='PyDev Package Explorer' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder_7	{isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Composite	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Composite' window=':_Shell'}
+:_Composite_2	{isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Composite' window=':_Shell'}
+:_CoolBar	{isvisible='true' type='org.eclipse.swt.widgets.CoolBar' window=':Workbench Window'}
+:_List	{isvisible='true' type='org.eclipse.swt.widgets.List' window=':_Shell'}
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :_Menu_2	{container=':PyDev Package Explorer_Tree' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
+:_Menu_3	{container=':PyDev Package Explorer_Tree_2' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
+:_Menu_4	{container=':Project Explorer_Tree' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
+:_Menu_5	{container=':re-reflect_Canvas_2' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Sash	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Sash_2	{isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Shell	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:_StyledText	{isvisible='true' type='org.eclipse.swt.custom.StyledText' window=':_Shell'}
+:_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
 :_ToolBar	{container=':_CTabFolder' firstItemText~='(Pin Console|Terminate current console|Clear Console)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_10	{container=':_CTabFolder_5' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_11	{firstItemText='New' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_12	{container=':_CTabFolder_6' firstItemText='Collapse All  (Ctrl+Shift+Numpad_Divide)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_13	{firstItemText='Python' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_14	{container=':_CTabFolder_4' firstItemText='Terminate current console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_15	{firstItemText='Debug' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{container=':_CTabFolder_4' firstItemText='New fit selection.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
@@ -210,6 +278,9 @@
 :_ToolBar_7	{firstItemText='Activates the interactive console. (Ctrl+Alt+Enter)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_8	{container=':_CTabFolder_5' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_9	{container=':_CTabFolder_5' firstItemText='New fit selection.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
+:_ViewForm	{container=':_CTabFolder_7' isvisible='true' type='org.eclipse.swt.custom.ViewForm'}
+:__init__.py  0  15/09/14 01:40 PM_TreeItem	{caption='__init__.py  0  15/09/14 01:40 PM' parentitem=':reflectivity_TreeItem_5' type='org.eclipse.swt.widgets.TreeItem'}
 :i12_edxd_q_calibrator_v3_ceria_CTabCloseBox	{container=':i12_edxd_q_calibrator_v3_ceria_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :i12_edxd_q_calibrator_v3_ceria_CTabItem	{caption='i12_edxd_q_calibrator_v3_ceria' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :i12_edxd_q_calibrator_v3_ceria_StyledTextWithoutVerticalBar	{container=':i12_edxd_q_calibrator_v3_ceria_CTabItem' isvisible='true' type='org.python.pydev.overview_ruler.StyledTextWithoutVerticalBar'}
@@ -218,5 +289,28 @@
 :metalmix.mca.Plot_CTabItem	{caption='Plot' container=':metalmix.mca_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :metalmix.mca_CTabItem	{caption='metalmix.mca' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:nsplice_CTabCloseBox	{container=':nsplice_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:nsplice_CTabItem	{caption='nsplice' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:re-reflect_CTabCloseBox	{container=':re-reflect_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:re-reflect_CTabItem	{caption='re-reflect' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:re-reflect_Canvas	{basetype='org.eclipse.swt.widgets.Canvas' container=':re-reflect_CTabItem' isvisible='true' occurrence='3'}
+:re-reflect_Canvas_2	{basetype='org.eclipse.swt.widgets.Canvas' container=':re-reflect_CTabItem' isvisible='true' occurrence='2'}
+:re-reflect_Canvas_3	{container=':re-reflect_CTabItem' isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Canvas'}
+:re-reflect_Composite	{container=':re-reflect_CTabItem' isvisible='true' occurrence='3' type='org.eclipse.swt.widgets.Composite'}
+:re-reflect_StyledText	{container=':re-reflect_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
+:re-reflect_StyledTextWithoutVerticalBar	{container=':re-reflect_CTabItem' isvisible='true' type='org.python.pydev.overview_ruler.StyledTextWithoutVerticalBar'}
+:re_CTabCloseBox	{container=':re_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:re_CTabItem	{caption='re' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:reflectivity_CTabCloseBox	{container=':reflectivity_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:reflectivity_CTabItem	{caption='reflectivity' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:reflectivity_CTabItem_2	{caption='reflectivity' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:reflectivity_StyledTextWithoutVerticalBar	{container=':reflectivity_CTabItem' isvisible='true' type='org.python.pydev.overview_ruler.StyledTextWithoutVerticalBar'}
+:reflectivity_StyledTextWithoutVerticalBar_2	{container=':reflectivity_CTabItem_2' isvisible='true' type='org.python.pydev.overview_ruler.StyledTextWithoutVerticalBar'}
+:reflectivity_TreeItem	{caption='reflectivity' parentitem=':Data_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:reflectivity_TreeItem_2	{caption='reflectivity' container=':PyDev Package Explorer_Tree' occurrence='1' type='org.eclipse.swt.widgets.TreeItem'}
+:reflectivity_TreeItem_3	{caption='reflectivity' container=':PyDev Package Explorer_Tree_2' occurrence='1' type='org.eclipse.swt.widgets.TreeItem'}
+:reflectivity_TreeItem_4	{caption='reflectivity' parentitem=':reflectivity_TreeItem_3' type='org.eclipse.swt.widgets.TreeItem'}
+:reflectivity_TreeItem_5	{caption='reflectivity' parentitem=':reflectivity_TreeItem_4' type='org.eclipse.swt.widgets.TreeItem'}
+:src_TreeItem	{caption='src' parentitem=':reflectivity_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
 :sum_TableCell	{caption='sum' column='0' container=':Peak Fitting_Table' row='0' type='com.froglogic.squish.swt.TableCell'}
 :updated_edxd_q_calibrator_v3_ceria_CTabItem	{caption='updated_edxd_q_calibrator_v3_ceria' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
