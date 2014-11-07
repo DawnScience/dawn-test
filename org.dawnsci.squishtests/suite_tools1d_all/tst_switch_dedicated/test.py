@@ -15,6 +15,7 @@ def the_actual_test():
     b = c.bounds
 
     test.log("Image at (%d, %d) is %d x %d" % (b.x,b.y, b.width, b.height))
+    snooze(1)
     mouseDrag(c, b.x+b.width/2.35, b.y+b.height/4, int(b.width/7.5),0, 0, Button.Button1)
     snooze(1)
     
@@ -39,7 +40,7 @@ def the_actual_test():
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Measurement"))
     #Check derivative tool has not reset
-    
+
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
     #check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"),"Column_3", "800.0","0.0")
     
@@ -66,6 +67,7 @@ def the_actual_test():
     b = c.bounds
 
     test.log("Image at (%d, %d) is %d x %d" % (b.x,b.y, b.width, b.height))
+    snooze(1)
     mouseDrag(c, b.x+b.width/2.35, b.y+b.height/4, int(b.width/7.5),0, 0, Button.Button1)
     snooze(1)
     
