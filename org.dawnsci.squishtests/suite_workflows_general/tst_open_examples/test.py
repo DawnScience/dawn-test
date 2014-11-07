@@ -18,7 +18,12 @@ def main():
     
     children = object.children(waitForObjectItem(":Project Explorer_Tree", "examples"))
     for child in children:
+           
         doubleClick(child, 5, 5, 0, Button.Button1)
+        #This file asks for the python interpreter (which isn't configured) so we dispel the message.
+        if "python_pydev_numpy_example1.moml" in child.text:
+            snooze(1)
+            clickButton(waitForObject(":Python not configured.Don't ask again_Button"))
         name = child.text.split(" ")[0]
         
         try:
