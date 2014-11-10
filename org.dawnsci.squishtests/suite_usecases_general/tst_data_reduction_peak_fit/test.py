@@ -51,7 +51,7 @@ def main():
     mouseDrag(widget, b.x+100, b.y+100, 300, 300, 0, Button.Button1)
     snooze(10) # While fit...
 
-    mouseClick(waitForObject(":Data reduction..._ToolItem_4"), 2, 10, 0, Button.Button1)
+    mouseClick(waitForObject(":Data reduction..._ToolItem_4"), 19, 16, 0, Button.Button1)
     snooze(1)
     mouseClick(waitForObject(":Dataset Name_CCombo"))
     mouseClick(waitForObjectItem(":_List", "/entry1/EDXD_Element_01/data"), 214, 11, 0, Button.Button1)
