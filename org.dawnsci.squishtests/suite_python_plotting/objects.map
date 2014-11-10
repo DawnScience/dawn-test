@@ -116,7 +116,7 @@
 :Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Preferences.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
-:Preferences.Auto Config_Button	{caption='Auto Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
+:Preferences.Auto Config_Button	{caption='Advanced Auto-Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Available label decorations:_Label	{caption='Available label decorations:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Preferences_Shell'}
 :Preferences.Available label decorations:_Table	{aboveWidget=':Preferences.Available label decorations:_Label' isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Preferences_Shell'}
 :Preferences.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
