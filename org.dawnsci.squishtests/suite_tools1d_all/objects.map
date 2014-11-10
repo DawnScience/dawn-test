@@ -23,6 +23,7 @@
 :Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data Brow..._ToolItem	{caption='Data Brow...' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
 :Data_CTabCloseBox	{container=':Data_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
@@ -56,6 +57,7 @@
 :Line Fitting_Table	{container=':Line Fitting_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Maths and Fitting_Menu_2	{caption='Maths and Fitting' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Measurement_CTabCloseBox	{container=':Measurement_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Measurement_CTabItem	{caption='Measurement' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Measurement_Table	{container=':Measurement_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
@@ -110,6 +112,8 @@
 :Regions.Name   _Text	{container=':Configure Graph Settings.Regions_TabItem' isvisible='true' leftWidget=':Regions.Name   _Label' type='org.eclipse.swt.widgets.Text'}
 :Regions.Selection Region_Group	{caption='Selection Region' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Remove Region..._ToolItem	{caption='Remove Region...' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Reset Perspective.Yes_Button	{caption='Yes' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Reset Perspective_Shell'}
+:Reset Perspective_Shell	{caption='Reset Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :SWT	SWT
 :Select Annotation_Combo	{container=':Annotations.Select Annotation_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
@@ -167,6 +171,7 @@
 :_ToolBar_4	{container=':_CTabFolder_4' firstItemText='Create new measurement.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_5	{container=':_CTabFolder_4' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_6	{container=':_CTabFolder_5' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_7	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :dx_TableColumn	{caption='dx' container=':Measurement_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :metalmix.mca.Plot_CTabItem	{caption='Plot' container=':metalmix.mca_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :metalmix.mca_CTabItem	{caption='metalmix.mca' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}

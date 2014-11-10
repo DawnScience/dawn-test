@@ -4,6 +4,12 @@ source(findFile("scripts", "dawn_constants.py"))
 
 def the_actual_test():
     vals = dawn_constants
+    
+    # Reset perspective
+    mouseClick(waitForObject(":Data Brow..._ToolItem"), 37, 5, 0, Button.Button3)
+    activateItem(waitForObjectItem(":Pop Up Menu", "Reset"))
+    clickButton(waitForObject(":Reset Perspective.Yes_Button"))
+
     #Open each tool then make dedicated
     #Peak fitting
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
@@ -52,7 +58,7 @@ def the_actual_test():
     mouseDrag(c, b.x+b.width/2.35, b.y+b.height/4, int(b.width/7.5),0, 0, Button.Button1)
     snooze(2)
     
-    clickTab(waitForObject(":Measurement_CTabItem"), 61, 12, 0, Button.Button1)
+    mouseClick(waitForObject(":Measurement_CTabItem"), 61, 12, 0, Button.Button1)
     #test.verify(waitForObjectItem(":Measurement_Table", "0/0").text == "Measurement 1", "Verify measurement text");
     
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 3, 7, 0, Button.Button1)
@@ -83,7 +89,7 @@ def the_actual_test():
     mouseClick(waitForObject(":Measurement_CTabCloseBox"), 7, 6, 0, Button.Button1)
     mouseClick(waitForObject(":Derivative View_CTabCloseBox"))
     mouseClick(waitForObject(":Peak Fitting_CTabCloseBox"), 8, 11, 0, Button.Button1)
-    
+    snooze(1)
 
 def main():
     
