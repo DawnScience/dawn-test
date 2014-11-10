@@ -66,7 +66,7 @@ def main():
     test.passes("One trace plotted") 
     
     clickTab(waitForObject(":Data_CTabItem_2"), 28, 4, 0, Button.Button1)
-    mouseClick(waitForObject(":Data reduction..._ToolItem_2"), 8, 11, 0, Button.Button1)
+    mouseClick(waitForObject(":Data reduction..._ToolItem_4"), 8, 11, 0, Button.Button1)
     snooze(1)
     mouseClick(waitForObject(":Dataset Name_CCombo"), 467, 9, 0, Button.Button1)
     mouseClick(waitForObjectItem(":_List", "/entry1/EDXD_Element_01/data"), 214, 11, 0, Button.Button1)
