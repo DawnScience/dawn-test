@@ -53,6 +53,7 @@
 :Data reduction..._ToolItem	{caption='Data reduction...' container=':_ToolBar_10' type='org.eclipse.swt.widgets.ToolItem'}
 :Data reduction..._ToolItem_2	{caption='Data reduction...' container=':Data_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :Data reduction..._ToolItem_3	{caption='Data reduction...' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
+:Data reduction..._ToolItem_4	{caption='Data reduction...' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_3	{caption='Data' occurrence='4' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
