@@ -27,7 +27,7 @@ def main():
     clickTab(waitForObject(":Configure Graph Settings.Axes_TabItem"))
     clickButton(waitForObject(":Change Settings.Log_Button"))
     clickButton(waitForObject(":Configure Graph Settings.Apply_Button"))
-    mouseClick(waitForObjectItem(":Select Axis_Combo", "(Y-Axis)"), 0, 0, 0, Button.NoButton)
+    mouseClick(waitForObjectItem(":Select Axis_Combo", "Y-Axis(Y-Axis)"), 0, 0, 0, Button.NoButton)
     clickButton(waitForObject(":Change Settings.Log_Button"))
     clickButton(waitForObject(":Configure Graph Settings.Apply_Button"))
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
