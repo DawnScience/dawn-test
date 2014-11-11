@@ -100,7 +100,7 @@ def setupEPDPython():
     test.passes("setupEPDPython: Success")
         
 
-def setupPython(allowInstallEPD=False, installEPD=False, installEPDPath=None):
+def setupPython(allowInstallEPD=False, installEPD=False, installEPDPath=None, needScipy=False):
     waitForObject(":Workbench Window")
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
@@ -119,6 +119,11 @@ def setupPython(allowInstallEPD=False, installEPD=False, installEPDPath=None):
             allowedList = filter(lambda x: "EPD" in x.text and "select to install" in x.text, availableList)
         else:
             allowedList = filter(lambda x: "select to install" not in x.text, availableList)
+            if needScipy:
+                anaList = filter(lambda x: "anaconda" in x.text, availableList)
+                if len(anaList) != 0:
+                    allowedList = anaList
+                test.compare(allowedList, anaList, 'Dependency on scipy. Suite requires either anaconda (or another scipy providing environment e.g. EPD).')
             
         clickItem(waitForObject(":Select Interpreter Available_Table"), "%d/0" % allowedList[0].row, 5, 5)
         clickButton(waitForObject(":Select Interpreter Available_OK_Button"))
