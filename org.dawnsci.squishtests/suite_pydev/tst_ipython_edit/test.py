@@ -104,7 +104,7 @@ def testEditLineNumber():
 
 def main():
     startOrAttachToDAWN()
-    setupEPDPython()
+    setupPython()
 
     openPerspective("Python")
     openPyDevConsole()

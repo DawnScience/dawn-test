@@ -3,7 +3,7 @@ source(findFile("scripts", "dawn_global_python_setup.py"))
 
 def main():
     startOrAttachToDAWN()
-    setupEPDPython()
+    setupPython()
 
     waitForObject(":Workbench Window")
     

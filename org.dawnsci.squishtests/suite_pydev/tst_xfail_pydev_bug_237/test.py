@@ -6,7 +6,7 @@ source(findFile("scripts", "use_case_utils.py"))
 
 def main():
     startOrAttachToDAWN()
-    setupEPDPython()
+    setupPython()
 
     openPerspective("Python")
     openPyDevConsole()
