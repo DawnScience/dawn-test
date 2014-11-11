@@ -34,7 +34,7 @@ def main():
     type(waitForObject(":_Sash_2"), "<Up>")
     clickTab(waitForObject(":Console_CTabItem_2"), 27, 12, 0, Button.Button1)
 
-    setupEPDPython()
+    setupPython()
     
     system = getPlottingSystem("Plot 1")
 

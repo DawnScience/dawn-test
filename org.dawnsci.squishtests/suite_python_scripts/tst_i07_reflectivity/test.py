@@ -15,7 +15,7 @@ def main():
     # will close the Welcome screen 
     startOrAttachToDAWN()
 
-    setupEPDPython()
+    setupPython()
 
     #create a pydev project 
     mouseClick(waitForObject(":Project Explorer_Tree"), 118, 187, 0, Button.Button3)
