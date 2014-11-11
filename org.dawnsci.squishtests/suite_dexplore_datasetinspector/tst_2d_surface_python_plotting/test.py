@@ -20,11 +20,8 @@ def main():
     mouseClick(waitForObject(":File Meta Data Decorator_ItemCheckbox"), 8, 13, 0, Button.Button1)
     clickButton(waitForObject(":Preferences.OK_Button"))
 
-    # Install EPD to the default location
-    # On a clean machine setupEPDPython will defer
-    # to setupPython(installEPD=True)
-    # On a machine where EPD is already installed
-    # it will simply be selected
+    #Was previously using EPD to provide python.
+    #Moved to just using python determined from shell environment. 
     setupPython() 
     
     # open DExplore perspective
