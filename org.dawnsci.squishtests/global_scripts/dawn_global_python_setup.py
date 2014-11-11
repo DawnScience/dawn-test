@@ -10,6 +10,7 @@ EPD_FREE_LOCATIONS=[
 # free. This doesn't really apply to the test vm machines
 # but it can make local development of the tests easier
 import os
+import subprocess
 home = os.getenv("HOME")
 if home is not None:
      EPD_FREE_LOCATIONS.append("%s/epd_free/bin/python" % home)
@@ -145,11 +146,32 @@ def setupPython(allowInstallEPD=False, installEPD=False, installEPDPath=None):
     _finishPythonSetup()
     test.passes("setupPython: Success")
 
-def getPythonLocation():
-    for loc in EPD_FREE_LOCATIONS:
-        if os.path.exists(loc):
-            return loc
-    return None
+def getPythonLocation(epdInstalled=False):
+    """Searches for full path to python executable
+    If EPD is installed, specify epdInstalled=True as arg to use hardcoded list of location.
+    Otherwise, which used to return full path of anaconda or just first python executable"""
+    loc = None
+    
+    #Old behaviour, return an EPD path if EPD is installed
+    if epdInstalled == True:
+        for epdLoc in EPD_FREE_LOCATIONS:
+            if os.path.exists(epdLoc):
+                loc = epdLoc
+    #New behaviour, return a path to a python interpreter
+    #Thanks to M. Webber for this snippet
+    else:
+        whichRun = subprocess.Popen(('which','-a','python'), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        (stdout, stderr) = whichRun.communicate(None)
+        if not whichRun.returncode:
+            spltout = stdout.split('\n')
+            if 'anaconda' in stdout:
+                for anaLoc in spltout:
+                    if 'anaconda' in anaLoc:
+                        loc = anaLoc 
+            else:
+                loc = spltout[0]
+            
+    return loc
 
 def setPyDevPref_ConnectToDebugSession(connect=True):
     activateItem(waitForObjectItem(":_Menu", "Window"))
