@@ -25,7 +25,7 @@ def main():
     # to setupPython(installEPD=True)
     # On a machine where EPD is already installed
     # it will simply be selected
-    setupEPDPython() 
+    setupPython() 
     
     # open DExplore perspective
     openPerspective("DExplore")
