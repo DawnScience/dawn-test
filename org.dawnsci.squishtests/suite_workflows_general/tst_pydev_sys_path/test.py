@@ -16,7 +16,7 @@ def main():
     # will close the Welcome screen
     startOrAttachToDAWN()
 
-    setupEPDPython()
+    setupPython()
 
     openPerspective("Workflow")
     

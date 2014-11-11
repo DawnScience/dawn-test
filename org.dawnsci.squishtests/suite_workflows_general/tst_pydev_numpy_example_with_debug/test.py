@@ -16,7 +16,7 @@ def main():
     # will close the Welcome screen
     startOrAttachToDAWN()
 
-    setupEPDPython()
+    setupPython()
 
     # Starting the Debug Server wouldn't be needed if http://jira.diamond.ac.uk/browse/DAWNSCI-762
     # is completed/resolved
