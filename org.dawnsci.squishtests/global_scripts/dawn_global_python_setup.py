@@ -118,8 +118,6 @@ def setupPython(allowInstallEPD=False, installEPD=False, installEPDPath=None):
             allowedList = filter(lambda x: "EPD" in x.text and "select to install" in x.text, availableList)
         else:
             allowedList = filter(lambda x: "select to install" not in x.text, availableList)
-        
-        test.verify(len(allowedList) == 1, "setupPython: Filter to one available Python to Auto Config")
             
         clickItem(waitForObject(":Select Interpreter Available_Table"), "%d/0" % allowedList[0].row, 5, 5)
         clickButton(waitForObject(":Select Interpreter Available_OK_Button"))
