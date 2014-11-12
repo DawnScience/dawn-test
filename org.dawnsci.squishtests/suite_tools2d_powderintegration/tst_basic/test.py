@@ -122,6 +122,8 @@ def main():
 
     waitOnProgress()
     
+    #There's an intermittent fail with the first test below. Possibly image doesn't draw fast enough (hence snooze below)
+    snooze(10)
     ptp = getTracePeakToPeak(system)
     sh = getTraceShape(system)
 
