@@ -24,7 +24,6 @@ def main():
         test.compare(findObject(":Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem").text, "Enthought EPD Free")
     else:
         test.compare(findObject(":Python interpreters (e.g.: python.exe).python_TreeItem").text, "python")
-    #waitFor("object.exists(':Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem')", 20000)
     
     clickButton(waitForObject(":Preferences.OK_Button"))
     snooze(1.0)
