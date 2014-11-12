@@ -46,6 +46,11 @@ def main():
     type(waitForObject(":_Sash"), "<Left>")
     type(waitForObject(":_Sash"), "<Left>")
     type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
+    type(waitForObject(":_Sash"), "<Left>")
     clickTab(waitForObject(":Data_CTabItem"), 33, 27, 0, Button.Button1)
 
     mouseClick(waitForObject(":Edit the slice with different editors._ToolItem_2"), 29, 10, 0, Button.Button1)
