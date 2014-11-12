@@ -155,6 +155,7 @@
 :Pydev_Menu	{caption='Pydev' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Python console_Button	{caption='Python console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem	{caption='Enthought EPD Free' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:Python interpreters (e.g.: python.exe).python_TreeItem	{caption='python' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Resu&me (F8)_ToolItem	{caption='Resu&me (F8)' container=':_ToolBar_11' type='org.eclipse.swt.widgets.ToolItem'}

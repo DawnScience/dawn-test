@@ -19,8 +19,13 @@ def main():
     expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
     expand(waitForObjectItem(":Preferences_Tree", "Interpreters"))
     mouseClick(waitForObjectItem(":Preferences_Tree", "Python Interpreter"))
-    waitFor("object.exists(':Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem')", 20000)
-    test.compare(findObject(":Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem").text, "Enthought EPD Free")
+    snooze(20)
+    if object.exists(':Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem'):
+        test.compare(findObject(":Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem").text, "Enthought EPD Free")
+    else:
+        test.compare(findObject(":Python interpreters (e.g.: python.exe).python_TreeItem").text, "python")
+    #waitFor("object.exists(':Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem')", 20000)
+    
     clickButton(waitForObject(":Preferences.OK_Button"))
     snooze(1.0)
     closeWindow(":Workbench Window")
