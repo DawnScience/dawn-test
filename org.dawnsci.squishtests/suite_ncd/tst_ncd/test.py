@@ -48,7 +48,8 @@ def main():
     activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
     activateItem(waitForObjectItem(":Profile_Menu", "Radial Profile"))
     
-    c = waitForObject(":Dataset Plot_Composite")
+ #   c = waitForObject(":Dataset Plot_Composite")
+    c = waitForObject(system.getPlotComposite())
     b = c.bounds
     
     rx1, ry1 = getScreenPosition(system, 743, 78)
