@@ -32,7 +32,7 @@ def check_plotted_traces_names(configObj, nameList):
     wid = waitForObject(":Select Trace_Combo")
     chil = object.children(wid)
     
-    test.verify(len(chil)==len(nameList), "Combo List length Expected: " +str(len(nameList)) +"Actual: "+ str(len(chil)))
+    test.verify(len(chil)==len(nameList), "Combo List length Expected: " +str(len(nameList)) +" Actual: "+ str(len(chil)))
     
     for i in range(len(chil)):
         test.verify(chil[i].text == nameList[i], "Trace names Expected: " + nameList[i] + " Actual: "+ chil[i].text)
