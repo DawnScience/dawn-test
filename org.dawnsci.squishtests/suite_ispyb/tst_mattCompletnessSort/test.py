@@ -45,7 +45,7 @@ def main():
     mouseClick(waitForObjectItem(":Data Collections_Table", "2/1"), 89, 13, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data Collections_Table", "3/1"), 92, 16, 0, Button.Button1)
     
-    # this checks that at least 9 results were found with complete>=99.8
+    # this checks that at least 8 results were found with complete>=99.8
     type(waitForObject(":Data Collections_Combo"), "complete ge 99.8")
     type(waitForObject(":Data Collections_Combo"), "<Return>")
     snooze(10)    
@@ -57,7 +57,6 @@ def main():
     mouseClick(waitForObjectItem(":Data Collections_Table", "5/2"), 96, 8, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data Collections_Table", "6/2"), 106, 12, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data Collections_Table", "7/2"), 109, 12, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data Collections_Table", "8/2"), 114, 5, 0, Button.Button1)
     
     # Checks that at least 4 are found with this query.
     type(waitForObject(":Data Collections_Combo"), "protein.contains(\"JMJD2AA\") and complete gt 99.8")
