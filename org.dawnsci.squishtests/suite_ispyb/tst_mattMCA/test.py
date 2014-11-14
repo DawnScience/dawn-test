@@ -17,24 +17,35 @@ def main():
                # accumulate, this limit might be reached.
                
 
-    
-    
-    mouseClick(waitForObject(":NLS missing message: BreadcrumbItemDropDown_showDropDownMenu_action_toolTip in: org.dawnsci.common.widgets.breadcrumb.BreadcrumbMessages_ToolItem_2"), 6, 10, 0, Button.Button1)
-
-    # We try to select cm4950-5 THIS MIGHT BREAK as more collections come in.
-    mouseClick(waitForObject(":NLS missing message: BreadcrumbItemDropDown_showDropDownMenu_action_toolTip in: org.dawnsci.common.widgets.breadcrumb.BreadcrumbMessages_ToolItem_2"), 2, 10, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":_Tree", "Beamlines"), 26, 8, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":_Tree", "I03"), 5, 8, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":_Tree", "2014   (15 visits)"), 29, 10, 0, Button.Button1)
+    # We try to select nt5966-4.
+    mouseClick(waitForObject(":NLS missing message: BreadcrumbItemDropDown_showDropDownMenu_action_toolTip in: org.dawnsci.common.widgets.breadcrumb.BreadcrumbMessages_ToolItem_2"), 10, 10, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":_Tree", "2013   (33 visits)"), 38, 11, 0, Button.Button1)
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
     type(waitForObject(":_Tree"), "<Return>")
     
+    # Do some testing of MCAs
     mouseClick(waitForObject(":MCA Spectra_ToolItem_2"), 7, 10, 0, Button.Button1)
     mouseClick(waitForObjectItem(":MCA Spectra_Table", "1/2"), 8, 12, 0, Button.Button1)
+
     clickTab(waitForObject(":Spot Summary_CTabItem"), 44, 12, 0, Button.Button1)
     
     system = getPlottingSystem("Spot Summary") # This is really the MCA plot now
     test.verify(system.getTraces().size()==1, "1 Trace in Fluorescence : Success")
-    test.verify(system.getAnnotation("OS-L"), "Cannot find the Osmium-L peak, perhaps something went wrong.")
+    test.verify(system.getAnnotation("Ni-K"), "Cannot find the Nickel-L peak, perhaps something went wrong.")
 
     
     closeOrDetachFromDAWN()

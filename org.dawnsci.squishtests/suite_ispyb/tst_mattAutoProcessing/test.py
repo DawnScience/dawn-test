@@ -18,31 +18,28 @@ def main():
                
 
     
-    
+    # We are trying to select nt4923-9 here
     mouseClick(waitForObject(":NLS missing message: BreadcrumbItemDropDown_showDropDownMenu_action_toolTip in: org.dawnsci.common.widgets.breadcrumb.BreadcrumbMessages_ToolItem_2"), 6, 10, 0, Button.Button1)
-
-    # We try to select cm4950-5 THIS MIGHT BREAK as more collections come in.
-    mouseClick(waitForObject(":NLS missing message: BreadcrumbItemDropDown_showDropDownMenu_action_toolTip in: org.dawnsci.common.widgets.breadcrumb.BreadcrumbMessages_ToolItem_2"), 2, 10, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":_Tree", "Beamlines"), 26, 8, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":_Tree", "I03"), 5, 8, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":_Tree", "2014   (15 visits)"), 29, 10, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":_Tree", "2013   (33 visits)"), 50, 10, 0, Button.Button1)
+    type(waitForObject(":_Tree"), "<Down>")
+    type(waitForObject(":_Tree"), "<Down>")
     type(waitForObject(":_Tree"), "<Return>")
 
 
     # We simply click on things and check that they exist. 
     # Not a great test but at least we check UI is selectable as expcected.
-    mouseClick(waitForObjectItem(":Data Collections_Table", "0/1"), 60, 10, 0, Button.Button1)
-    expand(waitForObjectItem(":Autoprocessing Results_Tree", "xia2    (3dii)"))
-    expand(waitForObjectItem(":Autoprocessing Results_Tree", "xia2    (3d)"))
-    expand(waitForObjectItem(":Autoprocessing Results_Tree", "fast__dp"))
-    mouseClick(waitForObjectItem(":Data Collections_Table", "1/1"), 43, 12, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Characterization Strategy_Tree", "Mosflm native"), -36, 10, 0, Button.Button1)
-
-    mouseClick(waitForObjectItem(":Characterization Strategy_Tree", "Mosflm anomalous"), 111, 10, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Characterization Strategy_Tree", "EDNAStrategy5"), 94, 14, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Characterization Strategy_Tree", "EDNAStrategy4"), 100, 21, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Characterization Strategy_Tree", "EDNAStrategy3"), 100, 11, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Characterization Strategy_Tree", "EDNAStrategy2"), 94, 19, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Characterization Strategy_Tree", "EDNAStrategy1"), 96, 11, 0, Button.Button1)
-   
+    mouseClick(waitForObjectItem(":Data Collections_Table", "0/1"), 88, 10, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Autoprocessing Results_Tree", "xia2    (2da)"), 11, 8, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Autoprocessing Results_Tree", "xia2    (3daii)"), 56, 8, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Autoprocessing Results_Tree", "xia2    (3da)"), 66, 11, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Autoprocessing Results_Tree", "fast__dp"), 66, 15, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data Collections_Table", "1/1"), 25, 16, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Characterization Strategy_Tree", "Mosflm native"), 38, 17, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Characterization Strategy_Tree", "Mosflm anomalous"), 34, 13, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Characterization Strategy_Tree", "EDNAStrategy4"), 36, 11, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Characterization Strategy_Tree", "EDNAStrategy3"), 37, 9, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Characterization Strategy_Tree", "EDNAStrategy2"), 39, 5, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Characterization Strategy_Tree", "EDNAStrategy1"), 49, 12, 0, Button.Button1)
+    
+    
     closeOrDetachFromDAWN()
