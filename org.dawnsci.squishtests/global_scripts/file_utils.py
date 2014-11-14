@@ -25,12 +25,14 @@ def findLogFile(mask, maxiter):
 
 def createAndChangeToSquishtestsTempDirectory():
     # Create, set and change to the working directory
-    wdir = "/dls/tmp/squishtests"
+    import os, datetime
+    wdir = "/dls/tmp/"+os.environ["USER"]+"/squishtests-"+datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     try:
         os.makedirs(wdir, 0777)
     except:
         pass
     os.chdir(wdir)
+    return wdir
 
 def createDirectory(parentdir, namedir):
     # Create, set and change to the working directory

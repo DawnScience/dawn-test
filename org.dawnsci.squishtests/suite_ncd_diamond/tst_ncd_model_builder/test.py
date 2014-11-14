@@ -13,7 +13,7 @@ def main():
     startOrAttachToDAWN()
     openPerspective("NCD Model Builder Perspective")
 
-    createAndChangeToSquishtestsTempDirectory()
+    squishDirectory = createAndChangeToSquishtestsTempDirectory()
     sasDirectoryPrefixPattern = "EDApplicationSASPipeline*"
     deleteOldLogFiles(sasDirectoryPrefixPattern)
 
@@ -25,10 +25,9 @@ def main():
     expand(waitForObjectItem(":File Navigator_Tree", "cm5947-3"))
     expand(waitForObjectItem(":File Navigator_Tree", "processing"))
     mouseClick(waitForObjectItem(":File Navigator_Tree", "results__b21-2672__detector__040713__102411.nxs"), 40, 8, 0, Button.Button1)
-    dragAndDrop(waitForObject(":results_b21-2672_detector_040713_102411.nxs.04/07/2013 10:24_TreeSubItem"), 69, 11, ":Data parameters.Data file_Text", 120, 10, DnD.DropLink)
     mouseClick(waitForObject(":Data parameters.Working directory_Text"), 144, 5, 0, Button.Button1)
     type(waitForObject(":Data parameters.Working directory_Text"), "<Ctrl+a>")
-    type(waitForObject(":Data parameters.Working directory_Text"), "/dls/tmp/squishtests")
+    type(waitForObject(":Data parameters.Working directory_Text"), squishDirectory)
     type(waitForObject(":Data parameters.Working directory_Text"), "<Ctrl+a>")
     type(waitForObject(":Data parameters.Working directory_Text"), "<Ctrl+c>")
 
@@ -38,5 +37,8 @@ def main():
 
     logfile = findLogFile(sasDirectoryPrefixPattern, 100)
     test.verify(logfile != None, "Existence of log file")
+
+    import os
+    os.removedirs(squishDirectory)
 
     closeOrDetachFromDAWN()

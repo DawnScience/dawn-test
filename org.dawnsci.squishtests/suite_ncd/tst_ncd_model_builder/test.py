@@ -14,15 +14,16 @@ def main():
 
     addExternalFile("results_b21-2672_detector_040713_102411.nxs", "suite_ncd", "tst_ncd_model_builder", "data", "examples")
     openPerspective("NCD Model Builder Perspective")
-    createAndChangeToSquishtestsTempDirectory()
+    squishDirectory = createAndChangeToSquishtestsTempDirectory()
     sasDirectoryPrefixPattern = "EDApplicationSASPipeline*"
     deleteOldLogFiles(sasDirectoryPrefixPattern)
 
-    clickButton(waitForObject(":Data parameters...._Button"))
-    chooseFile(waitForObject(":SWT"), "/scratch/workspace/suite_ncd/tst_ncd_model_builder/workspace/data/examples/results_b21-2672_detector_040713_102411.nxs")
+    expand(waitForObjectItem(":Project Explorer_Tree_2", "data"))
+    expand(waitForObjectItem(":Project Explorer_Tree_2", "examples"))
+    mouseClick(waitForObjectItem(":Project Explorer_Tree_2", "results__b21-2672__detector__040713__102411.nxs"), 186, 12, 0, Button.Button1)
     mouseClick(waitForObject(":Data parameters.Working directory_Text"), 144, 5, 0, Button.Button1)
     type(waitForObject(":Data parameters.Working directory_Text"), "<Ctrl+a>")
-    type(waitForObject(":Data parameters.Working directory_Text"), "/dls/tmp/squishtests")
+    type(waitForObject(":Data parameters.Working directory_Text"), squishDirectory)
     type(waitForObject(":Data parameters.Working directory_Text"), "<Ctrl+a>")
     type(waitForObject(":Data parameters.Working directory_Text"), "<Ctrl+c>")
 
@@ -30,7 +31,9 @@ def main():
     snooze(130)
 
     logfile = findLogFile(sasDirectoryPrefixPattern, 100)
-    # This error can break the tests and for now we comment out
-    # test.verify(logfile != None, "Existence of log file")
+    test.verify(logfile != None, "Existence of log file")
+
+    import shutil
+    shutil.rmtree(squishDirectory,ignore_errors=True)
 
     closeOrDetachFromDAWN()
