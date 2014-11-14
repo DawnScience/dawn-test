@@ -1,6 +1,11 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "use_case_utils.py"))
 
+#For some reason these files end up with different labels for some of their objects.
+extraLabelNeeded = {'filter_example.moml':'_2', 
+                    'gda_scan_example.moml':'_2', 
+                    'plot_fit_example.moml':'_2'}
+
 import os
 from datetime import datetime
 
@@ -17,29 +22,45 @@ def main():
     expand(waitForObjectItem(":Project Explorer_Tree", "examples"))
     
     children = object.children(waitForObjectItem(":Project Explorer_Tree", "examples"))
-    for child in children:
-           
+    for child in children:        
+        #Ensure widget has no starting value
+        widget = None
+        
         doubleClick(child, 5, 5, 0, Button.Button1)
         #This file asks for the python interpreter (which isn't configured) so we dispel the message.
-        if "python_pydev_numpy_example1.moml" in child.text:
+        name = child.text.split(" ")[0]
+        if "python_pydev_numpy_example1.moml" in name:
             snooze(1)
             clickButton(waitForObject(":Python not configured.Don't ask again_Button"))
-        name = child.text.split(" ")[0]
+        
+        if name in extraLabelNeeded:
+            extra=extraLabelNeeded[name]
+        else:
+            extra=""
         
         try:
-            widget = waitForObject(":"+name+".Edit_CTabItem", 3000)
+            widget = waitForObject(":"+name+".Edit_CTabItem"+extra, 3000)
             clickTab(widget)
+            if widget:
+                test.passes("Selected Edit tab of "+name)
         except:
-            test.log("Cannot select the info tab of "+name)
-
+            test.fail("Cannot select the Edit tab of "+name)
+        
+        #Reset the widget
+        cWidget = None
         # text contains decorators.
         try:
             
-            widget = waitForObject(":"+name+"_CTabCloseBox", 1000)
-            mouseClick(widget)
+            cWidget = waitForObject(":"+name+"_CTabCloseBox"+extra, 3000)
+            mouseClick(cWidget)
+            if cWidget:
+                test.passes("Closed "+name)
         except:
-            test.log("Cannot select and close "+name)
+            test.fail("Cannot select and close "+name)
    
+    
+    #Fail on jenkins, not reproduced on ws266. Add sleep in hope of fixing
+    snooze(10)
     
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()

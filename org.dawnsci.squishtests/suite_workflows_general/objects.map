@@ -240,6 +240,7 @@
 :_CTabFolder_6	{firstTabCaption='Actor Attributes' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_7	{firstTabCaption='Variables' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_8	{firstTabCaption='python_import.moml' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder_9	{firstTabCaption='filter_example.moml' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Ellipse	{backgroundcolor='Color {255, 255, 255}' basetype='org.eclipse.draw2d.Ellipse' enabled='true' linewidth='1' parentitem=':_Figure' visible='true'}
 :_EllipseActorFigure	{backgroundcolor='Color {255, 255, 255}' enabled='true' parentitem=':_FreeformLayer_2' tooltip='Scalar' type='com.isencia.passerelle.workbench.model.editor.ui.figure.EllipseActorFigure' visible='true'}
 :_EllipseActorFigure$Body	{backgroundcolor='Color {255, 255, 255}' enabled='true' linewidth='1' parentitem=':_ActorFigure$CompositeFigure' type='com.isencia.passerelle.workbench.model.editor.ui.figure.EllipseActorFigure$Body' visible='true'}
@@ -297,12 +298,18 @@
 :directory_packing_example.moml_CTabCloseBox	{container=':directory_packing_example.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :directory_packing_example.moml_CTabItem	{caption='directory_packing_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :export.h5_CTabItem	{caption='export.h5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:filter_example.moml.Edit_CTabItem_2	{caption='Edit' container=':filter_example.moml_CTabItem_2' type='org.eclipse.swt.custom.CTabItem'}
+:filter_example.moml_CTabCloseBox_2	{container=':filter_example.moml_CTabItem_2' type='com.froglogic.squish.swt.CTabCloseBox'}
+:filter_example.moml_CTabItem_2	{caption='filter_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :folder_example.moml.Edit_CTabItem	{caption='Edit' container=':folder_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :folder_example.moml_CTabCloseBox	{container=':folder_example.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :folder_example.moml_CTabItem	{caption='folder_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :folder_monitor_example.moml.Edit_CTabItem	{caption='Edit' container=':folder_monitor_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :folder_monitor_example.moml_CTabCloseBox	{container=':folder_monitor_example.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :folder_monitor_example.moml_CTabItem	{caption='folder_monitor_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:gda_scan_example.moml.Edit_CTabItem_2	{caption='Edit' container=':gda_scan_example.moml_CTabItem_2' type='org.eclipse.swt.custom.CTabItem'}
+:gda_scan_example.moml_CTabCloseBox_2	{container=':gda_scan_example.moml_CTabItem_2' type='com.froglogic.squish.swt.CTabCloseBox'}
+:gda_scan_example.moml_CTabItem_2	{caption='gda_scan_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :if_example.moml.Edit_CTabItem	{caption='Edit' container=':if_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :if_example.moml_CTabCloseBox	{container=':if_example.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :if_example.moml_CTabItem	{caption='if_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -326,6 +333,12 @@
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :new_data_file1.h5.Tree_CTabItem	{caption='Tree' container=':new_data_file1.h5_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :new_data_file1.h5_CTabItem	{caption='new_data_file1.h5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:plot_fit_example.moml.Edit_CTabItem_2	{caption='Edit' container=':plot_fit_example.moml_CTabItem_2' type='org.eclipse.swt.custom.CTabItem'}
+:plot_fit_example.moml_CTabCloseBox_2	{container=':plot_fit_example.moml_CTabItem_2' type='com.froglogic.squish.swt.CTabCloseBox'}
+:plot_fit_example.moml_CTabItem_2	{caption='plot_fit_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:plot_image_region_example.moml.Edit_CTabItem	{caption='Edit' container=':plot_image_region_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:plot_image_region_example.moml_CTabCloseBox	{container=':plot_image_region_example.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:plot_image_region_example.moml_CTabItem	{caption='plot_image_region_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :python_import.moml_CTabItem	{caption='python_import.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :python_numjy_example1.moml.Edit_CTabItem	{caption='Edit' container=':python_numjy_example1.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :python_numjy_example1.moml_CTabCloseBox	{container=':python_numjy_example1.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
@@ -334,6 +347,7 @@
 :python_numpy_example1.moml_CTabCloseBox	{container=':python_numpy_example1.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :python_numpy_example1.moml_CTabItem	{caption='python_numpy_example1.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :python_pydev_numpy_example1.moml.Edit_CTabItem	{caption='Edit' container=':python_pydev_numpy_example1.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:python_pydev_numpy_example1.moml_CTabCloseBox	{container=':python_pydev_numpy_example1.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :python_pydev_numpy_example1.moml_CTabItem	{caption='python_pydev_numpy_example1.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :python_script5_AnnotationRulerColumn$5	{container=':python_script5_CTabItem' isvisible='true' type='org.eclipse.jface.text.source.AnnotationRulerColumn$5'}
 :python_script5_CTabItem	{caption='python_script5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
