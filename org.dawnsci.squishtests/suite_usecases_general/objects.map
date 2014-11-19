@@ -8,6 +8,8 @@
 :2495_Peak_Fitting.h5.Tree_CTabItem	{caption='Tree' container=':2495_Peak_Fitting.h5_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :2495_Peak_Fitting.h5_CTabCloseBox	{container=':2495_Peak_Fitting.h5_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :2495_Peak_Fitting.h5_CTabItem	{caption='2495_Peak_Fitting.h5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:40788.nxs.Plot_CTabItem	{caption='Plot' container=':40788.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:40788.nxs_CTabItem	{caption='40788.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :5.tif_CTabCloseBox	{container=':5.tif_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :5.tif_CTabItem	{caption='5.tif' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :8918.nxs_CTabItem	{caption='8918.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -146,6 +148,7 @@
 :Plot_ToolBar_5	{container=':2495.h5.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Plot_ToolBar_6	{container=':2495_Box_Profile.nxs.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Plot_ToolBar_7	{container=':9758_Box_Profile.nxs.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Plot_ToolBar_8	{container=':40788.nxs.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_CTabCloseBox	{container=':Plotting Systems_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -236,6 +239,7 @@
 :XY plotting tools_ToolItem_5	{caption='XY plotting tools' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :XY plotting tools_ToolItem_6	{caption='XY plotting tools' container=':Plot_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :XY plotting tools_ToolItem_7	{caption='XY plotting tools' container=':Plot_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
+:XY plotting tools_ToolItem_8	{caption='XY plotting tools' container=':Plot_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Zoom In_ToolItem	{caption='Zoom In' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :_CBanner	{isvisible='true' type='org.eclipse.swt.custom.CBanner' window=':Workbench Window'}
 :_CLabel	{isvisible='true' type='org.eclipse.swt.custom.CLabel' window=':_Shell_2'}
