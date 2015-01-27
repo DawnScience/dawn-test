@@ -267,7 +267,7 @@
 :_Text_2	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
 :_ToolBar	{container=':_CTabFolder' firstItemText~='(Pin Console|Terminate current console|Clear Console)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_10	{container=':_CTabFolder_4' firstItemText='Copy selected data (it can then be pasted to another data list.)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:_ToolBar_11	{container=':_CTabFolder_4' firstItemText='Copy \\'/entry1/EDXD_Element_02/data\\' (can be paste to other data).' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_11	{container=':_CTabFolder_4' firstItemText='Copy \\'/entry1/EDXD_Element_02/data\\' (can be pasted into other data).' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_12	{container=':_CTabFolder_4' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_13	{container=':_CTabFolder_4' firstItemText='Show only data with a \\'signal\\' attribute' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
@@ -277,7 +277,7 @@
 :_ToolBar_6	{container=':_CTabFolder_2' firstItemText='Changes the plot to use selected data set as the x-axis.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_7	{container=':_CTabFolder_2' firstItemText='Refresh' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_8	{container=':_CTabFolder_2' firstItemText?='Copy*' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:_ToolBar_9	{container=':_CTabFolder_4' firstItemText='Copy \\'/entry1/EDXD_Element_01/data\\' (can be paste to other data).' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_9	{container=':_CTabFolder_4' firstItemText='Copy \\'/entry1/EDXD_Element_01/data\\' (can be pasted into other data).' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
 :_ViewForm	{container=':_CTabFolder_6' isvisible='true' type='org.eclipse.swt.custom.ViewForm'}
 :_ViewForm_2	{container=':_CTabFolder_2' isvisible='true' type='org.eclipse.swt.custom.ViewForm'}

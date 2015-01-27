@@ -27,7 +27,7 @@ def main():
     test.verify(system.getTraces().iterator().next().getData().getRank()==2)
     
     mouseClick(waitForObjectItem(":Data_Table", "11/1"), 5, 5, 0, Button.Button3)
-    activateItem(waitForObjectItem(":_Menu_3", "Copy 'dat:mean(Pilatus,0)' (can be paste to other data)."))
+    activateItem(waitForObjectItem(":_Menu_3", "Copy 'dat:mean(Pilatus,0)' (can be pasted into other data)."))
   
     openExternalFile("9758.nxs")
     snooze(10)
