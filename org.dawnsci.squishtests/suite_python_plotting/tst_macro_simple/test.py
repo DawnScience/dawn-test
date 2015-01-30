@@ -38,5 +38,5 @@ def main():
     # Check that macro commands are there
     got = waitForObject(":PyDev Console").text
     test.verify("import numpy" in got, "Unable to find numpy command in macro recorded!")
-    
+    test.verify('ps = dnp.plot.getPlottingSystem("metalmix.mca")' in got, "The correct plotting system was not in the macro")
     closeOrDetachFromDAWN()
