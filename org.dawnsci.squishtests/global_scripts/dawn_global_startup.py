@@ -38,7 +38,7 @@ def startDAWNSuiteWorkspace():
         pass
     
 
-def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=False, extraCmd=None):
+def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=False, vmArgs=None):
     if USE_ATTACH:
         attachToApplication("attachable_dawn")
     else:
@@ -74,12 +74,12 @@ def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=Fals
 
         start = datetime.now()
         
-        if not extraCmd:
+        if not vmArgs:
             startApplication("dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s" %
                              (workspace, osgi_user_area, osgi_configuration_area, suite_name, test_name), "", -1, 90)
         else:
             startApplication("dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s -vmargs %s" %
-                             (workspace, osgi_user_area, osgi_configuration_area, suite_name, test_name, extraCmd), "", -1, 90)
+                             (workspace, osgi_user_area, osgi_configuration_area, suite_name, test_name, vmArgs), "", -1, 90)
             
         end = datetime.now()
         test.log("Application took " + str(end-start) + " to start")
@@ -97,8 +97,8 @@ def dismissWelcomScreen():
     activateItem(waitForObjectItem(":Pop Up Menu", "Close"))
     test.passes("dismissWelcomScreen: Success")
 
-def startOrAttachToDAWN(copy_configuration_and_p2=False, extraCmd=None):
-    startOrAttachToDAWNOnly(copy_configuration_and_p2=copy_configuration_and_p2, extraCmd=extraCmd)
+def startOrAttachToDAWN(copy_configuration_and_p2=False, vmArgs=None):
+    startOrAttachToDAWNOnly(copy_configuration_and_p2=copy_configuration_and_p2, vmArgs=vmArgs)
     dismissWelcomScreen()
     test.passes("startOrAttachToDAWN: Success")
     

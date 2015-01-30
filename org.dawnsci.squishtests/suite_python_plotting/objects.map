@@ -103,6 +103,7 @@
 :Open Console_ToolItem	{caption='Open Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Console_ToolItem_2	{caption='Open Console' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Console_ToolItem_3	{caption='Open Console' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
+:Open Console_ToolItem_4	{caption='Open Console' container=':_ToolBar_12' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Open Perspective_Shell'}
 :Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -125,12 +126,14 @@
 :Preferences.Environment_TabItem	{caption='Environment' type='org.eclipse.swt.widgets.TabItem' window=':Preferences_Shell'}
 :Preferences.New..._Button	{caption='New...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
+:Preferences.Py4j active_Button	{caption='Py4j active' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Python interpreters (e.g.: python.exe)_Label	{caption='Python interpreters (e.g.: python.exe)' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Preferences_Shell'}
 :Preferences.Python interpreters (e.g.: python.exe)_Tree	{aboveWidget=':Preferences.Python interpreters (e.g.: python.exe)_Label' isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
 :Preferences.Quick Auto-Config_Button	{caption='Quick Auto-Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences_Composite	{isvisible='true' occurrence='17' type='org.eclipse.swt.widgets.Composite' window=':Preferences_Shell'}
 :Preferences_Shell	{caption='Preferences' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Preferences_Shell_2	{caption='Preferences' isvisible='false' type='org.eclipse.swt.widgets.Shell'}
+:Preferences_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Preferences_Shell'}
 :Preferences_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
 :Preferences_Tree_2	{isvisible='false' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell_2'}
 :Print scaled plot         Ctrl+P_ToolItem	{caption='Print scaled plot         Ctrl+P' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
@@ -143,9 +146,13 @@
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Project Explorer_Tree_2	{container=':Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :PyDev Console	{container=':Console_CTabItem' isvisible='true' type='org.python.pydev.shared_interactive_console.console.ui.internal.ScriptConsoleViewer$ScriptConsoleStyledText'}
+:PyDev Package Explorer_CTabItem	{caption='PyDev Package Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:PyDev Package Explorer_Tree	{container=':PyDev Package Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Python console_Button	{caption='Python console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem	{caption='Enthought EPD Free' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
+:Record Macro_ToolItem	{caption='Record Macro' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Record Macro_ToolItem_2	{caption='Record Macro' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
 :Reset Perspective.Yes_Button	{caption='Yes' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Reset Perspective_Shell'}
 :Reset Perspective_Shell	{caption='Reset Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -195,6 +202,7 @@
 :_CTabFolder_4	{firstTabCaption='Dataset Plot' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_5	{firstTabCaption='2495.h5' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_6	{firstTabCaption='Meta Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
+:_CTabFolder_7	{firstTabCaption='Value' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Composite	{isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Composite' window=':_Shell'}
 :_List	{isvisible='true' type='org.eclipse.swt.widgets.List' window=':_Shell'}
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
@@ -212,6 +220,8 @@
 :_ToolBar	{container=':_CTabFolder' firstItemText~='(Pin Console|Terminate current console|Clear Console)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_10	{container=':_CTabFolder_2' firstItemText='Terminate current console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_11	{firstItemText='Activates the interactive console. (Ctrl+Alt+Enter)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_12	{container=':_CTabFolder_7' firstItemText='Pin Console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_13	{container=':_CTabFolder_7' firstItemText='Terminate current console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
