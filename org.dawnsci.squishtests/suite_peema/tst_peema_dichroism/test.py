@@ -40,11 +40,11 @@ def main():
     chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema")
 
     #Play with slider...
-    setValue(waitForObject(":Live Plot Control.Aligned Data_Slider"), 1)
+    setValue(waitForObject(":Live Plot Control.Aligned Data_Scale"), 1)
     snooze(1)
-    setValue(waitForObject(":Live Plot Control.Aligned Data_Slider"), 17)
+    setValue(waitForObject(":Live Plot Control.Aligned Data_Scale"), 17)
     snooze(1)
-    setValue(waitForObject(":Live Plot Control.Aligned Data_Slider"), 8)
+    setValue(waitForObject(":Live Plot Control.Aligned Data_Scale"), 8)
     snooze(1)
 
     #run the dichroism process
@@ -77,7 +77,10 @@ def main():
     test.verify(system.getTraces().size()==1)
     
     snooze(1)
-    
+    #test align with hessian transform buttons
+    mouseClick(waitForObjectItem(":Peem Analysis View.Add Region_Combo", "Affine transform"), 0, 0, 0, Button.NoButton)
+    clickButton(waitForObject(":Peem Analysis View.Align_Button"))
+    snooze(3.5)
     #test saving
     clickButton(waitForObject(":Peem Analysis View.Use default save directory_Button"))
     clickButton(waitForObject(":Output location.Save_Button"))
