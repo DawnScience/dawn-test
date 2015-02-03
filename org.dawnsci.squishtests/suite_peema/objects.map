@@ -88,7 +88,11 @@
 :Image Playback_Slider	{container=':Image Explorer.Image Playback_Group' isvisible='true' leftWidget=':Image Playback_Button_5' type='org.eclipse.swt.widgets.Slider'}
 :Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':_ToolBar_12' type='org.eclipse.swt.widgets.ToolItem'}
 :Images location...._Button	{caption='...' container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Images location.tiff_Button	{caption='tiff' container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Images location_Button	{caption='' container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Images location_Button_2	{arrowDirection='SWT.UP' caption='' container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Images location_Button_3	{arrowDirection='SWT.DOWN' caption='' container=':Peem Analysis View.Images location_Group' isvisible='true' leftWidget=':Images location_Button_2' type='org.eclipse.swt.widgets.Button'}
+:Images location_Button_4	{caption='' container=':Peem Analysis View.Images location_Group' isvisible='true' leftWidget=':Images location_Button_3' type='org.eclipse.swt.widgets.Button'}
 :Images location_Label	{caption='' container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Images location_Text	{container=':Peem Analysis View.Images location_Group' isvisible='true' leftWidget=':Images location_Label' type='org.eclipse.swt.widgets.Text'}
 :Images location_Text_2	{container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Text'}
@@ -103,6 +107,7 @@
 :Keep aspect ratio_ToolItem	{caption='Keep aspect ratio' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Live Plot Control.Aligned Data_Button	{caption='Aligned Data' container=':Peem Analysis View.Live Plot Control_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Live Plot Control.Aligned Data_Scale	{aboveWidget=':Live Plot Control.Aligned Data_Button' container=':Peem Analysis View.Live Plot Control_Group' isvisible='true' type='org.eclipse.swt.widgets.Scale'}
 :Live Plot Control.Aligned Data_Slider	{aboveWidget=':Live Plot Control.Aligned Data_Button' container=':Peem Analysis View.Live Plot Control_Group' isvisible='true' type='org.eclipse.swt.widgets.Slider'}
 :Live Plot_CTabItem	{caption='Live Plot' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Mode.2_Button	{caption='2' container=':Peem Analysis View.Mode_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
@@ -132,6 +137,7 @@
 :Output location.Save_Button	{caption='Save' container=':Peem Analysis View.Output location_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :PEEMA_ToolItem	{caption='PEEMA' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
 :Peem Analysis View.Add Region_Button	{caption='Add Region' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Peem Analysis View.Add Region_Combo	{container=':Peem Analysis View_CTabItem' isvisible='true' leftWidget=':Peem Analysis View.Add Region_Button' type='org.eclipse.swt.widgets.Combo'}
 :Peem Analysis View.Align_Button	{caption='Align' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View.Dichroism_Button	{caption='Dichroism' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View.Images location_Group	{caption='Images location' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
