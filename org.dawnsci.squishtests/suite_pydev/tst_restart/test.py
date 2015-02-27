@@ -20,11 +20,8 @@ def main():
     expand(waitForObjectItem(":Preferences_Tree", "Interpreters"))
     mouseClick(waitForObjectItem(":Preferences_Tree", "Python Interpreter"))
     snooze(20)
-    if object.exists(':Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem'):
-        test.compare(findObject(":Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem").text, "Enthought EPD Free")
-    else:
-        test.compare(findObject(":Python interpreters (e.g.: python.exe).python_TreeItem").text, "python")
-    
+    test.compare(findObject(":Python interpreters (e.g.: python.exe).python_TreeItem").text, "python")
+
     clickButton(waitForObject(":Preferences.OK_Button"))
     snooze(1.0)
     closeWindow(":Workbench Window")
