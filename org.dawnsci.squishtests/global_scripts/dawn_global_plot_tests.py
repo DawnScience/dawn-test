@@ -15,7 +15,8 @@ def check_plotted_trace_name_yval(configObj,name,ymax,ymin):
 
     snooze(1)#added snooze since these boxes may be disabled so need to use find rather than wait for
     widget = findObject(":Change Settings.Maximum_Text")
-    test.verify(widget.text == ymax,"Check Y Axis Maximum Expected: " + ymax + " Actual: "+ widget.text)
+    value = widget.text
+    test.verify(value == ymax,"Check Y Axis Maximum Expected: " + ymax + " Actual: "+ value)
     widget= findObject("{leftWidget=':Change Settings.Minimum: _Label' type='org.eclipse.swt.widgets.Text'}")
     test.verify(widget.text == ymin,"Check Y Axis Minimum Expected: " + ymin + " Actual: "+ widget.text)
     

@@ -49,7 +49,7 @@ def main():
     clickTab(waitForObject(":Data_CTabItem_2"), 30, 6, 0, Button.Button1)
     mouseClick(waitForObject(":Data_Text_2"), 47, 8, 0, Button.Button1)
     type(waitForObject(":Data_Text_2"), "14/dat")
-    mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 6, 13, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 7, 8, 0, Button.Button1)
 
         
     snooze(5)
