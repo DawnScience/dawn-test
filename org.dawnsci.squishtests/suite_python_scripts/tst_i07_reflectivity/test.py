@@ -15,7 +15,8 @@ def main():
     # will close the Welcome screen 
     startOrAttachToDAWN()
 
-    setupPython(needScipy=True)
+    #Needs scipy, but this is provided by anaconda (which is current default interpreter)
+    setupPython()
 
     #create a pydev project 
     mouseClick(waitForObject(":Project Explorer_Tree"), 118, 187, 0, Button.Button3)
