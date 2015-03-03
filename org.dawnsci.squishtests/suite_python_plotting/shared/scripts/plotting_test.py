@@ -50,6 +50,7 @@ def openConsole():
     
     mouseClick(waitForObject(":Open Console_ToolItem_4"), 34, 11, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
+    clickButton(waitForObject(":Python console_Button"))
     clickButton(waitForObject(":OK_Button"))
     
     waitForResponse()
