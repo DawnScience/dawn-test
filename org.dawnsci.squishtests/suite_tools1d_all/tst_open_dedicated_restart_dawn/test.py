@@ -18,8 +18,8 @@ def the_actual_test(system):
     mouseDragRegion(system)
     
     #check being shown
-    names = ["Column_3","Peak 1"]
-    check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
+    names = ["Column_3","Fit 1","Peak 1"]
+    check_plotted_traces_names_contains(waitForObject(":Configure Settings..._ToolItem"), names)
     
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 3, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Peak Fitting' in dedicated view"))
@@ -28,8 +28,7 @@ def the_actual_test(system):
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
     activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative View"))
-    names = ["Column_3","Peak 1"]
-    check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
+    check_plotted_traces_names_contains(waitForObject(":Configure Settings..._ToolItem"), names)
     #check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"), "Column_3'", "400.0", "-400.0")
     
 #   On ws266 this, setting Derivative to dedicated view fails (for no apparent reason)
@@ -45,7 +44,7 @@ def the_actual_test(system):
     activateItem(waitForObjectItem(":Pop Up Menu", "Measurement"))
     #Check derivative tool has not reset
     
-    check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
+    check_plotted_traces_names_contains(waitForObject(":Configure Settings..._ToolItem"), names)
     check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"),"Column_3", "800.0","0.0")
     
     #Measure across peak
@@ -64,8 +63,7 @@ def the_actual_test(system):
     #Fit line to peak
     mouseDragRegion(system)
     
-    names = ["Column_3","Peak 1", "Fit 1"]
-    check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
+    check_plotted_traces_names_contains(waitForObject(":Configure Settings..._ToolItem"), names)
     
     test.verify(waitForObjectItem(":Line Fitting_Table", "0/0").text == "Column_3", "Verify measurement text");
     
