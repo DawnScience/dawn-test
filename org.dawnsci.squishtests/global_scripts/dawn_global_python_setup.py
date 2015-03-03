@@ -33,7 +33,7 @@ def openPyDevConsole(type="Python"):
     
     # This is a bit difficult to know when we are fully ready, so we wait
     # for these two events to happen. 
-    snooze(5)
+    snooze(10)
     waitForFirstSwtToolItem('Clear Console')
     waitForPrompt()
     
@@ -115,15 +115,12 @@ def setupPython(allowInstallEPD=False, installEPD=False, installEPDPath=None, ne
     multiOptions = multiOptions and object.exists(":Select Interpreter Available_Table")
     if multiOptions:
         availableList = object.children(waitForObject(":Select Interpreter Available_Table"))
-        if installEPD:
-            allowedList = filter(lambda x: "EPD" in x.text and "select to install" in x.text, availableList)
-        else:
-            allowedList = filter(lambda x: "select to install" not in x.text, availableList)
-            if needScipy:
-                anaList = filter(lambda x: "anaconda" in x.text, availableList)
-                if len(anaList) != 0:
-                    allowedList = anaList
-                test.compare(allowedList, anaList, 'Dependency on scipy. Suite requires either anaconda (or another scipy providing environment e.g. EPD).')
+        allowedList = filter(lambda x: "select to install" not in x.text, availableList)
+      #  if needScipy:
+        anaList = filter(lambda x: "anaconda" in x.text, availableList)
+        if len(anaList) != 0:
+            allowedList = anaList
+        test.compare(allowedList, anaList, 'Suite requires either anaconda (or another scipy providing environment e.g. EPD).')
             
         clickItem(waitForObject(":Select Interpreter Available_Table"), "%d/0" % allowedList[0].row, 5, 5)
         clickButton(waitForObject(":Select Interpreter Available_OK_Button"))
