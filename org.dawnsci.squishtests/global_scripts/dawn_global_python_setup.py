@@ -1,21 +1,7 @@
 source(findFile("scripts", "swt_toolitems.py"))
-EPD_FREE_LOCATIONS=[
-  'C:\\Python27\\python.exe', 
-  'C:\\Python26\\python.exe',
-  'C:\\scratch\\epd_free\\python.exe', 
-  '/home/tester/epd_free/bin/python', 
-  '/scratch/epd_free/bin/python']
 
-# Add in the current home directory as a place to look for EPD
-# free. This doesn't really apply to the test vm machines
-# but it can make local development of the tests easier
 import os
 import subprocess
-home = os.getenv("HOME")
-if home is not None:
-     EPD_FREE_LOCATIONS.append("%s/epd_free/bin/python" % home)
-
-
 
 def openPyDevConsole(type="Python"):
     ''' Open a PyDev console waiting for the console to be fully open.
@@ -33,7 +19,7 @@ def openPyDevConsole(type="Python"):
     
     # This is a bit difficult to know when we are fully ready, so we wait
     # for these two events to happen. 
-    snooze(5)
+    snooze(10)
     waitForFirstSwtToolItem('Clear Console')
     waitForPrompt()
     
@@ -67,40 +53,9 @@ def _finishPythonSetup():
     # It can take a while to configure interpreter, so wait until
     # the workbench window is ready again
     # On windows vm this can take forever! So wait 300 seconds
-    waitForObject(":Workbench Window", 300000)    
+    waitForObject(":Workbench Window", 300000)
 
-def setupEPDPython():
-    waitForObject(":Workbench Window")
-    activateItem(waitForObjectItem(":_Menu", "Window"))
-    activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
-    expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
-    expand(waitForObjectItem(":Preferences_Tree", "Interpreters"))
-    mouseClick(waitForObjectItem(":Preferences_Tree", "Python Interpreter"))
-    mouseClick(waitForObject(":Preferences.New..._Button"))
-    type(waitForObject(":Select interpreter.Interpreter Name: _Text"), "Enthought EPD Free")
-    found = False
-    for loc in EPD_FREE_LOCATIONS:
-        if os.path.exists(loc):
-            type(waitForObject(":Select interpreter.Interpreter Executable: _Text"), "<Ctrl+a>")
-            type(waitForObject(":Select interpreter.Interpreter Executable: _Text"), loc)
-            if len(waitForObject(":Select interpreter Error Message_Text").text) == 0:
-                # found a good one
-                test.verify(True, "setupEPDPython: Using %s as Enthought EPD Free" % loc)
-                found = True
-                break
-    if found:
-        clickButton(waitForObject(":Select interpreter.OK_Button"))
-        _finishPythonSetup()
-    else:
-        test.passes("setupEPDPython: No installed EPD found, deferring to setupPython")
-        # We failed to find installed EPD, so try and install it now
-        clickButton(waitForObject(":Select interpreter.Cancel_Button"))
-        clickButton(waitForObject(":Preferences.Cancel_Button"))
-        setupPython(installEPD=True)
-    test.passes("setupEPDPython: Success")
-        
-
-def setupPython(allowInstallEPD=False, installEPD=False, installEPDPath=None, needScipy=False):
+def setupPython():
     waitForObject(":Workbench Window")
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
@@ -115,67 +70,37 @@ def setupPython(allowInstallEPD=False, installEPD=False, installEPDPath=None, ne
     multiOptions = multiOptions and object.exists(":Select Interpreter Available_Table")
     if multiOptions:
         availableList = object.children(waitForObject(":Select Interpreter Available_Table"))
-        if installEPD:
-            allowedList = filter(lambda x: "EPD" in x.text and "select to install" in x.text, availableList)
-        else:
-            allowedList = filter(lambda x: "select to install" not in x.text, availableList)
-            if needScipy:
-                anaList = filter(lambda x: "anaconda" in x.text, availableList)
-                if len(anaList) != 0:
-                    allowedList = anaList
-                test.compare(allowedList, anaList, 'Dependency on scipy. Suite requires either anaconda (or another scipy providing environment e.g. EPD).')
+        #We're not testing installations
+        allowedList = filter(lambda x: "select to install" not in x.text, availableList)
+        #We want to use anaconda
+        anaList = filter(lambda x: "anaconda" in x.text, availableList)
+        if len(anaList) != 0:
+            allowedList = anaList
+        test.compare(allowedList, anaList, 'Suite requires either anaconda (or another scipy providing environment).')
             
         clickItem(waitForObject(":Select Interpreter Available_Table"), "%d/0" % allowedList[0].row, 5, 5)
         clickButton(waitForObject(":Select Interpreter Available_OK_Button"))
 
-    # In the case that there is no Python autofound, allow install of EPD
-    # This only applies if the selection interpreter list dialog isn't shown
-    elif allowInstallEPD and waitFor('object.exists(":Enthought EPD Free Installer_Label")', 20000):
-        installEPD = True
-
-    if installEPD:
-        test.verify(object.exists(":Enthought EPD Free Installer_Label"), "setupPython: Enthought Installer Wizard open (if this fails it is because the Enthought wizard didn't open)")
-        test.verify(object.exists(":I accept the terms of the license agreement_Button"), "setupPython: License agreement open")
-        clickButton(waitForObject(":I accept the terms of the license agreement_Button", 1))
-        clickButton(waitForObject(":Next >_Button"))
-        
-        if installEPDPath is not None:
-            type(waitForObject(":Install to:_Text"), installEPDPath)
-        clickButton(waitForObject(":Close wizard automatically on successful installation._Button"))
-        clickButton(waitForObject(":Finish_Button"))
-        # Wait up to 5 minutes for the wizard to finish
-        # There is a case here to add event driven check so that if there
-        # is an unexpected failure we don't wait so long
-        waitForObject(":Selection needed.OK_Button", 300000)
-
     _finishPythonSetup()
     test.passes("setupPython: Success")
 
-def getPythonLocation(epdInstalled=False):
+def getPythonLocation():
     """Searches for full path to python executable
-    If EPD is installed, specify epdInstalled=True as arg to use hardcoded list of location.
-    Otherwise, which used to return full path of anaconda or just first python executable"""
+    'which' used to return full path of anaconda or just first python executable"""
     loc = None
-    
-    #Old behaviour, return an EPD path if EPD is installed
-    if epdInstalled == True:
-        for epdLoc in EPD_FREE_LOCATIONS:
-            if os.path.exists(epdLoc):
-                loc = epdLoc
     #New behaviour, return a path to a python interpreter
     #Thanks to M. Webber for this snippet
-    else:
-        whichRun = subprocess.Popen(('which','-a','python'), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        (stdout, stderr) = whichRun.communicate(None)
-        if not whichRun.returncode:
-            spltout = stdout.split('\n')
-            if 'anaconda' in stdout:
-                for anaLoc in spltout:
-                    if 'anaconda' in anaLoc:
-                        loc = anaLoc 
-            else:
-                loc = spltout[0]
-            
+    whichRun = subprocess.Popen(('which','-a','python'), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    (stdout, stderr) = whichRun.communicate(None)
+    if not whichRun.returncode:
+        spltout = stdout.split('\n')
+        if 'anaconda' in stdout:
+            for anaLoc in spltout:
+                if 'anaconda' in anaLoc:
+                    loc = anaLoc 
+        else:
+            loc = spltout[0]
+
     return loc
 
 def setPyDevPref_ConnectToDebugSession(connect=True):

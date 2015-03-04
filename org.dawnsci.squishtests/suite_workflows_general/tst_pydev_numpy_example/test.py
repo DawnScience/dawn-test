@@ -31,7 +31,8 @@ def main():
 #
 #    mouseClick(waitForObjectItem(":Actor Attributes_Table", "3/1"), 633, 11, 0, Button.Button1)
 #    mouseClick(waitForObject(":Actor Attributes_CCombo"), 685, 7, 0, Button.Button1)
-#    freeLocation = "Enthought EPD Free - " + getPythonLocation(epdInstalled=True) # Need to change setupPython to setupEPDPython()
+#    #WARNING: EPD removed, this will break.
+#    freeLocation = "Enthought EPD Free - " + getPythonLocation() # Need to change setupPython to setupEPDPython()
 #    mouseClick(waitForObjectItem(":_List", freeLocation), 178, 12, 0, Button.Button1)
 # 
 #
