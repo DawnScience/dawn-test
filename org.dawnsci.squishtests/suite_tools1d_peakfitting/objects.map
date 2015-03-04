@@ -135,10 +135,12 @@
 :Show fitting traces._ToolItem	{caption='Show fitting traces.' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Show peak lines._ToolItem	{caption='Show peak lines.' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Show selection regions for full width, half max._ToolItem	{caption='Show selection regions for full width, half max.' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Size_Menu	{caption='Size' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Trace_TableColumn	{caption='Trace' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :Traces.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Type_TableColumn	{caption='Type' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
+:Value_CTabItem	{caption='Value' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Variables_CTabItem	{caption='Variables' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Variables_Tree	{container=':Variables_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :View Menu_ToolItem	{caption='View Menu' container=':_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
@@ -160,6 +162,7 @@
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :_Sash	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Sash_2	{isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
+:_Sash_3	{isvisible='true' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Shell	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :_ToolBar	{container=':_CTabFolder' firstItemText~='(Pin Console|Terminate current console|Clear Console)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}

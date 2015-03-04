@@ -1,5 +1,6 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "peakfit_shared.py"))
 
 def main():
     #Start using clean workspace
@@ -8,15 +9,20 @@ def main():
     # Open data browsing perspective 
     openPerspective("Data Browsing (default)")
     
-    #expand data tree and open metal mix
-    expand(waitForObjectItem(":Project Explorer_Tree", "data"))
-    expand(waitForObjectItem(":Project Explorer_Tree", "examples"))
-    children = object.children(waitForObjectItem(":Project Explorer_Tree", "examples"))
+    #Create space so the drop-down menus show all items
+    createPeakFitSpace()
+    snooze(1)
     
-    for child in children:
-        if "metalmix.mca" in child.text:
-            doubleClick(child, 5, 5, 0, Button.Button1)
-            continue
+    #expand data tree and open metal mix
+    loadMetalMix()
+#    expand(waitForObjectItem(":Project Explorer_Tree", "data"))
+#    expand(waitForObjectItem(":Project Explorer_Tree", "examples"))
+#    children = object.children(waitForObjectItem(":Project Explorer_Tree", "examples"))
+#    
+#    for child in children:
+#        if "metalmix.mca" in child.text:
+#            doubleClick(child, 5, 5, 0, Button.Button1)
+#            continue
     
     mouseClick(waitForObjectItem(":Data_Table", "0/0"), 9, 7, 0, Button.Button1)
     

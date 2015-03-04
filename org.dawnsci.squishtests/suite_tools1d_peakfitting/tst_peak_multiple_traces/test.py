@@ -1,5 +1,6 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "peakfit_shared.py"))
 
 def main():
     #Start using clean workspace
@@ -7,6 +8,10 @@ def main():
     
     # Open data browsing perspective 
     openPerspective("Data Browsing (default)")
+    
+    #Create space so the drop-down menus show all items
+    createPeakFitSpace(steps=25)
+    snooze(1)
     
     #expand data tree and open metal mix
     expand(waitForObjectItem(":Project Explorer_Tree", "data"))
@@ -55,7 +60,7 @@ def main():
     
     snooze(30)
     
-    test.verify(tab.getItemCount()==64,"16 peaks in table")
+    test.verify(tab.getItemCount()==64,"64 peaks in table")
     
     mouseClick(waitForObject(":Name_TableColumn"), 82, 18, 0, Button.Button1)
     snooze(1)
