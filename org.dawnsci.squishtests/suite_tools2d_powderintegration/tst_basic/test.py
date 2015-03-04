@@ -179,6 +179,8 @@ def main():
     test.verify( not (ptp1 == ptp) , "Peak to peak acceptable- trans")
     snooze(1)
     
+    closeOrDetachFromDAWN()
+    
 
     
     
