@@ -27,7 +27,7 @@ def main():
     
     # Python
     setupPython()
-    openConsole()
+    openDataBrowsingConsole()
     
     # Press the record macro button
     mouseClick(waitForObject(":Record Macro_ToolItem_2"), 6, 12, 0, Button.Button1)
