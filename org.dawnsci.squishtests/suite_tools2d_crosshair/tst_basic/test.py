@@ -38,11 +38,16 @@ def main():
     snooze(1)
     
     
-    nameList = ["Profile 1",       "Profile 1", 
-                "Profile Static 1","Profile Static 1",
-                "Profile Static 2","Profile Static 2",
-                "Profile Static 3","Profile Static 3",
-                "Profile Static 4","Profile Static 4"]
+    nameList = ["X Profile 1",       "Y Profile 1", 
+                "Profile 1",         "Profile 1", 
+                "X Profile Static 1","Y Profile Static 1",
+                "Profile Static 1",  "Profile Static 1",
+                "X Profile Static 2","Y Profile Static 2",
+                "Profile Static 2",  "Profile Static 2",
+                "X Profile Static 3","Y Profile Static 3",
+                "Profile Static 3",  "Profile Static 3",
+                "X Profile Static 4","Y Profile Static 4",
+                "Profile Static 4",  "Profile Static 4"]
     
     check_plotted_traces_names_contains(waitForObject(":Configure Settings..._ToolItem"), nameList)
     
@@ -60,7 +65,7 @@ def main():
     snooze(1)
 
     
-    nameList = ["Profile 1",  "Profile 1",  "Profile Static 1","Profile Static 1"]
+    nameList = ["X Profile 1", "Y Profile 1",  "Profile 1",  "X Profile Static 1",  "Y Profile Static 1" ,"Profile Static 1"]
     
     try:
         check_plotted_traces_names_contains(waitForObject(":Configure Settings..._ToolItem"), nameList)
