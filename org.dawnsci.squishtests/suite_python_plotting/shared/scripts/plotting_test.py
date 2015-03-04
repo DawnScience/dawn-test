@@ -7,47 +7,51 @@ def getFirstDataset(system):
     
     return tarray.at(0).getData()
 
-def createConsole():
+def createConsoleSpace(perspective="Python"):
     
-    startOrAttachToDAWN()
+    if perspective == "Python":
+        consoleName = ":Console_CTabItem_2"
+        sashName = ":_Sash_5"
+        steps = 15
+    elif perspective == "Data Browsing (default)":
+        consoleName = ":Console_CTabItem"
+        sashName = ":_Sash_3"
+        steps = 40
     
-    openPerspective("Python")
-
-    clickTab(waitForObject(":Console_CTabItem_2"), 58, 4, 0, Button.Button3)
+    clickTab(waitForObject(consoleName), 49, 4, 0, Button.Button3)
     activateItem(waitForObjectItem(":Pop Up Menu", "Size"))
     activateItem(waitForObjectItem(":Size_Menu", "Top"))
-    type(waitForObject(":_Sash_2"), "<Up>")
-    type(waitForObject(":_Sash_2"), "<Up>")
-    type(waitForObject(":_Sash_2"), "<Up>")
-    type(waitForObject(":_Sash_2"), "<Up>")
-    type(waitForObject(":_Sash_2"), "<Up>")
-    type(waitForObject(":_Sash_2"), "<Up>")
-    type(waitForObject(":_Sash_2"), "<Up>")
-    type(waitForObject(":_Sash_2"), "<Up>")
-    type(waitForObject(":_Sash_2"), "<Up>")
-    type(waitForObject(":_Sash_2"), "<Up>")
-    type(waitForObject(":_Sash_2"), "<Up>")
-    type(waitForObject(":_Sash_2"), "<Up>")
-    clickTab(waitForObject(":Console_CTabItem_2"), 27, 12, 0, Button.Button1)
-
-    setupPython()
     
-    system = getPlottingSystem("Plot 1")
+    #For compactness, put dragging sash into loop
+    a = 0
+    while a < steps:
+        type(waitForObject(sashName), "<Up>")
+        a += 1
+    clickTab(waitForObject(consoleName), 27, 12, 0, Button.Button1)
 
-    openPydevConsole()
-        
-    return system
 
-def openPydevConsole():
+def openPydevConsole(perspective="Python"):
+    if perspective == "Python":
+        consoleToolItem = ":Open Console_ToolItem"
+    elif perspective == "Data Browsing (default)":
+        consoleToolItem = ":Open Console_ToolItem_4"
+    
     mouseClick(waitForObject(":Open Console_ToolItem"), 16, 14, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
     clickButton(waitForObject(":Python console_Button"))
     clickButton(waitForObject(":OK_Button"))
     
     waitForResponse()
+    
+def openPydevJythonConsole():
+    mouseClick(waitForObject(":Open Console_ToolItem"), 16, 14, 0, Button.Button1)
+    activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
+    clickButton(waitForObject(":Jython console_Button"))
+    clickButton(waitForObject(":OK_Button"))
+    
+    waitForResponse()
 
 def openDataBrowsingConsole():
-    
     mouseClick(waitForObject(":Open Console_ToolItem_4"), 34, 11, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
     clickButton(waitForObject(":Python console_Button"))

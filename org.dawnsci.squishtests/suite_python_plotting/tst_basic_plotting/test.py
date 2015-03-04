@@ -12,9 +12,19 @@ def getFirstDataset(system):
     
 def main():
     
-    #Start using clean workspace
-    system = createConsole()
-    
+    #Start using clean workspace, open Python perspective with 
+    #space for the console and setup python
+    startOrAttachToDAWN()
+    openPerspective("Python")
+    createConsoleSpace()
+    setupPython()
+
+    #Get the plotting system and open a Jython console
+    system = getPlottingSystem("Plot 1")
+    openPydevConsole()
+    #As of 1.8, console slow to start on ws131
+    snooze(30)   
+
     plotting_script_test(system)
     
     closeOrDetachFromDAWN()

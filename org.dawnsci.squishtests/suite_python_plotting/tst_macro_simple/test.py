@@ -12,22 +12,17 @@ def getFirstDataset(system):
     
 def main():
     
-    #Start using clean workspace, switching on py4j automatically
+    #Start using clean workspace, open Python perspective with 
+    #space for the console and setup python; switch on py4j automatically
     startOrAttachToDAWN(vmArgs='-DPREF_PY4J_ACTIVE=true')
     openPerspective("Data Browsing (default)")
-    
-    # Make some more room
-    clickTab(waitForObject(":Console_CTabItem"), 47, 12, 0, Button.Button1)
-    
-    # Make the python console bigger
-    a = 0
-    while a < 40:
-        a = a + 1
-        type(waitForObject(":_Sash_3"), "<Up>")
-    
-    # Python
+    createConsoleSpace(perspective="Data Browsing (default)")
     setupPython()
-    openDataBrowsingConsole()
+    
+    #Open a python console
+    openPydevConsole(perspective="Data Browsing (default)")
+    #As of 1.8, console slow to start on ws131
+    snooze(30)
     
     # Press the record macro button
     mouseClick(waitForObject(":Record Macro_ToolItem_2"), 6, 12, 0, Button.Button1)

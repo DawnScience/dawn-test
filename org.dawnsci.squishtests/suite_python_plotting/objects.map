@@ -209,6 +209,7 @@
 :_Sash_2	{isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Sash_3	{isvisible='true' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Sash_4	{isvisible='true' occurrence='3' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
+:_Sash_5	{isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Shell	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :_Shell_2	{caption='' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Shell'}
 :_Slider	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Slider' window=':Workbench Window'}
