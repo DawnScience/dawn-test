@@ -14,14 +14,7 @@ def main():
     snooze(1)
     
     #expand data tree and open metal mix
-    expand(waitForObjectItem(":Project Explorer_Tree", "data"))
-    expand(waitForObjectItem(":Project Explorer_Tree", "examples"))
-    children = object.children(waitForObjectItem(":Project Explorer_Tree", "examples"))
-    
-    for child in children:
-        if "metalmix.mca" in child.text:
-            doubleClick(child, 5, 5, 0, Button.Button1)
-            continue
+    loadMetalMix()
     
     mouseClick(waitForObjectItem(":Data_Table", "0/0"), 9, 7, 0, Button.Button1)
     
