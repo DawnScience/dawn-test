@@ -74,12 +74,35 @@ def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=Fals
 
         start = datetime.now()
         
+        # Make sure that we have args
         if not vmArgs:
-            startApplication("dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s" %
-                             (workspace, osgi_user_area, osgi_configuration_area, suite_name, test_name), "", -1, 90)
-        else:
-            startApplication("dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s -vmargs %s" %
-                             (workspace, osgi_user_area, osgi_configuration_area, suite_name, test_name, vmArgs), "", -1, 90)
+            vmArgs = ""
+
+        # On linux set set some things up
+        # This is similar to module load dawn - TODO Could the AUT just be module load dawn/nightly?
+        from sys import platform as _platform
+        
+        # We think this will not work at this point because
+        # the shell needs to be set up in Squish job from Jenkins. 
+        # However these are the things that need to be set from jenkins
+        # We need to tell Matt Webber that these changes need to be made... 
+        if _platform == "linux" or _platform == "linux2":
+            os.system("export MALLOC_ARENA_MAX=4")
+            os.system("gconftool-2 --type boolean --set /desktop/gnome/interface/menus_have_icons true")
+            os.system("module unload use.own controls controls_rdb controls_dev vxworks/2.2 epics/3.14.11")
+            os.system("module load python/ana")
+            
+            mailto=" -Duk.ac.diamond.scisoft.feedback.recipient=scisoftjira@diamond.ac.uk"
+            xulfix=" -Dorg.eclipse.swt.browser.XULRunnerPath=/dls_sw/apps/xulrunner/64/xulrunner-1.9.2"
+            usage=" -Dorg.dawnsci.usagedata.gathering.enabled=true -Dorg.dawnsci.usagedata.recording.ask=false"
+            osgi_area=" -Dosgi.configuration.area=/tmp/squish/.dawn_osgi"
+        
+            vmArgs = mailto+xulfix+usage+osgi_area+" "+vmArgs
+            
+        # Expand the command
+        cmd = "dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s --launcher.appendVmargs -vmargs %s" % (workspace, osgi_user_area, osgi_configuration_area, suite_name, test_name, vmArgs)
+
+        startApplication(cmd, "", -1, 90)
             
         end = datetime.now()
         test.log("Application took " + str(end-start) + " to start")
