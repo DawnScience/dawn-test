@@ -20,7 +20,7 @@ def main():
     setupPython()
     
     #Open a python console
-    openPydevConsole(perspective="Data Browsing (default)")
+    openPydevConsole(perspective="Data Browsing (default)", toolButton=":Open Console_ToolItem_4")
     #As of 1.8, console slow to start on ws131
     snooze(30)
     
