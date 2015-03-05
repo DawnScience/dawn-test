@@ -16,7 +16,7 @@ def main():
     startOrAttachToDAWN()
 
     #Needs scipy, but this is provided by anaconda (which is current default interpreter)
-    setupPython()
+    setupPython(needScipy=True)
 
     #create a pydev project 
     mouseClick(waitForObject(":Project Explorer_Tree"), 118, 187, 0, Button.Button3)
