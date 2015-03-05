@@ -55,7 +55,7 @@ def _finishPythonSetup():
     # On windows vm this can take forever! So wait 300 seconds
     waitForObject(":Workbench Window", 300000)
 
-def setupPython():
+def setupPython(needScipy = False):
     waitForObject(":Workbench Window")
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
@@ -76,7 +76,9 @@ def setupPython():
         anaList = filter(lambda x: "anaconda" in x.text, availableList)
         if len(anaList) != 0:
             allowedList = anaList
-        test.compare(allowedList, anaList, 'Suite requires either anaconda (or another scipy providing environment).')
+        #This is needed since the I07 (and other?) scripts sometimes rely on scipy.
+        if needScipy:
+            test.compare(allowedList, anaList, 'Suite requires either anaconda (or another scipy providing environment).')
             
         clickItem(waitForObject(":Select Interpreter Available_Table"), "%d/0" % allowedList[0].row, 5, 5)
         clickButton(waitForObject(":Select Interpreter Available_OK_Button"))
