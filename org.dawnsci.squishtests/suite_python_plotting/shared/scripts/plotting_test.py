@@ -36,7 +36,8 @@ def openPydevConsole(perspective="Python"):
     elif perspective == "Data Browsing (default)":
         consoleToolItem = ":Open Console_ToolItem_4"
     
-    mouseClick(waitForObject(":Open Console_ToolItem"), 16, 14, 0, Button.Button1)
+
+    mouseClick(waitForObject(":Open Console_ToolItem_4"), 9, 16, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
     clickButton(waitForObject(":Python console_Button"))
     clickButton(waitForObject(":OK_Button"))
