@@ -16,9 +16,7 @@ def main():
     setupPython()
     
     #Open a python console
-    openPydevConsole(perspective="Data Browsing (default)")
-    #As of 1.8, console slow to start on ws131
-    snooze(30)
+    openPyDevConsole()
     
     # Press the record macro button
     mouseClick(waitForObject(":Record Macro_ToolItem_2"), 6, 12, 0, Button.Button1)

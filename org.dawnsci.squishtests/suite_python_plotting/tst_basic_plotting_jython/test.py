@@ -16,9 +16,6 @@ def main():
     #Get the plotting system and open a Jython console
     system = getPlottingSystem("Plot 1")
     openPyDevConsole(type="Jython")
-#    openPydevJythonConsole()
-    #As of 1.8, console slow to start on ws131
-    snooze(30)
     
     counter = 0
     while (not object.exists(":PyDev Console")):

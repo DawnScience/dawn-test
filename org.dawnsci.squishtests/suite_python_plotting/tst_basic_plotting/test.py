@@ -22,8 +22,6 @@ def main():
     #Get the plotting system and open a Jython console
     system = getPlottingSystem("Plot 1")
     openPyDevConsole()
-    #As of 1.8, console slow to start on ws131
-    snooze(30)   
 
     plotting_script_test(system)
     
