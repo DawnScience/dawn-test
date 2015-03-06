@@ -36,7 +36,7 @@ def main():
     mouseClick(waitForObject(":Image Rotation.Rotation angle_Spinner"), -32, 13, 0, Button.Button1)
     type(waitForObject(":Image Rotation.Rotation angle_Spinner"), "90")
 
-    snooze(1)
+    snooze(2)
     system1 = getPlottingSystem("Image Rotation")
     data1 = system1.getTraces().iterator().next().getData()
     shape1 = data1.getShape()
@@ -52,7 +52,7 @@ def main():
     type(waitForObject(":Data_Text"), "<Return>")
     
     #check new dimension
-    snooze(3)
+    snooze(2)
     system2 = getPlottingSystem("ref-testscale_1_001.img")
     data2 = system2.getTraces().iterator().next().getData()
     shape2 = data2.getShape()
