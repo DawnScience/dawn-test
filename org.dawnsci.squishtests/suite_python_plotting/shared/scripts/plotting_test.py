@@ -29,22 +29,6 @@ def createConsoleSpace(perspective="Python"):
         a += 1
     clickTab(waitForObject(consoleName), 27, 12, 0, Button.Button1)
 
-#Is this needed?
-def waitForResponse():
-    got = waitForObject(":PyDev Console").text
-    ready = False
-    counter = 0
-    
-    while (not got.endswith("\n>>> ") or not ready):
-        ready = got.endswith("\n>>> ")
-        snooze(2)
-        got = waitForObject(":PyDev Console").text
-        if (counter > 50):
-            test.fatal("Console did not initialize")
-            closeOrDetachFromDAWN()
-            return
-        counter +=1
-
 def plotting_script_test(system):
     
     type(waitForObject(":Console_ScriptConsoleViewer$ScriptConsoleStyledText"), "dnp.plot.image(dnp.random.rand(100,200))")
