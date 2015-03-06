@@ -3,6 +3,10 @@ source(findFile("scripts", "swt_toolitems.py"))
 import os
 import subprocess
 
+#This is a wrapper to catch typos
+def openPydevConsole(type="Python"):
+	openPyDevConsole(type)
+
 def openPyDevConsole(type="Python"):
     ''' Open a PyDev console waiting for the console to be fully open.
         WARNING: This code probably does not cope with opening two consoles
@@ -12,6 +16,7 @@ def openPyDevConsole(type="Python"):
     # we don't have a great way to detect that those events we are waiting on aren't in
     # the previously launched console. What is probably needed is additional code
     # to detect the names of the existing consoles so that the new one can be detected  
+    
     mouseClick(waitForFirstSwtToolItem('Open Console'))
     activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
     clickButton(waitForObject(":%s console_Button" % type))
