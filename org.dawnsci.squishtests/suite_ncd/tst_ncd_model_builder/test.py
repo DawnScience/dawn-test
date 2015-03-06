@@ -20,7 +20,9 @@ def main():
 
     expand(waitForObjectItem(":Project Explorer_Tree_2", "data"))
     expand(waitForObjectItem(":Project Explorer_Tree_2", "examples"))
-    mouseClick(waitForObjectItem(":Project Explorer_Tree_2", "results__b21-2672__detector__040713__102411.nxs"), 186, 12, 0, Button.Button1)
+    r = waitForObjectItem(":Project Explorer_Tree_2", "results__b21-2672__detector__040713__102411.nxs")
+    mouseClick(r, 186, 12, 0, Button.Button1)
+    mouseClick(r, 186, 12, 0, Button.Button1)
     mouseClick(waitForObject(":Data parameters.Working directory_Text"), 144, 5, 0, Button.Button1)
     type(waitForObject(":Data parameters.Working directory_Text"), "<Ctrl+a>")
     type(waitForObject(":Data parameters.Working directory_Text"), squishDirectory)
