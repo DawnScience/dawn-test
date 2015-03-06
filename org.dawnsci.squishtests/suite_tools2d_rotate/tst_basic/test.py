@@ -20,8 +20,7 @@ def main():
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), 32, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Image Rotation"))
     mouseClick(waitForObject(":Image Rotation.Rotation angle_Spinner"), -2, 10, 0, Button.Button1)
-    type(waitForObject(":Image Rotation.Rotation angle_Spinner"), "<Numpad 4>")
-    type(waitForObject(":Image Rotation.Rotation angle_Spinner"), "<Numpad 5>")
+    type(waitForObject(":Image Rotation.Rotation angle_Spinner"), "45")
     clickButton(waitForObject(":Image Rotation.Resize Bounding Box_Button"))
     
     #check new dimensions
@@ -35,8 +34,7 @@ def main():
 
 
     mouseClick(waitForObject(":Image Rotation.Rotation angle_Spinner"), -32, 13, 0, Button.Button1)
-    type(waitForObject(":Image Rotation.Rotation angle_Spinner"), "<Numpad 9>")
-    type(waitForObject(":Image Rotation.Rotation angle_Spinner"), "<Numpad 0>")
+    type(waitForObject(":Image Rotation.Rotation angle_Spinner"), "90")
 
     snooze(1)
     system1 = getPlottingSystem("Image Rotation")
@@ -50,12 +48,11 @@ def main():
     clickTab(waitForObject(":Data_CTabItem_2"), 31, 7, 0, Button.Button1)
     mouseClick(waitForObject(":Adds an expression which can be plotted. Must be function of other data sets._ToolItem"), 6, 10, 0, Button.Button1)
     type(waitForObject(":Data_Text"), "im:")
-    type(waitForObject(":Data_Text"), "rotate(ADSC_Image, 45")
-    type(waitForObject(":Data_Text"), ", false)")
+    type(waitForObject(":Data_Text"), "rotate(ADSC_Image, 45, false)")
     type(waitForObject(":Data_Text"), "<Return>")
     
     #check new dimension
-    snooze(2)
+    snooze(3)
     system2 = getPlottingSystem("ref-testscale_1_001.img")
     data2 = system2.getTraces().iterator().next().getData()
     shape2 = data2.getShape()
