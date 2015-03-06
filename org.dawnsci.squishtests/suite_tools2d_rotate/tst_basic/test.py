@@ -33,7 +33,7 @@ def main():
     test.verify(shape.at(1)==2896, "Rotated Image new height is 2896")
 
 
-    mouseClick(waitForObject(":Image Rotation.Rotation angle_Spinner"), -32, 13, 0, Button.Button1)
+    doubleClick(waitForObject(":Image Rotation.Rotation angle_Spinner"), 31, 10, 0, Button.Button1)
     type(waitForObject(":Image Rotation.Rotation angle_Spinner"), "90")
 
     snooze(2)
@@ -43,7 +43,7 @@ def main():
     test.verify(shape1.at(0)==2048, "Rotated Image new width is 2048")
     test.verify(shape1.at(1)==2048, "Rotated Image new height is 2048")
     
-    snooze(2)
+    snooze(1)
     #test jexlexpression
     clickTab(waitForObject(":Data_CTabItem_2"), 31, 7, 0, Button.Button1)
     mouseClick(waitForObject(":Adds an expression which can be plotted. Must be function of other data sets._ToolItem"), 6, 10, 0, Button.Button1)
@@ -52,7 +52,7 @@ def main():
     type(waitForObject(":Data_Text"), "<Return>")
     
     #check new dimension
-    snooze(2)
+    snooze(2.5)
     system2 = getPlottingSystem("ref-testscale_1_001.img")
     data2 = system2.getTraces().iterator().next().getData()
     shape2 = data2.getShape()
