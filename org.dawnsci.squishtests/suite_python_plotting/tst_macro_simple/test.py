@@ -5,10 +5,6 @@ source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 source(findFile("scripts", "plotting_test.py"))
 
-def getFirstDataset(system):
-    trcs = system.getTraces()
-    tarray = trcs.toArray()
-    return tarray.at(0).getData()
     
 def main():
     
@@ -20,7 +16,7 @@ def main():
     setupPython()
     
     #Open a python console
-    openPydevConsole(perspective="Data Browsing (default)", toolButton=":Open Console_ToolItem_4")
+    openPydevConsole(perspective="Data Browsing (default)")
     #As of 1.8, console slow to start on ws131
     snooze(30)
     

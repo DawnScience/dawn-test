@@ -30,14 +30,14 @@ def createConsoleSpace(perspective="Python"):
     clickTab(waitForObject(consoleName), 27, 12, 0, Button.Button1)
 
 
-def openPydevConsole(perspective="Python", toolButton=":Open Console_ToolItem"):
+def openPydevConsole(perspective="Python"):
     if perspective == "Python":
         consoleToolItem = ":Open Console_ToolItem"
     elif perspective == "Data Browsing (default)":
         consoleToolItem = ":Open Console_ToolItem_4"
     
 
-    mouseClick(waitForObject(toolButton), 9, 16, 0, Button.Button1)
+    mouseClick(waitForObject(consoleToolItem), 9, 16, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
     clickButton(waitForObject(":Python console_Button"))
     clickButton(waitForObject(":OK_Button"))

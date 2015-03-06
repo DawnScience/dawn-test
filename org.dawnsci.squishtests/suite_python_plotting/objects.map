@@ -23,6 +23,7 @@
 :Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Browse..._Button	{caption='Browse...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Change Settings.Log_Button	{caption='Log' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Change Settings.Maximum_Label	{caption='Maximum' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Maximum_Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Maximum_Label' type='org.eclipse.swt.widgets.Text'}
 :Change Settings.Minimum: _Label	{caption='Minimum: ' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
@@ -34,10 +35,15 @@
 :Colour mapping_Text	{container=':Colour mapping_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Configure Graph Settings.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Axes_TabItem	{caption='Axes' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Graph_TabItem	{caption='Graph' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
+:Configure Graph Settings.Image Traces_TabItem	{caption='Image Traces' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Traces_TabItem	{caption='Traces' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings_Shell	{caption='Configure Graph Settings' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Configure Settings..._ToolItem	{caption='Configure Settings...' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
+:Configure Settings..._ToolItem_2	{caption='Configure Settings...' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Configure Settings..._ToolItem_3	{caption='Configure Settings...' container=':_ToolBar_14' type='org.eclipse.swt.widgets.ToolItem'}
 :Confirm Delete.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Delete_Shell'}
 :Confirm Delete_Shell	{caption='Confirm Delete' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Confirm Exit.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
@@ -71,17 +77,34 @@
 :File_Menu	{caption='File' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Finish_Button_2	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Graph.Title: _Label	{caption='Title: ' container=':Configure Graph Settings.Graph_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Graph.Title: _Text	{container=':Configure Graph Settings.Graph_TabItem' isvisible='true' leftWidget=':Graph.Title: _Label' type='org.eclipse.swt.widgets.Text'}
 :HDF5 tree element Decorator_ItemCheckbox	{container=':Available label decorations:.HDF5 tree element Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
+:Histogramming.Histogram Type_CCombo	{container=':Image Traces.Histogramming_Group' isvisible='true' leftWidget=':Histogramming.Histogram Type_Label' type='org.eclipse.swt.custom.CCombo'}
+:Histogramming.Histogram Type_Label	{caption='Histogram Type' container=':Image Traces.Histogramming_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Histogramming.Maximum Intensity_Label	{caption='Maximum Intensity' container=':Image Traces.Histogramming_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Histogramming.Maximum Intensity_Text	{container=':Image Traces.Histogramming_Group' isvisible='true' leftWidget=':Histogramming.Maximum Intensity_Label' type='org.eclipse.swt.widgets.Text'}
+:Histogramming.Minimum Intensity_Label	{caption='Minimum Intensity' container=':Image Traces.Histogramming_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Histogramming.Minimum Intensity_Text	{container=':Image Traces.Histogramming_Group' isvisible='true' leftWidget=':Histogramming.Minimum Intensity_Label' type='org.eclipse.swt.widgets.Text'}
+:Histogramming_Text	{container=':Image Traces.Histogramming_Group' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :I accept the terms of the license agreement_Button	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :I accept the terms of the license agreement_Button_2	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Image Gallery_CTabCloseBox	{container=':Image Gallery_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Image Gallery_CTabItem	{caption='Image Gallery' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Image Gallery_Gallery	{container=':Image Gallery_CTabItem' isvisible='true' type='org.eclipse.nebula.widgets.gallery.Gallery'}
+:Image Traces.Histogramming_Group	{caption='Histogramming' container=':Configure Graph Settings.Image Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Image Traces.Invalid Bounds_Group	{caption='Invalid Bounds' container=':Configure Graph Settings.Image Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Image_ToolBar	{container=':pow_M99S5_1_0001.cbf.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Info_Table	{container=':76003.dat.Info_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Install to:_Label	{caption='Install to:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Install to:_Text	{isvisible='true' leftWidget=':Install to:_Label' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
 :Internal Error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Internal Error_Shell'}
 :Internal Error_Shell	{caption='Internal Error' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Invalid Bounds.Lower cut_Label	{caption='Lower cut' container=':Image Traces.Invalid Bounds_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Invalid Bounds.Lower cut_Text	{container=':Image Traces.Invalid Bounds_Group' isvisible='true' leftWidget=':Invalid Bounds.Lower cut_Label' type='org.eclipse.swt.widgets.Text'}
+:Invalid Bounds.Upper cut_Label	{caption='Upper cut' container=':Image Traces.Invalid Bounds_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Invalid Bounds.Upper cut_Text	{container=':Image Traces.Invalid Bounds_Group' isvisible='true' leftWidget=':Invalid Bounds.Upper cut_Label' type='org.eclipse.swt.widgets.Text'}
 :Jython console_Button	{caption='Jython console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Keep aspect ratio_ToolItem	{caption='Keep aspect ratio' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -109,6 +132,7 @@
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
 :Open Perspective_ToolItem	{caption='Open Perspective' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective_ToolItem_2	{caption='Open Perspective' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
+:Perform Auto Scale_ToolItem	{caption='Perform Auto Scale' container=':_ToolBar_14' type='org.eclipse.swt.widgets.ToolItem'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_CTabCloseBox	{container=':Plotting Systems_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
@@ -141,6 +165,7 @@
 :Problem Occurred.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Problem Occurred_Shell'}
 :Problem Occurred.Unable to read workbench state. Workbench UI layout will be reset._Label	{caption='Unable to read workbench state. Workbench UI layout will be reset.' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Problem Occurred_Shell'}
 :Problem Occurred_Shell	{caption='Problem Occurred' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Profile_Menu	{caption='Profile' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Project Explorer_CTabItem	{caption='Project Explorer' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Project Explorer_Tree_2	{container=':Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
@@ -221,6 +246,7 @@
 :_ToolBar_11	{firstItemText='Activates the interactive console. (Ctrl+Alt+Enter)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_12	{container=':_CTabFolder_7' firstItemText='Pin Console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_13	{container=':_CTabFolder_7' firstItemText='Terminate current console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_14	{container=':_CTabFolder_2' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
@@ -231,4 +257,6 @@
 :_ToolBar_9	{container=':_CTabFolder_6' firstItemText='Pin Console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:pow_M99S5_1_0001.cbf.Image_CTabItem	{caption='Image' container=':pow_M99S5_1_0001.cbf_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:pow_M99S5_1_0001.cbf_CTabItem	{caption='pow_M99S5_1_0001.cbf' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :test_plot_CTabItem	{caption='test_plot' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
