@@ -115,10 +115,15 @@ def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=Fals
     snooze(1.0)
     test.passes("startOrAttachToDAWNOnly: Success")
 
-def dismissWelcomScreen():
+
+def dismissWelcomeScreen():
     clickTab(waitForObject(":Welcome_CTabItem"), 10, 10, 0, Button.Button3)
     activateItem(waitForObjectItem(":Pop Up Menu", "Close"))
-    test.passes("dismissWelcomScreen: Success")
+    test.passes("dismissWelcomeScreen: Success")
+
+#Wrapper to correct typo.
+def dismissWelcomScreen():
+    dismissWelcomeScreen()
 
 def startOrAttachToDAWN(copy_configuration_and_p2=False, vmArgs=None):
     startOrAttachToDAWNOnly(copy_configuration_and_p2=copy_configuration_and_p2, vmArgs=vmArgs)
