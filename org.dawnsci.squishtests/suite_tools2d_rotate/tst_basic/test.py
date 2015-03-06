@@ -25,6 +25,7 @@ def main():
     clickButton(waitForObject(":Image Rotation.Resize Bounding Box_Button"))
     
     #check new dimensions
+    snooze(1)
     system = getPlottingSystem("Image Rotation")
     data = system.getTraces().iterator().next().getData()
     test.verify(data.getRank()==2, "Image plotted: Success")
@@ -49,9 +50,7 @@ def main():
     clickTab(waitForObject(":Data_CTabItem_2"), 31, 7, 0, Button.Button1)
     mouseClick(waitForObject(":Adds an expression which can be plotted. Must be function of other data sets._ToolItem"), 6, 10, 0, Button.Button1)
     type(waitForObject(":Data_Text"), "im:")
-    type(waitForObject(":Data_Text"), "rotate(ADSC_Image, ")
-    type(waitForObject(":Data_Text"), "<Numpad 4>")
-    type(waitForObject(":Data_Text"), "<Numpad 5>")
+    type(waitForObject(":Data_Text"), "rotate(ADSC_Image, 45")
     type(waitForObject(":Data_Text"), ", false)")
     type(waitForObject(":Data_Text"), "<Return>")
     
