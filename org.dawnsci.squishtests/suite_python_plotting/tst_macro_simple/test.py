@@ -1,10 +1,10 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
 source(findFile("scripts", "dawn_global_python_setup.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 source(findFile("scripts", "plotting_test.py"))
-
     
 def main():
     
@@ -12,14 +12,14 @@ def main():
     #space for the console and setup python; switch on py4j automatically
     startOrAttachToDAWN(vmArgs='-DPREF_PY4J_ACTIVE=true')
     openPerspective("Data Browsing (default)")
-    createConsoleSpace(perspective="Data Browsing (default)")
+    createToolSpace(viewTabName="Value", direction="up", steps=25)
     setupPython()
     
     #Open a python console
     openPyDevConsole()
     
     # Press the record macro button
-    mouseClick(waitForObject(":Record Macro_ToolItem_2"), 6, 12, 0, Button.Button1)
+    mouseClick(waitForFirstSwtToolItem('Record Macro'), 6, 12, 0, Button.Button1)
     
     # Open a data file
     openExample("metalmix.mca")
