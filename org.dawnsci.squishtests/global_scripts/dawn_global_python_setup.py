@@ -11,7 +11,7 @@ def openPyDevConsole(type="Python"):
     ''' Open a PyDev console waiting for the console to be fully open.
         WARNING: This code probably does not cope with opening two consoles
         at the same time and may not wait long enough for the second console'''
-    openView("Console")
+    openView("Console", matchOpen=True)
     # Explanation of the warning. The wait depends on certain events in the console. But
     # we don't have a great way to detect that those events we are waiting on aren't in
     # the previously launched console. What is probably needed is additional code
