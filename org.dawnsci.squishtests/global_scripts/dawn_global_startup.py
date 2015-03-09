@@ -166,10 +166,13 @@ def openView(viewName, matchOpen=False):
         viewName in the title bar of the view is the expected one and only activate it '''
     waitForObject(":Workbench Window")
     if matchOpen:
+        #Get the already open View and set it active with a mouse click
+        #The viewRealObjectName is needed as the alreadyOpenView doesn't exist 
+        #(although it's visible) - no idea why.
+        alreadyOpenView = waitForFirstSwtCTabItem(item_text=viewName)
         viewRealObjectName = "{caption='%s' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}" % viewName;
         if object.exists(viewRealObjectName):
-            #Get the actual, visible object
-            mouseClick(waitForFirstSwtCTabItem(item_text=viewName))
+            mouseClick(alreadyOpenView)
             test.passes("openView (matchOpen): %s" % viewName)
             return
     
