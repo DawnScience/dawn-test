@@ -7,28 +7,6 @@ def getFirstDataset(system):
     
     return tarray.at(0).getData()
 
-def createConsoleSpace(perspective="Python"):
-    
-    if perspective == "Python":
-        consoleName = ":Console_CTabItem_2"
-        sashName = ":_Sash_5"
-        steps = 15
-    elif perspective == "Data Browsing (default)":
-        consoleName = ":Console_CTabItem"
-        sashName = ":_Sash_3"
-        steps = 40
-    
-    clickTab(waitForObject(consoleName), 49, 4, 0, Button.Button3)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Size"))
-    activateItem(waitForObjectItem(":Size_Menu", "Top"))
-    
-    #For compactness, put dragging sash into loop
-    a = 0
-    while a < steps:
-        type(waitForObject(sashName), "<Up>")
-        a += 1
-    clickTab(waitForObject(consoleName), 27, 12, 0, Button.Button1)
-
 def plotting_script_test(system):
     
     type(waitForObject(":Console_ScriptConsoleViewer$ScriptConsoleStyledText"), "dnp.plot.image(dnp.random.rand(100,200))")
