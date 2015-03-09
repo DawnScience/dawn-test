@@ -21,7 +21,6 @@ def waitForFirstSwtSashItem(timeoutMSec=20000):
                 break
             o = findObject(n)
             if o.focuscontrol == 1:
-                test.log("Returning :Sash_"+str(i+1))
                 return o
             i += 1
     raise LookupError('ERROR: Could not find a Sash which has the focus.')
