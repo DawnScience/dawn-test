@@ -9,7 +9,7 @@ def waitForFirstSwtSashItem(timeoutMSec=20000):
     end = time.time() + timeoutMSec / 1000.0
     
     while time.time() < end:
-        # At least wait for any ToolBar instance; you still may
+        # At least wait for any Sash instance; you still may
         # need to snooze() before calling this function
         waitForObject("{isvisible='true' type='org.eclipse.swt.widgets.Sash'}")
      
