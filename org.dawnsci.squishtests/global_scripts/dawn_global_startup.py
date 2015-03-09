@@ -1,3 +1,5 @@
+source(findFile("scripts", "swt_TabsCTabs.py"))
+
 import glob, os, shutil
 from datetime import datetime
 
@@ -166,7 +168,8 @@ def openView(viewName, matchOpen=False):
     if matchOpen:
         viewRealObjectName = "{caption='%s' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}" % viewName;
         if object.exists(viewRealObjectName):
-            mouseClick(waitForObject(viewRealObjectName))
+            #Get the actual, visible object
+            mouseClick(waitForFirstSwtCTabItem(item_text=viewName))
             test.passes("openView (matchOpen): %s" % viewName)
             return
     
