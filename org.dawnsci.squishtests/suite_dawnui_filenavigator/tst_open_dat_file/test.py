@@ -39,7 +39,8 @@ def main():
     
     # open plot settings
     conOb = waitForObject(":Configure Settings..._ToolItem")
-    check_plotted_trace_name_yval(conOb,"eta[:] (96356.dat)","40.0","0.0")
+    
+    check_plotted_trace_name_yval(conOb,"eta (96356.dat)","40.0","0.0")
 
 
     # Exit (or disconnect) DAWN
