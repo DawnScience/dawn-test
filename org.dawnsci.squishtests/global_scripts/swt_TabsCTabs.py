@@ -12,6 +12,7 @@ def waitForFirstSwtCTabItem(item_text=None, item_tooltiptext=None, timeoutMSec=2
         # At least wait for any ToolBar instance; you still may
         # need to snooze() before calling this function
         waitForObject("{isvisible='true' type='org.eclipse.swt.custom.CTabFolder'}")
+        snooze(2)
         
         i = 0
         while True:

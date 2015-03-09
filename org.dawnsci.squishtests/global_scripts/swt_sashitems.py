@@ -12,7 +12,8 @@ def waitForFirstSwtSashItem(timeoutMSec=20000):
         # At least wait for any Sash instance; you still may
         # need to snooze() before calling this function
         waitForObject("{isvisible='true' type='org.eclipse.swt.widgets.Sash'}")
-     
+        snooze(2)
+        
         i = 0
         while True:
             n = "{isvisible='true' type='org.eclipse.swt.widgets.Sash' occurrence='" + str(i) + "'}"
