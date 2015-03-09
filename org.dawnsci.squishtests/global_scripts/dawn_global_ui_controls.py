@@ -1,5 +1,10 @@
+#Importing all the swt_* scripts makes their methods available to tests which
+#import dawn_global_ui_controls
 source(findFile("scripts", "swt_ctabitems.py"))
 source(findFile("scripts", "swt_sashitems.py"))
+source(findFile("scripts", "swt_tableitems.py"))
+source(findFile("scripts", "swt_toolitems.py"))
+source(findFile("scripts", "swt_treeitems.py"))
 
 def createToolSpace(viewTabName=None, direction=None, steps=15):
     if viewTabName is None:
