@@ -49,12 +49,7 @@ def main():
     test.verify(testIsNumeric(waitForObjectItem(":Pixel Information_Table", "1/1").text))
     test.verify(testIsNumeric(waitForObjectItem(":Pixel Information_Table", "1/2").text))
     test.verify(testIsNumeric(waitForObjectItem(":Pixel Information_Table", "1/3").text))
-    test.verify(testIsNumeric(waitForObjectItem(":Pixel Information_Table", "1/4").text))
-    test.verify(testIsNumeric(waitForObjectItem(":Pixel Information_Table", "1/5").text))
-    test.verify(testIsNumeric(waitForObjectItem(":Pixel Information_Table", "1/6").text))
-    test.verify(testIsNumeric(waitForObjectItem(":Pixel Information_Table", "1/7").text))
-    test.verify(testIsNumeric(waitForObjectItem(":Pixel Information_Table", "1/8").text))
-    
+
     mouseClick(waitForObjectItem(":Pixel Information_Table", "1/1"), 73, 5, 0, Button.Button1)
     mouseClick(waitForObject(":Delete selected point, if there is one._ToolItem"), 8, 14, 0, Button.Button1)
 
