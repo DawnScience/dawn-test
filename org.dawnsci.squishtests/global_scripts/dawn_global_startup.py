@@ -172,8 +172,8 @@ def openView(viewName, matchOpen=False):
             test.passes("openView (matchOpen): %s" % viewName)
             return
         #If that fails, we carry on.
-        except LookupError:
-            test.log("Failed to find already open view, continuing to open new "+str(viewName)+"view.")
+        except:
+            test.log("Failed to find already open view, continuing to open new "+str(viewName)+" view.")
     
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Show View"))
