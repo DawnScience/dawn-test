@@ -26,13 +26,17 @@ def main():
     
     # Check that macro commands are there
     got = waitForObject(":PyDev Console").text
+    #Need to give time for the macro to run through
+    snooze(20)
     test.verify("import numpy" in got, "Unable to find numpy command in macro recorded!")
     test.verify('ps = dnp.plot.getPlottingSystem("pow_M99S5_1_0001.cbf")' in got, "The correct plotting system was not in the macro")
     
     
 
-
-    doubleClick(waitForObject(":Configure Settings..._ToolItem_2"), 13, 5, 0, Button.Button1)
+#waitForObject(":Configure Settings..._ToolItem_2")
+    doubleClick(waitForFirstSwtToolItem("Configure Settings..."), 13, 5, 0, Button.Button1)
+    #Need to give time for the configure settings box to appear
+    snooze(5)
     mouseClick(waitForObject(":Graph.Title: _Text"), 82, 13, 0, Button.Button1)
     type(waitForObject(":Graph.Title: _Text"), "<Backspace>")
     type(waitForObject(":Graph.Title: _Text"), "<Backspace>")
