@@ -1,4 +1,4 @@
-source(findFile("scripts", "swt_TabsCTabs.py"))
+source(findFile("scripts", "swt_ctabitems.py"))
 
 import glob, os, shutil
 from datetime import datetime

@@ -2,6 +2,9 @@ import time
 #Adapted from: http://kb.froglogic.com/display/KB/Example+-+Getting+CTabItem+by+text+or+tooltip+text+%28Java,+SWT%29
 
 def waitForFirstSwtCTabItem(item_text=None, item_tooltiptext=None, timeoutMSec=20000):
+    '''Returns a CTabProxy (which seems to be a container for a CTabItem...) which the 
+    can then be used to address a particular view tab.
+    '''
     if item_text is None and item_tooltiptext is None:
         raise LookupError("ERROR: Must specify item_text or item_tooltiptext!")
  
