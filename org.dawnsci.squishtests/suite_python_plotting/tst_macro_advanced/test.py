@@ -24,19 +24,19 @@ def main():
     # Open a data file
     openExample("pow_M99S5_1_0001.cbf")
     
-    # Check that macro commands are there
-    got = waitForObject(":PyDev Console").text
     #Need to give time for the macro to run through
     snooze(30)
+    # Check that macro commands are there
+    got = waitForObject(":PyDev Console").text
     test.verify("import numpy" in got, "Unable to find numpy command in macro recorded!")
     test.verify('ps = dnp.plot.getPlottingSystem("pow_M99S5_1_0001.cbf")' in got, "The correct plotting system was not in the macro")
     
     
 
-#waitForObject(":Configure Settings..._ToolItem_2")
     doubleClick(waitForFirstSwtToolItem("Configure Settings..."), 13, 5, 0, Button.Button1)
     #Need to give time for the configure settings box to appear
     snooze(5)
+    
     mouseClick(waitForObject(":Graph.Title: _Text"), 82, 13, 0, Button.Button1)
     type(waitForObject(":Graph.Title: _Text"), "<Backspace>")
     type(waitForObject(":Graph.Title: _Text"), "<Backspace>")
@@ -60,7 +60,7 @@ def main():
     type(waitForObject(":Histogramming.Maximum Intensity_Text"), "<Backspace>")
     type(waitForObject(":Histogramming.Maximum Intensity_Text"), "150")
     clickButton(waitForObject(":Configure Graph Settings.Apply_Button"))
-    
+    #Wait for graph settings to be updated.
     snooze(5)
     
     # Wait for commands to filter down.
@@ -72,9 +72,9 @@ def main():
     type(waitForObject(":Invalid Bounds.Upper cut_Text"), "<Backspace>")
     type(waitForObject(":Invalid Bounds.Upper cut_Text"), "10000")
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
-
-    snooze(20)
     
+    #Need to give time for the macro to run through
+    snooze(30)
     got = waitForObject(":PyDev Console").text
     test.verify('ps.setTitle(\'Fred\')' in got,          "Changing the title not echoed in macro")
     test.verify('trace_image01.setMin(' in got,          "setMin not echoed in macro")
