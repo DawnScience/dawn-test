@@ -32,15 +32,14 @@ def createToolSpace(viewTabName=None, direction=None, steps=15):
     viewTabObject = waitForFirstSwtCTabItem(item_text=viewTabName)
     clickTab(waitForObject(viewTabObject), 49, 4, 0, Button.Button3)
     activateItem(waitForObjectItem(":Pop Up Menu", "Size"))
-    activateItem(waitForObjectItem(":Size_Menu", "Top"))
+    activateItem(waitForObjectItem(":Size_Menu", sashDirection))
     
-    #Need to look at the properties of this object and work out (when this is active) what is the different property
-    #This will make it possible to select the right sash.
+    #Record a reference to the sash object to use in dragging loop
     activeSash = waitForFirstSwtSashItem()
     
     #For compactness, put dragging sash into loop
     a = 0
     while a < steps:
-        type(activeSash, arrowKey)
+        type(waitForObject(activeSash), arrowKey)
         a += 1
     clickTab(waitForObject(viewTabObject), 27, 12, 0, Button.Button1)
