@@ -43,3 +43,18 @@ def createToolSpace(viewTabName=None, direction=None, steps=15):
         type(waitForObject(activeSash), arrowKey)
         a += 1
     clickTab(waitForObject(viewTabObject), 27, 12, 0, Button.Button1)
+
+
+
+def getToolItemOfCTabFolder(toolItemText=None, toolItemTooltipText=None, activeTool=None):
+    if (toolItemText is None and toolItemTooltipText is None) or activeTool is None:
+        raise LookupError("ERROR: Must specify the toolItemText/TooltipText to find and the activeTool associated with it.")
+    
+    #Get list of all tool items which conform to our search
+    allToolItemsList = waitForAllSwtToolItems(itemText=toolItemText, itemTooltipText=toolItemTooltipText)
+    
+    #Loop over the list in search of one with the correct parent
+    for toolItem in allToolItemsList:
+        tIParent = toolItem.parent
+        
+        #Now need som sort of search of the tabs present in this composite which will find the activeTool
