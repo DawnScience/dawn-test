@@ -36,8 +36,9 @@ def main():
     type(waitForObject(":Change Settings.Title: _Text"), "<Backspace>")
     type(waitForObject(":Change Settings.Title: _Text"), "Test X")
     clickButton(waitForObject(":Configure Graph Settings.Apply_Button"))
-    mouseClick(waitForObjectItem(":Select Axis_Combo", "(Y-Axis)"), 0, 0, 0, Button.NoButton)
+    mouseClick(waitForObjectItem(":Select Axis_Combo", "Y-Axis(Y-Axis)"), 61, 15, 0, Button.Button1)
     mouseClick(waitForObject(":Change Settings.Title: _Text"), 32, 12, 0, Button.Button1)
+
     type(waitForObject(":Change Settings.Title: _Text"), "e")
     type(waitForObject(":Change Settings.Title: _Text"), "<Backspace>")
     type(waitForObject(":Change Settings.Title: _Text"), "Test Y")
