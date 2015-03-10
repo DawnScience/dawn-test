@@ -23,12 +23,7 @@ def main():
     #Open Python perspective
     openPerspective("Python") 
     
-    snooze(5)
-    mouseClick(waitForObject(":Open Console_ToolItem"), 33, 11, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
-    clickButton(waitForObject(":Jython console_Button"))
-    clickButton(waitForObject(":OK_Button"))
-    snooze(15)
+    openPyDevConsole(type="Jython")
      #expand data tree and open metal mix
     expand(waitForObjectItem(":PyDev Package Explorer_Tree", "data"))
     expand(waitForObjectItem(":PyDev Package Explorer_Tree", "examples"))
