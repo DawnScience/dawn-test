@@ -1,4 +1,5 @@
 source(findFile("scripts", "dawn_global_startup.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 
@@ -32,18 +33,11 @@ def main():
     openPerspective("Data Browsing (default)")
     snooze(1)
     
-
-    clickTab(waitForObject(":Data_CTabItem"), 42, 14, 0, Button.Button3)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Size"))
-    activateItem(waitForObjectItem(":Size_Menu", "Left"))
-    i = 0;
-    while i < 20:
-        type(waitForObject(":_Sash"), "<Left>")
-        i=i+1
-    
+    #Create space for tool and open the data file
+    createToolSpace(viewTabName="Data", direction="Left", steps=20)
     openExample("pow_M99S5")
     
-    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_3"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
+    mouseClick(waitForFirstSwtToolItem(item_tooltiptext="Image tools used to profile and inspect images."), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Science"))
     activateItem(waitForObjectItem(":Science_Menu", "Powder Integration"))
 
@@ -82,6 +76,8 @@ def main():
     test.verify( ptp < 40 , "Peak to peak acceptable - non 1d range")
     test.verify( x0 == 1.6, "x0 acceptable- non 1d range")
     
+#    #Get reference to View menu on the integration tool as it's used several times. (work in progress...)
+#    integToolViewMenu = waitForFirstSwtToolItem("View Menu")
     mouseClick(waitForObject(":View Menu_ToolItem_3"), 14, 5, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Non pixel splitting"))
     activateItem(waitForObjectItem(":Non pixel splitting_Menu", "Pixel splitting"))
