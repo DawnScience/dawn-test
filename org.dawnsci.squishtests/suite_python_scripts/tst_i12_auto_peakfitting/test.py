@@ -55,7 +55,7 @@ def main():
     clickButton(waitForObject(":Change Settings.Log_Button"))
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     
-    snooze(1)
+    snooze(10)
     
     system = getPlottingSystem("Plot 1")
 
