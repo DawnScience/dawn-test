@@ -74,7 +74,7 @@ def main():
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     
     #Need to give time for the macro to run through
-    snooze(30)
+    snooze(45)
     got = waitForObject(":PyDev Console").text
     test.verify('ps.setTitle(\'Fred\')' in got,          "Changing the title not echoed in macro")
     test.verify('trace_image01.setMin(' in got,          "setMin not echoed in macro")
