@@ -25,7 +25,7 @@ def main():
     openExample("pow_M99S5_1_0001.cbf")
     
     #Need to give time for the macro to run through
-    snooze(30)
+    snooze(60)
     # Check that macro commands are there
     got = waitForObject(":PyDev Console").text
     test.verify("import numpy" in got, "Unable to find numpy command in macro recorded!")
