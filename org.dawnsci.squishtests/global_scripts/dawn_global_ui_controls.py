@@ -46,15 +46,22 @@ def createToolSpace(viewTabName=None, direction=None, steps=15):
 
 
 
-def getToolItemOfCTabFolder(toolItemText=None, toolItemTooltipText=None, activeTool=None):
-    if (toolItemText is None and toolItemTooltipText is None) or activeTool is None:
+def getToolItemOfCTabFolder(cTabItemTooltipText=None, cTabItemText=None, toolItemTooltipText=None, toolItemText=None):
+    if (toolItemText is None and toolItemTooltipText is None) or (cTabItemText is None and cTabItemTooltipText is None):
         raise LookupError("ERROR: Must specify the toolItemText/TooltipText to find and the activeTool associated with it.")
     
-    #Get list of all tool items which conform to our search
-    allToolItemsList = waitForAllSwtToolItems(itemText=toolItemText, itemTooltipText=toolItemTooltipText)
+    #Find the CTabFolder we're interested in and get the items in it
+    cTabFolderObj = object.parent(waitForSwtCTabItem(caption=cTabItemText, toolTip=cTabItemTooltipText, squishFiveOne=True))
+    cTabChildren = object.children(cTabFolderObj)
     
-    #Loop over the list in search of one with the correct parent
-    for toolItem in allToolItemsList:
-        tIParent = toolItem.parent
-        
-        #Now need som sort of search of the tabs present in this composite which will find the activeTool
+    #Find all toolbars which are visible within this CTabFolder
+    for c in cTabChildren:
+        if (c["class"] == "org.eclipse.swt.widgets.ToolBar") & (c["visible"] == 1):
+            tbc = object.children(c)
+            
+            #Find the first toolItem object in the given toolbar, which matches given tool
+            for toolItem in tbc:
+                if (toolItem["tooltiptext"] == toolItemTooltipText) | (toolItem["tooltiptext"] == toolItemText):
+                    return toolItem
+                
+    raise LookupError('ERROR: Could not find ToolItem with text "' + str(toolItemText) + '" and tooltiptext "' + str(toolItemTooltipText) + '"')
