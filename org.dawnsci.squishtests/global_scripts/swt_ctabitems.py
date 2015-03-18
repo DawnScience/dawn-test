@@ -1,7 +1,24 @@
 import time
 #Adapted from: http://kb.froglogic.com/display/KB/Example+-+Getting+CTabItem+by+text+or+tooltip+text+%28Java,+SWT%29
 
-def waitForFirstSwtCTabItem(item_text=None, item_tooltiptext=None, timeoutMSec=20000):
+def waitForSwtCTabItem(caption=None, toolTip=None, squishFiveOne = False):
+    '''Get CTabItem by caption. This method can use the lightweight squish-5.1 route,
+    or it can use the old-style looping method, depending whether boolean is set.
+    '''
+    if caption is None and toolTip is None:
+        raise LookupError("ERROR: Must specify item_text or item_tooltiptext!")
+    elif caption is None:
+        caption = toolTip
+    
+    if squishFiveOne:
+        cTabObj = waitForObject("{caption='"+caption+"' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}")
+        snooze(2)
+    else:
+        cTabObj = waitForFirstSwtCTabItem(item_tooltiptext=caption)
+        snooze(2)
+    return cTabObj
+
+def waitForFirstSwtCTabItem(item_tooltiptext=None, item_text=None, timeoutMSec=20000):
     '''Returns a CTabProxy (which seems to be a container for a CTabItem...) which the 
     can then be used to address a particular view tab.
     '''
@@ -19,7 +36,8 @@ def waitForFirstSwtCTabItem(item_text=None, item_tooltiptext=None, timeoutMSec=2
         
         i = 0
         while True:
-            n = "{isvisible='true' type='org.eclipse.swt.custom.CTabFolder' occurrence='" + str(i) + "'}" 
+            n = "{isvisible='true' type='org.eclipse.swt.custom.CTabFolder' occurrence='" + str(i) + "'}"
+            #n = "{isvisible='true' type='org.eclipse.swt.custom.CTabFolder' occurrence='" + str(i) + "'}" 
             if not object.exists(n):
                 break
             o = findObject(n)
