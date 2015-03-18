@@ -76,9 +76,10 @@ def main():
     test.verify( ptp < 40 , "Peak to peak acceptable - non 1d range")
     test.verify( x0 == 1.6, "x0 acceptable- non 1d range")
     
-#    #Get reference to View menu on the integration tool as it's used several times. (work in progress...)
-#    integToolViewMenu = waitForFirstSwtToolItem("View Menu")
-    mouseClick(waitForObject(":View Menu_ToolItem_3"), 14, 5, 0, Button.Button1)
+    #Get reference to View menu on the integration tool as it's used several times. (work in progress...)
+    integToolViewMenu = getToolItemOfCTabFolder(toolItemTooltipText="View Menu", cTabItemTooltipText="Powder Integration")
+    
+    mouseClick(waitForObject(integToolViewMenu), 14, 5, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Non pixel splitting"))
     activateItem(waitForObjectItem(":Non pixel splitting_Menu", "Pixel splitting"))
     
@@ -101,7 +102,7 @@ def main():
     test.verify( abs(x0 - 0.01) < 0.01 , "x0 acceptable - split 1d")
     test.verify( not (ptp1 == ptp) , "Peak to peak acceptable- split 1d")
     
-    mouseClick(waitForObject(":View Menu_ToolItem_3"), 8, 10, 0, Button.Button1)
+    mouseClick(waitForObject(integToolViewMenu), 8, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Pixel splitting"))
     activateItem(waitForObjectItem(":Non pixel splitting_Menu", "Non pixel splitting 2D"))
     
@@ -126,7 +127,7 @@ def main():
     test.verify( sh.at(0) == 360 , "x acceptable - non 2d 360")
     test.verify( sh.at(1) == 1797 , "y acceptable - non 2d 360")
     
-    mouseClick(waitForObject(":View Menu_ToolItem_3"), 8, 10, 0, Button.Button1)
+    mouseClick(waitForObject(integToolViewMenu), 8, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Non pixel splitting 2D"))
     activateItem(waitForObjectItem(":Non pixel splitting_Menu", "Pixel splitting 2D"))
     
@@ -135,14 +136,14 @@ def main():
     ptp1 = getTracePeakToPeak(system)
     test.verify( not (ptp1 == ptp) , "Peak to peak acceptable - split 2d 360")
     
-    mouseClick(waitForObject(":View Menu_ToolItem_3"), 14, 5, 0, Button.Button1)
+    mouseClick(waitForObject(integToolViewMenu), 14, 5, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Pixel splitting 2D"))
     activateItem(waitForObjectItem(":Non pixel splitting_Menu", "Non pixel splitting"))
     
     waitOnProgress()
     x0 = getXTraceFirst(system)
     
-    mouseClick(waitForObject(":View Menu_ToolItem_3"), 17, 13, 0, Button.Button1)
+    mouseClick(waitForObject(integToolViewMenu), 17, 13, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Q"))
     activateItem(waitForObjectItem(":Q_Menu", "2θ"))
     snooze(2)
@@ -176,7 +177,3 @@ def main():
     snooze(1)
     
     closeOrDetachFromDAWN()
-    
-
-    
-    
