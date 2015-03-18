@@ -37,7 +37,7 @@ def main():
     createToolSpace(viewTabName="Data", direction="Left", steps=20)
     openExample("pow_M99S5")
     
-    mouseClick(waitForFirstSwtToolItem(item_tooltiptext="Image tools used to profile and inspect images."), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
+    mouseClick(waitForImageToolsMenu(), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Science"))
     activateItem(waitForObjectItem(":Science_Menu", "Powder Integration"))
 

@@ -44,7 +44,8 @@ def createToolSpace(viewTabName=None, direction=None, steps=15):
         a += 1
     clickTab(waitForObject(viewTabObject), 27, 12, 0, Button.Button1)
 
-
+def waitForImageToolsMenu():
+    return waitForFirstSwtToolItem(item_tooltiptext="Image tools used to profile and inspect images.")
 
 def getToolItemOfCTabFolder(cTabItemTooltipText=None, cTabItemText=None, toolItemTooltipText=None, toolItemText=None):
     if (toolItemText is None and toolItemTooltipText is None) or (cTabItemText is None and cTabItemTooltipText is None):
