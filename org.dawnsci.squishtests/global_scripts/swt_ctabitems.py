@@ -14,7 +14,7 @@ def waitForSwtCTabItem(caption=None, toolTip=None, squishFiveOne = False):
         cTabObj = waitForObject("{caption='"+caption+"' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}")
         snooze(2)
     else:
-        cTabObj = waitForFirstSwtCTabItem(item_tooltiptext=caption)
+        cTabObj = waitForFirstSwtCTabItem(item_tooltiptext=toolTip, item_text=caption)
         snooze(2)
     return cTabObj
 
@@ -37,7 +37,6 @@ def waitForFirstSwtCTabItem(item_tooltiptext=None, item_text=None, timeoutMSec=2
         i = 0
         while True:
             n = "{isvisible='true' type='org.eclipse.swt.custom.CTabFolder' occurrence='" + str(i) + "'}"
-            #n = "{isvisible='true' type='org.eclipse.swt.custom.CTabFolder' occurrence='" + str(i) + "'}" 
             if not object.exists(n):
                 break
             o = findObject(n)
@@ -58,10 +57,26 @@ def waitForFirstSwtCTabItem(item_tooltiptext=None, item_text=None, timeoutMSec=2
                 if not item.showing or not item.parent.visible:
                     continue
                 
-                #Ignore items that don't have the label we're looking for
-                if item_text is not None and item_text != item.text:
+                #Get value of the tooltip & text elements to handle <null> as None
+                item_Text_Value, item_Tooltip_Value = None, None
+                if item.text == "<null>":
+                    item_Text_Value = None
+                else:
+                    item_Text_Value = item.text
+                
+                if item.tooltiptext == "<null>":
+                    item_Tooltip_Value = None
+                else:
+                    item_Tooltip_Value = item.tooltiptext
+                
+                #Ignore items which don't have labels
+                if item_Text_Value is None and item_Tooltip_Value is None:
                     continue
-                if item_tooltiptext is not None and item_tooltiptext != item.tooltiptext:
+                
+                #Ignore items that don't have the a label or the label we're looking for
+                if (item_Text_Value is not None) and (item_text != item_Text_Value):
+                    continue
+                if (item_Tooltip_Value is not None) and (item_tooltiptext != item_Tooltip_Value):
                     continue
                 
                 return c
