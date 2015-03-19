@@ -1,6 +1,6 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
-source(findFile("scripts", "suite_dawnui_filenavigator_shared.py"))
+source(findFile("scripts", "dawn_global_prefs_toggles.py"))
 
 # UI test to check that a dat file can be opened and plotted 
 def main():
