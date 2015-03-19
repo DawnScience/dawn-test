@@ -119,14 +119,8 @@ def getPlottingSystem(name):
         return factory.getPlottingSystem(name)
         
     snooze(5)
-    activateItem(waitForObjectItem(":_Menu", "Window"))
-    activateItem(waitForObjectItem(":Window_Menu", "Show View"))
-    activateItem(waitForObjectItem(":Show View_Menu", "Other..."))
-    snooze(5)
-    type(waitForObject(":Show View_Text"), "Plotting Systems")
-    mouseClick(waitForObjectItem(":Show View_Tree", "Plotting Systems"))
-    clickButton(waitForObject(":Show View.OK_Button"))
-    waitForObject(":Plotting Systems_CTabItem")
+    #Unlikely that there is a Plot./Sys. view open, so matchOpen False
+    openView("Plotting Systems", matchOpen=False)
     plotButton = waitForObject(":Plotting Systems.Refresh_RefreshButton")
     
     factoryClass = plotButton.getClass().getClassLoader().loadClass("org.eclipse.dawnsci.plotting.api.PlottingFactory")
@@ -137,11 +131,21 @@ def getPlottingSystem(name):
     # Close gallery
     snooze(1)
     try:
-        clickTab(waitForObject(":Plotting Systems_CTabItem"), 69, 11, 0, Button.Button1)
-        mouseClick(waitForObject(":Plotting Systems_CTabCloseBox"), 14, 7, 0, Button.Button1)
+        plottingSystemsCTab = waitForSwtCTabItem("Plotting Systems")
+        cTabChildren = object.children(plottingSystemsCTab.item)
+        cTabCloseButton = None
+        for c in cTabChildren:
+            if "CTabCloseBox" in c["class"]:
+                 cTabCloseButton = c
+        if cTabCloseButton is None:
+            raise Exception("No close button found!")
+        
+        clickTab(waitForObject(plottingSystemsCTab))
+        mouseClick(waitForObject(cTabCloseButton))
+
     except:
         print "Could not close gallery"
-        
+
     snooze(1)
 
     return system
