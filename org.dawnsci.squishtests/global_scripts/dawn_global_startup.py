@@ -168,7 +168,7 @@ def openView(viewName, matchOpen=False):
     if matchOpen:
         #Get the already open View and set it active with a mouse click
         try:
-            mouseClick(waitForFirstSwtCTabItem(item_text=viewName))
+            mouseClick(waitForSwtCTabItem(caption=viewName, squishFiveOne=False))
             test.passes("openView (matchOpen): %s" % viewName)
             return
         #If that fails, we carry on.
