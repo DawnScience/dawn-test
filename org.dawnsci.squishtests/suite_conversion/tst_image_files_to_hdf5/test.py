@@ -1,4 +1,5 @@
 source(findFile("scripts", "dawn_global_startup.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 
@@ -18,7 +19,9 @@ def main():
     checkExample("", "data", "examples", "results")
 
     # Open wizard
-    mouseClick(waitForObject(":View Menu_ToolItem"))
+    projectViewMenu = getToolItemOfCTabFolder(cTabItemText="Project Explorer", cTabItemTooltipText="Workspace",
+                                      toolItemTooltipText="View Menu")
+    mouseClick(waitForObject(projectViewMenu))
     activateItem(waitForObjectItem(":Pop Up Menu", "Convert..."))
 
     # Use wizard
