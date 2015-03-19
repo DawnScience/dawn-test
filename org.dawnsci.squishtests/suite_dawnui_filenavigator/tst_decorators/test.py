@@ -1,5 +1,6 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 
 # UI test to check that an hdf5 file can be opened and its tree can be expanded 
 def main():
@@ -22,7 +23,9 @@ def main():
 #  mouseClick(waitForObject(":DAT file Scan Command Decorator_ItemCheckbox"), 8, 16, 0, Button.Button1)
     
     # Add h5 customisations
-    mouseClick(waitForObject(":View Menu_ToolItem"), 12, 7, 0, Button.Button1)
+    projectViewMenu = getToolItemOfCTabFolder(cTabItemText="Project Explorer", cTabItemTooltipText="Workspace",
+                                      toolItemTooltipText="View Menu")
+    mouseClick(waitForObject(projectViewMenu), 12, 7, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Customize View..."))
     clickTab(waitForObject(":Available Customizations.Content_CTabItem"), 20, 13, 0, Button.Button1)
     mouseClick(waitForObject(":HDF5 File Contents_ItemCheckbox"), 8, 9, 0, Button.Button1)
