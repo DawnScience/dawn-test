@@ -9,6 +9,8 @@ def waitForSwtCTabItem(caption=None, toolTip=None, squishFiveOne = False):
         raise LookupError("ERROR: Must specify item_text or item_tooltiptext!")
     elif caption is None:
         caption = toolTip
+    elif toolTip is None:
+        toolTip = caption
     
     if squishFiveOne:
         cTabObj = waitForObject("{caption='"+caption+"' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}")
