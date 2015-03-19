@@ -1,28 +1,18 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
-source(findFile("scripts", "use_case_utils.py"))
+source(findFile("scripts", "dawn_global_prefs_toggles.py"))
 source(findFile("scripts", "dawn_global_python_setup.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
+source(findFile("scripts", "use_case_utils.py"))
 
 # UI test to check that an hdf5 file can be opened and its tree can be expanded 
 def main():
-    # Start or attach runs (or attaches) to DAWN and then 
-    # makes sure the workbench window exists and finally
-    # will close the Welcome screen 
     startOrAttachToDAWN()
     
-    # disable the decorators
-    activateItem(waitForObjectItem(":_Menu", "Window"))
-    activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
-    expand(waitForObjectItem(":Preferences_Tree", "General"))
-    expand(waitForObjectItem(":Preferences_Tree", "Appearance"))
-    mouseClick(waitForObjectItem(":Preferences_Tree", "Label Decorations"), 27, 14, 0, Button.Button1)
-    mouseClick(waitForObject(":DAT file Scan Command Decorator_ItemCheckbox"), 8, 16, 0, Button.Button1)
-    mouseClick(waitForObject(":File Meta Data Decorator_ItemCheckbox"), 8, 13, 0, Button.Button1)
-    clickButton(waitForObject(":Preferences.OK_Button"))
-
+    toggleDATFileMDDecorators()
+    
     setupPython()
     
-    # open DExplore perspective
     openPerspective("DExplore")
     
     expand(waitForObjectItem(":Project Explorer_Tree", "data"))
@@ -40,7 +30,8 @@ def main():
     snooze(5.0)
     
     #Open python console
-    mouseClick(waitForObject(":View Menu_ToolItem_2"), 9, 6, 0, Button.Button1)
+    datasetPlotViewMenu = getToolItemOfCTabFolder(cTabItemTooltipText="Dataset Plot", toolItemTooltipText="View Menu")
+    mouseClick(waitForObject(datasetPlotViewMenu))
     activateItem(waitForObjectItem(":Pop Up Menu", "Open New Plot Scripting"))
     clickButton(waitForObject(":Python console_Button"))
     clickButton(waitForObject(":OK_Button"))
