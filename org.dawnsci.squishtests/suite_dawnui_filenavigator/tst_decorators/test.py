@@ -1,27 +1,16 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
 source(findFile("scripts", "dawn_global_ui_controls.py"))
+source(findFile("scripts", "suite_dawnui_filenavigator_shared.py"))
 
 # UI test to check that an hdf5 file can be opened and its tree can be expanded 
 def main():
-    # Start or attach runs (or attaches) to DAWN and then 
-    # makes sure the workbench window exists and finally
-    # will close the Welcome screen 
     startOrAttachToDAWN()
-
-     # disable the decorator the metadata decorator
-    activateItem(waitForObjectItem(":_Menu", "Window"))
-    activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
-    expand(waitForObjectItem(":Preferences_Tree", "General"))
-    expand(waitForObjectItem(":Preferences_Tree", "Appearance"))
-    mouseClick(waitForObjectItem(":Preferences_Tree", "Label Decorations"), 27, 14, 0, Button.Button1)
-    mouseClick(waitForObject(":File Meta Data Decorator_ItemCheckbox"), 8, 13, 0, Button.Button1)         
-    # enable the decorator the HDF5 tree decorator
-    mouseClick(waitForObject(":HDF5 tree element Decorator_ItemCheckbox"), 11, 13, 0, Button.Button1)
-    clickButton(waitForObject(":Preferences.OK_Button"))
- 
-#  mouseClick(waitForObject(":DAT file Scan Command Decorator_ItemCheckbox"), 8, 16, 0, Button.Button1)
     
+    toggleHDFFileMDDecorators()
+
+    openPerspective("Data Browsing (default)")
+
     # Add h5 customisations
     projectViewMenu = getToolItemOfCTabFolder(cTabItemText="Project Explorer", cTabItemTooltipText="Workspace",
                                       toolItemTooltipText="View Menu")
@@ -50,13 +39,7 @@ def main():
     test.passes("openDATFile: Success")
     
     # Test the metadata decorators
-    activateItem(waitForObjectItem(":_Menu", "Window"))
-    activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
-    expand(waitForObjectItem(":Preferences_Tree", "General"))
-    expand(waitForObjectItem(":Preferences_Tree", "Appearance"))
-    mouseClick(waitForObjectItem(":Preferences_Tree", "Label Decorations"), 27, 14, 0, Button.Button1)
-    mouseClick(waitForObject(":File Meta Data Decorator_ItemCheckbox"), 8, 13, 0, Button.Button1)         
-    clickButton(waitForObject(":Preferences.OK_Button"))
+    toggleFileMDDecorator()
     snooze(2.5)
     
     children = object.children(waitForObjectItem(":Project Explorer_Tree", "examples")) 

@@ -1,28 +1,13 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "suite_dawnui_filenavigator_shared.py"))
 
 # UI test to check that an hdf5 file can be opened and its tree can be expanded 
 def main():
-    # Start or attach runs (or attaches) to DAWN and then 
-    # makes sure the workbench window exists and finally
-    # will close the Welcome screen 
     startOrAttachToDAWN()
-
-    # go to the dataexplore perspective
     
-    # disable the decorators
-    activateItem(waitForObjectItem(":_Menu", "Window"))
-    activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
-    expand(waitForObjectItem(":Preferences_Tree", "General"))
-    expand(waitForObjectItem(":Preferences_Tree", "Appearance"))
-    mouseClick(waitForObjectItem(":Preferences_Tree", "Label Decorations"))
-    mouseClick(waitForObject(":DAT file Scan Command Decorator_ItemCheckbox"))
-    mouseClick(waitForObject(":File Meta Data Decorator_ItemCheckbox"))
-    clickButton(waitForObject(":Preferences.OK_Button"))
+    toggleDATFileMDDecorators()
     
-    # open DExplore perspective
-    # mouseClick(waitForObject(":Open Perspective_ToolItem"), 7, 15, 0, Button.Button1)
-    # activateItem(waitForObjectItem(":Pop Up Menu", "DExplore"))
     openPerspective("DExplore")
 
     # Add h5 customisations
@@ -45,11 +30,6 @@ def main():
 
     snooze(2.5)
     
-    # open plot settings
-    #conOb = waitForObject(":Configure Settings..._ToolItem")
-    #check_plotted_trace_name_yval(conOb,"eta","40.0","0.0")
-
-
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()
-    
+
