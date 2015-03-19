@@ -17,7 +17,7 @@ def openPyDevConsole(type="Python"):
     # the previously launched console. What is probably needed is additional code
     # to detect the names of the existing consoles so that the new one can be detected  
     
-    mouseClick(waitForFirstSwtToolItem('Open Console'))
+    mouseClick(waitForSwtToolItem('Open Console'))
     activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
     clickButton(waitForObject(":%s console_Button" % type))
     clickButton(waitForObject(":OK_Button"))
@@ -25,7 +25,7 @@ def openPyDevConsole(type="Python"):
     # This is a bit difficult to know when we are fully ready, so we wait
     # for these two events to happen. 
     snooze(10)
-    waitForFirstSwtToolItem('Clear Console')
+    waitForSwtToolItem('Clear Console')
     waitForPrompt()
     
     # Finally activate the console so text can be sent to it
