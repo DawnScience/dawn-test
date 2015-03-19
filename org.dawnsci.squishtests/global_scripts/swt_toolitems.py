@@ -1,6 +1,11 @@
 import time
 # Adapted from http://kb.froglogic.com/display/KB/Article+-+Avoiding+problems+with+ToolItems+in+RCP+and+SWT+applications
 
+def waitForSwtToolItem(item_tooltiptext=None, item_text=None, timeoutMSec=20000):
+    #This is a wrapper for in preparation for changes to this module inline 
+    #with the equivalent CTab module
+    return waitForFirstSwtToolItem(item_tooltiptext=item_tooltiptext, item_text=item_text, timeoutMSec=timeoutMSec)
+
 def waitForFirstSwtToolItem(item_tooltiptext=None, item_text=None, timeoutMSec=20000):
     if item_text is None and item_tooltiptext is None:
         raise LookupError("ERROR: Must specify item_text or item_tooltiptext!")
