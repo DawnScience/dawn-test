@@ -47,12 +47,12 @@ def createToolSpace(viewTabName=None, direction=None, steps=15):
 def waitForImageToolsMenu():
     return waitForFirstSwtToolItem(item_tooltiptext="Image tools used to profile and inspect images.")
 
-def getToolItemOfCTabFolder(cTabItemTooltipText=None, cTabItemText=None, toolItemTooltipText=None, toolItemText=None):
+def getToolItemOfCTabFolder(cTabItemTooltipText=None, cTabItemText=None, toolItemTooltipText=None, toolItemText=None, squishFiveOne=False):
     if (toolItemText is None and toolItemTooltipText is None) or (cTabItemText is None and cTabItemTooltipText is None):
         raise LookupError("ERROR: Must specify the toolItemText/TooltipText to find and the activeTool associated with it.")
     
     #Find the CTabFolder we're interested in and get the items in it
-    cTabFolderObj = object.parent(waitForSwtCTabItem(caption=cTabItemText, toolTip=cTabItemTooltipText, squishFiveOne=True))
+    cTabFolderObj = object.parent(waitForSwtCTabItem(caption=cTabItemText, toolTip=cTabItemTooltipText, squishFiveOne=squishFiveOne))
     cTabChildren = object.children(cTabFolderObj)
     
     #Find all toolbars which are visible within this CTabFolder
