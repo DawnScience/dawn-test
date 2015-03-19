@@ -173,7 +173,7 @@ def openView(viewName, matchOpen=False):
             return
         #If that fails, we carry on.
         except:
-            test.log("Failed to find already open view, continuing to open new "+str(viewName)+" view.")
+            test.log("Could not find an already open "+str(viewName)+" view, opening a new one...")
     
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Show View"))
