@@ -10,13 +10,32 @@ USE_ATTACH=False
 testSettings.logScreenshotOnFail = True
 testSettings.logScreenshotOnError = True
 
-def startDAWNSuiteWorkspace():
+def getWorkspaceRoot():
+    ''' Returns the top-most directory, inside which we put the workspace 
+		(and potentially other directories) based on env var DAWN_WORKSPACE_ROOT
+    '''
+    return os.environ.get('DAWN_WORKSPACE_ROOT', "/scratch/workspace") # This default is not platform-independent
 
+def getDawnSuiteWorkspaceName():
+    '''Returns the workspace name, based on env var DAWN_SUITE_WORKSPACE
+    '''
+    return os.environ.get('DAWN_SUITE_WORKSPACE', "suite_test_single_workspace")
+
+def getTestName():
+    return os.path.basename(os.getcwd())
+
+def getSuiteName():
+    return os.path.basename(os.path.dirname(os.getcwd()))
+
+def getWorkspaceParent():
+    ''' Returns the parent of the workspace used for testing
+    '''
+    return os.path.join(getWorkspaceRoot(), getSuiteName(), getTestName())
+    
+def startDAWNSuiteWorkspace():
+    
     # We start each test in a new workspace
-    cwd = os.getcwd()
-    parent_path, test_name = os.path.split(cwd)
-    suite_name = os.path.basename(parent_path)
-    workspace = "%s/%s/%s" % (DAWN_WORKSPACE_ROOT, suite_name, DAWN_SUITE_WORKSPACE)
+    workspace = os.path.join(getWorkspaceRoot(), getSuiteName(), getDawnSuiteWorkspaceName())
     
     start = datetime.now()
     startApplication("dawn -consoleLog -data %s" % workspace, "", -1, 90)
@@ -45,10 +64,7 @@ def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=Fals
         attachToApplication("attachable_dawn")
     else:
         # We start each test in a new workspace
-        cwd = os.getcwd()
-        parent_path, test_name = os.path.split(cwd)
-        suite_name = os.path.basename(parent_path)
-        workparent = os.path.join(DAWN_WORKSPACE_ROOT, suite_name, test_name)
+        workparent = getWorkspaceParent()
         workspace = os.path.join(workparent, 'workspace')
         osgi_user_area = os.path.join(workparent, 'osgi_user_area')
         osgi_configuration_area = os.path.join(workparent, 'osgi_configuration_area')
@@ -102,7 +118,7 @@ def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=Fals
             vmArgs = mailto+xulfix+usage+osgi_area+" "+vmArgs
             
         # Expand the command
-        cmd = "dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s --launcher.appendVmargs -vmargs %s" % (workspace, osgi_user_area, osgi_configuration_area, suite_name, test_name, vmArgs)
+        cmd = "dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s --launcher.appendVmargs -vmargs %s" % (workspace, osgi_user_area, osgi_configuration_area, getSuiteName(), getTestName(), vmArgs)
 
         startApplication(cmd, "", -1, 90)
             
