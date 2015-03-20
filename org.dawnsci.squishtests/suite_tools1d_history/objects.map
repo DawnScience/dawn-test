@@ -51,6 +51,7 @@
 :Derivative.Display f'(Data)_Button	{caption='Display f\\'(Data)' container=':Derivative_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Derivative_CTabCloseBox	{container=':Derivative_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Derivative_CTabItem	{caption='Derivative' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Anaconda_Label	{caption='Anaconda - select to install' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Environment.New..._Button	{caption='New...' container=':Preferences.Environment_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
