@@ -3,8 +3,6 @@ source(findFile("scripts", "swt_ctabitems.py"))
 import glob, os, shutil
 from datetime import datetime
 
-DAWN_WORKSPACE_ROOT = os.environ.get('DAWN_WORKSPACE_ROOT',  "/scratch/workspace")
-DAWN_SUITE_WORKSPACE= os.environ.get('DAWN_SUITE_WORKSPACE', "suite_test_single_workspace")
 USE_ATTACH=False
 
 testSettings.logScreenshotOnFail = True
