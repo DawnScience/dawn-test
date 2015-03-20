@@ -53,7 +53,6 @@
 :Edge Scans_CTabItem	{caption='Edge Scans' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Edge Scans_Table	{container=':Edge Scans_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Edge Scans_ToolItem	{caption='Edge Scans' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
-:Anaconda_Label	{caption='Anaconda - select to install' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Environment.New..._Button	{caption='New...' container=':Preferences.Environment_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}

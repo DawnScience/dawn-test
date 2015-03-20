@@ -60,7 +60,6 @@
 :Delete Resources_Shell	{caption='Delete Resources' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :EP_errorPropagation.ipf  4.5 KB  15/09/14 09:49 AM_TreeItem	{caption='EP_errorPropagation.ipf  4.5 KB  15/09/14 09:49 AM' parentitem=':src_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :EP_errorPropagation.ipf  4.5 KB  15/09/14 09:49 AM_TreeItem_2	{caption='EP_errorPropagation.ipf  4.5 KB  15/09/14 09:49 AM' parentitem=':reflectivity_TreeItem_4' type='org.eclipse.swt.widgets.TreeItem'}
-:Anaconda_Label	{caption='Anaconda - select to install' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Environment.New..._Button	{caption='New...' container=':Preferences.Environment_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
