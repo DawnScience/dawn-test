@@ -1,9 +1,7 @@
 source(findFile("scripts", "dawn_global_startup.py"))
-source(findFile("scripts", "dawn_global_plot_tests.py"))
 source(findFile("scripts", "dawn_global_python_setup.py"))
 source(findFile("scripts", "dawn_global_ui_controls.py"))
 source(findFile("scripts", "use_case_utils.py"))
-source(findFile("scripts", "dawn_constants.py"))
 source(findFile("scripts", "plotting_test.py"))
 
 import os
@@ -13,12 +11,6 @@ def _getAnacondaInstallPath():
     # Install alongside (not inside) workspace
     return os.path.join(getWorkspaceParent(), "anacondaInstallTestLocation")
 
-def _performCleanup():
-    # Remove the existing install path
-    path = _getAnacondaInstallPath()
-    if os.path.isdir(path):
-        shutil.rmtree(_getAnacondaInstallPath())
-        
 def _finishPythonSetup():
     # Say yes to adding selected new paths to PYTHONPATH
     clickButton(waitForObject(":Selection needed.OK_Button"))
@@ -31,7 +23,6 @@ def _finishPythonSetup():
     waitForObject(":Workbench Window", 300000)    
     
 def setupAnaconda():
-    _performCleanup()
     
     # Open up preferences window and select PyDev->Interpreters->Python Interpreter
     waitForObject(":Workbench Window")
