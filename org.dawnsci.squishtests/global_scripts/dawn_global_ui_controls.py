@@ -44,8 +44,13 @@ def createToolSpace(viewTabName=None, direction=None, steps=15):
         a += 1
     clickTab(waitForObject(viewTabObject), 27, 12, 0, Button.Button1)
 
+#These open closely related menus
+# - first is for the initial plotting system's menu
+# - second is for menu within tools
 def waitForImageToolsMenu():
     return waitForFirstSwtToolItem(item_tooltiptext="Image tools used to profile and inspect images.")
+def waitForXYPlottingToolsMenu(cTabItemTooltipText=None, cTabItemText=None):
+    return getToolItemOfCTabFolder(cTabItemTooltipText=cTabItemTooltipText, cTabItemText=cTabItemText, toolItemTooltipText="XY plotting tools")
 
 def getToolItemOfCTabFolder(cTabItemTooltipText=None, cTabItemText=None, toolItemTooltipText=None, toolItemText=None, squishFiveOne=False):
     if (toolItemText is None and toolItemTooltipText is None) or (cTabItemText is None and cTabItemTooltipText is None):
