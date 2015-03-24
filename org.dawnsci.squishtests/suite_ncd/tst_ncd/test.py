@@ -1,4 +1,5 @@
 source(findFile("scripts", "dawn_global_startup.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 
@@ -11,27 +12,21 @@ def main():
     
     system = getPlottingSystem("Dataset Plot")
 
+    ncdFile = openExample("i22-104749.nxs", subfolder="saxs", findOnly=True)
     
-    expand(waitForObjectItem(":Project Explorer_Tree_2", "data"))
-    expand(waitForObjectItem(":Project Explorer_Tree_2", "examples"))
-    expand(waitForObjectItem(":Project Explorer_Tree_2", "saxs"))
-    children = object.children(waitForObjectItem(":Project Explorer_Tree_2", "saxs"))
-    
-    for child in children:
-        if "i22-104749.nxs" in child.text:
-            mouseClick(child, 5, 5, 0, Button.Button3)
-            break
-    
+    mouseClick(ncdFile, 5, 5, 0, Button.Button3)
     activateItem(waitForObjectItem(":_Menu_2", "NCD"))
     activateItem(waitForObjectItem(":NCD_Menu", "Read Detector Information"))
     clickButton(waitForObject(":NCD Detector Parameters.SAXS_Button"))
     mouseClick(waitForObjectItem(":NCD Detector Parameters.SAXS_Combo", "Pilatus2M"), 7, 14, 0, Button.Button1)
     
-    mouseClick(child, 5, 5, 0, Button.Button3)
+    mouseClick(ncdFile, 5, 5, 0, Button.Button3)
     
     activateItem(waitForObjectItem(":_Menu_2", "NCD"))
     activateItem(waitForObjectItem(":NCD_Menu", "Load Calibration Image"))
-    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
+    imageToolsMenu = waitForImageToolsMenu()
+    mouseClick(waitForObject(imageToolsMenu), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
+#    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Masking"))
     clickButton(waitForObject(":Masking 'data'.Enable lower mask    _Button"))
 
@@ -44,7 +39,7 @@ def main():
     
     snooze(1)
     
-    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
+    mouseClick(waitForObject(imageToolsMenu), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
     activateItem(waitForObjectItem(":Profile_Menu", "Radial Profile"))
     
@@ -64,11 +59,11 @@ def main():
     c = waitForObject(":_FigureCanvas")
     b = c.bounds
     
-    mouseClick(waitForObject(":XY plotting tools_ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
+    mouseClick(waitForXYPlottingToolsMenu(cTabItemTooltipText="Radial Profile"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
     activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
     
-    mouseClick(waitForObject(":Number peaks to fit_ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
+    mouseClick(waitForSwtToolItem("Number peaks to fit"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Fit 10 Peaks"))
     
     rx1, ry1 = getScreenPosition(system, 360, 1200)
@@ -118,7 +113,8 @@ def main():
 
     location = os.path.join(workspaceName, "data","examples");
     
-    clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem_2"))
+    ncdDataRedParams = waitForSwtCTabItem("NCD Data Reduction Parameters")
+    clickTab(waitForObject(ncdDataRedParams))
 
     #doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
     clickButton(waitForObject(":Data reduction pipeline.2. Sector integration_Button_2"))
@@ -133,7 +129,7 @@ def main():
     type(waitForObject(":Results directory_Text"), location[0])
 
 
-    clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem_2"), 181, 28, 0, Button.Button1)
+    clickTab(waitForObject(ncdDataRedParams))
     snooze(1)
     #clickButton(waitForObject(":Results directory...._Button"))
 
@@ -143,11 +139,11 @@ def main():
 
     snooze(1)
     
-    clickTab(waitForObject(":NCD Data Reduction Parameters_CTabItem_2"), 128, 14, 0, Button.Button1)
+    clickTab(waitForObject(ncdDataRedParams))
     #doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
     snooze(1)
     
-    mouseClick(child, 5, 5, 0, Button.Button3)
+    mouseClick(ncdFile, 5, 5, 0, Button.Button3)
     activateItem(waitForObjectItem(":_Menu_2", "NCD"))
     activateItem(waitForObjectItem(":NCD_Menu_2", "Run Data Reduction"))
 
