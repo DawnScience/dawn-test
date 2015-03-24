@@ -8,12 +8,13 @@ def main():
     openPerspective("DExplore")
     
     openExternalFile("results_i22-107001_Pilatus2M_120713_183001.nxs")
-    
+    #There may be black magic at work here...
+    #Test references original data which seems (but may not) be included in the sample
+    #file being opened. It seems to work as of March 2015, so it's been uncommented.    
     snooze(2)
     
     system = getPlottingSystem("Dataset Plot")
-    #TODO test was trying to use the data node which is a link to original data file
-    # rewrite using other data nodes
+   
     expand(waitForObjectItem(":Tree_Tree_2", "entry1"))
     snooze(2)
     expand(waitForObjectItem(":Tree_Tree_2", "Pilatus2M"))
