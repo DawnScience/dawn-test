@@ -30,6 +30,21 @@ def createProject(projectName, projectType="Workflow Project"):
     clickButton(waitForObject(":Finish_Button_2"))
     snooze(1)
 
+
+def createFolder(projectName, folderName):
+    activateItem(waitForObjectItem(":_Menu", "File"))
+    activateItem(waitForObjectItem(":File_Menu", "New"))
+    activateItem(waitForObjectItem(":New_Menu_2", "Other..."))
+    type(waitForObject(":_Text"), "Folder")
+    mouseClick(waitForObjectItem(":_Tree", "Folder"), 59, 10, 0, Button.Button1)
+    clickButton(waitForObject(":Next >_Button"))
+    mouseClick(waitForObjectItem(":_Tree", projectName), 82, 12, 0, Button.Button1)
+    type(waitForObject(":Folder name:_Text"), folderName)
+    mouseClick(waitForObject(":Folder name:_Text"), 126, 13, 0, Button.Button1)
+    clickButton(waitForObject(":Finish_Button_3"))
+    snooze(1)
+
+
 # All these arguments = bad but not sure how to do his as not python expert.
 def openExample(frag, project="data", folder="examples", subfolder=None, subsubfolder=None, findOnly=False):
     
@@ -110,9 +125,12 @@ def addExternalFile(fileName, suiteName, testName, project, subdir):
     # /scratch/workspace/suite_conversion/tst_image_stack_tiffs/workspace/data
     # or
     # C:\scratch\workspace\suite_conversion\tst_image_stack_tiffs\workspace\data
-    shutil.copyfile(path, "/scratch/workspace/"+suiteName+"/"+testName+"/workspace/"+project+"/"+subdir+"/"+fileName)
+    destFilePath = "/scratch/workspace/"+suiteName+"/"+testName+"/workspace/"+project+"/"+subdir+"/"+fileName
+    shutil.copyfile(path, destFilePath)
     mouseClick(waitForObjectItem(":Project Explorer_Tree", project))
     type(waitForObject(":Project Explorer_Tree"), "<F5>")
+    
+    return destFilePath
 
 
 def chooseSlice():
