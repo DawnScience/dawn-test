@@ -32,6 +32,11 @@ def createProject(projectName, projectType="Workflow Project"):
 
 
 def createFolder(projectName, folderName):
+    '''The following items are needed in the object.map:
+    :Finish_Button_3    {caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
+    :Folder name:_Label    {caption='Folder name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
+    :Folder name:_Text    {isvisible='true' leftWidget=':Folder name:_Label' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
+'''
     activateItem(waitForObjectItem(":_Menu", "File"))
     activateItem(waitForObjectItem(":File_Menu", "New"))
     activateItem(waitForObjectItem(":New_Menu_2", "Other..."))
