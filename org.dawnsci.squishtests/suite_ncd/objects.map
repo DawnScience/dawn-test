@@ -66,6 +66,7 @@
 :File Navigator_Tree_2	{container=':File Navigator_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :File_Menu	{caption='File' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Finish_Button_2	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Image Gallery_CTabCloseBox	{container=':Image Gallery_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Image Gallery_CTabItem	{caption='Image Gallery' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Image Gallery_Gallery	{container=':Image Gallery_CTabItem' isvisible='true' type='org.eclipse.nebula.widgets.gallery.Gallery'}
@@ -96,10 +97,12 @@
 :NCD_Menu	{caption='NCD' container=':Project Explorer_Tree_2' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :NCD_Menu_2	{caption='NCD' container=':Project Explorer_Tree_3' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :New.Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':New_Shell'}
+:New_Menu_2	{caption='New' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :New_Shell	{caption='New' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :New_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':New_Shell'}
 :New_ToolItem	{caption='New' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :New_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':New_Shell'}
+:Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :None_ToolItem	{caption='None' container=':_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :Number peaks to fit_ToolItem	{caption='Number peaks to fit' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Open Perspective_Shell'}
@@ -120,6 +123,8 @@
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Project Explorer_Tree_2	{container=':Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Project Explorer_Tree_3	{container=':Project Explorer_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Project name:_Label	{caption='Project name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
+:Project name:_Text	{isvisible='true' leftWidget=':Project name:_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
 :Regions.Region Location_Label	{caption='Region Location' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Regions.Region Location_Table	{aboveWidget=':Regions.Region Location_Label' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Regions_Spinner	{container=':Configure Graph Settings.Regions_TabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Spinner'}
@@ -150,6 +155,7 @@
 :Welcome_CTabCloseBox	{container=':Welcome_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Welcome_CTabItem	{caption='Welcome' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Window_Menu	{caption='Window' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:WizardDialog_Shell	{data?='org.eclipse.jface.wizard.WizardDialog@*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Workbench Window	{data?='org.eclipse.ui.internal.WorkbenchWindow*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Workspace Launcher.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Workspace Launcher_Shell'}
 :Workspace Launcher.Workspace:_Combo	{isvisible='true' leftWidget=':Workspace Launcher.Workspace:_Label' type='org.eclipse.swt.widgets.Combo' window=':Workspace Launcher_Shell'}
@@ -170,6 +176,7 @@
 :_Shell	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :_Slider	{isvisible='true' type='org.eclipse.swt.widgets.Slider' window=':Workbench Window'}
 :_Slider_2	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Slider' window=':Workbench Window'}
+:_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
 :_ToolBar	{container=':_CTabFolder' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_2' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
@@ -178,6 +185,7 @@
 :_ToolBar_6	{firstItemText='New' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_7	{firstItemText='PEEMA' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_ErrorLog	{firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
 :_Twistie	{isvisible='true' type='org.eclipse.ui.forms.widgets.Twistie' window=':Workbench Window'}
 :b21_TreeItem	{caption='b21' parentitem=':dls_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :b21_TreeItem_2	{caption='b21' parentitem=':dls_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
