@@ -18,7 +18,7 @@ def createProject(projectName, projectType="Workflow Project"):
     snooze(1)
 
 # All these arguments = bad but not sure how to do his as not python expert.
-def openExample(frag, project="data", folder="examples", subfolder=None, subsubfolder=None):
+def openExample(frag, project="data", folder="examples", subfolder=None, subsubfolder=None, findOnly=False):
     
     expand(waitForObjectItem(":Project Explorer_Tree", project))
     children = object.children(waitForObjectItem(":Project Explorer_Tree", project))
@@ -37,11 +37,13 @@ def openExample(frag, project="data", folder="examples", subfolder=None, subsubf
     
     for child in children:
         if frag in child.text:
-            doubleClick(child, 5, 5, 0, Button.Button1)
+            foundExample = child
+            if not findOnly:
+                doubleClick(child, 5, 5, 0, Button.Button1)
     
     # We wait for a few seconds for the part to open
     snooze(3)
-    return;
+    return foundExample
 
             
 '''
