@@ -67,6 +67,9 @@
 :File_Menu	{caption='File' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Finish_Button_2	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Finish_Button_3	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
+:Folder name:_Label	{caption='Folder name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
+:Folder name:_Text	{isvisible='true' leftWidget=':Folder name:_Label' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
 :Image Gallery_CTabCloseBox	{container=':Image Gallery_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Image Gallery_CTabItem	{caption='Image Gallery' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Image Gallery_Gallery	{container=':Image Gallery_CTabItem' isvisible='true' type='org.eclipse.nebula.widgets.gallery.Gallery'}
