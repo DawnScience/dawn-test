@@ -5,6 +5,19 @@ import shutil
 
 
 def createProject(projectName, projectType="Workflow Project"):
+    #Move this comment to confluence docs!
+    '''This works fine for creating a new project, but the projectType needs to match
+    the name in the menu *EXACTLY* 
+    Also the following items are needed in the object.map:
+    :Finish_Button_2    {caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+    :New_Menu_2    {caption='New' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+    :Next >_Button    {caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
+    :Project name:_Label    {caption='Project name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
+    :Project name:_Text    {isvisible='true' leftWidget=':Project name:_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
+    :WizardDialog_Shell    {data?='org.eclipse.jface.wizard.WizardDialog@*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+    :_Text    {isvisible='true' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
+    :_Tree    {isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
+    '''
     
     activateItem(waitForObjectItem(":_Menu", "File"))
     activateItem(waitForObjectItem(":File_Menu", "New"))
