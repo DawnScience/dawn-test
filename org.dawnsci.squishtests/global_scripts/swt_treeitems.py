@@ -3,16 +3,39 @@
 import re
 source(findFile("scripts", "namedtuple.py"))
 
+def waitForTreeWithItem(itemName, timeoutMSec=20000):
+    # Keep searching until we timeout
+    end = time.time() + timeoutMSec / 1000.0
+    
+    while time.time() < end:
+        # At least wait for any ToolBar instance; you still may
+        # need to snooze() before calling this function
+        waitForObject("{isvisible='true' type='org.eclipse.swt.widgets.Tree'}")
+        snooze(2)
+        
+        i = 0
+        while True:
+            n = "{isvisible='true' type='org.eclipse.swt.widgets.Tree' occurrence='" + str(i) + "'}"
+            if not object.exists(n):
+                break
+            o = findObject(n)
+            nItems = o.getItemCount()
+            for j in range(nItems):
+                if o.getItem(j).getText() == itemName:
+                    return o
+            i += 1
+    raise LookupError('ERROR: Could not find a Tree containing item '+itemName+'.')
+
 def get_swt_tree_sub_item(tree_or_item, path, column, verbose=True):
     """Get sub item in an SWT tree, where the sub item is the
-       com.froglofic.squish.swt.TreeSubItem virtual wrapper around
+       com.froglogic.squish.swt.TreeSubItem virtual wrapper around
        an item's specified column.
        
        tree_or_item and path are passed directly to get_swt_tree_item,
-       see documentation thre for details.
+       see documentation the for details.
        
        column in the 0-index column number to extract the sub item for.
-       The fields of iterest if a TreeSubItem are:
+       The fields of interest if a TreeSubItem are:
        - item, the TreeItem (row) that this sub item is part of
        - text, the displayed text
        The object returned can be used as any other object can, for
@@ -26,7 +49,7 @@ def get_swt_tree_sub_item(tree_or_item, path, column, verbose=True):
     return subitems[column]
 
 
-def get_swt_tree_item(tree_or_item, path, sub_path=None, verbose=True):
+def get_swt_tree_item(tree_or_item, path, sub_path=None, verbose=True, file=False):
     """Get item in an SWT tree.
     path is a list of TreeItem texts, denoting the path of
     the desired item. For example:
@@ -62,7 +85,7 @@ def get_swt_tree_item(tree_or_item, path, sub_path=None, verbose=True):
                 path_element = (path_element, 1)
             occurrence = path_element[1]
             path_element = path_element[0]
-        if item_text == path_element:
+        if (item_text == path_element) or (file is True and len(sub_path) == 1 and path_element in item_text):
             if occurrence > 1:
                 if verbose:
                     test.log("Ignoring: " + item_text + ", occurrence: " + str(occurrence))
@@ -78,7 +101,7 @@ def get_swt_tree_item(tree_or_item, path, sub_path=None, verbose=True):
                     test.log("Reached end of path")
                 return item
             else:
-                return get_swt_tree_item(item, path, sub_path[1:], verbose)
+                return get_swt_tree_item(item, path, sub_path[1:], verbose, file)
  
     if verbose:
         test.log("Error: Path element not found: " + str(sub_path[0]) + " (Complete path: " + str(path) + ")")
@@ -88,7 +111,7 @@ def get_swt_tree_item(tree_or_item, path, sub_path=None, verbose=True):
 _swt_tree_node = namedtuple('_swt_tree_node', ["children", "column", "object"])
 def get_swt_tree_texts(tree_or_item, columns_tuple_type=None, verbose=False):
     '''
-    Get all the items in thew tree as they are displayed to the user.
+    Get all the items in the tree as they are displayed to the user.
     
 
     node = ([children-nodes], (column_texts), tree_item_object) 
