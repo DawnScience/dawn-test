@@ -1,7 +1,9 @@
-import os, glob
-import shutil
+import os, glob, shutil
 
-def deleteOldLogFiles(mask):
+def deleteOldLogFiles(mask, workingDir=None):
+    if workingDir != None:
+        os.chdir(workingDir)
+    
     logfiles = glob.glob(mask)
     for f in logfiles:
         if os.path.isdir(f):
@@ -9,7 +11,10 @@ def deleteOldLogFiles(mask):
         else:
             os.remove(f)
 
-def findLogFile(mask, maxiter):
+def findLogFile(mask, maxiter, workingDir=None):
+    if workingDir != None:
+        os.chdir(workingDir)
+    
     logfiles = []
     i = 0
     while len(logfiles)==0 and i < maxiter:
@@ -22,6 +27,30 @@ def findLogFile(mask, maxiter):
         if os.path.isfile(f):
             return f
     return None
+
+def findFileInTree(workingDir, mask, dirMasks=None):
+    #Search down through a list of directory masks
+    if dirMasks != None and len(dirMasks) != 0:
+        os.chdir(workingDir)
+        dirObjs = glob.glob(dirMasks[0])
+        for obj in dirObjs:
+            if os.path.isdir(obj):
+                subWorkDir = os.path.join(workingDir, obj)
+                fullPath = findFileInTree(subWorkDir, mask, dirMasks=dirMasks[1:])
+    
+    #If we're in the right place, search for the file.
+    os.chdir(workingDir)
+    fileObjs = glob.glob(mask)
+    for obj in fileObjs:
+        if os.path.isfile(obj):
+            filePath = os.path.join(workingDir, obj)
+            return filePath
+    
+    #Return the fullpath of the file
+    if fullPath != None:
+        return fullPath
+    else:
+        return None
 
 def createAndChangeToSquishtestsTempDirectory():
     # Create, set and change to the working directory
