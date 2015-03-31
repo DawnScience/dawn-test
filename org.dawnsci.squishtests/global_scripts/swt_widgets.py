@@ -1,3 +1,8 @@
+''' Module to provide interactions with SWT widgets in one place. Similar
+    to the methods provided by other swt_* modules (ctabitems, tableitems...)
+    Sourced by dawn_global_ui_controls.
+    '''
+
 def waitForSwtTextWithLabel(labelText, timeoutMSec=20000):
     
     # Keep searching until we timeout
