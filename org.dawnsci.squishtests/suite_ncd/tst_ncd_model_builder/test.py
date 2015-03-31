@@ -3,7 +3,7 @@ source(findFile("scripts", "dawn_global_ui_controls.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 source(findFile("scripts", "file_utils.py"))
-import os, platform, shutil, sys
+import os, platform, sys
 
 def main():
     # This test should only run on Linux x86_64
@@ -32,10 +32,10 @@ def main():
     
     #Get the file widget and click on it twice (not double click!) to load
     ncdFileWidget = get_swt_tree_item(tree, ["NCDModelBuilder", "NCDTest", "results_b21-2672_detector_040713_102411.nxs"], file = True)
-    mouseClick(ncdFileWidget, 186, 12, 0, Button.Button1)
-    mouseClick(ncdFileWidget, 186, 12, 0, Button.Button1)
+    mouseClick(waitForObject(ncdFileWidget), 186, 12, 0, Button.Button1)
+    mouseClick(waitForObject(ncdFileWidget), 186, 12, 0, Button.Button1)
     
-    #Make sure the 
+    #Activate the tool and set working directory 
     clickTab(waitForSwtCTabItem("BioSAXS Model Builder"), 92, 13, 0, Button.Button1)
     workDirTextBox = waitForSwtTextWithLabel("Working directory")
     mouseClick(waitForObject(workDirTextBox), 144, 5, 0, Button.Button1)
@@ -43,7 +43,7 @@ def main():
     type(waitForObject(workDirTextBox), "<Delete>")
     type(waitForObject(workDirTextBox), workingDir)
     
-    #Make sure we have a
+    #Set the directory label and ensure no old logs present
     sasDirectoryPrefixPattern = "EDApplicationSASPipeline*"
     deleteOldLogFiles(sasDirectoryPrefixPattern, workingDir=workingDir)#For testing...
     
@@ -51,12 +51,11 @@ def main():
     clickButton(waitForObject(":Data parameters.Run NCD model building_Button"))
     snooze(130)
 
-    logfile = None
     logfile = findLogFile(sasDirectoryPrefixPattern, 100, workingDir=workingDir)
     test.verify(logfile != None, "Found logfile.")
     pipelineOut = findFileInTree(workingDir, "pipelineResults*", dirMasks=[sasDirectoryPrefixPattern, 'ControlSolutionScattering*'])
     test.verify(pipelineOut != None, "Found pipelineResults.html (shown to user).")
     
-    shutil.rmtree(workingDir, ignore_errors=True)
+    os.removedirs(workingDir)
 
     closeOrDetachFromDAWN()
