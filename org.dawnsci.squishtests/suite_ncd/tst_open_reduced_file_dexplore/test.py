@@ -1,4 +1,5 @@
 source(findFile("scripts", "dawn_global_startup.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 
@@ -14,23 +15,23 @@ def main():
     snooze(2)
     
     system = getPlottingSystem("Dataset Plot")
-   
-    expand(waitForObjectItem(":Tree_Tree_2", "entry1"))
-    snooze(2)
-    expand(waitForObjectItem(":Tree_Tree_2", "Pilatus2M"))
-    snooze(2)
-    doubleClick(waitForObjectItem(":Tree_Tree_2", "data"), 17, 8, 0, Button.Button1)
     
-    snooze(1)
+    nxsTree = waitForTreeWithItem("entry1")
+    expand(waitForObjectItem(nxsTree, "entry1"))
+    snooze(2)
+    expand(waitForObjectItem(nxsTree, "Pilatus2M"))
+    snooze(2)
+    doubleClick(waitForObjectItem(nxsTree, "data"), 17, 8, 0, Button.Button1)
     
+    snooze(1) #This is important for the next line to work!
     shape = system.getTraces().toArray().at(0).getData().getShape()
     test.verify(shape.length == 2, "This should be a 2D plot")
     test.verify(shape.at(0) == 1679, "Image X shape should be 1679")
     test.verify(shape.at(1) == 1475, "Image Y shape should be 1475")
     
-    expand(waitForObjectItem(":Tree_Tree_2", "Pilatus2M__result"))
+    expand(waitForObjectItem(nxsTree, "Pilatus2M__result"))
     
-    doubleClick(waitForObjectItem(":Tree_Tree_2", "data_1"), 19, 14, 0, Button.Button1)
+    doubleClick(waitForObjectItem(nxsTree, "data_1"), 19, 14, 0, Button.Button1)
     snooze(1)
     shape = system.getTraces().toArray().at(0).getData().getShape()
     test.verify((shape.length == 1) and (shape.at(0) == 1414), "This should be a 1D plot with X shape 1414")

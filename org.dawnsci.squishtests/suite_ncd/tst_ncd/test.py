@@ -26,7 +26,6 @@ def main():
     activateItem(waitForObjectItem(":NCD_Menu", "Load Calibration Image"))
     imageToolsMenu = waitForImageToolsMenu()
     mouseClick(waitForObject(imageToolsMenu), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
-#    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Masking"))
     clickButton(waitForObject(":Masking 'data'.Enable lower mask    _Button"))
 
@@ -43,7 +42,6 @@ def main():
     activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
     activateItem(waitForObjectItem(":Profile_Menu", "Radial Profile"))
     
- #   c = waitForObject(":Dataset Plot_Composite")
     c = waitForObject(system.getPlotComposite())
     b = c.bounds
     
@@ -73,9 +71,8 @@ def main():
     mouseClick(c,rx2,ry2, 0, Button.Button1)
 
     snooze(5)
-    text_widget = waitForObject(":Calibration Function.Gradient_Text")
+    text_widget = waitForSwtTextWithLabel("Gradient")
     test.verify(text_widget.text == "--")
-    #mouseClick(waitForObject(":Saxs Q-axis Calibration.Calibration Controls_Group"))
     mouseClick(waitForObjectItem(":Calibration Controls.Standard_Combo", "Collagen Dry"))
     clickButton(waitForObject(":Calibration Controls.Calibrate_Button"))
     
@@ -116,42 +113,38 @@ def main():
     ncdDataRedParams = waitForSwtCTabItem("NCD Data Reduction Parameters")
     clickTab(waitForObject(ncdDataRedParams))
 
-    #doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
     clickButton(waitForObject(":Data reduction pipeline.2. Sector integration_Button_2"))
- 
-    mouseClick(waitForObject(":Results directory_Text"))
+    
+    resultsDirText = waitForObject(":Results directory_Text")
+    mouseClick(waitForObject(resultsDirText))
 
-    #mouseDrag(waitForObject(":Results directory.Directory:_Text"), 229, 15, -319, -4, Modifier.None, Button.Button1)
-    type(waitForObject(":Results directory_Text"), "<Ctrl+a>")
-    type(waitForObject(":Results directory_Text"), "<Delete>")
-    type(waitForObject(":Results directory_Text"), location[1:])
-    type(waitForObject(":Results directory_Text"), "<Home>")
-    type(waitForObject(":Results directory_Text"), location[0])
-
+    type(waitForObject(resultsDirText), "<Ctrl+a>")
+    type(waitForObject(resultsDirText), "<Delete>")
+    type(waitForObject(resultsDirText), location)
+#    type(waitForObject(resultsDirText), location[1:]) #This input means we don't get the autocomplete box.
+#    type(waitForObject(resultsDirText), "<Home>")
+#    type(waitForObject(resultsDirText), location[0])
 
     clickTab(waitForObject(ncdDataRedParams))
     snooze(1)
-    #clickButton(waitForObject(":Results directory...._Button"))
 
-    #chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/testoutput")
-    snooze(1)
     clickButton(waitForObject(":NCD Data Reduction Parameters.Radial Profile_Button_2"))
 
     snooze(1)
     
     clickTab(waitForObject(ncdDataRedParams))
-    #doubleClick(waitForObject(":NCD Data Reduction Parameters_CTabItem"), 128, 17, 0, Button.Button1)
     snooze(1)
     
     mouseClick(ncdFile, 5, 5, 0, Button.Button3)
     activateItem(waitForObjectItem(":_Menu_2", "NCD"))
     activateItem(waitForObjectItem(":NCD_Menu_2", "Run Data Reduction"))
-
-    mouseClick(waitForObjectItem(":Project Explorer_Tree_3", "examples"), 49, 5, 0, Button.Button1)
-    type(waitForObject(":Project Explorer_Tree_3"), "<F5>")
+    
+    projExplore = waitForTreeWithItem("data")
+    mouseClick(waitForObjectItem(projExplore, "examples"), 49, 5, 0, Button.Button1)
+    type(waitForObject(projExplore), "<F5>")
     snooze(5)
     
-    children = object.children(waitForObjectItem(":Project Explorer_Tree_2", "examples"))
+    children = object.children(waitForObjectItem(projExplore, "examples"))
     
     found = False
     for child in children:
