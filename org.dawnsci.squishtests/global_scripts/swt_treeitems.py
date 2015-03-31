@@ -26,6 +26,9 @@ def waitForTreeWithItem(itemName, timeoutMSec=20000):
             i += 1
     raise LookupError('ERROR: Could not find a Tree containing item '+itemName+'.')
 
+def expandTreeToItem(itemName, tree=None, timeoutMSec=20000):
+    pass
+
 def get_swt_tree_sub_item(tree_or_item, path, column, verbose=True):
     """Get sub item in an SWT tree, where the sub item is the
        com.froglogic.squish.swt.TreeSubItem virtual wrapper around
@@ -49,7 +52,7 @@ def get_swt_tree_sub_item(tree_or_item, path, column, verbose=True):
     return subitems[column]
 
 
-def get_swt_tree_item(tree_or_item, path, sub_path=None, verbose=True, file=False):
+def get_swt_tree_item(tree_or_item, path, sub_path=None, verbose=True, file=False, fsTree=False):
     """Get item in an SWT tree.
     path is a list of TreeItem texts, denoting the path of
     the desired item. For example:
@@ -76,9 +79,13 @@ def get_swt_tree_item(tree_or_item, path, sub_path=None, verbose=True, file=Fals
     n = tree_or_item.getItemCount()
     occurrence = None
     for i in range(n):
+        item, item_text = None, None
         item = tree_or_item.getItem(i)
-        item_text = item.getText()
- 
+        if fsTree:
+            #If we're reading the file system, this waits for the object.
+            waitForObject(item)
+        item_text = str(item.getText())
+
         if occurrence is None:
             path_element = sub_path[0]
             if not isinstance(path_element, tuple):
@@ -99,7 +106,7 @@ def get_swt_tree_item(tree_or_item, path, sub_path=None, verbose=True, file=Fals
             if len(sub_path) == 1:
                 if verbose:
                     test.log("Reached end of path")
-                return item
+                return waitForObject(item)
             else:
                 return get_swt_tree_item(item, path, sub_path[1:], verbose, file)
  
