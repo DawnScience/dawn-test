@@ -5,6 +5,7 @@ source(findFile("scripts", "swt_sashitems.py"))
 source(findFile("scripts", "swt_tableitems.py"))
 source(findFile("scripts", "swt_toolitems.py"))
 source(findFile("scripts", "swt_treeitems.py"))
+source(findFile("scripts", "swt_widgets.py"))
 
 def createToolSpace(viewTabName=None, direction=None, steps=15):
     if viewTabName is None:
