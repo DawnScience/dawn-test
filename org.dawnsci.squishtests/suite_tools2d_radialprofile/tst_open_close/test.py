@@ -46,8 +46,8 @@ def main():
     check_plotted_traces_names(conOb, ['Radial Profile Profile 1'])
 
     mouseClick(waitForObject(":View Menu_ToolItem_2"), 16, 11, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Center sector 'Profile 1'"))
-    activateItem(waitForObjectItem(":Center sector 'Profile 1'_Menu", "Center sector 'Profile 1'"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "Center region 'Profile 1'"))
+    activateItem(waitForObjectItem(":Center region 'Profile 1'_Menu", "Center region 'Profile 1'"))
     
     #check centre position
     
