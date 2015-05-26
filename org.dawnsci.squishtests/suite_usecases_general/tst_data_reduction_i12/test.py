@@ -72,7 +72,7 @@ def main():
     
     snooze(90) # While Reduce...
     
-    mouseClick(waitForObjectItem(":Data_Table_2", "3/0"), 5, 11, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_2", "4/0"), 5, 11, 0, Button.Button1)
     
     # We get the plotting system
     system = getPlottingSystem("40788_Peak_Fitting.nxs")

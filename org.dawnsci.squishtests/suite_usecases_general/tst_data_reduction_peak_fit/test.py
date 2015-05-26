@@ -61,7 +61,7 @@ def main():
     clickButton(waitForObject(":Finish_Button"))
     
     # Plot some reduction
-    snooze(60) # While open file...
+    snooze(90) # While open file...
     
 #    clickTab(waitForObject(":Data_CTabItem_2",180000), 77, 14, 0, Button.Button1)
 
