@@ -30,6 +30,7 @@ def findLogFile(mask, maxiter, workingDir=None):
 
 def findFileInTree(workingDir, mask, dirMasks=None):
     #Search down through a list of directory masks
+    fullPath = None
     if dirMasks != None and len(dirMasks) != 0:
         os.chdir(workingDir)
         dirObjs = glob.glob(dirMasks[0])
