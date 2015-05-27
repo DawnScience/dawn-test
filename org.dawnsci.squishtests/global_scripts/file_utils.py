@@ -48,10 +48,10 @@ def findFileInTree(workingDir, mask, dirMasks=None):
             return filePath
     
     #Return the fullpath of the file
-    if fullPath != None:
-        return fullPath
-    else:
+    if fullPath == None:
         return None
+    else:
+        return fullPath
 
 def createAndChangeToSquishtestsTempDirectory():
     # Create, set and change to the working directory
