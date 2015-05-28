@@ -22,6 +22,8 @@
 :Change Settings.Name: _Text	{container=':Traces.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Name: _Label' type='org.eclipse.swt.widgets.Text'}
 :Change Settings_Composite	{container=':Traces.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Composite'}
 :Cheat Sheets_CTabItem	{caption='Cheat Sheets' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Choose the project type.Jython_Button	{caption='Jython' container=':Choose the project type_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Choose the project type.Python_Button	{caption='Python' container=':Choose the project type_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Choose the project type_Group	{caption='Choose the project type' isvisible='true' type='org.eclipse.swt.widgets.Group' window=':_Shell'}
 :Choose trace for fit._ToolItem	{caption='Choose trace for fit.' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Clear Console_ToolItem	{caption='Clear Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
@@ -47,6 +49,7 @@
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Console_CTabItem_2	{caption='Console' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Console_StyledText	{basetype='org.eclipse.swt.custom.StyledText' container=':Console_CTabItem_2' isvisible='true'}
+:Create 'src' folder and add it to the PYTHONPATH_Button	{caption='Create \\'src\\' folder and add it to the PYTHONPATH' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Data Analysis_TreeItem	{caption='Data Analysis' container=':Preferences_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
@@ -65,10 +68,14 @@
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :FWHM_TableColumn	{caption='FWHM' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
+:File_Menu	{caption='File' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Finish_Button_2	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Finish_Button_3	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Fit_TableColumn	{caption='Fit' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :Fitting Preferences_TreeItem	{caption='Fitting Preferences' parentitem=':Data Analysis_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:Folder name:_Label	{caption='Folder name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
+:Folder name:_Text	{isvisible='true' leftWidget=':Folder name:_Label' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
 :I accept the terms of the license agreement_Button	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Image_ToolBar	{container=':image0001.pgm.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
@@ -93,8 +100,9 @@
 :New fit selection._ToolItem	{caption='New fit selection.' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :New fit selection._ToolItem_2	{caption='New fit selection.' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
 :New_Menu	{caption='New' container=':PyDev Package Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
-:New_Menu_2	{caption='New' container=':PyDev Package Explorer_Tree_2' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:New_Menu_2	{caption='New' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :New_Menu_3	{caption='New' container=':Project Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:New_Menu_4	{caption='New' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Next >_Button_2	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :No tool_CTabItem	{caption='No tool' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
