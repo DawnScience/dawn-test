@@ -4,7 +4,7 @@ source(findFile("scripts", "dawn_constants.py"))
 
 def main():
     vals = dawn_constants
-    startOrAttachToDAWN()
+    startOrAttachToDAWN(vmArgs="-Dorg.dawnsci.histogram.v1.x.colourMapping=true")
     
     snooze(5.0)
     

@@ -15,7 +15,7 @@ def open_and_close_tool():
     #verifyAndClearErrorLog()
 
 def main():
-    startOrAttachToDAWN()
+    startOrAttachToDAWN(vmArgs="-Dorg.dawnsci.histogram.v1.x.colourMapping=true")
 
     
     snooze(5.0)

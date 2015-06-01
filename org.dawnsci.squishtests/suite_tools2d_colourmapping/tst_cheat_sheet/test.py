@@ -3,7 +3,7 @@ source(findFile("scripts", "dawn_slider_utils.py"))
 
 
 def main():
-    startOrAttachToDAWN()
+    startOrAttachToDAWN(vmArgs="-Dorg.dawnsci.histogram.v1.x.colourMapping=true")
     
     snooze(5.0)
     
