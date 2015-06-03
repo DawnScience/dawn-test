@@ -57,7 +57,8 @@ def main():
     c = waitForObject(":_FigureCanvas")
     b = c.bounds
     
-    mouseClick(waitForXYPlottingToolsMenu(cTabItemTooltipText="Radial Profile"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
+    # This seems to be where the test fails and there are few calls to waitForXYPlottingToolsMenu
+    mouseClick(waitForXYPlottingToolsMenu(cTabItemText="Radial Profile"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
     activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
     
