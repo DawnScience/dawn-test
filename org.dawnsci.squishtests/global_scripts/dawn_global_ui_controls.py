@@ -7,6 +7,8 @@ source(findFile("scripts", "swt_toolitems.py"))
 source(findFile("scripts", "swt_treeitems.py"))
 source(findFile("scripts", "swt_widgets.py"))
 
+import sys
+
 def createToolSpace(viewTabName=None, direction=None, steps=15):
     if viewTabName is None:
         raise LookupError("ERROR: Must specify a viewTabName to right click on!")
@@ -54,21 +56,34 @@ def waitForXYPlottingToolsMenu(cTabItemTooltipText=None, cTabItemText=None):
     return getToolItemOfCTabFolder(cTabItemTooltipText=cTabItemTooltipText, cTabItemText=cTabItemText, toolItemTooltipText="XY plotting tools")
 
 def getToolItemOfCTabFolder(cTabItemTooltipText=None, cTabItemText=None, toolItemTooltipText=None, toolItemText=None, squishFiveOne=False):
+    
     if (toolItemText is None and toolItemTooltipText is None) or (cTabItemText is None and cTabItemTooltipText is None):
         raise LookupError("ERROR: Must specify the toolItemText/TooltipText to find and the activeTool associated with it.")
     
-    #Find the CTabFolder we're interested in and get the items in it
-    cTabFolderObj = object.parent(waitForSwtCTabItem(caption=cTabItemText, toolTip=cTabItemTooltipText, squishFiveOne=squishFiveOne))
-    cTabChildren = object.children(cTabFolderObj)
+    # What is 'object' this does not seem to work...
+    try:
+        #Find the CTabFolder we're interested in and get the items in it
+        cTabFolderObj = object.parent(waitForSwtCTabItem(caption=cTabItemText, toolTip=cTabItemTooltipText, squishFiveOne=squishFiveOne))
+        cTabChildren = object.children(cTabFolderObj)
     
-    #Find all toolbars which are visible within this CTabFolder
-    for c in cTabChildren:
-        if (c["class"] == "org.eclipse.swt.widgets.ToolBar") & (c["visible"] == 1):
-            tbc = object.children(c)
+        #Find all toolbars which are visible within this CTabFolder
+        for c in cTabChildren:
+            if (c["class"] == "org.eclipse.swt.widgets.ToolBar") & (c["visible"] == 1):
+                tbc = object.children(c)
             
-            #Find the first toolItem object in the given toolbar, which matches given tool
-            for toolItem in tbc:
-                if (toolItem["tooltiptext"] == toolItemTooltipText) | (toolItem["tooltiptext"] == toolItemText):
-                    return toolItem
+                #Find the first toolItem object in the given toolbar, which matches given tool
+                for toolItem in tbc:
+                    if (toolItem["tooltiptext"] == toolItemTooltipText) | (toolItem["tooltiptext"] == toolItemText):
+                        return toolItem
                 
+     
+    except:
+        # We do this to try and preserve the original lookup error.
+        ae = sys.exc_value
+        if (not cTabItemText is None):
+            raise Exception(ae.args[0], "Cannot find cTabItemText="+cTabItemText)
+        if (not cTabItemTooltipText is None):
+            raise Exception(ae.args[0], "Cannot find cTabItemTooltipText="+cTabItemTooltipText)
+        raise
+    
     raise LookupError('ERROR: Could not find ToolItem with text "' + str(toolItemText) + '" and tooltiptext "' + str(toolItemTooltipText) + '"')
