@@ -9,7 +9,7 @@ def main():
     # Start or attach runs (or attaches) to DAWN and then 
     # makes sure the workbench window exists and finally
     # will close the Welcome screen 
-    startOrAttachToDAWN()
+    startOrAttachToDAWN(vmArgs="-Dorg.dawnsci.histogram.v1.x.colourMapping=true")
     openPerspective("Data Browsing (default)")
     openExample("001.img")
     vals = dawn_constants
