@@ -41,7 +41,7 @@ def main():
     clickTab(waitForObject(":i12_edxd_q_calibrator_v3_ceria_CTabItem"), 131, 15, 0, Button.Button1)
     snooze(2)
     mouseClick(waitForObject(":Activates the interactive console. (Ctrl+Alt+Enter)_ToolItem"), 12, 8, 0, Button.Button1)
-    snooze(2)
+    snooze(10)
     
     #change y-axis to log
     mouseClick(waitForObject(":Configure Settings..._ToolItem_4"), 7, 10, 0, Button.Button1)
