@@ -90,6 +90,7 @@
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Regions.Region Location_Label	{caption='Region Location' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Regions.Region Location_Table	{aboveWidget=':Regions.Region Location_Label' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Resize the Bounding Box and do not crop the resulting rotated image_ToolItem	{caption='Resize the Bounding Box and do not crop the resulting rotated image' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :SWT	SWT
 :Select Axis_Combo	{container=':Axes.Select Axis_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
@@ -141,6 +142,7 @@
 :_ToolBar_4	{container=':_CTabFolder_4' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_5	{container=':_CTabFolder_4' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_6	{container=':_CTabFolder_4' firstItemText='Show only data with a \\'signal\\' attribute' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_7	{container=':_CTabFolder_4' firstItemText='Resize the Bounding Box and do not crop the resulting rotated image' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :image0001.pgm_CTabCloseBox	{container=':image0001.pgm_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :image0001.pgm_CTabItem	{caption='image0001.pgm' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}

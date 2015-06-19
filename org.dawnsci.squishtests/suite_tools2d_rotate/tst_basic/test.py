@@ -21,7 +21,7 @@ def main():
     activateItem(waitForObjectItem(":Pop Up Menu", "Image Rotation"))
     mouseClick(waitForObject(":Image Rotation.Rotation angle_Spinner"), -2, 10, 0, Button.Button1)
     type(waitForObject(":Image Rotation.Rotation angle_Spinner"), "45")
-    clickButton(waitForObject(":Image Rotation.Resize Bounding Box_Button"))
+    mouseClick(waitForObject(":Resize the Bounding Box and do not crop the resulting rotated image_ToolItem"), 11, 7, 0, Button.Button1)
     
     #check new dimensions
     snooze(1)
