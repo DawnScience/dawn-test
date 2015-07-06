@@ -162,8 +162,17 @@ def closeOrDetachFromDAWN():
 def openPerspective(perspectiveName):
     waitForObject(":Workbench Window")
     activateItem(waitForObjectItem(":_Menu", "Window"))
-    activateItem(waitForObjectItem(":Window_Menu", "Open Perspective"))
-    activateItem(waitForObjectItem(":Open Perspective_Menu", "Other..."))
+    
+    try:
+        # Eclipse 3
+        activateItem(waitForObjectItem(":Window_Menu", "Open Perspective", 200))
+        activateItem(waitForObjectItem(":Open Perspective_Menu", "Other..."))
+    except:
+        # Eclipse 4
+        activateItem(waitForObjectItem(":Window_Menu", "Perspective"))
+        activateItem(waitForObjectItem(":Perspective_Menu", "Open Perspective"))
+        activateItem(waitForObjectItem(":Open Perspective_Menu", "Other..."))
+
     mouseClick(waitForObject("{caption='%s' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}" % perspectiveName), 5, 5, 0, Button.Button1)
     mouseClick(waitForObject(":Open Perspective.OK_Button"))
     # Opening a perspective can (more than most) kick off things in the background
@@ -175,7 +184,27 @@ def openPerspective(perspectiveName):
     waitForObject(":Workbench Window")
     test.passes("openPerspective: %s" % perspectiveName)
 
+def expandObjectLeft(part, amount=24):
+    
+    
+    try:
+        # Eclipse 3
+        clickTab(part, 45, 14, 0, Button.Button3)
+        activateItem(waitForObjectItem(":Pop Up Menu", "Size", 200))
+        activateItem(waitForObjectItem(":Size_Menu", "Left"))
+        
+        for i in range(0,amount):
+            type(waitForObject(":_Sash"), "<Left>")
+            
+    except:
+        # Eclipse 4
+        #clickTab(part, 30, 14, 0, Button.Button1)
+        #c = waitForObject(":_Composite")
+        #mouseDrag(c, 0, 0, amount*5, 0, Button.Button1)
+        test.warning("Unable to expand part left. Version might be e4 based!")
+
 def openView(viewName, matchOpen=False):
+
     ''' Open the view named viewName. If matchOpen is true, will assume that an open view with 
         viewName in the title bar of the view is the expected one and only activate it '''
     waitForObject(":Workbench Window")
