@@ -1,3 +1,4 @@
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :*Untitled 1_CTabItem	{caption='*Untitled 1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
 :1D plot.x-axis_Combo	{container=':1D plot_CTabItem' isvisible='true' leftWidget=':1D plot.x-axis_Label' type='org.eclipse.swt.widgets.Combo'}

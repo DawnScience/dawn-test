@@ -1,3 +1,4 @@
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 ":Diffraction_Tree"	{}
 :2θ_Menu	{caption='2θ' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Available label decorations:.File Meta Data Decorator_TableCell	{caption='File Meta Data Decorator' column='0' container=':Preferences.Available label decorations:_Table' row='5' type='com.froglogic.squish.swt.TableCell'}

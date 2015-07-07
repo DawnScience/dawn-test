@@ -1,3 +1,4 @@
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 ":Diffraction_Tree"	{}
 :Available label decorations:.File Meta Data Decorator_TableCell	{caption='File Meta Data Decorator' column='0' container=':Preferences.Available label decorations:_Table' row='5' type='com.froglogic.squish.swt.TableCell'}
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}

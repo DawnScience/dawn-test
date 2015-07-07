@@ -91,6 +91,7 @@
 :Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Pitch.0 *_TreeSubItem	{caption='0 *' column='2' container=':Pitch_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
 :Pitch_TreeItem	{caption='Pitch' parentitem=':Normal (Orientation)_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :Plot_Composite	{container=':i22-104754.nxs.Plot_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}

@@ -134,6 +134,7 @@
 :Open Perspective_ToolItem	{caption='Open Perspective' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective_ToolItem_2	{caption='Open Perspective' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Output location.Save_Button	{caption='Save' container=':Peem Analysis View.Output location_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :PEEMA_ToolItem	{caption='PEEMA' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
 :Peem Analysis View.Add Region_Button	{caption='Add Region' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View.Add Region_Combo	{container=':Peem Analysis View_CTabItem' isvisible='true' leftWidget=':Peem Analysis View.Add Region_Button' type='org.eclipse.swt.widgets.Combo'}

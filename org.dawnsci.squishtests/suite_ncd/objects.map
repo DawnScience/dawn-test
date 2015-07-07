@@ -121,6 +121,7 @@
 :Points.First point_Label	{caption='First point' container=':Data parameters.Points_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Points.First point_Text	{container=':Data parameters.Points_Group' isvisible='true' leftWidget=':Points.First point_Label' type='org.eclipse.swt.widgets.Text'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Profile_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Project Explorer_CTabItem	{caption='Project Explorer' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Project Explorer_CTabItem_2	{caption='Project Explorer' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}

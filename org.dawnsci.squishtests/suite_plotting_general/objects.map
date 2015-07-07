@@ -80,6 +80,7 @@
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plot_ToolBar	{container=':metalmix.mca.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
