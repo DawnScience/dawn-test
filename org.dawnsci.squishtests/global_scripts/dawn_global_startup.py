@@ -163,12 +163,15 @@ def openPerspective(perspectiveName):
     waitForObject(":Workbench Window")
     activateItem(waitForObjectItem(":_Menu", "Window"))
     
+    global ECLIPSE_TARGET_VERSION
     try:
         # Eclipse 3
+        ECLIPSE_TARGET_VERSION = 3;
         activateItem(waitForObjectItem(":Window_Menu", "Open Perspective", 200))
         activateItem(waitForObjectItem(":Open Perspective_Menu", "Other..."))
     except:
         # Eclipse 4
+        ECLIPSE_TARGET_VERSION = 4;
         activateItem(waitForObjectItem(":Window_Menu", "Perspective"))
         activateItem(waitForObjectItem(":Perspective_Menu", "Open Perspective"))
         activateItem(waitForObjectItem(":Open Perspective_Menu", "Other..."))
