@@ -66,14 +66,17 @@ def getToolItemOfCTabFolder(cTabItemTooltipText=None, cTabItemText=None, toolIte
         cTab          = waitForSwtCTabItem(caption=cTabItemText, toolTip=cTabItemTooltipText, squishFiveOne=squishFiveOne)
         
         components = None
-        if (ECLIPSE_TARGET_VERSION==3):  
+        
+        # e4 target
+        if ('ECLIPSE_TARGET_VERSION' in globals() and ECLIPSE_TARGET_VERSION==4):  
+            cTabFolderObj = cTab.item.getParent()
+            components = cTabFolderObj.topright.getChildren();
+
+        # e3 target
+        else:
             # Works on windows compared to previous e3 code which does not
             cTabFolderObj = cTab.item.getParent()
             components    = cTabFolderObj.getChildren()
-    
-        if (ECLIPSE_TARGET_VERSION==4):
-            cTabFolderObj = cTab.item.getParent()
-            components = cTabFolderObj.topright.getChildren();
             
         #Find all toolbars which are visible within this CTabFolder
         for i in range(components.length):
