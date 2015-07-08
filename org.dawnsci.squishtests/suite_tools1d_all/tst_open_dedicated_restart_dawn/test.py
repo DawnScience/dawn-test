@@ -104,9 +104,10 @@ def main():
     mouseClick(waitForObject(":XY plotting tools_ToolItem"),vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
     activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Line Fitting"))
+    clickTab(waitForObject(":metalmix.mca_CTabItem"), 59, 7, 0, Button.Button1)
     
     if (isEclipse4()):
-        mouseClick(waitForObject(":View Menu_ToolItem_4"), 16, 12, 0, Button.Button1)
+        mouseClick(waitForObject(":View Menu_ToolItem_4"), 8, 8, 0, Button.Button1)
     else:
         mouseClick(waitForObject(":View Menu_ToolItem_2"), 8, 8, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Line Fitting' in dedicated view"))
@@ -118,7 +119,7 @@ def main():
     clickTab(waitForObject(":Peak Fitting_CTabItem"), 26, 12, 0, Button.Button1)
     clickTab(waitForObject(":metalmix.mca_CTabItem"), 59, 7, 0, Button.Button1)
     if (isEclipse4()):
-        mouseClick(waitForObject(":View Menu_ToolItem_4"), 19, 16, 0, Button.Button1)
+        mouseClick(waitForObject(":View Menu_ToolItem_4"), 3, 6, 0, Button.Button1)
     else:
         mouseClick(waitForObject(":View Menu_ToolItem_3"), 3, 6, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Peak Fitting' in dedicated view"))
