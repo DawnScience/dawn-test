@@ -8,9 +8,10 @@ def the_actual_test(system):
     vals = dawn_constants
     
     # Reset perspective
-    mouseClick(waitForObject(":Data Brow..._ToolItem"), 37, 5, 0, Button.Button3)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Reset"))
-    clickButton(waitForObject(":Reset Perspective.Yes_Button"))
+    if ('ECLIPSE_TARGET_VERSION' not in globals() or ECLIPSE_TARGET_VERSION==3):  
+        mouseClick(waitForObject(":Data Brow..._ToolItem"), 37, 5, 0, Button.Button3)
+        activateItem(waitForObjectItem(":Pop Up Menu", "Reset"))
+        clickButton(waitForObject(":Reset Perspective.Yes_Button"))
 
     #Open each tool then make dedicated
     #Peak fitting
