@@ -133,8 +133,14 @@ def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=Fals
 
 
 def dismissWelcomeScreen():
-    clickTab(waitForObject(":Welcome_CTabItem"), 10, 10, 0, Button.Button3)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Close"))
+    try:
+        # Usually
+        clickTab(waitForObject(":Welcome_CTabItem"), 10, 10, 0, Button.Button3)
+        activateItem(waitForObjectItem(":Pop Up Menu", "Close"))
+    except:
+        # Sometimes with e4 or windows
+        mouseClick(waitForObject(":Welcome_CTabCloseBox"), 9, 9, 0, Button.Button1)
+
     test.passes("dismissWelcomeScreen: Success")
 
 #Wrapper to correct typo.
