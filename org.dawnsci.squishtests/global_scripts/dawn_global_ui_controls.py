@@ -68,7 +68,7 @@ def getToolItemOfCTabFolder(cTabItemTooltipText=None, cTabItemText=None, toolIte
         components = None
         
         # e4 target
-        if ('ECLIPSE_TARGET_VERSION' in globals() and ECLIPSE_TARGET_VERSION==4):  
+        if (isEclipse4()):  
             cTabFolderObj = cTab.item.getParent()
             components = cTabFolderObj.topright.getChildren();
 
@@ -100,3 +100,9 @@ def getToolItemOfCTabFolder(cTabItemTooltipText=None, cTabItemText=None, toolIte
         raise
     
     raise LookupError('ERROR: Could not find ToolItem with text "' + str(toolItemText) + '" and tooltiptext "' + str(toolItemTooltipText) + '"')
+
+def isEclipse4():
+    return 'ECLIPSE_TARGET_VERSION' in globals() and ECLIPSE_TARGET_VERSION==4
+
+def isEclipse3():
+    return 'ECLIPSE_TARGET_VERSION' not in globals() or ECLIPSE_TARGET_VERSION==3

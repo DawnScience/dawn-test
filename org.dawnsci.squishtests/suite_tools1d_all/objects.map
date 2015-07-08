@@ -1,4 +1,3 @@
-:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :*Untitled 1_CTabItem	{caption='*Untitled 1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
 :Annotations.Select Annotation_Group	{caption='Select Annotation' container=':Configure Graph Settings.Annotations_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
@@ -81,6 +80,7 @@
 :Peak Fitting_CTabCloseBox	{container=':Peak Fitting_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Peak Fitting_CTabItem	{caption='Peak Fitting' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Perform Auto Scale_ToolItem	{caption='Perform Auto Scale' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Please Confirm Delete All.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Please Confirm Delete All_Shell'}
 :Please Confirm Delete All_Shell	{caption='Please Confirm Delete All' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -146,6 +146,7 @@
 :View Menu_ToolItem	{caption='View Menu' container=':_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :View Menu_ToolItem_2	{caption='View Menu' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :View Menu_ToolItem_3	{caption='View Menu' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
+:View Menu_ToolItem_4	{caption='View Menu' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Virtual_TreeItem	{caption='Virtual' container=':Project Explorer_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Welcome_CTabCloseBox	{container=':Welcome_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Welcome_CTabItem	{caption='Welcome' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -171,6 +172,7 @@
 :_ToolBar_5	{container=':_CTabFolder_4' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_6	{container=':_CTabFolder_5' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_7	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_8	{container=':_CTabFolder_2' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :dx_TableColumn	{caption='dx' container=':Measurement_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :metalmix.mca.Plot_CTabItem	{caption='Plot' container=':metalmix.mca_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :metalmix.mca_CTabItem	{caption='metalmix.mca' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}

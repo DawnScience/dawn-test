@@ -1,5 +1,6 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 source(findFile("scripts", "dawn_constants.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "tools1d_utils.py"))
@@ -103,14 +104,23 @@ def main():
     mouseClick(waitForObject(":XY plotting tools_ToolItem"),vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
     activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Line Fitting"))
-    mouseClick(waitForObject(":View Menu_ToolItem_2"), 8, 8, 0, Button.Button1)
+    
+    if (isEclipse4()):
+        mouseClick(waitForObject(":View Menu_ToolItem_4"), 16, 12, 0, Button.Button1)
+    else:
+        mouseClick(waitForObject(":View Menu_ToolItem_2"), 8, 8, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Line Fitting' in dedicated view"))
     test.verify(object.exists(":Line Fitting_CTabItem"), "Line fitting there")
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"),vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
     activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
-    mouseClick(waitForObject(":View Menu_ToolItem_3"), 3, 6, 0, Button.Button1)
+    clickTab(waitForObject(":Peak Fitting_CTabItem"), 26, 12, 0, Button.Button1)
+    clickTab(waitForObject(":metalmix.mca_CTabItem"), 59, 7, 0, Button.Button1)
+    if (isEclipse4()):
+        mouseClick(waitForObject(":View Menu_ToolItem_4"), 19, 16, 0, Button.Button1)
+    else:
+        mouseClick(waitForObject(":View Menu_ToolItem_3"), 3, 6, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Peak Fitting' in dedicated view"))
     test.verify(object.exists(":Peak Fitting_CTabItem"), "Peak fitting there")
     
