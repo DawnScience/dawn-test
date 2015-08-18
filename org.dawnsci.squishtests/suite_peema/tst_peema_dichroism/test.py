@@ -27,24 +27,16 @@ def main():
     openPerspective("PEEMA")
 
     # load the peema file folder
-#    type(waitForObject(":Images location_Text"), "/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema")
-#    type(waitForObject(":Images location_Text"), "<Return>")
-#    if platform.uname()[0] == 'Linux':
-        # On linux, the hard-coded path above auto-completes, so you need to press return twice
-        #    the first selects the (only) matching auto-complete option, the second activates it
-        # On windows, the auto-complete never matches (since the path does not start with C:\), so only one return is required
-#        snooze(1)
-#        type(waitForObject(":Images location_Text"), "<Return>")
 
     clickButton(waitForObject(":Images location_Button"))
     chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema")
 
     #Play with slider...
-    setValue(waitForObject(":Live Plot Control.Aligned Data_Scale"), 1)
+    setValue(waitForObject(":Live Plot Control.Original Data_Scale"), 1)
     snooze(1)
-    setValue(waitForObject(":Live Plot Control.Aligned Data_Scale"), 17)
+    setValue(waitForObject(":Live Plot Control.Original Data_Scale"), 17)
     snooze(1)
-    setValue(waitForObject(":Live Plot Control.Aligned Data_Scale"), 8)
+    setValue(waitForObject(":Live Plot Control.Original Data_Scale"), 8)
     snooze(1)
 
     #run the dichroism process
@@ -60,14 +52,8 @@ def main():
     
     snooze(2)
     #Run the align process after having created a region of interest
-    vals = dawn_constants
-    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
-    activateItem(waitForObjectItem(":Profile_Menu", "Box Profile"))
-    system = getPlottingSystem("Live Plot")
-    c = system.getPlotComposite()
-    b = c.bounds
-    mouseDrag(c, b.x+b.width/8, b.y+b.height/3, int(b.width/4),b.height/3, 0, Button.Button1)
+#    vals = dawn_constants
+    mouseClick(waitForObjectItem(":Alignment_Combo", "With ROI"), 0, 0, 0, Button.NoButton)
     snooze(2) # While fit..
     
     clickButton(waitForObject(":Peem Analysis View.Align_Button"))
@@ -78,7 +64,9 @@ def main():
     
     snooze(1)
     #test align with hessian transform buttons
-    mouseClick(waitForObjectItem(":Peem Analysis View.Add Region_Combo", "Affine transform"), 0, 0, 0, Button.NoButton)
+    mouseClick(waitForObjectItem(":Alignment_Combo", "Affine transform"), 0, 0, 0, Button.NoButton)
+
+#    mouseClick(waitForObjectItem(":Peem Analysis View.Add Region_Combo", "Affine transform"), 0, 0, 0, Button.NoButton)
     clickButton(waitForObject(":Peem Analysis View.Align_Button"))
     snooze(3.5)
     #test saving

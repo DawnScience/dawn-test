@@ -13,6 +13,8 @@
 :2D image_CTabItem	{caption='2D image' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :76003.dat.Info_CTabItem	{caption='Info' container=':76003.dat_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :76003.dat_CTabItem	{caption='76003.dat' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Alignment.Align_Button	{caption='Align' container=':Peem Analysis View.Alignment_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Alignment_Combo	{container=':Peem Analysis View.Alignment_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
 :Available label decorations:.DAT file Scan Command Decorator_TableCell	{caption='DAT file Scan Command Decorator' column='0' container=':Preferences.Available label decorations:_Table' type='com.froglogic.squish.swt.TableCell'}
 :Available label decorations:.File Meta Data Decorator_TableCell	{caption='File Meta Data Decorator' column='0' container=':Preferences.Available label decorations:_Table' type='com.froglogic.squish.swt.TableCell'}
 :Available label decorations:.File Meta Data Decorator_TableCell_2	{caption='File Meta Data Decorator' column='0' container=':Preferences.Available label decorations:_Table' type='com.froglogic.squish.swt.TableCell'}
@@ -59,6 +61,8 @@
 :Dataset slicing_Label	{caption='Dataset slicing' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Workbench Window'}
 :Debug_TableCell	{caption='Debug' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
+:Dichroism Calculation.2_Button	{caption='2' container=':Peem Analysis View.Dichroism Calculation_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Dichroism Calculation.Dichroism_Button	{caption='Dichroism' container=':Peem Analysis View.Dichroism Calculation_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Display Selected Console_ToolItem	{caption='Display Selected Console' container=':_ToolBar_10' type='org.eclipse.swt.widgets.ToolItem'}
 :Environment.New..._Button	{caption='New...' container=':Preferences.Environment_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -108,6 +112,8 @@
 :Live Plot Control.Aligned Data_Button	{caption='Aligned Data' container=':Peem Analysis View.Live Plot Control_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Live Plot Control.Aligned Data_Scale	{aboveWidget=':Live Plot Control.Aligned Data_Button' container=':Peem Analysis View.Live Plot Control_Group' isvisible='true' type='org.eclipse.swt.widgets.Scale'}
 :Live Plot Control.Aligned Data_Slider	{aboveWidget=':Live Plot Control.Aligned Data_Button' container=':Peem Analysis View.Live Plot Control_Group' isvisible='true' type='org.eclipse.swt.widgets.Slider'}
+:Live Plot Control.Original Data_Button	{caption='Original Data' container=':Peem Analysis View.Live Plot Control_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Live Plot Control.Original Data_Scale	{aboveWidget=':Live Plot Control.Original Data_Button' container=':Peem Analysis View.Live Plot Control_Group' isvisible='true' type='org.eclipse.swt.widgets.Scale'}
 :Live Plot_CTabItem	{caption='Live Plot' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Mode.2_Button	{caption='2' container=':Peem Analysis View.Mode_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Multiple problems have occurred.Details >>_Button	{caption='Details >>' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Multiple problems have occurred_Shell'}
@@ -134,20 +140,23 @@
 :Open Perspective_ToolItem	{caption='Open Perspective' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective_ToolItem_2	{caption='Open Perspective' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Output location.Save_Button	{caption='Save' container=':Peem Analysis View.Output location_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
-:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :PEEMA_ToolItem	{caption='PEEMA' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
 :Peem Analysis View.Add Region_Button	{caption='Add Region' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View.Add Region_Combo	{container=':Peem Analysis View_CTabItem' isvisible='true' leftWidget=':Peem Analysis View.Add Region_Button' type='org.eclipse.swt.widgets.Combo'}
 :Peem Analysis View.Align_Button	{caption='Align' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Peem Analysis View.Alignment_Group	{caption='Alignment' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Peem Analysis View.Dichroism Calculation_Group	{caption='Dichroism Calculation' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Peem Analysis View.Dichroism_Button	{caption='Dichroism' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View.Images location_Group	{caption='Images location' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Peem Analysis View.Live Plot Control_Group	{caption='Live Plot Control' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Peem Analysis View.Mode_Group	{caption='Mode' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Peem Analysis View.Output location_Group	{caption='Output location' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Peem Analysis View.Stitching/Mosaic prototype_Group	{caption='Stitching/Mosaic prototype' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Peem Analysis View.Use default save directory_Button	{caption='Use default save directory' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View.View_Group	{caption='View' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Peem Analysis View_Button	{caption='' container=':Peem Analysis View_CTabItem' isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View_CTabItem	{caption='Peem Analysis View' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_CTabCloseBox	{container=':Plotting Systems_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
@@ -217,6 +226,16 @@
 :Show View_Shell	{caption='Show View' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Show View_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Show View_Shell'}
 :Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
+:Stitched_CTabItem	{caption='Stitched' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Stitching/Mosaic prototype.Apply background subtraction_Button	{caption='Apply background subtraction' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Stitching/Mosaic prototype.Kernel:_Label	{caption='Kernel:' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Stitching/Mosaic prototype.Kernel:_Text	{container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' leftWidget=':Stitching/Mosaic prototype.Kernel:_Label' type='org.eclipse.swt.widgets.Text'}
+:Stitching/Mosaic prototype.Rotation angle:_Label	{caption='Rotation angle:' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Stitching/Mosaic prototype.Rotation angle:_Text	{container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' leftWidget=':Stitching/Mosaic prototype.Rotation angle:_Label' type='org.eclipse.swt.widgets.Text'}
+:Stitching/Mosaic prototype.Save_Button	{caption='Save' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Stitching/Mosaic prototype.Stitch_Button	{caption='Stitch' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Stitching/Mosaic prototype.Use feature association_Button	{caption='Use feature association' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Stitching/Mosaic prototype_Button	{caption='' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Surface Profile: Dataset Plot_CTabItem	{caption='Surface Profile: Dataset Plot' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Tree_Tree	{container=':2495.h5.Tree_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
