@@ -1,0 +1,85 @@
+ &SRS
+ SRSRUN=98950,SRSDAT=2015523,SRSTIM=42125,
+ SRSSTN='null',SRSPRJ='null    ',SRSEXP='null    ',
+ SRSTLE='                                                            ',
+ SRSCN1='        ',SRSCN2='        ',SRSCN3='        ',
+<MetaDataAtStart>
+command=scan psx -0.7 -0.6 0.02 psy -0.4 -0.3 0.02 uv 1 timer
+date='Tue Jun 23 16:21:17 2015'
+beamenergy=3.00091509489
+ringcurrent=301.738800049
+iddgap=37.7908
+iddtrp=-22.453
+iddbrp=-22.453
+idugap=99.99995
+idutrp=0.0
+idubrp=0.0
+pugap=155.004
+pgmpitch=88.2594685294
+pgmgratpitch=87.6057500035
+cff=2.25
+grating=400
+pgmenergy=750.314611355
+denergy=750.314611355
+uenergy=750.314611355
+s1xgap=1.5
+s1ygap=1.5
+m1x=-5.311362262
+m1pitch=-8447.675033
+m1qg=-528.503417969
+m6x=1.2000939273
+m6yaw=-1069.7577561
+m6pitch=1230.0547438
+m6qg=0.0
+m3x=2.299941579
+m3pitch=1440.0592735
+m3qg=0.0
+d5x=-0.000102
+d6y=-16.000026
+d7x=0.0
+d7ax=0.0
+s4y=0.0
+s4ygap=80
+psx=-0.702678
+psy=-0.399972
+leem_fov=80
+psphi=1
+</MetaDataAtStart>
+ &END
+psx	psy	Timer	uv
+-0.69911	-0.39987	    7.75	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000001.tif
+-0.69962	-0.37998	   11.72	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000002.tif
+-0.69972	-0.35897	   16.63	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000003.tif
+-0.69962	-0.33989	   20.54	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000004.tif
+-0.69972	-0.31909	   25.49	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000005.tif
+-0.69972	-0.29971	   30.62	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000006.tif
+-0.67779	-0.40018	   37.87	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000007.tif
+-0.67779	-0.37998	   41.87	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000008.tif
+-0.67779	-0.35917	   46.86	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000009.tif
+-0.67779	-0.34000	   50.93	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000010.tif
+-0.67779	-0.32000	   54.89	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000011.tif
+-0.67779	-0.29991	   58.94	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000012.tif
+-0.65810	-0.40007	   66.52	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000013.tif
+-0.65810	-0.37998	   70.50	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000014.tif
+-0.65810	-0.35978	   74.40	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000015.tif
+-0.65810	-0.33887	   79.23	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000016.tif
+-0.65810	-0.31990	   84.33	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000017.tif
+-0.65810	-0.29991	   90.03	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000018.tif
+-0.63821	-0.40007	   97.60	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000019.tif
+-0.63821	-0.38008	  101.57	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000020.tif
+-0.63821	-0.35978	  105.46	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000021.tif
+-0.63821	-0.34000	  109.50	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000022.tif
+-0.63821	-0.31990	  113.50	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000023.tif
+-0.63832	-0.29991	  117.43	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000024.tif
+-0.61812	-0.40007	  124.89	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000025.tif
+-0.61812	-0.37998	  128.90	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000026.tif
+-0.61812	-0.35999	  132.93	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000027.tif
+-0.61812	-0.33887	  138.12	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000028.tif
+-0.61822	-0.32011	  141.97	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000029.tif
+-0.61822	-0.29991	  145.90	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000030.tif
+-0.59884	-0.40007	  153.56	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000031.tif
+-0.59894	-0.38008	  157.40	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000032.tif
+-0.59894	-0.35999	  161.55	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000033.tif
+-0.59894	-0.34000	  165.50	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000034.tif
+-0.59894	-0.31990	  169.42	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000035.tif
+-0.59894	-0.29991	  173.45	/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage/ui00000036.tif
