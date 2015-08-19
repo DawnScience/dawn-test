@@ -23,6 +23,11 @@
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Browse..._Button	{caption='Browse...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Cannot Export Plot.Cannot export the plot to tif/dat.\n\nThe location might be in a read only directory or invalid.\n\nReason:\nString index out of range: -1_Label	{caption='Cannot export the plot to tif/dat.\n\nThe location might be in a read only directory or invalid.\n\nReason:\nString index out of range: -1' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Cannot Export Plot_Shell'}
+:Cannot Export Plot.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Cannot Export Plot_Shell'}
+:Cannot Export Plot_Shell	{caption='Cannot Export Plot' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Change Settings.Auto Scale Enabled_Button	{caption='Auto Scale Enabled' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Change Settings.Log_Button	{caption='Log' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Change Settings.Maximum_Label	{caption='Maximum' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Maximum_Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Maximum_Label' type='org.eclipse.swt.widgets.Text'}
 :Change Settings.Minimum: _Label	{caption='Minimum: ' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
@@ -47,6 +52,7 @@
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Console_CTabCloseBox	{container=':Console_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Current downsample.[646, 634]_Label	{caption='[646, 634]' container=':Image Traces.Current downsample_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :DAT file Scan Command Decorator_ItemCheckbox	{container=':Available label decorations:.DAT file Scan Command Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
 :DExplore_ToolItem	{caption='DExplore' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Data axes selection_CTabFolder	{firstTabCaption='1D plot' isvisible='true' leftWidget=':Data axes selection_Group' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
@@ -89,6 +95,8 @@
 :Image Playback_Button_4	{caption='' container=':Image Explorer.Image Playback_Group' isvisible='true' leftWidget=':Image Playback_Button_3' type='org.eclipse.swt.widgets.Button'}
 :Image Playback_Button_5	{caption='' container=':Image Explorer.Image Playback_Group' isvisible='true' leftWidget=':Image Playback_Button_4' type='org.eclipse.swt.widgets.Button'}
 :Image Playback_Slider	{container=':Image Explorer.Image Playback_Group' isvisible='true' leftWidget=':Image Playback_Button_5' type='org.eclipse.swt.widgets.Slider'}
+:Image Traces.Current downsample_Group	{caption='Current downsample' container=':Configure Graph Settings.Image Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Image Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Image Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':_ToolBar_12' type='org.eclipse.swt.widgets.ToolItem'}
 :Images location...._Button	{caption='...' container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Images location.tiff_Button	{caption='tiff' container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
@@ -207,6 +215,7 @@
 :Select Interpreter Available_OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':ListDialog_Shell'}
 :Select Interpreter Available_Table	{aboveWidget=':Select Interpreter Available_Caption' isvisible='true' type='org.eclipse.swt.widgets.Table' window=':ListDialog_Shell'}
 :Select Trace_Combo	{container=':Traces.Select Trace_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
+:Select Trace_Combo_2	{container=':Image Traces.Select Trace_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
 :Select Variable_Shell	{caption='Select Variable' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Select interpreter Error Message_Text	{isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Text' window=':Select interpreter_Shell'}
 :Select interpreter.Browse..._Button	{caption='Browse...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Select interpreter_Shell'}
@@ -227,11 +236,21 @@
 :Show View_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Show View_Shell'}
 :Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
 :Stitched_CTabItem	{caption='Stitched' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Stitching error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Stitching error_Shell'}
+:Stitching error_Shell	{caption='Stitching error' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Stitching/Mosaic prototype.Apply background subtraction_Button	{caption='Apply background subtraction' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Stitching/Mosaic prototype.Apply background subtraction_Scale	{aboveWidget=':Stitching/Mosaic prototype.Apply background subtraction_Button' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Scale'}
+:Stitching/Mosaic prototype.Columns:_Label	{caption='Columns:' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Stitching/Mosaic prototype.Columns:_Text	{container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' leftWidget=':Stitching/Mosaic prototype.Columns:_Label' type='org.eclipse.swt.widgets.Text'}
+:Stitching/Mosaic prototype.Field of view:_Label	{caption='Field of view:' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Stitching/Mosaic prototype.Field of view:_Text	{container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' leftWidget=':Stitching/Mosaic prototype.Field of view:_Label' type='org.eclipse.swt.widgets.Text'}
 :Stitching/Mosaic prototype.Kernel:_Label	{caption='Kernel:' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Stitching/Mosaic prototype.Kernel:_Text	{container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' leftWidget=':Stitching/Mosaic prototype.Kernel:_Label' type='org.eclipse.swt.widgets.Text'}
+:Stitching/Mosaic prototype.Load_Button	{caption='Load' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Stitching/Mosaic prototype.Rotation angle:_Label	{caption='Rotation angle:' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Stitching/Mosaic prototype.Rotation angle:_Text	{container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' leftWidget=':Stitching/Mosaic prototype.Rotation angle:_Label' type='org.eclipse.swt.widgets.Text'}
+:Stitching/Mosaic prototype.Rows:_Label	{caption='Rows:' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
+:Stitching/Mosaic prototype.Rows:_Text	{container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' leftWidget=':Stitching/Mosaic prototype.Rows:_Label' type='org.eclipse.swt.widgets.Text'}
 :Stitching/Mosaic prototype.Save_Button	{caption='Save' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Stitching/Mosaic prototype.Stitch_Button	{caption='Stitch' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Stitching/Mosaic prototype.Use feature association_Button	{caption='Use feature association' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
@@ -243,6 +262,7 @@
 :Variables_Tree	{container=':Variables_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :View Menu_ToolItem	{caption='View Menu' container=':_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :View Menu_ToolItem_2	{caption='View Menu' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
+:View Menu_ToolItem_3	{caption='View Menu' container=':_ToolBar_14' type='org.eclipse.swt.widgets.ToolItem'}
 :View.+_Button	{caption='+' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :View.-_Button	{caption='-' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :View.Abs_Button	{caption='Abs' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
@@ -285,6 +305,7 @@
 :_ToolBar_11	{container=':_CTabFolder_7' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_12	{container=':_CTabFolder_8' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_13	{firstItemText='PEEMA' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_14	{container=':_CTabFolder_7' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
