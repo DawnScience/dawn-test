@@ -14,7 +14,7 @@ def main():
     mouseClick(waitForObject(":View Menu_ToolItem"), 12, 7, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Customize View..."))
     clickTab(waitForObject(":Available Customizations.Content_CTabItem"), 20, 13, 0, Button.Button1)
-    mouseClick(waitForObject(":HDF5 File Contents_ItemCheckbox"), 8, 9, 0, Button.Button1)
+    mouseClick(waitForObject(":HDF5 File Contents_ItemCheckbox_2"), 8, 9, 0, Button.Button1)
     clickButton(waitForObject(":Available Customizations.OK_Button"))
     
     # Expand hdf5 file and open
