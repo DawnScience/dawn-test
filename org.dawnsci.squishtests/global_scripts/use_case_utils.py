@@ -72,7 +72,7 @@ def openExample(frag, project="data", folder="examples", subfolder=None, subsubf
         if frag in child.text:
             foundExample = child
             if not findOnly:
-                doubleClick(child, 5, 5, 0, Button.Button1)
+                doubleClick(child)
     
     # We wait for a few seconds for the part to open
     snooze(3)

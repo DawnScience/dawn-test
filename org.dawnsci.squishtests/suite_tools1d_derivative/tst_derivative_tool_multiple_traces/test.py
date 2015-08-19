@@ -17,10 +17,14 @@ def main():
     expand(waitForObjectItem(":Project Explorer_Tree", "examples"))
     children = object.children(waitForObjectItem(":Project Explorer_Tree", "examples"))
     
+    snooze(1)
+    
     for child in children:
         if "metalmix.mca" in child.text:
-            doubleClick(child, 5, 5, 0, Button.Button1)
+            doubleClick(child)
             continue
+    
+    snooze(1)
     
     mouseClick(waitForObject(":Plot data as separate plots_ToolItem"), 12, 8, 0, Button.Button1)
     
