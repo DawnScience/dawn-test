@@ -29,14 +29,16 @@ def main():
     # load the peema file folder
     clickButton(waitForObject(":Images location_Button"))
     chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage")
-
+    
+    snooze(2)
     mouseDrag(waitForObject(":Live Plot Control.Original Data_Scale"), 27, 27, 74, 15, Modifier.None, Button.Button1)
     #load dat file
+    
     clickButton(waitForObject(":Stitching/Mosaic prototype.Load_Button"))
     
     
     # wait for loading
-    snooze(6)
+    snooze(5)
     clickButton(waitForObject(":Stitching/Mosaic prototype.Stitch_Button"))
     snooze(5)
     
@@ -52,7 +54,7 @@ def main():
     
     clickButton(waitForObject(":Stitching/Mosaic prototype.Stitch_Button"))
     
-    snooze(14)
+    snooze(12)
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
@@ -64,7 +66,7 @@ def main():
     mouseDrag(waitForObject(":Stitching/Mosaic prototype.Apply background subtraction_Scale"), 26, 25, 11, 2, Modifier.None, Button.Button1)
   
     clickButton(waitForObject(":Stitching/Mosaic prototype.Stitch_Button"))
-    snooze(22)
+    snooze(21)
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
