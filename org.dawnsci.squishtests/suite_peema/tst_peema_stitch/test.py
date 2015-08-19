@@ -36,9 +36,9 @@ def main():
     
     
     # wait for loading
-    snooze(5)
+    snooze(6)
     clickButton(waitForObject(":Stitching/Mosaic prototype.Stitch_Button"))
-    snooze(3)
+    snooze(5)
     
     # check stitched image
     system = getPlottingSystem("Stitched")
