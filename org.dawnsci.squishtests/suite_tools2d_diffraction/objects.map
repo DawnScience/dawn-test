@@ -1,4 +1,3 @@
-:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 ":Diffraction_Tree"	{}
 :Available label decorations:.File Meta Data Decorator_TableCell	{caption='File Meta Data Decorator' column='0' container=':Preferences.Available label decorations:_Table' row='5' type='com.froglogic.squish.swt.TableCell'}
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
@@ -43,11 +42,14 @@
 :Export.File name:_Text	{isvisible='true' leftWidget=':Export.File name:_Label' type='org.eclipse.swt.widgets.Text' window=':Export_Shell'}
 :Export.Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Export_Shell'}
 :Export.Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Export_Shell'}
+:Export_Button	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Export_Shell'}
 :Export_Shell	{caption='Export' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Export_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Export_Shell'}
 :File Header_CTabItem	{caption='File Header' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :File Header_Table	{container=':File Header_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :File Meta Data Decorator_ItemCheckbox	{container=':Available label decorations:.File Meta Data Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
+:File location.File Name:_Label	{caption='File Name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':File location_Shell'}
+:File location.File Name:_Text	{isvisible='true' leftWidget=':File location.File Name:_Label' type='org.eclipse.swt.widgets.Text' window=':File location_Shell'}
 :File location.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':File location_Shell'}
 :File location.Please choose a location to import from._Label	{caption='Please choose a location to import from.' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':File location_Shell'}
 :File location.Please choose a location to import from._Label_2	{caption='Please choose a location.' isvisible='false' type='org.eclipse.swt.widgets.Label' window=':File location_Shell_2'}
@@ -86,6 +88,7 @@
 :Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Plot_Composite	{container=':i22-104754.nxs.Plot_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
 :Plot_ToolBar	{container=':i22-104754.nxs.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
