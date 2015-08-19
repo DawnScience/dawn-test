@@ -42,8 +42,10 @@ def main():
     
     # check stitched image
     system = getPlottingSystem("Stitched")
-    width = system.getAxes().get(0).getUpper()
-    test.verify(width==1369.0, "length expected: 1369, Actual: "+ str(width))
+    width = system.getTraces().iterator().next().getData().getShape().at(0)
+    height = system.getTraces().iterator().next().getData().getShape().at(1)
+    test.verify(width==1395.0, "width expected: 1395.0, Actual: "+ str(width))
+    test.verify(height==1369.0, "height expected: 1369.0, Actual: "+ str(height))
     
     clickTab(waitForObject(":Stitched_CTabItem"), 37, 14, 0, Button.Button1)
     clickButton(waitForObject(":Stitching/Mosaic prototype.Use feature association_Button"))
@@ -52,8 +54,10 @@ def main():
     
     snooze(7)
     system = getPlottingSystem("Stitched")
-    width = system.getAxes().get(0).getUpper()
-    test.verify(width==1343.0, "length expected: 1343, Actual: "+ str(width))
+    width = system.getTraces().iterator().next().getData().getShape().at(0)
+    height = system.getTraces().iterator().next().getData().getShape().at(1)
+    test.verify(width==1359.0, "width expected: 1359.0, Actual: "+ str(width))
+    test.verify(height==1343.0, "height expected: 1343.0, Actual: "+ str(height))
     
     #use background & feature association
     clickButton(waitForObject(":Stitching/Mosaic prototype.Apply background subtraction_Button"))
@@ -62,8 +66,10 @@ def main():
     clickButton(waitForObject(":Stitching/Mosaic prototype.Stitch_Button"))
     snooze(20)
     system = getPlottingSystem("Stitched")
-    width = system.getAxes().get(0).getUpper()
-    test.verify(width==1344.0, "length expected: 1344, Actual: "+ str(width))
+    width = system.getTraces().iterator().next().getData().getShape().at(0)
+    height = system.getTraces().iterator().next().getData().getShape().at(1)
+    test.verify(width==1355.0, "width expected: 1355.0, Actual: "+ str(width))
+    test.verify(height==1344.0, "height expected: 1344.0, Actual: "+ str(height))
 
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()
