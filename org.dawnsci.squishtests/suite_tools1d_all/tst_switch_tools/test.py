@@ -14,6 +14,7 @@ def the_actual_test(system):
     
     #Fit peak
     mouseDragRegion(system)
+    snooze(5)
     
     #check being shown
     names = ["Column_3","Peak 1"]
