@@ -20,7 +20,7 @@ def main():
     children = object.children(waitForObjectItem(":Project Explorer_Tree", "examples"))
     for child in children:
         if "2.img" in child.text:
-            doubleClick(child, 5, 5, 0, Button.Button1)
+            doubleClick(child)
             continue
     
     snooze(3)#while the file opens
