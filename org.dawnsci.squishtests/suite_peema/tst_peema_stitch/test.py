@@ -52,7 +52,7 @@ def main():
     
     clickButton(waitForObject(":Stitching/Mosaic prototype.Stitch_Button"))
     
-    snooze(7)
+    snooze(14)
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
@@ -64,7 +64,7 @@ def main():
     mouseDrag(waitForObject(":Stitching/Mosaic prototype.Apply background subtraction_Scale"), 26, 25, 11, 2, Modifier.None, Button.Button1)
   
     clickButton(waitForObject(":Stitching/Mosaic prototype.Stitch_Button"))
-    snooze(20)
+    snooze(22)
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
