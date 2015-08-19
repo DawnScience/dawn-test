@@ -60,7 +60,8 @@
 :File Navigator_Tree	{container=':File Navigator_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Finish_Button_2	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
-:HDF5 File Contents_ItemCheckbox	{container=':Select the available extensions to show (unchecked extensions will not display content):.HDF5 File Contents_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
+:HDF5 File Contents_ItemCheckbox	{column='0' container=':Content.Select the available extensions to show (unchecked extensions will not display content):_Table' row='8' type='com.froglogic.squish.swt.ItemCheckbox'}
+:HDF5 File Contents_ItemCheckbox_2	{container=':Select the available extensions to show (unchecked extensions will not display content):.HDF5 File Contents_TableCell_2' type='com.froglogic.squish.swt.ItemCheckbox'}
 :HDF5 tree element Decorator_ItemCheckbox	{container=':Available label decorations:.HDF5 tree element Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
 :I accept the terms of the license agreement_Button	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Info_Table	{container=':76003.dat.Info_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
@@ -94,12 +95,12 @@
 :Open Perspective_ToolItem_2	{caption='Open Perspective' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Open With_Menu	{caption='Open With' container=':Project Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Open With_Menu_2	{caption='Open With' container=':Project Explorer_Tree_2' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
-:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Preferences.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Auto Config_Button	{caption='Advanced Auto-Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Available label decorations:_Label	{caption='Available label decorations:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Preferences_Shell'}
@@ -147,6 +148,7 @@
 :Select interpreter.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Select interpreter_Shell'}
 :Select interpreter_Shell	{caption='Select interpreter' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Select the available extensions to show (unchecked extensions will not display content):.HDF5 File Contents_TableCell	{caption='HDF5 File Contents' column='0' container=':Content.Select the available extensions to show (unchecked extensions will not display content):_Table' row='10' type='com.froglogic.squish.swt.TableCell'}
+:Select the available extensions to show (unchecked extensions will not display content):.HDF5 File Contents_TableCell_2	{caption='HDF5 File Contents' column='0' container=':Content.Select the available extensions to show (unchecked extensions will not display content):_Table' row='8' type='com.froglogic.squish.swt.TableCell'}
 :Selection needed.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Selection needed_Shell'}
 :Selection needed_Shell	{caption='Selection needed' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Show Plot View_Menu	{caption='Show Plot View' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
