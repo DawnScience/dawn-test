@@ -43,7 +43,7 @@ def main():
     # check stitched image
     system = getPlottingSystem("Stitched")
     width = system.getAxes().get(0).getUpper()
-    test.verify(width==1369.0)
+    test.verify(width==1369.0, "length expected: 1369, Actual: "+ width)
     
     clickTab(waitForObject(":Stitched_CTabItem"), 37, 14, 0, Button.Button1)
     clickButton(waitForObject(":Stitching/Mosaic prototype.Use feature association_Button"))
@@ -53,7 +53,7 @@ def main():
     snooze(7)
     system = getPlottingSystem("Stitched")
     width = system.getAxes().get(0).getUpper()
-    test.verify(width==1343.0)
+    test.verify(width==1343.0, "length expected: 1343, Actual: "+ width)
     
     #use background & feature association
     clickButton(waitForObject(":Stitching/Mosaic prototype.Apply background subtraction_Button"))
@@ -63,7 +63,7 @@ def main():
     snooze(20)
     system = getPlottingSystem("Stitched")
     width = system.getAxes().get(0).getUpper()
-    test.verify(width==1344.0)
+    test.verify(width==1344.0, "length expected: 1344, Actual: "+ width)
 
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()
