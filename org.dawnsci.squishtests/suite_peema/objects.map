@@ -235,6 +235,7 @@
 :Show View_Shell	{caption='Show View' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Show View_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Show View_Shell'}
 :Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
+:Show Welcome Screen_ToolItem	{caption='Show Welcome Screen' container=':_ToolBar_15' type='org.eclipse.swt.widgets.ToolItem'}
 :Stitched_CTabItem	{caption='Stitched' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Stitching error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Stitching error_Shell'}
 :Stitching error_Shell	{caption='Stitching error' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -306,6 +307,7 @@
 :_ToolBar_12	{container=':_CTabFolder_8' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_13	{firstItemText='PEEMA' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_14	{container=':_CTabFolder_7' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_15	{firstItemText='Show Welcome Screen' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}

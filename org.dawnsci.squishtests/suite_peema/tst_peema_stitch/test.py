@@ -46,8 +46,8 @@ def main():
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
-    test.verify(width==1395.0, "width expected: 1395.0, Actual: "+ str(width))
-    test.verify(height==1369.0, "height expected: 1369.0, Actual: "+ str(height))
+    test.verify(width==1005.0, "width expected: 1395.0, Actual: "+ str(width))
+    test.verify(height==1063.0, "height expected: 1369.0, Actual: "+ str(height))
     
     clickTab(waitForObject(":Stitched_CTabItem"), 37, 14, 0, Button.Button1)
     clickButton(waitForObject(":Stitching/Mosaic prototype.Use feature association_Button"))
@@ -58,8 +58,8 @@ def main():
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
-    test.verify(width==1359.0, "width expected: 1359.0, Actual: "+ str(width))
-    test.verify(height==1343.0, "height expected: 1343.0, Actual: "+ str(height))
+    test.verify(width==993.0, "width expected: 1359.0, Actual: "+ str(width))
+    test.verify(height==1028.0, "height expected: 1343.0, Actual: "+ str(height))
     
     #use background & feature association
     clickButton(waitForObject(":Stitching/Mosaic prototype.Apply background subtraction_Button"))
@@ -70,8 +70,8 @@ def main():
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
-    test.verify(width==1355.0, "width expected: 1355.0, Actual: "+ str(width))
-    test.verify(height==1344.0, "height expected: 1344.0, Actual: "+ str(height))
+    test.verify(width==998.0, "width expected: 1355.0, Actual: "+ str(width))
+    test.verify(height==1021.0, "height expected: 1344.0, Actual: "+ str(height))
 
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()
