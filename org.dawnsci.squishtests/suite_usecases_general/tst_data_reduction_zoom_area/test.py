@@ -24,7 +24,6 @@ def main():
     mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 6, 13, 0, Button.Button1)
  
     # Select image and zoom
-    mouseClick(waitForObject(":Keep aspect ratio_ToolItem"), 11, 9, 0, Button.Button1)
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
     activateItem(waitForObjectItem(":Profile_Menu", "Zoom Profile"))
