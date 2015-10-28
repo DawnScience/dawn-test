@@ -36,6 +36,6 @@ def main():
     test.verify ("199" in child[2].text, "check calibrated distance")
     wid = waitForObject(":Wavelength_TreeItem")
     child = object.children(wid)
-    test.verify ("0.9756" in child[2].text, "check calibrated wavelength")
+    test.verify ("0.9757" in child[2].text, "check calibrated wavelength")
     
     closeOrDetachFromDAWN()
