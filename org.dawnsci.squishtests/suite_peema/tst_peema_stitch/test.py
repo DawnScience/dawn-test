@@ -40,7 +40,7 @@ def main():
     # wait for loading
     snooze(5)
     clickButton(waitForObject(":Stitching/Mosaic prototype.Stitch_Button"))
-    snooze(5)
+    snooze(7)
     
     # check stitched image
     system = getPlottingSystem("Stitched")
@@ -54,7 +54,7 @@ def main():
     
     clickButton(waitForObject(":Stitching/Mosaic prototype.Stitch_Button"))
     
-    snooze(12)
+    snooze(15)
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
