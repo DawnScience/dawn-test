@@ -24,7 +24,7 @@ def main():
     mouseClick(waitForObject(":Resize the Bounding Box and do not crop the resulting rotated image_ToolItem"), 11, 7, 0, Button.Button1)
     
     #check new dimensions
-    snooze(1)
+    snooze(2)
     system = getPlottingSystem("Image Rotation")
     data = system.getTraces().iterator().next().getData()
     test.verify(data.getRank()==2, "Image plotted: Success")
