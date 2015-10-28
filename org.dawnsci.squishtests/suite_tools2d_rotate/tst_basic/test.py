@@ -19,12 +19,13 @@ def main():
     
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), 32, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Image Rotation"))
+    snooze(1)
     mouseClick(waitForObject(":Image Rotation.Rotation angle_Spinner"), -2, 10, 0, Button.Button1)
     type(waitForObject(":Image Rotation.Rotation angle_Spinner"), "45")
     mouseClick(waitForObject(":Resize the Bounding Box and do not crop the resulting rotated image_ToolItem"), 11, 7, 0, Button.Button1)
     
     #check new dimensions
-    snooze(2)
+    snooze(1)
     system = getPlottingSystem("Image Rotation")
     data = system.getTraces().iterator().next().getData()
     test.verify(data.getRank()==2, "Image plotted: Success")
