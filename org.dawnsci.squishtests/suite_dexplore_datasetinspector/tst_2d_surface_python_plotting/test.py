@@ -26,6 +26,8 @@ def main():
 
     # switch to surface plot mode
     mouseClick(waitForObject(":Data axes selection_CTabFolderChevron"), 6, 11, 0, Button.Button1)
+    if (isEclipse4()):
+        mouseClick(waitForObject(":Show List_ToolItem"), 15, 11, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "2D surface"))
     snooze(5.0)
     
