@@ -4,6 +4,7 @@ source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "file_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 
+from sys import platform as _platform
 import platform
 import os.path
 
@@ -29,7 +30,10 @@ def main():
     # load the peema file folder
 
     clickButton(waitForObject(":Images location_Button"))
-    chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema")
+    if (_platform == "linux"):
+        chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema")
+    elif(_platform == "win32"):
+        chooseDirectory(waitForObject(":SWT"), "C:\\scratch\\workspace\\suite_peema\\tst_peema_dichroism\\workspace\\data\\examples\\peema")
 
     #Play with slider...
     setValue(waitForObject(":Live Plot Control.Original Data_Scale"), 1)
@@ -53,30 +57,38 @@ def main():
     snooze(2)
     #Run the align process after having created a region of interest
 #    vals = dawn_constants
-    mouseClick(waitForObjectItem(":Alignment_Combo", "With ROI"), 0, 0, 0, Button.NoButton)
+    mouseClick(waitForObject(":Alignment_Combo"), 32, 9, 0, Button.Button1)
+    activateItem(waitForObjectItem(":Pop Up Menu", "With Region of Interest"))
+    mouseDrag(waitForObject(":Image Alignment.\rSelect a region of interest common to all images in the stack and press OK.\r_Scale"), 21, 24, 32, 2, Modifier.None, Button.Button1)
+    clickButton(waitForObject(":Image Alignment.OK_Button"))
     snooze(2) # While fit..
     
-    clickButton(waitForObject(":Peem Analysis View.Align_Button"))
-    clickTab(waitForObject(":Shifts_CTabItem"), 38, 16, 0, Button.Button1)
+    mouseDrag(waitForObject(":Live Plot Control.Original Data_Scale"), 19, 23, -4, 15, Modifier.None, Button.Button1)
     
+    clickTab(waitForObject(":Shifts_CTabItem"), 38, 16, 0, Button.Button1)
     system = getPlottingSystem("Shifts")
     test.verify(system.getTraces().size()==1)
     
     snooze(1)
     #test align with hessian transform buttons
-    mouseClick(waitForObjectItem(":Alignment_Combo", "Affine transform"), 0, 0, 0, Button.NoButton)
+    mouseClick(waitForObject(":Alignment_Combo"), 32, 9, 0, Button.Button1)
 
-#    mouseClick(waitForObjectItem(":Peem Analysis View.Add Region_Combo", "Affine transform"), 0, 0, 0, Button.NoButton)
-    clickButton(waitForObject(":Peem Analysis View.Align_Button"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "With Affine Transformation"))
     snooze(3.5)
     #test saving
     clickButton(waitForObject(":Peem Analysis View.Use default save directory_Button"))
     clickButton(waitForObject(":Output location.Save_Button"))
-    clickButton(waitForObject(":File saved.OK_Button"))
     #check if file exist
-    exist = os.path.isfile("/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema/processing/d_peema.jpg")
+    if (_platform == "linux"):
+        exist = os.path.isfile("/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/processing/dawn/d_peema.jpg")
+    elif (_platform == "win32"):
+        exist = os.path.isfile("C:/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/processing/dawn/d_peema.jpg")
     test.verify(exist == True)
-    exist = os.path.isfile("/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema/processing/d_peema.tif")
+    if (_platform == "linux"):
+        exist = os.path.isfile("/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/processing/dawn/d_peema.tif")
+    elif (_platform == "win32"):
+        exist = os.path.isfile("C:/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/processing/dawn/d_peema.tif")
+
     test.verify(exist == True)
 
     snooze(2.1)
