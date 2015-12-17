@@ -20,8 +20,9 @@ def main():
     #we get the plotting system
     system = getPlottingSystem("Dataset Plot")
     test.verify(system.getTraces().iterator().next().getData().getRank()==2, "Image plotted: Success")
-    
-    mouseClick(waitForObject(":Data axes selection_CTabFolderChevron"), 18, 6, 0, Button.Button1)
+
+    if (not isEclipse4()):    
+        mouseClick(waitForObject(":Data axes selection_CTabFolderChevron"), 18, 6, 0, Button.Button1)
     if (isEclipse4()):
         mouseClick(waitForObject(":Show List_ToolItem"), 15, 11, 0, Button.Button1)
 
