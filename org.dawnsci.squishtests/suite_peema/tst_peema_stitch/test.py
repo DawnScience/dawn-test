@@ -61,8 +61,8 @@ def main():
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
-    test.verify(width==993.0, "width expected: 1359.0, Actual: "+ str(width))
-    test.verify(height==1028.0, "height expected: 1343.0, Actual: "+ str(height))
+    test.verify(width==993.0, "width expected: 993.0, Actual: "+ str(width))
+    test.verify(height==1028.0, "height expected: 1028.0, Actual: "+ str(height))
     
     #use background & feature association
     clickButton(waitForObject(":Image Stitching.Pseudo flat-field filter_Button"))
@@ -72,9 +72,12 @@ def main():
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
-    test.verify(width==998.0, "width expected: 1355.0, Actual: "+ str(width))
-    test.verify(height==1021.0, "height expected: 1344.0, Actual: "+ str(height))
-
+    if (_platform == "linux"):
+        test.verify(width==998.0, "width expected: 998.0, Actual: "+ str(width))
+        test.verify(height==1021.0, "height expected: 1021.0, Actual: "+ str(height))
+    elif (_platform == "win32"):
+        test.verify(width==980.0, "width expected: 998.0, Actual: "+ str(width))
+        test.verify(height==1025.0, "height expected: 1021.0, Actual: "+ str(height))
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()
 

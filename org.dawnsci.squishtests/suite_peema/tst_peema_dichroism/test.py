@@ -82,12 +82,12 @@ def main():
     if (_platform == "linux"):
         exist = os.path.isfile("/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/processing/dawn/d_peema.jpg")
     elif (_platform == "win32"):
-        exist = os.path.isfile("C:/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/processing/dawn/d_peema.jpg")
+        exist = os.path.isfile("C:\\scratch\\workspace\\suite_peema\\tst_peema_dichroism\\workspace\\data\\examples\\processing\\dawn\\d_peema.jpg")
     test.verify(exist == True)
     if (_platform == "linux"):
         exist = os.path.isfile("/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/processing/dawn/d_peema.tif")
     elif (_platform == "win32"):
-        exist = os.path.isfile("C:/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/processing/dawn/d_peema.tif")
+        exist = os.path.isfile("C:\\scratch\\workspace\\suite_peema\\tst_peema_dichroism\\workspace\\data\\examples\\processing\\dawn\\d_peema.tif")
 
     test.verify(exist == True)
 
