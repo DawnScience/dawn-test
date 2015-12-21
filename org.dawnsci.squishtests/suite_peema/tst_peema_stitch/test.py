@@ -4,6 +4,7 @@ source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "file_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 
+from sys import platform as _platform
 import platform
 import os.path
 
@@ -28,18 +29,20 @@ def main():
 
     # load the peema file folder
     clickButton(waitForObject(":Images location_Button"))
-    chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage")
-    
+    if (_platform == "linux"):
+        chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage")
+    elif(_platform == "win32"):
+        chooseDirectory(waitForObject(":SWT"), "C:\\scratch\\workspace\\suite_peema\\tst_peema_stitch\\workspace\\data\\examples\\98950_UViewImage")
+
     snooze(2)
     mouseDrag(waitForObject(":Live Plot Control.Original Data_Scale"), 27, 27, 74, 15, Modifier.None, Button.Button1)
     #load dat file
-    
+    clickTab(waitForObject(":Peem Analysis Controls.Image Stitching_CTabItem"), 63, 14, 0, Button.Button1)
     clickButton(waitForObject(":Stitching/Mosaic prototype.Load_Button"))
-    
     
     # wait for loading
     snooze(5)
-    clickButton(waitForObject(":Stitching/Mosaic prototype.Stitch_Button"))
+    clickButton(waitForObject(":Image Stitching.Stitch_Button"))
     snooze(7)
     
     # check stitched image
@@ -50,9 +53,9 @@ def main():
     test.verify(height==1063.0, "height expected: 1369.0, Actual: "+ str(height))
     
     clickTab(waitForObject(":Stitched_CTabItem"), 37, 14, 0, Button.Button1)
-    clickButton(waitForObject(":Stitching/Mosaic prototype.Use feature association_Button"))
+    clickButton(waitForObject(":Image Stitching.Use feature association_Button"))
     
-    clickButton(waitForObject(":Stitching/Mosaic prototype.Stitch_Button"))
+    clickButton(waitForObject(":Image Stitching.Stitch_Button"))
     
     snooze(15)
     system = getPlottingSystem("Stitched")
@@ -62,10 +65,9 @@ def main():
     test.verify(height==1028.0, "height expected: 1343.0, Actual: "+ str(height))
     
     #use background & feature association
-    clickButton(waitForObject(":Stitching/Mosaic prototype.Apply background subtraction_Button"))
-    mouseDrag(waitForObject(":Stitching/Mosaic prototype.Apply background subtraction_Scale"), 26, 25, 11, 2, Modifier.None, Button.Button1)
+    clickButton(waitForObject(":Image Stitching.Pseudo flat-field filter_Button"))
   
-    clickButton(waitForObject(":Stitching/Mosaic prototype.Stitch_Button"))
+    clickButton(waitForObject(":Image Stitching.Stitch_Button"))
     snooze(21)
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)

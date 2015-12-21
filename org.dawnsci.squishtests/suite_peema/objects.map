@@ -71,6 +71,7 @@
 :Dichroism Calculation.Dichroism_Button	{caption='Dichroism' container=':Peem Analysis View.Dichroism Calculation_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Display Selected Console_ToolItem	{caption='Display Selected Console' container=':_ToolBar_10' type='org.eclipse.swt.widgets.ToolItem'}
 :Environment.New..._Button	{caption='New...' container=':Preferences.Environment_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Error Log_CTabCloseBox	{container=':Error Log_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
@@ -156,6 +157,7 @@
 :Open Console_ToolItem	{caption='Open Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Console_ToolItem_2	{caption='Open Console' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Console_ToolItem_3	{caption='Open Console' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
+:Open Perspective.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Open Perspective_Shell'}
 :Open Perspective.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Open Perspective_Shell'}
 :Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -165,9 +167,13 @@
 :Open Perspective_ToolItem_3	{caption='Open Perspective' container=':_ToolBar_17' type='org.eclipse.swt.widgets.ToolItem'}
 :Output location.Save_Button	{caption='Save' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :PEEMA_ToolItem	{caption='PEEMA' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
+:PEEMA_ToolItem_2	{caption='PEEMA' container=':_ToolBar_17' type='org.eclipse.swt.widgets.ToolItem'}
 :Peem Analysis Controls.Circular Dichroism_CTabItem	{caption='Circular Dichroism' container=':Peem Analysis Controls_CTabItem' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}
+:Peem Analysis Controls.Details >>_Button	{caption='Details >>' container=':Peem Analysis Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Peem Analysis Controls.Details >>_Button_2	{caption='' container=':Peem Analysis Controls_CTabItem' isvisible='true' leftWidget=':Peem Analysis Controls.Details >>_Button' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis Controls.Image Stitching_CTabItem	{caption='Image Stitching' container=':Peem Analysis Controls_CTabItem' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}
 :Peem Analysis Controls.Image handling_Group	{caption='Image handling' container=':Peem Analysis Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Peem Analysis Controls.XAS Analysis_CTabItem	{caption='XAS Analysis' container=':Peem Analysis Controls_CTabItem' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}
 :Peem Analysis Controls_CTabItem	{caption='Peem Analysis Controls' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Peem Analysis View.Add Region_Button	{caption='Add Region' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View.Add Region_Combo	{container=':Peem Analysis View_CTabItem' isvisible='true' leftWidget=':Peem Analysis View.Add Region_Button' type='org.eclipse.swt.widgets.Combo'}
@@ -267,7 +273,7 @@
 :Stitching/Mosaic prototype.Field of view:_Text	{container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' leftWidget=':Stitching/Mosaic prototype.Field of view:_Label' type='org.eclipse.swt.widgets.Text'}
 :Stitching/Mosaic prototype.Kernel:_Label	{caption='Kernel:' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Stitching/Mosaic prototype.Kernel:_Text	{container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' leftWidget=':Stitching/Mosaic prototype.Kernel:_Label' type='org.eclipse.swt.widgets.Text'}
-:Stitching/Mosaic prototype.Load_Button	{caption='Load' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Stitching/Mosaic prototype.Load_Button	{caption='Load' container=':Peem Analysis Controls.Image Stitching_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Stitching/Mosaic prototype.Rotation angle:_Label	{caption='Rotation angle:' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Stitching/Mosaic prototype.Rotation angle:_Text	{container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' leftWidget=':Stitching/Mosaic prototype.Rotation angle:_Label' type='org.eclipse.swt.widgets.Text'}
 :Stitching/Mosaic prototype.Rows:_Label	{caption='Rows:' container=':Peem Analysis View.Stitching/Mosaic prototype_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
@@ -308,6 +314,7 @@
 :_CTabFolder_7	{firstTabCaption='Dichroism' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_8	{firstTabCaption='Live Plot' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Composite	{isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Composite' window=':_Shell'}
+:_Composite_2	{isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite' window=':Workbench Window'}
 :_List	{isvisible='true' type='org.eclipse.swt.widgets.List' window=':_Shell'}
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :_Menu_2	{container=':Project Explorer_Tree' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
