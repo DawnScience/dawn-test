@@ -1,5 +1,6 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "use_case_utils.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 
 import os
 
@@ -16,23 +17,40 @@ def main():
 
     # Exit (or disconnect) DAWN
     openExternalFile("315029.dat")
-    mouseClick(waitForObject(":Data_Table"), 70, 293, 0, Button.Button1)
+    if (isEclipse4()):
+        mouseClick(waitForObject(":Data_Table_6"), 70, 293, 0, Button.Button1)
+    else:
+        mouseClick(waitForObject(":Data_Table"), 70, 293, 0, Button.Button1)
+
     mouseClick(waitForObject(":Adds an expression which can be plotted. Must be function of other data sets._ToolItem_3"))
-    type(waitForObject(":Data_Text"), "dat:mean(Pilatus,0)")
-    type(waitForObject(":Data_Text"), "<Return>")
+    if (isEclipse4()):
+        type(waitForObject(":Data_Text_4"), "dat:mean(Pilatus,0)")
+        type(waitForObject(":Data_Text_4"), "<Return>")
+    else:
+        type(waitForObject(":Data_Text"), "dat:mean(Pilatus,0)")
+        type(waitForObject(":Data_Text"), "<Return>")
     
     snooze(5)
     system = getPlottingSystem("315029.dat")
     test.verify(system.getTraces().size()==1)
     test.verify(system.getTraces().iterator().next().getData().getRank()==2)
     
-    mouseClick(waitForObjectItem(":Data_Table", "11/1"), 5, 5, 0, Button.Button3)
-    activateItem(waitForObjectItem(":_Menu_3", "Copy 'dat:mean(Pilatus,0)' (can be pasted into other data)."))
+    if (isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_6", "11/1"), 5, 5, 0, Button.Button3)
+        activateItem(waitForObjectItem(":_Menu_6", "Copy 'dat:mean(Pilatus,0)' (can be pasted into other data)."))
+    else:
+        mouseClick(waitForObjectItem(":Data_Table", "11/1"), 5, 5, 0, Button.Button3)
+        activateItem(waitForObjectItem(":_Menu_3", "Copy 'dat:mean(Pilatus,0)' (can be pasted into other data)."))
   
     openExternalFile("9758.nxs")
     snooze(10)
-    mouseClick(waitForObjectItem(":Data_Table", "24/1"), 5, 5, 0, Button.Button3)
-    activateItem(waitForObjectItem(":_Menu_3", "Paste 'dat:mean(Pilatus,0)' (from file 315029.dat) into this data."))
+
+    if (isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_6", "24/1"), 5, 5, 0, Button.Button3)
+        activateItem(waitForObjectItem(":_Menu_6", "Paste 'dat:mean(Pilatus,0)' (from file 315029.dat) into this data."))
+    else:
+        mouseClick(waitForObjectItem(":Data_Table", "24/1"), 5, 5, 0, Button.Button3)
+        activateItem(waitForObjectItem(":_Menu_3", "Paste 'dat:mean(Pilatus,0)' (from file 315029.dat) into this data."))
    
     system = getPlottingSystem("9758.nxs")
     snooze(5)

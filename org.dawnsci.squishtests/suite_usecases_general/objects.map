@@ -1,4 +1,3 @@
-:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :*Untitled 1_CTabItem	{caption='*Untitled 1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
 :2495.h5.Plot_CTabItem	{caption='Plot' container=':2495.h5_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
@@ -14,6 +13,7 @@
 :5.tif_CTabCloseBox	{container=':5.tif_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :5.tif_CTabItem	{caption='5.tif' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :8918.nxs_CTabItem	{caption='8918.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:96356.dat_CTabItem	{caption='96356.dat' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :9758.nxs.Plot_CTabItem	{caption='Plot' container=':9758.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :9758.nxs_CTabCloseBox	{container=':9758.nxs_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :9758.nxs_CTabItem	{caption='9758.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -36,6 +36,7 @@
 :Change Settings.Log_Button	{caption='Log' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Change Settings.Title: _Label	{caption='Title: ' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Title: _Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Title: _Label' type='org.eclipse.swt.widgets.Text'}
+:Changes the plot to use selected data set as the x-axis._ToolItem	{caption='Changes the plot to use selected data set as the x-axis.' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
 :Clear Console_ToolItem	{caption='Clear Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Close wizard automatically on successful installation._Button	{caption='Close wizard automatically on successful installation.' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Configure Graph Settings.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
@@ -60,6 +61,8 @@
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_3	{caption='Data' occurrence='4' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data_CTabItem_4	{caption='Data' occurrence='1' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data_CTabItem_5	{caption='Data' occurrence='2' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Label	{caption='' container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Data_Scale	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Scale'}
 :Data_Scale_2	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Scale'}
@@ -68,8 +71,11 @@
 :Data_Table_3	{container=':Data_CTabItem_2' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_4	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_5	{container=':Data_CTabItem_3' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Data_Table_6	{container=':Data_CTabItem_4' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Text	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Text'}
 :Data_Text_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Text'}
+:Data_Text_3	{caption='' column='1' container=':Data_Table_6' row='11' type='com.froglogic.squish.swt.TableCell'}
+:Data_Text_4	{container=':Data_CTabItem_4' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Text'}
 :Data_ToolBar	{container=':Data_CTabItem_2' firstItemText?='Advanced*' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Data_ToolBar_2	{container=':Data_CTabItem' firstItemText?='Advanced*' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Data_ToolBar_3	{container=':Data_CTabItem_2' firstItemText='Show tooltips while editing the slice setup' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
@@ -81,6 +87,7 @@
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :Delete Resources.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Delete Resources_Shell'}
 :Delete Resources_Shell	{caption='Delete Resources' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Deletes an expression._ToolItem	{caption='Deletes an expression.' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
 :Environment.New..._Button	{caption='New...' container=':Preferences.Environment_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
@@ -125,6 +132,8 @@
 :Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Number peaks to fit_ToolItem	{caption='Number peaks to fit' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Older Workspace Version.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Older Workspace Version_Shell'}
+:Older Workspace Version_Shell	{caption='Older Workspace Version' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Open Console_ToolItem	{caption='Open Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Open Perspective_Shell'}
 :Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
@@ -175,8 +184,10 @@
 :Profile_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Profile_Menu_2	{caption='Profile' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Project Explorer_CTabItem	{caption='Project Explorer' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Project Explorer_CTabItem_2	{caption='Project Explorer' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Project Explorer_Tree_2	{container=':Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Project Explorer_Tree_3	{container=':Project Explorer_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Project name:_Label	{caption='Project name:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
 :Project name:_Text	{isvisible='true' leftWidget=':Project name:_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
 :Project:_Label	{caption='Project:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
@@ -258,6 +269,7 @@
 :_Menu_3	{container=':Data_Table' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Menu_4	{container=':Data_Table_5' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Menu_5	{container=':Project Explorer_Tree' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
+:_Menu_6	{container=':Data_Table_6' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Sash	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Sash_2	{isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Sash_3	{isvisible='true' occurrence='3' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
