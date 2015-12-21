@@ -1,5 +1,6 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 
 def main():
     
@@ -18,9 +19,11 @@ def main():
         if "96356.dat" in child.text:
             doubleClick(child, 5, 5, 0, Button.Button1)
             continue
-    
-    mouseClick(waitForObjectItem(":Data_Table", "3/0"), 9, 7, 0, Button.Button1)
-    
+    if (isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_2", "3/0"), 11, 12, 0, Button.Button1)
+    else:
+        mouseClick(waitForObjectItem(":Data_Table_4", "3/0"), 10, 7, 0, Button.Button1)
+
     snooze(1)
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), 31, 7, 0, Button.Button1)
