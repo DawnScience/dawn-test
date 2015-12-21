@@ -4,6 +4,7 @@ source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "file_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 source(findFile("scripts", "dawn_global_python_setup.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 
 import platform
 import os.path
@@ -76,7 +77,11 @@ def main():
     snooze(1)
     clickTab(waitForObject(":re-reflect_CTabItem"), 40, 14, 0, Button.Button1)
     snooze(1)
-    mouseClick(waitForObject(":Activates the interactive console. (Ctrl+Alt+Enter)_ToolItem"), 12, 8, 0, Button.Button1)
+    if (isEclipse4()):
+        mouseClick(waitForObject(":Activates the interactive console. (Ctrl+Alt+Enter)_ToolItem"), 12, 8, 0, Button.Button1)
+    else:
+        mouseClick(waitForObject(":Activates the interactive console. (Ctrl+Alt+Enter)_ToolItem_2"), 5, 11, 0, Button.Button1)
+
     snooze(1)
     
     #run the script the first time to send data to plot 1
@@ -120,8 +125,13 @@ def main():
         if "184476_rerefl_bkg1.dat" in child.text:
             doubleClick(child, 5, 5, 0, Button.Button1)
             continue
-    mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 7, 15, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 10, 11, 0, Button.Button1)
+    if (isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 7, 15, 0, Button.Button1)
+        mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 10, 11, 0, Button.Button1)
+    else:
+        mouseClick(waitForObjectItem(":Data_Table_4", "0/0"), 7, 15, 0, Button.Button1)
+        mouseClick(waitForObjectItem(":Data_Table_4", "1/0"), 10, 11, 0, Button.Button1)
+
     #test result is plotted
     system = getPlottingSystem("184476_rerefl_bkg1.dat")
     test.verify(system.getTraces().iterator().next().getData().getRank()==1, "Data plotted: Success")

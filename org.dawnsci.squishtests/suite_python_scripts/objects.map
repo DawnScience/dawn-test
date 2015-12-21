@@ -9,7 +9,9 @@
 :36153_TESTING_2014-04-23_calib_CeO2.txt_CTabItem	{caption='36153_TESTING_2014-04-23_calib_CeO2.txt' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :96356.dat.Plot_CTabItem	{caption='Plot' container=':96356.dat_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :96356.dat_CTabItem	{caption='96356.dat' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:96356.dat_CTabItem_2	{caption='96356.dat' occurrence='1' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Activates the interactive console. (Ctrl+Alt+Enter)_ToolItem	{caption='Interactive Console (Ctrl+Alt+Enter)' container=':_ToolBar_16' type='org.eclipse.swt.widgets.ToolItem'}
+:Activates the interactive console. (Ctrl+Alt+Enter)_ToolItem_2	{caption='Activates the interactive console. (Ctrl+Alt+Enter)' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
 :Algorithm_TableColumn	{caption='Algorithm' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :Annotations.Select Annotation_Group	{caption='Select Annotation' container=':Configure Graph Settings.Annotations_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Area_TableColumn	{caption='Area' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
@@ -54,8 +56,12 @@
 :Data Browsing_ToolItem	{caption='Data Browsing' container=':_ToolBar_17' type='org.eclipse.swt.widgets.ToolItem'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' occurrence='1' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data_CTabItem_3	{caption='Data' occurrence='4' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data_CTabItem_4	{caption='Data' occurrence='2' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{caption='' column='0' container=':Data_Table_2' row='0' type='com.froglogic.squish.swt.TableCell'}
 :Data_Table_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Data_Table_3	{container=':Data_CTabItem_3' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Data_Table_4	{container=':Data_CTabItem_4' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Tree	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Data_TreeItem	{caption='Data' container=':PyDev Package Explorer_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Debug_TableCell	{caption='Debug' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
@@ -128,6 +134,7 @@
 :Open Perspective_ToolItem	{caption='Open Perspective' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective_ToolItem_2	{caption='Open Perspective' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective_ToolItem_3	{caption='Open Perspective' container=':_ToolBar_17' type='org.eclipse.swt.widgets.ToolItem'}
+:Open Perspective_ToolItem_4	{caption='Open Perspective' container=':_ToolBar_18' type='org.eclipse.swt.widgets.ToolItem'}
 :Peak Fitting_CTabItem	{caption='Peak Fitting' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Peak Fitting_Composite	{container=':Peak Fitting_CTabItem' isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Composite'}
 :Peak Fitting_Link	{container=':Peak Fitting_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Link'}
@@ -291,6 +298,7 @@
 :_ToolBar_15	{firstItemText='Debug' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_16	{firstItemText='Interactive Console (Ctrl+Alt+Enter)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_17	{firstItemText='Data Browsing' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_18	{firstItemText='DExplore' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{container=':_CTabFolder_4' firstItemText='New fit selection.' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
