@@ -1,6 +1,9 @@
-:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :*Untitled 1_CTabItem	{caption='*Untitled 1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
+:315029.dat_CTabCloseBox	{container=':315029.dat_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:315029.dat_CTabItem	{caption='315029.dat' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:96356.dat_CTabCloseBox	{container=':96356.dat_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:96356.dat_CTabItem	{caption='96356.dat' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Change Settings.Maximum_Label	{caption='Maximum' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
@@ -33,8 +36,12 @@
 :Data Brow..._ToolItem	{caption='Data Brow...' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' occurrence='4' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data_CTabItem_3	{caption='Data' occurrence='2' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data_CTabItem_4	{caption='Data' occurrence='1' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Data_Table_3	{container=':Data_CTabItem_3' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Data_Table_4	{container=':Data_CTabItem_4' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Tree	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Debug_TableCell	{caption='Debug' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
@@ -73,6 +80,7 @@
 :Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
 :Outside radius_TableColumn	{caption='Outside radius' container=':Measurement_Table' type='org.eclipse.swt.widgets.TableColumn'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plot_Composite	{container=':metalmix.mca.Plot_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
 :Plot_ToolBar	{container=':metalmix.mca.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
@@ -93,8 +101,10 @@
 :Preferences_Shell	{caption='Preferences' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Preferences_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
 :Project Explorer_CTabItem	{caption='Project Explorer' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Project Explorer_CTabItem_2	{caption='Project Explorer' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Project Explorer_Tree_2	{container=':Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Project Explorer_Tree_3	{container=':Project Explorer_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :PyDev Console	{container=':Console_CTabItem' isvisible='true' type='org.python.pydev.shared_interactive_console.console.ui.internal.ScriptConsoleViewer$ScriptConsoleStyledText'}
 :Python console_Button	{caption='Python console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
