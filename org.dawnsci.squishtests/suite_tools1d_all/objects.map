@@ -24,9 +24,12 @@
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data Brow..._ToolItem	{caption='Data Brow...' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
+:Data Browsing_ToolItem	{caption='Data Browsing' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
 :Data_CTabCloseBox	{container=':Data_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data_CTabItem_2	{caption='Data' occurrence='1' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Data_Table_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Tree	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Debug_TableCell	{caption='Debug' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
@@ -102,7 +105,9 @@
 :Preferences_Composite	{isvisible='true' occurrence='17' type='org.eclipse.swt.widgets.Composite' window=':Preferences_Shell'}
 :Preferences_Shell	{caption='Preferences' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Preferences_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
+:Project Explorer_CTabItem	{caption='Project Explorer' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Project Explorer_Tree_2	{container=':Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :PyDev Console	{container=':Console_CTabItem' isvisible='true' type='org.python.pydev.shared_interactive_console.console.ui.internal.ScriptConsoleViewer$ScriptConsoleStyledText'}
 :Python console_Button	{caption='Python console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
@@ -173,7 +178,9 @@
 :_ToolBar_6	{container=':_CTabFolder_5' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_7	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_8	{container=':_CTabFolder_2' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_9	{firstItemText='Data Browsing' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :dx_TableColumn	{caption='dx' container=':Measurement_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :metalmix.mca.Plot_CTabItem	{caption='Plot' container=':metalmix.mca_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:metalmix.mca_CTabCloseBox	{container=':metalmix.mca_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :metalmix.mca_CTabItem	{caption='metalmix.mca' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}
