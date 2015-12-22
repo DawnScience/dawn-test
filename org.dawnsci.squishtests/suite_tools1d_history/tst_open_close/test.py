@@ -1,6 +1,7 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
 source(findFile("scripts", "dawn_constants.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 
 def main():
     
@@ -24,7 +25,10 @@ def main():
     
     snooze(1)
     
-    mouseClick(waitForObjectItem(":Data_Table", "3/0"))
+    if(isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_7", "3/0"), 7, 9, 0, Button.Button1)
+    else:
+        mouseClick(waitForObjectItem(":Data_Table", "3/0"), 6, 12, 0, Button.Button1)
     
     snooze(1)
     
@@ -35,8 +39,12 @@ def main():
     
     snooze(1)
     
-    mouseClick(waitForObjectItem(":Data_Table_2", "0/0"))
-    mouseClick(waitForObjectItem(":Data_Table_2", "3/0"))
+    if(isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_5", "0/0"), 11, 15, 0, Button.Button1)
+        mouseClick(waitForObjectItem(":Data_Table_5", "3/0"), 9, 12, 0, Button.Button1)
+    else:
+        mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 10, 13, 0, Button.Button1)
+        mouseClick(waitForObjectItem(":Data_Table_2", "3/0"), 10, 12, 0, Button.Button1)
     mouseClick(waitForObject(":Plot data as separate plots_ToolItem"))
     
     snooze(1)
@@ -48,7 +56,10 @@ def main():
     
     snooze(1)
     
-    mouseClick(waitForObjectItem(":Data_Table_3", "4/0"))
+    if(isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_6", "4/0"), 4, 15, 0, Button.Button1)
+    else:
+        mouseClick(waitForObjectItem(":Data_Table_3", "4/0"), 10, 14, 0, Button.Button1)
     
     snooze(1)
     
