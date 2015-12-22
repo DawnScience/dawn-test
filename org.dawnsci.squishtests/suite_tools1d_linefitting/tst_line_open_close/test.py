@@ -1,6 +1,7 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
 source(findFile("scripts", "dawn_constants.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 
 def main():
     
@@ -20,7 +21,10 @@ def main():
             doubleClick(child, 5, 5, 0, Button.Button1)
             continue
     
-    mouseClick(waitForObjectItem(":Data_Table", "2/0"), 9, 7, 0, Button.Button1)
+    if(isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_3", "2/0"), 9, 7, 0, Button.Button1)
+    else:
+        mouseClick(waitForObjectItem(":Data_Table", "2/0"), 9, 7, 0, Button.Button1) 
     
     snooze(5)
     
