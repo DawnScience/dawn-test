@@ -25,7 +25,7 @@
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data Brow..._ToolItem	{caption='Data Brow...' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
 :Data Browsing_ToolItem	{caption='Data Browsing' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
-:Data_CTabCloseBox	{container=':Data_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:Data_CTabCloseBox	{container=':Line Fitting_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' occurrence='1' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
@@ -89,6 +89,7 @@
 :Please Confirm Delete All_Shell	{caption='Please Confirm Delete All' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Plot_Composite	{container=':metalmix.mca.Plot_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
 :Plot_ToolBar	{container=':metalmix.mca.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Plot_ToolBar_2	{container=':metalmix.mca.Plot_CTabItem_2' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
@@ -161,6 +162,7 @@
 :Workspace Launcher.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Workspace Launcher_Shell'}
 :Workspace Launcher_Shell	{caption='Workspace Launcher' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :XY plotting tools_ToolItem	{caption='XY plotting tools' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:XY plotting tools_ToolItem_2	{caption='XY plotting tools' container=':Plot_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :_CTabFolder	{firstTabCaption='Console' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_2	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_3	{firstTabCaption='Project Explorer' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
@@ -181,6 +183,8 @@
 :_ToolBar_9	{firstItemText='Data Browsing' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :dx_TableColumn	{caption='dx' container=':Measurement_Table' type='org.eclipse.swt.widgets.TableColumn'}
 :metalmix.mca.Plot_CTabItem	{caption='Plot' container=':metalmix.mca_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:metalmix.mca.Plot_CTabItem_2	{caption='Plot' container=':metalmix.mca_CTabItem_2' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}
 :metalmix.mca_CTabCloseBox	{container=':metalmix.mca_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :metalmix.mca_CTabItem	{caption='metalmix.mca' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:metalmix.mca_CTabItem_2	{caption='metalmix.mca' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}

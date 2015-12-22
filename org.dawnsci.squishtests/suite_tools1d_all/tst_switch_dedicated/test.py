@@ -3,6 +3,7 @@ source(findFile("scripts", "dawn_global_plot_tests.py"))
 source(findFile("scripts", "dawn_constants.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "tools1d_utils.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 
 def the_actual_test(system):
     vals = dawn_constants
@@ -94,7 +95,10 @@ def main():
     #Open datafile and get the plotting system for the tests
     openExample("metalmix.mca")
     system = getPlottingSystem("metalmix.mca")
-    mouseClick(waitForObjectItem(":Data_Table", "2/0"), 9, 5, 0, Button.Button1)
+    if(isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_2", "2/0"), 9, 5, 0, Button.Button1)
+    else:
+        mouseClick(waitForObjectItem(":Data_Table", "2/0"), 9, 5, 0, Button.Button1)
     
     snooze(2)
     the_actual_test(system)
