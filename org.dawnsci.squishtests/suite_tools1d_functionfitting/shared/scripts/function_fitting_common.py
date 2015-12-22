@@ -1,6 +1,7 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
 source(findFile("scripts", "swt_treeitems.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 
 # Start Function fitting on metalmix.mca
 def startFunctionFitting():
@@ -20,18 +21,32 @@ def startFunctionFitting():
             doubleClick(child)
             continue
     
-    mouseClick(waitForObjectItem(":Data_Table", "0/0"))
+    if(isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_3", "0/0"), 12, 6, 0, Button.Button1)
+    else:
+        mouseClick(waitForObjectItem(":Data_Table", "0/0"), 12, 6, 0, Button.Button1)
     
     snooze(1)
     
     # start function fitting
-    mouseClick(waitForObject(":XY plotting tools_ToolItem_2"))
+    if(isEclipse4()):
+        mouseClick(waitForObject(":XY plotting tools_ToolItem_3"), 28, 14, 0, Button.Button1)
+    else:
+        mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), 28, 14, 0, Button.Button1)
+
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
-    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Function Fitting"))
+
+    if(isEclipse4()):
+        activateItem(waitForObjectItem(":Maths and Fitting_Menu_2", "Function Fitting"))
+    else:
+        activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Function Fitting"))
     
     
-def setFunctionFittingRegion(regionStart, regionLength):    
-    mouseClick(waitForObject(":Configure Settings..._ToolItem_3"))
+def setFunctionFittingRegion(regionStart, regionLength):
+    if(isEclipse4()):
+        mouseClick(waitForObject(":Configure Settings..._ToolItem_4"), 8, 13, 0, Button.Button1)
+    else:
+        mouseClick(waitForObject(":Configure Settings..._ToolItem_3"), 12, 16, 0, Button.Button1)
     clickTab(waitForObject(":Configure Graph Settings.Regions_TabItem"))
     mouseClick(waitForObjectItem(":Regions.Region Location_Table", "0/1"))
     type(waitForObject(":Regions_Spinner"), str(regionStart))
