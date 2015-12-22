@@ -1,6 +1,7 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
 source(findFile("scripts", "dawn_constants.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 
 def check_no_traces(conOb):
     mouseClick(conOb, 15, 9, 0, Button.Button1)
@@ -30,10 +31,16 @@ def main():
     mouseClick(waitForObject(":Plot data as separate plots_ToolItem"), 12, 8, 0, Button.Button1)
     
     #open 4 traces
-    mouseClick(waitForObjectItem(":Data_Table", "0/0"), 9, 7, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table", "1/0"), 10, 5, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table", "2/0"), 6, 2, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table", "3/0"), 10, 10, 0, Button.Button1)
+    if(isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_3", "0/0"), 9, 7, 0, Button.Button1)
+        mouseClick(waitForObjectItem(":Data_Table_3", "1/0"), 10, 5, 0, Button.Button1)
+        mouseClick(waitForObjectItem(":Data_Table_3", "2/0"), 6, 2, 0, Button.Button1)
+        mouseClick(waitForObjectItem(":Data_Table_3", "3/0"), 10, 10, 0, Button.Button1)
+    else:
+        mouseClick(waitForObjectItem(":Data_Table", "0/0"), 9, 7, 0, Button.Button1)
+        mouseClick(waitForObjectItem(":Data_Table", "1/0"), 10, 5, 0, Button.Button1)
+        mouseClick(waitForObjectItem(":Data_Table", "2/0"), 6, 2, 0, Button.Button1)
+        mouseClick(waitForObjectItem(":Data_Table", "3/0"), 10, 10, 0, Button.Button1)
     
     #check plot
     conOb = waitForObject(":Configure Settings..._ToolItem")

@@ -1,6 +1,7 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_plot_tests.py"))
 source(findFile("scripts", "dawn_constants.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 
 def main():
     
@@ -22,7 +23,10 @@ def main():
             doubleClick(child, 5, 5, 0, Button.Button1)
             continue
     
-    mouseClick(waitForObjectItem(":Data_Table", "0/0"), 9, 7, 0, Button.Button1)
+    if(isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_3", "0/0"), 9, 7, 0, Button.Button1)
+    else:
+        mouseClick(waitForObjectItem(":Data_Table", "0/0"), 9, 7, 0, Button.Button1)
     
     #Check data has plotted by looking at graph settings
     conOb = waitForObject(":Configure Settings..._ToolItem")
@@ -33,7 +37,7 @@ def main():
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
     activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Derivative View"))
 
-    mouseClick(waitForObject(":View Menu_ToolItem_2"), 10, 4, 0, Button.Button1)
+    mouseClick(waitForObject(":View Menu_ToolItem_2"), 15, 14, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Open 'Derivative View' in dedicated view"))
     
     conOb = waitForObject(":Configure Settings..._ToolItem_4")
@@ -45,7 +49,10 @@ def main():
             doubleClick(child, 5, 5, 0, Button.Button1)
             continue
     
-    mouseClick(waitForObjectItem(":Data_Table_2", "4/0"), 10, 7, 0, Button.Button1)
+    if(isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_4", "4/0"), 10, 7, 0, Button.Button1)
+    else:
+        mouseClick(waitForObjectItem(":Data_Table_2", "4/0"), 10, 7, 0, Button.Button1)
     
     mouseClick(waitForObject(":Derivative View_CTabItem"), 51, 7, 0, Button.Button1)
     conOb2 = waitForObject(":Configure Settings..._ToolItem_4")
