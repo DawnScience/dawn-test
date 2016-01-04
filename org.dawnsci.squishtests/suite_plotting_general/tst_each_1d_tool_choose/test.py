@@ -1,7 +1,7 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
-
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 
 import os
 from datetime import datetime
@@ -16,9 +16,10 @@ def main():
     vals = dawn_constants
     snooze(1)
 
-
-    mouseClick(waitForObjectItem(":Data_Table", "0/0"), 2, 5, 0, Button.Button1)
-    
+    if(isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_4", "0/0"), 8, 12, 0, Button.Button1)
+    else:
+        mouseClick(waitForObjectItem(":Data_Table", "0/0"), 2, 5, 0, Button.Button1)
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))

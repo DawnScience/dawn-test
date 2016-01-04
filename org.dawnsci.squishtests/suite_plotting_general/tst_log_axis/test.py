@@ -1,4 +1,5 @@
 source(findFile("scripts", "dawn_global_startup.py"))
+source(findFile("scripts", "dawn_global_ui_controls.py"))
 
 def main():
     # Start or attach runs (or attaches) to DAWN and then 
@@ -21,7 +22,10 @@ def main():
         if "metalmix" in child.text:
             doubleClick(child, 5, 5, 0, Button.Button1)
 
-    mouseClick(waitForObjectItem(":Data_Table", "0/0"), 6, 10, 0, Button.Button1)
+    if(isEclipse4()):
+        mouseClick(waitForObjectItem(":Data_Table_4", "0/0"), 8, 12, 0, Button.Button1)
+    else:
+        mouseClick(waitForObjectItem(":Data_Table", "0/0"), 6, 10, 0, Button.Button1)
     snooze(1)
     mouseClick(waitForObject(":Configure Settings..._ToolItem_2"), 12, 3, 0, Button.Button1)
     clickTab(waitForObject(":Configure Graph Settings.Axes_TabItem"))
