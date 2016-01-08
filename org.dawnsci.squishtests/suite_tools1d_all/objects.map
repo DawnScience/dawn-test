@@ -25,7 +25,7 @@
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data Brow..._ToolItem	{caption='Data Brow...' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
 :Data Browsing_ToolItem	{caption='Data Browsing' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
-:Data_CTabCloseBox	{container=':Line Fitting_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:Data_CTabCloseBox	{container=':Data_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' occurrence='1' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}

@@ -107,6 +107,7 @@ def main():
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem"),vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
+    snooze(1)
     activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Line Fitting"))
     clickTab(waitForObject(":metalmix.mca_CTabItem"), 59, 7, 0, Button.Button1)
     
