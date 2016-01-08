@@ -18,10 +18,7 @@ def main():
     #expand data tree and open metal mix
     loadMetalMix()
     
-    if(isEclipse4()):
-        mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 9, 7, 0, Button.Button1)
-    else:
-        mouseClick(waitForObjectItem(":Data_Table", "0/0"), 9, 7, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_4", "0/0"), 9, 7, 0, Button.Button1)
     
     snooze(1)
     
