@@ -34,7 +34,7 @@
 :Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data_CTabItem	{caption='Data' occurrence='1' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' occurrence='4' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_3	{caption='Data' occurrence='6' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_4	{caption='Data' occurrence='1' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -77,6 +77,7 @@
 :Jython console_Button	{caption='Jython console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Maths and Fitting_Menu_2	{caption='Maths and Fitting' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Message_TreeColumn	{caption='Message' container=':Error Log_Tree' type='org.eclipse.swt.widgets.TreeColumn'}
 :MoKedge_1_15.dat.Plot_CTabItem	{caption='Plot' container=':MoKedge_1_15.dat_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :MoKedge_1_15.dat_CTabCloseBox	{container=':MoKedge_1_15.dat_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
@@ -185,6 +186,7 @@
 :XY plotting tools_ToolItem	{caption='XY plotting tools' container=':Plot_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :XY plotting tools_ToolItem_2	{caption='XY plotting tools' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :XY plotting tools_ToolItem_3	{caption='XY plotting tools' container=':Plot_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:XY plotting tools_ToolItem_4	{caption='XY plotting tools' container=':Plot_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :_CTabFolder	{firstTabCaption='Console' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_2	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_3	{firstTabCaption='Project Explorer' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}

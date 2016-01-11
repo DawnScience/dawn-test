@@ -20,16 +20,16 @@ def main():
             break
     
     mouseClick(waitForObject(":Plot data as separate plots_ToolItem"), 12, 12, 0, Button.Button1)
-    
-    mouseClick(waitForObjectItem(":Data_Table", "0/0"), 18, 7, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table", "0/0"), 3, 13, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table", "1/0"), 7, 6, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table", "2/0"), 11, 10, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table", "3/0"), 9, 3, 0, Button.Button1)
+
+    mouseClick(waitForObjectItem(":Data_Table_7", "0/0"), 18, 7, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_7", "0/0"), 3, 13, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_7", "1/0"), 7, 6, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_7", "2/0"), 11, 10, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_7", "3/0"), 9, 3, 0, Button.Button1)
     mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "History"))
     
-    snooze(20) # Seems to need a little time before history activates.
+    snooze(10) # Seems to need a little time before history activates.
     if (not object.exists(":Add currently plotted plot(s) to history_ToolItem_2")):
         test.fail("History tool not active")
         clickTab(waitForObject(":metalmix.mca_CTabItem"), 83, 3, 0, Button.Button1)
@@ -38,15 +38,17 @@ def main():
     mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem_2"), 16, 12, 0, Button.Button1)
 
     clickTab(waitForObject(":Data_CTabItem"), 32, 11, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table", "3/0"), 10, 14, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table", "2/0"), 7, 9, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table", "1/0"), 10, 12, 0, Button.Button1)
-    mouseClick(waitForObjectItem(":Data_Table", "0/0"), 12, 9, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_7", "3/0"), 10, 14, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_7", "2/0"), 7, 9, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_7", "1/0"), 10, 12, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_7", "0/0"), 12, 9, 0, Button.Button1)
     clickTab(waitForObject(":History_CTabItem"), 30, 18, 0, Button.Button1)
-    mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
+
+    clickTab(waitForObject(":metalmix.mca_CTabItem"), 91, 16, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem_4"), 27, 12, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
-    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
-    
+    snooze(1)
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu_2", "Peak Fitting"))
     
     c = waitForObject(":Plot_Composite")
     b = c.bounds

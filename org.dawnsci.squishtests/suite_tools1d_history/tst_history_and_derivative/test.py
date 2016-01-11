@@ -22,7 +22,7 @@ def main():
     
     mouseClick(waitForObject(":Plot data as separate plots_ToolItem"), 12, 12, 0, Button.Button1)
     
-    mouseClick(waitForObjectItem(":Data_Table", "0/0"), 8, 12, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_7", "0/0"), 8, 12, 0, Button.Button1)
     
     mouseClick(waitForObject(":XY plotting tools_ToolItem_2"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "History"))
