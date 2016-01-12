@@ -21,15 +21,15 @@ def main():
     # Open data browsing perspective 
     openPerspective("Data Browsing (default)")
     
-    clickTab(waitForObject(":Data_CTabItem"), 42, 14, 0, Button.Button3)
-    activateItem(waitForObjectItem(":Pop Up Menu", "Size"))
-    activateItem(waitForObjectItem(":Size_Menu", "Left"))
-    type(waitForObject(":_Sash"), "<Left>")
-    type(waitForObject(":_Sash"), "<Left>")
-    type(waitForObject(":_Sash"), "<Left>")
-    type(waitForObject(":_Sash"), "<Left>")
-    type(waitForObject(":_Sash"), "<Left>")
-    type(waitForObject(":_Sash"), "<Left>")
+#     clickTab(waitForObject(":Data_CTabItem"), 42, 14, 0, Button.Button3)
+#     activateItem(waitForObjectItem(":Pop Up Menu", "Size"))
+#     activateItem(waitForObjectItem(":Size_Menu", "Left"))
+#     type(waitForObject(":_Sash"), "<Left>")
+#     type(waitForObject(":_Sash"), "<Left>")
+#     type(waitForObject(":_Sash"), "<Left>")
+#     type(waitForObject(":_Sash"), "<Left>")
+#     type(waitForObject(":_Sash"), "<Left>")
+#     type(waitForObject(":_Sash"), "<Left>")
     
      #expand data tree and open metal mix
     expand(waitForObjectItem(":Project Explorer_Tree", "data"))

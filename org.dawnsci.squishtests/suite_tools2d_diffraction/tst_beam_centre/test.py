@@ -103,6 +103,8 @@ def main():
     b = c.bounds
     
     ob = waitForObject(":Diffraction_Tree")
+    clickTab(ob, 40, 12, 0, Button.Button1)
+    snooze(3)
     x,y = getBeamCentreFromTable(ob)
     trc = system.getTraces().toArray().at(0)
     
