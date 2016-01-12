@@ -63,7 +63,7 @@ def main():
     type(waitForObject(":Region Editor_Spinner"), "500")
 
     #test if the region one xstart is 500
-    test.verify(system.getRegion("Region 1").getROI().getPointX()==500, "Region 1 X Start has been updated to 500: Success")
+    test.verify(system.getRegion("Region 1").getROI().getPointX()==500, "Region 1 X Start was updated, value of X was " + str(system.getRegion("Region 1").getROI().getPointX()))
    
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()
