@@ -34,7 +34,7 @@ def main():
     snooze(1)
     
     #Create space for tool and open the data file
-    createToolSpace(viewTabName="Data", direction="Left", steps=20)
+#     createToolSpace(viewTabName="Data", direction="Left", steps=20)
     openExample("pow_M99S5")
     
     mouseClick(waitForImageToolsMenu(), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
@@ -113,19 +113,19 @@ def main():
     test.verify( sh.at(1) == 1797 , "y acceptable - non 2d")
     
     mouseClick(waitForObject(":Integration Options.Number of Bins Y:_Text"), 156, 11, 0, Button.Button1)
-    type(waitForObject(":Integration Options.Number of Bins X:_Text"), "<Ctrl+a>")
+    type(waitForObject(":Integration Options.Number of Bins Y:_Text"), "<Ctrl+a>")
     type(waitForObject(":Integration Options.Number of Bins Y:_Text"), "360")
     type(waitForObject(":Integration Options.Number of Bins Y:_Text"), "<Return>")
 
     waitOnProgress()
     
     #There's an intermittent fail with the first test below. Possibly image doesn't draw fast enough (hence snooze below)
-    snooze(10)
+    snooze(20)
     ptp = getTracePeakToPeak(system)
     sh = getTraceShape(system)
 
-    test.verify( sh.at(0) == 360 , "x acceptable - non 2d 360")
-    test.verify( sh.at(1) == 1797 , "y acceptable - non 2d 360")
+    test.verify( sh.at(0) == 360 , "x acceptable - non 2d 360; expected 360, was " + str(sh.at(0)))
+    test.verify( sh.at(1) == 1797 , "y acceptable - non 2d 360; expected 1797, was " + str(sh.at(0)))
     
     mouseClick(waitForObject(integToolViewMenu), 8, 10, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Non pixel splitting 2D"))
@@ -134,7 +134,7 @@ def main():
     waitOnProgress()
     
     ptp1 = getTracePeakToPeak(system)
-    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable - split 2d 360")
+    test.verify( not (ptp1 == ptp) , "Peak to peak acceptable - split 2d 360" )
     
     mouseClick(waitForObject(integToolViewMenu), 14, 5, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Pixel splitting 2D"))
