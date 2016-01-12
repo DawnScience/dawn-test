@@ -58,7 +58,7 @@
 :Data reduction..._ToolItem_2	{caption='Data reduction...' container=':Data_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :Data reduction..._ToolItem_3	{caption='Data reduction...' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
 :Data reduction..._ToolItem_4	{caption='Data reduction...' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
-:Data_CTabItem	{caption='Data' occurrence='2' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Data_CTabItem	{caption='Data' occurrence='1' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_2	{caption='Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_3	{caption='Data' occurrence='4' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_CTabItem_4	{caption='Data' occurrence='1' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -66,12 +66,14 @@
 :Data_Label	{caption='' container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Data_Scale	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Scale'}
 :Data_Scale_2	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Scale'}
+:Data_Scale_3	{container=':Data_CTabItem_4' isvisible='true' type='org.eclipse.swt.widgets.Scale'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_3	{container=':Data_CTabItem_2' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_4	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_5	{container=':Data_CTabItem_3' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_6	{container=':Data_CTabItem_4' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Data_Table_7	{container=':Data_CTabItem_4' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Table'}
 :Data_Text	{container=':Data_CTabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Text'}
 :Data_Text_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Data_Text_3	{caption='' column='1' container=':Data_Table_6' row='11' type='com.froglogic.squish.swt.TableCell'}
@@ -92,6 +94,8 @@
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:File Navigator_CTabItem	{caption='File Navigator' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:File Navigator_Tree	{container=':File Navigator_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :File_Menu	{caption='File' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Finish_Button_2	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
@@ -129,6 +133,7 @@
 :New_Menu	{caption='New' container=':Project Explorer_Tree_2' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :New_Menu_2	{caption='New' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :New_Menu_3	{caption='New' container=':Project Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:New_Menu_4	{caption='New' container=':Project Explorer_Tree_3' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Number peaks to fit_ToolItem	{caption='Number peaks to fit' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
@@ -252,6 +257,7 @@
 :XY plotting tools_ToolItem_7	{caption='XY plotting tools' container=':Plot_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
 :XY plotting tools_ToolItem_8	{caption='XY plotting tools' container=':Plot_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Zoom In_ToolItem	{caption='Zoom In' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:_Button	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :_CBanner	{isvisible='true' type='org.eclipse.swt.custom.CBanner' window=':Workbench Window'}
 :_CLabel	{isvisible='true' type='org.eclipse.swt.custom.CLabel' window=':_Shell_2'}
 :_CTabFolder	{firstTabCaption='Console' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
@@ -270,6 +276,7 @@
 :_Menu_4	{container=':Data_Table_5' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Menu_5	{container=':Project Explorer_Tree' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Menu_6	{container=':Data_Table_6' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
+:_Menu_7	{container=':Project Explorer_Tree_3' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Sash	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Sash_2	{isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Sash_3	{isvisible='true' occurrence='3' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
