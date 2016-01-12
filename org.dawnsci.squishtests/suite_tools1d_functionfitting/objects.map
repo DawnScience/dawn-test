@@ -63,7 +63,7 @@
 :Jython console_Button	{caption='Jython console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
-:Maths and Fitting_Menu_2	{caption='Maths and Fitting' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Maths and Fitting_Menu_2	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :MoKedge_1_15.dat_CTabCloseBox	{container=':MoKedge_1_15.dat_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :MoKedge_1_15.dat_CTabItem	{caption='MoKedge_1_15.dat' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Name_TableColumn	{caption='Name' container=':Peak Fitting_Table' type='org.eclipse.swt.widgets.TableColumn'}
