@@ -77,7 +77,7 @@
 :Jython console_Button	{caption='Jython console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :ListDialog_Shell	{data?='org.eclipse.ui.dialogs.ListDialog*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Maths and Fitting_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
-:Maths and Fitting_Menu_2	{caption='Maths and Fitting' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Maths and Fitting_Menu_2	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Message_TreeColumn	{caption='Message' container=':Error Log_Tree' type='org.eclipse.swt.widgets.TreeColumn'}
 :MoKedge_1_15.dat.Plot_CTabItem	{caption='Plot' container=':MoKedge_1_15.dat_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :MoKedge_1_15.dat_CTabCloseBox	{container=':MoKedge_1_15.dat_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
