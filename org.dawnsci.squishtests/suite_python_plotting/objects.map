@@ -1,4 +1,3 @@
-:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :*Untitled 1_CTabItem	{caption='*Untitled 1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
 :1D plot.x-axis_Combo	{container=':1D plot_CTabItem' isvisible='true' leftWidget=':1D plot.x-axis_Label' type='org.eclipse.swt.widgets.Combo'}
@@ -14,7 +13,7 @@
 :2D image_CTabItem	{caption='2D image' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :76003.dat.Info_CTabItem	{caption='Info' container=':76003.dat_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :76003.dat_CTabItem	{caption='76003.dat' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Activates the interactive console. (Ctrl+Alt+Enter)_ToolItem	{caption='Activates the interactive console. (Ctrl+Alt+Enter)' container=':_ToolBar_11' type='org.eclipse.swt.widgets.ToolItem'}
+:Activates the interactive console. (Ctrl+Alt+Enter)_ToolItem	{caption='Interactive Console (Ctrl+Alt+Enter)' container=':_ToolBar_16' type='org.eclipse.swt.widgets.ToolItem'}
 :Anaconda_Label	{caption='Anaconda - select to install' column='0' container=':_Table' row='0' type='com.froglogic.squish.swt.TableCell'}
 :Available label decorations:.DAT file Scan Command Decorator_TableCell	{caption='DAT file Scan Command Decorator' column='0' container=':Preferences.Available label decorations:_Table' type='com.froglogic.squish.swt.TableCell'}
 :Available label decorations:.File Meta Data Decorator_TableCell	{caption='File Meta Data Decorator' column='0' container=':Preferences.Available label decorations:_Table' type='com.froglogic.squish.swt.TableCell'}
@@ -54,7 +53,8 @@
 :Console_CTabCloseBox	{container=':Console_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Console_CTabItem_2	{caption='Console' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Console_ScriptConsoleViewer$ScriptConsoleStyledText	{container=':Console_CTabItem_2' isvisible='true' type='org.python.pydev.shared_interactive_console.console.ui.internal.ScriptConsoleViewer$ScriptConsoleStyledText'}
+:Console_CTabItem_3	{caption='Console' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Console_ScriptConsoleViewer$ScriptConsoleStyledText	{basetype='org.eclipse.swt.custom.StyledText' container=':Console_CTabItem_3' isvisible='true'}
 :DAT file Scan Command Decorator_ItemCheckbox	{container=':Available label decorations:.DAT file Scan Command Decorator_TableCell' type='com.froglogic.squish.swt.ItemCheckbox'}
 :DExplore_ToolItem	{caption='DExplore' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Data axes selection_CTabFolder	{firstTabCaption='1D plot' isvisible='true' leftWidget=':Data axes selection_Group' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
@@ -135,6 +135,7 @@
 :Open Perspective_ToolItem	{caption='Open Perspective' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective_ToolItem_2	{caption='Open Perspective' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Perform Auto Scale_ToolItem	{caption='Perform Auto Scale' container=':_ToolBar_14' type='org.eclipse.swt.widgets.ToolItem'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_CTabCloseBox	{container=':Plotting Systems_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
@@ -250,6 +251,7 @@
 :_ToolBar_12	{container=':_CTabFolder_7' firstItemText='Pin Console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_13	{container=':_CTabFolder_7' firstItemText='Terminate current console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_14	{container=':_CTabFolder_2' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_16	{firstItemText='Interactive Console (Ctrl+Alt+Enter)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}

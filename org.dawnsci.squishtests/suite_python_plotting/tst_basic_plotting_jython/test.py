@@ -12,7 +12,6 @@ def main():
     #space for the console
     startOrAttachToDAWN()
     openPerspective("Python")
-    createToolSpace(viewTabName="Console", direction="up", steps=15)
     
     #Get the plotting system and open a Jython console
     system = getPlottingSystem("Plot 1")

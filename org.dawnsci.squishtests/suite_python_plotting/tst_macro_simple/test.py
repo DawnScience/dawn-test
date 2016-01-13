@@ -12,7 +12,6 @@ def main():
     #space for the console and setup python; switch on py4j automatically
     startOrAttachToDAWN(vmArgs='-DPREF_PY4J_ACTIVE=true')
     openPerspective("Data Browsing (default)")
-    createToolSpace(viewTabName="Value", direction="up", steps=25)
     setupPython()
     
     #Open a python console
