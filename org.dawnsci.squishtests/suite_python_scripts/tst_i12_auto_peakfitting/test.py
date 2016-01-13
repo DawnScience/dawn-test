@@ -62,11 +62,10 @@ def main():
     b = c.bounds
     test.log("Image at (%d, %d) is %d x %d" % (b.x,b.y, b.width, b.height))
 
-    clickTab(waitForObject(":Plot 1_CTabItem"), 25, 11, 0, Button.Button1)
-
-    mouseClick(waitForObject(":XY plotting tools_ToolItem_3"), 32, 10, 0, Button.Button1)
+    clickTab(waitForObject(":Plot 1_CTabItem"), 48, 12, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem_3"), 32, 11, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
-    activateItem(waitForObjectItem(":Maths and Fitting_Menu", "Peak Fitting"))
+    activateItem(waitForObjectItem(":Maths and Fitting_Menu_2", "Peak Fitting"))
 
     clickTab(waitForObject(":Peak Fitting_CTabItem"), 45, 8, 0, Button.Button1)
     mouseClick(waitForObject(":Number peaks to fit_ToolItem_2"), 33, 8, 0, Button.Button1)
