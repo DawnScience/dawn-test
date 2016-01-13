@@ -24,6 +24,7 @@
 :Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Browse..._Button	{caption='Browse...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Cancel_Button_2	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Change Settings.Log_Button	{caption='Log' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Change Settings.Maximum_Label	{caption='Maximum' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Maximum_Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Maximum_Label' type='org.eclipse.swt.widgets.Text'}

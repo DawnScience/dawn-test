@@ -6,10 +6,16 @@ source(findFile("scripts", "plotting_test.py"))
 
 import os
 import shutil
+from sys import platform as _platform
 
 def _getAnacondaInstallPath():
     # Install alongside (not inside) workspace
-    return os.path.join(getWorkspaceParent(), "anacondaInstallTestLocation")
+    anacondapath = os.path.join(getWorkspaceParent(), "anacondaInstallTestLocation")
+    if (_platform == "win32"):
+        anacondapath = anacondapath.replace("\\\\", "\\")
+        anacondapath = anacondapath.replace("/", "\\")
+        anacondapath = "c:" + anacondapath
+    return anacondapath
 
 def _finishPythonSetup():
     # Say yes to adding selected new paths to PYTHONPATH
@@ -39,12 +45,12 @@ def setupAnaconda():
     
     # Verfify Anaconda install option is available
     test.verify(object.exists(":Anaconda_Label"), "setupAnaconda: Anaconda Installer Wizard open (if this fails it is because the Anaconda wizard didn't open)")
-
+    mouseClick(waitForObjectItem(":Select Interpreter Available_Table", "0/0"), 135, 8, 0, Button.Button1)
     clickButton(waitForObject(":Select Interpreter Available_OK_Button"))
     
     # Anaconda wizard is launched; step through
     test.verify(object.exists(":I accept the terms of the license agreement_Button"), "setupPython: License agreement open")
-    clickButton(waitForObject(":I accept the terms of the license agreement_Button", 1))
+    clickButton(waitForObject(":I accept the terms of the license agreement_Button"))
     clickButton(waitForObject(":Next >_Button"))
     type(waitForObject(":Install to:_Text"), "<Ctrl+a>")
     type(waitForObject(":Install to:_Text"), "<Delete>")
@@ -67,7 +73,6 @@ def main():
     # space for the console and setup python
     startOrAttachToDAWN()
     openPerspective("Python")
-    createToolSpace(viewTabName="Console", direction="up", steps=15)
     setupAnaconda()
     
     # Get the plotting system and open a Python console
