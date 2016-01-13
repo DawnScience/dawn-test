@@ -35,7 +35,7 @@ def main():
     mouseClick(waitForObject(":/entry1/counterTimer01/Time_ItemCheckbox"), 5, 11, 0, Button.Button1)
     mouseClick(waitForObject(":/entry1/counterTimer01/lnI0It_ItemCheckbox"), 9, 14, 0, Button.Button1)
     clickButton(waitForObject(":Finish_Button"))
-    mouseClick(waitForObjectItem(":Data_Table", "0/0"), 8, 13, 0, Button.Button1)
+    mouseClick(waitForObjectItem(":Data_Table_5", "0/0"), 8, 13, 0, Button.Button1)
 
     # Check plotting
     system = getPlottingSystem("MoKedge_1_15.dat")
