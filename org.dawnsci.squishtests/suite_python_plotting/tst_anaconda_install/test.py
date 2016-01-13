@@ -5,11 +5,17 @@ source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "plotting_test.py"))
 
 import os
+import sys
 import shutil
 
 def _getAnacondaInstallPath():
     # Install alongside (not inside) workspace
-    return os.path.join(getWorkspaceParent(), "anacondaInstallTestLocation")
+    anacondapath = os.path.join(getWorkspaceParent(), "anacondaInstallTestLocation")
+    if(not sys.platform == "linux"):
+        anacondapath = anacondapath.replace("\\\\", "\\")
+        anacondapath = anacondapath.replace("/", "\\")
+        anacondapath = "C:" + anacondapath     
+    return anacondapath
 
 def _finishPythonSetup():
     # Say yes to adding selected new paths to PYTHONPATH
@@ -39,6 +45,7 @@ def setupAnaconda():
     
     # Verfify Anaconda install option is available
     test.verify(object.exists(":Anaconda_Label"), "setupAnaconda: Anaconda Installer Wizard open (if this fails it is because the Anaconda wizard didn't open)")
+    mouseClick(waitForObjectItem(":Select Interpreter Available_Table", "0/0"), 72, 9, 0, Button.Button1)
 
     clickButton(waitForObject(":Select Interpreter Available_OK_Button"))
     

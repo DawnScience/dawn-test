@@ -1,4 +1,3 @@
-:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :*Untitled 1_CTabItem	{caption='*Untitled 1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
 :1D plot.x-axis_Combo	{container=':1D plot_CTabItem' isvisible='true' leftWidget=':1D plot.x-axis_Label' type='org.eclipse.swt.widgets.Combo'}
@@ -25,6 +24,7 @@
 :Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Browse..._Button	{caption='Browse...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Cancel_Button_2	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Change Settings.Log_Button	{caption='Log' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Change Settings.Maximum_Label	{caption='Maximum' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Maximum_Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Maximum_Label' type='org.eclipse.swt.widgets.Text'}
@@ -89,7 +89,7 @@
 :Histogramming.Minimum Intensity_Label	{caption='Minimum Intensity' container=':Image Traces.Histogramming_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Histogramming.Minimum Intensity_Text	{container=':Image Traces.Histogramming_Group' isvisible='true' leftWidget=':Histogramming.Minimum Intensity_Label' type='org.eclipse.swt.widgets.Text'}
 :Histogramming_Text	{container=':Image Traces.Histogramming_Group' isvisible='true' type='org.eclipse.swt.widgets.Text'}
-:I accept the terms of the license agreement_Button	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
+:I accept the terms of the license agreement_Button	{isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :I accept the terms of the license agreement_Button_2	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Image Gallery_CTabCloseBox	{container=':Image Gallery_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Image Gallery_CTabItem	{caption='Image Gallery' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -135,6 +135,7 @@
 :Open Perspective_ToolItem	{caption='Open Perspective' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective_ToolItem_2	{caption='Open Perspective' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Perform Auto Scale_ToolItem	{caption='Perform Auto Scale' container=':_ToolBar_14' type='org.eclipse.swt.widgets.ToolItem'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_CTabCloseBox	{container=':Plotting Systems_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
@@ -176,7 +177,9 @@
 :PyDev Package Explorer_Tree	{container=':PyDev Package Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Python console_Button	{caption='Python console' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Python interpreters (e.g.: python.exe).Enthought EPD Free_TreeItem	{caption='Enthought EPD Free' container=':Preferences.Python interpreters (e.g.: python.exe)_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:Python not configured_Shell	{caption='Python not configured' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
+:Python_ToolItem	{caption='Python' container=':_ToolBar_15' type='org.eclipse.swt.widgets.ToolItem'}
 :Record Macro_ToolItem	{caption='Record Macro' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Record Macro_ToolItem_2	{caption='Record Macro' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
 :Reset Perspective.Yes_Button	{caption='Yes' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Reset Perspective_Shell'}
@@ -250,6 +253,7 @@
 :_ToolBar_12	{container=':_CTabFolder_7' firstItemText='Pin Console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_13	{container=':_CTabFolder_7' firstItemText='Terminate current console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_14	{container=':_CTabFolder_2' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_15	{firstItemText='Python' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{firstItemText='Data Brow...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
@@ -259,6 +263,8 @@
 :_ToolBar_8	{container=':_CTabFolder_2' firstItemText='Pin Console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_9	{container=':_CTabFolder_6' firstItemText='Pin Console' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
+:i12_edxd_q_calibrator_v3_ceria_CTabCloseBox	{container=':i12_edxd_q_calibrator_v3_ceria_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
+:i12_edxd_q_calibrator_v3_ceria_CTabItem	{caption='i12_edxd_q_calibrator_v3_ceria' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :pow_M99S5_1_0001.cbf.Image_CTabItem	{caption='Image' container=':pow_M99S5_1_0001.cbf_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :pow_M99S5_1_0001.cbf_CTabItem	{caption='pow_M99S5_1_0001.cbf' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
