@@ -91,28 +91,26 @@ def main():
     
     #getScreenPosition(plottingSystem,x,y)
 
-    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_3"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
-
+    mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_6"), 32, 12, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Science"))
-    activateItem(waitForObjectItem(":Science_Menu", "Diffraction"))
-    
-    #dragSash(waitForObject(":_Sash"),200,0)
-    #dragToolToConstWidth(waitForObject(":Diffraction_CTabItem"),waitForObject(":_Sash"))
+    activateItem(waitForObjectItem(":Science_Menu_2", "Diffraction"))
     
     c = waitForObject(":Image_Composite_2")
     b = c.bounds
-    
+
     ob = waitForObject(":Diffraction_Tree")
     clickTab(ob, 40, 12, 0, Button.Button1)
+    
     snooze(3)
-    x,y = getBeamCentreFromTable(ob)
+
+    x, y = getBeamCentreFromTable()
     trc = system.getTraces().toArray().at(0)
     
     meta = getMetaDictionary(trc)
     
-    testDiffractionTree(ob,meta)
+    testDiffractionTree(waitForObject(":Diffraction_Tree_2"),meta)
     
-    wid  = waitForObjectItem(":Diffraction_Tree", "X")
+    wid  = waitForObjectItem(":Diffraction_Tree_2", "X")
 
     mouseClick(waitForObject(":One-click beam centre_ToolItem"), 7, 17, 0, Button.Button1)
     
@@ -120,7 +118,7 @@ def main():
     
     mouseClick(c, cx, cy, 0, Button.Button1);
     
-    xnew,ynew = getBeamCentreFromTable(ob)
+    xnew,ynew = getBeamCentreFromTable()
     test.verify(not xnew in x, "Beam X changed")
     test.verify(not ynew in y, "Beam Y changed")
     x = xnew
@@ -152,7 +150,7 @@ def main():
     snooze(1)
 
     
-    xnew,ynew = getBeamCentreFromTable(ob)
+    xnew,ynew = getBeamCentreFromTable()
     test.verify(not xnew in x, "Beam X changed")
     test.verify(not ynew in y, "Beam Y changed")
     

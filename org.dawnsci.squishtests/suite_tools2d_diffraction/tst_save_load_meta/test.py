@@ -25,8 +25,7 @@ def main():
     mouseClick(waitForObject(":Resolution rings_ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Calibrant"))
     
-    ob = waitForObject(":Diffraction_Tree")
-    x,y = getBeamCentreFromTable(ob)
+    x,y = getBeamCentreFromTable()
     
     mouseClick(waitForObject(":Export metadata to file_ToolItem"), 13, 9, 0, Button.Button1)
     clickButton(waitForObject(":Export_Button"))
@@ -44,8 +43,7 @@ def main():
     mouseClick(waitForObject(":One-click beam centre_ToolItem"), 7, 17, 0, Button.Button1)
     mouseClick(c, b.x+b.width/8, b.y+b.height/8, 0, Button.Button1);
     
-    
-    xnew,ynew = getBeamCentreFromTable(ob)
+    xnew,ynew = getBeamCentreFromTable()
     test.verify(not xnew in x, "Beam X changed")
     test.verify(not ynew in y, "Beam Y changed")
     
@@ -61,7 +59,7 @@ def main():
     clickButton(waitForObject(":Import.Finish_Button"))
     snooze(1)
     
-    xnew,ynew = getBeamCentreFromTable(ob)
+    xnew,ynew = getBeamCentreFromTable()
     test.verify(xnew in x, "Beam X changed")
     test.verify(ynew in y, "Beam Y changed")
     

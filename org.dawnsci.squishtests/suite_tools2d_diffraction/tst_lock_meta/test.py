@@ -16,19 +16,21 @@ def main():
     
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Science"))
-    activateItem(waitForObjectItem(":Science_Menu", "Diffraction"))
+    activateItem(waitForObjectItem(":Science_Menu_2", "Diffraction"))
     
     ob = waitForObject(":Diffraction_Tree")
-    x,y = getBeamCentreFromTable(ob)
+    clickTab(ob, 40, 12, 0, Button.Button1)
+    x,y = getBeamCentreFromTable()
     
     openExample("ref-screentest")
     
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Science"))
-    activateItem(waitForObjectItem(":Science_Menu", "Diffraction"))
-    
+    activateItem(waitForObjectItem(":Science_Menu_2", "Diffraction"))
+   
     ob = waitForObject(":Diffraction_Tree")
-    xnew,ynew = getBeamCentreFromTable(ob)
+    clickTab(ob, 40, 12, 0, Button.Button1) 
+    xnew,ynew = getBeamCentreFromTable()
     
     test.verify(not xnew in x, "Beam X changed")
     test.verify(not ynew in y, "Beam Y changed")
@@ -41,10 +43,11 @@ def main():
     
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Science"))
-    activateItem(waitForObjectItem(":Science_Menu", "Diffraction"))
-    
+    activateItem(waitForObjectItem(":Science_Menu_2", "Diffraction"))
+
     ob = waitForObject(":Diffraction_Tree")
-    xnew,ynew = getBeamCentreFromTable(ob)
+    clickTab(ob, 40, 12, 0, Button.Button1)    
+    xnew,ynew = getBeamCentreFromTable()
     
     test.verify(xnew in x, "Beam X locked")
     test.verify(ynew in y, "Beam Y locked")
@@ -56,10 +59,11 @@ def main():
     
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem_2"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Science"))
-    activateItem(waitForObjectItem(":Science_Menu", "Diffraction"))
+    activateItem(waitForObjectItem(":Science_Menu_2", "Diffraction"))
     
     ob = waitForObject(":Diffraction_Tree")
-    xnew,ynew = getBeamCentreFromTable(ob)
+    clickTab(ob, 40, 12, 0, Button.Button1)
+    xnew,ynew = getBeamCentreFromTable()
     
     test.verify(not xnew in x, "Beam X changed")
     test.verify(not ynew in y, "Beam Y changed")

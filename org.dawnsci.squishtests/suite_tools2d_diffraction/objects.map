@@ -31,6 +31,8 @@
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Data_Table_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_ErrorLog' type='org.eclipse.swt.widgets.ToolItem'}
+:Delete Resources.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Delete Resources_Shell'}
+:Delete Resources_Shell	{caption='Delete Resources' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Detector_TreeItem	{caption='Detector' container=':Diffraction_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Detector_TreeItem_2	{caption='Detector' container=':Diffraction_Tree_2' type='org.eclipse.swt.widgets.TreeItem'}
 :Diffraction_CTabItem	{caption='Diffraction' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -68,6 +70,9 @@
 :File location_Shell	{caption='File location' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :File location_Shell_2	{caption='File location' isvisible='false' type='org.eclipse.swt.widgets.Shell'}
 :Find outer rings_ToolItem	{caption='Find outer rings' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
+:Folder:_Label	{caption='Folder:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
+:Folder:_Text	{isvisible='true' leftWidget=':Folder:_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
 :Image Gallery_CTabCloseBox	{container=':Image Gallery_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Image Gallery_CTabItem	{caption='Image Gallery' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Image Gallery_Gallery	{container=':Image Gallery_CTabItem' isvisible='true' type='org.eclipse.nebula.widgets.gallery.Gallery'}
@@ -76,12 +81,14 @@
 :Image tools used to profile and inspect images._ToolItem_3	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :Image tools used to profile and inspect images._ToolItem_4	{caption='Image tools used to profile and inspect images.' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Image tools used to profile and inspect images._ToolItem_5	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Image tools used to profile and inspect images._ToolItem_6	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :Image_Composite	{container=':ref-testscale_1_001.img.Image_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
 :Image_Composite_2	{container=':pow_M99S5_1_0001.cbf.Image_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
 :Image_ToolBar	{container=':ref-testscale_1_001.img.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Image_ToolBar_2	{container=':ref-screentest-crystal1_1_001.mccd.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Image_ToolBar_3	{container=':pow_M99S5_1_0001.cbf.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Image_ToolBar_4	{container=':ref-screentest-crystal1_1_001.mccd.Image_CTabItem_2' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Image_ToolBar_5	{container=':pow_M99S5_1_0001.cbf.Image_CTabItem_2' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Import metadata from file_ToolItem	{caption='Import metadata from file' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Import metadata from file_ToolItem_2	{caption='Import metadata from file' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :Import...._Button	{caption='...' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
@@ -92,6 +99,11 @@
 :Import_Button	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Import_Shell'}
 :Import_Shell	{caption='Import' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Lock the diffraction data and apply it to newly opened files._ToolItem	{caption?='Lock the diffraction data and apply it to newly opened file*' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:New Project_Shell	{caption='New Project' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:New Project_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':New Project_Shell'}
+:New_Menu	{caption='New' container=':Project Explorer_Tree_2' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:New_Shell	{caption='New' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:New_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':New_Shell'}
 :One-click beam centre_ToolItem	{caption='One-click beam centre' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Open Perspective.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Open Perspective_Shell'}
 :Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
@@ -116,6 +128,12 @@
 :Project Explorer_CTabItem	{caption='Project Explorer' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Project Explorer_Tree_2	{container=':Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Project:_Label	{caption='Project:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
+:Project:_Text	{isvisible='true' leftWidget=':Project:_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
+:Properties for Data2.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Properties for Data2_Shell'}
+:Properties for Data2_Shell	{caption='Properties for Data2' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Properties for data.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Properties for data_Shell'}
+:Properties for data_Shell	{caption='Properties for data' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Refine beam centre_ToolItem	{caption='Refine beam centre' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Refine beam centre_ToolItem_2	{caption='Refine beam centre' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :Regions.Region Location_Label	{caption='Region Location' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
@@ -123,12 +141,14 @@
 :Regions_Spinner	{container=':Configure Graph Settings.Regions_TabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Spinner'}
 :Resolution rings_ToolItem	{caption='Resolution rings' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:SWT	SWT
 :SaveMetaData.nxs.Plot_CTabItem	{caption='Plot' container=':SaveMetaData.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :SaveMetaData.nxs.Tree_CTabItem	{caption='Tree' container=':SaveMetaData.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :SaveMetaData.nxs_CTabCloseBox	{container=':SaveMetaData.nxs_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :SaveMetaData.nxs_CTabItem	{caption='SaveMetaData.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Science_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
-:Science_Menu_2	{caption='Science' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Science_Menu_2	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Science_Menu_3	{caption='Science' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse_ToolItem	{caption='Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse_ToolItem_2	{caption='Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :Select Trace_Combo	{container=':Traces.Select Trace_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
@@ -155,6 +175,7 @@
 :Y.1045.73 *_TreeSubItem	{caption='1045.73 *' column='2' container=':Y_TreeItem_2' type='com.froglogic.squish.swt.TreeSubItem'}
 :Y_TreeItem	{caption='Y' parentitem=':Beam Centre_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :Y_TreeItem_2	{caption='Y' parentitem=':Beam Centre_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
+:_Button	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :_CTabFolder	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_CTabFolder_2	{firstTabCaption='Data' isvisible='true' type='org.eclipse.swt.custom.CTabFolder' window=':Workbench Window'}
 :_Canvas	{isvisible='true' type='org.eclipse.swt.widgets.Canvas' window=':Workbench Window'}
@@ -163,7 +184,9 @@
 :_FigureCanvas	{isvisible='true' type='org.eclipse.draw2d.FigureCanvas' window=':Workbench Window'}
 :_Label	{caption='' container=':_CTabFolder' isvisible='false' type='org.eclipse.swt.widgets.Label'}
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:_Menu_2	{container=':Project Explorer_Tree_2' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Sash	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
+:_Shell	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :_ToolBar	{container=':_CTabFolder' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_2	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' leftWidget=':_Label' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
@@ -174,7 +197,9 @@
 :i22-104754.nxs.Plot_CTabItem	{caption='Plot' container=':i22-104754.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :i22-104754.nxs_CTabItem	{caption='i22-104754.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :pow_M99S5_1_0001.cbf.Image_CTabItem	{caption='Image' container=':pow_M99S5_1_0001.cbf_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
+:pow_M99S5_1_0001.cbf.Image_CTabItem_2	{caption='Image' container=':pow_M99S5_1_0001.cbf_CTabItem_2' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}
 :pow_M99S5_1_0001.cbf_CTabItem	{caption='pow_M99S5_1_0001.cbf' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:pow_M99S5_1_0001.cbf_CTabItem_2	{caption='pow_M99S5_1_0001.cbf' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :ref-screentest-crystal1_1_001.mccd.Image_CTabItem	{caption='Image' container=':ref-screentest-crystal1_1_001.mccd_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :ref-screentest-crystal1_1_001.mccd.Image_CTabItem_2	{caption='Image' container=':ref-screentest-crystal1_1_001.mccd_CTabItem_2' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}
 :ref-screentest-crystal1_1_001.mccd_CTabCloseBox	{container=':ref-screentest-crystal1_1_001.mccd_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
