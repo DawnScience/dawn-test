@@ -52,6 +52,7 @@
 :Data_Tree	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Debug_TableCell	{caption='Debug' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
+:Edit Layout_ToolItem	{caption='Edit Layout' container=':File Viewer_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Environment.New..._Button	{caption='New...' container=':Preferences.Environment_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
@@ -61,6 +62,8 @@
 :File Meta Data Decorator_ItemCheckbox_3	{container=':Available label decorations:.File Meta Data Decorator_TableCell_3' type='com.froglogic.squish.swt.ItemCheckbox'}
 :File Navigator_CTabItem	{caption='File Navigator' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :File Navigator_Tree	{container=':File Navigator_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:File Viewer_CTabItem	{caption='File Viewer' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:File Viewer_ToolBar	{container=':File Viewer_CTabItem' firstItemText='Parent' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Finish_Button_2	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :HDF5 File Contents_ItemCheckbox	{column='0' container=':Content.Select the available extensions to show (unchecked extensions will not display content):_Table' row='8' type='com.froglogic.squish.swt.ItemCheckbox'}
@@ -98,6 +101,7 @@
 :Open Perspective_ToolItem_2	{caption='Open Perspective' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Open With_Menu	{caption='Open With' container=':Project Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Open With_Menu_2	{caption='Open With' container=':Project Explorer_Tree_2' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Parent_ToolItem	{caption='Parent' container=':File Viewer_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
@@ -131,6 +135,7 @@
 :Python_TableCell	{caption='Python' column='0' container=':Open Perspective_Table' type='com.froglogic.squish.swt.TableCell'}
 :Refresh file tree_ToolItem	{caption='Refresh file tree' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Refresh file tree_ToolItem_2	{caption='Refresh file tree' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
+:Refresh_ToolItem	{caption='Refresh' container=':File Viewer_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Reset Perspective.Yes_Button	{caption='Yes' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Reset Perspective_Shell'}
 :Reset Perspective_Shell	{caption='Reset Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
