@@ -50,8 +50,6 @@ def main():
     # Close the histogram
     clickTab(waitForObject(":Histogram_CTabItem"), 10, 9, 0, Button.Button3)
     activateItem(waitForObjectItem(":Pop Up Menu", "Close"))
-
-    verifyAndClearErrorLog()
     
     snooze(1.0)
     
