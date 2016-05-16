@@ -32,6 +32,12 @@
 :Change Settings.Maximum_Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Maximum_Label' type='org.eclipse.swt.widgets.Text'}
 :Change Settings.Minimum: _Label	{caption='Minimum: ' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Change Settings.Minimum: _Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Minimum: _Label' type='org.eclipse.swt.widgets.Text'}
+:Circular Dichroism.- _Button	{caption='- ' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Circular Dichroism.2_Button	{caption='2' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Circular Dichroism.Align_Button	{caption='Align' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Circular Dichroism.Shifts _Button	{caption='Shifts ' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Circular Dichroism.With ROI_Button	{caption='With ROI' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Circular Dichroism.With affine transformation_Button	{caption='With affine transformation' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Clear Console_ToolItem	{caption='Clear Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Close wizard automatically on successful installation._Button	{caption='Close wizard automatically on successful installation.' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Colour mapping_CCombo	{container=':Colour mapping_CTabItem' isvisible='true' type='org.eclipse.swt.custom.CCombo'}
@@ -102,6 +108,7 @@
 :Image Playback_Button_4	{caption='' container=':Image Explorer.Image Playback_Group' isvisible='true' leftWidget=':Image Playback_Button_3' type='org.eclipse.swt.widgets.Button'}
 :Image Playback_Button_5	{caption='' container=':Image Explorer.Image Playback_Group' isvisible='true' leftWidget=':Image Playback_Button_4' type='org.eclipse.swt.widgets.Button'}
 :Image Playback_Slider	{container=':Image Explorer.Image Playback_Group' isvisible='true' leftWidget=':Image Playback_Button_5' type='org.eclipse.swt.widgets.Slider'}
+:Image Stitching.Apply cropping_Button	{caption='Apply cropping' container=':Peem Analysis Controls.Image Stitching_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Image Stitching.Load_Button	{caption='Load' container=':Peem Analysis Controls.Image Stitching_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Image Stitching.Pseudo flat-field filter_Button	{caption='Pseudo flat-field filter' container=':Peem Analysis Controls.Image Stitching_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Image Stitching.Pseudo flat-field filter_Scale	{container=':Peem Analysis Controls.Image Stitching_CTabItem' isvisible='true' leftWidget=':Image Stitching.Pseudo flat-field filter_Button' type='org.eclipse.swt.widgets.Scale'}
@@ -123,6 +130,9 @@
 :Images location_Text	{container=':Peem Analysis View.Images location_Group' isvisible='true' leftWidget=':Images location_Label' type='org.eclipse.swt.widgets.Text'}
 :Images location_Text_2	{container=':Peem Analysis View.Images location_Group' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Info_Table	{container=':76003.dat.Info_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Input/Output_Button	{arrowDirection='SWT.UP' caption='' container=':Image handling.Input/Output_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Input/Output_Button_2	{arrowDirection='SWT.DOWN' caption='' container=':Image handling.Input/Output_Group' isvisible='true' leftWidget=':Input/Output_Button' type='org.eclipse.swt.widgets.Button'}
+:Input/Output_Button_3	{caption='' container=':Image handling.Input/Output_Group' isvisible='true' leftWidget=':Input/Output_Button_2' type='org.eclipse.swt.widgets.Button'}
 :Install to:_Label	{caption='Install to:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Install to:_Text	{isvisible='true' leftWidget=':Install to:_Label' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
 :Internal Error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Internal Error_Shell'}
@@ -173,6 +183,7 @@
 :Peem Analysis Controls.Details >>_Button_2	{caption='' container=':Peem Analysis Controls_CTabItem' isvisible='true' leftWidget=':Peem Analysis Controls.Details >>_Button' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis Controls.Image Stitching_CTabItem	{caption='Image Stitching' container=':Peem Analysis Controls_CTabItem' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}
 :Peem Analysis Controls.Image handling_Group	{caption='Image handling' container=':Peem Analysis Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Peem Analysis Controls.Spectrum Analysis_CTabItem	{caption='Spectrum Analysis' container=':Peem Analysis Controls_CTabItem' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}
 :Peem Analysis Controls.XAS Analysis_CTabItem	{caption='XAS Analysis' container=':Peem Analysis Controls_CTabItem' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}
 :Peem Analysis Controls_CTabItem	{caption='Peem Analysis Controls' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Peem Analysis View.Add Region_Button	{caption='Add Region' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
@@ -190,6 +201,7 @@
 :Peem Analysis View.View_Group	{caption='View' container=':Peem Analysis View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Peem Analysis View_Button	{caption='' container=':Peem Analysis View_CTabItem' isvisible='true' occurrence='2' type='org.eclipse.swt.widgets.Button'}
 :Peem Analysis View_CTabItem	{caption='Peem Analysis View' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Peem Image Explorer Beta_CTabItem	{caption='Peem Image Explorer Beta' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
@@ -235,6 +247,8 @@
 :Reset Perspective.Yes_Button	{caption='Yes' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Reset Perspective_Shell'}
 :Reset Perspective_Shell	{caption='Reset Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Rotation error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Rotation error_Shell'}
+:Rotation error_Shell	{caption='Rotation error' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :SWT	SWT
 :Select Axis_Combo	{container=':Axes.Select Axis_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
 :Select Interpreter Available_Caption	{caption?='Multiple possible interpreters are available*' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':ListDialog_Shell'}
@@ -262,6 +276,7 @@
 :Show View_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Show View_Shell'}
 :Show View_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Show View_Shell'}
 :Show Welcome Screen_ToolItem	{caption='Show Welcome Screen' container=':_ToolBar_15' type='org.eclipse.swt.widgets.ToolItem'}
+:Spectrum Analysis.Load_Button	{caption='Load' container=':Peem Analysis Controls.Spectrum Analysis_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Stitched_CTabItem	{caption='Stitched' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Stitching error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Stitching error_Shell'}
 :Stitching error_Shell	{caption='Stitching error' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -290,11 +305,11 @@
 :View Menu_ToolItem	{caption='View Menu' container=':_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :View Menu_ToolItem_2	{caption='View Menu' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
 :View Menu_ToolItem_3	{caption='View Menu' container=':_ToolBar_14' type='org.eclipse.swt.widgets.ToolItem'}
-:View.+_Button	{caption='+ ' container=':Image handling.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:View.+_Button	{caption='+ ' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :View.-_Button	{caption='-' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
-:View.Abs_Button	{caption='Abs ' container=':Image handling.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:View.Abs_Button	{caption='Abs ' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :View.CD_Button	{caption='CD' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
-:View.Diff_Button	{caption='Diff ' container=':Image handling.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:View.Diff_Button	{caption='Diff ' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :View.Shifts_Button	{caption='Shifts' container=':Peem Analysis View.View_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Virtual_TreeItem	{caption='Virtual' container=':Project Explorer_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Welcome_CTabCloseBox	{container=':Welcome_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}

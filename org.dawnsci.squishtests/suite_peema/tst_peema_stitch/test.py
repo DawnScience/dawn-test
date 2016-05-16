@@ -49,8 +49,8 @@ def main():
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
-    test.verify(width==1005.0, "width expected: 1395.0, Actual: "+ str(width))
-    test.verify(height==1063.0, "height expected: 1369.0, Actual: "+ str(height))
+    test.verify(width==1034.0, "width expected: 1034.0, Actual: "+ str(width))
+    test.verify(height==1044.0, "height expected: 1044.0, Actual: "+ str(height))
     
     clickTab(waitForObject(":Stitched_CTabItem"), 37, 14, 0, Button.Button1)
     clickButton(waitForObject(":Image Stitching.Use feature association_Button"))
@@ -61,8 +61,8 @@ def main():
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
-    test.verify(width==993.0, "width expected: 993.0, Actual: "+ str(width))
-    test.verify(height==1028.0, "height expected: 1028.0, Actual: "+ str(height))
+    test.verify(width==1016.0, "width expected: 1016.0, Actual: "+ str(width))
+    test.verify(height==961.0, "height expected: 961.0, Actual: "+ str(height))
     
     #use background & feature association
     clickButton(waitForObject(":Image Stitching.Pseudo flat-field filter_Button"))
@@ -73,11 +73,11 @@ def main():
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
     if (_platform == "linux"):
-        test.verify(width==998.0, "width expected: 998.0, Actual: "+ str(width))
-        test.verify(height==1021.0, "height expected: 1021.0, Actual: "+ str(height))
+        test.verify(width==1053.0, "width expected: 1053.0, Actual: "+ str(width))
+        test.verify(height==957.0, "height expected: 957.0, Actual: "+ str(height))
     elif (_platform == "win32"):
-        test.verify(width==980.0, "width expected: 998.0, Actual: "+ str(width))
-        test.verify(height==1025.0, "height expected: 1021.0, Actual: "+ str(height))
+        test.verify(width==1053.0, "width expected: 1053.0, Actual: "+ str(width))
+        test.verify(height==957.0, "height expected: 957.0, Actual: "+ str(height))
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()
 

@@ -56,10 +56,10 @@ def main():
     
     snooze(2)
     #Run the align process after having created a region of interest
-#    vals = dawn_constants
-    mouseClick(waitForObject(":Alignment_Combo"), 32, 9, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "With Region of Interest"))
-    mouseDrag(waitForObject(":Image Alignment.\rSelect a region of interest common to all images in the stack and press OK.\r_Scale"), 21, 24, 32, 2, Modifier.None, Button.Button1)
+    #    vals = dawn_constants
+    clickButton(waitForObject(":Circular Dichroism.With ROI_Button"))
+    clickButton(waitForObject(":Circular Dichroism.Align_Button"))
+    mouseDrag(waitForObject(":Image Alignment.\rSelect a region of interest common to all images in the stack and press OK.\r_Scale"), 17, 22, 25, -11, Modifier.None, Button.Button1)
     clickButton(waitForObject(":Image Alignment.OK_Button"))
     snooze(2) # While fit..
     
@@ -71,13 +71,14 @@ def main():
     
     snooze(1)
     #test align with hessian transform buttons
-    mouseClick(waitForObject(":Alignment_Combo"), 32, 9, 0, Button.Button1)
-
-    activateItem(waitForObjectItem(":Pop Up Menu", "With Affine Transformation"))
+    clickButton(waitForObject(":Circular Dichroism.With affine transformation_Button"))
+    clickButton(waitForObject(":Circular Dichroism.Align_Button"))
     snooze(3.5)
     #test saving
     clickButton(waitForObject(":Peem Analysis View.Use default save directory_Button"))
     clickButton(waitForObject(":Output location.Save_Button"))
+    
+    snooze(2)
     #check if file exist
     if (_platform == "linux"):
         exist = os.path.isfile("/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/processing/dawn/d_peema.jpg")
