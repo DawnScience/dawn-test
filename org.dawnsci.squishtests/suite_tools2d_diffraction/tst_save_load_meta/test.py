@@ -73,7 +73,7 @@ def main():
     expand(waitForObjectItem(":Tree_Tree", "instrument"))
     expand(waitForObjectItem(":Tree_Tree", "detector"))
     
-    text = tree.getItems().at(0).getItems().at(3).getItems().at(0).getItems().at(0).getText()
+    text = tree.getItems().at(0).getItems().at(4).getItems().at(0).getItems().at(0).getText()
     
     test.verify("beam_center" in text, "tree contains beam center")
     
