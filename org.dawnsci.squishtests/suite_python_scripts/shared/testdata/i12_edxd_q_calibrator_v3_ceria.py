@@ -142,12 +142,11 @@ class EDXDCalibrator(object):
             file.write("%02i, %1.10e, %1.10e, %1.10e\n" % (key, result[0], result[1], result[2]))
         file.close()
         
-if __name__ == "__main__" :
-    print "Calibrating EDXD Q axis"
-    calib = EDXDCalibrator("/scratch/workspace/suite_python_scripts/tst_i12_auto_peakfitting/workspace/data/examples/i12/36153.nxs")
-    calib.calibrate_elements(1, 24)
-    calib.report()
-    calib.full_report()
-    calib.print_report("/scratch/workspace/suite_python_scripts/tst_i12_auto_peakfitting/workspace/data/examples/i12/36153_TESTING_2014-04-23_calib_CeO2.txt")
-    # finally display the curve shown by the second parameter(could be useful)   
-    calib.display_parameters(1)
+print "Calibrating EDXD Q axis"
+calib = EDXDCalibrator("/scratch/workspace/suite_python_scripts/tst_i12_auto_peakfitting/workspace/data/examples/i12/36153.nxs")
+calib.calibrate_elements(1, 24)
+calib.report()
+calib.full_report()
+calib.print_report("/scratch/workspace/suite_python_scripts/tst_i12_auto_peakfitting/workspace/data/examples/i12/36153_TESTING_2014-04-23_calib_CeO2.txt")
+# finally display the curve shown by the second parameter(could be useful)   
+calib.display_parameters(1)
