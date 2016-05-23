@@ -15,11 +15,11 @@ def main():
     # On a test you may add test code here 
     #Open data browsing perspective
     openPerspective("Data Browsing (default)")
-    
+    snooze(0.5)
     expandObjectLeft(waitForObject(":Data_CTabItem_2"))
-    
+    snooze(0.5)
     openExternalFile("9758.nxs")
-
+    snooze(0.5)
     # Select image and zoom
     clickTab(waitForObject(":Data_CTabItem_2"), 30, 6, 0, Button.Button1)
     mouseClick(waitForObject(":Data_Text_2"), 47, 8, 0, Button.Button1)

@@ -15,11 +15,11 @@ def main():
     # On a test you may add test code here 
     #Open data browsing perspective
     openPerspective("Data Browsing (default)")
-    
+    snooze(0.5)
     expandObjectLeft(waitForObject(":Data_CTabItem_2"))
-    
+    snooze(0.5)
     openExternalFile("40788.nxs")
-    
+    snooze(0.5)
     
     # Exit (or disconnect) DAWN
     mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 6, 13, 0, Button.Button1)

@@ -15,11 +15,11 @@ def main():
     # On a test you may add test code here 
     #Open data browsing perspective
     openPerspective("Data Browsing (default)")
-    
+    snooze(0.5)
     expandObjectLeft(waitForObject(":Data_CTabItem_2"))
-    
+    snooze(0.5)
     openExternalFile("9758.nxs")
-    
+    snooze(0.5)
     type(waitForObject(":Data_Text_2"), "14/dat")
     mouseClick(waitForObjectItem(":Data_Table_2", "1/0"), 6, 13, 0, Button.Button1)
  

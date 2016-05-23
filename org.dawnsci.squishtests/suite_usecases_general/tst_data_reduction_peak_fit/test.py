@@ -13,11 +13,11 @@ def main():
     # On a test you may add test code here 
     #Open data browsing perspective
     openPerspective("Data Browsing (default)")
-    
+    snooze(0.5)
     expandObjectLeft(waitForObject(":Data_CTabItem_2"))
-
+    snooze(0.5)
     openExternalFile("9758.nxs")
-
+    snooze(0.5)
 
     chooseSlice()    
 
