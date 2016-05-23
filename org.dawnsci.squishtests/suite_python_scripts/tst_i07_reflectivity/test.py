@@ -82,11 +82,11 @@ def main():
     else:
         mouseClick(waitForObject(":Activates the interactive console. (Ctrl+Alt+Enter)_ToolItem_2"), 5, 11, 0, Button.Button1)
 
-    snooze(1)
+    snooze(2)
     
     #run the script the first time to send data to plot 1
     typeInConsole("rerefl(range(184476, 184477))")
-    snooze(0.5)
+    snooze(1)
     #test if first image is plotted
     system = getPlottingSystem("Plot 1")
     test.verify(system.getTraces().iterator().next().getData().getRank()==2, "Data plotted: Success")
