@@ -22,7 +22,7 @@ def main():
     test.verify ("0.9763" in child[2].text, "check cbf wavelength")
     
     mouseClick(waitForObjectItem(":Select calibrant:_Combo", "Cr2O3"))
-    clickButton(waitForObject(":Run Calibration.Finish with point calibration optimisation_Button"))
+#     clickButton(waitForObject(":Run Calibration.Finish with point calibration optimisation_Button"))
 
     clickButton(waitForObject(":Run Calibration.Run Calibration_Button"))
     
