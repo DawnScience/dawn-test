@@ -57,7 +57,7 @@ def main():
     snooze(1)
     #open console
     mouseClick(waitForObject(":Open Console_ToolItem"), 33, 11, 0, Button.Button1)
-    activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "4 PyDev Console"))
     clickButton(waitForObject(":Python console_Button"))
     clickButton(waitForObject(":OK_Button"))
     snooze(6)

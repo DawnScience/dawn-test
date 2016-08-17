@@ -18,7 +18,8 @@ def openPyDevConsole(type="Python"):
     # to detect the names of the existing consoles so that the new one can be detected  
     
     mouseClick(waitForSwtToolItem('Open Console'))
-    activateItem(waitForObjectItem(":Pop Up Menu", "5 PyDev Console"))
+    activateItem(waitForObjectItem(":Pop Up Menu", "4 PyDev Console"))
+    
     clickButton(waitForObject(":%s console_Button" % type))
     clickButton(waitForObject(":OK_Button"))
     
