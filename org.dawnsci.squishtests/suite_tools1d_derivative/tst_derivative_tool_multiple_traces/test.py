@@ -44,7 +44,7 @@ def main():
     #check plot
     conOb = waitForObject(":Configure Settings..._ToolItem")
     
-    check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_1_MAX,vals.METALMIX_1_MIN)
+    check_plotted_trace_name_yval(conOb,"Column_1","700.0","0.0")
     nameList = ["Column_1","Column_2","Column_3","Column_4",
                 "Column_1'","Column_2'","Column_3'","Column_4'",
                 "Column_1''","Column_2''","Column_3''","Column_4''"]
@@ -57,14 +57,14 @@ def main():
     
     conOb = waitForObject(":Configure Settings..._ToolItem_3")
     doubleClick(waitForObject(":Derivative View_CTabItem"), 82, 5, 0, Button.Button1)
-    check_plotted_trace_name_yval(conOb,"Column_1'",vals.METALMIX_1_DMAX,vals.METALMIX_1_DMIN)
+    check_plotted_trace_name_yval(conOb,"Column_1'","300.0","-300.0")
     #check_plotted_traces_names(conOb, nameList[4:8])
     
     #add data and check again
     mouseClick(waitForObject(":Original_ToolItem"))
     #mouseClick(waitForObject(":Derivative.Display Data_Button"), 25, 8, 0, Button.Button1)
     
-    check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_1_MAX,vals.METALMIX_1_DMIN)
+    check_plotted_trace_name_yval(conOb,"Column_1","700.0","-300.0")
     #check_plotted_traces_names(conOb, nameList[0:8])
     
     
@@ -72,7 +72,7 @@ def main():
     mouseClick(waitForObject(":Second_ToolItem"))
     #clickButton(waitForObject(":Derivative.Display f''(Data)_Button"))
     
-    check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_1_MAX,vals.METALMIX_1_DMIN)
+    check_plotted_trace_name_yval(conOb,"Column_1","700.0","-300.0")
     #check_plotted_traces_names(conOb, nameList)
     
     closeOrDetachFromDAWN()

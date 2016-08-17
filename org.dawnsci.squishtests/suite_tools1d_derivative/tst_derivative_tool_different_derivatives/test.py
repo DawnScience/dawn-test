@@ -45,7 +45,7 @@ def main():
     #check plot
     conOb = waitForObject(":Configure Settings..._ToolItem")
     
-    check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_1_MAX,vals.METALMIX_1_MIN)
+    check_plotted_trace_name_yval(conOb,"Column_1","700.0","0.0")
     
     nameList = ["Column_1","Column_2","Column_3","Column_4"]
     check_plotted_traces_names(conOb, nameList)
@@ -59,7 +59,7 @@ def main():
     
     doubleClick(waitForObject(":Derivative View_CTabItem"), 82, 5, 0, Button.Button1)
     
-    check_plotted_trace_name_yval(conOb,"Column_1'",vals.METALMIX_1_DMAX,vals.METALMIX_1_DMIN)
+    check_plotted_trace_name_yval(conOb,"Column_1'","300.0","-300.0")
     
     nameListDer = ["Column_1'","Column_2'","Column_3'","Column_4'"]
     check_plotted_traces_names(conOb, nameListDer)
@@ -69,7 +69,7 @@ def main():
     
     #check data
     mouseClick(waitForObject(":Original_ToolItem"))
-    check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_1_MAX,vals.METALMIX_1_MIN)
+    check_plotted_trace_name_yval(conOb,"Column_1","700.0",vals.METALMIX_1_MIN)
     check_plotted_traces_names(conOb, nameList)
     
     #uncheck, test no traces
@@ -78,7 +78,7 @@ def main():
     
     #check 1st der
     mouseClick(waitForObject(":First_ToolItem"))
-    check_plotted_trace_name_yval(conOb,"Column_1'",vals.METALMIX_1_DMAX,vals.METALMIX_1_DMIN)
+    check_plotted_trace_name_yval(conOb,"Column_1'","300.0","-300.0")
     check_plotted_traces_names(conOb, nameListDer)
     
     #uncheck, test no traces
@@ -88,7 +88,7 @@ def main():
     #check 2nd der
     mouseClick(waitForObject(":Second_ToolItem"))
     nameListDer2 = ["Column_1''","Column_2''","Column_3''","Column_4''"]
-    check_plotted_trace_name_yval(conOb,"Column_1''","200.0",vals.METALMIX_0_DMIN)
+    check_plotted_trace_name_yval(conOb,"Column_1''","150.0","-250.0")
     check_plotted_traces_names(conOb, nameListDer2)
     
     #uncheck, test no traces

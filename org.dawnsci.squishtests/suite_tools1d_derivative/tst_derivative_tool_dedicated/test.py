@@ -30,7 +30,7 @@ def main():
     
     #Check data has plotted by looking at graph settings
     conOb = waitForObject(":Configure Settings..._ToolItem")
-    check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_0_MAX,vals.METALMIX_0_MIN)
+    check_plotted_trace_name_yval(conOb,"Column_1","600.0","0.0")
     
     #Change to derivative and check again
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
@@ -42,7 +42,7 @@ def main():
     
     conOb = waitForObject(":Configure Settings..._ToolItem_4")
 
-    check_plotted_trace_name_yval(conOb,"Column_1'",vals.METALMIX_0_DMAX,vals.METALMIX_0_DMIN)
+    check_plotted_trace_name_yval(conOb,"Column_1'","250.0","-300.0")
     
     for child in children:
         if "MoKedge_1_15.dat" in child.text:
@@ -56,14 +56,14 @@ def main():
     
     mouseClick(waitForObject(":Derivative View_CTabItem"), 51, 7, 0, Button.Button1)
     conOb2 = waitForObject(":Configure Settings..._ToolItem_4")
-    check_plotted_trace_name_yval(conOb2, "ln(I0/It)'", "0.06", "-0.02")
+    check_plotted_trace_name_yval(conOb2, "ln(I0/It)'", "0.05", "-0.02")
     
     mouseClick(waitForObject(":Original_ToolItem_2"), 10, 14, 0, Button.Button1)
     mouseClick(waitForObject(":First_ToolItem_2"), 9, 11, 0, Button.Button1)
-    check_plotted_trace_name_yval(conOb2, "ln(I0/It)", "-1.5", "-3.0")
+    check_plotted_trace_name_yval(conOb2, "ln(I0/It)", "-1.3999999999999997", "-2.8")
 
     clickTab(waitForObject(":metalmix.mca_CTabItem"), 64, 5, 0, Button.Button1)
     
-    check_plotted_trace_name_yval(conOb,"Column_1'",vals.METALMIX_0_DMAX,vals.METALMIX_0_DMIN)
+    check_plotted_trace_name_yval(conOb,"Column_1'","250.0","-300.0")
 
     closeOrDetachFromDAWN()
