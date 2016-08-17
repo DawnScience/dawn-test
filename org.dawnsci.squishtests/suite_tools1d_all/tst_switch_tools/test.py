@@ -35,7 +35,7 @@ def the_actual_test(system):
     
     names = ["Column_3", "Peak 1"]
     check_plotted_traces_names(waitForObject(":Configure Settings..._ToolItem"), names)
-    check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"),"Column_3", "800.0","0.0")
+    check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"),"Column_3", "700.0","0.0")
     
     #Measure across peak
     mouseDragRegion(system)

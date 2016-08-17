@@ -47,7 +47,7 @@ def the_actual_test(system):
     #Check derivative tool has not reset
     
     check_plotted_traces_names_contains(waitForObject(":Configure Settings..._ToolItem"), names)
-    check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"),"Column_3", "800.0","0.0")
+    check_plotted_trace_name_yval(waitForObject(":Configure Settings..._ToolItem"),"Column_3", "700.0","0.0")
     
     #Measure across peak
     mouseDragRegion(system)
