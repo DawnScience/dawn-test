@@ -30,7 +30,7 @@ def main():
     
     #Check data has plotted by looking at graph settings
     conOb = waitForObject(":Configure Settings..._ToolItem")
-    check_plotted_trace_name_yval(conOb,"Column_1",vals.METALMIX_0_MAX,vals.METALMIX_0_MIN)
+    check_plotted_trace_name_yval(conOb,"Column_1","600.0","0.0")
     
     #Change to derivative and check again
     mouseClick(waitForObject(":XY plotting tools_ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
@@ -42,7 +42,7 @@ def main():
 
     doubleClick(waitForObject(":Derivative View_CTabItem"), 82, 5, 0, Button.Button1)
 
-    check_plotted_trace_name_yval(conOb, "Column_1'", vals.METALMIX_0_DMAX, vals.METALMIX_0_DMIN)
+    check_plotted_trace_name_yval(conOb, "Column_1'", "250.0", "-300.0")
 
     widget = waitForObject(":First_ToolItem")
     test.verify(widget.item.getSelection(), "Check Default Selection is 1st Derivative")
