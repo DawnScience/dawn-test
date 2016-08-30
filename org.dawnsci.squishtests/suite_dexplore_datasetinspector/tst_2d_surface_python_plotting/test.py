@@ -33,9 +33,11 @@ def main():
     snooze(5.0)
     
     #Open python console
-    datasetPlotViewMenu = getToolItemOfCTabFolder(cTabItemTooltipText="Dataset Plot", toolItemTooltipText="View Menu")
-    mouseClick(waitForObject(datasetPlotViewMenu))
-    activateItem(waitForObjectItem(":Pop Up Menu", "Open New Plot Scripting"))
+#     datasetPlotViewMenu = getToolItemOfCTabFolder(cTabItemTooltipText="Dataset Plot", toolItemTooltipText="View Menu")
+#     mouseClick(waitForObject(datasetPlotViewMenu))
+    clickTab(waitForObject(":Dataset Plot_CTabItem"), 44, 17, 0, Button.Button1)
+    mouseClick(waitForObject(":Open Pydev console_ToolItem"), 28, 10, 0, Button.Button1)
+    activateItem(waitForObjectItem(":Pop Up Menu", "Create new Pydev Console"))
     clickButton(waitForObject(":Python console_Button"))
     clickButton(waitForObject(":OK_Button"))
     snooze(10.0)
