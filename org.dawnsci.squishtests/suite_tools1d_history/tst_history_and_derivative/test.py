@@ -47,7 +47,7 @@ def main():
 #    conOb = waitForObject(":Configure Settings..._ToolItem_2")
 
     doubleClick(waitForObject(":Derivative View_CTabItem"), 59, 14, 0, Button.Button1)
-    check_plotted_trace_name_yval(conOb, "Column_1'", "300.0", "-300.0")
+    check_plotted_trace_name_yval(conOb, "Column_1'", "250.0", "-300.0")
     doubleClick(waitForObject(":Derivative View_CTabItem"), 59, 14, 0, Button.Button1)
     
     mouseClick(waitForObjectItem(":History_Table", "0/0"), 11, 15, 0, Button.Button1)
@@ -56,7 +56,7 @@ def main():
     #nameList = ['sum', 'ln(I0/It) (MoKedge_1_15.dat)', "Column_1 (metalmix.mca)", "Column_4 (metalmix.mca)"]
     #check_plotted_traces_names(conOb, nameList)
     doubleClick(waitForObject(":Derivative View_CTabItem"), 59, 14, 0, Button.Button1)
-    check_plotted_trace_name_yval(conOb,"Column_1'","600.0","-400.0")
+    check_plotted_trace_name_yval(conOb,"Column_1'","600.0","-300.0")
     doubleClick(waitForObject(":Derivative View_CTabItem"), 59, 14, 0, Button.Button1)
     
     mouseClick(waitForObject(":Add currently plotted plot(s) to history_ToolItem_3"), 16, 14, 0, Button.Button1)
