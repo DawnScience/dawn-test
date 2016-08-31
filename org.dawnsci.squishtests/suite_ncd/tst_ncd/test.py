@@ -15,15 +15,15 @@ def main():
     ncdFile = openExample("i22-104749.nxs", subfolder="saxs", findOnly=True)
     
     mouseClick(ncdFile, 5, 5, 0, Button.Button3)
-    activateItem(waitForObjectItem(":_Menu_2", "NCD"))
-    activateItem(waitForObjectItem(":NCD_Menu", "Read Detector Information"))
+    activateItem(waitForObjectItem(":_Menu_4", "NCD"))
+    activateItem(waitForObjectItem(":NCD_Menu_3", "Read Detector Information"))
     clickButton(waitForObject(":NCD Detector Parameters.SAXS_Button"))
     mouseClick(waitForObjectItem(":NCD Detector Parameters.SAXS_Combo", "Pilatus2M"), 7, 14, 0, Button.Button1)
     
     mouseClick(ncdFile, 5, 5, 0, Button.Button3)
     
-    activateItem(waitForObjectItem(":_Menu_2", "NCD"))
-    activateItem(waitForObjectItem(":NCD_Menu", "Load Calibration Image"))
+    activateItem(waitForObjectItem(":_Menu_4", "NCD"))
+    activateItem(waitForObjectItem(":NCD_Menu_3", "Load Calibration Image"))
     imageToolsMenu = waitForImageToolsMenu()
     mouseClick(waitForObject(imageToolsMenu), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Masking"))
@@ -137,8 +137,8 @@ def main():
     snooze(1)
     
     mouseClick(ncdFile, 5, 5, 0, Button.Button3)
-    activateItem(waitForObjectItem(":_Menu_2", "NCD"))
-    activateItem(waitForObjectItem(":NCD_Menu_2", "Run Data Reduction"))
+    activateItem(waitForObjectItem(":_Menu_4", "NCD"))
+    activateItem(waitForObjectItem(":NCD_Menu_3", "Run Data Reduction"))
     
     projExplore = waitForTreeWithItem("data")
     mouseClick(waitForObjectItem(projExplore, "examples"), 49, 5, 0, Button.Button1)
