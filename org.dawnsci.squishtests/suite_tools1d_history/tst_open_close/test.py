@@ -102,6 +102,6 @@ def main():
 
     mouseClick(waitForObject(":Clear history_ToolItem_2"))
     
-    check_plotted_trace_name_yval(conOb, "sum", "3.0E7", "0.0")
+    check_plotted_trace_name_yval(conOb, "sum", "3.0E7", "5000000.0")
     
     closeOrDetachFromDAWN()
