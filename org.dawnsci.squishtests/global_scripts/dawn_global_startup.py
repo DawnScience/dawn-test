@@ -112,8 +112,9 @@ def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=Fals
             xulfix=" -Dorg.eclipse.swt.browser.XULRunnerPath=/dls_sw/apps/xulrunner/64/xulrunner-1.9.2"
             usage=" -Dorg.dawnsci.usagedata.gathering.enabled=true -Dorg.dawnsci.usagedata.recording.ask=false"
             osgi_area=" -Dosgi.configuration.area=/tmp/squish/.dawn_osgi"
+            osgi_fx=" -Dosgi.framework.extensions=org.eclipse.fx.osgi"
         
-            vmArgs = mailto+xulfix+usage+osgi_area+" "+vmArgs
+            vmArgs = mailto+xulfix+usage+osgi_area+osgi_fx+" "+vmArgs
             
         # Expand the command
         cmd = "dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s --launcher.appendVmargs -vmargs %s" % (workspace, osgi_user_area, osgi_configuration_area, getSuiteName(), getTestName(), vmArgs)
@@ -133,15 +134,15 @@ def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=Fals
 
 
 def dismissWelcomeScreen():
-    #try:
+    try:
         # Usually
-     clickTab(waitForObject(":Welcome_CTabItem"), 10, 10, 0, Button.Button3)
-     activateItem(waitForObjectItem(":Pop Up Menu", "Close"))
-        
-    #except:
+        clickTab(waitForObject(":Welcome_CTabItem"), 10, 10, 0, Button.Button3)
+        activateItem(waitForObjectItem(":Pop Up Menu", "Close"))
+    except:
         # Sometimes with e4 or windows
-     #   mouseClick(waitForObject(":Welcome_CTabCloseBox"), 9, 9, 0, Button.Button1)
-     test.passes("dismissWelcomeScreen: Success")
+        mouseClick(waitForObject(":Welcome_CTabCloseBox"), 9, 9, 0, Button.Button1)
+
+    test.passes("dismissWelcomeScreen: Success")
 
 #Wrapper to correct typo.
 def dismissWelcomScreen():
