@@ -30,7 +30,7 @@ def main():
     # load the peema file folder
 
     clickButton(waitForObject(":Images location_Button"))
-    if (_platform == "linux"):
+    if (_platform == "linux" or _platform == "linux2"):
         chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/peema")
     elif(_platform == "win32"):
         chooseDirectory(waitForObject(":SWT"), "C:\\scratch\\workspace\\suite_peema\\tst_peema_dichroism\\workspace\\data\\examples\\peema")
@@ -80,13 +80,13 @@ def main():
     
     snooze(2)
     #check if file exist
-    if (_platform == "linux"):
+    if (_platform == "linux" or _platform == "linux2"):
         exist = os.path.isfile("/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/processing/dawn/d_peema.jpg")
     elif (_platform == "win32"):
         exist = os.path.exists("C:\\scratch\\workspace\\suite_peema\\tst_peema_dichroism\\workspace\\data\\examples\\processing\\dawn\\d_peema.jpg")
 
     test.verify(exist == True)
-    if (_platform == "linux"):
+    if (_platform == "linux" or _platform == "linux2"):
         exist = os.path.isfile("/scratch/workspace/suite_peema/tst_peema_dichroism/workspace/data/examples/processing/dawn/d_peema.tif")
     elif (_platform == "win32"):
         exist = os.path.exists("C:\\scratch\\workspace\\suite_peema\\tst_peema_dichroism\\workspace\\data\\examples\\processing\\dawn\\d_peema.tif")

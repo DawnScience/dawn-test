@@ -29,7 +29,7 @@ def main():
 
     # load the peema file folder
     clickButton(waitForObject(":Images location_Button"))
-    if (_platform == "linux"):
+    if (_platform == "linux" or _platform == "linux2"):
         chooseDirectory(waitForObject(":SWT"), "/scratch/workspace/suite_peema/tst_peema_stitch/workspace/data/examples/98950_UViewImage")
     elif(_platform == "win32"):
         chooseDirectory(waitForObject(":SWT"), "C:\\scratch\\workspace\\suite_peema\\tst_peema_stitch\\workspace\\data\\examples\\98950_UViewImage")
@@ -72,7 +72,7 @@ def main():
     system = getPlottingSystem("Stitched")
     width = system.getTraces().iterator().next().getData().getShape().at(0)
     height = system.getTraces().iterator().next().getData().getShape().at(1)
-    if (_platform == "linux"):
+    if (_platform == "linux" or _platform == "linux2"):
         test.verify(width==1053.0, "width expected: 1053.0, Actual: "+ str(width))
         test.verify(height==957.0, "height expected: 957.0, Actual: "+ str(height))
     elif (_platform == "win32"):
