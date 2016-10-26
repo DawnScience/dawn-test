@@ -15,7 +15,7 @@ def main():
     openPerspective("Data Browsing (default)")
     vals = dawn_constants
     snooze(5)
-    openAndClearErrorLog()
+    #openAndClearErrorLog()
     
     openExample("001.img")
     snooze(1)
@@ -50,6 +50,6 @@ def main():
     test.verify(tArray.at(0).getName() == "X Profile 1", "verify trace name")
     test.verify(tArray.at(1).getName() == "Y Profile 1", "verify trace name")
     
-    verifyAndClearErrorLog()
+    #verifyAndClearErrorLog()
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()

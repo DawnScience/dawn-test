@@ -16,7 +16,7 @@ def main():
     openPerspective("Data Browsing (default)")
     
     snooze(5)
-    openAndClearErrorLog()
+    #openAndClearErrorLog()
     
     openExample("001.img")
     snooze(1)
@@ -78,7 +78,7 @@ def main():
     test.verify(waitForObject(":Select Trace_Combo_2").text == "Zoom 1","Test Zoom trace present")
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     
-    verifyAndClearErrorLog()
+    #verifyAndClearErrorLog()
     # Exit (or disconnect) DAWN
 
     closeOrDetachFromDAWN()
