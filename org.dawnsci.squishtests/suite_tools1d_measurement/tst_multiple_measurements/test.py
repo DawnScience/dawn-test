@@ -36,7 +36,7 @@ def main():
     #DRAW ONE
     tab = waitForObject(":Measurement_Table")
     #starts with one empty item
-    test.verify(tab.getItemCount()==1,"table empty")
+    test.verify(tab.getItemCount()==0,"table empty")
     
     c = waitForObject(":Plot_Composite")
     b = c.bounds
