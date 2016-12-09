@@ -71,7 +71,7 @@ def main():
     
     snooze(1)
     #test align with hessian transform buttons
-    clickButton(waitForObject(":Circular Dichroism.With affine transformation_Button"))
+    clickButton(waitForObject(":Circular Dichroism.With Hessian registration_Button"))
     clickButton(waitForObject(":Circular Dichroism.Align_Button"))
     snooze(3.5)
     #test saving

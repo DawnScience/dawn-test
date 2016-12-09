@@ -35,7 +35,9 @@
 :Circular Dichroism.- _Button	{caption='- ' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Circular Dichroism.2_Button	{caption='2' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Circular Dichroism.Align_Button	{caption='Align' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Circular Dichroism.Image Alignment_Group	{caption='Image Alignment' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Circular Dichroism.Shifts _Button	{caption='Shifts ' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Circular Dichroism.With Hessian registration_Button	{caption='With Hessian registration' container=':Circular Dichroism.Image Alignment_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Circular Dichroism.With ROI_Button	{caption='With ROI' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Circular Dichroism.With affine transformation_Button	{caption='With affine transformation' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Clear Console_ToolItem	{caption='Clear Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
