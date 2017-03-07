@@ -50,7 +50,7 @@
 :Configure Graph Settings.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings_Composite	{isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings_Shell	{caption='Configure Graph Settings' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
-:Configure Settings..._ToolItem	{caption='Configure Settings...' container=':Plot_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
+:Configure Settings..._ToolItem	{caption='Configure Settings...' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Configure Settings..._ToolItem_2	{caption='Configure Settings...' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Configure Settings..._ToolItem_3	{caption='Configure Settings...' container=':Image_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :Configure Settings..._ToolItem_4	{caption='Configure Settings...' container=':Plot_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
