@@ -31,10 +31,19 @@
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_ErrorLog' type='org.eclipse.swt.widgets.ToolItem'}
 :Detector_TreeItem	{caption='Detector' container=':Diffraction_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :Detector_TreeItem_2	{caption='Detector' container=':Powder Diffraction_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:Diffraction Calibration Controls.Find Rings_Button	{caption='Find Rings' container=':Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Diffraction Calibration Controls.Manual_Button	{caption='Manual' container=':Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Diffraction Calibration Controls.Select calibrant:_Group	{caption='Select calibrant:' container=':Powder Calibration - DAWN Science - C:\\\\scratch\\\\workspace\\\\suite_powder_calibration\\\\tst_basic\\\\workspace.Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Diffraction Calibration Controls.Select calibrant:_Group_2	{caption='Select calibrant:' container=':Powder Calibration - DAWN Science - C:\\\\scratch\\\\workspace\\\\suite_powder_calibration\\\\tst_manual\\\\workspace.Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
+:Diffraction Calibration Controls.Select calibrant:_Group_3	{caption='Select calibrant:' container=':Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Diffraction Calibration Controls_Button	{arrowDirection='SWT.LEFT' caption='' container=':Powder Calibration - DAWN Science - C:\\\\scratch\\\\workspace\\\\suite_powder_calibration\\\\tst_manual\\\\workspace.Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Diffraction Calibration Controls_Button_2	{arrowDirection='SWT.LEFT' caption='' container=':Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Diffraction Calibration Controls_Button_3	{arrowDirection='SWT.RIGHT' caption='' container=':Diffraction Calibration Controls_CTabItem' isvisible='true' leftWidget=':Diffraction Calibration Controls_Label_2' type='org.eclipse.swt.widgets.Button'}
+:Diffraction Calibration Controls_Button_4	{arrowDirection='SWT.UP' caption='' container=':Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Diffraction Calibration Controls_Button_5	{aboveWidget=':Diffraction Calibration Controls_Label_2' arrowDirection='SWT.DOWN' caption='' container=':Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Diffraction Calibration Controls_CTabItem	{caption='Diffraction Calibration Controls' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Diffraction Calibration Controls_Label	{caption='' container=':Powder Calibration - DAWN Science - C:\\\\scratch\\\\workspace\\\\suite_powder_calibration\\\\tst_manual\\\\workspace.Diffraction Calibration Controls_CTabItem' isvisible='true' leftWidget=':Diffraction Calibration Controls_Button' type='org.eclipse.swt.widgets.Label'}
+:Diffraction Calibration Controls_Label_2	{caption='' container=':Diffraction Calibration Controls_CTabItem' isvisible='true' leftWidget=':Diffraction Calibration Controls_Button_2' type='org.eclipse.swt.widgets.Label'}
 :Diffraction Calibration View.Run Calibration_Group	{caption='Run Calibration' container=':Diffraction Calibration View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Diffraction Calibration View.Select calibrant:_Group	{caption='Select calibrant:' container=':Diffraction Calibration View_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Diffraction Calibration View_CTabItem	{caption='Diffraction Calibration View' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -137,7 +146,7 @@
 :Run Calibration.Finish with point calibration optimisation_Button	{caption='Point calibration' container=':Powder Calibration - DAWN Science - C:\\\\scratch\\\\workspace\\\\suite_powder_calibration\\\\tst_basic\\\\workspace.Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Run Calibration.Manual_Button	{caption='Manual' container=':Powder Calibration - DAWN Science - C:\\\\scratch\\\\workspace\\\\suite_powder_calibration\\\\tst_manual\\\\workspace.Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Run Calibration.Match rings to image_Button	{caption='Find Rings' container=':Powder Calibration - DAWN Science - C:\\\\scratch\\\\workspace\\\\suite_powder_calibration\\\\tst_manual\\\\workspace.Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
-:Run Calibration.Run Calibration_Button	{caption='Run Calibration' container=':Powder Calibration - DAWN Science - C:\\\\scratch\\\\workspace\\\\suite_powder_calibration\\\\tst_manual\\\\workspace.Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
+:Run Calibration.Run Calibration_Button	{caption='Run Calibration' container=':Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Run Calibration.Use point parameters_Button	{caption='Point calibration' container=':Powder Calibration - DAWN Science - C:\\\\scratch\\\\workspace\\\\suite_powder_calibration\\\\tst_manual\\\\workspace.Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Run Calibration_Button	{arrowDirection='SWT.UP' caption='' container=':Powder Calibration - DAWN Science - C:\\\\scratch\\\\workspace\\\\suite_powder_calibration\\\\tst_manual\\\\workspace.Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Run Calibration_Button_2	{arrowDirection='SWT.LEFT' caption='' container=':Powder Calibration - DAWN Science - C:\\\\scratch\\\\workspace\\\\suite_powder_calibration\\\\tst_manual\\\\workspace.Diffraction Calibration Controls_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
@@ -154,7 +163,7 @@
 :Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse_ToolItem	{caption='Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse_ToolItem_2	{caption='Select 3 or 4 points on ring to fit a circle or 5 points or more for an ellipse' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :Select Trace_Combo	{container=':Traces.Select Trace_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
-:Select calibrant:_Combo	{container=':Diffraction Calibration Controls.Select calibrant:_Group_2' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
+:Select calibrant:_Combo	{container=':Diffraction Calibration Controls.Select calibrant:_Group_3' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
 :Show View.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Show View_Shell'}
 :Show View_Menu	{caption='Show View' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Show View_Shell	{caption='Show View' isvisible='true' type='org.eclipse.swt.widgets.Shell'}

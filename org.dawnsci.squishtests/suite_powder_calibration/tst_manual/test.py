@@ -30,17 +30,15 @@ def main():
     yText = object.children(wid)[2].text
     test.verify ("1223.32" in yText, "check cbf y")
     
-    clickButton(waitForObject(":Run Calibration.Manual_Button"))
-    
-    clickButton(waitForObject(":Run Calibration_Button"))
-    clickButton(waitForObject(":Run Calibration_Button"))
-    clickButton(waitForObject(":Run Calibration_Button"))
-    clickButton(waitForObject(":Run Calibration_Button_3"))
-    clickButton(waitForObject(":Run Calibration_Button_3"))
-    clickButton(waitForObject(":Run Calibration_Button_3"))
-    
+    clickButton(waitForObject(":Diffraction Calibration Controls.Manual_Button"))
+
     snooze(0.5)
     
+    clickButton(waitForObject(":Diffraction Calibration Controls_Button_3"))
+    clickButton(waitForObject(":Diffraction Calibration Controls_Button_3"))
+    clickButton(waitForObject(":Diffraction Calibration Controls_Button_4"))
+    clickButton(waitForObject(":Diffraction Calibration Controls_Button_4"))
+
     wid1 = waitForObject(":X_TreeItem_2")
     xText1 = object.children(wid1)[2].text
     test.verify (not (xText1 in xText), "check cbf x")
@@ -48,15 +46,13 @@ def main():
     yText1 = object.children(wid1)[2].text
     test.verify (not (yText1 in yText), "check cbf y")
     
-    clickButton(waitForObject(":Run Calibration_Button_4"))
-    clickButton(waitForObject(":Run Calibration_Button_4"))
-    clickButton(waitForObject(":Run Calibration_Button_4"))
-    clickButton(waitForObject(":Run Calibration_Button_2"))
-    clickButton(waitForObject(":Run Calibration_Button_2"))
-    clickButton(waitForObject(":Run Calibration_Button_2"))
-    
     snooze(0.5)
     
+    clickButton(waitForObject(":Diffraction Calibration Controls_Button_5"))
+    clickButton(waitForObject(":Diffraction Calibration Controls_Button_5"))
+    clickButton(waitForObject(":Diffraction Calibration Controls_Button_2"))
+    clickButton(waitForObject(":Diffraction Calibration Controls_Button_2"))
+
     wid2 = waitForObject(":X_TreeItem_2")
     xText1 = object.children(wid2)[2].text
     test.verify (xText1 in xText, "check cbf x")
@@ -64,16 +60,7 @@ def main():
     yText1 = object.children(wid2)[2].text
     test.verify (yText1 in yText, "check cbf y")
     
-    clickButton(waitForObject(":Run Calibration_Button_5"))
-    clickButton(waitForObject(":Run Calibration_Button_5"))
-    clickButton(waitForObject(":Run Calibration_Button_5"))
-    clickButton(waitForObject(":Run Calibration_Button_6"))
-    clickButton(waitForObject(":Run Calibration_Button_6"))
-    clickButton(waitForObject(":Run Calibration_Button_6"))
-    
-    clickButton(waitForObject(":Run Calibration.Use point parameters_Button"))
-    clickButton(waitForObject(":Run Calibration.Match rings to image_Button"))
-
+    clickButton(waitForObject(":Diffraction Calibration Controls.Find Rings_Button"))
 
     i = 0
     while object.exists(":Progress Information.Cancel_Button") and i < 20:
