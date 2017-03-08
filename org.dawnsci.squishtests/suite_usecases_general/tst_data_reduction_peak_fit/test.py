@@ -15,6 +15,7 @@ def main():
     openPerspective("Data Browsing (default)")
     snooze(0.5)
     expandObjectLeft(waitForObject(":Data_CTabItem_2"))
+    clickTab(waitForObject(":Project Explorer_CTabItem_2"), 93, 16, 0, Button.Button1)
     snooze(0.5)
     openExternalFile("9758.nxs")
     snooze(0.5)
