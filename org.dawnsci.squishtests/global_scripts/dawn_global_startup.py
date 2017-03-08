@@ -205,13 +205,14 @@ def expandObjectLeft(part, amount=24):
         
         for i in range(0,amount):
             type(waitForObject(":_Sash"), "<Left>")
-            
+        
+        clickTab(part, 45, 14, 0, Button.Button1)
     except:
         # Eclipse 4
         #clickTab(part, 30, 14, 0, Button.Button1)
         #c = waitForObject(":_Composite")
         #mouseDrag(c, 0, 0, amount*5, 0, Button.Button1)
-        
+        clickTab(part, 45, 14, 0, Button.Button1)
         # It seems that moving the view to the left is not as needed in e4 anyway
         # because the full screen works better with view ratios
         test.warning("Unable to expand part left. Version might be e4 based!")
