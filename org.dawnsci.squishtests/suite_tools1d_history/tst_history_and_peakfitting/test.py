@@ -45,7 +45,7 @@ def main():
     clickTab(waitForObject(":History_CTabItem"), 30, 18, 0, Button.Button1)
 
     clickTab(waitForObject(":metalmix.mca_CTabItem"), 91, 16, 0, Button.Button1)
-    mouseClick(waitForObject(":XY plotting tools_ToolItem_4"), 27, 12, 0, Button.Button1)
+    mouseClick(waitForObject(":XY plotting tools_ToolItem_4"),vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Maths and Fitting"))
     snooze(1)
     activateItem(waitForObjectItem(":Maths and Fitting_Menu_2", "Peak Fitting"))
