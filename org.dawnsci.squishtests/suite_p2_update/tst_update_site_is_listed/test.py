@@ -3,7 +3,7 @@ source(findFile("scripts", "use_case_utils.py"))
 source(findFile("scripts", "dawn_constants.py"))
 
 def main():
-    startOrAttachToDAWN(copy_configuration_and_p2=True)
+    startOrAttachToDAWN()
 
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
