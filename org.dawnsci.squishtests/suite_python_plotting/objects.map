@@ -145,6 +145,7 @@
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Preferences.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Auto Config_Button	{caption='Advanced Auto-Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
+:Preferences.Automatic parentheses insertion_Button	{caption='Automatic parentheses insertion' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Available label decorations:_Label	{caption='Available label decorations:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Preferences_Shell'}
 :Preferences.Available label decorations:_Table	{aboveWidget=':Preferences.Available label decorations:_Label' isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Preferences_Shell'}
 :Preferences.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
@@ -157,6 +158,8 @@
 :Preferences.Python interpreters (e.g.: python.exe)_Label	{caption='Python interpreters (e.g.: python.exe)' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Preferences_Shell'}
 :Preferences.Python interpreters (e.g.: python.exe)_Tree	{aboveWidget=':Preferences.Python interpreters (e.g.: python.exe)_Label' isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
 :Preferences.Quick Auto-Config_Button	{caption='Quick Auto-Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
+:Preferences.Use code completion on debug console sessions?_Button	{caption='Use code completion on debug console sessions?' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
+:Preferences.Use code completion?_Button	{caption='Use code completion?' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences_Composite	{isvisible='true' occurrence='17' type='org.eclipse.swt.widgets.Composite' window=':Preferences_Shell'}
 :Preferences_Shell	{caption='Preferences' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Preferences_Shell_2	{caption='Preferences' isvisible='false' type='org.eclipse.swt.widgets.Shell'}

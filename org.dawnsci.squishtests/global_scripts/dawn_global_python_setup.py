@@ -66,8 +66,20 @@ def setupPython(needScipy = False):
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
     expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
+    # turn off automatic parentheses insertion as it plays havoc with the type commands
+    expand(waitForObjectItem(":Preferences_Tree", "Editor"))
+    mouseClick(waitForObjectItem(":Preferences_Tree", "Typing"))
+    clickButton(waitForObject(":Preferences.Automatic parentheses insertion_Button"))
+
+    # turn off all code completion too
+    mouseClick(waitForObjectItem(":Preferences_Tree", "Code Completion"))
+    clickButton(waitForObject(":Preferences.Use code completion?_Button"))
+    clickButton(waitForObject(":Preferences.Use code completion on debug console sessions?_Button"))
+    clickButton(waitForObject(":Preferences.Apply_Button"))
+
     expand(waitForObjectItem(":Preferences_Tree", "Interpreters"))
     mouseClick(waitForObjectItem(":Preferences_Tree", "Python Interpreter"))
+    
     clickButton(waitForObject(":Preferences.Auto Config_Button"))
     
     # Wait for auto config list to come up
