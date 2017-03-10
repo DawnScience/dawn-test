@@ -47,7 +47,10 @@ def main():
     snooze(1)
     #test jexlexpression
     clickTab(waitForObject(":Data_CTabItem_2"), 31, 7, 0, Button.Button1)
-    mouseClick(waitForObject(":Adds an expression which can be plotted. Must be function of other data sets._ToolItem"), 6, 10, 0, Button.Button1)
+
+
+    mouseClick(waitForObject(":Adds an expression which can be plotted. Must be function of other data sets._ToolItem_2"), 19, 16, 0, Button.Button1)
+#     mouseClick(waitForObject(":Adds an expression which can be plotted. Must be function of other data sets._ToolItem"), 6, 10, 0, Button.Button1)
     type(waitForObject(":Data_Text"), "im:")
     type(waitForObject(":Data_Text"), "rotate(ADSC_Image, 45, false)")
     type(waitForObject(":Data_Text"), "<Return>")

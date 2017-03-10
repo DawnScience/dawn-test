@@ -29,6 +29,7 @@ def main():
     proxy  = waitForObject(":9758.nxs_CTabItem")
     widget = proxy.control
     b = widget.bounds
+    snooze(0.5)
     mouseDrag(widget, b.x+100, b.y+100, 300, 300, 0, Button.Button1)
     snooze(10) # While fit...
 
