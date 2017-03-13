@@ -68,8 +68,8 @@ def setupPyDev():
     expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
     # turn off automatic parentheses insertion as it plays havoc with the type commands
     expand(waitForObjectItem(":Preferences_Tree", "Editor"))
-    mouseClick(waitForObjectItem(":Preferences_Tree", "Typing"))
-    clickButton(waitForObject(":Preferences.Automatic parentheses insertion_Button"))
+#     mouseClick(waitForObjectItem(":Preferences_Tree", "Typing"))
+#     clickButton(waitForObject(":Preferences.Automatic parentheses insertion_Button"))
 
     # turn off all code completion too
     mouseClick(waitForObjectItem(":Preferences_Tree", "Code Completion"))
