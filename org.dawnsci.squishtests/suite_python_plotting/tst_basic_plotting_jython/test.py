@@ -12,7 +12,8 @@ def main():
     #space for the console
     startOrAttachToDAWN()
     openPerspective("Python")
-    
+    setupPyDev()
+
     #Get the plotting system and open a Jython console
     system = getPlottingSystem("Plot 1")
     openPyDevConsole(type="Jython")

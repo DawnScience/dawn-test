@@ -5,7 +5,7 @@ import subprocess
 
 #This is a wrapper to catch typos
 def openPydevConsole(type="Python"):
-	openPyDevConsole(type)
+    openPyDevConsole(type)
 
 def openPyDevConsole(type="Python"):
     ''' Open a PyDev console waiting for the console to be fully open.
@@ -61,7 +61,7 @@ def _finishPythonSetup():
     # On windows vm this can take forever! So wait 300 seconds
     waitForObject(":Workbench Window", 300000)
 
-def setupPython(needScipy = False):
+def setupPyDev():
     waitForObject(":Workbench Window")
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
@@ -74,9 +74,15 @@ def setupPython(needScipy = False):
     # turn off all code completion too
     mouseClick(waitForObjectItem(":Preferences_Tree", "Code Completion"))
     clickButton(waitForObject(":Preferences.Use code completion?_Button"))
-    clickButton(waitForObject(":Preferences.Use code completion on debug console sessions?_Button"))
     clickButton(waitForObject(":Preferences.Apply_Button"))
+    clickButton(waitForObject(":Preferences.OK_Button"))
 
+def setupPython(needScipy = False):
+    setupPyDev()
+    waitForObject(":Workbench Window")
+    activateItem(waitForObjectItem(":_Menu", "Window"))
+    activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
+    expand(waitForObjectItem(":Preferences_Tree", "PyDev"))
     expand(waitForObjectItem(":Preferences_Tree", "Interpreters"))
     mouseClick(waitForObjectItem(":Preferences_Tree", "Python Interpreter"))
     

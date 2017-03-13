@@ -71,9 +71,9 @@ def plotting_script_test(system):
     
     snooze(1)
     
-    clickTab(waitForObject(":test_plot_CTabItem"), 54, 11, 0, Button.Button1)
+    clickTab(waitForObject(":test_plot_CTabItem"))
     snooze(1)
-    mouseClick(waitForObject(":Activates the interactive console. (Ctrl+Alt+Enter)_ToolItem"), 18, 16, 0, Button.Button1)
+    mouseClick(waitForObject(":Activates the interactive console. (Ctrl+Alt+Enter)_ToolItem"))
     snooze(1)
     
     regs = system.getRegions()

@@ -158,7 +158,6 @@
 :Preferences.Python interpreters (e.g.: python.exe)_Label	{caption='Python interpreters (e.g.: python.exe)' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Preferences_Shell'}
 :Preferences.Python interpreters (e.g.: python.exe)_Tree	{aboveWidget=':Preferences.Python interpreters (e.g.: python.exe)_Label' isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
 :Preferences.Quick Auto-Config_Button	{caption='Quick Auto-Config' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
-:Preferences.Use code completion on debug console sessions?_Button	{caption='Use code completion on debug console sessions?' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Use code completion?_Button	{caption='Use code completion?' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences_Composite	{isvisible='true' occurrence='17' type='org.eclipse.swt.widgets.Composite' window=':Preferences_Shell'}
 :Preferences_Shell	{caption='Preferences' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
