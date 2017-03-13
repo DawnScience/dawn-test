@@ -78,7 +78,7 @@ def setupPyDev():
     clickButton(waitForObject(":Preferences.OK_Button"))
 
 def setupPython(needScipy = False):
-    setupPyDev()
+#     setupPyDev()
     waitForObject(":Workbench Window")
     activateItem(waitForObjectItem(":_Menu", "Window"))
     activateItem(waitForObjectItem(":Window_Menu", "Preferences"))
