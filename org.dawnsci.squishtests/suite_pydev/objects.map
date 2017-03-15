@@ -1,4 +1,3 @@
-:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :*Untitled 1_CTabItem	{caption='*Untitled 1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
 :*ipython_edit_2Y2FHA_CTabItem	{caption='*ipython_edit_2Y2FHA' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -37,9 +36,10 @@
 :Confirm Delete_Shell	{caption='Confirm Delete' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
-:Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Console_CTabItem	{caption='Console' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Console_CTabItem_2	{caption='Console' occurrence='1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Console_ScriptConsoleViewer$ScriptConsoleStyledText	{container=':Console_CTabItem_2' isvisible='true' type='org.python.pydev.shared_interactive_console.console.ui.internal.ScriptConsoleViewer$ScriptConsoleStyledText'}
+:Console_StyledText	{basetype='org.eclipse.swt.custom.StyledText' container=':Console_CTabItem_2' isvisible='true'}
 :Continue_ToolItem	{caption='Continue' container=':_ToolBar_7' type='org.eclipse.swt.widgets.ToolItem'}
 :Create new profile._ToolItem	{caption='Create new profile' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Data reduction..._ToolItem	{caption='Data reduction...' container=':Data_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
@@ -70,10 +70,8 @@
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Finish_Button_2	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
 :Globals_TreeItem	{caption='Globals' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}
-:Go to Line.Enter line number (1..6):_Label	{caption='Enter line number (1..6):' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Go to Line_Shell'}
-:Go to Line.Enter line number (1..6):_Text	{aboveWidget=':Go to Line.Enter line number (1..6):_Label' isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Go to Line_Shell'}
-:Go to Line.Enter line number ...:_Label	{caption?='Enter line number *:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Go to Line_Shell'}
-:Go to Line.Enter line number ...:_Text	{aboveWidget=':Go to Line.Enter line number ...:_Label' isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Go to Line_Shell'}
+:Go to Line.Enter line number_Label	{caption?='Enter line number*' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Go to Line_Shell'}
+:Go to Line.Enter line number_Text	{aboveWidget=':Go to Line.Enter line number_Label' isvisible='true' type='org.eclipse.swt.widgets.Text' window=':Go to Line_Shell'}
 :Go to Line.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Go to Line_Shell'}
 :Go to Line_Shell	{caption='Go to Line' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :I accept the terms of the license agreement_Button	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
@@ -118,6 +116,7 @@
 :Peak Fitting_CTabItem	{caption='Peak Fitting' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Peak Fitting_Link	{container=':Peak Fitting_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Link'}
 :Peak Fitting_Table	{container=':Peak Fitting_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plot data as separate plots_ToolItem	{caption='Plot data as separate plots' container=':Plot_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :Plot_ToolBar	{container=':metalmix.mca.Plot_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
@@ -277,7 +276,7 @@
 :_Text	{isvisible='true' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
 :_ToolBar	{container=':_CTabFolder' firstItemText~='(Pin Console|Terminate current console|Clear Console)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_10	{container=':_CTabFolder_7' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:_ToolBar_11	{firstItemText='Skip All Breakpoints' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_11	{firstItemText='Skip All Breakpoints (Ctrl+Alt+B)' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{container=':_CTabFolder_4' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
@@ -287,7 +286,7 @@
 :_ToolBar_8	{firstItemText='New' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_9	{firstItemText='Debug' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':WizardDialog_Shell'}
-:debug_console_CTabItem	{caption='debug_console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:debug_console_CTabItem	{caption='debug_console' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :debug_console_StyledTextWithoutVerticalBar	{container=':debug_console_CTabItem' isvisible='true' type='org.python.pydev.overview_ruler.StyledTextWithoutVerticalBar'}
 :directory_packing_example.moml.Edit_CTabItem	{caption='Edit' container=':directory_packing_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :directory_packing_example.moml_CTabCloseBox	{container=':directory_packing_example.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}

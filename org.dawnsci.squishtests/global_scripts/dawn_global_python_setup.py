@@ -141,14 +141,14 @@ def setPyDevPref_ConnectToDebugSession(connect=True):
     clickButton(waitForObject(":Preferences.OK_Button"))
 
 
-def toggleBreakpointAtLine(line):
+def toggleBreakpointAtLine(bar, line):
     ''' Toggle the breakpoint at the given line number of the active file.
         Note this requires <Ctrl+Shift+b> to respond which does not work
         in all perspectives. e.g. Debug is a good one '''
-    type(waitForObject(":Workbench Window"), "<Ctrl+l>")
-    type(waitForObject(":Go to Line.Enter line number ...:_Text"), str(line))
+    type(waitForObject(bar), "<Ctrl+l>")
+    type(waitForObject(":Go to Line.Enter line number_Text"), str(line))
     clickButton(waitForObject(":Go to Line.OK_Button"))
-    type(waitForObject(":Workbench Window"), "<Ctrl+Shift+b>")
+    type(waitForObject(bar), "<Ctrl+Shift+b>")
 
 def getVariableNames():
     ''' Return a set of all the variable names visible in the Variables view
