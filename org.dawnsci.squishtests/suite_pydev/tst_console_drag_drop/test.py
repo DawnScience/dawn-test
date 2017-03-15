@@ -1,6 +1,7 @@
 source(findFile("scripts", "dawn_global_startup.py"))
 source(findFile("scripts", "dawn_global_python_setup.py"))
 
+# FIXME this will not run with PyDev 5.5 as the variables view is empty when debug with console
 def main():
     startOrAttachToDAWN()
     setupPython()
@@ -28,7 +29,7 @@ def main():
     if got.endswith(expected):
         test.verify(True, "Variable dropped successfully and printed expected value")
     else:
-    	test.fail("Console had unexpected text, Expected endswith '%s', got '%s'" % (expected, got))
+        test.fail("Console had unexpected text, Expected endswith '%s', got '%s'" % (expected, got))
 
     closeOrDetachFromDAWN()
 

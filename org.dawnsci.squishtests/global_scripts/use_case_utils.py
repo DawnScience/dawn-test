@@ -174,7 +174,7 @@ def getPlottingSystem(name):
         cTabCloseButton = None
         for c in cTabChildren:
             if "CTabCloseBox" in c["class"]:
-                 cTabCloseButton = c
+                cTabCloseButton = c
         if cTabCloseButton is None:
             raise Exception("No close button found!")
         
