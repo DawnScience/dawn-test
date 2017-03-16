@@ -24,7 +24,7 @@ def main():
     openPerspective("Python") 
     
     openPyDevConsole(type="Jython")
-     #expand data tree and open metal mix
+    #expand data tree and open metal mix
     expand(waitForObjectItem(":PyDev Package Explorer_Tree", "data"))
     expand(waitForObjectItem(":PyDev Package Explorer_Tree", "examples"))
     expand(waitForObjectItem(":PyDev Package Explorer_Tree", "i12"))
@@ -46,7 +46,7 @@ def main():
     #change y-axis to log
     mouseClick(waitForObject(":Configure Settings..._ToolItem_4"), 7, 10, 0, Button.Button1)
     clickTab(waitForObject(":Configure Graph Settings.Axes_TabItem"))
-    mouseClick(waitForObjectItem(":Select Axis_Combo", "Line 0(Y-Axis)"), 0, 0, 0, Button.NoButton)
+    mouseClick(waitForObjectItem(":Select Axis_Combo", "Y-Axis(Y-Axis)"), 0, 0, 0, Button.NoButton)
     clickButton(waitForObject(":Change Settings.Log_Button"))
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     
