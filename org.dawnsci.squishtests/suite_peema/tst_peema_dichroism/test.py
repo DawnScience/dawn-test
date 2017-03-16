@@ -54,14 +54,15 @@ def main():
     system = getPlottingSystem("Positive")
     test.verify(system.getTraces().size()==1)
     
+
+
     snooze(2)
     #Run the align process after having created a region of interest
     #    vals = dawn_constants
-    clickButton(waitForObject(":Circular Dichroism.With ROI_Button"))
-    clickButton(waitForObject(":Circular Dichroism.Align_Button"))
+    clickButton(waitForObject(":Image Alignment.Align_Button"))
     mouseDrag(waitForObject(":Image Alignment.\rSelect a region of interest common to all images in the stack and press OK.\r_Scale"), 17, 22, 25, -11, Modifier.None, Button.Button1)
     clickButton(waitForObject(":Image Alignment.OK_Button"))
-    snooze(2) # While fit..
+    snooze(2) # While aligning..
     
     mouseDrag(waitForObject(":Live Plot Control.Original Data_Scale"), 19, 23, -4, 15, Modifier.None, Button.Button1)
     
@@ -70,10 +71,6 @@ def main():
     test.verify(system.getTraces().size()==1)
     
     snooze(1)
-    #test align with hessian transform buttons
-    clickButton(waitForObject(":Circular Dichroism.With Hessian registration_Button"))
-    clickButton(waitForObject(":Circular Dichroism.Align_Button"))
-    snooze(3.5)
     #test saving
     clickButton(waitForObject(":Peem Analysis View.Use default save directory_Button"))
     clickButton(waitForObject(":Output location.Save_Button"))

@@ -34,12 +34,9 @@
 :Change Settings.Minimum: _Text	{container=':Axes.Change Settings_Group' isvisible='true' leftWidget=':Change Settings.Minimum: _Label' type='org.eclipse.swt.widgets.Text'}
 :Circular Dichroism.- _Button	{caption='- ' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Circular Dichroism.2_Button	{caption='2' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
-:Circular Dichroism.Align_Button	{caption='Align' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Circular Dichroism.Image Alignment_Group	{caption='Image Alignment' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Circular Dichroism.Shifts _Button	{caption='Shifts ' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
-:Circular Dichroism.With Hessian registration_Button	{caption='With Hessian registration' container=':Circular Dichroism.Image Alignment_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Circular Dichroism.With ROI_Button	{caption='With ROI' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
-:Circular Dichroism.With affine transformation_Button	{caption='With affine transformation' container=':Peem Analysis Controls.Circular Dichroism_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Clear Console_ToolItem	{caption='Clear Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Close wizard automatically on successful installation._Button	{caption='Close wizard automatically on successful installation.' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Colour mapping_CCombo	{container=':Colour mapping_CTabItem' isvisible='true' type='org.eclipse.swt.custom.CCombo'}
@@ -97,6 +94,7 @@
 :I accept the terms of the license agreement_Button	{caption='I accept the terms of the license agreement' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Image Alignment.\rSelect a region of interest common to all images in the stack and press OK.\r_Label	{caption='\rSelect a region of interest common to all images in the stack and press OK.\r' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Image Alignment_Shell'}
 :Image Alignment.\rSelect a region of interest common to all images in the stack and press OK.\r_Scale	{aboveWidget=':Image Alignment.\rSelect a region of interest common to all images in the stack and press OK.\r_Label' isvisible='true' type='org.eclipse.swt.widgets.Scale' window=':Image Alignment_Shell'}
+:Image Alignment.Align_Button	{caption='Align' container=':Circular Dichroism.Image Alignment_Group' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Image Alignment.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Image Alignment_Shell'}
 :Image Alignment_Shell	{caption='Image Alignment' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Image Explorer.Image Playback_Group	{caption='Image Playback' container=':Image Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
