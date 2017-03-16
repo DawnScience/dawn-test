@@ -48,6 +48,7 @@ def main():
     
     snooze(90) # While Reduce...
     
+    clickTab(waitForObject(":Data_CTabItem_2"), 24, 13, 0, Button.Button1)
     mouseClick(waitForObjectItem(":Data_Table_2", "4/0"), 5, 11, 0, Button.Button1)
     
     # We get the plotting system
