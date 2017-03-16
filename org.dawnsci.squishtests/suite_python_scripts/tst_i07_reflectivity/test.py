@@ -17,7 +17,7 @@ def main():
     startOrAttachToDAWN()
 
     #Needs scipy, but this is provided by anaconda (which is current default interpreter)
-    setupPython(needScipy=True)
+    setupPython(needScipy=False)
 
     #create a pydev project 
     mouseClick(waitForObject(":Project Explorer_Tree"), 118, 187, 0, Button.Button3)
@@ -106,8 +106,8 @@ def main():
     snooze(1)
     typeInConsole("getrois()")
     snooze(1)
-     #run the script the second time
-    typeInConsole("rerefl(range(184476, 184477))")
+    #run the script the second time
+    typeInConsole("rerefl(range(184476, 184477))", timeout=1200000) # 20 min
     snooze(1)   
      
     #open and check results
