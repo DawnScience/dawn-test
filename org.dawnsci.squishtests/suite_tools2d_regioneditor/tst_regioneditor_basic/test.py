@@ -57,9 +57,10 @@ def main():
     mouseClick(waitForObject(":Region 1 *_TreeSubItem_2"), 47, 15, 0, Button.Button1)
     
     if sys.platform.startswith('win'):
-        mouseClick(waitForObject(":X Start.352 *_TreeSubItem_2"), 32, 11, 0, Button.Button1)
+        mouseClick(waitForObject(":X Start.233 *_TreeSubItem"), 23, 10, 0, Button.Button1)
     else:
         mouseClick(waitForObject(":X Start.189 *_TreeSubItem"), 12, 17, 0, Button.Button1)
+
     type(waitForObject(":Region Editor_Spinner"), "500")
 
     #test if the region one xstart is 500

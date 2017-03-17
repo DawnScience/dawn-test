@@ -151,16 +151,8 @@
 :Window_Menu	{caption='Window' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :WizardDialog_Shell	{data?='org.eclipse.jface.wizard.WizardDialog@*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Workbench Window	{data?='org.eclipse.ui.internal.WorkbenchWindow*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
-:X Start.1051 *_TreeSubItem	{caption='1051 *' column='1' container=':X Start_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
-:X Start.1060 *_TreeSubItem	{caption='1060 *' column='1' container=':X Start_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
-:X Start.1769 *_TreeSubItem	{caption='1769 *' column='1' container=':X Start_TreeItem_2' type='com.froglogic.squish.swt.TreeSubItem'}
-:X Start.1882 *_TreeSubItem	{caption='1882 *' column='1' container=':X Start_TreeItem_2' type='com.froglogic.squish.swt.TreeSubItem'}
 :X Start.189 *_TreeSubItem	{caption='187 *' column='1' container=':X Start_TreeItem_3' type='com.froglogic.squish.swt.TreeSubItem'}
-:X Start.2261 *_TreeSubItem	{caption='2261 *' column='1' container=':X Start_TreeItem_2' type='com.froglogic.squish.swt.TreeSubItem'}
-:X Start.336 *_TreeSubItem	{caption='336 *' column='1' container=':X Start_TreeItem_2' type='com.froglogic.squish.swt.TreeSubItem'}
-:X Start.352 *_TreeSubItem	{caption='352 *' column='1' container=':X Start_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
-:X Start.352 *_TreeSubItem_2	{caption='175 *' column='1' container=':X Start_TreeItem_3' type='com.froglogic.squish.swt.TreeSubItem'}
-:X Start.500 *_TreeSubItem	{caption='500 *' column='1' container=':X Start_TreeItem_2' type='com.froglogic.squish.swt.TreeSubItem'}
+:X Start.233 *_TreeSubItem	{caption='233 *' column='1' container=':X Start_TreeItem_3' type='com.froglogic.squish.swt.TreeSubItem'}
 :X Start_TreeItem	{caption='X Start' parentitem=':Region 1 *_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :X Start_TreeItem_2	{caption='X Start' parentitem=':Region 1 *_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
 :X Start_TreeItem_3	{caption='X Start' parentitem=':Region 1 *_TreeItem_3' type='org.eclipse.swt.widgets.TreeItem'}
