@@ -29,9 +29,7 @@
 :Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Data_CTabItem	{caption='Data' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Data_CTabItem_2	{caption='Data' occurrence='1' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Data_Table	{container=':Data_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
-:Data_Table_2	{container=':Data_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_ErrorLog' type='org.eclipse.swt.widgets.ToolItem'}
 :Delete Resources.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Delete Resources_Shell'}
 :Delete Resources_Shell	{caption='Delete Resources' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -103,7 +101,6 @@
 :Lock the diffraction data and apply it to newly opened files._ToolItem	{caption?='Lock the diffraction data and apply it to newly opened file*' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :New Project_Shell	{caption='New Project' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :New Project_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':New Project_Shell'}
-:New_Menu	{caption='New' container=':Project Explorer_Tree_2' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :New_Shell	{caption='New' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :New_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':New_Shell'}
 :One-click beam centre_ToolItem	{caption='One-click beam centre' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
@@ -128,8 +125,7 @@
 :Problem Occurred.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Problem Occurred_Shell'}
 :Problem Occurred_Shell	{caption='Problem Occurred' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Project Explorer_CTabItem	{caption='Project Explorer' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
-:Project Explorer_Tree_2	{container=':Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Project Explorer_Tree	{container=':Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Project:_Label	{caption='Project:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':_Shell'}
 :Project:_Text	{isvisible='true' leftWidget=':Project:_Label' type='org.eclipse.swt.widgets.Text' window=':_Shell'}
 :Properties for Data2.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Properties for Data2_Shell'}
@@ -182,7 +178,6 @@
 :_FigureCanvas	{isvisible='true' type='org.eclipse.draw2d.FigureCanvas' window=':Workbench Window'}
 :_Label	{caption='' container=':_CTabFolder' isvisible='false' type='org.eclipse.swt.widgets.Label'}
 :_Menu	{menuStyle='SWT.BAR' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
-:_Menu_2	{container=':Project Explorer_Tree_2' menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu'}
 :_Sash	{isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Sash' window=':Workbench Window'}
 :_Shell	{caption='' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :_ToolBar	{container=':_CTabFolder' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}

@@ -83,7 +83,8 @@ def main():
     
     
     expandObjectLeft(waitForObject(":Data_CTabItem"), 6)
-    
+
+    clickTab(waitForObject(":Project Explorer_CTabItem"), 49, 22, 0, Button.Button3)
     openExample("pow_M99S5_1_0001.cbf")
 
     
