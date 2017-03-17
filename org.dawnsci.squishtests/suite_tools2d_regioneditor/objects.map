@@ -151,7 +151,7 @@
 :Window_Menu	{caption='Window' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :WizardDialog_Shell	{data?='org.eclipse.jface.wizard.WizardDialog@*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Workbench Window	{data?='org.eclipse.ui.internal.WorkbenchWindow*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
-:X Start.189 *_TreeSubItem	{caption='187 *' column='1' container=':X Start_TreeItem_3' type='com.froglogic.squish.swt.TreeSubItem'}
+:X Start.182 *_TreeSubItem	{caption='182 *' column='1' container=':X Start_TreeItem_3' type='com.froglogic.squish.swt.TreeSubItem'}
 :X Start.233 *_TreeSubItem	{caption='233 *' column='1' container=':X Start_TreeItem_3' type='com.froglogic.squish.swt.TreeSubItem'}
 :X Start_TreeItem	{caption='X Start' parentitem=':Region 1 *_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :X Start_TreeItem_2	{caption='X Start' parentitem=':Region 1 *_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
