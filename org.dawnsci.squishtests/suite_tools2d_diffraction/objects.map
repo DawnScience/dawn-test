@@ -1,4 +1,6 @@
 ":Diffraction_Tree"	{}
+:AAASaveMetaData.nxs.Tree_CTabItem	{caption='Tree' container=':AAASaveMetaData.nxs_CTabItem' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}
+:AAASaveMetaData.nxs_CTabItem	{caption='AAASaveMetaData.nxs' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Available label decorations:.File Meta Data Decorator_TableCell	{caption='File Meta Data Decorator' column='0' container=':Preferences.Available label decorations:_Table' row='5' type='com.froglogic.squish.swt.TableCell'}
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Beam Centre_TreeItem	{caption='Beam Centre' parentitem=':Detector_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
@@ -142,10 +144,6 @@
 :Resolution rings_ToolItem	{caption='Resolution rings' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :SWT	SWT
-:SaveMetaData.nxs.Plot_CTabItem	{caption='Plot' container=':SaveMetaData.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
-:SaveMetaData.nxs.Tree_CTabItem	{caption='Tree' container=':SaveMetaData.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
-:SaveMetaData.nxs_CTabCloseBox	{container=':SaveMetaData.nxs_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
-:SaveMetaData.nxs_CTabItem	{caption='SaveMetaData.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Science_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Science_Menu_2	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Science_Menu_3	{caption='Science' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
@@ -160,7 +158,7 @@
 :Shows background operations in Progress view_ToolItem	{caption='Shows background operations in Progress view' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Size_Menu	{caption='Size' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Traces.Select Trace_Group	{caption='Select Trace' container=':Configure Graph Settings.Traces_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
-:Tree_Tree	{container=':SaveMetaData.nxs.Tree_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Tree_Tree	{container=':AAASaveMetaData.nxs.Tree_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :View Menu_ToolItem	{caption='View Menu' container=':_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :View Menu_ToolItem_2	{caption='View Menu' container=':_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
 :Welcome_CTabCloseBox	{container=':Welcome_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}

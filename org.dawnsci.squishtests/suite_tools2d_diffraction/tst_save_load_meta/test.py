@@ -33,7 +33,7 @@ def main():
     expand(waitForObjectItem(":File location.Please choose a location._Tree", "data"))
     mouseClick(waitForObjectItem(":File location.Please choose a location._Tree", "examples"), 4, 12, 0, Button.Button1)
     mouseClick(waitForObject(":File location.File Name:_Text"), 71, 4, 0, Button.Button1)
-    type(waitForObject(":File location.File Name:_Text"), "SaveMetaData.nxs")
+    type(waitForObject(":File location.File Name:_Text"), "AAASaveMetaData.nxs")
     clickButton(waitForObject(":File location.OK_Button"))
     clickButton(waitForObject(":Export.Finish_Button"))
     
@@ -53,7 +53,8 @@ def main():
     clickButton(waitForObject(":Import_Button"))
     expand(waitForObjectItem(":File location.Please choose a location._Tree", "data"))
     expand(waitForObjectItem(":File location.Please choose a location._Tree", "examples"))
-    mouseClick(waitForObjectItem(":File location.Please choose a location._Tree", "SaveMetaData.nxs"), 69, 14, 0, Button.Button1)
+
+    mouseClick(waitForObjectItem(":File location.Please choose a location._Tree", "AAASaveMetaData.nxs"), 73, 5, 0, Button.Button1)
     clickButton(waitForObject(":File location.OK_Button"))
     clickButton(waitForObject(":Import.Next >_Button"))
     clickButton(waitForObject(":Import.Finish_Button"))
@@ -63,16 +64,15 @@ def main():
     test.verify(xnew in x, "Beam X changed")
     test.verify(ynew in y, "Beam Y changed")
     
-    openExample("SaveMetaData")
+    openExample("AAASaveMetaData")
 
-    clickTab(waitForObject(":SaveMetaData.nxs.Tree_CTabItem"), 10, 11, 0, Button.Button1)
-    
+    clickTab(waitForObject(":AAASaveMetaData.nxs.Tree_CTabItem"), 18, 10, 0, Button.Button1)
+
     tree = waitForObject(":Tree_Tree")
-
     expand(waitForObjectItem(":Tree_Tree", "entry"))
     expand(waitForObjectItem(":Tree_Tree", "instrument"))
     expand(waitForObjectItem(":Tree_Tree", "detector"))
-    
+
     text = tree.getItems().at(0).getItems().at(4).getItems().at(0).getItems().at(0).getText()
     
     test.verify("beam_center" in text, "tree contains beam center")
