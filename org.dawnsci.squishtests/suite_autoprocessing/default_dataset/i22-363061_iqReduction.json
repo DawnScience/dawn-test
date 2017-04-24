@@ -1,0 +1,1 @@
+{"runDirectory": "/dls/i22/data/2017/sw17105-1", "name": "TestRun", "filePath": "path_to_file", "dataDimensions": [-1, -2], "processingPath": "/dls/i22/data/2017/sw17105-1/xml/templates/saxs_iQ_reduction_pipeline.nxs", "outputFilePath": "path_to_output", "deleteProcessingFile": false, "datasetPath": "/entry1/detector", "numberOfCores" : 1, "xmx" : 1024}
