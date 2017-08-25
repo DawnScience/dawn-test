@@ -36,7 +36,7 @@ def startDAWNSuiteWorkspace():
     workspace = os.path.join(getWorkspaceRoot(), getSuiteName(), getDawnSuiteWorkspaceName())
     
     start = datetime.now()
-    startApplication("dawn -consoleLog -data %s" % workspace, "", -1, 90)
+    startApplication("dawn -noSplash -consoleLog -data %s" % workspace, "", -1, 90)
     end = datetime.now()
     
     test.log("Application took " + str(end-start) + " to start")
@@ -117,7 +117,7 @@ def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=Fals
             vmArgs = mailto+xulfix+usage+osgi_area+osgi_fx+" "+vmArgs
             
         # Expand the command
-        cmd = "dawn -consoleLog -data %s -user %s -configuration %s -name %s-%s --launcher.appendVmargs -vmargs %s" % (workspace, osgi_user_area, osgi_configuration_area, getSuiteName(), getTestName(), vmArgs)
+        cmd = "dawn -noSplash -consoleLog -data %s -user %s -configuration %s -name %s-%s --launcher.appendVmargs -vmargs %s" % (workspace, osgi_user_area, osgi_configuration_area, getSuiteName(), getTestName(), vmArgs)
 
         startApplication(cmd, "", -1, 90)
             
