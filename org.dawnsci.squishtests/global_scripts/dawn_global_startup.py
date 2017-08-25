@@ -52,7 +52,7 @@ def startDAWNSuiteWorkspace():
     try:
         #find should fail fast if no welcome screen
         findObject(":Welcome_CTabItem")
-        dismissWelcomScreen()
+        dismissWelcomeScreen()
     except:
         pass
     
@@ -135,22 +135,23 @@ def startOrAttachToDAWNOnly(clean_workspace=True, copy_configuration_and_p2=Fals
 
 def dismissWelcomeScreen():
     try:
-        # Usually
-        clickTab(waitForObject(":Welcome_CTabItem"), 10, 10, 0, Button.Button3)
-        activateItem(waitForObjectItem(":Pop Up Menu", "Close"))
+        #find should fail fast if no welcome screen
+        findObject(":Welcome_CTabItem")
     except:
-        # Sometimes with e4 or windows
-        mouseClick(waitForObject(":Welcome_CTabCloseBox"), 9, 9, 0, Button.Button1)
-
-    test.passes("dismissWelcomeScreen: Success")
-
-#Wrapper to correct typo.
-def dismissWelcomScreen():
-    dismissWelcomeScreen()
+        pass
+    else:
+        try:
+            # Usually
+            clickTab(waitForObject(":Welcome_CTabItem"), 10, 10, 0, Button.Button3)
+            activateItem(waitForObjectItem(":Pop Up Menu", "Close"))
+        except:
+            # Sometimes with e4 or windows
+            mouseClick(waitForObject(":Welcome_CTabCloseBox"), 9, 9, 0, Button.Button1)
+        test.passes("dismissWelcomeScreen: Success")
 
 def startOrAttachToDAWN(copy_configuration_and_p2=False, vmArgs=None):
     startOrAttachToDAWNOnly(copy_configuration_and_p2=copy_configuration_and_p2, vmArgs=vmArgs)
-    dismissWelcomScreen()
+    dismissWelcomeScreen()
     test.passes("startOrAttachToDAWN: Success")
     
 def closeDAWN():
