@@ -7,7 +7,7 @@ source(findFile("scripts", "dawn_constants.py"))
 def getTracePeakToPeak(system):
     ts=system.getTraces()
     t = ts.toArray().at(0)
-    return t.data.peakToPeak().doubleValue()
+    return t.data.peakToPeak(0).doubleValue()
 
 def getXTraceFirst(system):
     ts=system.getTraces()
