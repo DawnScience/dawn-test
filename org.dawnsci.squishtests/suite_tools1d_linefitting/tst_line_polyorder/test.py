@@ -21,7 +21,7 @@ def main():
             doubleClick(child, 5, 5, 0, Button.Button1)
             continue
     
-    mouseClick(waitForObject(":Plot data as separate plots_ToolItem"), 18, 11, 0, Button.Button1)
+#     mouseClick(waitForObject(":Plot data as separate plots_ToolItem"), 18, 11, 0, Button.Button1)
     
     if(isEclipse4()):
         mouseClick(waitForObjectItem(":Data_Table_3", "1/0"), 9, 7, 0, Button.Button1)

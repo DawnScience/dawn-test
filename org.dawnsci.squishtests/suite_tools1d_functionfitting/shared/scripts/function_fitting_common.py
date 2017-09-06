@@ -49,9 +49,20 @@ def setFunctionFittingRegion(regionStart, regionLength):
         mouseClick(waitForObject(":Configure Settings..._ToolItem_3"), 12, 16, 0, Button.Button1)
     clickTab(waitForObject(":Configure Graph Settings.Regions_TabItem"))
     mouseClick(waitForObjectItem(":Regions.Region Location_Table", "0/1"))
-    type(waitForObject(":Regions_Spinner"), str(regionStart))
+
+    mouseClick(waitForObjectItem(":Regions.Region Location_Table", "0/1"), 34, 16, 0, Button.Button1)
+
+    type(waitForObject(":Regions_Text"), "<Ctrl+a>")
+    type(waitForObject(":Regions_Text"), str(regionStart))
+    type(waitForObject(":Regions_Text"), "<Return>")
+
     mouseClick(waitForObjectItem(":Regions.Region Location_Table", "1/1"))
-    type(waitForObject(":Regions_Spinner"), str(regionLength))
+
+    mouseClick(waitForObjectItem(":Regions.Region Location_Table", "1/1"), 64, 2, 0, Button.Button1)
+    type(waitForObject(":Regions_Text"), "<Ctrl+a>")
+    type(waitForObject(":Regions_Text"), str(regionLength))
+    type(waitForObject(":Regions_Text"), "<Numpad Return>")
+
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     
 def insertFunction(functionName):

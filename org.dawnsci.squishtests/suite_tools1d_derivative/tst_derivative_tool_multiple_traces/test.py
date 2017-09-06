@@ -27,12 +27,14 @@ def main():
     
     snooze(1)
     
-    mouseClick(waitForObject(":Plot data as separate plots_ToolItem"), 12, 8, 0, Button.Button1)
+#     mouseClick(waitForObject(":Plot data as separate plots_ToolItem"), 12, 8, 0, Button.Button1)
     
     #open 4 traces
     if(isEclipse4()):
         mouseClick(waitForObjectItem(":Data_Table_3", "0/0"), 9, 7, 0, Button.Button1)
         mouseClick(waitForObjectItem(":Data_Table_3", "1/0"), 10, 5, 0, Button.Button1)
+        mouseClick(waitForObjectItem(":Data_Table_3", "0/2"), 19, 13, 0, Button.Button1)
+        mouseClick(waitForObjectItem(":_List", "Y1"), 14, 13, 0, Button.Button1)
         mouseClick(waitForObjectItem(":Data_Table_3", "2/0"), 6, 2, 0, Button.Button1)
         mouseClick(waitForObjectItem(":Data_Table_3", "3/0"), 10, 10, 0, Button.Button1)
     else:
