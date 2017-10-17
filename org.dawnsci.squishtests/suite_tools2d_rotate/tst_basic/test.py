@@ -14,7 +14,7 @@ def main():
     #Open data browsing perspective
     openPerspective("Data Browsing (default)")
     
-    openExample("001.img")
+    openExample(".cbf")
     snooze(1)
     
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), 32, 10, 0, Button.Button1)
@@ -30,8 +30,8 @@ def main():
     data = system.getTraces().iterator().next().getData()
     test.verify(data.getRank()==2, "Image plotted: Success")
     shape = data.getShape()
-    test.verify(shape.at(0)==2896, "Rotated Image new width is 2896")
-    test.verify(shape.at(1)==2896, "Rotated Image new height is 2896")
+    test.verify(shape.at(0)==3528, "Rotated Image new width is 3528")
+    test.verify(shape.at(1)==3528, "Rotated Image new height is 3528")
 
 
     doubleClick(waitForObject(":Image Rotation.Rotation angle_Spinner"), 31, 10, 0, Button.Button1)
@@ -41,8 +41,8 @@ def main():
     system1 = getPlottingSystem("Image Rotation")
     data1 = system1.getTraces().iterator().next().getData()
     shape1 = data1.getShape()
-    test.verify(shape1.at(0)==2048, "Rotated Image new width is 2048")
-    test.verify(shape1.at(1)==2048, "Rotated Image new height is 2048")
+    test.verify(shape1.at(0)==2463, "Rotated Image new width is 2463")
+    test.verify(shape1.at(1)==2527, "Rotated Image new height is 2527")
     
     snooze(1)
     #test jexlexpression
@@ -52,19 +52,19 @@ def main():
     mouseClick(waitForObject(":Adds an expression which can be plotted. Must be function of other data sets._ToolItem_2"), 19, 16, 0, Button.Button1)
 #     mouseClick(waitForObject(":Adds an expression which can be plotted. Must be function of other data sets._ToolItem"), 6, 10, 0, Button.Button1)
 
-    type(waitForObject(":Data_Text"), "im:rotate(ADSC_Image, 45, false)")
+    type(waitForObject(":Data_Text"), "im:rotate(image_01, 45, false)")
     
     #check new dimension
 
     mouseClick(waitForObjectItem(":Data_Table_3", "0/1"), 118, 7, 0, Button.Button1)
 
     snooze(2.5)
-    system2 = getPlottingSystem("ref-testscale_1_001.img")
+    system2 = getPlottingSystem("pow_M99S5_1_0001.cbf")
     data2 = system2.getTraces().iterator().next().getData()
     shape2 = data2.getShape()
     
-    test.verify(shape2.at(0)==2896, "Rotated Image Width is 2896")
-    test.verify(shape2.at(1)==2896, "Rotated Image Height is 2896")
+    test.verify(shape2.at(0)==3528, "Rotated Image Width is 3528")
+    test.verify(shape2.at(1)==3528, "Rotated Image Height is 3528")
     
     # Exit (or disconnect) DAWN
     closeOrDetachFromDAWN()

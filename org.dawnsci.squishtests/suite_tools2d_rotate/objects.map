@@ -1,7 +1,7 @@
 :*Untitled 1_CTabItem	{caption='*Untitled 1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
 :Adds an expression which can be plotted. Must be function of other data sets._ToolItem	{caption='Adds an expression which can be plotted. Must be function of other data sets.' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
-:Adds an expression which can be plotted. Must be function of other data sets._ToolItem_2	{caption='Adds an expression which can be plotted. Must be function of other data sets.' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
+:Adds an expression which can be plotted. Must be function of other data sets._ToolItem_2	{caption='Adds an expression which can be plotted. Must be function of other data sets.' container=':_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
 :Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Cheat Sheets_CTabCloseBox	{container=':Cheat Sheets_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :Cheat Sheets_CTabItem	{caption='Cheat Sheets' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -47,9 +47,10 @@
 :Image Rotation.Rotation angle_Label	{caption='Rotation angle' container=':Image Rotation_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Image Rotation.Rotation angle_Spinner	{container=':Image Rotation_CTabItem' isvisible='true' leftWidget=':Image Rotation.Rotation angle_Label' type='org.eclipse.swt.widgets.Spinner'}
 :Image Rotation_CTabItem	{caption='Image Rotation' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
+:Image tools used to profile and inspect images._ToolItem	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :Image_Composite	{container=':ref-testscale_1_001.img.Image_CTabItem' isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite'}
 :Image_ToolBar	{container=':ref-testscale_1_001.img.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Image_ToolBar_2	{container=':pow_M99S5_1_0001.cbf.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Install to:_Label	{caption='Install to:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Install to:_Text	{isvisible='true' leftWidget=':Install to:_Label' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
 :Internal Error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Internal Error_Shell'}
@@ -148,9 +149,12 @@
 :_ToolBar_6	{container=':_CTabFolder_4' firstItemText='Show only data with a \\'signal\\' attribute' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_7	{container=':_CTabFolder_4' firstItemText='Resize the Bounding Box and do not crop the resulting rotated image' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_8	{container=':_CTabFolder_4' firstItemText='Copy \\'ADSC Image\\' (can be pasted into other data).' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:_ToolBar_9	{container=':_CTabFolder_4' firstItemText='Copy \\'image-01\\' (can be pasted into other data).' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :image0001.pgm_CTabCloseBox	{container=':image0001.pgm_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :image0001.pgm_CTabItem	{caption='image0001.pgm' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:pow_M99S5_1_0001.cbf.Image_CTabItem	{caption='Image' container=':pow_M99S5_1_0001.cbf_CTabItem' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}
+:pow_M99S5_1_0001.cbf_CTabItem	{caption='pow_M99S5_1_0001.cbf' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :ref-testscale_1_001.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_001.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :ref-testscale_1_001.img_CTabCloseBox	{container=':ref-testscale_1_001.img_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :ref-testscale_1_001.img_CTabItem	{caption='ref-testscale_1_001.img' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
