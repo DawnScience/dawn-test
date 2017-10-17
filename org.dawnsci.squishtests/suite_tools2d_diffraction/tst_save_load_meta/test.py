@@ -12,9 +12,9 @@ def main():
     # Open data browsing perspective 
     openPerspective("Data Browsing (default)")
     
-    openExample("001.img")
+    openExample("pow_M99S5_1_0001.cbf")
     
-    system = getPlottingSystem("ref-testscale_1_001.img")
+    system = getPlottingSystem("pow_M99S5_1_0001.cbf")
     
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), dawn_constants.TOOL_X, dawn_constants.TOOL_Y, 0, Button.Button1)
 

@@ -22,7 +22,7 @@ def main():
     children = object.children(waitForObjectItem(":Project Explorer_Tree", "examples"))
     
     for child in children:
-        if "ref-testscale_1_001.img" in child.text:
+        if "pow_M99S5_1_0001.cbf" in child.text:
             doubleClick(child, 5, 5, 0, Button.Button1)
             break
     
@@ -65,10 +65,10 @@ def main():
     test.verify(value == "Centre (x,y)", "Table shows centre value incorrect was "+value)
     
     value = waitForObjectItem(":Regions.Region Location_Table", "0/1").text
-    test.verify(value == "1,022.832*", "centre x test, was "+value+" not 1,022.832*")
+    test.verify(value == "1,225.28*", "centre x test, was "+value+" not 1,225.28*")
     
     value = waitForObjectItem(":Regions.Region Location_Table", "0/2").text
-    test.verify(value == "1,000.576*","centre y test, was "+value+" not 1,000.576*")
+    test.verify(value == "1,223.32*","centre y test, was "+value+" not 1,223.32*")
     
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     

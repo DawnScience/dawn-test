@@ -199,6 +199,6 @@
 :ref-screentest-crystal1_1_001.mccd_CTabItem	{caption='ref-screentest-crystal1_1_001.mccd' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :ref-screentest-crystal1_1_001.mccd_CTabItem_2	{caption='ref-screentest-crystal1_1_001.mccd' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :ref-testscale_1_001.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_001.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
-:ref-testscale_1_001.img_CTabItem	{caption='ref-testscale_1_001.img' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:ref-testscale_1_001.img_CTabItem	{caption='pow_M99S5_1_0001.cbf' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :ref-testscale_1_002.img_CTabItem	{caption='ref-testscale_1_002.img' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 iem{Detector}	{}

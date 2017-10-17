@@ -17,7 +17,7 @@ def main():
     # On a test you may add test code here 
     openPerspective("Data Browsing (default)")
     
-    openExample("001.img")
+    openExample("pow_M99S5_1_0001.cbf")
     
     snooze(15)
     

@@ -17,7 +17,7 @@ def main():
     snooze(5)
     #openAndClearErrorLog()
     
-    openExample("001.img")
+    openExample("pow_M99S5_1_0001.cbf")
     snooze(1)
     
 
