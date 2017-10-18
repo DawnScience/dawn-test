@@ -18,7 +18,7 @@ def main():
     snooze(5)
     #openAndClearErrorLog()
     
-    openExample("001.img")
+    openExample("pow_M99S5_1_0001.cbf")
     snooze(1)
     
 
@@ -42,14 +42,15 @@ def main():
     
     mouseClick(waitForObject(":Configure Settings..._ToolItem_2"), 6, 9, 0, Button.Button1)
     clickTab(waitForObject(":Configure Graph Settings.Regions_TabItem"))
+
     mouseClick(waitForObjectItem(":Regions.Region Location_Table", "0/1"), 49, 12, 0, Button.Button1)
-    type(waitForObject(":Regions_Spinner"), "500")
+    type(waitForObject(":Regions_Text"), "500")
     mouseClick(waitForObjectItem(":Regions.Region Location_Table", "0/2"), 5, 11, 0, Button.Button1)
-    type(waitForObject(":Regions_Spinner"), "500")
+    type(waitForObject(":Regions_Text"), "500")
     mouseClick(waitForObjectItem(":Regions.Region Location_Table", "1/1"), 94, 7, 0, Button.Button1)
-    type(waitForObject(":Regions_Spinner"), "1000")
+    type(waitForObject(":Regions_Text"), "1000")
     mouseClick(waitForObjectItem(":Regions.Region Location_Table", "1/2"), 30, 11, 0, Button.Button1)
-    type(waitForObject(":Regions_Spinner"), "1000")
+    type(waitForObject(":Regions_Text"), "1000")
     clickButton(waitForObject(":Configure Graph Settings.Apply_Button"))
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     mouseClick(waitForObject(":Configure Settings..._ToolItem"), 18, 20, 0, Button.Button1)

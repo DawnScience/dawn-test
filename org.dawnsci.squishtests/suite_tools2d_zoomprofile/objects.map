@@ -1,4 +1,3 @@
-:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Axes.Select Axis_Group	{caption='Select Axis' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
 :Change Settings.Maximum_Label	{caption='Maximum' container=':Axes.Change Settings_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
@@ -24,7 +23,6 @@
 :Current downsample.4x4 pixels_Label	{caption='4x4 pixels' container=':Image Traces.Current downsample_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Current downsample.[184, 251]_Label	{caption='[184, 251]' container=':Image Traces.Current downsample_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Delete Log_ToolItem	{caption='Delete Log' container=':_ToolBar_ErrorLog' type='org.eclipse.swt.widgets.ToolItem'}
-:Profile_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
@@ -40,14 +38,17 @@
 :Open Perspective_Menu	{caption='Open Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Plotting Systems_Table	{container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
 :Pop Up Menu	{menuStyle='SWT.POP_UP' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
+:Profile_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Regions.Region Location_Label	{caption='Region Location' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Regions.Region Location_Table	{aboveWidget=':Regions.Region Location_Label' container=':Configure Graph Settings.Regions_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Table'}
-:Regions_Spinner	{container=':Configure Graph Settings.Regions_TabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Spinner'}
+:Regions_Spinner	{caption='230.319*' column='1' container=':Regions.Region Location_Table' row='0' type='com.froglogic.squish.swt.TableCell'}
+:Regions_Text	{container=':Configure Graph Settings.Regions_TabItem' isvisible='true' occurrence='1' type='org.eclipse.swt.widgets.Text'}
 :Resource - .Project Explorer_CTabItem	{caption='Project Explorer' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Select Axis_Combo	{container=':Axes.Select Axis_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
 :Select Trace_Combo	{container=':Traces.Select Trace_Group' isvisible='true' type='org.eclipse.swt.widgets.Combo'}
@@ -70,4 +71,4 @@
 :_ToolBar_2	{container=':_CTabFolder' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_ErrorLog	{firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :ref-testscale_1_001.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_001.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
-:ref-testscale_1_001.img_CTabItem	{caption='ref-testscale_1_001.img' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:ref-testscale_1_001.img_CTabItem	{caption='pow_M99S5_1_0001.cbf' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}

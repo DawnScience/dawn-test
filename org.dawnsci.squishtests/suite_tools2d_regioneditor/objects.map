@@ -152,6 +152,7 @@
 :WizardDialog_Shell	{data?='org.eclipse.jface.wizard.WizardDialog@*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Workbench Window	{data?='org.eclipse.ui.internal.WorkbenchWindow*' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :X Start.182 *_TreeSubItem	{caption='187 *' column='1' container=':X Start_TreeItem_3' type='com.froglogic.squish.swt.TreeSubItem'}
+:X Start.230 *_TreeSubItem	{caption='230 *' column='1' container=':X Start_TreeItem_3' type='com.froglogic.squish.swt.TreeSubItem'}
 :X Start.233 *_TreeSubItem	{caption='233 *' column='1' container=':X Start_TreeItem_3' type='com.froglogic.squish.swt.TreeSubItem'}
 :X Start_TreeItem	{caption='X Start' parentitem=':Region 1 *_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :X Start_TreeItem_2	{caption='X Start' parentitem=':Region 1 *_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
@@ -177,7 +178,7 @@
 :_ToolItem	{container=':Plot_ToolBar' occurrence='3' type='org.eclipse.swt.widgets.ToolItem'}
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :ref-testscale_1_001.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_001.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
-:ref-testscale_1_001.img_CTabItem	{caption='ref-testscale_1_001.img' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:ref-testscale_1_001.img_CTabItem	{caption='pow_M99S5_1_0001.cbf' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 wid = findObject({caption='Traces' type='org.eclipse.swt.widgets.TabItem' window={caption='Configure Graph Settings' isvisible='true' type='org.eclipse.swt.widgets.Shell'})	{}
 {caption='Traces' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}	{}
 {caption='Traces' type='org.eclipse.swt.widgets.TabItem' window={caption='Configure Graph Settings' isvisible='true' type='org.eclipse.swt.widgets.Shell'}	{}

@@ -1,4 +1,3 @@
-:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :*Untitled 1_CTabItem	{caption='*Untitled 1' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :*Untitled 1_StyledText	{container=':*Untitled 1_CTabItem' isvisible='true' type='org.eclipse.swt.custom.StyledText'}
 :2θ_Menu	{caption='2θ' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
@@ -14,7 +13,6 @@
 :Cheat Sheets_CTabItem	{caption='Cheat Sheets' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Clear Console_ToolItem	{caption='Clear Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Close wizard automatically on successful installation._Button	{caption='Close wizard automatically on successful installation.' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
-:Profile_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Configure Graph Settings.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Axes_TabItem	{caption='Axes' type='org.eclipse.swt.widgets.TabItem' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
@@ -71,6 +69,7 @@
 :Open Perspective_Shell	{caption='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Open Perspective_Table	{isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Open Perspective_Shell'}
 :Perform Auto Scale_ToolItem	{caption='Perform Auto Scale' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
+:Perspective_Menu	{caption='Perspective' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Pin Console_ToolItem	{caption='Pin Console' container=':_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Plotting Systems.Refresh_RefreshButton	{caption='Refresh' container=':Plotting Systems_CTabItem' isvisible='true' type='org.eclipse.dawnsci.plotting.api.views.RefreshButton'}
 :Plotting Systems_CTabItem	{caption='Plotting Systems' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
@@ -88,6 +87,7 @@
 :Preferences_Composite	{isvisible='true' occurrence='17' type='org.eclipse.swt.widgets.Composite' window=':Preferences_Shell'}
 :Preferences_Shell	{caption='Preferences' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Preferences_Tree	{isvisible='true' type='org.eclipse.swt.widgets.Tree' window=':Preferences_Shell'}
+:Profile_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :Project Explorer_Tree	{container=':Resource - .Project Explorer_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Px_Menu	{menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :PyDev Console	{container=':Console_CTabItem' isvisible='true' type='org.python.pydev.shared_interactive_console.console.ui.internal.ScriptConsoleViewer$ScriptConsoleStyledText'}
@@ -160,4 +160,4 @@
 :myvar_TreeItem	{caption='myvar' container=':Variables_Tree' type='org.eclipse.swt.widgets.TreeItem'}
 :q _Menu	{caption='q ' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu' window=':Workbench Window'}
 :ref-testscale_1_001.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_001.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
-:ref-testscale_1_001.img_CTabItem	{caption='ref-testscale_1_001.img' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:ref-testscale_1_001.img_CTabItem	{caption='pow_M99S5_1_0001.cbf' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}

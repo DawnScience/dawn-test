@@ -16,7 +16,7 @@ def main():
     vals = dawn_constants
     snooze(2)
     
-    openExample("001.img")
+    openExample("pow_M99S5_1_0001.cbf")
     snooze(1)
 
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), 30, 9, 0, Button.Button1)
@@ -41,7 +41,7 @@ def main():
     mouseDrag(c, b.x+b.width/10, b.y+b.height/5, int(b.width/3),b.height/6, 0, Button.Button1)
     snooze(1)
     #we get the plotting system
-    system = getPlottingSystem("ref-testscale_1_001.img")
+    system = getPlottingSystem("pow_M99S5_1_0001.cbf")
     test.verify(system.getRegions().size()==3, "3 Regions created : Success")
     snooze(1)
     clickTab(waitForObject(":Region Editor_CTabItem"), 75, 15, 0, Button.Button1)
@@ -59,7 +59,7 @@ def main():
     if sys.platform.startswith('win'):
         mouseClick(waitForObject(":X Start.233 *_TreeSubItem"), 23, 10, 0, Button.Button1)
     else:
-        mouseClick(waitForObject(":X Start.182 *_TreeSubItem"), 74, 6, 0, Button.Button1)
+        mouseClick(waitForObject(":X Start.230 *_TreeSubItem"), 74, 6, 0, Button.Button1)
 
     type(waitForObject(":Region Editor_Spinner"), "500")
 

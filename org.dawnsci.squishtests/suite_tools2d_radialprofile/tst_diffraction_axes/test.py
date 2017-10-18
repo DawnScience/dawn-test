@@ -27,7 +27,7 @@ def main():
     children = object.children(waitForObjectItem(":Project Explorer_Tree", "examples"))
     
     for child in children:
-        if "ref-testscale_1_001.img" in child.text:
+        if "pow_M99S5_1_0001.cbf" in child.text:
             doubleClick(child, 5, 5, 0, Button.Button1)
             break
         

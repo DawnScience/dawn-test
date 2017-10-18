@@ -13,7 +13,7 @@ def main():
     # On a test you may add test code here 
     #Open data browsing perspective
     openPerspective("Data Browsing (default)") 
-    openExample("001.img")
+    openExample("pow_M99S5_1_0001.cbf")
     snooze(1) 
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
     activateItem(waitForObjectItem(":Pop Up Menu", "Profile"))
