@@ -8,6 +8,7 @@
 :2495_Peak_Fitting.h5.Tree_CTabItem	{caption='Tree' container=':2495_Peak_Fitting.h5_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :2495_Peak_Fitting.h5_CTabCloseBox	{container=':2495_Peak_Fitting.h5_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :2495_Peak_Fitting.h5_CTabItem	{caption='2495_Peak_Fitting.h5' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:315029.dat  5.6 KB  06/10/16 02:52 PM * Scan Command: N/A_TreeItem	{caption='315029.dat  5.6 KB  06/10/16 02:52 PM * Scan Command: N/A' parentitem=':examples_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :40788.nxs.Plot_CTabItem	{caption='Plot' container=':40788.nxs_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :40788.nxs_CTabItem	{caption='40788.nxs' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :5.tif_CTabCloseBox	{container=':5.tif_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
@@ -28,6 +29,7 @@
 :Adds an expression which can be plotted. Must be function of other data sets._ToolItem	{caption='Adds an expression which can be plotted. Must be function of other data sets.' container=':_ToolBar_6' type='org.eclipse.swt.widgets.ToolItem'}
 :Adds an expression which can be plotted. Must be function of other data sets._ToolItem_2	{caption='Adds an expression which can be plotted. Must be function of other data sets.' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Adds an expression which can be plotted. Must be function of other data sets._ToolItem_3	{caption='Adds an expression which can be plotted. Must be function of other data sets.' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
+:Adds an expression which can be plotted. Must be function of other data sets._ToolItem_4	{caption='Adds an expression which can be plotted. Must be function of other data sets.' container=':_ToolBar_10' type='org.eclipse.swt.widgets.ToolItem'}
 :Algorithm Controls.Smoothing_Label	{caption='Smoothing' container=':Preferences.Algorithm Controls_Group' isvisible='true' type='org.eclipse.swt.widgets.Label'}
 :Algorithm Controls.Smoothing_Spinner	{container=':Preferences.Algorithm Controls_Group' isvisible='true' leftWidget=':Algorithm Controls.Smoothing_Label' type='org.eclipse.swt.widgets.Spinner'}
 :Axes.Change Settings_Group	{caption='Change Settings' container=':Configure Graph Settings.Axes_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Group'}
@@ -50,18 +52,18 @@
 :Configure Graph Settings.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings_Composite	{isvisible='true' occurrence='4' type='org.eclipse.swt.widgets.Composite' window=':Configure Graph Settings_Shell'}
 :Configure Graph Settings_Shell	{caption='Configure Graph Settings' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
-:Configure Settings..._ToolItem	{caption='Configure Settings...' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
-:Configure Settings..._ToolItem_2	{caption='Configure Settings...' container=':Plot_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
-:Configure Settings..._ToolItem_3	{caption='Configure Settings...' container=':Image_ToolBar_3' type='org.eclipse.swt.widgets.ToolItem'}
+:Configure Settings..._ToolItem	{caption='Configure Settings...' container=':Image_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
+:Configure Settings..._ToolItem_2	{caption='Configure Settings...' container=':Image_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :Configure Settings..._ToolItem_4	{caption='Configure Settings...' container=':Plot_ToolBar_9' type='org.eclipse.swt.widgets.ToolItem'}
-:Configure Settings..._ToolItem_5	{caption='Configure Settings...' container=':Image_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Confirm Delete.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Delete_Shell'}
 :Confirm Delete_Shell	{caption='Confirm Delete' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Confirm Exit.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
 :Confirm Exit.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Confirm Exit_Shell'}
 :Confirm Exit_Shell	{caption='Confirm Exit' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Console_CTabItem	{caption='Console' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Create new profile._ToolItem	{caption='Create new profile' container=':_ToolBar_4' type='org.eclipse.swt.widgets.ToolItem'}
 :Data Browsing_ToolItem	{caption='Data Browsing' container=':_ToolBar_14' type='org.eclipse.swt.widgets.ToolItem'}
+:Data Browsing_ToolItem_2	{caption='Data Browsing' container=':_ToolBar_15' type='org.eclipse.swt.widgets.ToolItem'}
 :Data Not Exported.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Data Not Exported_Shell'}
 :Data Not Exported_Shell	{caption='Data Not Exported' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Data reduction..._ToolItem	{caption='Data reduction...' container=':_ToolBar_10' type='org.eclipse.swt.widgets.ToolItem'}
@@ -105,12 +107,19 @@
 :Delete Resources.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Delete Resources_Shell'}
 :Delete Resources_Shell	{caption='Delete Resources' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Deletes an expression._ToolItem	{caption='Deletes an expression.' container=':_ToolBar_13' type='org.eclipse.swt.widgets.ToolItem'}
+:Deletes an expression._ToolItem_2	{caption='Deletes an expression.' container=':_ToolBar_8' type='org.eclipse.swt.widgets.ToolItem'}
 :Environment.New..._Button	{caption='New...' container=':Preferences.Environment_TabItem' isvisible='true' type='org.eclipse.swt.widgets.Button'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Expression 'dat:mean(Pilatus,0)' is not valid..OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Expression \\'dat:mean(Pilatus,0)\\' is not valid._Shell'}
+:Expression 'dat:mean(Pilatus,0)' is not valid._Shell	{caption='Expression \\'dat:mean(Pilatus,0)\\' is not valid.' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
+:Expression 'mean' is not valid..OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Expression \\'mean\\' is not valid._Shell'}
+:Expression 'mean' is not valid._Shell	{caption='Expression \\'mean\\' is not valid.' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :File Navigator_CTabItem	{caption='File Navigator' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :File Navigator_Tree	{container=':File Navigator_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:File Operation.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':File Operation_Shell'}
+:File Operation_Shell	{caption='File Operation' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :File_Menu	{caption='File' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :Finish_Button	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Finish_Button_2	{caption='Finish' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
@@ -123,10 +132,7 @@
 :Image tools used to profile and inspect images._ToolItem_2	{caption='Image tools used to profile and inspect images.' container=':Plot_ToolBar_2' type='org.eclipse.swt.widgets.ToolItem'}
 :Image tools used to profile and inspect images._ToolItem_3	{caption='Image tools used to profile and inspect images.' container=':Image_ToolBar' type='org.eclipse.swt.widgets.ToolItem'}
 :Image tools used to profile and inspect images._ToolItem_4	{caption='Image tools used to profile and inspect images.' container=':Plot_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
-:Image_ToolBar	{container=':ref-testscale_1_002.img.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:Image_ToolBar_2	{container=':ref-testscale_1_001.img.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:Image_ToolBar_3	{container=':pow_M99S5_1_0001.cbf.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
-:Image_ToolBar_4	{container=':ref-testscale_1_001.img.Image_CTabItem_2' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
+:Image_ToolBar_2	{container=':pow_M99S5_1_0001.cbf.Image_CTabItem' firstItemText='Configure Settings...' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :Install to:_Label	{caption='Install to:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':WizardDialog_Shell'}
 :Install to:_Text	{isvisible='true' leftWidget=':Install to:_Label' type='org.eclipse.swt.widgets.Text' window=':WizardDialog_Shell'}
 :Internal Error.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Internal Error_Shell'}
@@ -152,6 +158,9 @@
 :New_Menu_2	{caption='New' container=':_Menu' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :New_Menu_3	{caption='New' container=':Project Explorer_Tree' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
 :New_Menu_4	{caption='New' container=':Project Explorer_Tree_3' menuStyle='SWT.DROP_DOWN' type='org.eclipse.swt.widgets.Menu'}
+:Newer Workspace Version.Cancel_Button	{caption='Cancel' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Newer Workspace Version_Shell'}
+:Newer Workspace Version.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Newer Workspace Version_Shell'}
+:Newer Workspace Version_Shell	{caption='Newer Workspace Version' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Next >_Button	{caption='Next >' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':WizardDialog_Shell'}
 :Number peaks to fit_ToolItem	{caption='Number peaks to fit' container=':_ToolBar_5' type='org.eclipse.swt.widgets.ToolItem'}
 :OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':_Shell'}
@@ -315,6 +324,7 @@
 :_ToolBar_12	{container=':_CTabFolder_4' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_13	{container=':_CTabFolder_4' firstItemText='Show only data with a \\'signal\\' attribute' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_14	{firstItemText='Plug-in Development' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
+:_ToolBar_15	{firstItemText='Open Perspective' isvisible='true' type='org.eclipse.swt.widgets.ToolBar' window=':Workbench Window'}
 :_ToolBar_2	{container=':_CTabFolder_2' firstItemText='Export Log' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_3	{container=':_CTabFolder_3' firstItemText='View Menu' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
 :_ToolBar_4	{container=':_CTabFolder_4' firstItemText='Create new profile' isvisible='true' type='org.eclipse.swt.widgets.ToolBar'}
@@ -330,9 +340,11 @@
 :command_example.moml.Edit_CTabItem	{caption='Edit' container=':command_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :command_example.moml_CTabCloseBox	{container=':command_example.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :command_example.moml_CTabItem	{caption='command_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:data_TreeItem	{caption='data' container=':Project Explorer_Tree_3' type='org.eclipse.swt.widgets.TreeItem'}
 :directory_packing_example.moml.Edit_CTabItem	{caption='Edit' container=':directory_packing_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :directory_packing_example.moml_CTabCloseBox	{container=':directory_packing_example.moml_CTabItem' type='com.froglogic.squish.swt.CTabCloseBox'}
 :directory_packing_example.moml_CTabItem	{caption='directory_packing_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:examples_TreeItem	{caption='examples' parentitem=':data_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
 :folder_example.moml.Edit_CTabItem	{caption='Edit' container=':folder_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :folder_example.moml_CTabItem	{caption='folder_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :folder_monitor_example.moml.Edit_CTabItem	{caption='Edit' container=':folder_monitor_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
@@ -361,12 +373,6 @@
 :python_numjy_example1.moml_CTabItem	{caption='python_numjy_example1.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :python_numpy_example1.moml.Edit_CTabItem	{caption='Edit' container=':python_numpy_example1.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :python_numpy_example1.moml_CTabItem	{caption='python_numpy_example1.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:ref-testscale_1_001.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_001.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
-:ref-testscale_1_001.img.Image_CTabItem_2	{caption='Image' container=':ref-testscale_1_001.img_CTabItem_2' parent.visible='true' type='org.eclipse.swt.custom.CTabItem'}
-:ref-testscale_1_001.img_CTabItem	{caption='ref-testscale_1_001.img' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:ref-testscale_1_001.img_CTabItem_2	{caption='ref-testscale_1_001.img' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
-:ref-testscale_1_002.img.Image_CTabItem	{caption='Image' container=':ref-testscale_1_002.img_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
-:ref-testscale_1_002.img_CTabItem	{caption='ref-testscale_1_002.img' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :thermolysin.mccd_CTabItem	{caption='thermolysin.mccd' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :user_interface_example.moml.Edit_CTabItem	{caption='Edit' container=':user_interface_example.moml_CTabItem' type='org.eclipse.swt.custom.CTabItem'}
 :user_interface_example.moml_CTabItem	{caption='user_interface_example.moml' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}

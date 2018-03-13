@@ -67,7 +67,8 @@ def openExample(frag, project="data", folder="examples", subfolder=None, subsubf
     if (subsubfolder is not None):
         expand(waitForObjectItem(":Project Explorer_Tree", subsubfolder))
         children = object.children(waitForObjectItem(":Project Explorer_Tree", subsubfolder))
-    
+
+    foundExample = None
     for child in children:
         if frag in child.text:
             foundExample = child

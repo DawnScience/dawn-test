@@ -33,7 +33,8 @@ def main():
     widget = findObject(":Change Settings.Minimum: _Text")
     lower = widget.text
     test.verify(upper=="0.0", "XAxis maximum has been changed successfully")
-    test.verify(lower=="140.0", "XAxis minimum has been changed successfully")
+    test.verify(lower=="127.0", "XAxis minimum has been changed successfully")
+#    test.verify(lower=="140.0", "XAxis minimum has been changed successfully")
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     snooze(1)
     
@@ -53,7 +54,8 @@ def main():
     widget = findObject(":Change Settings.Minimum: _Text")
     lower = widget.text
     test.verify(upper=="0.0", "YAxis maximum has been changed successfully")
-    test.verify(lower=="600.0", "YAxis minimum has been changed successfully")
+    test.verify(lower=="535.0", "YAxis minimum has been changed successfully")
+#    test.verify(lower=="600.0", "YAxis minimum has been changed successfully")
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     snooze(1)
 
@@ -69,7 +71,8 @@ def main():
     upper = widget.text
     widget = findObject(":Change Settings.Minimum: _Text")
     lower = widget.text
-    test.verify(upper=="140.0", "XAxis maximum has been changed successfully")
+    test.verify(upper=="127.0", "XAxis maximum has been changed successfully")
+#    test.verify(upper=="140.0", "XAxis maximum has been changed successfully")
     test.verify(lower=="0.0", "XAxis minimum has been changed successfully")
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     snooze(1)
@@ -88,7 +91,8 @@ def main():
     upper = widget.text
     widget = findObject(":Change Settings.Minimum: _Text")
     lower = widget.text
-    test.verify(upper=="600.0", "YAxis maximum has been changed successfully")
+    test.verify(upper=="535.0", "YAxis maximum has been changed successfully")
+#    test.verify(upper=="600.0", "YAxis maximum has been changed successfully")
     test.verify(lower=="0.0", "YAxis minimum has been changed successfully")
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
 

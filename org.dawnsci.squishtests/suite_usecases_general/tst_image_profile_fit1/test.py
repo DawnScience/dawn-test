@@ -17,7 +17,7 @@ def main():
     #expand data tree and open metal mix, the date/time on the metal mix 
     #file may change so we iterate through all the children of the "examples"
     #folder and open "metalmix.mca"
-    openExample("001.img")
+    openExample("pow_M99S5_1_0001.cbf")
  
     # Now use profile tool
     mouseClick(waitForObject(":Image tools used to profile and inspect images._ToolItem"), vals.TOOL_X, vals.TOOL_Y, 0, Button.Button1)
@@ -25,7 +25,7 @@ def main():
     activateItem(waitForObjectItem(":Profile_Menu", "Line Profile"))
     snooze(1)
     
-    proxy = waitForObject(":ref-testscale_1_001.img_CTabItem")
+    proxy = waitForObject(":pow_M99S5_1_0001.cbf_CTabItem")
     widget = proxy.control
 
     b = widget.bounds
