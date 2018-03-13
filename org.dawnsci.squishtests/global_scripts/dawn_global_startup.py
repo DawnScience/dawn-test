@@ -168,6 +168,7 @@ def closeOrDetachFromDAWN():
     test.passes("closeOrDetachFromDAWN: Success")
     
 def openPerspective(perspectiveName):
+    mouseMove(0,0)
     waitForObject(":Workbench Window")
     activateItem(waitForObjectItem(":_Menu", "Window"))
     
@@ -175,7 +176,7 @@ def openPerspective(perspectiveName):
     try:
         # Eclipse 3
         ECLIPSE_TARGET_VERSION = 3;
-        activateItem(waitForObjectItem(":Window_Menu", "Open Perspective", 200))
+        activateItem(waitForObjectItem(":Window_Menu", "Open Perspective"))
         activateItem(waitForObjectItem(":Open Perspective_Menu", "Other..."))
     except:
         # Eclipse 4

@@ -19,7 +19,7 @@ def main():
     startOrAttachToDAWN()
     
     # Open data browsing perspective 
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     
 #     clickTab(waitForObject(":Data_CTabItem"), 42, 14, 0, Button.Button3)
 #     activateItem(waitForObjectItem(":Pop Up Menu", "Size"))

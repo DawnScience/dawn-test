@@ -12,7 +12,7 @@ def main():
     
     # On a test you may add test code here 
     #Open data browsing perspective
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     openExternalFile("i22-60191.nxs")
     snooze(15) 
     mouseClick(waitForObjectItem(":Data_Table_2", "0/0"), 7, 11, 0, Button.Button1)

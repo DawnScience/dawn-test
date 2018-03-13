@@ -9,7 +9,7 @@ def startFunctionFitting():
     startOrAttachToDAWN()
     
     # Open data browsing perspective 
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     
     #expand data tree and open metal mix
     expand(waitForObjectItem(":Project Explorer_Tree", "data"))

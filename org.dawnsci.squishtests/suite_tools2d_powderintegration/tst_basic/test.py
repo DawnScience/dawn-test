@@ -30,7 +30,7 @@ def waitOnProgress():
 def main():
     
     startOrAttachToDAWN()
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     snooze(1)
     
     #Create space for tool and open the data file

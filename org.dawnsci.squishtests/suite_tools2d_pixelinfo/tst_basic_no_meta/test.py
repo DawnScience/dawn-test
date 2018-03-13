@@ -22,7 +22,7 @@ def main():
     
     #openAndClearErrorLog()
     # On a test you may add test code here 
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     
     openExample("0001.pgm")
     

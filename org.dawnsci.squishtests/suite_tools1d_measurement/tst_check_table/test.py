@@ -16,7 +16,7 @@ def main():
     startOrAttachToDAWN()
     
     # Open data browsing perspective 
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     vals = dawn_constants
     #expand data tree and open metal mix
     expand(waitForObjectItem(":Project Explorer_Tree", "data"))

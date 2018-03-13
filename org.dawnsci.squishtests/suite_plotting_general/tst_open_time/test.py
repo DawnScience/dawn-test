@@ -11,7 +11,7 @@ def main():
     
     # On a test you may add test code here 
     #Open data browsing perspective
-    # openPerspective("Data Browsing (default)")
+    # openPerspective("Data Browsing")
 
     testtime("thermolysin.mccd", 15, 64, 12)
     testtime("5.tif", 15, 31, 17)

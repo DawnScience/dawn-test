@@ -14,7 +14,7 @@ def main():
     
     # On a test you may add test code here 
     #Open data browsing perspective
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
 
     #open and display 1d data
     openExample("metalmix.mca")

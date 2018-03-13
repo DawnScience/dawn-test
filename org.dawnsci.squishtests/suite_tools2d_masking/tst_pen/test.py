@@ -11,7 +11,7 @@ def main():
     
     # On a test you may add test code here 
     #Open data browsing perspective
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
 
 
     openExternalFile("ref-testscale_1_001.img")

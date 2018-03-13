@@ -13,7 +13,7 @@ def main():
     
     # On a test you may add test code here 
     #Open data browsing perspective
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
 
     # select file 
     openExample("MoKedge_1_15.nxs")

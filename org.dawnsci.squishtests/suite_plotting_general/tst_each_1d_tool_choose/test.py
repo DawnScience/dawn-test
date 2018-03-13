@@ -11,7 +11,7 @@ def main():
     # makes sure the workbench window exists and finally
     # will close the Welcome screen 
     startOrAttachToDAWN()
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     openExample("metalmix.mca")
     vals = dawn_constants
     snooze(1)

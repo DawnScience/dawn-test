@@ -9,7 +9,7 @@ def main():
     
     toggleDATFileMDDecorators()
     
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     
     # Open HDF5 file with HDF5 Editor
     expand(waitForObjectItem(":Project Explorer_Tree", "data"))

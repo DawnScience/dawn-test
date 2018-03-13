@@ -81,7 +81,7 @@ def main():
     startOrAttachToDAWN()
     
     # Open data browsing perspective 
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     
     #Open datafile and get the plotting system for the tests
     openExample("metalmix.mca")

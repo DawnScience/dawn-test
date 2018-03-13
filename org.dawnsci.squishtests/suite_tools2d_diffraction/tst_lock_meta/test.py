@@ -10,7 +10,7 @@ def main():
     startOrAttachToDAWN()
     
     # Open data browsing perspective 
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     
     openExample("001.img")
     

@@ -13,7 +13,7 @@ def main():
     
     # On a test you may add test code here 
     #Open data browsing perspective
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     
     # Copy external to example.
     addExternalFile("two_images.h5", "suite_conversion", "tst_image_stack_tiffs", "data", "examples")

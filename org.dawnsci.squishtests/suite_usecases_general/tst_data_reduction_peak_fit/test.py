@@ -12,7 +12,7 @@ def main():
     
     # On a test you may add test code here 
     #Open data browsing perspective
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     snooze(0.5)
     expandObjectLeft(waitForObject(":Data_CTabItem_2"))
     clickTab(waitForObject(":Project Explorer_CTabItem_2"), 93, 16, 0, Button.Button1)

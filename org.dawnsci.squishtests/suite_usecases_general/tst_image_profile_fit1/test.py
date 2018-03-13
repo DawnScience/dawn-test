@@ -12,7 +12,7 @@ def main():
     
     # On a test you may add test code here 
     #Open data browsing perspective
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     
     #expand data tree and open metal mix, the date/time on the metal mix 
     #file may change so we iterate through all the children of the "examples"

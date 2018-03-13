@@ -10,7 +10,7 @@ def main():
     # makes sure the workbench window exists and finally
     # will close the Welcome screen 
     startOrAttachToDAWN(vmArgs="-Dorg.dawnsci.histogram.v1.x.colourMapping=true")
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     openExample("001.img")
     vals = dawn_constants
     snooze(1)

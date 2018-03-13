@@ -11,7 +11,7 @@ def main():
     #Start using clean workspace, open Python perspective with 
     #space for the console and setup python; switch on py4j automatically
     startOrAttachToDAWN(vmArgs='-DPREF_PY4J_ACTIVE=true')
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     setupPython()
     
     #Open a python console

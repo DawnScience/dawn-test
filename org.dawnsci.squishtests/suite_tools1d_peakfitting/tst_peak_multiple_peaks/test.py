@@ -8,7 +8,7 @@ def main():
     startOrAttachToDAWN()
     
     # Open data browsing perspective 
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     
     #Create space so the drop-down menus show all items
     if(not isEclipse4()):

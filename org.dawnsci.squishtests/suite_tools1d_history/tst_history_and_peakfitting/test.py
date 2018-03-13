@@ -8,7 +8,7 @@ def main():
     startOrAttachToDAWN()
     
     # Open data browsing perspective 
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
     vals = dawn_constants
     expand(waitForObjectItem(":Project Explorer_Tree", "data"))
     expand(waitForObjectItem(":Project Explorer_Tree", "examples"))

@@ -9,7 +9,7 @@ def main():
     
     toggleHDFFileMDDecorators()
 
-    openPerspective("Data Browsing (default)")
+    openPerspective("Data Browsing")
 
     # Add h5 customisations
     projectViewMenu = getToolItemOfCTabFolder(cTabItemText="Project Explorer", cTabItemTooltipText="Workspace",
