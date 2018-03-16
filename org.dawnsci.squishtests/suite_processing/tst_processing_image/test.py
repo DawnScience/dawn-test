@@ -17,7 +17,7 @@ def main():
     clickButton(waitForObject(":Finish_Button"))
     
     input = getPlottingSystem("Input");
-    output = getPlottingSystem("Output");
+    output = getPlottingSystem("Display");
     
     it = input.getTraces();
     out = output.getTraces();
