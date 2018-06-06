@@ -14,14 +14,14 @@ def main():
     # makes sure the workbench window exists and finally
     # will close the Welcome screen 
     startOrAttachToDAWN()
-
+    openPerspective("Python") 
     #create i12 folder in data/examples
     createDirectory("/scratch/workspace/suite_python_scripts/tst_i12_auto_peakfitting/workspace/data/examples", "i12")
     #Add peema test files to data project
     addExternalFile("36153.nxs", "suite_python_scripts", "tst_i12_auto_peakfitting", "data", "examples/i12")
     addExternalFile("i12_edxd_q_calibrator_v3_ceria.py", "suite_python_scripts", "tst_i12_auto_peakfitting", "data", "examples/i12")
     #Open Python perspective
-    openPerspective("Python") 
+    
     
     openPyDevConsole(type="Jython")
     #expand data tree and open metal mix

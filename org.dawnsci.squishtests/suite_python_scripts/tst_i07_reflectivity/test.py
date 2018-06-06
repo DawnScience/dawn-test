@@ -15,7 +15,7 @@ def main():
     # makes sure the workbench window exists and finally
     # will close the Welcome screen 
     startOrAttachToDAWN()
-
+    openPerspective("Python") 
     #Needs scipy, but this is provided by anaconda (which is current default interpreter)
     setupPython(needScipy=False)
 
@@ -53,7 +53,6 @@ def main():
     addExternalFile("reflectivity.py", "suite_python_scripts", "tst_i07_reflectivity", "reflectivity", "src/reflectivity")
 
     #Open Python perspective
-    openPerspective("Python") 
     snooze(1)
     #open console
     mouseClick(waitForObject(":Open Console_ToolItem"), 33, 11, 0, Button.Button1)
