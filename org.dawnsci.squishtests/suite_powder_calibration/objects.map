@@ -51,11 +51,12 @@
 :Diffraction_Spinner	{container=':Diffraction_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Spinner'}
 :Diffraction_Tree	{container=':Diffraction_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Distance.199.88 *_TreeSubItem	{caption='199.88 *' column='2' container=':Distance_TreeItem' type='com.froglogic.squish.swt.TreeSubItem'}
-:Distance_TreeItem	{caption='Distance' parentitem=':Experimental Information_TreeItem' type='org.eclipse.swt.widgets.TreeItem'}
+:Distance_TreeItem	{caption='Distance' parentitem=':Experimental Information_TreeItem_2' type='org.eclipse.swt.widgets.TreeItem'}
 :Error Log_CTabItem	{caption='Error Log' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Error Log_Text	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Text'}
 :Error Log_Tree	{container=':Error Log_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Experimental Information_TreeItem	{caption='Experimental Information' container=':Powder Diffraction_Tree' type='org.eclipse.swt.widgets.TreeItem'}
+:Experimental Information_TreeItem_2	{caption='Experimental Information' container=':Powder Diffraction_Tree_2' type='org.eclipse.swt.widgets.TreeItem'}
 :Export failure.Details >>_Button	{caption='Details >>' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Export failure_Shell'}
 :Export failure.OK_Button	{caption='OK' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Export failure_Shell'}
 :Export failure_Shell	{caption='Export failure' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
@@ -119,8 +120,10 @@
 :Powder Calibration - DAWN Science - C:\\scratch\\workspace\\suite_powder_calibration\\tst_manual\\workspace.Diffraction Calibration Controls_CTabItem	{caption='Diffraction Calibration Controls' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Powder Calibration - DAWN Science - C:\\\\scratch\\\\workspace\\\\suite_powder_calibration\\\\tst_manual\\\\workspace_Shell'}
 :Powder Calibration - DAWN Science - C:\\scratch\\workspace\\suite_powder_calibration\\tst_manual\\workspace_Shell	{caption='Powder Calibration - DAWN Science - C:\\\\scratch\\\\workspace\\\\suite_powder_calibration\\\\tst_manual\\\\workspace' isvisible='true' type='org.eclipse.swt.widgets.Shell'}
 :Powder Diffraction_CTabItem	{caption='Powder Diffraction' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
+:Powder Diffraction_CTabItem_2	{caption='Powder Diffraction' parent.visible='true' type='org.eclipse.swt.custom.CTabItem' window=':Workbench Window'}
 :Powder Diffraction_Spinner	{container=':Powder Diffraction_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Spinner'}
 :Powder Diffraction_Tree	{container=':Powder Diffraction_CTabItem' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
+:Powder Diffraction_Tree_2	{container=':Powder Diffraction_CTabItem_2' isvisible='true' type='org.eclipse.swt.widgets.Tree'}
 :Preferences.Apply_Button	{caption='Apply' isvisible='true' type='org.eclipse.swt.widgets.Button' window=':Preferences_Shell'}
 :Preferences.Available label decorations:_Label	{caption='Available label decorations:' isvisible='true' type='org.eclipse.swt.widgets.Label' window=':Preferences_Shell'}
 :Preferences.Available label decorations:_Table	{aboveWidget=':Preferences.Available label decorations:_Label' isvisible='true' type='org.eclipse.swt.widgets.Table' window=':Preferences_Shell'}
