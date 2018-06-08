@@ -44,7 +44,7 @@ def main():
     mouseClick(waitForObject(":Configure Settings..._ToolItem_2"), 9, 8, 0, Button.Button1)
     clickTab(waitForObject(":Configure Graph Settings.Axes_TabItem"))
     mouseClick(waitForObjectItem(":Select Axis_Combo", "(Y-Axis)"), 0, 0, 0, Button.NoButton)
-    mouseClick(waitForObject(":Axes.Change Settings_Group"), 13, 554, 0, Button.Button1)
+#     mouseClick(waitForObject(":Axes.Change Settings_Group"), 13, 554, 0, Button.Button1)
     clickButton(waitForObject(":Change Settings.Invert Axis_Button"))
     clickButton(waitForObject(":Configure Graph Settings.OK_Button"))
     #check that the min and max have been changed
