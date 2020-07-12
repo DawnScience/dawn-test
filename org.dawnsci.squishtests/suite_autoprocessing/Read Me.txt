@@ -1,0 +1,31 @@
+###################################################################################################
+#                                                                                                 #
+# Copyright (c) 2017 Diamond Light Source Ltd.                                                    #
+#                                                                                                 #
+# All rights reserved. This program and the accompanying materials are made available under the   #
+# terms of the Eclipse Public License v1.0 which accompanies this distribution, and is available  #
+# at http://www.eclipse.org/legal/epl-v10.html                                                    #
+#                                                                                                 #
+###################################################################################################
+#                                                                                                 #
+# To perfom a validation run the script called 'validator.sh', by default it should do the        #
+# validation from its current location.                                                           #
+#                                                                                                 #
+# To override these defaults, read the header of the validator.sh script file for more            #
+# information.                                                                                    #
+#                                                                                                 #
+# Success will result in the following line being printed to the console:                         #
+#                                                                                                 #
+#	Success! The files are the same!                                                          #
+#                                                                                                 #
+# and an exit code of 0 (zero) will be returned. If there is a problem a number of console error  #
+# strings and exit codes have been programmed in, again read the header of the validator.sh       # 
+# script file for more information.                                                               #
+#                                                                                                 #
+###################################################################################################
+#                                                                                                 #
+# Last updated 2017-03-30                                                                         #
+#                                                                                                 #
+# Author: Tim Snow (tim.snow@diamond.ac.uk)                                                       #
+#                                                                                                 #
+###################################################################################################
